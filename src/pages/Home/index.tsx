@@ -64,6 +64,8 @@ const Content = styled.section`
   width: 100vw;
   height: 100vh;
   overflow-x: scroll;
+  position: relative;
+  z-index: 20;
 `
 
 const Button = styled.a`
@@ -88,6 +90,64 @@ const Grid = styled(Box)`
   }
 `
 
+const PlanetWrap = styled.div`
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+`
+
+const Planet = styled.div`
+  position: absolute;
+  border: 2px solid #fff;
+  transform-style: preserve-3d;
+  width: 130vmax;
+  height: 130vmax;
+  transform: rotateZ(45deg);
+  transform: scaleY(0.5) rotateZ(45deg);
+  border-radius: 50%;
+  animation: planet-rotate 20s linear infinite;
+
+  // 公转动画
+  @keyframes planet-rotate {
+    0% {
+      transform: rotate(-45deg) scaleY(0.5) rotate(0);
+    }
+    100% {
+      transform: rotate(-45deg) scaleY(0.5) rotate(360deg);
+    }
+  }
+`
+
+const Ball = styled.div`
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: yellowgreen;
+  left: calc(50% - 25px);
+  top: -25px;
+  transform: rotateZ(-45deg); // 中和轨道的旋转
+  // 中和轨道的 scaleY 压缩，2 * 0.5 = 1 恢复原状，注意传入顺序，和 .planet 的 transform 是相反的，就像连续上了几个不同的锁，打开时要用和上锁相反的顺序去解
+  transform: rotateZ(-45deg) scaleY(2);
+  animation: self-rotate 20s linear infinite;
+
+  // 自转动画
+  @keyframes self-rotate {
+    0% {
+      transform: rotate(0) scaleY(2) rotate(45deg);
+    }
+    100% {
+      transform: rotate(-360deg) scaleY(2) rotate(45deg);
+    }
+  }
+`
+
 const index: React.FC = () => {
   const logoArr = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9]
 
@@ -101,6 +161,11 @@ const index: React.FC = () => {
           <NavLink>developers</NavLink>
         </Flex>
       </Header>
+      <PlanetWrap>
+        <Planet>
+          <Ball></Ball>
+        </Planet>
+      </PlanetWrap>
       <Content>
         <Flex
           alignItems="center"
@@ -115,7 +180,9 @@ const index: React.FC = () => {
           <Text fontSize="38px" mb="10px" fontWeight="700">
             DECENTRALIZED
           </Text>
-          <Text fontSize="38px" fontWeight="700">ORACLES</Text>
+          <Text fontSize="38px" fontWeight="700">
+            ORACLES
+          </Text>
           <Box textAlign="center" mt="20px" mb="30px">
             The NEST Protocol is the most secure oracle to build your next breakthrough DeFi
             creations
