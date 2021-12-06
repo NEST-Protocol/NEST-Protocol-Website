@@ -1,13 +1,18 @@
-// @ts-ignore
-
+import { Suspense, useRef } from 'react'
 import styled from '@emotion/styled'
 import { Flex, Box, Text } from 'rebass'
+import * as THREE from 'three'
+import { Canvas, useFrame, useLoader } from '@react-three/fiber'
+import { TextureLoader } from 'three/src/loaders/TextureLoader'
 
 import bg from '../../assets/images/planet-1.jpg'
 import github_icon from '../../assets/images/gihub_icon.svg'
 import twitter_icon from '../../assets/images/twitter_icon.svg'
 import telegram_icon from '../../assets/images/telegram_icon.svg'
 
+import planet1 from '../../assets/images/planet-2.png'
+import planet3 from '../../assets/images/planet-3.png'
+import track from '../../assets/images/track.png'
 import logo1 from '../../assets/images/nest-labs.png'
 import logo2 from '../../assets/images/crypto.png'
 import logo3 from '../../assets/images/iNFT.png'
@@ -21,7 +26,8 @@ import logo9 from '../../assets/images/polygon.png'
 const MainWrapper = styled.div`
   width: 100vw;
   height: 100vh;
-  background: url(${bg}) center center / cover no-repeat;
+  /* background: url(${bg}) center center / cover no-repeat; */
+  background: #000;
 `
 
 const Header = styled.header`
@@ -30,6 +36,7 @@ const Header = styled.header`
   padding: 24px 12px;
   top: 0;
   left: 0;
+  z-index: 30;
 `
 
 const NavLink = styled.a`
@@ -50,6 +57,7 @@ const Footer = styled.footer`
   left: 0;
   bottom: 0;
   box-sizing: border-box;
+  z-index: 30;
 `
 
 const LinkIcon = styled.a<{ bg: string }>`
@@ -105,21 +113,21 @@ const PlanetWrap = styled.div`
 const Planet = styled.div`
   position: absolute;
   border: 2px solid #fff;
+  background: url(${track}) center center / cover no-repeat;
   transform-style: preserve-3d;
-  width: 130vmax;
-  height: 130vmax;
-  transform: rotateZ(45deg);
-  transform: scaleY(0.5) rotateZ(45deg);
+  width: 120vmax;
+  height: 120vmax;
+  /* transform: scaleY(0.5) rotateZ(45deg); */
   border-radius: 50%;
   animation: planet-rotate 20s linear infinite;
 
   // 公转动画
   @keyframes planet-rotate {
     0% {
-      transform: rotate(-45deg) scaleY(0.5) rotate(0);
+      transform: rotateX(50deg) rotateY(-35deg) rotateZ(0);
     }
     100% {
-      transform: rotate(-45deg) scaleY(0.5) rotate(360deg);
+      transform: rotateX(50deg) rotateY(-35deg) rotateZ(-360deg);
     }
   }
 `
@@ -129,10 +137,9 @@ const Ball = styled.div`
   height: 50px;
   position: absolute;
   border-radius: 50%;
-  background-color: yellowgreen;
+  background: url(${planet1}) center center / cover no-repeat;
   left: calc(50% - 25px);
   top: -25px;
-  transform: rotateZ(-45deg); // 中和轨道的旋转
   // 中和轨道的 scaleY 压缩，2 * 0.5 = 1 恢复原状，注意传入顺序，和 .planet 的 transform 是相反的，就像连续上了几个不同的锁，打开时要用和上锁相反的顺序去解
   transform: rotateZ(-45deg) scaleY(2);
   animation: self-rotate 20s linear infinite;
@@ -151,6 +158,22 @@ const Ball = styled.div`
 const index: React.FC = () => {
   const logoArr = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9]
 
+  const Box2 = (props: JSX.IntrinsicElements['mesh']) => {
+    const ref = useRef<THREE.Mesh>(null!)
+    const colorMap = useLoader(TextureLoader, planet3)
+
+    useFrame((state, delta) => {
+      ref.current.rotateY(-0.001)
+      ref.current.rotateX(0.001)
+    })
+    return (
+      <mesh {...props} ref={ref}>
+        <sphereBufferGeometry args={[2.7, 80, 80]} />
+        <meshStandardMaterial attach={'material'} map={colorMap} />
+      </mesh>
+    )
+  }
+
   return (
     <MainWrapper>
       <Header>
@@ -165,6 +188,14 @@ const index: React.FC = () => {
         <Planet>
           <Ball></Ball>
         </Planet>
+        <Canvas>
+          <ambientLight intensity={0.02} />
+          <directionalLight color="white" position={[20, 20, 20]} intensity={1.5} />
+          <directionalLight color="white" position={[20, 20, 20]} intensity={0.12} castShadow />
+          <Suspense fallback={null}>
+            <Box2 position={[0, 0, 0]} />
+          </Suspense>
+        </Canvas>
       </PlanetWrap>
       <Content>
         <Flex
