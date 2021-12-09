@@ -1,5 +1,5 @@
 function setRem() {
-  const baseFontSize = 50
+  const baseFontSize = 75
   const designWidth = 375
   let fontSize = (document.documentElement.clientWidth / designWidth) * baseFontSize
   // if (fontSize > 96) fontSize = 96
