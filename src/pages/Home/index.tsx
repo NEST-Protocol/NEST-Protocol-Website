@@ -1,14 +1,15 @@
-import { Suspense, useEffect, useRef, useState } from 'react'
+import { Suspense, useEffect, useMemo, useRef, useState } from 'react'
 import styled from '@emotion/styled'
 import { Flex, Box, Text } from 'rebass'
 import * as THREE from 'three'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { OrbitControls, useTexture } from '@react-three/drei'
-
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 import SwiperCore, { Mousewheel } from 'swiper'
+import LogoLink from '../../components/LogoLink'
+import IconLink from '../../components/IconLink'
 
 import github_icon from '../../assets/images/gihub_icon.svg'
 import twitter_icon from '../../assets/images/twitter_icon.svg'
@@ -33,9 +34,24 @@ import logo6 from '../../assets/images/PARASSET.png'
 import logo7 from '../../assets/images/huobi.png'
 import logo8 from '../../assets/images/fortube.png'
 import logo9 from '../../assets/images/polygon.png'
+import logo1_active from '../../assets/images/nest-labs_2.png'
+import logo2_active from '../../assets/images/crypto_2.png'
+import logo3_active from '../../assets/images/iNFT_2.png'
+import logo4_active from '../../assets/images/CoFiX_2.png'
+import logo5_active from '../../assets/images/winkrypto_2.png'
+import logo6_active from '../../assets/images/PARASSET_2.png'
+import logo7_active from '../../assets/images/huobi_2.png'
+import logo8_active from '../../assets/images/fortube_2.png'
+import logo9_active from '../../assets/images/polygon_2.png'
 
 // install Swiper modules
 SwiperCore.use([Mousewheel])
+interface Props extends Swiper {
+  onSwiper?: any
+}
+const SwiperX: React.FC<Props> = props => {
+  return <Swiper {...props}>{props.children}</Swiper>
+}
 
 const MainWrapper = styled.div`
   width: 100vw;
@@ -50,6 +66,10 @@ const Header = styled.header`
   top: 0;
   left: 0;
   z-index: 30;
+
+  @media (min-width: 768px) {
+    padding: 24px 44px;
+  }
 `
 
 const NavLink = styled.a`
@@ -75,6 +95,7 @@ const Logo = styled.div`
 
   @media (min-width: 768px) {
     display: block;
+    background: url(${logo}) center center / cover no-repeat;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -96,30 +117,16 @@ const Footer = styled.footer`
 
   @media (min-width: 768px) {
     font-size: 17px;
-  }
-`
-
-const LinkIcon = styled.a<{ bg: string; hoverBg: string }>`
-  width: 20px;
-  height: 20px;
-  margin-left: 14px;
-  background: url(${props => props.bg}) center center / cover no-repeat;
-
-  &:hover {
-    background: url(${props => props.hoverBg}) center center / cover no-repeat;
-  }
-
-  display: block;
-
-  @media (min-width: 768px) {
-    width: 26px;
-    height: 26px;
-    margin-left: 24px;
+    padding: 44px;
   }
 `
 
 const Content = styled.section`
-  position: relative;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 20;
 `
 
@@ -138,10 +145,10 @@ const Button = styled.a`
   flex-shrink: 0;
 
   @media (min-width: 768px) {
-    width: 202px;
-    height: 44px;
-    border-radius: 22px;
-    font-size: 21px;
+    width: 176px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 17px;
   }
 `
 
@@ -165,15 +172,6 @@ const Grid = styled(Box)`
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 120px 88px;
   }
-
-  img {
-    width: auto;
-    height: 30px;
-
-    @media (min-width: 768px) {
-      height: 44px;
-    }
-  }
 `
 
 const PlanetWrap = styled.div`
@@ -189,15 +187,39 @@ const PlanetWrap = styled.div`
 `
 
 const Index: React.FC = () => {
-  const logoArr = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9]
   const breakpoint = 768
   const [width, setWidth] = useState(window.innerWidth)
   const [height, setHeight] = useState(window.innerHeight)
-  const swiperRef = useRef(null)
+  const [swiperRef, setSwiperRef] = useState<any>(null)
   const handleWindowResize = () => {
     setWidth(window.innerWidth)
     setHeight(window.innerHeight)
   }
+  const logoList = useMemo(() => {
+    return [
+      { bg: logo1, hoverBg: logo1_active, link: '#' },
+      { bg: logo2, hoverBg: logo2_active, link: 'https://crypto.com/' },
+      { bg: logo3, hoverBg: logo3_active, link: 'https://inft.io/' },
+      { bg: logo4, hoverBg: logo4_active, link: 'https://cofix.tech/#/swap' },
+      { bg: logo5, hoverBg: logo5_active, link: 'https://www.winkrypto.com/' },
+      { bg: logo6, hoverBg: logo6_active, link: 'https://www.parasset.top/#/home' },
+      { bg: logo7, hoverBg: logo7_active, link: 'https://www.huobi.com/' },
+      { bg: logo8, hoverBg: logo8_active, link: 'https://for.tube/' },
+      { bg: logo9, hoverBg: logo9_active, link: 'https://polygon.technology/' }
+    ]
+  }, [])
+  const iconList = useMemo(() => {
+    return [
+      {
+        bg: whitepaper_icon,
+        hoverBg: whitepaper_icon2,
+        link: 'https://nestprotocol.org/doc/ennestwhitepaper.pdf'
+      },
+      { bg: telegram_icon, hoverBg: telegram_icon2, link: 'https://t.me/nest_chat' },
+      { bg: twitter_icon, hoverBg: twitter_icon2, link: 'https://twitter.com/nest_protocol' },
+      { bg: github_icon, hoverBg: github_icon2, link: 'https://github.com/NEST-Protocol' }
+    ]
+  }, [])
 
   useEffect(() => {
     window.addEventListener('resize', handleWindowResize)
@@ -220,10 +242,16 @@ const Index: React.FC = () => {
     const ref = useRef<THREE.Mesh>(null!)
     const texture = useTexture(planet3)
 
+    useFrame(() => {
+      ref.current.rotateZ(-0.02) // speed
+    })
+
     return (
-      <mesh {...props} ref={ref}>
-        <sphereBufferGeometry args={[0.3, 64, 64]} />
-        <meshStandardMaterial attach={'material'} map={texture} />
+      <mesh ref={ref}>
+        <mesh {...props}>
+          <sphereBufferGeometry args={[0.3, 64, 64]} />
+          <meshStandardMaterial attach={'material'} map={texture} />
+        </mesh>
       </mesh>
     )
   }
@@ -233,7 +261,7 @@ const Index: React.FC = () => {
     const texture = useTexture(planet2)
 
     useFrame(() => {
-      ref.current.rotateZ(0.03)
+      ref.current.rotateZ(0.01) // speed
     })
 
     return (
@@ -261,7 +289,7 @@ const Index: React.FC = () => {
   const All = (props: JSX.IntrinsicElements['mesh']) => {
     const ref = useRef<THREE.Mesh>(null!)
     useFrame(() => {
-      ref.current.rotateZ(-0.01)
+      ref.current.rotateZ(-0.001) // speed
     })
 
     return (
@@ -274,8 +302,7 @@ const Index: React.FC = () => {
     )
   }
 
-  // @ts-ignore
-  const slideTo = (index: number) => swiperRef.current?.swiper.slideTo(index)
+  const slideTo = (index: number) => swiperRef.slideTo(index)
 
   return (
     <MainWrapper>
@@ -296,9 +323,7 @@ const Index: React.FC = () => {
               <NavLink onClick={() => slideTo(1)}>data</NavLink>
               <NavLink onClick={() => slideTo(2)}>ecology</NavLink>
             </Flex>
-            <Logo>
-              <img src={logo} alt="nest" />
-            </Logo>
+            <Logo />
             <Button href="https://docs.nestprotocol.org/" target="_blank" rel="noreferrer">
               developers
             </Button>
@@ -320,15 +345,18 @@ const Index: React.FC = () => {
         </Canvas>
       </PlanetWrap>
       <Content>
-        {/* @ts-ignore */}
-        <Swiper direction={'vertical'} mousewheel={true} slidesPerView={'auto'} ref={swiperRef}>
+        <SwiperX
+          direction={'vertical'}
+          mousewheel={true}
+          slidesPerView={'auto'}
+          onSwiper={setSwiperRef}>
           <SwiperSlide>
             <Flex
               alignItems="center"
               justifyContent="center"
               flexDirection="column"
-              width="100vw"
-              height="100vh"
+              width="100%"
+              height="100%"
               color="#FFF"
               lineHeight="1">
               {width < breakpoint ? (
@@ -349,16 +377,21 @@ const Index: React.FC = () => {
                 </>
               ) : (
                 <>
-                  <Text fontSize="125px" mb="20px" fontWeight="700">
+                  <Text fontSize="0.56rem" mb="10px" fontWeight="700">
                     SECURING
                   </Text>
-                  <Text fontSize="125px" mb="20px" fontWeight="700">
+                  <Text fontSize="0.56rem" mb="10px" fontWeight="700">
                     DECENTRALIZED
                   </Text>
-                  <Text fontSize="125px" fontWeight="700">
+                  <Text fontSize="0.56rem" fontWeight="700">
                     ORACLES
                   </Text>
-                  <Box textAlign="center" mt="44px" fontSize="21px" lineHeight="1.5" maxWidth="700px">
+                  <Box
+                    textAlign="center"
+                    mt="44px"
+                    fontSize="21px"
+                    lineHeight="1.5"
+                    maxWidth="700px">
                     The NEST Protocol is the most secure oracle to build your next breakthrough DeFi
                     creations
                   </Box>
@@ -371,8 +404,8 @@ const Index: React.FC = () => {
               alignItems="center"
               justifyContent="center"
               flexDirection="column"
-              width="100vw"
-              height="100vh"
+              width="100%"
+              height="100%"
               textAlign="center"
               color="#FFF">
               <DataWrap>
@@ -409,13 +442,13 @@ const Index: React.FC = () => {
                 ) : (
                   <>
                     <Box>
-                      <Text fontSize="83px" mb="26px" fontWeight="700">
+                      <Text fontSize="83px" fontWeight="700">
                         56
                       </Text>
                       <Text fontSize="25px">NUMBER OF ORACLE</Text>
                     </Box>
                     <Box>
-                      <Text fontSize="83px" mb="26px" fontWeight="700">
+                      <Text fontSize="83px" fontWeight="700">
                         48.5
                         <Text fontSize="42px" display="inline">
                           M
@@ -424,13 +457,13 @@ const Index: React.FC = () => {
                       <Text fontSize="25px">CUMULATIVE QUOTES</Text>
                     </Box>
                     <Box>
-                      <Text fontSize="83px" mb="26px" fontWeight="700">
+                      <Text fontSize="83px" fontWeight="700">
                         12,463
                       </Text>
                       <Text fontSize="25px">CUMULATIVE CALLS</Text>
                     </Box>
                     <Box>
-                      <Text fontSize="83px" mb="26px" fontWeight="700">
+                      <Text fontSize="83px" fontWeight="700">
                         128.32
                       </Text>
                       <Text fontSize="25px">CUMULATIVE INCOME (ETH)</Text>
@@ -444,48 +477,25 @@ const Index: React.FC = () => {
             <Flex
               alignItems="center"
               justifyContent="center"
-              width="100vw"
-              height="100vh"
+              width="100%"
+              height="100%"
               color="#FFF">
               <Grid>
-                {logoArr.map(item => (
-                  <Flex justifyContent="center" key={item}>
-                    <img src={item} alt="logo" />
-                  </Flex>
+                {logoList.map(item => (
+                  <LogoLink bg={item.bg} hoverBg={item.hoverBg} link={item.link} key={item.bg} />
                 ))}
               </Grid>
             </Flex>
           </SwiperSlide>
-        </Swiper>
+        </SwiperX>
       </Content>
       <Footer>
         <Flex justifyContent="space-between" color="#FFF">
           <Box>&copy; {new Date().getFullYear()} NEST</Box>
           <Flex>
-            <LinkIcon
-              bg={whitepaper_icon}
-              hoverBg={whitepaper_icon2}
-              href="https://nestprotocol.org/doc/ennestwhitepaper.pdf"
-              target="_blank"
-              rel="noreferrer"></LinkIcon>
-            <LinkIcon
-              bg={telegram_icon}
-              hoverBg={telegram_icon2}
-              href="https://t.me/nest_chat"
-              target="_blank"
-              rel="noreferrer"></LinkIcon>
-            <LinkIcon
-              bg={twitter_icon}
-              hoverBg={twitter_icon2}
-              href="https://twitter.com/nest_protocol"
-              target="_blank"
-              rel="noreferrer"></LinkIcon>
-            <LinkIcon
-              bg={github_icon}
-              hoverBg={github_icon2}
-              href="https://github.com/NEST-Protocol"
-              target="_blank"
-              rel="noreferrer"></LinkIcon>
+            {iconList.map(item => (
+              <IconLink bg={item.bg} hoverBg={item.hoverBg} link={item.link} key={item.bg} />
+            ))}
           </Flex>
         </Flex>
       </Footer>

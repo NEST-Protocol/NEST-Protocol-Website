@@ -2,7 +2,7 @@ function setRem() {
   const baseFontSize = 75
   const designWidth = 375
   let fontSize = (document.documentElement.clientWidth / designWidth) * baseFontSize
-  // if (fontSize > 96) fontSize = 96
+  if (fontSize > 223) fontSize = 223
   document.documentElement.style.fontSize = fontSize + 'px'
 }
 
