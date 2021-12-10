@@ -243,7 +243,7 @@ const App: React.FC = () => {
     const texture = useTexture(planet3)
 
     useFrame(() => {
-      ref.current.rotateZ(-0.02) // speed
+      ref.current.rotateZ(-0.01) // speed
     })
 
     return (
