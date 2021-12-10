@@ -26,7 +26,7 @@ const LinkIcon = styled.a<{ bg: string; hoverBg: string }>`
 `
 
 const IconLink: React.FC<Props> = ({ bg, hoverBg, link }) => {
-  return <LinkIcon bg={bg} hoverBg={hoverBg} href="link" target="_blank" rel="noreferrer" />
+  return <LinkIcon bg={bg} hoverBg={hoverBg} href={link} target="_blank" rel="noreferrer" />
 }
 
 export default IconLink
