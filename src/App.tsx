@@ -317,6 +317,7 @@ const App: React.FC = () => {
   }
 
   const numFormat = (num: any): string => {
+    if (!num) return '0'
     num = num.toString().split('.')
     var arr = num[0].split('').reverse()
     var res: any = []
