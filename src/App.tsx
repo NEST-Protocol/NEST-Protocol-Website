@@ -191,6 +191,7 @@ const App: React.FC = () => {
   const [width, setWidth] = useState(window.innerWidth)
   const [height, setHeight] = useState(window.innerHeight)
   const [swiperRef, setSwiperRef] = useState<any>(null)
+  const [counts, setCounts] = useState<any>({})
   const handleWindowResize = () => {
     setWidth(window.innerWidth)
     setHeight(window.innerHeight)
@@ -222,6 +223,7 @@ const App: React.FC = () => {
   }, [])
 
   useEffect(() => {
+    fetchData()
     window.addEventListener('resize', handleWindowResize)
     return () => window.removeEventListener('resize', handleWindowResize)
   }, [])
@@ -303,6 +305,35 @@ const App: React.FC = () => {
   }
 
   const slideTo = (index: number) => swiperRef.slideTo(index)
+
+  const fetchData = () => {
+    fetch('https://nestdapp.io/nestwebApi/nestWebData')
+      .then(res => res.json())
+      .then(data => {
+        setCounts(data.value)
+        console.log(data)
+      })
+      .catch(e => console.log(e))
+  }
+
+  const numFormat = (num: any): string => {
+    num = num.toString().split('.')
+    var arr = num[0].split('').reverse()
+    var res: any = []
+    for (var i = 0, len = arr.length; i < len; i++) {
+      if (i % 3 === 0 && i !== 0) {
+        res.push(',')
+      }
+      res.push(arr[i])
+    }
+    res.reverse()
+    // if (num[1]) {
+    //   res = res.join('').concat('.' + num[1].substr(0, 2))
+    // } else {
+    res = res.join('')
+    // }
+    return res
+  }
 
   return (
     <MainWrapper>
@@ -413,28 +444,25 @@ const App: React.FC = () => {
                   <>
                     <Box>
                       <Text fontSize="48px" mb="5px" fontWeight="700">
-                        56
+                        {numFormat(counts.oracleCount)}
                       </Text>
                       <Text fontSize="14px">NUMBER OF ORACLE</Text>
                     </Box>
                     <Box>
                       <Text fontSize="48px" mb="5px" fontWeight="700">
-                        48.5
-                        <Text fontSize="24px" display="inline">
-                          M
-                        </Text>
+                        {numFormat(counts.quoteCount)}
                       </Text>
                       <Text fontSize="14px">CUMULATIVE QUOTES</Text>
                     </Box>
                     <Box>
                       <Text fontSize="48px" mb="5px" fontWeight="700">
-                        12,463
+                        {numFormat(counts.priceCount)}
                       </Text>
                       <Text fontSize="14px">CUMULATIVE CALLS</Text>
                     </Box>
                     <Box>
                       <Text fontSize="48px" mb="5px" fontWeight="700">
-                        128.32
+                        {numFormat(counts.totalProfit)}
                       </Text>
                       <Text fontSize="14px">CUMULATIVE INCOME (ETH)</Text>
                     </Box>
@@ -443,28 +471,25 @@ const App: React.FC = () => {
                   <>
                     <Box>
                       <Text fontSize="83px" fontWeight="700">
-                        56
+                        {numFormat(counts.oracleCount)}
                       </Text>
                       <Text fontSize="25px">NUMBER OF ORACLE</Text>
                     </Box>
                     <Box>
                       <Text fontSize="83px" fontWeight="700">
-                        48.5
-                        <Text fontSize="42px" display="inline">
-                          M
-                        </Text>
+                        {numFormat(counts.quoteCount)}
                       </Text>
                       <Text fontSize="25px">CUMULATIVE QUOTES</Text>
                     </Box>
                     <Box>
                       <Text fontSize="83px" fontWeight="700">
-                        12,463
+                        {numFormat(counts.priceCount)}
                       </Text>
                       <Text fontSize="25px">CUMULATIVE CALLS</Text>
                     </Box>
                     <Box>
                       <Text fontSize="83px" fontWeight="700">
-                        128.32
+                        {numFormat(counts.totalProfit)}
                       </Text>
                       <Text fontSize="25px">CUMULATIVE INCOME (ETH)</Text>
                     </Box>
