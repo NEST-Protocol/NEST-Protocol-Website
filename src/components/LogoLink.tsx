@@ -9,7 +9,7 @@ type Props = {
 
 const LogoIcon = styled.a<{ bg: string; hoverBg: string }>`
   width: auto;
-  height: 30px;
+  height: 0.3rem;
   background: url(${props => props.bg}) center center / contain no-repeat;
   display: block;
 
@@ -18,16 +18,18 @@ const LogoIcon = styled.a<{ bg: string; hoverBg: string }>`
   }
 
   @media (min-width: 768px) {
-    height: 44px;
+    max-height: 40px;
+    height: 0.2rem;
   }
 
   img {
     width: auto;
-    height: 30px;
+    height: 0.3rem;
     opacity: 0;
 
     @media (min-width: 768px) {
-      height: 44px;
+      max-height: 40px;
+      height: 0.2rem;
     }
   }
 `

@@ -34,6 +34,13 @@ import logo6 from './assets/images/PARASSET.png'
 import logo7 from './assets/images/huobi.png'
 import logo8 from './assets/images/fortube.png'
 import logo9 from './assets/images/polygon.png'
+import logo10 from './assets/images/21DAO.png'
+import logo11 from './assets/images/coinbase.png'
+import logo12 from './assets/images/FBG.png'
+import logo13 from './assets/images/HEDGE.png'
+import logo14 from './assets/images/huobiv.png'
+import logo15 from './assets/images/ldcapital.png'
+import logo16 from './assets/images/okexbv.png'
 import logo1_active from './assets/images/nest-labs_2.png'
 import logo2_active from './assets/images/crypto_2.png'
 import logo3_active from './assets/images/iNFT_2.png'
@@ -43,6 +50,13 @@ import logo6_active from './assets/images/PARASSET_2.png'
 import logo7_active from './assets/images/huobi_2.png'
 import logo8_active from './assets/images/fortube_2.png'
 import logo9_active from './assets/images/polygon_2.png'
+import logo10_active from './assets/images/21DAO.png'
+import logo11_active from './assets/images/coinbase_2.png'
+import logo12_active from './assets/images/FBG_2.png'
+import logo13_active from './assets/images/HEDGE_2.png'
+import logo14_active from './assets/images/huobiv_2.png'
+import logo15_active from './assets/images/ldcapital_2.png'
+import logo16_active from './assets/images/okexbv_2.png'
 
 // install Swiper modules
 SwiperCore.use([Mousewheel])
@@ -154,23 +168,29 @@ const Button = styled.a`
 
 const DataWrap = styled.section`
   display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.1rem;
 
   @media (min-width: 768px) {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 160px 140px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 160px 0.2rem;
   }
 `
 
 const Grid = styled(Box)`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 60px 30px;
+  grid-gap: 0.5rem 0.3rem;
 
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 120px 88px;
+    grid-gap: 0.3rem 0.1rem;
+  }
+
+  @media (min-width: 1280px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0.4rem 0.1rem;
+    padding: 0 0.5rem;
   }
 `
 
@@ -199,14 +219,21 @@ const App: React.FC = () => {
   const logoList = useMemo(() => {
     return [
       { bg: logo1, hoverBg: logo1_active, link: '#' },
+      { bg: logo4, hoverBg: logo4_active, link: 'https://cofix.tech/#/swap' },
+      { bg: logo6, hoverBg: logo6_active, link: 'https://www.parasset.top/#/home' },
+      { bg: logo13, hoverBg: logo13_active, link: 'https://www.hedge.red/' },
+      { bg: logo11, hoverBg: logo11_active, link: 'https://www.coinbase.com/' },
       { bg: logo2, hoverBg: logo2_active, link: 'https://crypto.com/' },
       { bg: logo3, hoverBg: logo3_active, link: 'https://inft.io/' },
-      { bg: logo4, hoverBg: logo4_active, link: 'https://cofix.tech/#/swap' },
-      { bg: logo5, hoverBg: logo5_active, link: 'https://www.winkrypto.com/' },
-      { bg: logo6, hoverBg: logo6_active, link: 'https://www.parasset.top/#/home' },
-      { bg: logo7, hoverBg: logo7_active, link: 'https://www.huobi.com/' },
+      { bg: logo12, hoverBg: logo12_active, link: 'https://twitter.com/fbgcapital' },
       { bg: logo8, hoverBg: logo8_active, link: 'https://for.tube/' },
-      { bg: logo9, hoverBg: logo9_active, link: 'https://polygon.technology/' }
+      { bg: logo5, hoverBg: logo5_active, link: 'https://www.winkrypto.com/' },
+      { bg: logo9, hoverBg: logo9_active, link: 'https://polygon.technology/' },
+      { bg: logo10, hoverBg: logo10_active, link: '#' },
+      { bg: logo7, hoverBg: logo7_active, link: 'https://www.huobi.com/' },
+      { bg: logo14, hoverBg: logo14_active, link: 'https://www.huobi.com/en-us/capital/' },
+      { bg: logo15, hoverBg: logo15_active, link: 'https://ldcap.com/' },
+      { bg: logo16, hoverBg: logo16_active, link: 'https://www.okex.com/blockdream-ventures' }
     ]
   }, [])
   const iconList = useMemo(() => {
@@ -319,6 +346,7 @@ const App: React.FC = () => {
   const numFormat = (num: any): string => {
     if (!num) return '0'
     num = num.toString().split('.')
+    if (num[0].length > 6) num[0] = num[0].slice(0, -4)
     var arr = num[0].split('').reverse()
     var res: any = []
     for (var i = 0, len = arr.length; i < len; i++) {
@@ -444,28 +472,52 @@ const App: React.FC = () => {
                 {width < breakpoint ? (
                   <>
                     <Box>
-                      <Text fontSize="48px" mb="5px" fontWeight="700">
+                      <Text fontSize="0.48rem" mb="5px" fontWeight="700">
                         {numFormat(counts.oracleCount)}
                       </Text>
-                      <Text fontSize="14px">NUMBER OF ORACLE</Text>
+                      <Text fontSize="0.14rem">NUMBER OF ORACLE</Text>
                     </Box>
+                    <Box />
+                    <Box />
                     <Box>
-                      <Text fontSize="48px" mb="5px" fontWeight="700">
+                      <Text fontSize="0.48rem" mb="5px" fontWeight="700">
                         {numFormat(counts.quoteCount)}
                       </Text>
-                      <Text fontSize="14px">CUMULATIVE QUOTES</Text>
+                      <Text fontSize="0.14rem">CUMULATIVE QUOTES</Text>
                     </Box>
                     <Box>
-                      <Text fontSize="48px" mb="5px" fontWeight="700">
+                      <Text fontSize="0.48rem" mb="5px" fontWeight="700">
+                        {numFormat(counts.appCount)}
+                      </Text>
+                      <Text fontSize="0.14rem">Number of apps called</Text>
+                    </Box>
+                    <Box />
+                    <Box />
+                    <Box>
+                      <Text fontSize="0.48rem" mb="5px" fontWeight="700">
                         {numFormat(counts.priceCount)}
                       </Text>
-                      <Text fontSize="14px">CUMULATIVE CALLS</Text>
+                      <Text fontSize="0.14rem">CUMULATIVE CALLS</Text>
                     </Box>
                     <Box>
-                      <Text fontSize="48px" mb="5px" fontWeight="700">
-                        {numFormat(counts.totalProfit)}
+                      <Text fontSize="0.48rem" mb="5px" fontWeight="700">
+                        {numFormat(counts.currentProfit)}
+                        <Text fontSize="63%" display="inline">
+                          M
+                        </Text>
                       </Text>
-                      <Text fontSize="14px">CUMULATIVE INCOME (ETH)</Text>
+                      <Text fontSize="0.14rem">Current income<br />(USDT)</Text>
+                    </Box>
+                    <Box />
+                    <Box />
+                    <Box>
+                      <Text fontSize="0.48rem" mb="5px" fontWeight="700">
+                        {numFormat(counts.totalProfit)}
+                        <Text fontSize="63%" display="inline">
+                          M
+                        </Text>
+                      </Text>
+                      <Text fontSize="0.14rem">Cumulative income<br />(USDT)</Text>
                     </Box>
                   </>
                 ) : (
@@ -484,15 +536,33 @@ const App: React.FC = () => {
                     </Box>
                     <Box>
                       <Text fontSize="83px" fontWeight="700">
+                        {numFormat(counts.appCount)}
+                      </Text>
+                      <Text fontSize="25px">Number of apps called</Text>
+                    </Box>
+                    <Box>
+                      <Text fontSize="83px" fontWeight="700">
                         {numFormat(counts.priceCount)}
                       </Text>
                       <Text fontSize="25px">CUMULATIVE CALLS</Text>
                     </Box>
                     <Box>
                       <Text fontSize="83px" fontWeight="700">
-                        {numFormat(counts.totalProfit)}
+                        {numFormat(counts.currentProfit)}
+                        <Text fontSize="63%" display="inline">
+                          M
+                        </Text>
                       </Text>
-                      <Text fontSize="25px">CUMULATIVE INCOME (ETH)</Text>
+                      <Text fontSize="25px">Current income(USDT)</Text>
+                    </Box>
+                    <Box>
+                      <Text fontSize="83px" fontWeight="700">
+                        {numFormat(counts.totalProfit)}
+                        <Text fontSize="63%" display="inline">
+                          M
+                        </Text>
+                      </Text>
+                      <Text fontSize="25px">Cumulative income(USDT)</Text>
                     </Box>
                   </>
                 )}
