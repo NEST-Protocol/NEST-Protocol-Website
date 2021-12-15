@@ -166,6 +166,33 @@ const Button = styled.a`
   }
 `
 
+const DappButton = styled.a`
+  width: 180px;
+  height: 48px;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  border: 2px solid currentColor;
+  border-radius: 24px;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: #eaaa00;
+    border: 2px solid currentColor;
+  }
+
+  @media (min-width: 768px) {
+    width: 202px;
+    height: 44px;
+    font-size: 21px;
+    border-radius: 22px;
+  }
+`
+
 const DataWrap = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -430,7 +457,7 @@ const App: React.FC = () => {
                   <Text fontSize="38px" fontWeight="700">
                     ORACLES
                   </Text>
-                  <Box textAlign="center" mt="40px" fontSize="16px" lineHeight="1.5">
+                  <Box textAlign="center" mt="40px" mb="30px" fontSize="16px" lineHeight="1.5">
                     The NEST Protocol is the most secure oracle to build your next breakthrough DeFi
                     creations
                   </Box>
@@ -448,7 +475,7 @@ const App: React.FC = () => {
                   </Text>
                   <Box
                     textAlign="center"
-                    mt="44px"
+                    my="44px"
                     fontSize="21px"
                     lineHeight="1.5"
                     maxWidth="700px">
@@ -457,6 +484,7 @@ const App: React.FC = () => {
                   </Box>
                 </>
               )}
+              <DappButton href="https://nestdapp.io/">NEST DAPP</DappButton>
             </Flex>
           </SwiperSlide>
           <SwiperSlide>
@@ -506,7 +534,11 @@ const App: React.FC = () => {
                           M
                         </Text>
                       </Text>
-                      <Text fontSize="0.14rem">Current income<br />(USDT)</Text>
+                      <Text fontSize="0.14rem">
+                        Current income
+                        <br />
+                        (USDT)
+                      </Text>
                     </Box>
                     <Box />
                     <Box />
@@ -517,7 +549,11 @@ const App: React.FC = () => {
                           M
                         </Text>
                       </Text>
-                      <Text fontSize="0.14rem">Cumulative income<br />(USDT)</Text>
+                      <Text fontSize="0.14rem">
+                        Cumulative income
+                        <br />
+                        (USDT)
+                      </Text>
                     </Box>
                   </>
                 ) : (
