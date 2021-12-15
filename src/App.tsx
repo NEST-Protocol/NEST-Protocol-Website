@@ -10,6 +10,7 @@ import 'swiper/swiper.min.css'
 import SwiperCore, { Mousewheel } from 'swiper'
 import LogoLink from './components/LogoLink'
 import IconLink from './components/IconLink'
+import DappPopup from './components/DappPopup'
 
 import github_icon from './assets/images/gihub_icon.svg'
 import twitter_icon from './assets/images/twitter_icon.svg'
@@ -126,7 +127,7 @@ const Footer = styled.footer`
   left: 0;
   bottom: 0;
   box-sizing: border-box;
-  z-index: 30;
+  z-index: 10;
   font-size: 14px;
 
   @media (min-width: 768px) {
@@ -163,33 +164,6 @@ const Button = styled.a`
     height: 40px;
     border-radius: 20px;
     font-size: 17px;
-  }
-`
-
-const DappButton = styled.a`
-  width: 180px;
-  height: 48px;
-  font-size: 20px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  border: 2px solid currentColor;
-  border-radius: 24px;
-  cursor: pointer;
-  text-decoration: none;
-
-  &:hover {
-    color: #eaaa00;
-    border: 2px solid currentColor;
-  }
-
-  @media (min-width: 768px) {
-    width: 202px;
-    height: 44px;
-    font-size: 21px;
-    border-radius: 22px;
   }
 `
 
@@ -475,7 +449,7 @@ const App: React.FC = () => {
                   </Text>
                   <Box
                     textAlign="center"
-                    my="44px"
+                    my="10px"
                     fontSize="21px"
                     lineHeight="1.5"
                     maxWidth="700px">
@@ -484,7 +458,7 @@ const App: React.FC = () => {
                   </Box>
                 </>
               )}
-              <DappButton href="https://nestdapp.io/">NEST DAPP</DappButton>
+              <DappPopup />
             </Flex>
           </SwiperSlide>
           <SwiperSlide>
