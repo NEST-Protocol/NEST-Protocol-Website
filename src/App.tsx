@@ -127,12 +127,25 @@ const Footer = styled.footer`
   left: 0;
   bottom: 0;
   box-sizing: border-box;
-  z-index: 10;
+  z-index: 15;
   font-size: 14px;
+  color: #ffffff;
 
   @media (min-width: 768px) {
     font-size: 17px;
     padding: 44px;
+  }
+`
+
+const FooterLinks = styled(Flex)`
+  position: fixed;
+  bottom: 20px;
+  right: 24px;
+  z-index: 30;
+
+  @media (min-width: 768px) {
+    bottom: 44px;
+    right: 44px;
   }
 `
 
@@ -347,7 +360,10 @@ const App: React.FC = () => {
   const numFormat = (num: any): string => {
     if (!num) return '0'
     num = num.toString().split('.')
-    if (num[0].length > 6) num[0] = num[0].slice(0, -4)
+    if (num[0].length > 6) {
+      num[1] = num[0].slice(-6)
+      num[0] = num[0].slice(0, -6)
+    }
     var arr = num[0].split('').reverse()
     var res: any = []
     for (var i = 0, len = arr.length; i < len; i++) {
@@ -357,11 +373,11 @@ const App: React.FC = () => {
       res.push(arr[i])
     }
     res.reverse()
-    // if (num[1]) {
-    //   res = res.join('').concat('.' + num[1].substr(0, 2))
-    // } else {
-    res = res.join('')
-    // }
+    if (num[1]) {
+      res = res.join('').concat('.' + num[1].substr(0, 2))
+    } else {
+      res = res.join('')
+    }
     return res
   }
 
@@ -596,15 +612,13 @@ const App: React.FC = () => {
         </SwiperX>
       </Content>
       <Footer>
-        <Flex justifyContent="space-between" color="#FFF">
-          <Box>&copy; {new Date().getFullYear()} NEST</Box>
-          <Flex>
-            {iconList.map(item => (
-              <IconLink bg={item.bg} hoverBg={item.hoverBg} link={item.link} key={item.bg} />
-            ))}
-          </Flex>
-        </Flex>
+        <Box>&copy; {new Date().getFullYear()} NEST</Box>
       </Footer>
+      <FooterLinks>
+        {iconList.map(item => (
+          <IconLink bg={item.bg} hoverBg={item.hoverBg} link={item.link} key={item.bg} />
+        ))}
+      </FooterLinks>
     </MainWrapper>
   )
 }
