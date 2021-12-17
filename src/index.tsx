@@ -20,6 +20,7 @@ const globalStyle = css`
     text-transform: uppercase;
     background: #000;
     user-select: none;
+    font-weight: 600;
   }
 
   img {
