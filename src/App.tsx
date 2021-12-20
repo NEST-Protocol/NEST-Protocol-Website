@@ -29,8 +29,6 @@ import track from './assets/images/track.png'
 
 import logo1 from './assets/images/logos/7o_clock_logo_white.svg'
 import logo1_active from './assets/images/logos/7o_clock_logo.svg'
-import logo3 from './assets/images/logos/AEX_logo_white.png'
-import logo3_active from './assets/images/logos/AEX_logo.png'
 import logo4 from './assets/images/logos/AU21_Logo_white.svg'
 import logo4_active from './assets/images/logos/AU21_Logo.svg'
 import logo5 from './assets/images/logos/coinone_logo_white.svg'
@@ -45,8 +43,6 @@ import logo9 from './assets/images/logos/Ceras_logo_white.svg'
 import logo9_active from './assets/images/logos/Ceras_logo.svg'
 import logo10 from './assets/images/logos/CoFiX_logo_white.svg'
 import logo10_active from './assets/images/logos/CoFiX_logo.svg'
-import logo11 from './assets/images/logos/coin68_logo_white.png'
-import logo11_active from './assets/images/logos/coin68_logo.png'
 import logo12 from './assets/images/logos/coinbase_logo_white.svg'
 import logo12_active from './assets/images/logos/coinbase_logo.svg'
 import logo13 from './assets/images/logos/Crypto_logo_white.png'
@@ -63,8 +59,6 @@ import logo18 from './assets/images/logos/hedge_logo_white.svg'
 import logo18_active from './assets/images/logos/hedge_logo.svg'
 import logo19 from './assets/images/logos/hotbit_logo_white.svg'
 import logo19_active from './assets/images/logos/hotbit_logo.svg'
-import logo20 from './assets/images/logos/Huobi_Ventures_logo_white.svg'
-import logo20_active from './assets/images/logos/Huobi_Ventures_logo.svg'
 import logo21 from './assets/images/logos/huobi_logo_white.svg'
 import logo21_active from './assets/images/logos/huobi_logo.svg'
 import logo22 from './assets/images/logos/HUSD_logo_white.svg'
@@ -77,8 +71,6 @@ import logo25 from './assets/images/logos/Kyros_logo_white.svg'
 import logo25_active from './assets/images/logos/Kyros_logo.svg'
 import logo26 from './assets/images/logos/LDC_logo_white.svg'
 import logo26_active from './assets/images/logos/LDC_logo.svg'
-import logo27 from './assets/images/logos/mask_logo_white.svg'
-import logo27_active from './assets/images/logos/mask_logo.svg'
 import logo28 from './assets/images/logos/nestlabs_logo_white.svg'
 import logo28_active from './assets/images/logos/nestlabs_logo.svg'
 import logo29 from './assets/images/logos/OKEx_Blockdream_Ventures_logo_white.svg'
@@ -87,8 +79,6 @@ import logo30 from './assets/images/logos/Pacific_Logo_white.png'
 import logo30_active from './assets/images/logos/Pacific_Logo.png'
 import logo31 from './assets/images/logos/Parasset_logo_white.svg'
 import logo31_active from './assets/images/logos/Parasset_logo.svg'
-import logo32 from './assets/images/logos/polygon_logo_white.svg'
-import logo32_active from './assets/images/logos/polygon_logo.svg'
 import logo33 from './assets/images/logos/Radom_logo_white.svg'
 import logo33_active from './assets/images/logos/Radom_logo.svg'
 import logo34 from './assets/images/logos/Shopping.io_Logo_white.png'
@@ -99,6 +89,8 @@ import logo36 from './assets/images/logos/YBB_logo_white.png'
 import logo36_active from './assets/images/logos/YBB_logo.png'
 import logo37 from './assets/images/logos/WhatsCoin_LOGO_white.svg'
 import logo37_active from './assets/images/logos/WhatsCoin_LOGO.svg'
+import logo38 from './assets/images/logos/polynetwork_logo_white.svg'
+import logo38_active from './assets/images/logos/polynetwork_logo.svg'
 
 // install Swiper modules
 SwiperCore.use([Mousewheel])
@@ -279,11 +271,9 @@ const App: React.FC = () => {
       { bg: logo18, hoverBg: logo18_active, link: 'https://www.hedge.red/' },
       { bg: logo12, hoverBg: logo12_active, link: 'https://www.coinbase.com/' },
       { bg: logo21, hoverBg: logo21_active, link: 'https://www.huobi.com/' },
-      { bg: logo3, hoverBg: logo3_active, link: 'https://www.aex.com/' },
       { bg: logo13, hoverBg: logo13_active, link: 'https://crypto.com/' },
       { bg: logo19, hoverBg: logo19_active, link: 'http://www.hotbit.io/' },
       { bg: logo5, hoverBg: logo5_active, link: 'https://coinone.co.kr/' },
-      { bg: logo20, hoverBg: logo20_active, link: 'https://www.huobi.com/en-us/capital/' },
       { bg: logo29, hoverBg: logo29_active, link: 'https://www.okex.com/blockdream-ventures' },
       { bg: logo16, hoverBg: logo16_active, link: 'https://twitter.com/fbgcapital' },
       { bg: logo24, hoverBg: logo24_active, link: 'https://www.kernel-ventures.com/' },
@@ -294,20 +284,18 @@ const App: React.FC = () => {
       { bg: logo9, hoverBg: logo9_active, link: 'https://www.cerasventures.com/' },
       { bg: logo1, hoverBg: logo1_active, link: 'https://www.7oclockcapital.com/community.htm' },
       { bg: logo8, hoverBg: logo8_active, link: 'https://catchervc.chaincatcher.com/' },
-      { bg: logo11, hoverBg: logo11_active, link: 'https://coin68.com/' },
       { bg: logo15, hoverBg: logo15_active, link: 'https://www.defilive.xyz/' },
       { bg: logo14, hoverBg: logo14_active, link: 'http://www.dcnews.io/' },
       { bg: logo6, hoverBg: logo6_active, link: 'https://blockster.com/' },
       { bg: logo35, hoverBg: logo35_active, link: 'https://www.winkrypto.com/' },
       { bg: logo37, hoverBg: logo37_active, link: 'https://www.whatscoin.com/' },
       { bg: logo7, hoverBg: logo7_active, link: 'https://www.binance.org/en/smartChain' },
+      { bg: logo38, hoverBg: logo38_active, link: 'https://poly.network' },
       { bg: logo17, hoverBg: logo17_active, link: 'https://for.tube/' },
       { bg: logo22, hoverBg: logo22_active, link: 'https://www.stcoins.com/' },
       { bg: logo23, hoverBg: logo23_active, link: 'https://inft.io/' },
-      { bg: logo27, hoverBg: logo27_active, link: 'https://mask.io/' },
       { bg: logo30, hoverBg: logo30_active, link: 'https://pacific.one/#/' },
       { bg: logo33, hoverBg: logo33_active, link: 'https://www.radom.network/' },
-      { bg: logo32, hoverBg: logo32_active, link: 'https://poly.network' },
       { bg: logo34, hoverBg: logo34_active, link: 'https://shopping.io/' }
     ]
   }, [])
@@ -669,15 +657,6 @@ const App: React.FC = () => {
             <Flex alignItems="center" justifyContent="center" width="100%" height="100%">
               <Grid>
                 {logoList.slice(16, 32).map(item => (
-                  <LogoLink bg={item.bg} hoverBg={item.hoverBg} link={item.link} key={item.bg} />
-                ))}
-              </Grid>
-            </Flex>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Flex alignItems="center" justifyContent="center" width="100%" height="100%">
-              <Grid>
-                {logoList.slice(32, -1).map(item => (
                   <LogoLink bg={item.bg} hoverBg={item.hoverBg} link={item.link} key={item.bg} />
                 ))}
               </Grid>
