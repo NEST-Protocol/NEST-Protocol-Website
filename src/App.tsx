@@ -450,7 +450,7 @@ const App: React.FC = () => {
               <NavLink onClick={() => slideTo(2)}>ecology</NavLink>
             </Flex>
             <Logo />
-            <Button href="https://docs.nestprotocol.org/" target="_blank" rel="noreferrer">
+            <Button href="https://channel.nestprotocol.org/" target="_blank" rel="noreferrer">
               developers
             </Button>
           </Flex>
