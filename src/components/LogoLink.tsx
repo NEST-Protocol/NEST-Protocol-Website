@@ -38,7 +38,7 @@ const LogoLink: React.FC<Props> = ({ bg, hoverBg, link }) => {
   return (
     <LogoIcon bg={bg} hoverBg={hoverBg} href={link} target="_blank" rel="noreferrer">
       <Flex justifyContent="center">
-        <img src={bg} alt="logo" />
+        <img src={hoverBg} alt="logo" />
       </Flex>
     </LogoIcon>
   )
