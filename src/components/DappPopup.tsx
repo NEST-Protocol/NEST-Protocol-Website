@@ -66,7 +66,7 @@ const DappPopup: React.FC = () => {
       {showPopup ? (
         <DappPopupWrap alignItems="center" justifyContent="space-evenly" flexDirection="column">
           <Box>
-            <a href="https://nestdapp.io/">nest dapp web</a>
+            <a href="https://repurchase.nestprotocol.org">nest dapp web</a>
           </Box>
           <Box width="100%" height="1px" backgroundColor="#DCDCDC"></Box>
           <Box>
