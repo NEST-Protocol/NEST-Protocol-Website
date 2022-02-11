@@ -430,6 +430,10 @@ const App: React.FC = () => {
     return res
   }
 
+  const isGtMillion = (num: number): boolean => {
+    return num >= 1000000
+  }
+
   return (
     <MainWrapper>
       <Header>
@@ -569,9 +573,7 @@ const App: React.FC = () => {
                     <Box>
                       <Text fontSize="0.48rem" mb="5px" fontWeight="700">
                         {numFormat(counts.currentProfit)}
-                        <Text fontSize="63%" display="inline">
-                          M
-                        </Text>
+                        {isGtMillion(counts.currentProfit) ? <Text fontSize="63%" display="inline">M</Text> : null}
                       </Text>
                       <Text fontSize="0.14rem">
                         Current income
@@ -584,9 +586,7 @@ const App: React.FC = () => {
                     <Box>
                       <Text fontSize="0.48rem" mb="5px" fontWeight="700">
                         {numFormat(counts.totalProfit)}
-                        <Text fontSize="63%" display="inline">
-                          M
-                        </Text>
+                        {isGtMillion(counts.totalProfit) ? <Text fontSize="63%" display="inline">M</Text> : null}
                       </Text>
                       <Text fontSize="0.14rem">
                         Cumulative income
@@ -624,18 +624,14 @@ const App: React.FC = () => {
                     <Box>
                       <Text fontSize="83px" fontWeight="700">
                         {numFormat(counts.currentProfit)}
-                        <Text fontSize="63%" display="inline">
-                          M
-                        </Text>
+                        {isGtMillion(counts.currentProfit) ? <Text fontSize="63%" display="inline">M</Text> : null}
                       </Text>
                       <Text fontSize="25px">Current income(USDT)</Text>
                     </Box>
                     <Box>
                       <Text fontSize="83px" fontWeight="700">
                         {numFormat(counts.totalProfit)}
-                        <Text fontSize="63%" display="inline">
-                          M
-                        </Text>
+                        {isGtMillion(counts.totalProfit) ? <Text fontSize="63%" display="inline">M</Text> : null}
                       </Text>
                       <Text fontSize="25px">Cumulative income(USDT)</Text>
                     </Box>
