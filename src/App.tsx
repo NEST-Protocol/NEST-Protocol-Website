@@ -55,8 +55,8 @@ import logo16 from './assets/images/logos/FBG_logo_white.png'
 import logo16_active from './assets/images/logos/FBG_logo.png'
 import logo17 from './assets/images/logos/Fortube_logo_white.svg'
 import logo17_active from './assets/images/logos/Fortube_logo.svg'
-import logo18 from './assets/images/logos/hedge_logo_white.svg'
-import logo18_active from './assets/images/logos/hedge_logo.svg'
+import logo18 from './assets/images/logos/fort_logo_white.svg'
+import logo18_active from './assets/images/logos/fort_logo.svg'
 import logo19 from './assets/images/logos/hotbit_logo_white.svg'
 import logo19_active from './assets/images/logos/hotbit_logo.svg'
 import logo21 from './assets/images/logos/huobi_logo_white.svg'
@@ -268,7 +268,7 @@ const App: React.FC = () => {
       { bg: logo28, hoverBg: logo28_active, link: '#' },
       { bg: logo10, hoverBg: logo10_active, link: 'https://cofix.tech/#/swap' },
       { bg: logo31, hoverBg: logo31_active, link: 'https://www.parasset.top/#/home' },
-      { bg: logo18, hoverBg: logo18_active, link: 'https://www.hedge.red/' },
+      { bg: logo18, hoverBg: logo18_active, link: 'https://www.fortprotocol.com/' },
       { bg: logo12, hoverBg: logo12_active, link: 'https://www.coinbase.com/' },
       { bg: logo21, hoverBg: logo21_active, link: 'https://www.huobi.com/' },
       { bg: logo13, hoverBg: logo13_active, link: 'https://crypto.com/' },
