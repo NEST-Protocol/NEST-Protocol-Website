@@ -170,6 +170,23 @@ const Footer = styled.footer`
   }
 `
 
+const FooterCoin = styled.footer`
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 44px 0px;
+  box-sizing: border-box;
+  z-index: 15;
+  font-size: 14px;
+  color: #ffffff;
+
+  @media (min-width: 768px) {
+    font-size: 17px;
+    padding: 0;
+  }
+`
+
 const FooterLinks = styled(Flex)`
   position: fixed;
   bottom: 20px;
@@ -663,6 +680,14 @@ const App: React.FC = () => {
       <Footer>
         <Box>&copy; {new Date().getFullYear()} NEST</Box>
       </Footer>
+      <FooterCoin>
+        <div
+          id="crypto-widget-CoinList"
+          data-transparent="true"
+          data-theme="dark"
+          data-design="classic"
+          data-coins="nest-protocol"/>
+      </FooterCoin>
       <FooterLinks>
         {iconList.map(item => (
           <IconLink bg={item.bg} hoverBg={item.hoverBg} link={item.link} key={item.bg} />
