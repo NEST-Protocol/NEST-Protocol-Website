@@ -94,9 +94,11 @@ import logo38_active from './assets/images/logos/polynetwork_logo.svg'
 
 // install Swiper modules
 SwiperCore.use([Mousewheel])
+
 interface Props extends Swiper {
   onSwiper?: any
 }
+
 const SwiperX: React.FC<Props> = props => {
   return <Swiper {...props}>{props.children}</Swiper>
 }
@@ -174,12 +176,9 @@ const FooterCoin = styled.footer`
   width: 100%;
   position: fixed;
   left: 0;
-  bottom: 0;
-  padding: 44px 0px;
-  box-sizing: border-box;
+  bottom: -6px;
+  padding: 30px 4px;
   z-index: 15;
-  font-size: 14px;
-  color: #ffffff;
 
   @media (min-width: 768px) {
     font-size: 17px;
