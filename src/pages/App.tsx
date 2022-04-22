@@ -73,6 +73,18 @@ export const App = () => {
     {label: "News", ref: newsRef},
   ]
 
+  const technologyLinks = [
+    { label: 'Github', icon: Github, link: 'https://github.com/NEST-Protocol' },
+    { label: 'Whitepaper', icon: Whitepaper, link: 'https://nestprotocol.org/doc/ennestwhitepaper.pdf' },
+    { label: 'Security Report', icon: SecurityReport, link: '' },
+  ]
+
+  const socialLinks = [
+    { label: 'Twitter', icon: Twitter, link: 'https://twitter.com/nest_protocol' },
+    { label: 'Telegram', icon: Telegram, link: 'https://t.me/nest_chat' },
+    { label: 'Medium', icon: Medium, link: '' },
+  ]
+
   return (
     <VStack w={"full"}>
       <VStack id={"menu+index"} bg={'#FFD789'} w={"full"} px={['22px', '22px', '44px']} py={'27px'}>
@@ -83,7 +95,9 @@ export const App = () => {
               {menu.map((item) => (
                 <Button key={item.label} variant={"ghost"} onClick={()=> next(item.ref)}>{item.label}</Button>
               ))}
-              <Button>Developers</Button>
+              <Button onClick={()=>{
+                window.open("https://channel.nestprotocol.org/")
+              }}>Developers</Button>
             </HStack>
           ) : (
             <Menu>
@@ -172,8 +186,8 @@ export const App = () => {
         </SimpleGrid>
         <SimpleGrid columns={[1, 2, 3]} spacing={["12px",  "90px"]} pb={"27px"}>
           {[
-            {id: "Github", logo: Github, link: ""},
-            {id: "Whitepaper", logo: Whitepaper, link: ""},
+            {id: "Github", logo: Github, link: "https://github.com/NEST-Protocol"},
+            {id: "Whitepaper", logo: Whitepaper, link: "https://nestprotocol.org/doc/ennestwhitepaper.pdf"},
             {id: "Security Report", logo: SecurityReport, link: ""},
           ].map((item) => (
             <Link isExternal href={item.link}>
@@ -186,7 +200,9 @@ export const App = () => {
             </Link>
           ))}
         </SimpleGrid>
-        <Button variant={"outline"} isFullWidth={!isLargerThan480} height={ isLargerThan480 ? '36px': '48px' } borderRadius={ isLargerThan480 ? '12px' : '44px' }>
+        <Button variant={"outline"} isFullWidth={!isLargerThan480} height={ isLargerThan480 ? '36px': '48px' }
+                onClick={()=> window.open("https://channel.nestprotocol.org/")}
+                borderRadius={ isLargerThan480 ? '12px' : '44px' }>
           Developers
         </Button>
       </VStack>
@@ -291,13 +307,15 @@ export const App = () => {
               <img src={item.bg} alt={item.label} style={{ width: 'full', height: '198px' }}/>
               <HStack p={['12px', '12px', '44px']} justifyContent={"space-between"} w={"full"} alignItems={"center"}>
                 <Text fontSize={['12px', '12px', '17px']} fontWeight={600}>{item.label}</Text>
-                {
-                  isLargerThan480 ? (
-                    <img src={Right1} alt={'right'} />
-                  ) : (
-                    <img src={Right1} alt={'right'} height={'24px'} width={'24px'}/>
-                  )
-                }
+                <Link isExternal href={item.link}>
+                  {
+                    isLargerThan480 ? (
+                      <img src={Right1} alt={'right'} />
+                    ) : (
+                      <img src={Right1} alt={'right'} height={'24px'} width={'24px'}/>
+                    )
+                  }
+                </Link>
               </HStack>
             </VStack>
           ))}
@@ -366,11 +384,7 @@ export const App = () => {
               <Text fontWeight={"bold"}>Community</Text>
               <br/>
               <VStack spacing={'20px'} alignItems={"start"}>
-                {[
-                  { label: 'Twitter', icon: Twitter, link: 'https://twitter.com/nest_protocol' },
-                  { label: 'Telegram', icon: Telegram, link: 'https://t.me/nest_chat' },
-                  { label: 'Medium', icon: Medium, link: '' },
-                ].map((item)=>(
+                {socialLinks.map((item)=>(
                   <Link key={item.label} isExternal href={item.link}>
                     <HStack spacing={'20px'}>
                       <img src={item.icon} alt={item.label}/>
@@ -384,11 +398,7 @@ export const App = () => {
               <Text fontWeight={"bold"}>Technology</Text>
               <br/>
               <VStack spacing={'20px'} alignItems={"start"}>
-                {[
-                  { label: 'Github', icon: Github, link: '' },
-                  { label: 'Whitepaper', icon: Whitepaper, link: '' },
-                  { label: 'Security Report', icon: SecurityReport, link: '' },
-                ].map((item)=>(
+                {technologyLinks.map((item)=>(
                   <Link key={item.label} isExternal href={item.link}>
                     <HStack spacing={'20px'}>
                       <img src={item.icon} alt={item.label}/>
@@ -417,11 +427,7 @@ export const App = () => {
                 <Text fontWeight={"bold"}>Community</Text>
                 <br/>
                 <VStack spacing={'20px'} alignItems={"start"}>
-                  {[
-                    { label: 'Twitter', icon: Twitter, link: 'https://twitter.com/nest_protocol' },
-                    { label: 'Telegram', icon: Telegram, link: 'https://t.me/nest_chat' },
-                    { label: 'Medium', icon: Medium, link: '' },
-                  ].map((item)=>(
+                  {socialLinks.map((item)=>(
                     <Link key={item.label} isExternal href={item.link}>
                       <HStack spacing={'20px'}>
                         <img src={item.icon} alt={item.label} height={'22px'} width={'22px'}/>
@@ -436,11 +442,7 @@ export const App = () => {
                 <Text fontWeight={"bold"}>Technology</Text>
                 <br/>
                 <VStack spacing={'20px'} alignItems={"start"}>
-                  {[
-                    { label: 'Github', icon: Github, link: 'https://github.com/NEST-Protocol' },
-                    { label: 'Whitepaper', icon: Whitepaper, link: 'https://nestprotocol.org/doc/ennestwhitepaper.pdf' },
-                    { label: 'Security Report', icon: SecurityReport, link: '' },
-                  ].map((item)=>(
+                  {technologyLinks.map((item)=>(
                     <Link key={item.label} isExternal href={item.link}>
                       <HStack spacing={'20px'}>
                         <img src={item.icon} alt={item.label} height={'22px'} width={'22px'}/>
