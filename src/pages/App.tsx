@@ -63,6 +63,7 @@ import header from '../assets/img/header.png'
 import nest_white from "../assets/svg/nest_white.svg"
 import nest_kcc from "../assets/img/nest_kcc_white.png"
 import nest_map from "../assets/img/nest_map_white.png"
+import video from "../assets/img/video.png"
 import useWinSize from "../utils/useWinSize";
 
 
@@ -343,16 +344,16 @@ export const App = () => {
             {label: 'Twitter', bg: twitterImg, link: 'https://twitter.com/nest_protocol', logo: twitter_white},
             {label: 'Telegram', bg: telegramImg, link: 'https://t.me/nest_chat', logo: telegram_white},
             {label: 'Medium', bg: mediumImg, link: 'https://nest-protocol-82041.medium.com/', logo: medium_white},
-            {label: 'YouTube', bg: youtubeImg, link: '', logo: ''},
+            {label: 'YouTube', bg: youtubeImg, link: '', logo: video},
           ].map((item) => (
             <VStack key={item.label} borderRadius={'12px'} w={['full', 'full', '308px']} h={['140px', '140px', '308px']}
                     border={"1px solid #EEEEEE"} boxShadow={'0px 0px 45px 5px #E5E5E5'} overflow={"hidden"}>
               <Box w={"full"} h={'198px'} overflow={"hidden"}>
                 <VStack position={"absolute"} w={[(size.width - 66)/2, (size.width - 66)/2, '308px']} h={['90px', '90px', '198px']} justifyContent={"center"}>
                   { isLargerThan480 ? (
-                    <img src={item.logo} alt={item.label} style={{ width: '66px', height: '66px' }}/>
+                    <img src={item.logo} alt={item.label} style={{ height: '66px' }}/>
                   ) :(
-                    <img src={item.logo} alt={item.label} style={{ width: '22px', height: '22px' }}/>
+                    <img src={item.logo} alt={item.label} style={{ height: '22px' }}/>
                   ) }
                 </VStack>
                 <img src={item.bg} alt={item.label}/>
