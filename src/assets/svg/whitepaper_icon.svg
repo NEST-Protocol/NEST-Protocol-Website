@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #eaaa00;
+      }
+
+      .cls-1 {
+        stroke: #000;
+        opacity: 0.2;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="whitepaper_icon" transform="translate(-252 -328)">
+    <g id="椭圆_4" data-name="椭圆 4" class="cls-1" transform="translate(252 328)">
+      <circle class="cls-3" cx="24" cy="24" r="24"/>
+      <circle class="cls-4" cx="24" cy="24" r="23.5"/>
+    </g>
+    <path id="路径_15" data-name="路径 15" class="cls-2" d="M-76.292,109.113a.7.7,0,0,1-.308-.58V92.792A31.043,31.043,0,0,1-64.718,90a.7.7,0,0,1,.507.2.7.7,0,0,1,.212.5v16.092a39.725,39.725,0,0,0-11.64,2.391.7.7,0,0,1-.259.05A.7.7,0,0,1-76.292,109.113Zm-4.068.07A39.7,39.7,0,0,0-92,106.792V90.7a.7.7,0,0,1,.212-.5.7.7,0,0,1,.507-.2A31.047,31.047,0,0,1-79.4,92.792v15.742a.7.7,0,0,1-.308.58.705.705,0,0,1-.393.12A.7.7,0,0,1-80.36,109.184Z" transform="translate(354 253.07)"/>
+  </g>
+</svg>

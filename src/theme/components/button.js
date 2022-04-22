@@ -2,8 +2,6 @@ export const Button = {
   baseStyle: {
     fontWeight: 'bold',
     fontSize: 'md',
-    textTransform: 'uppercase',
-    borderRadius: 'base',
   },
   variants: {
     ghost: {
@@ -17,7 +15,15 @@ export const Button = {
     },
     outline: {
       border: '2px solid',
-      height: '34px'
+      borderColor: '#EAAA00',
+      borderRadius: "17px",
+      height: '34px',
+      _hover: {
+        bg: '#EAAA00',
+      },
+      _active: {
+        bg: '#EAAA00'
+      }
     },
     solid: {
       bg: '#EAAA00',
