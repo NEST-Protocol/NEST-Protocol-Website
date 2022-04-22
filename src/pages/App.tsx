@@ -129,7 +129,7 @@ export const App = () => {
               <MenuButton as={Button} variant={'ghost'} fontSize={'36px'} w={'36px'}>
                 <HamburgerIcon/>
               </MenuButton>
-              <MenuList>
+              <MenuList zIndex={11}>
                 {menu.map((item) => (
                   <MenuItem fontWeight={'bold'} onClick={() => next(item.ref)}>{item.label}</MenuItem>
                 ))}
