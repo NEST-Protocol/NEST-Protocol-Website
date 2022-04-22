@@ -45,9 +45,10 @@ import award3 from "../assets/svg/award3_icon.svg"
 import Twitter from "../assets/svg/twitter_icon.svg"
 import Telegram from "../assets/svg/telegram_icon.svg"
 import Medium from "../assets/svg/medium_icon.svg"
-import { useMediaQuery } from '@chakra-ui/react'
-import {HamburgerIcon} from "@chakra-ui/icons";
+import {useMediaQuery} from '@chakra-ui/react'
+import {HamburgerIcon} from "@chakra-ui/icons"
 import {useRef} from "react";
+import arms from '../assets/img/机械臂.png'
 
 
 export const App = () => {
@@ -74,15 +75,15 @@ export const App = () => {
   ]
 
   const technologyLinks = [
-    { label: 'Github', icon: Github, link: 'https://github.com/NEST-Protocol' },
-    { label: 'Whitepaper', icon: Whitepaper, link: 'https://nestprotocol.org/doc/ennestwhitepaper.pdf' },
-    { label: 'Security Report', icon: SecurityReport, link: '' },
+    {label: 'Github', icon: Github, link: 'https://github.com/NEST-Protocol'},
+    {label: 'Whitepaper', icon: Whitepaper, link: 'https://nestprotocol.org/doc/ennestwhitepaper.pdf'},
+    {label: 'Security Report', icon: SecurityReport, link: ''},
   ]
 
   const socialLinks = [
-    { label: 'Twitter', icon: Twitter, link: 'https://twitter.com/nest_protocol' },
-    { label: 'Telegram', icon: Telegram, link: 'https://t.me/nest_chat' },
-    { label: 'Medium', icon: Medium, link: '' },
+    {label: 'Twitter', icon: Twitter, link: 'https://twitter.com/nest_protocol'},
+    {label: 'Telegram', icon: Telegram, link: 'https://t.me/nest_chat'},
+    {label: 'Medium', icon: Medium, link: 'https://medium.com/nest-consensus-labs'},
   ]
 
   return (
@@ -90,39 +91,40 @@ export const App = () => {
       <VStack id={"menu+index"} bg={'#FFD789'} w={"full"} px={['22px', '22px', '44px']} py={'27px'}>
         <HStack id={"menu"} justifyContent={"space-between"} w={"full"}>
           <img src={nest} alt={'nest'}/>
-          { isLargerThan1024 ? (
+          {isLargerThan1024 ? (
             <HStack>
               {menu.map((item) => (
-                <Button key={item.label} variant={"ghost"} onClick={()=> next(item.ref)}>{item.label}</Button>
+                <Button key={item.label} variant={"ghost"} onClick={() => next(item.ref)}>{item.label}</Button>
               ))}
-              <Button onClick={()=>{
+              <Button onClick={() => {
                 window.open("https://channel.nestprotocol.org/")
               }}>Developers</Button>
             </HStack>
           ) : (
             <Menu>
               <MenuButton as={Button} variant={'ghost'} fontSize={'36px'} w={'36px'}>
-                <HamburgerIcon />
+                <HamburgerIcon/>
               </MenuButton>
               <MenuList>
-                {menu.map((item)=>(
-                  <MenuItem fontWeight={'bold'} onClick={()=> next(item.ref)}>{item.label}</MenuItem>
+                {menu.map((item) => (
+                  <MenuItem fontWeight={'bold'} onClick={() => next(item.ref)}>{item.label}</MenuItem>
                 ))}
               </MenuList>
             </Menu>
-          ) }
+          )}
         </HStack>
-        <VStack id={"page1"} alignItems={"start"} w={"full"} spacing={"60px"} pt={["80px", "80px", "140px"]} pb={"60px"}>
+        <VStack id={"page1"} alignItems={"start"} w={"full"} spacing={"60px"} pt={["80px", "80px", "140px"]}
+                pb={"60px"}>
           <Box alignItems={"start"} w={"full"}>
             <Heading fontSize={["4xl", "4xl", "5xl"]}>Truly Decentralized Oracle</Heading>
             <Heading fontSize={["4xl", "4xl", "5xl"]}>No Nodes No Auditing Free Quotation</Heading>
             <Heading fontSize={["4xl", "4xl", "5xl"]}>On-Chain Verification</Heading>
           </Box>
-          <Button isFullWidth={!isLargerThan480} height={ isLargerThan480 ? '36px': '48px' }
-                  onClick={()=>{
+          <Button isFullWidth={!isLargerThan480} height={isLargerThan480 ? '36px' : '48px'}
+                  onClick={() => {
                     window.open("https://repurchase.nestprotocol.org/")
                   }}
-                  borderRadius={ isLargerThan480 ? '12px' : '44px' }>
+                  borderRadius={isLargerThan480 ? '12px' : '44px'}>
             DAPP Web
           </Button>
           <SimpleGrid columns={[3, 3, 3, 6]} spacing={"44px"}>
@@ -141,11 +143,12 @@ export const App = () => {
           </SimpleGrid>
         </VStack>
       </VStack>
-      <VStack id={"what is a nest nest oracle"} w={"full"} px={['22px', '22px', '44px']} pt={['60px', '60px', '100px']} ref={aboutRef}>
+      <VStack id={"what is a nest nest oracle"} w={"full"} px={['22px', '22px', '44px']} pt={['60px', '60px', '100px']}
+              ref={aboutRef}>
         <Box mb={['60px', '60px', '100px']} w={"full"}>
           <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>What Is A NEST Oracle</Heading>
         </Box>
-        <AspectRatio w={['full','full', '720px']} ratio={16 / 9} bg={"red"}>
+        <AspectRatio w={['full', 'full', '720px']} ratio={16 / 9} bg={"red"}>
           <iframe
             title='naruto'
             src='https://www.youtube.com/embed/-c7A2CjoJ8E'
@@ -153,7 +156,8 @@ export const App = () => {
           />
         </AspectRatio>
       </VStack>
-      <VStack id={"impeccable technical architecture"} w={"full"} px={['22px', '22px', '44px']} pt={['60px', '60px', '100px']}>
+      <VStack id={"impeccable technical architecture"} w={"full"} px={['22px', '22px', '44px']}
+              pt={['60px', '60px', '100px']}>
         <Box w={"full"} mb={['60px', '60px', '100px']}>
           <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>Impeccable technical</Heading>
           <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>Architecture</Heading>
@@ -167,7 +171,7 @@ export const App = () => {
             {id: "ANTI-ATTACK", logo: ANTI_ATTACK, desc: "High cost to tamper the price"},
           ].map((item) => (
             <>
-              { isLargerThan480 ? (
+              {isLargerThan480 ? (
                 <VStack key={item.id} w={"220px"} h={"220px"} borderRadius={"12px"}
                         alignItems={"start"} p={"22px"} justifyContent={"center"} spacing={"22px"}
                         boxShadow={"0 0 45px 5px #E5E5E5"} border={"1px solid #EEEEEE"}>
@@ -184,11 +188,11 @@ export const App = () => {
                     <Text color={"#878787"} fontSize={"15px"} fontWeight={600}>{item.desc}</Text>
                   </VStack>
                 </HStack>
-              ) }
+              )}
             </>
           ))}
         </SimpleGrid>
-        <SimpleGrid columns={[1, 2, 3]} spacing={["12px",  "90px"]} pb={"27px"}>
+        <SimpleGrid columns={[1, 2, 3]} spacing={["12px", "90px"]} pb={"27px"}>
           {[
             {id: "Github", logo: Github, link: "https://github.com/NEST-Protocol"},
             {id: "Whitepaper", logo: Whitepaper, link: "https://nestprotocol.org/doc/ennestwhitepaper.pdf"},
@@ -204,13 +208,14 @@ export const App = () => {
             </Link>
           ))}
         </SimpleGrid>
-        <Button variant={"outline"} isFullWidth={!isLargerThan480} height={ isLargerThan480 ? '36px': '48px' }
-                onClick={()=> window.open("https://channel.nestprotocol.org/")}
-                borderRadius={ isLargerThan480 ? '12px' : '44px' }>
+        <Button variant={"outline"} isFullWidth={!isLargerThan480} height={isLargerThan480 ? '36px' : '48px'}
+                onClick={() => window.open("https://channel.nestprotocol.org/")}
+                borderRadius={isLargerThan480 ? '12px' : '44px'}>
           Developers
         </Button>
       </VStack>
-      <VStack id={"rapidly growing data"} w={"full"} px={['22px', '22px', '44px']} pt={['60px', '60px', '100px']} ref={dataRef}>
+      <VStack id={"rapidly growing data"} w={"full"} px={['22px', '22px', '44px']} pt={['60px', '60px', '100px']}
+              ref={dataRef}>
         <Box w={"full"} mb={['60px', '60px', '100px']}>
           <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>Rapidly Growing Data</Heading>
         </Box>
@@ -230,18 +235,29 @@ export const App = () => {
           ))}
         </SimpleGrid>
       </VStack>
-      <VStack id={"huge ecosystem"} w={"full"} px={['22px', '22px', '44px']} pt={['60px', '60px', '100px']} ref={ecologyRef}>
+      <VStack id={"huge ecosystem"} w={"full"} px={['22px', '22px', '44px']} pt={['60px', '60px', '100px']}
+              ref={ecologyRef}>
         <Box w={"full"} mb={['60px', '60px', '100px']}>
           <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>Huge Ecosystem</Heading>
         </Box>
         <SimpleGrid columns={[1, 1, 2, 3]} spacing={'44px'} pb={"44px"}>
           {[
-            { label: 'DeFi', logo: fort2, desc: 'Perpetual future contracts and European options', link: 'https://fortprotocol.com' },
-            { label: 'Dex', logo: cofix2, desc: '$NEST liquidity available', link: 'https://cofix.tech' },
-            { label: 'Leding', logo: parasset2, desc: 'Collateral $NEST to mint PETH, PUSD, PBTC, etc', link: 'https://home.parasset.top' },
+            {
+              label: 'DeFi',
+              logo: fort2,
+              desc: 'Perpetual future contracts and European options',
+              link: 'https://fortprotocol.com'
+            },
+            {label: 'Dex', logo: cofix2, desc: '$NEST liquidity available', link: 'https://cofix.tech'},
+            {
+              label: 'Leding',
+              logo: parasset2,
+              desc: 'Collateral $NEST to mint PETH, PUSD, PBTC, etc',
+              link: 'https://home.parasset.top'
+            },
           ].map((item) => (
             <>
-              { isLargerThan480 ? (
+              {isLargerThan480 ? (
                 <VStack w={"240px"} border={'1px solid #EEEEEE'} boxShadow={'0px 0px 45px 5px #E5E5E5'} spacing={'30px'}
                         alignItems={"start"} p={'44px'} borderRadius={'12px'}>
                   <Text fontWeight={'bold'} fontSize={'17px'}>{item.label}</Text>
@@ -264,7 +280,7 @@ export const App = () => {
                   </HStack>
                   <Text fontSize={'15px'} fontWeight={600} color={'#878787'}>{item.desc}</Text>
                 </VStack>
-              ) }
+              )}
             </>
           ))}
         </SimpleGrid>
@@ -272,49 +288,51 @@ export const App = () => {
           {[
             {id: "nest_labs", src: nest_labs, link: "#"},
             {id: "coinbase", src: coinbase, link: "https://www.coinbase.com"},
-            {id: "huobi", src: huobi, link: 'https://www.huobi.com/' },
-            {id: "crypto.com", src: crypto, link: 'https://crypto.com/' },
-            {id: "hotbit", src: hotbit, link: 'http://www.hotbit.io/' },
-            {id: "coinone", src: coinone, link: 'https://coinone.co.kr/' },
-            {id: "okex", src: okex, link: 'https://www.okx.com' },
-            {id: "fbg", src: fbg, link: 'https://twitter.com/fbgcapital' },
-            {id: "kernel", src: kernal, link: 'https://www.kernel-ventures.com/' },
-            {id: "ybb", src: ybb, link: 'http://www.ybb.io/' },
-            {id: "kyros", src: kyros, link: 'https://kyros.ventures/' },
-            {id: "au21", src: au21, link: 'https://au21.capital/' },
-            {id: "ld", src: ld, link: 'https://ldcap.com/' },
-            {id: "ceras", src: ceras, link: 'https://www.cerasventures.com/' },
-            {id: "7oclocklabs", src: sevenOclock, link: 'https://www.7oclockcapital.com/community.htm' },
-            {id: "catchervc", src: catchervc, link: 'https://catchervc.chaincatcher.com/' },
+            {id: "huobi", src: huobi, link: 'https://www.huobi.com/'},
+            {id: "crypto.com", src: crypto, link: 'https://crypto.com/'},
+            {id: "hotbit", src: hotbit, link: 'http://www.hotbit.io/'},
+            {id: "coinone", src: coinone, link: 'https://coinone.co.kr/'},
+            {id: "okex", src: okex, link: 'https://www.okx.com'},
+            {id: "fbg", src: fbg, link: 'https://twitter.com/fbgcapital'},
+            {id: "kernel", src: kernal, link: 'https://www.kernel-ventures.com/'},
+            {id: "ybb", src: ybb, link: 'http://www.ybb.io/'},
+            {id: "kyros", src: kyros, link: 'https://kyros.ventures/'},
+            {id: "au21", src: au21, link: 'https://au21.capital/'},
+            {id: "ld", src: ld, link: 'https://ldcap.com/'},
+            {id: "ceras", src: ceras, link: 'https://www.cerasventures.com/'},
+            {id: "7oclocklabs", src: sevenOclock, link: 'https://www.7oclockcapital.com/community.htm'},
+            {id: "catchervc", src: catchervc, link: 'https://catchervc.chaincatcher.com/'},
             // {id: "binance", src: binance, link: "https://www.binance.com/"},
-          ].map((item)=>(
+          ].map((item) => (
             <Link key={item.id} isExternal href={item.link} w={'160px'} h={['24px', '24px', '36px']}>
-              <img src={item.src} alt={item.id} style={{ height: isLargerThan480 ? '36px' : '18px' }}/>
+              <img src={item.src} alt={item.id} style={{height: isLargerThan480 ? '36px' : '18px'}}/>
             </Link>
           ))}
         </SimpleGrid>
       </VStack>
-      <VStack id={"join nest's global community"} w={"full"} px={['22px', '22px', '44px']} pt={['60px', '60px', '100px']} ref={communityRef}>
+      <VStack id={"join nest's global community"} w={"full"} px={['22px', '22px', '44px']}
+              pt={['60px', '60px', '100px']} ref={communityRef}>
         <Box w={'full'} mb={['60px', '60px', '100px']}>
           <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>Join NEST's Global</Heading>
           <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>Community</Heading>
         </Box>
         <SimpleGrid columns={[2, 2, 2, 2, 4]} spacing={['22px', '22px', '44px']} w={"full"}>
           {[
-            { label: 'Twitter', bg: '', link: 'https://twitter.com/nest_protocol' },
-            { label: 'Telegram', bg: '', link: 'https://t.me/nest_chat' },
-            { label: 'Medium', bg: '', link: '' },
-            { label: 'YouTube', bg: '', link: '' },
-          ].map((item)=>(
-            <VStack key={item.label} borderRadius={'12px'} w={['full', 'full', '308px']} h={['140px', '140px', '308px']} border={"1px solid #EEEEEE"}
+            {label: 'Twitter', bg: '', link: 'https://twitter.com/nest_protocol'},
+            {label: 'Telegram', bg: '', link: 'https://t.me/nest_chat'},
+            {label: 'Medium', bg: '', link: 'https://medium.com/nest-consensus-labs'},
+            {label: 'YouTube', bg: '', link: ''},
+          ].map((item) => (
+            <VStack key={item.label} borderRadius={'12px'} w={['full', 'full', '308px']} h={['140px', '140px', '308px']}
+                    border={"1px solid #EEEEEE"}
                     boxShadow={'0px 0px 45px 5px #E5E5E5'}>
-              <img src={item.bg} alt={item.label} style={{ width: 'full', height: '198px' }}/>
+              <img src={item.bg} alt={item.label} style={{width: 'full', height: '198px'}}/>
               <HStack p={['12px', '12px', '44px']} justifyContent={"space-between"} w={"full"} alignItems={"center"}>
                 <Text fontSize={['12px', '12px', '17px']} fontWeight={600}>{item.label}</Text>
                 <Link isExternal href={item.link}>
                   {
                     isLargerThan480 ? (
-                      <img src={Right1} alt={'right'} />
+                      <img src={Right1} alt={'right'}/>
                     ) : (
                       <img src={Right1} alt={'right'} height={'24px'} width={'24px'}/>
                     )
@@ -332,11 +350,28 @@ export const App = () => {
         </Box>
         <SimpleGrid columns={[1, 1, 2, 3]} spacing={'44px'}>
           {[
-            { label: 'Top Oracle miner', icon: award1, number: '$3,000', desc: '3 projects or individuals who open new oracle channels or participate in quote mining will be distributed $1,000 eac' },
-            { label: 'Excellent Oracle Use-case', icon: award2, number: '$4,000', desc: 'Awards will be distributed according to the proportion of NEST oracle calling counts (until the end of the competition), which could be validated on chain ' },
-            { label: 'Most innovative projects', icon: award3, number: '$3,000', desc: '3 most innovative projects will be distributed $1,000 each, whether in DeFi, NFT, GameFi, SocialFi, Metaverse,or Web3' },
-          ].map((item)=>(
-            <VStack key={item.label} w={isLargerThan480 ? '308px' : 'full'} p={['22px', '22px', '44px']} border={'1px solid #EEEEEE'} alignItems={isLargerThan480 ? "start": 'center'} spacing={['11px', '11px', '22px']}
+            {
+              label: 'Top Oracle miner',
+              icon: award1,
+              number: '$3,000',
+              desc: '3 projects or individuals who open new oracle channels or participate in quote mining will be distributed $1,000 eac'
+            },
+            {
+              label: 'Excellent Oracle Use-case',
+              icon: award2,
+              number: '$4,000',
+              desc: 'Awards will be distributed according to the proportion of NEST oracle calling counts (until the end of the competition), which could be validated on chain '
+            },
+            {
+              label: 'Most innovative projects',
+              icon: award3,
+              number: '$3,000',
+              desc: '3 most innovative projects will be distributed $1,000 each, whether in DeFi, NFT, GameFi, SocialFi, Metaverse,or Web3'
+            },
+          ].map((item) => (
+            <VStack key={item.label} w={isLargerThan480 ? '308px' : 'full'} p={['22px', '22px', '44px']}
+                    border={'1px solid #EEEEEE'} alignItems={isLargerThan480 ? "start" : 'center'}
+                    spacing={['11px', '11px', '22px']}
                     boxShadow={'0px 0px 45px 5px #E5E5E5'} borderRadius={'12px'}>
               <img src={item.icon} alt={item.label}/>
               <Text fontSize={'17px'} fontWeight={"bold"}>{item.number}</Text>
@@ -346,24 +381,51 @@ export const App = () => {
           ))}
         </SimpleGrid>
       </VStack>
-      <VStack id={"coming soon so stay tuned"} w={"full"} px={['22px', '22px', '44px']} pt={['60px', '60px', '100px']}>
-        <Box w={'full'} mb={'40px'}>
+      <VStack id={"coming soon so stay tuned"} w={"full"} pt={['60px', '60px', '100px']}>
+        <Box w={'full'} mb={'40px'} px={['22px', '22px', '44px']}>
           <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>Coming Soon So Stay</Heading>
           <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>Tuned</Heading>
         </Box>
+        <VStack alignItems={"start"} w={'full'} justifyContent={"center"}>
+          <img src={arms} style={{ background: '#FFD789', padding: '20px 0' }} alt={'arms'}/>
+          <VStack position={"absolute"} w={"full"} alignItems={"center"} textAlign={"start"} justifyContent={"center"}>
+            {[
+              'NEST GRANT', 'NEST ECO-FUND', 'NEST Research', 'NEST DAO', 'NEST ABC'
+            ].map((item) => (
+              <Text key={item} fontSize={['12px', '12px', "25px"]} fontWeight={600} color={'#878787'}>{item}</Text>
+            ))}
+          </VStack>
+        </VStack>
       </VStack>
-      <VStack id={"news"} w={"full"} px={['22px', '22px', '44px']} pt={['60px', '60px', '100px']} pb={'44px'} ref={newsRef}>
+      <VStack id={"news"} w={"full"} px={['22px', '22px', '44px']} pt={['60px', '60px', '100px']} pb={'44px'}
+              ref={newsRef}>
         <Box w={"full"} mb={['60px', '60px', '100px']}>
           <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>News</Heading>
         </Box>
         <SimpleGrid columns={[1, 1, 2, 3]} spacing={['22px', '22px', '44px']} pb={"27px"}>
           {[
-            { label: 'NEST Oracle Special Awards in KCC', bg: '', desc: 'NEST Foundation will pro vide awards, advisory sessions, and integration support to Kucoin Community Chain (KCC) developers', link: 'https://www.newsbtc.com/press-releases/nest-oracle-special-awards-in-kcc-unicorn-contest/' },
-            { label: 'NEST Oracle Special Awards in MAP', bg: '', desc: 'Chain (KCC) developers  vide awards, advisory sessions, and integration support to MAP developers', link: '' },
-            { label: 'What is NEST, a decentralized price oracle network?', bg: '', desc: 'NEST is one of the projects that is developing the techn ology to provide this Oracle service in a decentralized way', link: '' },
-          ].map((item)=>(
-            <VStack key={item.label} w={isLargerThan480 ? '308px' : 'full'} border={'1px solid #EEEEEE'} boxShadow={'0px 0px 45px 5px #E5E5E5'} borderRadius={'12px'}>
-              <img src={item.bg} alt={item.label} style={{ width: '308px', height: '106px' }}/>
+            {
+              label: 'NEST Oracle Special Awards in KCC',
+              bg: '',
+              desc: 'NEST Foundation will pro vide awards, advisory sessions, and integration support to Kucoin Community Chain (KCC) developers',
+              link: 'https://www.newsbtc.com/press-releases/nest-oracle-special-awards-in-kcc-unicorn-contest/'
+            },
+            {
+              label: 'NEST Oracle Special Awards in MAP',
+              bg: '',
+              desc: 'Chain (KCC) developers  vide awards, advisory sessions, and integration support to MAP developers',
+              link: ''
+            },
+            {
+              label: 'What is NEST, a decentralized price oracle network?',
+              bg: '',
+              desc: 'NEST is one of the projects that is developing the techn ology to provide this Oracle service in a decentralized way',
+              link: ''
+            },
+          ].map((item) => (
+            <VStack key={item.label} w={isLargerThan480 ? '308px' : 'full'} border={'1px solid #EEEEEE'}
+                    boxShadow={'0px 0px 45px 5px #E5E5E5'} borderRadius={'12px'}>
+              <img src={item.bg} alt={item.label} style={{width: '308px', height: '106px'}}/>
               <VStack w={"full"} px={['22px', '22px', '44px']} py={'22px'}>
                 <Text fontSize={'15px'} fontWeight={"bold"}>{item.label}</Text>
                 <Text fontSize={'15px'} fontWeight={600} color={'#878787'}>{item.desc}</Text>
@@ -371,24 +433,30 @@ export const App = () => {
             </VStack>
           ))}
         </SimpleGrid>
-        <Button variant={"outline"} minW={'132px'} isFullWidth={!isLargerThan480} height={ isLargerThan480 ? '36px': '48px' } borderRadius={ isLargerThan480 ? '12px' : '44px' }>
+        <Button variant={"outline"} minW={'132px'} isFullWidth={!isLargerThan480}
+                height={isLargerThan480 ? '36px' : '48px'} borderRadius={isLargerThan480 ? '12px' : '44px'}>
           More
         </Button>
       </VStack>
-      <HStack id={"footer"} w={"full"} px={['22px', '22px', '44px']} py={['36px', '36px', '90px']} bg={'#FFD789'} spacing={'20px'}>
-        { isLargerThan480 ? (
+      <HStack id={"footer"} w={"full"} px={['22px', '22px', '44px']} py={['36px', '36px', '90px']} bg={'#FFD789'}
+              spacing={'20px'}>
+        {isLargerThan480 ? (
           <>
             <VStack alignItems={"start"} w={'240px'} h={'240px'}>
               <Text fontWeight={"bold"}>App</Text>
               <br/>
-              <Text fontWeight={"semibold"}>Developers</Text>
-              <Text fontWeight={"semibold"}>DAPP Web</Text>
+              <Link isExternal href={"https://channel.nestprotocol.org/"}>
+                <Text fontWeight={"semibold"}>Developers</Text>
+              </Link>
+              <Link isExternal href={"https://repurchase.nestprotocol.org/"}>
+                <Text fontWeight={"semibold"}>DAPP Web</Text>
+              </Link>
             </VStack>
             <VStack alignItems={"start"} w={'240px'} h={'240px'}>
               <Text fontWeight={"bold"}>Community</Text>
               <br/>
               <VStack spacing={'20px'} alignItems={"start"}>
-                {socialLinks.map((item)=>(
+                {socialLinks.map((item) => (
                   <Link key={item.label} isExternal href={item.link}>
                     <HStack spacing={'20px'}>
                       <img src={item.icon} alt={item.label}/>
@@ -402,7 +470,7 @@ export const App = () => {
               <Text fontWeight={"bold"}>Technology</Text>
               <br/>
               <VStack spacing={'20px'} alignItems={"start"}>
-                {technologyLinks.map((item)=>(
+                {technologyLinks.map((item) => (
                   <Link key={item.label} isExternal href={item.link}>
                     <HStack spacing={'20px'}>
                       <img src={item.icon} alt={item.label}/>
@@ -431,7 +499,7 @@ export const App = () => {
                 <Text fontWeight={"bold"}>Community</Text>
                 <br/>
                 <VStack spacing={'20px'} alignItems={"start"}>
-                  {socialLinks.map((item)=>(
+                  {socialLinks.map((item) => (
                     <Link key={item.label} isExternal href={item.link}>
                       <HStack spacing={'20px'}>
                         <img src={item.icon} alt={item.label} height={'22px'} width={'22px'}/>
@@ -446,7 +514,7 @@ export const App = () => {
                 <Text fontWeight={"bold"}>Technology</Text>
                 <br/>
                 <VStack spacing={'20px'} alignItems={"start"}>
-                  {technologyLinks.map((item)=>(
+                  {technologyLinks.map((item) => (
                     <Link key={item.label} isExternal href={item.link}>
                       <HStack spacing={'20px'}>
                         <img src={item.icon} alt={item.label} height={'22px'} width={'22px'}/>
@@ -457,12 +525,12 @@ export const App = () => {
                 </VStack>
               </VStack>
             </HStack>
-            <VStack >
+            <VStack>
               <Spacer/>
               <Text fontWeight={"bold"} fontSize={'14px'}>©2022 NEST</Text>
             </VStack>
           </VStack>
-        ) }
+        )}
       </HStack>
     </VStack>
   )
