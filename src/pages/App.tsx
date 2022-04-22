@@ -42,6 +42,9 @@ import kyros from "../assets/svg/Kyros.svg"
 import award1 from "../assets/svg/award1_icon.svg"
 import award2 from "../assets/svg/award2_icon.svg"
 import award3 from "../assets/svg/award3_icon.svg"
+import Twitter from "../assets/svg/twitter_icon.svg"
+import Telegram from "../assets/svg/telegram_icon.svg"
+import Medium from "../assets/svg/medium_icon.svg"
 
 
 export const App = () => {
@@ -277,27 +280,57 @@ export const App = () => {
             </VStack>
           ))}
         </SimpleGrid>
-        <Button variant={"outline"}>
+        <Button variant={"outline"} w={'132px'}>
           More
         </Button>
       </VStack>
-      <HStack id={"footer"} w={"full"} p={'90px 45px'} bg={'#FFD789'} spacing={'20px'}>
-        <VStack alignItems={"start"} w={'240px'} h={'400px'}>
+      <HStack id={"footer"} w={"full"} p={'80px 45px'} bg={'#FFD789'} spacing={'20px'}>
+        <VStack alignItems={"start"} w={'240px'} h={'240px'}>
           <Text fontWeight={"bold"}>App</Text>
           <br/>
           <Text fontWeight={"semibold"}>Developers</Text>
           <Text fontWeight={"semibold"}>DAPP Web</Text>
         </VStack>
-        <VStack alignItems={"start"} w={'240px'} h={'400px'}>
+        <VStack alignItems={"start"} w={'240px'} h={'240px'}>
           <Text fontWeight={"bold"}>Community</Text>
           <br/>
+          <VStack spacing={'20px'} alignItems={"start"}>
+            {[
+              { label: 'Twitter', icon: Twitter, link: '' },
+              { label: 'Telegram', icon: Telegram, link: '' },
+              { label: 'Medium', icon: Medium, link: '' },
+            ].map((item)=>(
+              <Link key={item.label} isExternal href={item.link}>
+                <HStack spacing={'20px'}>
+                  <img src={item.icon} alt={item.label}/>
+                  <Text fontSize={'15px'} fontWeight={600}>{item.label}</Text>
+                </HStack>
+              </Link>
+            ))}
+          </VStack>
         </VStack>
-        <VStack alignItems={"start"} w={'240px'} h={'400px'}>
+        <VStack alignItems={"start"} w={'240px'} h={'240px'}>
           <Text fontWeight={"bold"}>Technology</Text>
           <br/>
+          <VStack spacing={'20px'} alignItems={"start"}>
+            {[
+              { label: 'Github', icon: Github, link: '' },
+              { label: 'Whitepaper', icon: Whitepaper, link: '' },
+              { label: 'Security Report', icon: SecurityReport, link: '' },
+            ].map((item)=>(
+              <Link key={item.label} isExternal href={item.link}>
+                <HStack spacing={'20px'}>
+                  <img src={item.icon} alt={item.label}/>
+                  <Text fontSize={'15px'} fontWeight={600}>{item.label}</Text>
+                </HStack>
+              </Link>
+            ))}
+          </VStack>
         </VStack>
         <Spacer/>
-        <VStack>
+        <VStack h={'240px'}>
+          <Spacer/>
+          <Text fontWeight={"bold"} fontSize={'14px'}>©2022 NEST</Text>
         </VStack>
       </HStack>
     </VStack>
