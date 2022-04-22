@@ -47,11 +47,31 @@ import Telegram from "../assets/svg/telegram_icon.svg"
 import Medium from "../assets/svg/medium_icon.svg"
 import { useMediaQuery } from '@chakra-ui/react'
 import {HamburgerIcon} from "@chakra-ui/icons";
+import {useRef} from "react";
 
 
 export const App = () => {
   const [isLargerThan1024] = useMediaQuery('(min-width: 1024px)')
   const [isLargerThan480] = useMediaQuery('(min-width: 480px)')
+  const aboutRef = useRef(null)
+  const dataRef = useRef(null)
+  const ecologyRef = useRef(null)
+  const communityRef = useRef(null)
+  const newsRef = useRef(null)
+
+  const next = (ref: any) => {
+    if (ref) {
+      window.scrollTo(0, ref.current.offsetTop || 0)
+    }
+  }
+
+  const menu = [
+    {label: "About NEST", ref: aboutRef},
+    {label: "Data", ref: dataRef},
+    {label: "Ecology", ref: ecologyRef},
+    {label: "Community", ref: communityRef},
+    {label: "News", ref: newsRef},
+  ]
 
   return (
     <VStack w={"full"}>
@@ -60,14 +80,8 @@ export const App = () => {
           <img src={nest} alt={'nest'}/>
           { isLargerThan1024 ? (
             <HStack>
-              {[
-                {label: "About NEST"},
-                {label: "Data"},
-                {label: "Ecology"},
-                {label: "Community"},
-                {label: "News"},
-              ].map((item) => (
-                <Button key={item.label} variant={"ghost"}>{item.label}</Button>
+              {menu.map((item) => (
+                <Button key={item.label} variant={"ghost"} onClick={()=> next(item.ref)}>{item.label}</Button>
               ))}
               <Button>Developers</Button>
             </HStack>
@@ -77,14 +91,8 @@ export const App = () => {
                 <HamburgerIcon />
               </MenuButton>
               <MenuList>
-                {[
-                  {label: "About NEST"},
-                  {label: "Data"},
-                  {label: "Ecology"},
-                  {label: "Community"},
-                  {label: "News"},
-                ].map((item)=>(
-                  <MenuItem fontWeight={'bold'}>{item.label}</MenuItem>
+                {menu.map((item)=>(
+                  <MenuItem fontWeight={'bold'} onClick={()=> next(item.ref)}>{item.label}</MenuItem>
                 ))}
               </MenuList>
             </Menu>
@@ -115,7 +123,7 @@ export const App = () => {
           </SimpleGrid>
         </VStack>
       </VStack>
-      <VStack id={"what is a nest nest oracle"} w={"full"} px={['22px', '22px', '44px']} pt={['60px', '60px', '100px']}>
+      <VStack id={"what is a nest nest oracle"} w={"full"} px={['22px', '22px', '44px']} pt={['60px', '60px', '100px']} ref={aboutRef}>
         <Box mb={['60px', '60px', '100px']} w={"full"}>
           <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>What Is A NEST Oracle</Heading>
         </Box>
@@ -182,7 +190,7 @@ export const App = () => {
           Developers
         </Button>
       </VStack>
-      <VStack id={"rapidly growing data"} w={"full"} px={['22px', '22px', '44px']} pt={['60px', '60px', '100px']}>
+      <VStack id={"rapidly growing data"} w={"full"} px={['22px', '22px', '44px']} pt={['60px', '60px', '100px']} ref={dataRef}>
         <Box w={"full"} mb={['60px', '60px', '100px']}>
           <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>Rapidly Growing Data</Heading>
         </Box>
@@ -202,7 +210,7 @@ export const App = () => {
           ))}
         </SimpleGrid>
       </VStack>
-      <VStack id={"huge ecosystem"} w={"full"} px={['22px', '22px', '44px']} pt={['60px', '60px', '100px']}>
+      <VStack id={"huge ecosystem"} w={"full"} px={['22px', '22px', '44px']} pt={['60px', '60px', '100px']} ref={ecologyRef}>
         <Box w={"full"} mb={['60px', '60px', '100px']}>
           <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>Huge Ecosystem</Heading>
         </Box>
@@ -266,7 +274,7 @@ export const App = () => {
           ))}
         </SimpleGrid>
       </VStack>
-      <VStack id={"join nest's global community"} w={"full"} px={['22px', '22px', '44px']} pt={['60px', '60px', '100px']}>
+      <VStack id={"join nest's global community"} w={"full"} px={['22px', '22px', '44px']} pt={['60px', '60px', '100px']} ref={communityRef}>
         <Box w={'full'} mb={['60px', '60px', '100px']}>
           <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>Join NEST's Global</Heading>
           <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>Community</Heading>
@@ -322,7 +330,7 @@ export const App = () => {
           <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>Tuned</Heading>
         </Box>
       </VStack>
-      <VStack id={"news"} w={"full"} px={['22px', '22px', '44px']} pt={['60px', '60px', '100px']} pb={'44px'}>
+      <VStack id={"news"} w={"full"} px={['22px', '22px', '44px']} pt={['60px', '60px', '100px']} pb={'44px'} ref={newsRef}>
         <Box w={"full"} mb={['60px', '60px', '100px']}>
           <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>News</Heading>
         </Box>
