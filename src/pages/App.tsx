@@ -109,7 +109,7 @@ export const App = () => {
   return (
     <VStack w={"full"} spacing={0}>
       <Box position={"absolute"} zIndex={0}>
-        <img src={header} />
+        <img src={header} alt={''}/>
       </Box>
       <VStack id={"menu+index"} bg={'#FBEECC'} w={"full"} px={['22px', '22px', '44px']} py={'27px'}>
         <HStack id={"menu"} justifyContent={"space-between"} w={"full"}>
@@ -427,6 +427,7 @@ export const App = () => {
           </VStack>
         </VStack>
       </VStack>
+
       <VStack id={"news"} w={"full"} px={['22px', '22px', '44px']} pt={['60px', '60px', '100px']} pb={'44px'}
               ref={newsRef}>
         <Box w={"full"} mb={['60px', '60px', '100px']}>
