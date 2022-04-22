@@ -171,7 +171,7 @@ export const App = () => {
         <Box mb={['60px', '60px', '100px']} w={"full"}>
           <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>What Is A NEST Oracle</Heading>
         </Box>
-        <AspectRatio w={['full', 'full', '720px']} ratio={16 / 9} bg={"red"}>
+        <AspectRatio w={['full', 'full', '720px']} ratio={16 / 9}>
           <iframe
             title='naruto'
             src='https://www.youtube.com/embed/-c7A2CjoJ8E'
