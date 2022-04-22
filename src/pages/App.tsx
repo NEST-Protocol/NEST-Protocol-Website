@@ -244,20 +244,20 @@ export const App = () => {
           {[
             {id: "nest_labs", src: nest_labs, link: "#"},
             {id: "coinbase", src: coinbase, link: "https://www.coinbase.com"},
-            {id: "huobi", src: huobi, link: '' },
-            {id: "crypto.com", src: crypto, link: '' },
-            {id: "hotbit", src: hotbit, link: '' },
-            {id: "coinone", src: coinone, link: '' },
-            {id: "okex", src: okex, link: '' },
-            {id: "fbg", src: fbg, link: '' },
-            {id: "kernel", src: kernal, link: '' },
-            {id: "ybb", src: ybb, link: '' },
-            {id: "kyros", src: kyros, link: '' },
-            {id: "au21", src: au21, link: '' },
-            {id: "ld", src: ld, link: '' },
-            {id: "ceras", src: ceras, link: '' },
-            {id: "7oclocklabs", src: sevenOclock, link: '' },
-            {id: "catchervc", src: catchervc, link: '' },
+            {id: "huobi", src: huobi, link: 'https://www.huobi.com/' },
+            {id: "crypto.com", src: crypto, link: 'https://crypto.com/' },
+            {id: "hotbit", src: hotbit, link: 'http://www.hotbit.io/' },
+            {id: "coinone", src: coinone, link: 'https://coinone.co.kr/' },
+            {id: "okex", src: okex, link: 'https://www.okx.com' },
+            {id: "fbg", src: fbg, link: 'https://twitter.com/fbgcapital' },
+            {id: "kernel", src: kernal, link: 'https://www.kernel-ventures.com/' },
+            {id: "ybb", src: ybb, link: 'http://www.ybb.io/' },
+            {id: "kyros", src: kyros, link: 'https://kyros.ventures/' },
+            {id: "au21", src: au21, link: 'https://au21.capital/' },
+            {id: "ld", src: ld, link: 'https://ldcap.com/' },
+            {id: "ceras", src: ceras, link: 'https://www.cerasventures.com/' },
+            {id: "7oclocklabs", src: sevenOclock, link: 'https://www.7oclockcapital.com/community.htm' },
+            {id: "catchervc", src: catchervc, link: 'https://catchervc.chaincatcher.com/' },
             // {id: "binance", src: binance, link: "https://www.binance.com/"},
           ].map((item)=>(
             <Link key={item.id} isExternal href={item.link} w={'160px'} h={['24px', '24px', '36px']}>
@@ -273,8 +273,8 @@ export const App = () => {
         </Box>
         <SimpleGrid columns={[2, 2, 2, 2, 4]} spacing={['22px', '22px', '44px']} w={"full"}>
           {[
-            { label: 'Twitter', bg: '', link: '' },
-            { label: 'Telegram', bg: '', link: '' },
+            { label: 'Twitter', bg: '', link: 'https://twitter.com/nest_protocol' },
+            { label: 'Telegram', bg: '', link: 'https://t.me/nest_chat' },
             { label: 'Medium', bg: '', link: '' },
             { label: 'YouTube', bg: '', link: '' },
           ].map((item)=>(
@@ -359,8 +359,8 @@ export const App = () => {
               <br/>
               <VStack spacing={'20px'} alignItems={"start"}>
                 {[
-                  { label: 'Twitter', icon: Twitter, link: '' },
-                  { label: 'Telegram', icon: Telegram, link: '' },
+                  { label: 'Twitter', icon: Twitter, link: 'https://twitter.com/nest_protocol' },
+                  { label: 'Telegram', icon: Telegram, link: 'https://t.me/nest_chat' },
                   { label: 'Medium', icon: Medium, link: '' },
                 ].map((item)=>(
                   <Link key={item.label} isExternal href={item.link}>
@@ -410,8 +410,8 @@ export const App = () => {
                 <br/>
                 <VStack spacing={'20px'} alignItems={"start"}>
                   {[
-                    { label: 'Twitter', icon: Twitter, link: '' },
-                    { label: 'Telegram', icon: Telegram, link: '' },
+                    { label: 'Twitter', icon: Twitter, link: 'https://twitter.com/nest_protocol' },
+                    { label: 'Telegram', icon: Telegram, link: 'https://t.me/nest_chat' },
                     { label: 'Medium', icon: Medium, link: '' },
                   ].map((item)=>(
                     <Link key={item.label} isExternal href={item.link}>
@@ -429,8 +429,8 @@ export const App = () => {
                 <br/>
                 <VStack spacing={'20px'} alignItems={"start"}>
                   {[
-                    { label: 'Github', icon: Github, link: '' },
-                    { label: 'Whitepaper', icon: Whitepaper, link: '' },
+                    { label: 'Github', icon: Github, link: 'https://github.com/NEST-Protocol' },
+                    { label: 'Whitepaper', icon: Whitepaper, link: 'https://nestprotocol.org/doc/ennestwhitepaper.pdf' },
                     { label: 'Security Report', icon: SecurityReport, link: '' },
                   ].map((item)=>(
                     <Link key={item.label} isExternal href={item.link}>
