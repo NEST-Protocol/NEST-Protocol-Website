@@ -345,7 +345,7 @@ export const App = () => {
           More
         </Button>
       </VStack>
-      <HStack id={"footer"} w={"full"} px={['22px', '22px', '44px']} p={'36px'} bg={'#FFD789'} spacing={'20px'}>
+      <HStack id={"footer"} w={"full"} px={['22px', '22px', '44px']} py={['36px', '36px', '90px']} bg={'#FFD789'} spacing={'20px'}>
         { isLargerThan480 ? (
           <>
             <VStack alignItems={"start"} w={'240px'} h={'240px'}>
