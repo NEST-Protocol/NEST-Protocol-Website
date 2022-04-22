@@ -49,7 +49,7 @@ export const App = () => {
     <VStack w={"full"}>
       <VStack id={"menu+index"} bg={'#FFD789'} w={"full"} p={'27px 45px'}>
         <HStack id={"menu"} justifyContent={"space-between"} w={"full"}>
-          <img src={nest}/>
+          <img src={nest} alt={'nest'}/>
           <HStack>
             {[
               {label: "About NEST"},
@@ -105,7 +105,7 @@ export const App = () => {
           <Heading fontSize={"5xl"} w={"full"}>Impeccable technical</Heading>
           <Heading fontSize={"5xl"} w={"full"}>Architecture</Heading>
         </Box>
-        <HStack justifyContent={"space-between"} w={"full"} pb={"44px"}>
+        <SimpleGrid columns={[1, 2, 3, 4, 5]} spacing={'44px'} pb={"44px"}>
           {[
             {id: "SENSITIVITY", logo: SENSITIVITY, desc: "Respond to market price quickly"},
             {id: "ACCURACY", logo: ACCURACY, desc: "Reflect the real market price"},
@@ -121,8 +121,8 @@ export const App = () => {
               <Text color={"#878787"} fontSize={"15px"} fontWeight={600}>{item.desc}</Text>
             </VStack>
           ))}
-        </HStack>
-        <HStack spacing={"90px"} pb={"27px"}>
+        </SimpleGrid>
+        <SimpleGrid columns={[1, 1, 2, 3]} spacing={"90px"} pb={"27px"}>
           {[
             {id: "Github", logo: Github, link: ""},
             {id: "Whitepaper", logo: Whitepaper, link: ""},
@@ -136,7 +136,7 @@ export const App = () => {
               </HStack>
             </Link>
           ))}
-        </HStack>
+        </SimpleGrid>
         <Button variant={"outline"}>
           Developers
         </Button>
@@ -145,7 +145,7 @@ export const App = () => {
         <Box w={"full"} mb={"100px"}>
           <Heading fontSize={"5xl"} w={"full"}>Rapidly Growing Data</Heading>
         </Box>
-        <SimpleGrid columns={3} spacing={"74px"}>
+        <SimpleGrid columns={[2, 2, 3]} spacing={"74px"}>
           {[
             {label: '60', desc: "Number of oracle"},
             {label: '539,929', desc: "Cumulative quotes"},
@@ -165,7 +165,7 @@ export const App = () => {
         <Box w={"full"} mb={'100px'}>
           <Heading fontSize={"5xl"} w={"full"}>Huge Ecosystem</Heading>
         </Box>
-        <HStack spacing={'44px'} pb={"44px"}>
+        <SimpleGrid columns={[1, 2, 3]} spacing={'44px'} pb={"44px"}>
           {[
             { label: 'DeFi', logo: fort2, desc: 'Perpetual future contracts and European options', link: 'https://fortprotocol.com' },
             { label: 'Dex', logo: cofix2, desc: '$NEST liquidity available', link: 'https://cofix.tech' },
@@ -181,8 +181,8 @@ export const App = () => {
               </Link>
             </VStack>
           ))}
-        </HStack>
-        <SimpleGrid columns={4} spacingX={"60px"} spacingY={"40px"}>
+        </SimpleGrid>
+        <SimpleGrid columns={[1, 1, 2, 2, 4]} spacingX={"60px"} spacingY={"40px"}>
           {[
             {id: "nest_labs", src: nest_labs, link: "#"},
             {id: "coinbase", src: coinbase, link: "https://www.coinbase.com"},
@@ -213,7 +213,7 @@ export const App = () => {
           <Heading fontSize={"5xl"} w={"full"}>Join NEST's Global</Heading>
           <Heading fontSize={"5xl"} w={"full"}>Community</Heading>
         </Box>
-        <SimpleGrid columns={[2, 4]} spacing={'44px'}>
+        <SimpleGrid columns={[1, 1, 2, 2, 4]} spacing={'44px'}>
           {[
             { label: 'Twitter', bg: '', link: '' },
             { label: 'Telegram', bg: '', link: '' },
@@ -225,7 +225,7 @@ export const App = () => {
               <img src={item.bg} alt={item.label} style={{ width: '308px', height: '198px' }}/>
               <HStack p={'44px'} justifyContent={"space-between"} w={"full"} alignItems={"center"}>
                 <Text fontSize={'17px'} fontWeight={600}>{item.label}</Text>
-                <img src={Right1}/>
+                <img src={Right1} alt={'right'}/>
               </HStack>
             </VStack>
           ))}
