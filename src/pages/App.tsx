@@ -96,7 +96,7 @@ export const App = () => {
             <Heading fontSize={["4xl", "4xl", "5xl"]}>No Nodes No Auditing Free Quotation</Heading>
             <Heading fontSize={["4xl", "4xl", "5xl"]}>On-Chain Verification</Heading>
           </Box>
-          <Button isFullWidth={!isLargerThan480}>
+          <Button isFullWidth={!isLargerThan480} height={ isLargerThan480 ? '36px': '48px' } borderRadius={ isLargerThan480 ? '12px' : '44px' }>
             DAPP Web
           </Button>
           <SimpleGrid columns={[3, 3, 3, 6]} spacing={"44px"}>
@@ -132,7 +132,7 @@ export const App = () => {
           <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>Impeccable technical</Heading>
           <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>Architecture</Heading>
         </Box>
-        <SimpleGrid columns={[1, 2, 3, 4, 5]} spacing={'44px'} pb={"44px"}>
+        <SimpleGrid columns={[1, 2, 3, 4, 5]} spacing={['22px', '22px', '44px']} pb={"44px"}>
           {[
             {id: "SENSITIVITY", logo: SENSITIVITY, desc: "Respond to market price quickly"},
             {id: "ACCURACY", logo: ACCURACY, desc: "Reflect the real market price"},
@@ -169,15 +169,16 @@ export const App = () => {
             {id: "Security Report", logo: SecurityReport, link: ""},
           ].map((item) => (
             <Link isExternal href={item.link}>
-              <HStack spacing={["11px", "11px", "22px"]}>
+              <HStack spacing={["11px", "11px", "22px"]} w={'220px'}>
                 <img src={item.logo} alt={item.id}/>
                 <Text fontSize={"15px"} fontWeight={"semibold"}>{item.id}</Text>
+                <Spacer/>
                 <img src={Right2} alt={"right"}/>
               </HStack>
             </Link>
           ))}
         </SimpleGrid>
-        <Button variant={"outline"}>
+        <Button variant={"outline"} isFullWidth={!isLargerThan480} height={ isLargerThan480 ? '36px': '48px' } borderRadius={ isLargerThan480 ? '12px' : '44px' }>
           Developers
         </Button>
       </VStack>
@@ -185,7 +186,7 @@ export const App = () => {
         <Box w={"full"} mb={['60px', '60px', '100px']}>
           <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>Rapidly Growing Data</Heading>
         </Box>
-        <SimpleGrid columns={[1, 1, 3]} spacing={"74px"}>
+        <SimpleGrid columns={[2, 2, 3]} spacing={['20px', '30px', '60px']}>
           {[
             {label: '60', desc: "Number of oracle"},
             {label: '539,929', desc: "Cumulative quotes"},
@@ -194,9 +195,9 @@ export const App = () => {
             {label: '1.35M', desc: "Current income (USDT)"},
             {label: '109.40M', desc: "Cumulative income (USDT)"},
           ].map((item) => (
-            <VStack key={item.desc} alignItems={"start"} w={"280px"}>
-              <Text fontWeight={"bold"} fontSize={"42px"}>{item.label}</Text>
-              <Text fontWeight={600} fontSize={"15px"} color={"#878787"}>{item.desc}</Text>
+            <VStack key={item.desc} alignItems={"start"}>
+              <Text fontWeight={"bold"} fontSize={['2xl', '3xl', '4xl']}>{item.label}</Text>
+              <Text fontWeight={600} fontSize={['12px', '12px', '15px']} color={"#878787"}>{item.desc}</Text>
             </VStack>
           ))}
         </SimpleGrid>
@@ -270,14 +271,14 @@ export const App = () => {
           <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>Join NEST's Global</Heading>
           <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>Community</Heading>
         </Box>
-        <SimpleGrid columns={[2, 2, 2, 2, 4]} spacing={['22px', '22px', '44px']}>
+        <SimpleGrid columns={[2, 2, 2, 2, 4]} spacing={['22px', '22px', '44px']} w={"full"}>
           {[
             { label: 'Twitter', bg: '', link: '' },
             { label: 'Telegram', bg: '', link: '' },
             { label: 'Medium', bg: '', link: '' },
             { label: 'YouTube', bg: '', link: '' },
           ].map((item)=>(
-            <VStack key={item.label} borderRadius={'12px'} w={['140px', '140px', '308px']} h={['140px', '140px', '308px']} border={"1px solid #EEEEEE"}
+            <VStack key={item.label} borderRadius={'12px'} w={['full', 'full', '308px']} h={['140px', '140px', '308px']} border={"1px solid #EEEEEE"}
                     boxShadow={'0px 0px 45px 5px #E5E5E5'}>
               <img src={item.bg} alt={item.label} style={{ width: 'full', height: '198px' }}/>
               <HStack p={['12px', '12px', '44px']} justifyContent={"space-between"} w={"full"} alignItems={"center"}>
@@ -305,7 +306,7 @@ export const App = () => {
             { label: 'Excellent Oracle Use-case', icon: award2, number: '$4,000', desc: 'Awards will be distributed according to the proportion of NEST oracle calling counts (until the end of the competition), which could be validated on chain ' },
             { label: 'Most innovative projects', icon: award3, number: '$3,000', desc: '3 most innovative projects will be distributed $1,000 each, whether in DeFi, NFT, GameFi, SocialFi, Metaverse,or Web3' },
           ].map((item)=>(
-            <VStack key={item.label} w={'308px'} p={['22px', '22px', '44px']} border={'1px solid #EEEEEE'} alignItems={isLargerThan480 ? "start": 'center'} spacing={['11px', '11px', '22px']}
+            <VStack key={item.label} w={isLargerThan480 ? '308px' : 'full'} p={['22px', '22px', '44px']} border={'1px solid #EEEEEE'} alignItems={isLargerThan480 ? "start": 'center'} spacing={['11px', '11px', '22px']}
                     boxShadow={'0px 0px 45px 5px #E5E5E5'} borderRadius={'12px'}>
               <img src={item.icon} alt={item.label}/>
               <Text fontSize={'17px'} fontWeight={"bold"}>{item.number}</Text>
@@ -315,32 +316,32 @@ export const App = () => {
           ))}
         </SimpleGrid>
       </VStack>
-      <VStack id={"coming soon so stay tuned"} w={"full"} p={'100px 45px'}>
+      <VStack id={"coming soon so stay tuned"} w={"full"} px={['22px', '22px', '44px']} pt={['60px', '60px', '100px']}>
         <Box w={'full'} mb={'40px'}>
           <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>Coming Soon So Stay</Heading>
           <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>Tuned</Heading>
         </Box>
       </VStack>
-      <VStack id={"news"} w={"full"} px={['22px', '22px', '44px']} pt={['60px', '60px', '100px']}>
+      <VStack id={"news"} w={"full"} px={['22px', '22px', '44px']} pt={['60px', '60px', '100px']} pb={'44px'}>
         <Box w={"full"} mb={['60px', '60px', '100px']}>
           <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>News</Heading>
         </Box>
-        <SimpleGrid columns={[1, 1, 2, 3]} spacing={'44px'} pb={"27px"}>
+        <SimpleGrid columns={[1, 1, 2, 3]} spacing={['22px', '22px', '44px']} pb={"27px"}>
           {[
             { label: 'NEST Oracle Special Awards in KCC', bg: '', desc: 'NEST Foundation will pro vide awards, advisory sessions, and integration support to Kucoin Community Chain (KCC) developers' },
             { label: 'NEST Oracle Special Awards in MAP', bg: '', desc: 'Chain (KCC) developers  vide awards, advisory sessions, and integration support to MAP developers' },
             { label: 'What is NEST, a decentralized price oracle network?', bg: '', desc: 'NEST is one of the projects that is developing the techn ology to provide this Oracle service in a decentralized way' },
           ].map((item)=>(
-            <VStack key={item.label} w={'308px'} border={'1px solid #EEEEEE'} boxShadow={'0px 0px 45px 5px #E5E5E5'} borderRadius={'12px'}>
+            <VStack key={item.label} w={isLargerThan480 ? '308px' : 'full'} border={'1px solid #EEEEEE'} boxShadow={'0px 0px 45px 5px #E5E5E5'} borderRadius={'12px'}>
               <img src={item.bg} alt={item.label} style={{ width: '308px', height: '106px' }}/>
-              <VStack w={"full"} p={'26px 44px'}>
+              <VStack w={"full"} px={['22px', '22px', '44px']} py={'22px'}>
                 <Text fontSize={'15px'} fontWeight={"bold"}>{item.label}</Text>
                 <Text fontSize={'15px'} fontWeight={600} color={'#878787'}>{item.desc}</Text>
               </VStack>
             </VStack>
           ))}
         </SimpleGrid>
-        <Button variant={"outline"} w={'132px'}>
+        <Button variant={"outline"} minW={'132px'} isFullWidth={!isLargerThan480} height={ isLargerThan480 ? '36px': '48px' } borderRadius={ isLargerThan480 ? '12px' : '44px' }>
           More
         </Button>
       </VStack>
