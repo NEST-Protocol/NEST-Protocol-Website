@@ -92,7 +92,7 @@ export const App = () => {
         <Box mb={"100px"} w={"full"}>
           <Heading fontSize={"5xl"} w={"full"}>What Is A NEST Oracle</Heading>
         </Box>
-        <AspectRatio maxW='720px' w={"720px"} ratio={16 / 9} bg={"red"}>
+        <AspectRatio w={['360px','360px', '720px']} ratio={16 / 9} bg={"red"}>
           <iframe
             title='naruto'
             src='https://www.youtube.com/embed/QhBnZ6NPOY0'
@@ -236,7 +236,7 @@ export const App = () => {
           <Heading fontSize={"5xl"} w={"full"}>Join the NEST Unicorn</Heading>
           <Heading fontSize={"5xl"} w={"full"}>Rewards Program</Heading>
         </Box>
-        <SimpleGrid columns={3} spacing={'44px'}>
+        <SimpleGrid columns={[1, 1, 2, 3]} spacing={'44px'}>
           {[
             { label: 'Top Oracle miner', icon: award1, number: '$3,000', desc: '3 projects or individuals who open new oracle channels or participate in quote mining will be distributed $1,000 eac' },
             { label: 'Excellent Oracle Use-case', icon: award2, number: '$4,000', desc: 'Awards will be distributed according to the proportion of NEST oracle calling counts (until the end of the competition), which could be validated on chain ' },
@@ -253,11 +253,33 @@ export const App = () => {
         </SimpleGrid>
       </VStack>
       <VStack id={"coming soon so stay tuned"} w={"full"} p={'100px 45px'}>
-        <Heading fontSize={"5xl"} w={"full"}>Coming Soon So Stay</Heading>
-        <Heading fontSize={"5xl"} w={"full"}>Tuned</Heading>
+        <Box w={'full'} mb={'40px'}>
+          <Heading fontSize={"5xl"} w={"full"}>Coming Soon So Stay</Heading>
+          <Heading fontSize={"5xl"} w={"full"}>Tuned</Heading>
+        </Box>
       </VStack>
       <VStack id={"news"} w={"full"} p={'80px 45px'}>
-        <Heading fontSize={"5xl"} w={"full"}>News</Heading>
+        <Box w={"full"} mb={'100px'}>
+          <Heading fontSize={"5xl"} w={"full"}>News</Heading>
+        </Box>
+        <SimpleGrid columns={[1, 1, 2, 3]} spacing={'44px'} pb={"27px"}>
+          {[
+            { label: 'NEST Oracle Special Awards in KCC', bg: '', desc: 'NEST Foundation will pro vide awards, advisory sessions, and integration support to Kucoin Community Chain (KCC) developers' },
+            { label: 'NEST Oracle Special Awards in MAP', bg: '', desc: 'Chain (KCC) developers  vide awards, advisory sessions, and integration support to MAP developers' },
+            { label: 'What is NEST, a decentralized price oracle network?', bg: '', desc: 'NEST is one of the projects that is developing the techn ology to provide this Oracle service in a decentralized way' },
+          ].map((item)=>(
+            <VStack key={item.label} w={'308px'} border={'1px solid #EEEEEE'} boxShadow={'0px 0px 45px 5px #E5E5E5'} borderRadius={'12px'}>
+              <img src={item.bg} alt={item.label} style={{ width: '308px', height: '106px' }}/>
+              <VStack w={"full"} p={'26px 44px'}>
+                <Text fontSize={'15px'} fontWeight={"bold"}>{item.label}</Text>
+                <Text fontSize={'15px'} fontWeight={600} color={'#878787'}>{item.desc}</Text>
+              </VStack>
+            </VStack>
+          ))}
+        </SimpleGrid>
+        <Button variant={"outline"}>
+          More
+        </Button>
       </VStack>
       <HStack id={"footer"} w={"full"} p={'90px 45px'} bg={'#FFD789'} spacing={'20px'}>
         <VStack alignItems={"start"} w={'240px'} h={'400px'}>
