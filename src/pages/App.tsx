@@ -118,7 +118,11 @@ export const App = () => {
             <Heading fontSize={["4xl", "4xl", "5xl"]}>No Nodes No Auditing Free Quotation</Heading>
             <Heading fontSize={["4xl", "4xl", "5xl"]}>On-Chain Verification</Heading>
           </Box>
-          <Button isFullWidth={!isLargerThan480} height={ isLargerThan480 ? '36px': '48px' } borderRadius={ isLargerThan480 ? '12px' : '44px' }>
+          <Button isFullWidth={!isLargerThan480} height={ isLargerThan480 ? '36px': '48px' }
+                  onClick={()=>{
+                    window.open("https://repurchase.nestprotocol.org/")
+                  }}
+                  borderRadius={ isLargerThan480 ? '12px' : '44px' }>
             DAPP Web
           </Button>
           <SimpleGrid columns={[3, 3, 3, 6]} spacing={"44px"}>
@@ -144,7 +148,7 @@ export const App = () => {
         <AspectRatio w={['full','full', '720px']} ratio={16 / 9} bg={"red"}>
           <iframe
             title='naruto'
-            src='https://www.youtube.com/embed/QhBnZ6NPOY0'
+            src='https://www.youtube.com/embed/-c7A2CjoJ8E'
             allowFullScreen
           />
         </AspectRatio>
@@ -354,9 +358,9 @@ export const App = () => {
         </Box>
         <SimpleGrid columns={[1, 1, 2, 3]} spacing={['22px', '22px', '44px']} pb={"27px"}>
           {[
-            { label: 'NEST Oracle Special Awards in KCC', bg: '', desc: 'NEST Foundation will pro vide awards, advisory sessions, and integration support to Kucoin Community Chain (KCC) developers' },
-            { label: 'NEST Oracle Special Awards in MAP', bg: '', desc: 'Chain (KCC) developers  vide awards, advisory sessions, and integration support to MAP developers' },
-            { label: 'What is NEST, a decentralized price oracle network?', bg: '', desc: 'NEST is one of the projects that is developing the techn ology to provide this Oracle service in a decentralized way' },
+            { label: 'NEST Oracle Special Awards in KCC', bg: '', desc: 'NEST Foundation will pro vide awards, advisory sessions, and integration support to Kucoin Community Chain (KCC) developers', link: 'https://www.newsbtc.com/press-releases/nest-oracle-special-awards-in-kcc-unicorn-contest/' },
+            { label: 'NEST Oracle Special Awards in MAP', bg: '', desc: 'Chain (KCC) developers  vide awards, advisory sessions, and integration support to MAP developers', link: '' },
+            { label: 'What is NEST, a decentralized price oracle network?', bg: '', desc: 'NEST is one of the projects that is developing the techn ology to provide this Oracle service in a decentralized way', link: '' },
           ].map((item)=>(
             <VStack key={item.label} w={isLargerThan480 ? '308px' : 'full'} border={'1px solid #EEEEEE'} boxShadow={'0px 0px 45px 5px #E5E5E5'} borderRadius={'12px'}>
               <img src={item.bg} alt={item.label} style={{ width: '308px', height: '106px' }}/>
