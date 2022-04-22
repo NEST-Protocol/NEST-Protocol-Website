@@ -6,13 +6,14 @@ import {styles} from './styles'
 
 // Component style overrides
 import {Button} from './components/button'
+import {Heading} from "./components/heading"
 
 const overrides = {
   styles,
   // Other foundational style overrides go here
   components: {
     Button,
-    // Other components go here
+    Heading,
   },
 }
 

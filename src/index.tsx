@@ -5,6 +5,7 @@ import ReactDOM from "react-dom"
 import { App } from "./pages/App"
 import reportWebVitals from "./reportWebVitals"
 import * as serviceWorker from "./serviceWorker"
+import 'focus-visible/dist/focus-visible'
 
 ReactDOM.render(
   <React.StrictMode>

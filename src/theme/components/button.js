@@ -1,22 +1,39 @@
 export const Button = {
   baseStyle: {
     fontWeight: 'bold',
+    fontSize: 'md',
     textTransform: 'uppercase',
     borderRadius: 'base',
   },
   variants: {
+    ghost: {
+      height: '34px',
+      _hover: {
+        bg: 'none',
+      },
+      _active: {
+        bg: 'none',
+      }
+    },
     outline: {
       border: '2px solid',
-      borderColor: 'purple.500',
-      color: 'purple.500',
+      height: '34px'
     },
     solid: {
-      bg: 'purple.500',
-      color: 'white',
+      bg: '#EAAA00',
+      color: 'black',
+      borderRadius: '17px',
+      height: '34px',
+      _hover: {
+        bg: '#EAAA00',
+      },
+      _active: {
+        bg: '#EAAA00'
+      }
     },
   },
   defaultProps: {
     size: 'md',
-    variant: 'outline',
+    variant: 'solid',
   },
 }
