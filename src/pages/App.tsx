@@ -2,7 +2,7 @@ import * as React from "react"
 import {
   Button,
   HStack,
-  VStack, Text, Heading, Spacer, Link, Box, SimpleGrid,
+  VStack, Text, Heading, Spacer, Link, Box, SimpleGrid, MenuList, MenuButton, MenuItem, Menu,
 } from "@chakra-ui/react"
 import {AspectRatio} from '@chakra-ui/react'
 import nest from "../assets/svg/nest.svg"
@@ -45,37 +45,61 @@ import award3 from "../assets/svg/award3_icon.svg"
 import Twitter from "../assets/svg/twitter_icon.svg"
 import Telegram from "../assets/svg/telegram_icon.svg"
 import Medium from "../assets/svg/medium_icon.svg"
+import { useMediaQuery } from '@chakra-ui/react'
+import {HamburgerIcon} from "@chakra-ui/icons";
 
 
 export const App = () => {
+  const [isLargerThan1024] = useMediaQuery('(min-width: 1024px)')
+  const [isLargerThan480] = useMediaQuery('(min-width: 480px)')
+
   return (
     <VStack w={"full"}>
       <VStack id={"menu+index"} bg={'#FFD789'} w={"full"} p={'27px 45px'}>
         <HStack id={"menu"} justifyContent={"space-between"} w={"full"}>
           <img src={nest} alt={'nest'}/>
-          <HStack>
-            {[
-              {label: "About NEST"},
-              {label: "Data"},
-              {label: "Ecology"},
-              {label: "Community"},
-              {label: "News"},
-            ].map((item) => (
-              <Button key={item.label} variant={"ghost"}>{item.label}</Button>
-            ))}
-            <Button>Developers</Button>
-          </HStack>
+          { isLargerThan1024 ? (
+            <HStack>
+              {[
+                {label: "About NEST"},
+                {label: "Data"},
+                {label: "Ecology"},
+                {label: "Community"},
+                {label: "News"},
+              ].map((item) => (
+                <Button key={item.label} variant={"ghost"}>{item.label}</Button>
+              ))}
+              <Button>Developers</Button>
+            </HStack>
+          ) : (
+            <Menu>
+              <MenuButton as={Button} variant={'ghost'} fontSize={'36px'}>
+                <HamburgerIcon />
+              </MenuButton>
+              <MenuList>
+                {[
+                  {label: "About NEST"},
+                  {label: "Data"},
+                  {label: "Ecology"},
+                  {label: "Community"},
+                  {label: "News"},
+                ].map((item)=>(
+                  <MenuItem fontWeight={'bold'}>{item.label}</MenuItem>
+                ))}
+              </MenuList>
+            </Menu>
+          ) }
         </HStack>
-        <VStack id={"page1"} alignItems={"start"} w={"full"} spacing={"60px"} p={"140px 0 80px"}>
-          <VStack alignItems={"start"} w={"full"}>
-            <Heading fontSize={"5xl"}>Truly Decentralized Oracle</Heading>
-            <Heading fontSize={"5xl"}>No Nodes No Auditing Free Quotation</Heading>
-            <Heading fontSize={"5xl"}>On-Chain Verification</Heading>
-          </VStack>
-          <Button>
+        <VStack id={"page1"} alignItems={"start"} w={"full"} spacing={"60px"} pt={["80px", "80px", "140px"]} pb={"60px"}>
+          <Box alignItems={"start"} w={"full"}>
+            <Heading fontSize={["4xl", "4xl", "5xl"]}>Truly Decentralized Oracle</Heading>
+            <Heading fontSize={["4xl", "4xl", "5xl"]}>No Nodes No Auditing Free Quotation</Heading>
+            <Heading fontSize={["4xl", "4xl", "5xl"]}>On-Chain Verification</Heading>
+          </Box>
+          <Button isFullWidth={!isLargerThan480}>
             DAPP Web
           </Button>
-          <HStack spacing={"44px"}>
+          <SimpleGrid columns={[3, 3, 3, 6]} spacing={"44px"}>
             {[
               {id: "nest_labs", src: nest_labs, link: "#"},
               {id: "fort", src: fort, link: "https://fortprotocol.com"},
@@ -88,14 +112,14 @@ export const App = () => {
                 <img src={item.src} alt={item.id}/>
               </Link>
             ))}
-          </HStack>
+          </SimpleGrid>
         </VStack>
       </VStack>
-      <VStack id={"what is a nest nest oracle"} w={"full"} p={'100px 45px 0'}>
-        <Box mb={"100px"} w={"full"}>
-          <Heading fontSize={"5xl"} w={"full"}>What Is A NEST Oracle</Heading>
+      <VStack id={"what is a nest nest oracle"} w={"full"} px={'45px'} pt={['60px', '60px', '100px']}>
+        <Box mb={['60px', '60px', '100px']} w={"full"}>
+          <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>What Is A NEST Oracle</Heading>
         </Box>
-        <AspectRatio w={['360px','360px', '720px']} ratio={16 / 9} bg={"red"}>
+        <AspectRatio w={['full','full', '720px']} ratio={16 / 9} bg={"red"}>
           <iframe
             title='naruto'
             src='https://www.youtube.com/embed/QhBnZ6NPOY0'
@@ -103,10 +127,10 @@ export const App = () => {
           />
         </AspectRatio>
       </VStack>
-      <VStack id={"impeccable technical architecture"} w={"full"} p={'100px 45px 0'}>
-        <Box w={"full"} mb={"100px"}>
-          <Heading fontSize={"5xl"} w={"full"}>Impeccable technical</Heading>
-          <Heading fontSize={"5xl"} w={"full"}>Architecture</Heading>
+      <VStack id={"impeccable technical architecture"} w={"full"} px={'45px'} pt={['60px', '60px', '100px']}>
+        <Box w={"full"} mb={['60px', '60px', '100px']}>
+          <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>Impeccable technical</Heading>
+          <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>Architecture</Heading>
         </Box>
         <SimpleGrid columns={[1, 2, 3, 4, 5]} spacing={'44px'} pb={"44px"}>
           {[
@@ -116,23 +140,36 @@ export const App = () => {
             {id: "FLEXIBILITY", logo: FLEXIBILITY, desc: "Free to entry or exit"},
             {id: "ANTI-ATTACK", logo: ANTI_ATTACK, desc: "High cost to tamper the price"},
           ].map((item) => (
-            <VStack key={item.id} w={"220px"} h={"220px"} borderRadius={"12px"}
-                    alignItems={"start"} p={"22px"} justifyContent={"center"} spacing={"22px"}
-                    boxShadow={"0 0 45px 5px #E5E5E5"} border={"1px solid #EEEEEE"}>
-              <img src={item.logo} alt={item.id}/>
-              <Text fontWeight={600} fontSize={"15px"}>{item.id}</Text>
-              <Text color={"#878787"} fontSize={"15px"} fontWeight={600}>{item.desc}</Text>
-            </VStack>
+            <>
+              { isLargerThan480 ? (
+                <VStack key={item.id} w={"220px"} h={"220px"} borderRadius={"12px"}
+                        alignItems={"start"} p={"22px"} justifyContent={"center"} spacing={"22px"}
+                        boxShadow={"0 0 45px 5px #E5E5E5"} border={"1px solid #EEEEEE"}>
+                  <img src={item.logo} alt={item.id}/>
+                  <Text fontWeight={600} fontSize={"15px"}>{item.id}</Text>
+                  <Text color={"#878787"} fontSize={"15px"} fontWeight={600}>{item.desc}</Text>
+                </VStack>
+              ) : (
+                <HStack key={item.id} w={"full"} spacing={'24px'} border={'1px solid #EEEEEE'}
+                        boxShadow={'0px 0px 45px 5px #E5E5E5'} borderRadius={'12px'} p={'27px'}>
+                  <img src={item.logo} alt={item.id}/>
+                  <VStack alignItems={"start"}>
+                    <Text fontWeight={600} fontSize={"15px"}>{item.id}</Text>
+                    <Text color={"#878787"} fontSize={"15px"} fontWeight={600}>{item.desc}</Text>
+                  </VStack>
+                </HStack>
+              ) }
+            </>
           ))}
         </SimpleGrid>
-        <SimpleGrid columns={[1, 1, 2, 3]} spacing={"90px"} pb={"27px"}>
+        <SimpleGrid columns={[1, 2, 3]} spacing={["12px",  "90px"]} pb={"27px"}>
           {[
             {id: "Github", logo: Github, link: ""},
             {id: "Whitepaper", logo: Whitepaper, link: ""},
             {id: "Security Report", logo: SecurityReport, link: ""},
           ].map((item) => (
             <Link isExternal href={item.link}>
-              <HStack spacing={"22px"}>
+              <HStack spacing={["11px", "11px", "22px"]}>
                 <img src={item.logo} alt={item.id}/>
                 <Text fontSize={"15px"} fontWeight={"semibold"}>{item.id}</Text>
                 <img src={Right2} alt={"right"}/>
@@ -144,11 +181,11 @@ export const App = () => {
           Developers
         </Button>
       </VStack>
-      <VStack id={"rapidly growing data"} w={"full"} p={'100px 45px 0'}>
-        <Box w={"full"} mb={"100px"}>
-          <Heading fontSize={"5xl"} w={"full"}>Rapidly Growing Data</Heading>
+      <VStack id={"rapidly growing data"} w={"full"} px={'45px'} pt={['60px', '60px', '100px']}>
+        <Box w={"full"} mb={['60px', '60px', '100px']}>
+          <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>Rapidly Growing Data</Heading>
         </Box>
-        <SimpleGrid columns={[2, 2, 3]} spacing={"74px"}>
+        <SimpleGrid columns={[1, 1, 3]} spacing={"74px"}>
           {[
             {label: '60', desc: "Number of oracle"},
             {label: '539,929', desc: "Cumulative quotes"},
@@ -164,28 +201,45 @@ export const App = () => {
           ))}
         </SimpleGrid>
       </VStack>
-      <VStack id={"huge ecosystem"} w={"full"} p={'100px 45px 0'}>
-        <Box w={"full"} mb={'100px'}>
-          <Heading fontSize={"5xl"} w={"full"}>Huge Ecosystem</Heading>
+      <VStack id={"huge ecosystem"} w={"full"} px={'45px'} pt={['60px', '60px', '100px']}>
+        <Box w={"full"} mb={['60px', '60px', '100px']}>
+          <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>Huge Ecosystem</Heading>
         </Box>
-        <SimpleGrid columns={[1, 2, 3]} spacing={'44px'} pb={"44px"}>
+        <SimpleGrid columns={[1, 1, 2, 3]} spacing={'44px'} pb={"44px"}>
           {[
             { label: 'DeFi', logo: fort2, desc: 'Perpetual future contracts and European options', link: 'https://fortprotocol.com' },
             { label: 'Dex', logo: cofix2, desc: '$NEST liquidity available', link: 'https://cofix.tech' },
             { label: 'Leding', logo: parasset2, desc: 'Collateral $NEST to mint PETH, PUSD, PBTC, etc', link: 'https://home.parasset.top' },
           ].map((item) => (
-            <VStack w={"240px"} border={'1px solid #EEEEEE'} boxShadow={'0px 0px 45px 5px #E5E5E5'} spacing={'30px'}
-                    alignItems={"start"} p={'44px'} borderRadius={'12px'}>
-              <Text fontWeight={'bold'} fontSize={'17px'}>{item.label}</Text>
-              <img src={item.logo} alt={item.label}/>
-              <Text fontSize={'15px'} fontWeight={600} color={'#878787'} height={'60px'}>{item.desc}</Text>
-              <Link isExternal href={item.link}>
-                <img src={Right1} alt={"right"}/>
-              </Link>
-            </VStack>
+            <>
+              { isLargerThan480 ? (
+                <VStack w={"240px"} border={'1px solid #EEEEEE'} boxShadow={'0px 0px 45px 5px #E5E5E5'} spacing={'30px'}
+                        alignItems={"start"} p={'44px'} borderRadius={'12px'}>
+                  <Text fontWeight={'bold'} fontSize={'17px'}>{item.label}</Text>
+                  <img src={item.logo} alt={item.label}/>
+                  <Text fontSize={'15px'} fontWeight={600} color={'#878787'} height={'60px'}>{item.desc}</Text>
+                  <Link isExternal href={item.link}>
+                    <img src={Right1} alt={"right"}/>
+                  </Link>
+                </VStack>
+              ) : (
+                <VStack w={"full"} border={'1px solid #EEEEEE'} boxShadow={'0px 0px 45px 5px #E5E5E5'} spacing={'12px'}
+                        alignItems={"start"} p={'27px'} borderRadius={'12px'}>
+                  <Text fontWeight={'bold'} fontSize={'17px'}>{item.label}</Text>
+                  <HStack w={"full"}>
+                    <img src={item.logo} alt={item.label}/>
+                    <Spacer/>
+                    <Link isExternal href={item.link}>
+                      <img src={Right1} alt={"right"}/>
+                    </Link>
+                  </HStack>
+                  <Text fontSize={'15px'} fontWeight={600} color={'#878787'}>{item.desc}</Text>
+                </VStack>
+              ) }
+            </>
           ))}
         </SimpleGrid>
-        <SimpleGrid columns={[1, 1, 2, 2, 4]} spacingX={"60px"} spacingY={"40px"}>
+        <SimpleGrid columns={[2, 3, 3, 3, 4]} spacingX={"60px"} spacingY={"40px"}>
           {[
             {id: "nest_labs", src: nest_labs, link: "#"},
             {id: "coinbase", src: coinbase, link: "https://www.coinbase.com"},
@@ -205,16 +259,16 @@ export const App = () => {
             {id: "catchervc", src: catchervc, link: '' },
             // {id: "binance", src: binance, link: "https://www.binance.com/"},
           ].map((item)=>(
-            <Link key={item.id} isExternal href={item.link} w={'160px'} h={'36px'}>
-              <img src={item.src} alt={item.id} style={{ height: '36px' }}/>
+            <Link key={item.id} isExternal href={item.link} w={'160px'} h={['24px', '24px', '36px']}>
+              <img src={item.src} alt={item.id} style={{ height: isLargerThan480 ? '36px' : '18px' }}/>
             </Link>
           ))}
         </SimpleGrid>
       </VStack>
-      <VStack id={"join nest's global community"} w={"full"} p={'100px 45px 0'}>
-        <Box w={'full'} mb={'100px'}>
-          <Heading fontSize={"5xl"} w={"full"}>Join NEST's Global</Heading>
-          <Heading fontSize={"5xl"} w={"full"}>Community</Heading>
+      <VStack id={"join nest's global community"} w={"full"} px={'45px'} pt={['60px', '60px', '100px']}>
+        <Box w={'full'} mb={['60px', '60px', '100px']}>
+          <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>Join NEST's Global</Heading>
+          <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>Community</Heading>
         </Box>
         <SimpleGrid columns={[1, 1, 2, 2, 4]} spacing={'44px'}>
           {[
@@ -234,10 +288,10 @@ export const App = () => {
           ))}
         </SimpleGrid>
       </VStack>
-      <VStack id={"join the nest unicorn"} w={"full"} p={'100px 45px 0'}>
-        <Box w={"full"} mb={'100px'}>
-          <Heading fontSize={"5xl"} w={"full"}>Join the NEST Unicorn</Heading>
-          <Heading fontSize={"5xl"} w={"full"}>Rewards Program</Heading>
+      <VStack id={"join the nest unicorn"} w={"full"} px={'45px'} pt={['60px', '60px', '100px']}>
+        <Box w={"full"} mb={['60px', '60px', '100px']}>
+          <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>Join the NEST Unicorn</Heading>
+          <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>Rewards Program</Heading>
         </Box>
         <SimpleGrid columns={[1, 1, 2, 3]} spacing={'44px'}>
           {[
@@ -257,13 +311,13 @@ export const App = () => {
       </VStack>
       <VStack id={"coming soon so stay tuned"} w={"full"} p={'100px 45px'}>
         <Box w={'full'} mb={'40px'}>
-          <Heading fontSize={"5xl"} w={"full"}>Coming Soon So Stay</Heading>
-          <Heading fontSize={"5xl"} w={"full"}>Tuned</Heading>
+          <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>Coming Soon So Stay</Heading>
+          <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>Tuned</Heading>
         </Box>
       </VStack>
       <VStack id={"news"} w={"full"} p={'80px 45px'}>
-        <Box w={"full"} mb={'100px'}>
-          <Heading fontSize={"5xl"} w={"full"}>News</Heading>
+        <Box w={"full"} mb={['60px', '60px', '100px']}>
+          <Heading fontSize={["4xl", "4xl", "5xl"]} w={"full"}>News</Heading>
         </Box>
         <SimpleGrid columns={[1, 1, 2, 3]} spacing={'44px'} pb={"27px"}>
           {[
@@ -284,54 +338,109 @@ export const App = () => {
           More
         </Button>
       </VStack>
-      <HStack id={"footer"} w={"full"} p={'80px 45px'} bg={'#FFD789'} spacing={'20px'}>
-        <VStack alignItems={"start"} w={'240px'} h={'240px'}>
-          <Text fontWeight={"bold"}>App</Text>
-          <br/>
-          <Text fontWeight={"semibold"}>Developers</Text>
-          <Text fontWeight={"semibold"}>DAPP Web</Text>
-        </VStack>
-        <VStack alignItems={"start"} w={'240px'} h={'240px'}>
-          <Text fontWeight={"bold"}>Community</Text>
-          <br/>
-          <VStack spacing={'20px'} alignItems={"start"}>
-            {[
-              { label: 'Twitter', icon: Twitter, link: '' },
-              { label: 'Telegram', icon: Telegram, link: '' },
-              { label: 'Medium', icon: Medium, link: '' },
-            ].map((item)=>(
-              <Link key={item.label} isExternal href={item.link}>
-                <HStack spacing={'20px'}>
-                  <img src={item.icon} alt={item.label}/>
-                  <Text fontSize={'15px'} fontWeight={600}>{item.label}</Text>
-                </HStack>
-              </Link>
-            ))}
+      <HStack id={"footer"} w={"full"} p={'36px 45px'} bg={'#FFD789'} spacing={'20px'}>
+        { isLargerThan1024 ? (
+          <>
+            <VStack alignItems={"start"} w={'240px'} h={'240px'}>
+              <Text fontWeight={"bold"}>App</Text>
+              <br/>
+              <Text fontWeight={"semibold"}>Developers</Text>
+              <Text fontWeight={"semibold"}>DAPP Web</Text>
+            </VStack>
+            <VStack alignItems={"start"} w={'240px'} h={'240px'}>
+              <Text fontWeight={"bold"}>Community</Text>
+              <br/>
+              <VStack spacing={'20px'} alignItems={"start"}>
+                {[
+                  { label: 'Twitter', icon: Twitter, link: '' },
+                  { label: 'Telegram', icon: Telegram, link: '' },
+                  { label: 'Medium', icon: Medium, link: '' },
+                ].map((item)=>(
+                  <Link key={item.label} isExternal href={item.link}>
+                    <HStack spacing={'20px'}>
+                      <img src={item.icon} alt={item.label}/>
+                      <Text fontSize={'15px'} fontWeight={600}>{item.label}</Text>
+                    </HStack>
+                  </Link>
+                ))}
+              </VStack>
+            </VStack>
+            <VStack alignItems={"start"} w={'240px'} h={'240px'}>
+              <Text fontWeight={"bold"}>Technology</Text>
+              <br/>
+              <VStack spacing={'20px'} alignItems={"start"}>
+                {[
+                  { label: 'Github', icon: Github, link: '' },
+                  { label: 'Whitepaper', icon: Whitepaper, link: '' },
+                  { label: 'Security Report', icon: SecurityReport, link: '' },
+                ].map((item)=>(
+                  <Link key={item.label} isExternal href={item.link}>
+                    <HStack spacing={'20px'}>
+                      <img src={item.icon} alt={item.label}/>
+                      <Text fontSize={'15px'} fontWeight={600}>{item.label}</Text>
+                    </HStack>
+                  </Link>
+                ))}
+              </VStack>
+            </VStack>
+            <Spacer/>
+            <VStack h={'240px'}>
+              <Spacer/>
+              <Text fontWeight={"bold"} fontSize={'14px'}>©2022 NEST</Text>
+            </VStack>
+          </>
+        ) : (
+          <VStack alignItems={"start"} spacing={'60px'}>
+            <VStack alignItems={"start"} w={'240px'}>
+              <Text fontWeight={"bold"}>App</Text>
+              <br/>
+              <Text fontWeight={"semibold"}>Developers</Text>
+              <Text fontWeight={"semibold"}>DAPP Web</Text>
+            </VStack>
+            <HStack>
+              <VStack alignItems={"start"} w={'240px'}>
+                <Text fontWeight={"bold"}>Community</Text>
+                <br/>
+                <VStack spacing={'20px'} alignItems={"start"}>
+                  {[
+                    { label: 'Twitter', icon: Twitter, link: '' },
+                    { label: 'Telegram', icon: Telegram, link: '' },
+                    { label: 'Medium', icon: Medium, link: '' },
+                  ].map((item)=>(
+                    <Link key={item.label} isExternal href={item.link}>
+                      <HStack spacing={'20px'}>
+                        <img src={item.icon} alt={item.label}/>
+                        <Text fontSize={'15px'} fontWeight={600}>{item.label}</Text>
+                      </HStack>
+                    </Link>
+                  ))}
+                </VStack>
+              </VStack>
+              <VStack alignItems={"start"} w={'240px'}>
+                <Text fontWeight={"bold"}>Technology</Text>
+                <br/>
+                <VStack spacing={'20px'} alignItems={"start"}>
+                  {[
+                    { label: 'Github', icon: Github, link: '' },
+                    { label: 'Whitepaper', icon: Whitepaper, link: '' },
+                    { label: 'Security Report', icon: SecurityReport, link: '' },
+                  ].map((item)=>(
+                    <Link key={item.label} isExternal href={item.link}>
+                      <HStack spacing={'20px'}>
+                        <img src={item.icon} alt={item.label}/>
+                        <Text fontSize={'15px'} fontWeight={600}>{item.label}</Text>
+                      </HStack>
+                    </Link>
+                  ))}
+                </VStack>
+              </VStack>
+            </HStack>
+            <VStack >
+              <Spacer/>
+              <Text fontWeight={"bold"} fontSize={'14px'}>©2022 NEST</Text>
+            </VStack>
           </VStack>
-        </VStack>
-        <VStack alignItems={"start"} w={'240px'} h={'240px'}>
-          <Text fontWeight={"bold"}>Technology</Text>
-          <br/>
-          <VStack spacing={'20px'} alignItems={"start"}>
-            {[
-              { label: 'Github', icon: Github, link: '' },
-              { label: 'Whitepaper', icon: Whitepaper, link: '' },
-              { label: 'Security Report', icon: SecurityReport, link: '' },
-            ].map((item)=>(
-              <Link key={item.label} isExternal href={item.link}>
-                <HStack spacing={'20px'}>
-                  <img src={item.icon} alt={item.label}/>
-                  <Text fontSize={'15px'} fontWeight={600}>{item.label}</Text>
-                </HStack>
-              </Link>
-            ))}
-          </VStack>
-        </VStack>
-        <Spacer/>
-        <VStack h={'240px'}>
-          <Spacer/>
-          <Text fontWeight={"bold"} fontSize={'14px'}>©2022 NEST</Text>
-        </VStack>
+        ) }
       </HStack>
     </VStack>
   )
