@@ -183,9 +183,9 @@ export const App = () => {
           pb={'60px'}
         >
           <VStack alignItems={'start'} w={'full'} spacing={'22px'}>
-            <Heading fontSize={'50px'}>Truly Decentralized Oracle</Heading>
-            <Heading fontSize={'50px'}>No Nodes No Auditing Free Quotation</Heading>
-            <Heading fontSize={'50px'}>On-Chain Verification</Heading>
+            <Heading fontSize={['30px', '30px', '50px']}>Truly Decentralized Oracle</Heading>
+            <Heading fontSize={['30px', '30px', '50px']}>No Nodes No Auditing Free Quotation</Heading>
+            <Heading fontSize={['30px', '30px', '50px']}>On-Chain Verification</Heading>
           </VStack>
           <Box pb={'20px'}>
             <Button
@@ -225,7 +225,7 @@ export const App = () => {
         ref={aboutRef}
       >
         <Box mb={['60px', '60px', '80px']} w={'full'}>
-          <Heading fontSize={'50px'} w={'full'}>
+          <Heading fontSize={['30px', '30px', '50px']} w={'full'}>
             What Is A NEST Oracle
           </Heading>
         </Box>
@@ -240,10 +240,10 @@ export const App = () => {
         pt={['60px', '60px', '80px']}
       >
         <Box w={'full'} mb={['60px', '60px', '80px']}>
-          <Heading fontSize={'50px'} w={'full'}>
+          <Heading fontSize={['30px', '30px', '50px']} w={'full'}>
             Impeccable technical
           </Heading>
-          <Heading fontSize={'50px'} w={'full'}>
+          <Heading fontSize={['30px', '30px', '50px']} w={'full'}>
             Architecture
           </Heading>
         </Box>
@@ -344,7 +344,7 @@ export const App = () => {
         ref={dataRef}
       >
         <Box w={'full'} mb={['60px', '60px', '80px']}>
-          <Heading fontSize={'50px'} w={'full'}>
+          <Heading fontSize={['30px', '30px', '50px']} w={'full'}>
             Rapidly Growing Data
           </Heading>
         </Box>
@@ -376,7 +376,7 @@ export const App = () => {
         ref={ecologyRef}
       >
         <Box w={'full'} mb={['60px', '60px', '80px']}>
-          <Heading fontSize={'50px'} w={'full'}>
+          <Heading fontSize={['30px', '30px', '50px']} w={'full'}>
             Huge Ecosystem
           </Heading>
         </Box>
@@ -526,10 +526,10 @@ export const App = () => {
         ref={communityRef}
       >
         <Box w={'full'} mb={['60px', '60px', '80px']}>
-          <Heading fontSize={'50px'} w={'full'}>
+          <Heading fontSize={['30px', '30px', '50px']} w={'full'}>
             Join NEST's Global
           </Heading>
-          <Heading fontSize={'50px'} w={'full'}>
+          <Heading fontSize={['30px', '30px', '50px']} w={'full'}>
             Community
           </Heading>
         </Box>
@@ -612,10 +612,10 @@ export const App = () => {
         pt={['60px', '60px', '80px']}
       >
         <Box w={'full'} mb={['60px', '60px', '80px']}>
-          <Heading fontSize={'50px'} w={'full'}>
+          <Heading fontSize={['30px', '30px', '50px']} w={'full'}>
             Join the NEST Unicorn
           </Heading>
-          <Heading fontSize={'50px'} w={'full'}>
+          <Heading fontSize={['30px', '30px', '50px']} w={'full'}>
             Rewards Program
           </Heading>
         </Box>
@@ -666,10 +666,10 @@ export const App = () => {
       </VStack>
       <VStack id={'coming soon so stay tuned'} w={'full'} pt={['60px', '60px', '80px']}>
         <Box w={'full'} mb={'40px'} px={['22px', '22px', '44px']}>
-          <Heading fontSize={'50px'} w={'full'}>
+          <Heading fontSize={['30px', '30px', '50px']} w={'full'}>
             Coming Soon So Stay
           </Heading>
-          <Heading fontSize={'50px'} w={'full'}>
+          <Heading fontSize={['30px', '30px', '50px']} w={'full'}>
             Tuned
           </Heading>
         </Box>
@@ -707,7 +707,7 @@ export const App = () => {
         ref={newsRef}
       >
         <Box w={'full'} mb={['60px', '60px', '80px']}>
-          <Heading fontSize={'50px'} w={'full'}>
+          <Heading fontSize={['30px', '30px', '50px']} w={'full'}>
             News
           </Heading>
         </Box>
