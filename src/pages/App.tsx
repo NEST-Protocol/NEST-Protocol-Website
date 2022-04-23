@@ -86,6 +86,7 @@ import inft from '../assets/svg/iNFT.svg'
 import pacific from '../assets/svg/Pacific.svg'
 import radomnetwork from '../assets/svg/Radom.svg'
 import shoppingio from '../assets/svg/Shopping.svg'
+import Price from '../assets/svg/Price_icon.svg'
 import useWinSize from '../utils/useWinSize'
 
 export const App = () => {
@@ -115,6 +116,7 @@ export const App = () => {
 
   const technologyLinks = [
     { label: 'Github', icon: Github, link: 'https://github.com/NEST-Protocol' },
+    { label: 'Price Facade', icon: Price, link: 'https://github.com/NEST-Protocol' },
     {
       label: 'Whitepaper',
       icon: Whitepaper,
@@ -301,28 +303,21 @@ export const App = () => {
             </Box>
           ))}
         </SimpleGrid>
-        <SimpleGrid columns={[1, 2, 3]} spacing={['12px', '90px']} pb={'27px'}>
-          {[
-            { id: 'Github', logo: Github, link: 'https://github.com/NEST-Protocol' },
-            {
-              id: 'Whitepaper',
-              logo: Whitepaper,
-              link: 'https://nestprotocol.org/doc/ennestwhitepaper.pdf'
-            },
-            { id: 'Security Report', logo: SecurityReport, link: '' }
-          ].map(item => (
-            <Link isExternal href={item.link} key={item.id}>
-              <HStack>
-                <Box mr={'22px'}>
-                  <img src={item.logo} alt={item.id} />
+        <SimpleGrid columns={2} spacingY={['12px', '22px']} spacingX={['22px', '22px', '48px']} pb={'27px'}>
+          {technologyLinks.map(item => (
+            <Link isExternal href={item.link} key={item.label}>
+              <HStack spacing={0}>
+                <Box mr={['10px', '10px', '22px']} w={'44px'} h={'44px'}>
+                  <img src={item.icon} alt={item.label}/>
                 </Box>
                 <Box>
-                  <Text fontSize={'15px'} fontWeight={'semibold'}>
-                    {item.id}
+                  <Text fontSize={['12px', '12px', '15px']} fontWeight={'semibold'}>
+                    {item.label}
                   </Text>
                 </Box>
-                <Box pl={'14px'}>
-                  <img src={Right2} alt={'right'} />
+                <Spacer/>
+                <Box maxW={['20px', '20px', '44px']} maxH={['20px', '20px', '44px']}>
+                  <img src={Right2} alt={'right'}/>
                 </Box>
               </HStack>
             </Link>
@@ -796,8 +791,8 @@ export const App = () => {
         spacing={'20px'}
       >
         {isLargerThan480 ? (
-          <>
-            <VStack alignItems={'start'} w={'240px'} h={'240px'}>
+          <HStack alignItems={"start"} w={"full"} h={"full"}>
+            <VStack alignItems={'start'} w={'240px'}>
               <Text fontWeight={'bold'}>App</Text>
               <br />
               <Link isExternal href={'https://channel.nestprotocol.org/'}>
@@ -807,7 +802,7 @@ export const App = () => {
                 <Text fontWeight={'semibold'}>DAPP Web</Text>
               </Link>
             </VStack>
-            <VStack alignItems={'start'} w={'240px'} h={'240px'}>
+            <VStack alignItems={'start'} w={'240px'}>
               <Text fontWeight={'bold'}>Community</Text>
               <br />
               <VStack spacing={'20px'} alignItems={'start'}>
@@ -823,7 +818,7 @@ export const App = () => {
                 ))}
               </VStack>
             </VStack>
-            <VStack alignItems={'start'} w={'240px'} h={'240px'}>
+            <VStack alignItems={'start'} w={'240px'}>
               <Text fontWeight={'bold'}>Technology</Text>
               <br />
               <VStack spacing={'20px'} alignItems={'start'}>
@@ -840,13 +835,13 @@ export const App = () => {
               </VStack>
             </VStack>
             <Spacer />
-            <VStack h={'240px'}>
+            <VStack h={"300px"}>
               <Spacer />
               <Text fontWeight={'bold'} fontSize={'14px'}>
                 ©2022 NEST
               </Text>
             </VStack>
-          </>
+          </HStack>
         ) : (
           <VStack alignItems={'start'} spacing={'60px'} w={'full'}>
             <VStack alignItems={'start'} w={'240px'}>
@@ -855,7 +850,7 @@ export const App = () => {
               <Text fontWeight={'semibold'}>Developers</Text>
               <Text fontWeight={'semibold'}>DAPP Web</Text>
             </VStack>
-            <HStack w={'full'}>
+            <HStack w={'full'} alignItems={"start"}>
               <VStack alignItems={'start'}>
                 <Text fontWeight={'bold'}>Community</Text>
                 <br />
