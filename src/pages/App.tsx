@@ -635,19 +635,22 @@ export const App = () => {
               label: 'Top Oracle miner',
               icon: award1,
               number: '$3,000',
-              desc: '3 projects or individuals who open new oracle channels or participate in quote mining will be distributed $1,000 eac'
+              desc: '3 projects or individuals who open new oracle channels or participate in quote mining will be distributed $1,000 eac',
+              link: 'https://docs.google.com/forms/d/1_0BN03Zo0UeBt9aJVthdQNOdKo7c-yLjXP7Uf4G3Uqg/edit'
             },
             {
               label: 'Excellent Oracle Use-case',
               icon: award2,
               number: '$4,000',
-              desc: 'Awards will be distributed according to the proportion of NEST oracle calling counts (until the end of the competition), which could be validated on chain '
+              desc: 'Awards will be distributed according to the proportion of NEST oracle calling counts (until the end of the competition), which could be validated on chain',
+              link: 'https://docs.google.com/forms/d/1_0BN03Zo0UeBt9aJVthdQNOdKo7c-yLjXP7Uf4G3Uqg/edit'
             },
             {
               label: 'Most innovative projects',
               icon: award3,
               number: '$3,000',
-              desc: '3 most innovative projects will be distributed $1,000 each, whether in DeFi, NFT, GameFi, SocialFi, Metaverse,or Web3'
+              desc: '3 most innovative projects will be distributed $1,000 each, whether in DeFi, NFT, GameFi, SocialFi, Metaverse,or Web3',
+              link: 'https://docs.google.com/forms/d/1_0BN03Zo0UeBt9aJVthdQNOdKo7c-yLjXP7Uf4G3Uqg/edit'
             }
           ].map(item => (
             <VStack
@@ -659,6 +662,10 @@ export const App = () => {
               spacing={['11px', '11px', '22px']}
               boxShadow={'0px 0px 45px 5px #E5E5E5'}
               borderRadius={'12px'}
+              cursor={"pointer"}
+              onClick={()=>{
+                window.open(item.link)
+              }}
             >
               <img src={item.icon} alt={item.label} />
               <Text fontSize={'17px'} fontWeight={'bold'}>
