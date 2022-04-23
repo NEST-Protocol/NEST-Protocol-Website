@@ -131,8 +131,8 @@ export const App = () => {
 
   return (
     <VStack w={'full'} spacing={0}>
-      <Box position={'absolute'} zIndex={0} minW={"full"} minH={'1000px'}>
-        <img src={header} alt={''} height={'1000px'}/>
+      <Box position={'absolute'} zIndex={0}>
+        <img src={header} alt={''} style={{ display: 'block', height: isLargerThan480 ? '1200px' : '800px'}}/>
       </Box>
       <VStack id={'menu+index'} bg={'#FBEECC'} w={'full'} px={['22px', '22px', '44px']} py={'27px'}>
         <HStack id={'menu'} justifyContent={'space-between'} w={'full'}>
