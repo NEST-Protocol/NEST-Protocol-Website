@@ -47,7 +47,7 @@ import Telegram from "../assets/svg/telegram_icon.svg"
 import Medium from "../assets/svg/medium_icon.svg"
 import {useMediaQuery} from '@chakra-ui/react'
 import {HamburgerIcon} from "@chakra-ui/icons"
-import {useRef} from "react";
+import {useRef, useState} from "react";
 import arms from '../assets/img/机械臂.png'
 import twitterImg from '../assets/img/twitter.png'
 import telegramImg from '../assets/img/telegram.png'
@@ -64,8 +64,19 @@ import nest_white from "../assets/svg/nest_white.svg"
 import nest_kcc from "../assets/img/nest_kcc_white.png"
 import nest_map from "../assets/img/nest_map_white.png"
 import video from "../assets/img/video.png"
-import useWinSize from "../utils/useWinSize";
-
+import defilive from '../assets/svg/difilive_logo.svg'
+import deepchain from '../assets/svg/deepchain.svg'
+import blockster from '../assets/svg/Blockster.svg'
+import winkrypto from '../assets/svg/winkrypto.svg'
+import whatcoin from '../assets/svg/WhatsCoin.svg'
+import polynetwork from '../assets/svg/polynetwork.svg'
+import fortube from '../assets/svg/Fortube.svg'
+import husd from '../assets/svg/HUSD.svg'
+import inft from '../assets/svg/iNFT.svg'
+import pacific from '../assets/svg/Pacific.svg'
+import radomnetwork from '../assets/svg/Radom.svg'
+import shoppingio from '../assets/svg/Shopping.svg'
+import useWinSize from "../utils/useWinSize"
 
 export const App = () => {
   const [isLargerThan1024] = useMediaQuery('(min-width: 1024px)')
@@ -76,6 +87,7 @@ export const App = () => {
   const communityRef = useRef(null)
   const newsRef = useRef(null)
   const size = useWinSize()
+  const [page, setPage] = useState(0)
 
   const next = (ref: any) => {
     if (ref) {
@@ -313,25 +325,47 @@ export const App = () => {
             {id: "coinbase", src: coinbase, link: "https://www.coinbase.com"},
             {id: "huobi", src: huobi, link: 'https://www.huobi.com/'},
             {id: "crypto.com", src: crypto, link: 'https://crypto.com/'},
-            {id: "hotbit", src: hotbit, link: 'http://www.hotbit.io/'},
+            {id: "hotbit", src: hotbit, link: 'https://www.hotbit.io/'},
             {id: "coinone", src: coinone, link: 'https://coinone.co.kr/'},
             {id: "okex", src: okex, link: 'https://www.okx.com'},
             {id: "fbg", src: fbg, link: 'https://twitter.com/fbgcapital'},
             {id: "kernel", src: kernal, link: 'https://www.kernel-ventures.com/'},
-            {id: "ybb", src: ybb, link: 'http://www.ybb.io/'},
+            {id: "ybb", src: ybb, link: 'https://www.ybb.io/'},
             {id: "kyros", src: kyros, link: 'https://kyros.ventures/'},
             {id: "au21", src: au21, link: 'https://au21.capital/'},
             {id: "ld", src: ld, link: 'https://ldcap.com/'},
             {id: "ceras", src: ceras, link: 'https://www.cerasventures.com/'},
             {id: "7oclocklabs", src: sevenOclock, link: 'https://www.7oclockcapital.com/community.htm'},
             {id: "catchervc", src: catchervc, link: 'https://catchervc.chaincatcher.com/'},
-            // {id: "binance", src: binance, link: "https://www.binance.com/"},
-          ].map((item) => (
+            {id: "defilive", src: defilive, link: 'https://www.defilive.xyz/'},
+            {id: "deepchain", src: deepchain, link: 'https://www.dcnews.io/'},
+            {id: "blockster", src: blockster, link: 'https://blockster.com/'},
+            {id: "winkrypto", src: winkrypto, link: 'https://www.winkrypto.com/'},
+            {id: "whatcoin", src: whatcoin, link: 'https://www.whatscoin.com/'},
+            {id: "binance", src: binance, link: "https://www.binance.com/"},
+            {id: "polynetwork", src: polynetwork, link: 'https://poly.network/'},
+            {id: "fortube", src: fortube, link: 'https://for.tube/'},
+            {id: "husd", src: husd, link: 'https://www.stcoins.com/'},
+            {id: "inft", src: inft, link: 'https://inft.io/'},
+            {id: "pacific", src: pacific, link: 'https://pacific.one/#/'},
+            {id: "radomnetwork", src: radomnetwork, link: 'https://www.radom.network/'},
+            {id: "shoppingio", src: shoppingio, link: 'https://shopping.io/'},
+
+          ].filter((item, index)=>(Math.floor(index / 16) === page)).map((item) => (
             <Link key={item.id} isExternal href={item.link} w={'160px'} h={['24px', '24px', '36px']}>
               <img src={item.src} alt={item.id} style={{height: isLargerThan480 ? '36px' : '18px'}}/>
             </Link>
           ))}
         </SimpleGrid>
+        <HStack py={'12px'} spacing={'-12px'}>
+          { [0,1].map((item)=>(
+            <Button key={item} onClick={()=>setPage(item)} variant={'ghost'}>
+              <Box w={'10px'} h={'10px'} bg={page === item ? "#EAAA00" : 'null'}
+                   border={page === item ? 'null' : '1px solid #878787'}
+                   borderRadius={"full"}/>
+            </Button>
+          )) }
+        </HStack>
       </VStack>
       <VStack id={"join nest's global community"} w={"full"} px={['22px', '22px', '44px']}
               pt={['60px', '60px', '100px']} ref={communityRef}>
@@ -447,13 +481,13 @@ export const App = () => {
               label: 'NEST Oracle Special Awards in MAP',
               bg: new2,
               desc: 'Chain (KCC) developers  vide awards, advisory sessions, and integration support to MAP developers',
-              link: 'http://www.goldentreenews.com/news/article.html?no=278663',
+              link: 'https://www.goldentreenews.com/news/article.html?no=278663',
               logos: nest_map
             },
             {
-              label: 'What is NEST, a decentralized price oracle network?',
+              label: 'What is NEST, a decentralized price oracle network',
               bg: new3,
-              desc: 'NEST is one of the projects that is developing the techn ology to provide this Oracle service in a decentralized way',
+              desc: 'NEST is one of the projects that is developing the technology to provide this Oracle service in a decentralized way',
               link: 'https://coinpost.jp/?p=226764',
               logos: nest_white
             },
