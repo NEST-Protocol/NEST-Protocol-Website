@@ -16,7 +16,7 @@ export const Button = {
     outline: {
       border: '2px solid',
       borderColor: '#EAAA00',
-      borderRadius: '17px',
+      borderRadius: 'full',
       height: '34px',
       _hover: {
         bg: '#EAAA00'
@@ -29,7 +29,7 @@ export const Button = {
       bg: '#EAAA00',
       color: 'black',
       fontWeight: 'semibold',
-      borderRadius: '17px',
+      borderRadius: 'full',
       height: '34px',
       _hover: {
         bg: '#EAAA00'
