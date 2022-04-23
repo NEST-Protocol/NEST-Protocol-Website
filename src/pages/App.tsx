@@ -12,7 +12,7 @@ import {
   MenuList,
   MenuButton,
   MenuItem,
-  Menu
+  Menu, useBoolean
 } from '@chakra-ui/react'
 import { AspectRatio } from '@chakra-ui/react'
 import nest from '../assets/svg/nest.svg'
@@ -81,6 +81,7 @@ import pacific from '../assets/svg/Pacific.svg'
 import radomnetwork from '../assets/svg/Radom.svg'
 import shoppingio from '../assets/svg/Shopping.svg'
 import Price from '../assets/svg/Price_icon.svg'
+import header_phone from '../assets/img/header_phone.png'
 
 export const App = () => {
   const [isLargerThan1024] = useMediaQuery('(min-width: 1024px)')
@@ -91,6 +92,7 @@ export const App = () => {
   const communityRef = useRef(null)
   const newsRef = useRef(null)
   const [page, setPage] = useState(0)
+  const [showMore, setShowMore] = useBoolean(false)
 
   const next = (ref: any) => {
     if (ref) {
@@ -131,16 +133,22 @@ export const App = () => {
     { label: 'Medium', icon: Medium, link: 'https://nest-protocol-82041.medium.com/' }
   ]
 
-  const [showMore, setShowMore] = useState(false)
-
   return (
     <VStack w={'full'} spacing={0}>
       <Box position={'absolute'} zIndex={0} w={"full"}>
-        <img
-          src={header}
-          alt={''}
-          style={{ display: 'block', width: '100%', height: isLargerThan480 ? '1600px' : '1000px' }}
-        />
+        { isLargerThan480 ? (
+          <img
+            src={header}
+            alt={''}
+            style={{ display: 'block', width: '100%', height: '1600px' }}
+          />
+        ) : (
+          <img
+            src={header_phone}
+            alt={''}
+            style={{ display: 'block', width: '100%', height: '820px' }}
+          />
+        ) }
       </Box>
       <VStack id={'menu+index'} bg={'#FBEECC'} w={'full'} px={['22px', '22px', '44px']} py={'27px'}>
         <HStack id={'menu'} justifyContent={'space-between'} w={'full'}>
@@ -211,7 +219,7 @@ export const App = () => {
           <HStack pb={'20px'} w={'full'} justifyContent={isLargerThan480 ? 'start' : 'center'}>
             <Button
               height={isLargerThan480 ? '36px' : '48px'}
-              width={isLargerThan480 ? '' : '50%'}
+              width={isLargerThan480 ? '' : '60%'}
               onClick={() => {
                 window.open('https://repurchase.nestprotocol.org/')
               }}
@@ -347,7 +355,7 @@ export const App = () => {
         <HStack pb={'20px'} w={'full'} justifyContent={'center'}>
           <Button
             variant={'outline'}
-            w={isLargerThan480 ? '' : '50%'}
+            w={isLargerThan480 ? '' : '60%'}
             height={isLargerThan480 ? '36px' : '48px'}
             onClick={() => window.open('https://channel.nestprotocol.org/')}
           >
@@ -802,9 +810,9 @@ export const App = () => {
           <Button
             variant={'outline'}
             minW={'132px'}
-            w={isLargerThan480 ? '' : '50%'}
+            w={isLargerThan480 ? '' : '60%'}
             onClick={() => {
-              setShowMore(!showMore)
+              setShowMore.toggle()
             }}
             height={isLargerThan480 ? '36px' : '48px'}
           >
