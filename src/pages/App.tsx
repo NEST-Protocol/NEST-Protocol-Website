@@ -237,10 +237,10 @@ export const App = () => {
         zIndex={10}
         w={'full'}
         px={['22px', '22px', '44px']}
-        pt={['60px', '60px', '80px']}
+        pt={['40px', '40px', '80px']}
         ref={aboutRef}
       >
-        <Box mb={['60px', '60px', '80px']} w={'full'}>
+        <Box mb={['40px', '40px', '80px']} w={'full'}>
           <Heading fontSize={['30px', '30px', '50px']} w={'full'}>
             What Is A NEST Oracle
           </Heading>
@@ -253,9 +253,9 @@ export const App = () => {
         id={'impeccable technical architecture'}
         w={'full'}
         px={['22px', '22px', '44px']}
-        pt={['60px', '60px', '80px']}
+        pt={['40px', '40px', '80px']}
       >
-        <Box w={'full'} mb={['60px', '60px', '80px']}>
+        <Box w={'full'} mb={['40px', '40px', '80px']}>
           <Heading fontSize={['30px', '30px', '50px']} w={'full'}>
             Impeccable technical
           </Heading>
@@ -350,10 +350,10 @@ export const App = () => {
         id={'rapidly growing data'}
         w={'full'}
         px={['22px', '22px', '44px']}
-        pt={['60px', '60px', '80px']}
+        pt={['40px', '40px', '80px']}
         ref={dataRef}
       >
-        <Box w={'full'} mb={['60px', '60px', '80px']}>
+        <Box w={'full'} mb={['40px', '40px', '80px']}>
           <Heading fontSize={['30px', '30px', '50px']} w={'full'}>
             Rapidly Growing Data
           </Heading>
@@ -368,7 +368,7 @@ export const App = () => {
             {label: '109.40M', desc: 'Cumulative income (USDT)'}
           ].map(item => (
             <VStack key={item.desc} alignItems={'start'}>
-              <Text fontWeight={'bold'} fontSize={['2xl', '41px']} lineHeight={'55px'}>
+              <Text fontWeight={'bold'} fontSize={['30px', '41px']} lineHeight={'55px'}>
                 {item.label}
               </Text>
               <Text fontWeight={600} fontSize={['12px', '12px', '15px']} color={'#878787'}>
@@ -382,10 +382,10 @@ export const App = () => {
         id={'huge ecosystem'}
         w={'full'}
         px={['22px', '22px', '44px']}
-        pt={['60px', '60px', '80px']}
+        pt={['40px', '40px', '80px']}
         ref={ecologyRef}
       >
-        <Box w={'full'} mb={['60px', '60px', '80px']}>
+        <Box w={'full'} mb={['40px', '40px', '80px']}>
           <Heading fontSize={['30px', '30px', '50px']} w={'full'}>
             Huge Ecosystem
           </Heading>
@@ -461,7 +461,7 @@ export const App = () => {
             </Box>
           ))}
         </SimpleGrid>
-        <SimpleGrid columns={[2, 2, 4, 4]} spacingX={'60px'} spacingY={'40px'}>
+        <SimpleGrid columns={[2, 2, 4, 4]} spacingX={'60px'} spacingY={'40px'} w={isLargerThan480 ? '' : "80%"}>
           {[
             {id: 'nest_labs', src: nest_labs, link: '#'},
             {id: 'coinbase', src: coinbase, link: 'https://www.coinbase.com'},
@@ -532,10 +532,10 @@ export const App = () => {
         id={"join nest's global community"}
         w={'full'}
         px={['22px', '22px', '44px']}
-        pt={['60px', '60px', '80px']}
+        pt={['40px', '40px', '80px']}
         ref={communityRef}
       >
-        <Box w={'full'} mb={['60px', '60px', '80px']}>
+        <Box w={'full'} mb={['40px', '40px', '80px']}>
           <Heading fontSize={['30px', '30px', '50px']} w={'full'}>
             Join NEST's Global
           </Heading>
@@ -605,9 +605,9 @@ export const App = () => {
         id={'join the nest unicorn'}
         w={'full'}
         px={['22px', '22px', '44px']}
-        pt={['60px', '60px', '80px']}
+        pt={['40px', '40px', '80px']}
       >
-        <Box w={'full'} mb={['60px', '60px', '80px']}>
+        <Box w={'full'} mb={['40px', '40px', '80px']}>
           <Heading fontSize={['30px', '30px', '50px']} w={'full'}>
             Join the NEST Unicorn
           </Heading>
@@ -661,7 +661,7 @@ export const App = () => {
           ))}
         </SimpleGrid>
       </VStack>
-      <VStack id={'coming soon so stay tuned'} w={'full'} pt={['60px', '60px', '80px']}>
+      <VStack id={'coming soon so stay tuned'} w={'full'} pt={['40px', '40px', '80px']}>
         <Box w={'full'} mb={'40px'} px={['22px', '22px', '44px']}>
           <Heading fontSize={['30px', '30px', '50px']} w={'full'}>
             Coming Soon So Stay
@@ -701,11 +701,12 @@ export const App = () => {
         id={'news'}
         w={'full'}
         px={['22px', '22px', '44px']}
-        pt={['60px', '60px', '80px']}
-        pb={['44px', '44px', '115px']}
+        pt={['40px', '40px', '80px']}
+        pb={['16px', '16px', '120px']}
         ref={newsRef}
+        spacing={0}
       >
-        <Box w={'full'} mb={['60px', '60px', '80px']}>
+        <Box w={'full'} mb={['40px', '40px', '80px']}>
           <Heading fontSize={['30px', '30px', '50px']} w={'full'}>
             News
           </Heading>
