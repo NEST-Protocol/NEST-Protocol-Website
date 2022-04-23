@@ -518,6 +518,7 @@ export const App = () => {
                 h={'10px'}
                 bg={page === item ? '#EAAA00' : 'null'}
                 border={page === item ? 'null' : '1px solid #878787'}
+                borderRadius={"full"}
               />
             </Button>
           ))}
@@ -646,7 +647,7 @@ export const App = () => {
               <Text fontSize={['12px', '12px', '15px']} fontWeight={'bold'}>
                 {item.label}
               </Text>
-              <Text fontSize={['12px', '12px', '15px']} fontWeight={600} color={'#878787'}>
+              <Text fontSize={['12px', '12px', '15px']} fontWeight={600} color={'#878787'} textAlign={"justify"}>
                 {item.desc}
               </Text>
             </VStack>
@@ -753,7 +754,7 @@ export const App = () => {
                     {item.label}
                   </Text>
                 </Link>
-                <Text fontSize={['12px', '12px', '15px']} fontWeight={600} color={'#878787'}>
+                <Text fontSize={['12px', '12px', '15px']} fontWeight={600} color={'#878787'} textAlign={"justify"}>
                   {item.desc}
                 </Text>
               </VStack>
