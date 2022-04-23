@@ -163,9 +163,9 @@ export const App = () => {
               <MenuButton as={Button} variant={'ghost'} fontSize={'36px'} w={'36px'}>
                 <HamburgerIcon/>
               </MenuButton>
-              <MenuList zIndex={11}>
+              <MenuList zIndex={11} borderRadius={'12px'}>
                 {menu.map(item => (
-                  <MenuItem key={item.label} fontWeight={'bold'} onClick={() => next(item.ref)}>
+                  <MenuItem key={item.label} fontWeight={'semibold'} onClick={() => next(item.ref)}>
                     {item.label}
                   </MenuItem>
                 ))}
@@ -750,17 +750,17 @@ export const App = () => {
                   h={'160px'}
                   justifyContent={'center'}
                 >
-                  <img src={item.logos} alt={item.label} style={{height: '20px'}}/>
+                  <img src={item.logos} alt={item.label} style={{height: '28px'}}/>
                 </VStack>
                 <img src={item.bg} alt={item.label} style={{objectFit: 'cover'}}/>
               </Box>
-              <VStack w={'full'} px={['22px', '22px', '44px']} py={'22px'}>
+              <VStack w={'full'} px={['22px', '22px', '44px']} py={'22px'} alignItems={isLargerThan480 ? "center" : 'start'}>
                 <Link isExternal href={item.link}>
                   <Text fontSize={'15px'} fontWeight={'bold'}>
                     {item.label}
                   </Text>
                 </Link>
-                <Text fontSize={'15px'} fontWeight={600} color={'#878787'}>
+                <Text fontSize={['12px', '12px', '15px']} fontWeight={600} color={'#878787'}>
                   {item.desc}
                 </Text>
               </VStack>
