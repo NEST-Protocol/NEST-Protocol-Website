@@ -4,6 +4,6 @@ export const Heading = {
     fontFamily: 'Montserrat'
   },
   defaultProps: {
-    size: 'md',
-  },
+    size: 'md'
+  }
 }

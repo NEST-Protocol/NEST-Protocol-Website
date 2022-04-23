@@ -1,4 +1,4 @@
-import {useCallback, useEffect, useState} from "react";
+import { useCallback, useEffect, useState } from 'react'
 
 export const useWinSize = () => {
   const [size, setSize] = useState({
@@ -19,7 +19,7 @@ export const useWinSize = () => {
     }
   }, [])
 
-  return size;
+  return size
 }
 
 export default useWinSize

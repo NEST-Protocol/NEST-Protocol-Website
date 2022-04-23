@@ -1,10 +1,10 @@
-import {ChakraProvider} from "@chakra-ui/react"
-import theme from "./theme"
-import * as React from "react"
-import ReactDOM from "react-dom"
-import { App } from "./pages/App"
-import reportWebVitals from "./reportWebVitals"
-import * as serviceWorker from "./serviceWorker"
+import { ChakraProvider } from '@chakra-ui/react'
+import theme from './theme'
+import * as React from 'react'
+import ReactDOM from 'react-dom'
+import { App } from './pages/App'
+import reportWebVitals from './reportWebVitals'
+import * as serviceWorker from './serviceWorker'
 import 'focus-visible/dist/focus-visible'
 
 ReactDOM.render(
@@ -13,7 +13,7 @@ ReactDOM.render(
       <App />
     </ChakraProvider>
   </React.StrictMode>,
-  document.getElementById("root"),
+  document.getElementById('root')
 )
 
 // If you want your app to work offline and load faster, you can change
