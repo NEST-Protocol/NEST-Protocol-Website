@@ -140,7 +140,9 @@ export const App = () => {
       </Box>
       <VStack id={'menu+index'} bg={'#FBEECC'} w={'full'} px={['22px', '22px', '44px']} py={'27px'}>
         <HStack id={'menu'} justifyContent={'space-between'} w={'full'}>
-          <img src={nest} alt={'nest'}/>
+          <Box>
+            <img src={nest} alt={'nest'}/>
+          </Box>
           {isLargerThan1024 ? (
             <HStack>
               {menu.map(item => (
@@ -175,26 +177,29 @@ export const App = () => {
           id={'page1'}
           alignItems={'start'}
           w={'full'}
-          spacing={'60px'}
+          spacing={'40px'}
           pt={['80px', '80px', '140px']}
           zIndex={10}
           pb={'60px'}
         >
-          <Box alignItems={'start'} w={'full'}>
-            <Heading fontSize={['4xl', '4xl', '5xl']}>Truly Decentralized Oracle</Heading>
-            <Heading fontSize={['4xl', '4xl', '5xl']}>No Nodes No Auditing Free Quotation</Heading>
-            <Heading fontSize={['4xl', '4xl', '5xl']}>On-Chain Verification</Heading>
+          <VStack alignItems={'start'} w={'full'} spacing={'22px'}>
+            <Heading fontSize={'50px'}>Truly Decentralized Oracle</Heading>
+            <Heading fontSize={'50px'}>No Nodes No Auditing Free Quotation</Heading>
+            <Heading fontSize={'50px'}>On-Chain Verification</Heading>
+          </VStack>
+          <Box pb={'20px'}>
+            <Button
+              isFullWidth={!isLargerThan480}
+              height={isLargerThan480 ? '36px' : '48px'}
+              onClick={() => {
+                window.open('https://repurchase.nestprotocol.org/')
+              }}
+              borderRadius={isLargerThan480 ? 'full' : '44px'}
+            >
+              DAPP Web
+            </Button>
           </Box>
-          <Button
-            isFullWidth={!isLargerThan480}
-            height={isLargerThan480 ? '36px' : '48px'}
-            onClick={() => {
-              window.open('https://repurchase.nestprotocol.org/')
-            }}
-            borderRadius={isLargerThan480 ? '12px' : '44px'}
-          >
-            DAPP Web
-          </Button>
+
           <SimpleGrid columns={[3, 3, 3, 6]} spacing={'44px'}>
             {[
               {id: 'nest_labs', src: nest_labs, link: '#'},
@@ -213,13 +218,14 @@ export const App = () => {
       </VStack>
       <VStack
         id={'what is a nest nest oracle'}
+        zIndex={10}
         w={'full'}
         px={['22px', '22px', '44px']}
-        pt={['60px', '60px', '100px']}
+        pt={['60px', '60px', '80px']}
         ref={aboutRef}
       >
-        <Box mb={['60px', '60px', '100px']} w={'full'}>
-          <Heading fontSize={['4xl', '4xl', '5xl']} w={'full'}>
+        <Box mb={['60px', '60px', '80px']} w={'full'}>
+          <Heading fontSize={'50px'} w={'full'}>
             What Is A NEST Oracle
           </Heading>
         </Box>
@@ -231,13 +237,13 @@ export const App = () => {
         id={'impeccable technical architecture'}
         w={'full'}
         px={['22px', '22px', '44px']}
-        pt={['60px', '60px', '100px']}
+        pt={['60px', '60px', '80px']}
       >
-        <Box w={'full'} mb={['60px', '60px', '100px']}>
-          <Heading fontSize={['4xl', '4xl', '5xl']} w={'full'}>
+        <Box w={'full'} mb={['60px', '60px', '80px']}>
+          <Heading fontSize={'50px'} w={'full'}>
             Impeccable technical
           </Heading>
-          <Heading fontSize={['4xl', '4xl', '5xl']} w={'full'}>
+          <Heading fontSize={'50px'} w={'full'}>
             Architecture
           </Heading>
         </Box>
@@ -266,7 +272,7 @@ export const App = () => {
                   <Text fontWeight={600} fontSize={'15px'}>
                     {item.id}
                   </Text>
-                  <Text color={'#878787'} fontSize={'15px'} fontWeight={600}>
+                  <Text color={'#878787'} fontSize={'15px'} fontWeight={600} height={'40px'}>
                     {item.desc}
                   </Text>
                 </VStack>
@@ -304,13 +310,18 @@ export const App = () => {
             {id: 'Security Report', logo: SecurityReport, link: ''}
           ].map(item => (
             <Link isExternal href={item.link} key={item.id}>
-              <HStack spacing={['11px', '11px', '22px']} w={'220px'}>
-                <img src={item.logo} alt={item.id}/>
-                <Text fontSize={'15px'} fontWeight={'semibold'}>
-                  {item.id}
-                </Text>
-                <Spacer/>
-                <img src={Right2} alt={'right'}/>
+              <HStack>
+                <Box mr={'22px'}>
+                  <img src={item.logo} alt={item.id}/>
+                </Box>
+                <Box>
+                  <Text fontSize={'15px'} fontWeight={'semibold'}>
+                    {item.id}
+                  </Text>
+                </Box>
+                <Box pl={'14px'}>
+                  <img src={Right2} alt={'right'}/>
+                </Box>
               </HStack>
             </Link>
           ))}
@@ -320,7 +331,7 @@ export const App = () => {
           isFullWidth={!isLargerThan480}
           height={isLargerThan480 ? '36px' : '48px'}
           onClick={() => window.open('https://channel.nestprotocol.org/')}
-          borderRadius={isLargerThan480 ? '12px' : '44px'}
+          borderRadius={isLargerThan480 ? 'full' : '44px'}
         >
           Developers
         </Button>
@@ -329,11 +340,11 @@ export const App = () => {
         id={'rapidly growing data'}
         w={'full'}
         px={['22px', '22px', '44px']}
-        pt={['60px', '60px', '100px']}
+        pt={['60px', '60px', '80px']}
         ref={dataRef}
       >
-        <Box w={'full'} mb={['60px', '60px', '100px']}>
-          <Heading fontSize={['4xl', '4xl', '5xl']} w={'full'}>
+        <Box w={'full'} mb={['60px', '60px', '80px']}>
+          <Heading fontSize={'50px'} w={'full'}>
             Rapidly Growing Data
           </Heading>
         </Box>
@@ -347,7 +358,7 @@ export const App = () => {
             {label: '109.40M', desc: 'Cumulative income (USDT)'}
           ].map(item => (
             <VStack key={item.desc} alignItems={'start'}>
-              <Text fontWeight={'bold'} fontSize={['2xl', '3xl', '4xl']}>
+              <Text fontWeight={'bold'} fontSize={['2xl', '41px']} lineHeight={'55px'}>
                 {item.label}
               </Text>
               <Text fontWeight={600} fontSize={['12px', '12px', '15px']} color={'#878787'}>
@@ -361,11 +372,11 @@ export const App = () => {
         id={'huge ecosystem'}
         w={'full'}
         px={['22px', '22px', '44px']}
-        pt={['60px', '60px', '100px']}
+        pt={['60px', '60px', '80px']}
         ref={ecologyRef}
       >
-        <Box w={'full'} mb={['60px', '60px', '100px']}>
-          <Heading fontSize={['4xl', '4xl', '5xl']} w={'full'}>
+        <Box w={'full'} mb={['60px', '60px', '80px']}>
+          <Heading fontSize={'50px'} w={'full'}>
             Huge Ecosystem
           </Heading>
         </Box>
@@ -511,18 +522,18 @@ export const App = () => {
         id={"join nest's global community"}
         w={'full'}
         px={['22px', '22px', '44px']}
-        pt={['60px', '60px', '100px']}
+        pt={['60px', '60px', '80px']}
         ref={communityRef}
       >
-        <Box w={'full'} mb={['60px', '60px', '100px']}>
-          <Heading fontSize={['4xl', '4xl', '5xl']} w={'full'}>
+        <Box w={'full'} mb={['60px', '60px', '80px']}>
+          <Heading fontSize={'50px'} w={'full'}>
             Join NEST's Global
           </Heading>
-          <Heading fontSize={['4xl', '4xl', '5xl']} w={'full'}>
+          <Heading fontSize={'50px'} w={'full'}>
             Community
           </Heading>
         </Box>
-        <SimpleGrid columns={[2, 2, 2, 2, 4]} spacing={['22px', '22px', '44px']}>
+        <SimpleGrid columns={2} spacing={['22px', '22px', '44px']}>
           {[
             {
               label: 'Twitter',
@@ -598,13 +609,13 @@ export const App = () => {
         id={'join the nest unicorn'}
         w={'full'}
         px={['22px', '22px', '44px']}
-        pt={['60px', '60px', '100px']}
+        pt={['60px', '60px', '80px']}
       >
-        <Box w={'full'} mb={['60px', '60px', '100px']}>
-          <Heading fontSize={['4xl', '4xl', '5xl']} w={'full'}>
+        <Box w={'full'} mb={['60px', '60px', '80px']}>
+          <Heading fontSize={'50px'} w={'full'}>
             Join the NEST Unicorn
           </Heading>
-          <Heading fontSize={['4xl', '4xl', '5xl']} w={'full'}>
+          <Heading fontSize={'50px'} w={'full'}>
             Rewards Program
           </Heading>
         </Box>
@@ -653,17 +664,17 @@ export const App = () => {
           ))}
         </SimpleGrid>
       </VStack>
-      <VStack id={'coming soon so stay tuned'} w={'full'} pt={['60px', '60px', '100px']}>
+      <VStack id={'coming soon so stay tuned'} w={'full'} pt={['60px', '60px', '80px']}>
         <Box w={'full'} mb={'40px'} px={['22px', '22px', '44px']}>
-          <Heading fontSize={['4xl', '4xl', '5xl']} w={'full'}>
+          <Heading fontSize={'50px'} w={'full'}>
             Coming Soon So Stay
           </Heading>
-          <Heading fontSize={['4xl', '4xl', '5xl']} w={'full'}>
+          <Heading fontSize={'50px'} w={'full'}>
             Tuned
           </Heading>
         </Box>
         <VStack alignItems={'start'} w={'full'} justifyContent={'center'}>
-          <img src={arms} style={{background: '#FBEECC', padding: '20px 0'}} alt={'arms'}/>
+          <img src={arms} style={{background: '#FBEECC', padding: '44px 0'}} alt={'arms'}/>
           <VStack
             position={'absolute'}
             w={'full'}
@@ -671,16 +682,18 @@ export const App = () => {
             textAlign={'start'}
             justifyContent={'center'}
           >
-            {['NEST GRANT', 'NEST ECO-FUND', 'NEST Research', 'NEST DAO', 'NEST ABC'].map(item => (
-              <Text
-                key={item}
-                fontSize={['12px', '12px', '25px']}
-                fontWeight={600}
-                color={'#878787'}
-              >
-                {item}
-              </Text>
-            ))}
+            <VStack alignItems={"start"}>
+              {['NEST GRANT', 'NEST ECO-FUND', 'NEST Research', 'NEST DAO', 'NEST ABC'].map(item => (
+                <Text
+                  key={item}
+                  fontSize={['12px', '12px', '25px']}
+                  fontWeight={600}
+                  color={'#878787'}
+                >
+                  {item}
+                </Text>
+              ))}
+            </VStack>
           </VStack>
         </VStack>
       </VStack>
@@ -689,12 +702,12 @@ export const App = () => {
         id={'news'}
         w={'full'}
         px={['22px', '22px', '44px']}
-        pt={['60px', '60px', '100px']}
-        pb={'44px'}
+        pt={['60px', '60px', '80px']}
+        pb={'115px'}
         ref={newsRef}
       >
-        <Box w={'full'} mb={['60px', '60px', '100px']}>
-          <Heading fontSize={['4xl', '4xl', '5xl']} w={'full'}>
+        <Box w={'full'} mb={['60px', '60px', '80px']}>
+          <Heading fontSize={'50px'} w={'full'}>
             News
           </Heading>
         </Box>
@@ -760,7 +773,7 @@ export const App = () => {
           isFullWidth={!isLargerThan480}
           onClick={() => window.open('https://coin68.com/nest-protocol-la-gi/')}
           height={isLargerThan480 ? '36px' : '48px'}
-          borderRadius={isLargerThan480 ? '12px' : '44px'}
+          borderRadius={isLargerThan480 ? 'full' : '44px'}
         >
           More
         </Button>

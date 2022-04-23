@@ -1,6 +1,6 @@
 export const Button = {
   baseStyle: {
-    fontWeight: 'bold',
+    fontWeight: 'medium',
     fontSize: 'md'
   },
   variants: {
@@ -28,6 +28,7 @@ export const Button = {
     solid: {
       bg: '#EAAA00',
       color: 'black',
+      fontWeight: 'semibold',
       borderRadius: '17px',
       height: '34px',
       _hover: {
