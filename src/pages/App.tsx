@@ -135,11 +135,11 @@ export const App = () => {
 
   return (
     <VStack w={'full'} spacing={0}>
-      <Box position={'absolute'} zIndex={0}>
+      <Box position={'absolute'} zIndex={0} w={"full"}>
         <img
           src={header}
           alt={''}
-          style={{ display: 'block', height: isLargerThan480 ? '1200px' : '800px' }}
+          style={{ display: 'block', width: '100%', height: isLargerThan480 ? '1600px' : '1000px' }}
         />
       </Box>
       <VStack id={'menu+index'} bg={'#FBEECC'} w={'full'} px={['22px', '22px', '44px']} py={'27px'}>
@@ -678,7 +678,7 @@ export const App = () => {
                 fontSize={['12px', '12px', '15px']}
                 fontWeight={600}
                 color={'#878787'}
-                textAlign={isLargerThan480 ? 'justify' : 'center'}
+                textAlign={isLargerThan480 ? 'start' : 'center'}
               >
                 {item.desc}
               </Text>
@@ -791,7 +791,6 @@ export const App = () => {
                     fontSize={['12px', '12px', '15px']}
                     fontWeight={600}
                     color={'#878787'}
-                    textAlign={'justify'}
                   >
                     {item.desc}
                   </Text>
@@ -804,13 +803,12 @@ export const App = () => {
             variant={'outline'}
             minW={'132px'}
             w={isLargerThan480 ? '' : '50%'}
-            hidden={showMore}
             onClick={() => {
-              setShowMore(true)
+              setShowMore(!showMore)
             }}
             height={isLargerThan480 ? '36px' : '48px'}
           >
-            More
+            {showMore ? 'Less' : 'More'}
           </Button>
         </HStack>
       </VStack>
