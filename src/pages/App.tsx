@@ -386,7 +386,7 @@ export const App = () => {
             Huge Ecosystem
           </Heading>
         </Box>
-        <SimpleGrid columns={[1, 2, 3, 3]} spacing={'44px'} pb={'44px'}>
+        <SimpleGrid columns={[1, 2, 3, 3]} spacing={['22px', '22px', '44px']} pb={'44px'}>
           {[
             {
               label: 'DeFi',
@@ -565,6 +565,7 @@ export const App = () => {
             <VStack
               key={item.label}
               borderRadius={'12px'}
+              spacing={0}
               w={['full', 'full', '308px']}
               h={['140px', '140px', '308px']}
               border={'1px solid #EEEEEE'}
@@ -575,7 +576,8 @@ export const App = () => {
                 <img src={item.bg} alt={item.label} />
               </Box>
               <HStack
-                p={['12px', '12px', '22px']}
+                h={"full"}
+                px={['12px', '12px', '22px']}
                 justifyContent={'space-between'}
                 w={'full'}
                 alignItems={'center'}
@@ -609,7 +611,7 @@ export const App = () => {
             Rewards Program
           </Heading>
         </Box>
-        <SimpleGrid columns={[1, 1, 2, 3]} spacing={'44px'}>
+        <SimpleGrid columns={[1, 1, 2, 3]} spacing={['22px', '22px', '44px']}>
           {[
             {
               label: 'Top Oracle miner',
@@ -647,7 +649,7 @@ export const App = () => {
               <Text fontSize={['12px', '12px', '15px']} fontWeight={'bold'}>
                 {item.label}
               </Text>
-              <Text fontSize={['12px', '12px', '15px']} fontWeight={600} color={'#878787'} textAlign={"justify"}>
+              <Text fontSize={['12px', '12px', '15px']} fontWeight={600} color={'#878787'} textAlign={isLargerThan480 ? "justify" : "center"}>
                 {item.desc}
               </Text>
             </VStack>
