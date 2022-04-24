@@ -257,7 +257,7 @@ export const App = () => {
             What Is A NEST Oracle
           </Heading>
         </Box>
-        <AspectRatio w={['full', 'full', '720px']} ratio={16 / 9}>
+        <AspectRatio w={['full', 'full', '720px']} ratio={16 / 9} borderRadius={'12px'} overflow={"hidden"} bg={"black"}>
           <iframe title="naruto" src="https://www.youtube.com/embed/-c7A2CjoJ8E" allowFullScreen />
         </AspectRatio>
       </VStack>
@@ -345,7 +345,7 @@ export const App = () => {
                   </Text>
                 </Box>
                 <Spacer />
-                <Box maxW={['20px', '20px', '44px']} maxH={['20px', '20px', '44px']}>
+                <Box pl={['0px', '0px','14px']} maxW={['20px', '20px', '44px']} maxH={['20px', '20px', '44px']}>
                   <img src={Right2} alt={'right'} />
                 </Box>
               </HStack>
@@ -593,17 +593,16 @@ export const App = () => {
               borderRadius={'12px'}
               spacing={0}
               w={['full', 'full', '308px']}
-              h={['140px', '140px', '308px']}
               border={'1px solid #EEEEEE'}
               boxShadow={'0px 0px 45px 5px #E5E5E5'}
               overflow={'hidden'}
             >
-              <Box w={'full'} h={'198px'}>
+              <Box w={'full'} h={'full'}>
                 <img src={item.bg} alt={item.label} />
               </Box>
               <HStack
                 h={'full'}
-                px={['12px', '12px', '22px']}
+                p={['12px', '12px', '22px']}
                 justifyContent={'space-between'}
                 w={'full'}
                 alignItems={'center'}
@@ -767,7 +766,7 @@ export const App = () => {
             {
               label: 'NEST Protocol project overview and NEST coin',
               bg: new4,
-              desc: 'The project uses a unique “quote mining” mechanism to ensure that off-chain price data is generated on-chain in a synchronous manner.',
+              desc: 'The project uses a unique “quote mining” mechanism to ensure that off-chain price data is generated on-chain in a synchronous manner',
               link: 'https://coin68.com/nest-protocol-la-gi/'
             }
           ]
@@ -776,19 +775,24 @@ export const App = () => {
               <VStack
                 key={item.label}
                 w={isLargerThan480 ? '308px' : 'full'}
+                h={"full"}
+                spacing={0}
                 border={'1px solid #EEEEEE'}
                 boxShadow={'0px 0px 45px 5px #E5E5E5'}
                 borderRadius={'12px'}
                 overflow={'hidden'}
               >
-                <Box h={'160px'} overflow={'hidden'}>
+                <Box>
                   <img src={item.bg} alt={item.label} style={{ objectFit: 'cover' }} />
                 </Box>
                 <VStack
                   w={'full'}
+                  h={"full"}
                   px={['22px', '22px', '44px']}
                   py={'22px'}
+                  spacing={'8px'}
                   alignItems={isLargerThan480 ? 'center' : 'start'}
+                  justifyContent={"start"}
                 >
                   <Link isExternal href={item.link}>
                     <Text fontSize={'15px'} fontWeight={'bold'}>
