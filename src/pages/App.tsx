@@ -678,7 +678,7 @@ export const App = () => {
               <Text fontSize={'17px'} fontWeight={'bold'}>
                 {item.number}
               </Text>
-              <Text fontSize={['12px', '12px', '15px']} fontWeight={'bold'}>
+              <Text fontSize={['12px', '12px', '15px']} fontWeight={'bold'} whiteSpace={"nowrap"}>
                 {item.label}
               </Text>
               <Text
