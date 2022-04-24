@@ -158,7 +158,7 @@ export const App = () => {
           {isLargerThan1024 ? (
             <HStack>
               {menu.map(item => (
-                <Button key={item.label} variant={'ghost'} onClick={() => next(item.ref)}>
+                <Button key={item.label} variant={'ghost'} onClick={() => next(item.ref)} _hover={{ color: '#EAAA00' }}>
                   {item.label}
                 </Button>
               ))}
