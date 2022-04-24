@@ -775,7 +775,6 @@ export const App = () => {
               <VStack
                 key={item.label}
                 w={isLargerThan480 ? '308px' : 'full'}
-                h={"full"}
                 spacing={0}
                 border={'1px solid #EEEEEE'}
                 boxShadow={'0px 0px 45px 5px #E5E5E5'}
@@ -787,7 +786,6 @@ export const App = () => {
                 </Box>
                 <VStack
                   w={'full'}
-                  h={"full"}
                   px={['22px', '22px', '44px']}
                   py={'22px'}
                   spacing={'8px'}
