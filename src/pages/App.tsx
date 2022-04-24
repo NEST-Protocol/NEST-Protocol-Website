@@ -12,7 +12,7 @@ import {
   MenuList,
   MenuButton,
   MenuItem,
-  Menu, useBoolean
+  Menu, useBoolean, chakra
 } from '@chakra-ui/react'
 import { AspectRatio } from '@chakra-ui/react'
 import nest from '../assets/svg/nest.svg'
@@ -137,13 +137,13 @@ export const App = () => {
     <VStack w={'full'} spacing={0}>
       <Box position={'absolute'} zIndex={0} w={"full"}>
         { isLargerThan480 ? (
-          <img
+          <chakra.img
             src={header}
             alt={''}
             style={{ display: 'block', width: '100%', height: '1600px' }}
           />
         ) : (
-          <img
+          <chakra.img
             src={header_phone}
             alt={''}
             style={{ display: 'block', width: '100%', height: '820px' }}
@@ -153,7 +153,7 @@ export const App = () => {
       <VStack id={'menu+index'} bg={'#FBEECC'} w={'full'} px={['22px', '22px', '44px']} py={'27px'}>
         <HStack id={'menu'} justifyContent={'space-between'} w={'full'}>
           <Box>
-            <img src={nest} alt={'nest'} />
+            <chakra.img src={nest} alt={'nest'} />
           </Box>
           {isLargerThan1024 ? (
             <HStack>
@@ -238,7 +238,7 @@ export const App = () => {
               { id: 'coinbase', src: coinbase, link: 'https://www.coinbase.com' }
             ].map(item => (
               <Link key={item.id} isExternal href={item.link}>
-                <img src={item.src} alt={item.id} />
+                <chakra.img src={item.src} alt={item.id} />
               </Link>
             ))}
           </SimpleGrid>
@@ -264,6 +264,7 @@ export const App = () => {
       <VStack
         id={'impeccable technical architecture'}
         w={'full'}
+        zIndex={10}
         px={['22px', '22px', '44px']}
         pt={['40px', '40px', '80px']}
       >
@@ -296,7 +297,7 @@ export const App = () => {
                   boxShadow={'0 0 45px 5px #E5E5E5'}
                   border={'1px solid #EEEEEE'}
                 >
-                  <img src={item.logo} alt={item.id} />
+                  <chakra.img src={item.logo} alt={item.id} />
                   <Text fontWeight={600} fontSize={'15px'}>
                     {item.id}
                   </Text>
@@ -313,7 +314,7 @@ export const App = () => {
                   borderRadius={'12px'}
                   p={'27px'}
                 >
-                  <img src={item.logo} alt={item.id} />
+                  <chakra.img src={item.logo} alt={item.id} />
                   <VStack alignItems={'start'}>
                     <Text fontWeight={600} fontSize={'15px'}>
                       {item.id}
@@ -337,16 +338,16 @@ export const App = () => {
             <Link isExternal href={item.link} key={item.label}>
               <HStack spacing={0}>
                 <Box mr={['10px', '10px', '22px']} w={'44px'} h={'44px'}>
-                  <img src={item.icon} alt={item.label} />
+                  <chakra.img src={item.icon} alt={item.label} />
                 </Box>
                 <Box>
                   <Text fontSize={['12px', '12px', '15px']} fontWeight={'semibold'}>
                     {item.label}
                   </Text>
                 </Box>
-                <Spacer />
+                <Spacer/>
                 <Box pl={['0px', '0px','14px']} maxW={['20px', '20px', '44px']} maxH={['20px', '20px', '44px']}>
-                  <img src={Right2} alt={'right'} />
+                  <chakra.img src={Right2} alt={'right'} _hover={{ transform: 'translateX(8px)' }}/>
                 </Box>
               </HStack>
             </Link>
@@ -442,12 +443,12 @@ export const App = () => {
                   <Text fontWeight={'bold'} fontSize={'17px'}>
                     {item.label}
                   </Text>
-                  <img src={item.logo} alt={item.label} />
+                  <chakra.img src={item.logo} alt={item.label} />
                   <Text fontSize={'15px'} fontWeight={600} color={'#878787'} height={'60px'}>
                     {item.desc}
                   </Text>
                   <Link isExternal href={item.link}>
-                    <img src={Right1} alt={'right'} />
+                    <chakra.img src={Right1} alt={'right'} _hover={{ transform: 'translateX(8px)' }}/>
                   </Link>
                 </VStack>
               ) : (
@@ -464,10 +465,10 @@ export const App = () => {
                     {item.label}
                   </Text>
                   <HStack w={'full'}>
-                    <img src={item.logo} alt={item.label} />
+                    <chakra.img src={item.logo} alt={item.label} />
                     <Spacer />
                     <Link isExternal href={item.link}>
-                      <img src={Right1} alt={'right'} />
+                      <chakra.img src={Right1} alt={'right'} />
                     </Link>
                   </HStack>
                   <Text fontSize={'15px'} fontWeight={600} color={'#878787'}>
@@ -528,7 +529,7 @@ export const App = () => {
                 w={'160px'}
                 h={['24px', '24px', '36px']}
               >
-                <img
+                <chakra.img
                   src={item.src}
                   alt={item.id}
                   style={{ height: isLargerThan480 ? '36px' : '18px' }}
@@ -597,11 +598,10 @@ export const App = () => {
               boxShadow={'0px 0px 45px 5px #E5E5E5'}
               overflow={'hidden'}
             >
-              <Box w={'full'} h={'full'}>
-                <img src={item.bg} alt={item.label} />
+              <Box overflow={"hidden"}>
+                <chakra.img src={item.bg} alt={item.label} _hover={{ transform: 'scale(1.05)' }}/>
               </Box>
               <HStack
-                h={'full'}
                 p={['12px', '12px', '22px']}
                 justifyContent={'space-between'}
                 w={'full'}
@@ -612,9 +612,9 @@ export const App = () => {
                 </Text>
                 <Link isExternal href={item.link}>
                   {isLargerThan480 ? (
-                    <img src={Right1} alt={'right'} />
+                    <chakra.img src={Right1} alt={'right'} _hover={{ transform: 'translateX(8px)' }}/>
                   ) : (
-                    <img src={Right1} alt={'right'} height={'24px'} width={'24px'} />
+                    <chakra.img src={Right1} alt={'right'} height={'24px'} width={'24px'} />
                   )}
                 </Link>
               </HStack>
@@ -674,7 +674,7 @@ export const App = () => {
                 window.open(item.link)
               }}
             >
-              <img src={item.icon} alt={item.label} />
+              <chakra.img src={item.icon} alt={item.label}/>
               <Text fontSize={'17px'} fontWeight={'bold'}>
                 {item.number}
               </Text>
@@ -703,7 +703,7 @@ export const App = () => {
           </Heading>
         </Box>
         <VStack alignItems={'start'} w={'full'} justifyContent={'center'}>
-          <img src={arms} style={{ background: '#FBEECC', padding: '44px 0' }} alt={'arms'} />
+          <chakra.img src={arms} style={{ background: '#FBEECC', padding: '44px 0' }} alt={'arms'} />
           <VStack
             position={'absolute'}
             w={'full'}
@@ -781,8 +781,8 @@ export const App = () => {
                 borderRadius={'12px'}
                 overflow={'hidden'}
               >
-                <Box>
-                  <img src={item.bg} alt={item.label} style={{ objectFit: 'cover' }} />
+                <Box overflow={"hidden"}>
+                  <chakra.img src={item.bg} alt={item.label} style={{ objectFit: 'cover' }} _hover={{ transform: 'scale(1.05)' }}/>
                 </Box>
                 <VStack
                   w={'full'}
@@ -849,7 +849,7 @@ export const App = () => {
                 {socialLinks.map(item => (
                   <Link key={item.label} isExternal href={item.link}>
                     <HStack spacing={'20px'}>
-                      <img src={item.icon} alt={item.label} />
+                      <chakra.img src={item.icon} alt={item.label} />
                       <Text fontSize={'15px'} fontWeight={600}>
                         {item.label}
                       </Text>
@@ -865,7 +865,7 @@ export const App = () => {
                 {technologyLinks.map(item => (
                   <Link key={item.label} isExternal href={item.link}>
                     <HStack spacing={'20px'}>
-                      <img src={item.icon} alt={item.label} />
+                      <chakra.img src={item.icon} alt={item.label} />
                       <Text fontSize={'15px'} fontWeight={600}>
                         {item.label}
                       </Text>
@@ -898,7 +898,7 @@ export const App = () => {
                   {socialLinks.map(item => (
                     <Link key={item.label} isExternal href={item.link}>
                       <HStack spacing={'20px'}>
-                        <img src={item.icon} alt={item.label} height={'22px'} width={'22px'} />
+                        <chakra.img src={item.icon} alt={item.label} height={'22px'} width={'22px'} />
                         <Text fontSize={'15px'} fontWeight={600}>
                           {item.label}
                         </Text>
@@ -915,7 +915,7 @@ export const App = () => {
                   {technologyLinks.map(item => (
                     <Link key={item.label} isExternal href={item.link}>
                       <HStack spacing={'20px'}>
-                        <img src={item.icon} alt={item.label} height={'22px'} width={'22px'} />
+                        <chakra.img src={item.icon} alt={item.label} height={'22px'} width={'22px'} />
                         <Text fontSize={'15px'} fontWeight={600}>
                           {item.label}
                         </Text>
