@@ -14,7 +14,7 @@ import {
   MenuItem,
   Menu, useBoolean, chakra
 } from '@chakra-ui/react'
-import { AspectRatio } from '@chakra-ui/react'
+import {AspectRatio} from '@chakra-ui/react'
 import nest from '../assets/svg/nest.svg'
 import nest_labs from '../assets/svg/nestlabs.svg'
 import fort from '../assets/svg/FORT.svg'
@@ -55,9 +55,9 @@ import award3 from '../assets/svg/award3_icon.svg'
 import Twitter from '../assets/svg/twitter_icon.svg'
 import Telegram from '../assets/svg/telegram_icon.svg'
 import Medium from '../assets/svg/medium_icon.svg'
-import { useMediaQuery } from '@chakra-ui/react'
-import { HamburgerIcon } from '@chakra-ui/icons'
-import { useRef, useState } from 'react'
+import {useMediaQuery} from '@chakra-ui/react'
+import {HamburgerIcon} from '@chakra-ui/icons'
+import {useRef, useState} from 'react'
 import arms from '../assets/img/机械臂.png'
 import twitterImg from '../assets/img/Twitter.png'
 import telegramImg from '../assets/img/Telegram.png'
@@ -101,15 +101,15 @@ export const App = () => {
   }
 
   const menu = [
-    { label: 'About NEST', ref: aboutRef },
-    { label: 'Data', ref: dataRef },
-    { label: 'Ecology', ref: ecologyRef },
-    { label: 'Community', ref: communityRef },
-    { label: 'News', ref: newsRef }
+    {label: 'About NEST', ref: aboutRef},
+    {label: 'Data', ref: dataRef},
+    {label: 'Ecology', ref: ecologyRef},
+    {label: 'Community', ref: communityRef},
+    {label: 'News', ref: newsRef}
   ]
 
   const technologyLinks = [
-    { label: 'Github', icon: Github, link: 'https://github.com/NEST-Protocol' },
+    {label: 'Github', icon: Github, link: 'https://github.com/NEST-Protocol'},
     {
       label: 'Price Facade',
       icon: Price,
@@ -128,52 +128,54 @@ export const App = () => {
   ]
 
   const socialLinks = [
-    { label: 'Twitter', icon: Twitter, link: 'https://twitter.com/nest_protocol' },
-    { label: 'Telegram', icon: Telegram, link: 'https://t.me/nest_chat' },
-    { label: 'Medium', icon: Medium, link: 'https://nest-protocol-82041.medium.com/' }
+    {label: 'Twitter', icon: Twitter, link: 'https://twitter.com/nest_protocol'},
+    {label: 'Telegram', icon: Telegram, link: 'https://t.me/nest_chat'},
+    {label: 'Medium', icon: Medium, link: 'https://nest-protocol-82041.medium.com/'}
   ]
 
   return (
     <VStack w={'full'} spacing={0}>
       <Box position={'absolute'} zIndex={0} w={"full"}>
-        { isLargerThan480 ? (
+        {isLargerThan480 ? (
           <chakra.img
             src={header}
             alt={''}
-            style={{ display: 'block', width: '100%', height: '1600px' }}
+            style={{display: 'block', width: '100%', height: '1600px'}}
           />
         ) : (
           <chakra.img
             src={header_phone}
             alt={''}
-            style={{ display: 'block', width: '100%', height: '820px' }}
+            style={{display: 'block', width: '100%', height: '820px'}}
           />
-        ) }
+        )}
       </Box>
       <VStack id={'menu+index'} bg={'#FBEECC'} w={'full'} px={['22px', '22px', '44px']} py={'27px'}>
         <HStack id={'menu'} justifyContent={'space-between'} w={'full'}>
           <Box>
-            <chakra.img src={nest} alt={'nest'} />
+            <chakra.img src={nest} alt={'nest'}/>
           </Box>
           {isLargerThan1024 ? (
             <HStack>
               {menu.map(item => (
-                <Button key={item.label} variant={'ghost'} onClick={() => next(item.ref)} _hover={{ color: '#EAAA00' }}>
+                <Button key={item.label} variant={'ghost'} onClick={() => next(item.ref)} _hover={{color: '#EAAA00'}}>
                   {item.label}
                 </Button>
               ))}
-              <Button
-                onClick={() => {
-                  window.open('https://channel.nestprotocol.org/')
-                }}
-              >
-                Developers
-              </Button>
+              <Box>
+                <Button ml={'16px'}
+                        onClick={() => {
+                          window.open('https://channel.nestprotocol.org/')
+                        }}
+                >
+                  Developers
+                </Button>
+              </Box>
             </HStack>
           ) : (
             <Menu>
-              <MenuButton as={Button} variant={'ghost'} fontSize={'36px'} w={'36px'}>
-                <HamburgerIcon />
+              <MenuButton as={Button} variant={'ghost'} fontSize={'36px'} alignItems={"end"} p={0}>
+                <HamburgerIcon/>
               </MenuButton>
               <MenuList zIndex={11} borderRadius={'12px'}>
                 {menu.map(item => (
@@ -230,15 +232,15 @@ export const App = () => {
 
           <SimpleGrid columns={[3, 3, 3, 6]} spacing={'44px'}>
             {[
-              { id: 'nest_labs', src: nest_labs, link: '#' },
-              { id: 'fort', src: fort, link: 'https://fortprotocol.com' },
-              { id: 'cofix', src: cofix, link: 'https://cofix.tech' },
-              { id: 'parasset', src: parasset, link: 'https://home.parasset.top' },
-              { id: 'binance', src: binance, link: 'https://www.binance.com/' },
-              { id: 'coinbase', src: coinbase, link: 'https://www.coinbase.com' }
+              {id: 'nest_labs', src: nest_labs, link: '#'},
+              {id: 'fort', src: fort, link: 'https://fortprotocol.com'},
+              {id: 'cofix', src: cofix, link: 'https://cofix.tech'},
+              {id: 'parasset', src: parasset, link: 'https://home.parasset.top'},
+              {id: 'binance', src: binance, link: 'https://www.binance.com/'},
+              {id: 'coinbase', src: coinbase, link: 'https://www.coinbase.com'}
             ].map(item => (
               <Link key={item.id} isExternal href={item.link}>
-                <chakra.img src={item.src} alt={item.id} />
+                <chakra.img src={item.src} alt={item.id}/>
               </Link>
             ))}
           </SimpleGrid>
@@ -257,8 +259,9 @@ export const App = () => {
             What Is A NEST Oracle
           </Heading>
         </Box>
-        <AspectRatio w={['full', 'full', '720px']} ratio={16 / 9} borderRadius={'12px'} overflow={"hidden"} bg={"black"}>
-          <iframe title="naruto" src="https://www.youtube.com/embed/-c7A2CjoJ8E" allowFullScreen />
+        <AspectRatio w={['full', 'full', '720px']} ratio={16 / 9} borderRadius={'12px'} overflow={"hidden"}
+                     bg={"black"}>
+          <iframe title="naruto" src="https://www.youtube.com/embed/-c7A2CjoJ8E" allowFullScreen/>
         </AspectRatio>
       </VStack>
       <VStack
@@ -278,11 +281,11 @@ export const App = () => {
         </Box>
         <SimpleGrid columns={[1, 2, 3, 4, 5]} spacing={['22px', '22px', '44px']} pb={'44px'}>
           {[
-            { id: 'SENSITIVITY', logo: SENSITIVITY, desc: 'Respond to market price quickly' },
-            { id: 'ACCURACY', logo: ACCURACY, desc: 'Reflect the real market price' },
-            { id: 'VALIDATION', logo: VALIDATION, desc: 'Any third party with no threshold' },
-            { id: 'FLEXIBILITY', logo: FLEXIBILITY, desc: 'Free to entry or exit' },
-            { id: 'ANTI-ATTACK', logo: ANTI_ATTACK, desc: 'High cost to tamper the price' }
+            {id: 'SENSITIVITY', logo: SENSITIVITY, desc: 'Respond to market price quickly'},
+            {id: 'ACCURACY', logo: ACCURACY, desc: 'Reflect the real market price'},
+            {id: 'VALIDATION', logo: VALIDATION, desc: 'Any third party with no threshold'},
+            {id: 'FLEXIBILITY', logo: FLEXIBILITY, desc: 'Free to entry or exit'},
+            {id: 'ANTI-ATTACK', logo: ANTI_ATTACK, desc: 'High cost to tamper the price'}
           ].map(item => (
             <Box key={item.id}>
               {isLargerThan480 ? (
@@ -297,7 +300,7 @@ export const App = () => {
                   boxShadow={'0 0 45px 5px #E5E5E5'}
                   border={'1px solid #EEEEEE'}
                 >
-                  <chakra.img src={item.logo} alt={item.id} />
+                  <chakra.img src={item.logo} alt={item.id}/>
                   <Text fontWeight={600} fontSize={'15px'}>
                     {item.id}
                   </Text>
@@ -314,7 +317,7 @@ export const App = () => {
                   borderRadius={'12px'}
                   p={'27px'}
                 >
-                  <chakra.img src={item.logo} alt={item.id} />
+                  <chakra.img src={item.logo} alt={item.id}/>
                   <VStack alignItems={'start'}>
                     <Text fontWeight={600} fontSize={'15px'}>
                       {item.id}
@@ -338,7 +341,7 @@ export const App = () => {
             <Link isExternal href={item.link} key={item.label}>
               <HStack spacing={0}>
                 <Box mr={['10px', '10px', '22px']} w={'44px'} h={'44px'}>
-                  <chakra.img src={item.icon} alt={item.label} />
+                  <chakra.img src={item.icon} alt={item.label}/>
                 </Box>
                 <Box>
                   <Text fontSize={['12px', '12px', '15px']} fontWeight={'semibold'}>
@@ -346,8 +349,8 @@ export const App = () => {
                   </Text>
                 </Box>
                 <Spacer/>
-                <Box pl={['0px', '0px','14px']} maxW={['20px', '20px', '44px']} maxH={['20px', '20px', '44px']}>
-                  <chakra.img src={Right2} alt={'right'} _hover={{ transform: 'translateX(8px)' }}/>
+                <Box pl={['0px', '0px', '14px']} maxW={['20px', '20px', '44px']} maxH={['20px', '20px', '44px']}>
+                  <chakra.img src={Right2} alt={'right'} _hover={{transform: 'translateX(8px)'}}/>
                 </Box>
               </HStack>
             </Link>
@@ -378,12 +381,12 @@ export const App = () => {
         </Box>
         <SimpleGrid columns={[2, 2, 3]} spacing={['20px', '30px', '60px']}>
           {[
-            { label: '60', desc: 'Number of oracle' },
-            { label: '539,929', desc: 'Cumulative quotes' },
-            { label: '10', desc: 'Number of apps called' },
-            { label: '50,729', desc: 'Cumulative calls' },
-            { label: '1.35M', desc: 'Current income (USDT)' },
-            { label: '109.40M', desc: 'Cumulative income (USDT)' }
+            {label: '60', desc: 'Number of oracle'},
+            {label: '539,929', desc: 'Cumulative quotes'},
+            {label: '10', desc: 'Number of apps called'},
+            {label: '50,729', desc: 'Cumulative calls'},
+            {label: '1.35M', desc: 'Current income (USDT)'},
+            {label: '109.40M', desc: 'Cumulative income (USDT)'}
           ].map(item => (
             <VStack key={item.desc} alignItems={'start'}>
               <Text fontWeight={'bold'} fontSize={['30px', '41px']} lineHeight={'55px'}>
@@ -443,12 +446,12 @@ export const App = () => {
                   <Text fontWeight={'bold'} fontSize={'17px'}>
                     {item.label}
                   </Text>
-                  <chakra.img src={item.logo} alt={item.label} />
+                  <chakra.img src={item.logo} alt={item.label}/>
                   <Text fontSize={'15px'} fontWeight={600} color={'#878787'} height={'60px'}>
                     {item.desc}
                   </Text>
                   <Link isExternal href={item.link}>
-                    <chakra.img src={Right1} alt={'right'} _hover={{ transform: 'translateX(8px)' }}/>
+                    <chakra.img src={Right1} alt={'right'} _hover={{transform: 'translateX(8px)'}}/>
                   </Link>
                 </VStack>
               ) : (
@@ -465,10 +468,10 @@ export const App = () => {
                     {item.label}
                   </Text>
                   <HStack w={'full'}>
-                    <chakra.img src={item.logo} alt={item.label} />
-                    <Spacer />
+                    <chakra.img src={item.logo} alt={item.label}/>
+                    <Spacer/>
                     <Link isExternal href={item.link}>
-                      <chakra.img src={Right1} alt={'right'} />
+                      <chakra.img src={Right1} alt={'right'}/>
                     </Link>
                   </HStack>
                   <Text fontSize={'15px'} fontWeight={600} color={'#878787'}>
@@ -486,39 +489,39 @@ export const App = () => {
           w={isLargerThan480 ? '' : '80%'}
         >
           {[
-            { id: 'nest_labs', src: nest_labs, link: '#' },
-            { id: 'coinbase', src: coinbase, link: 'https://www.coinbase.com' },
-            { id: 'huobi', src: huobi, link: 'https://www.huobi.com/' },
-            { id: 'crypto.com', src: crypto, link: 'https://crypto.com/' },
-            { id: 'hotbit', src: hotbit, link: 'https://www.hotbit.io/' },
-            { id: 'coinone', src: coinone, link: 'https://coinone.co.kr/' },
-            { id: 'okex', src: okex, link: 'https://www.okx.com' },
-            { id: 'fbg', src: fbg, link: 'https://twitter.com/fbgcapital' },
-            { id: 'kernel', src: kernal, link: 'https://www.kernel-ventures.com/' },
-            { id: 'ybb', src: ybb, link: 'https://www.ybb.io/' },
-            { id: 'kyros', src: kyros, link: 'https://kyros.ventures/' },
-            { id: 'au21', src: au21, link: 'https://au21.capital/' },
-            { id: 'ld', src: ld, link: 'https://ldcap.com/' },
-            { id: 'ceras', src: ceras, link: 'https://www.cerasventures.com/' },
+            {id: 'nest_labs', src: nest_labs, link: '#'},
+            {id: 'coinbase', src: coinbase, link: 'https://www.coinbase.com'},
+            {id: 'huobi', src: huobi, link: 'https://www.huobi.com/'},
+            {id: 'crypto.com', src: crypto, link: 'https://crypto.com/'},
+            {id: 'hotbit', src: hotbit, link: 'https://www.hotbit.io/'},
+            {id: 'coinone', src: coinone, link: 'https://coinone.co.kr/'},
+            {id: 'okex', src: okex, link: 'https://www.okx.com'},
+            {id: 'fbg', src: fbg, link: 'https://twitter.com/fbgcapital'},
+            {id: 'kernel', src: kernal, link: 'https://www.kernel-ventures.com/'},
+            {id: 'ybb', src: ybb, link: 'https://www.ybb.io/'},
+            {id: 'kyros', src: kyros, link: 'https://kyros.ventures/'},
+            {id: 'au21', src: au21, link: 'https://au21.capital/'},
+            {id: 'ld', src: ld, link: 'https://ldcap.com/'},
+            {id: 'ceras', src: ceras, link: 'https://www.cerasventures.com/'},
             {
               id: '7oclocklabs',
               src: sevenOclock,
               link: 'https://www.7oclockcapital.com/community.htm'
             },
-            { id: 'catchervc', src: catchervc, link: 'https://catchervc.chaincatcher.com/' },
-            { id: 'defilive', src: defilive, link: 'https://www.defilive.xyz/' },
-            { id: 'deepchain', src: deepchain, link: 'https://www.dcnews.io/' },
-            { id: 'blockster', src: blockster, link: 'https://blockster.com/' },
-            { id: 'winkrypto', src: winkrypto, link: 'https://www.winkrypto.com/' },
-            { id: 'whatcoin', src: whatcoin, link: 'https://www.whatscoin.com/' },
-            { id: 'binance', src: binance, link: 'https://www.binance.com/' },
-            { id: 'polynetwork', src: polynetwork, link: 'https://poly.network/' },
-            { id: 'fortube', src: fortube, link: 'https://for.tube/' },
-            { id: 'husd', src: husd, link: 'https://www.stcoins.com/' },
-            { id: 'inft', src: inft, link: 'https://inft.io/' },
-            { id: 'pacific', src: pacific, link: 'https://pacific.one/#/' },
-            { id: 'radomnetwork', src: radomnetwork, link: 'https://www.radom.network/' },
-            { id: 'shoppingio', src: shoppingio, link: 'https://shopping.io/' }
+            {id: 'catchervc', src: catchervc, link: 'https://catchervc.chaincatcher.com/'},
+            {id: 'defilive', src: defilive, link: 'https://www.defilive.xyz/'},
+            {id: 'deepchain', src: deepchain, link: 'https://www.dcnews.io/'},
+            {id: 'blockster', src: blockster, link: 'https://blockster.com/'},
+            {id: 'winkrypto', src: winkrypto, link: 'https://www.winkrypto.com/'},
+            {id: 'whatcoin', src: whatcoin, link: 'https://www.whatscoin.com/'},
+            {id: 'binance', src: binance, link: 'https://www.binance.com/'},
+            {id: 'polynetwork', src: polynetwork, link: 'https://poly.network/'},
+            {id: 'fortube', src: fortube, link: 'https://for.tube/'},
+            {id: 'husd', src: husd, link: 'https://www.stcoins.com/'},
+            {id: 'inft', src: inft, link: 'https://inft.io/'},
+            {id: 'pacific', src: pacific, link: 'https://pacific.one/#/'},
+            {id: 'radomnetwork', src: radomnetwork, link: 'https://www.radom.network/'},
+            {id: 'shoppingio', src: shoppingio, link: 'https://shopping.io/'}
           ]
             .filter((item, index) => Math.floor(index / 16) === page)
             .map(item => (
@@ -532,7 +535,7 @@ export const App = () => {
                 <chakra.img
                   src={item.src}
                   alt={item.id}
-                  style={{ height: isLargerThan480 ? '36px' : '18px' }}
+                  style={{height: isLargerThan480 ? '36px' : '18px'}}
                 />
               </Link>
             ))}
@@ -599,7 +602,7 @@ export const App = () => {
               overflow={'hidden'}
             >
               <Box overflow={"hidden"}>
-                <chakra.img src={item.bg} alt={item.label} _hover={{ transform: 'scale(1.05)' }}/>
+                <chakra.img src={item.bg} alt={item.label} _hover={{transform: 'scale(1.05)'}}/>
               </Box>
               <HStack
                 p={['12px', '12px', '22px']}
@@ -612,9 +615,9 @@ export const App = () => {
                 </Text>
                 <Link isExternal href={item.link}>
                   {isLargerThan480 ? (
-                    <chakra.img src={Right1} alt={'right'} _hover={{ transform: 'translateX(8px)' }}/>
+                    <chakra.img src={Right1} alt={'right'} _hover={{transform: 'translateX(8px)'}}/>
                   ) : (
-                    <chakra.img src={Right1} alt={'right'} height={'24px'} width={'24px'} />
+                    <chakra.img src={Right1} alt={'right'} height={'24px'} width={'24px'}/>
                   )}
                 </Link>
               </HStack>
@@ -670,7 +673,7 @@ export const App = () => {
               boxShadow={'0px 0px 45px 5px #E5E5E5'}
               borderRadius={'12px'}
               cursor={"pointer"}
-              onClick={()=>{
+              onClick={() => {
                 window.open(item.link)
               }}
             >
@@ -703,7 +706,7 @@ export const App = () => {
           </Heading>
         </Box>
         <VStack alignItems={'start'} w={'full'} justifyContent={'center'}>
-          <chakra.img src={arms} style={{ background: '#FBEECC', padding: '44px 0' }} alt={'arms'} />
+          <chakra.img src={arms} style={{background: '#FBEECC', padding: '44px 0'}} alt={'arms'}/>
           <VStack
             position={'absolute'}
             w={'full'}
@@ -782,7 +785,8 @@ export const App = () => {
                 overflow={'hidden'}
               >
                 <Box overflow={"hidden"}>
-                  <chakra.img src={item.bg} alt={item.label} style={{ objectFit: 'cover' }} _hover={{ transform: 'scale(1.05)' }}/>
+                  <chakra.img src={item.bg} alt={item.label} style={{objectFit: 'cover'}}
+                              _hover={{transform: 'scale(1.05)'}}/>
                 </Box>
                 <VStack
                   w={'full'}
@@ -834,7 +838,7 @@ export const App = () => {
           <HStack alignItems={'start'} w={'full'} h={'full'}>
             <VStack alignItems={'start'} w={'240px'}>
               <Text fontWeight={'bold'}>App</Text>
-              <br />
+              <br/>
               <Link isExternal href={'https://channel.nestprotocol.org/'}>
                 <Text fontWeight={'semibold'}>Developers</Text>
               </Link>
@@ -844,12 +848,12 @@ export const App = () => {
             </VStack>
             <VStack alignItems={'start'} w={'240px'}>
               <Text fontWeight={'bold'}>Community</Text>
-              <br />
+              <br/>
               <VStack spacing={'20px'} alignItems={'start'}>
                 {socialLinks.map(item => (
                   <Link key={item.label} isExternal href={item.link}>
                     <HStack spacing={'20px'}>
-                      <chakra.img src={item.icon} alt={item.label} />
+                      <chakra.img src={item.icon} alt={item.label}/>
                       <Text fontSize={'15px'} fontWeight={600}>
                         {item.label}
                       </Text>
@@ -860,12 +864,12 @@ export const App = () => {
             </VStack>
             <VStack alignItems={'start'} w={'240px'}>
               <Text fontWeight={'bold'}>Technology</Text>
-              <br />
+              <br/>
               <VStack spacing={'20px'} alignItems={'start'}>
                 {technologyLinks.map(item => (
                   <Link key={item.label} isExternal href={item.link}>
                     <HStack spacing={'20px'}>
-                      <chakra.img src={item.icon} alt={item.label} />
+                      <chakra.img src={item.icon} alt={item.label}/>
                       <Text fontSize={'15px'} fontWeight={600}>
                         {item.label}
                       </Text>
@@ -874,9 +878,9 @@ export const App = () => {
                 ))}
               </VStack>
             </VStack>
-            <Spacer />
+            <Spacer/>
             <VStack h={'300px'}>
-              <Spacer />
+              <Spacer/>
               <Text fontWeight={'bold'} fontSize={'14px'}>
                 ©2022 NEST
               </Text>
@@ -886,19 +890,19 @@ export const App = () => {
           <VStack alignItems={'start'} spacing={'60px'} w={'full'}>
             <VStack alignItems={'start'} w={'240px'}>
               <Text fontWeight={'bold'}>App</Text>
-              <br />
+              <br/>
               <Text fontWeight={'semibold'}>Developers</Text>
               <Text fontWeight={'semibold'}>DAPP Web</Text>
             </VStack>
             <HStack w={'full'} alignItems={'start'}>
               <VStack alignItems={'start'}>
                 <Text fontWeight={'bold'}>Community</Text>
-                <br />
+                <br/>
                 <VStack spacing={'20px'} alignItems={'start'}>
                   {socialLinks.map(item => (
                     <Link key={item.label} isExternal href={item.link}>
                       <HStack spacing={'20px'}>
-                        <chakra.img src={item.icon} alt={item.label} height={'22px'} width={'22px'} />
+                        <chakra.img src={item.icon} alt={item.label} height={'22px'} width={'22px'}/>
                         <Text fontSize={'15px'} fontWeight={600}>
                           {item.label}
                         </Text>
@@ -907,15 +911,15 @@ export const App = () => {
                   ))}
                 </VStack>
               </VStack>
-              <Spacer />
+              <Spacer/>
               <VStack alignItems={'start'}>
                 <Text fontWeight={'bold'}>Technology</Text>
-                <br />
+                <br/>
                 <VStack spacing={'20px'} alignItems={'start'}>
                   {technologyLinks.map(item => (
                     <Link key={item.label} isExternal href={item.link}>
                       <HStack spacing={'20px'}>
-                        <chakra.img src={item.icon} alt={item.label} height={'22px'} width={'22px'} />
+                        <chakra.img src={item.icon} alt={item.label} height={'22px'} width={'22px'}/>
                         <Text fontSize={'15px'} fontWeight={600}>
                           {item.label}
                         </Text>
@@ -926,7 +930,7 @@ export const App = () => {
               </VStack>
             </HStack>
             <VStack>
-              <Spacer />
+              <Spacer/>
               <Text fontWeight={'bold'} fontSize={'14px'}>
                 ©2022 NEST
               </Text>
