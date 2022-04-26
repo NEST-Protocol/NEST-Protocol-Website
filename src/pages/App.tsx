@@ -166,15 +166,6 @@ export const App = () => {
                   {item.label}
                 </Button>
               ))}
-              <Box>
-                <Button ml={'16px'}
-                        onClick={() => {
-                          window.open('https://channel.nestprotocol.org/')
-                        }}
-                >
-                  Developers
-                </Button>
-              </Box>
             </HStack>
           ) : (
             <>
@@ -194,15 +185,6 @@ export const App = () => {
                           {item.label}
                         </Button>
                       ))}
-                      <Box w={"full"} pt={'30%'}>
-                        <Button
-                          w={isLargerThan480 ? '' : '60%'}
-                          height={isLargerThan480 ? '36px' : '48px'}
-                          onClick={() => window.open('https://channel.nestprotocol.org/')}
-                        >
-                          Developers
-                        </Button>
-                      </Box>
                     </VStack>
                   </ModalBody>
                 </ModalContent>
@@ -246,10 +228,10 @@ export const App = () => {
               height={isLargerThan480 ? '36px' : '48px'}
               width={isLargerThan480 ? '' : '60%'}
               onClick={() => {
-                window.open('https://repurchase.nestprotocol.org/')
+                window.open('https://channel.nestprotocol.org/')
               }}
             >
-              DAPP Web
+              Quote App
             </Button>
           </HStack>
 
@@ -386,7 +368,7 @@ export const App = () => {
             height={isLargerThan480 ? '36px' : '48px'}
             onClick={() => window.open('https://channel.nestprotocol.org/')}
           >
-            Developers
+            Quote App
           </Button>
         </HStack>
       </VStack>
@@ -700,7 +682,7 @@ export const App = () => {
               p={['22px', '22px', '44px']}
               border={'1px solid #EEEEEE'}
               alignItems={isLargerThan480 ? 'start' : 'center'}
-              spacing={['11px', '11px', '22px']}
+              spacing={'8px'}
               boxShadow={'0px 0px 45px 5px #E5E5E5'}
               borderRadius={'12px'}
               cursor={"pointer"}
@@ -709,7 +691,7 @@ export const App = () => {
               }}
             >
               { isLargerThan1024 ? (
-                <HStack w={"full"} justifyContent={"space-between"}>
+                <HStack w={"full"} justifyContent={"space-between"} pb={'8px'}>
                   <chakra.img src={item.icon} alt={item.label}/>
                   <chakra.img src={Right2} alt={'right'} _hover={{transform: 'translateX(8px)'}}/>
                 </HStack>
