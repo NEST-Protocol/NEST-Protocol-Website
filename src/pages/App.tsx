@@ -510,6 +510,14 @@ export const App = () => {
           spacingX={'60px'}
           spacingY={'40px'}
           w={isLargerThan480 ? '' : '80%'}
+          onWheel={e=> {
+            if (e.deltaX > 10) {
+              setPage(1)
+            }
+            if (e.deltaX < -10) {
+              setPage(0)
+            }
+          }}
         >
           {[
             {id: 'nest_labs', src: nest_labs, link: '#'},
