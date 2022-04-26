@@ -9,20 +9,13 @@ import {
   Link,
   Box,
   SimpleGrid,
-  MenuList,
-  MenuButton,
-  MenuItem,
-  Menu,
   useBoolean,
   chakra,
-  ModalOverlay,
   ModalBody,
-  ModalHeader,
   ModalContent,
-  ModalFooter,
   Modal,
   ModalCloseButton,
-  Stack, useDisclosure
+  useDisclosure
 } from '@chakra-ui/react'
 import {AspectRatio} from '@chakra-ui/react'
 import nest from '../assets/svg/nest.svg'
