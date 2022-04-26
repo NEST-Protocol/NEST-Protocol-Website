@@ -700,7 +700,18 @@ export const App = () => {
                 window.open(item.link)
               }}
             >
-              <chakra.img src={item.icon} alt={item.label}/>
+              { isLargerThan1024 ? (
+                <HStack w={"full"} justifyContent={"space-between"}>
+                  <chakra.img src={item.icon} alt={item.label}/>
+                  <chakra.img src={Right2} alt={'right'} _hover={{transform: 'translateX(8px)'}}/>
+                </HStack>
+              ) : (
+                <HStack w={"full"} justifyContent={"space-between"} alignItems={"start"}>
+                  <Box h={'16px'} w={'16px'}/>
+                  <chakra.img src={item.icon} alt={item.label}/>
+                  <chakra.img src={Right2} alt={'right'} _hover={{transform: 'translateX(8px)'}} h={'16px'} w={'16px'}/>
+                </HStack>
+              ) }
               <Text fontSize={'17px'} fontWeight={'bold'}>
                 {item.number}
               </Text>
