@@ -12,7 +12,17 @@ import {
   MenuList,
   MenuButton,
   MenuItem,
-  Menu, useBoolean, chakra
+  Menu,
+  useBoolean,
+  chakra,
+  ModalOverlay,
+  ModalBody,
+  ModalHeader,
+  ModalContent,
+  ModalFooter,
+  Modal,
+  ModalCloseButton,
+  Stack, useDisclosure
 } from '@chakra-ui/react'
 import {AspectRatio} from '@chakra-ui/react'
 import nest from '../assets/svg/nest.svg'
@@ -93,6 +103,7 @@ export const App = () => {
   const newsRef = useRef(null)
   const [page, setPage] = useState(0)
   const [showMore, setShowMore] = useBoolean(false)
+  const {isOpen, onOpen, onClose} = useDisclosure()
 
   const next = (ref: any) => {
     if (ref) {
@@ -173,18 +184,37 @@ export const App = () => {
               </Box>
             </HStack>
           ) : (
-            <Menu>
-              <MenuButton as={Button} variant={'ghost'} fontSize={'36px'} alignItems={"end"} p={0}>
+            <>
+              <Button onClick={onOpen} fontSize={'36px'} alignItems={"end"} p={0} variant={'ghost'}>
                 <HamburgerIcon/>
-              </MenuButton>
-              <MenuList zIndex={11} borderRadius={'12px'}>
-                {menu.map(item => (
-                  <MenuItem key={item.label} fontWeight={'semibold'} onClick={() => next(item.ref)}>
-                    {item.label}
-                  </MenuItem>
-                ))}
-              </MenuList>
-            </Menu>
+              </Button>
+              <Modal isOpen={isOpen} onClose={onClose} blockScrollOnMount={false} returnFocusOnClose={false} size={"full"}>
+                <ModalContent zIndex={20}>
+                  <ModalCloseButton size={'36px'} p={'22px'} _active={{ bg: 'none' }}/>
+                  <ModalBody p={'22px'}>
+                    <VStack alignItems={"start"} pt={"30%"} spacing={'11px'}>
+                      {menu.map(item => (
+                        <Button key={item.label} fontWeight={'semibold'} onClick={() => {
+                          next(item.ref)
+                          onClose()
+                        }} variant={"ghost"} fontSize={'25px'} p={0}>
+                          {item.label}
+                        </Button>
+                      ))}
+                      <Box w={"full"} pt={'30%'}>
+                        <Button
+                          w={isLargerThan480 ? '' : '60%'}
+                          height={isLargerThan480 ? '36px' : '48px'}
+                          onClick={() => window.open('https://channel.nestprotocol.org/')}
+                        >
+                          Developers
+                        </Button>
+                      </Box>
+                    </VStack>
+                  </ModalBody>
+                </ModalContent>
+              </Modal>
+            </>
           )}
         </HStack>
         <VStack
