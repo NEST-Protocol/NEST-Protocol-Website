@@ -212,7 +212,7 @@ export const App = () => {
               </VStack>
             )}
             <Heading fontSize={['30px', '30px', '50px']}>
-              No Nodes No Auditing Free Quotation
+              No Nodes No Auditing Permissionless Quotation
             </Heading>
             {isLargerThan480 ? (
               <Heading fontSize={['30px', '30px', '50px']}>On-Chain Verification</Heading>
@@ -431,7 +431,7 @@ export const App = () => {
               link: 'https://cofix.tech'
             },
             {
-              label: 'Leding',
+              label: 'Lending',
               logo: parasset2,
               desc: 'Collateral $NEST to mint PETH, PUSD, PBTC, etc',
               link: 'https://home.parasset.top'
