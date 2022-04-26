@@ -183,7 +183,7 @@ export const App = () => {
               </Button>
               <Modal isOpen={isOpen} onClose={onClose} blockScrollOnMount={false} returnFocusOnClose={false} size={"full"}>
                 <ModalContent zIndex={20}>
-                  <ModalCloseButton size={'36px'} _active={{ bg: 'none' }} pt={'14px'} px={'11px'}/>
+                  <ModalCloseButton size={'36px'} _active={{ bg: 'none' }} _hover={{ bg: 'none' }} pt={'14px'} px={'11px'}/>
                   <ModalBody p={'22px'}>
                     <VStack alignItems={"start"} pt={"30%"} spacing={'11px'}>
                       {menu.map(item => (
