@@ -212,12 +212,13 @@ export const App = () => {
               </VStack>
             )}
             <Heading fontSize={['30px', '30px', '50px']}>
-              No Nodes No Auditing Permissionless Quotation
+              No Nodes No Auditing Permissionless
             </Heading>
             {isLargerThan480 ? (
-              <Heading fontSize={['30px', '30px', '50px']}>On-Chain Verification</Heading>
+              <Heading fontSize={['30px', '30px', '50px']}>Quotation On-Chain Verification</Heading>
             ) : (
               <VStack alignItems={'start'} w={'full'} spacing={0}>
+                <Heading fontSize={['30px', '30px', '50px']}>Quotation</Heading>
                 <Heading fontSize={['30px', '30px', '50px']}>On-Chain</Heading>
                 <Heading fontSize={['30px', '30px', '50px']}>Verification</Heading>
               </VStack>
