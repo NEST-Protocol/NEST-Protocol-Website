@@ -85,6 +85,9 @@ import radomnetwork from '../assets/svg/Radom.svg'
 import shoppingio from '../assets/svg/Shopping.svg'
 import Price from '../assets/svg/Price_icon.svg'
 import header_phone from '../assets/img/header_phone.png'
+import kcc from '../assets/svg/KCC.svg'
+import map from '../assets/svg/MAP.svg'
+import polygon from '../assets/svg/polygon.svg'
 
 export const App = () => {
   const [isLargerThan1024] = useMediaQuery('(min-width: 1024px)')
@@ -529,6 +532,9 @@ export const App = () => {
             {id: 'winkrypto', src: winkrypto, link: 'https://www.winkrypto.com/'},
             {id: 'whatcoin', src: whatcoin, link: 'https://www.whatscoin.com/'},
             {id: 'binance', src: binance, link: 'https://www.binance.com/'},
+            {id: 'polygon', src: polygon, link: 'https://polygon.technology/'},
+            {id: 'kcc', src: kcc, link: 'https://www.kcc.io/'},
+            {id: 'map', src: map, link: 'https://www.maplabs.io/'},
             {id: 'polynetwork', src: polynetwork, link: 'https://poly.network/'},
             {id: 'fortube', src: fortube, link: 'https://for.tube/'},
             {id: 'husd', src: husd, link: 'https://www.stcoins.com/'},
