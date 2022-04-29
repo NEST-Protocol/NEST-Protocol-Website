@@ -118,9 +118,9 @@ export const App = () => {
   const technologyLinks = [
     {label: 'Github', icon: Github, link: 'https://github.com/NEST-Protocol'},
     {
-      label: 'Price Facade',
+      label: 'Price Calling API',
       icon: Price,
-      link: 'https://github.com/NEST-Protocol/NEST-Oracle-V3.6/blob/main/docs/INestPriceFacade.md'
+      link: 'https://github.com/NEST-Protocol/NEST-Docs/blob/main/CallingPrice.md'
     },
     {
       label: 'Whitepaper',
@@ -234,7 +234,7 @@ export const App = () => {
                 window.open('https://channel.nestprotocol.org/')
               }}
             >
-              Quote App
+              Create Oracle
             </Button>
           </HStack>
 
@@ -284,14 +284,15 @@ export const App = () => {
             Impeccable technical
           </Heading>
           <Heading fontSize={['30px', '30px', '50px']} w={'full'}>
-            Architecture
+            architecture
           </Heading>
         </Box>
-        <SimpleGrid columns={[1, 2, 3, 4, 5]} spacing={['22px', '22px', '44px']} pb={'44px'}>
+        <SimpleGrid columns={[1, 2, 3]} spacing={['22px', '22px', '44px']} pb={'44px'}>
           {[
-            {id: 'SENSITIVITY', logo: SENSITIVITY, desc: 'Respond to market price quickly'},
+            {id: 'NODELESS', logo: SENSITIVITY, desc: 'Nodeless and permissionless quotation'},
             {id: 'ACCURACY', logo: ACCURACY, desc: 'Reflect the real market price'},
             {id: 'VALIDATION', logo: VALIDATION, desc: 'Any third party with no threshold'},
+            {id: 'STABLE', logo: SENSITIVITY, desc: 'Stabilized price information reduce risks'},
             {id: 'FLEXIBILITY', logo: FLEXIBILITY, desc: 'Free to entry or exit'},
             {id: 'ANTI-ATTACK', logo: ANTI_ATTACK, desc: 'High cost to tamper the price'}
           ].map(item => (
@@ -299,7 +300,7 @@ export const App = () => {
               {isLargerThan480 ? (
                 <VStack
                   w={'220px'}
-                  h={'220px'}
+                  h={'full'}
                   borderRadius={'12px'}
                   alignItems={'start'}
                   p={'22px'}
@@ -312,7 +313,7 @@ export const App = () => {
                   <Text fontWeight={600} fontSize={'15px'}>
                     {item.id}
                   </Text>
-                  <Text color={'#878787'} fontSize={'15px'} fontWeight={600} height={'40px'}>
+                  <Text color={'#878787'} fontSize={'15px'} fontWeight={600} height={'60px'}>
                     {item.desc}
                   </Text>
                 </VStack>
@@ -364,16 +365,6 @@ export const App = () => {
             </Link>
           ))}
         </SimpleGrid>
-        <HStack pb={'20px'} w={'full'} justifyContent={'center'}>
-          <Button
-            variant={'outline'}
-            w={isLargerThan480 ? '' : '60%'}
-            height={isLargerThan480 ? '36px' : '48px'}
-            onClick={() => window.open('https://channel.nestprotocol.org/')}
-          >
-            Quote App
-          </Button>
-        </HStack>
       </VStack>
       <VStack
         id={'rapidly growing data'}
@@ -787,7 +778,7 @@ export const App = () => {
             {
               label: 'NEST Oracle Special Awards in MAP',
               bg: new2,
-              desc: 'Chain (KCC) developers  vide awards, advisory sessions, and integration support to MAP developers',
+              desc: 'NEST has become the first oracle in MAP ecosystem and provides reliable price for the transactions',
               link: 'https://www.goldentreenews.com/news/article.html?no=278663'
             },
             {
@@ -854,6 +845,7 @@ export const App = () => {
           >
             {showMore ? 'Less' : 'More'}
           </Button>
+
         </HStack>
       </VStack>
       <HStack
@@ -869,11 +861,8 @@ export const App = () => {
             <VStack alignItems={'start'} w={'240px'}>
               <Text fontWeight={'bold'}>App</Text>
               <br/>
-              <Link isExternal href={'https://channel.nestprotocol.org/'}>
-                <Text fontWeight={'semibold'}>Developers</Text>
-              </Link>
-              <Link isExternal href={'https://repurchase.nestprotocol.org/'}>
-                <Text fontWeight={'semibold'}>DAPP Web</Text>
+              <Link isExternal href={'https://channel.nestprotocol.org'}>
+                <Text fontWeight={'semibold'}>Create Oracle</Text>
               </Link>
             </VStack>
             <VStack alignItems={'start'} w={'240px'}>
@@ -908,6 +897,17 @@ export const App = () => {
                 ))}
               </VStack>
             </VStack>
+            <VStack alignItems={'start'} w={"400px"} spacing={'16px'}>
+              <Text fontWeight={'bold'}>Market Price</Text>
+              <Box zIndex={16} w={"320px"} h={"full"}>
+                <div
+                  id="crypto-widget-CoinList"
+                  data-transparent="true"
+                  data-design="classic"
+                  data-coins="nest-protocol"
+                />
+              </Box>
+            </VStack>
             <Spacer/>
             <VStack h={'300px'}>
               <Spacer/>
@@ -921,13 +921,13 @@ export const App = () => {
             <VStack alignItems={'start'} w={'240px'}>
               <Text fontWeight={'bold'}>App</Text>
               <br/>
-              <Text fontWeight={'semibold'}>Developers</Text>
-              <Text fontWeight={'semibold'}>DAPP Web</Text>
+              <Link isExternal href={'https://channel.nestprotocol.org'}>
+                <Text fontWeight={'semibold'}>Create Oracle</Text>
+              </Link>
             </VStack>
             <HStack w={'full'} alignItems={'start'}>
               <VStack alignItems={'start'}>
                 <Text fontWeight={'bold'}>Community</Text>
-                <br/>
                 <VStack spacing={'20px'} alignItems={'start'}>
                   {socialLinks.map(item => (
                     <Link key={item.label} isExternal href={item.link}>
@@ -959,6 +959,17 @@ export const App = () => {
                 </VStack>
               </VStack>
             </HStack>
+            <VStack alignItems={'start'} w={"full"}>
+              <Text fontWeight={'bold'}>Market Price</Text>
+              <Box zIndex={16} w={"full"} h={"full"}>
+                <div
+                  id="crypto-widget-CoinList"
+                  data-transparent="true"
+                  data-design="classic"
+                  data-coins="nest-protocol"
+                />
+              </Box>
+            </VStack>
             <VStack>
               <Spacer/>
               <Text fontWeight={'bold'} fontSize={'14px'}>
