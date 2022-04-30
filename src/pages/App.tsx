@@ -88,6 +88,8 @@ import header_phone from '../assets/img/header_phone.png'
 import kcc from '../assets/svg/KCC.svg'
 import map from '../assets/svg/MAP.svg'
 import polygon from '../assets/svg/polygon.svg'
+import nodeless from '../assets/svg/nodeless_icon.svg'
+import stable from '../assets/svg/stable_icon.svg'
 
 export const App = () => {
   const [isLargerThan1024] = useMediaQuery('(min-width: 1024px)')
@@ -289,10 +291,10 @@ export const App = () => {
         </Box>
         <SimpleGrid columns={[1, 2, 3]} spacing={['22px', '22px', '44px']} pb={'44px'}>
           {[
-            {id: 'NODELESS', logo: SENSITIVITY, desc: 'Nodeless and permissionless quotation'},
+            {id: 'NODELESS', logo: nodeless, desc: 'Nodeless and permissionless quotation'},
             {id: 'ACCURACY', logo: ACCURACY, desc: 'Reflect the real market price'},
             {id: 'VALIDATION', logo: VALIDATION, desc: 'Any third party with no threshold'},
-            {id: 'STABLE', logo: SENSITIVITY, desc: 'Stabilized price information reduce risks'},
+            {id: 'STABLE', logo: stable, desc: 'Stabilized price information reduce risks'},
             {id: 'FLEXIBILITY', logo: FLEXIBILITY, desc: 'Free to entry or exit'},
             {id: 'ANTI-ATTACK', logo: ANTI_ATTACK, desc: 'High cost to tamper the price'}
           ].map(item => (
@@ -897,15 +899,11 @@ export const App = () => {
                 ))}
               </VStack>
             </VStack>
-            <VStack alignItems={'start'} w={"400px"} spacing={'16px'}>
+            <VStack alignItems={'start'} w={"400px"}>
               <Text fontWeight={'bold'}>Market Price</Text>
-              <Box zIndex={16} w={"320px"} h={"full"}>
-                <div
-                  id="crypto-widget-CoinList"
-                  data-transparent="true"
-                  data-design="classic"
-                  data-coins="nest-protocol"
-                />
+              <br/>
+              <Box w={"480px"} h={"full"}>
+                <div id="crypto-widget-CoinList" data-design="classic" data-coins="nest-protocol" />
               </Box>
             </VStack>
             <Spacer/>
@@ -928,6 +926,7 @@ export const App = () => {
             <HStack w={'full'} alignItems={'start'}>
               <VStack alignItems={'start'}>
                 <Text fontWeight={'bold'}>Community</Text>
+                <br/>
                 <VStack spacing={'20px'} alignItems={'start'}>
                   {socialLinks.map(item => (
                     <Link key={item.label} isExternal href={item.link}>
@@ -961,13 +960,9 @@ export const App = () => {
             </HStack>
             <VStack alignItems={'start'} w={"full"}>
               <Text fontWeight={'bold'}>Market Price</Text>
-              <Box zIndex={16} w={"full"} h={"full"}>
-                <div
-                  id="crypto-widget-CoinList"
-                  data-transparent="true"
-                  data-design="classic"
-                  data-coins="nest-protocol"
-                />
+              <br/>
+              <Box w={"full"} h={"full"}>
+                <div id="crypto-widget-CoinList" data-design="classic" data-coins="nest-protocol" />
               </Box>
             </VStack>
             <VStack>
