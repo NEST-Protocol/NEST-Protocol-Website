@@ -778,7 +778,7 @@ export const App = () => {
               link: 'https://www.newsbtc.com/press-releases/nest-oracle-special-awards-in-kcc-unicorn-contest/'
             },
             {
-              label: 'NEST Oracle Special Awards in MAP',
+              label: 'Strategic Partnership with MAP Protocol',
               bg: new2,
               desc: 'NEST has become the first oracle in MAP ecosystem and provides reliable price for the transactions',
               link: 'https://www.goldentreenews.com/news/article.html?no=278663'
@@ -901,9 +901,8 @@ export const App = () => {
             </VStack>
             <VStack alignItems={'start'} w={"400px"}>
               <Text fontWeight={'bold'}>Market Price</Text>
-              <br/>
               <Box w={"480px"} h={"full"}>
-                <div id="crypto-widget-CoinList" data-design="classic" data-coins="nest-protocol" />
+                <div id="crypto-widget-CoinList" data-design="classic" data-transparent="true" data-coins="nest-protocol" />
               </Box>
             </VStack>
             <Spacer/>
@@ -960,9 +959,8 @@ export const App = () => {
             </HStack>
             <VStack alignItems={'start'} w={"full"}>
               <Text fontWeight={'bold'}>Market Price</Text>
-              <br/>
               <Box w={"full"} h={"full"}>
-                <div id="crypto-widget-CoinList" data-design="classic" data-coins="nest-protocol" />
+                <div id="crypto-widget-CoinList" data-design="classic" data-transparent="true" data-coins="nest-protocol" />
               </Box>
             </VStack>
             <VStack>
