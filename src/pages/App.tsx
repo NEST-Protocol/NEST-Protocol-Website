@@ -899,7 +899,9 @@ export const App = () => {
               </VStack>
             </VStack>
             <VStack alignItems={'start'} w={"400px"}>
-              <Text fontWeight={'bold'}>Market Price</Text>
+              <Box pl={4}>
+                <Text fontWeight={'bold'}>Market Price</Text>
+              </Box>
               <Box w={"480px"} h={"full"}>
                 <div id="crypto-widget-CoinList" data-design="classic" data-transparent="true" data-coins="nest-protocol" />
               </Box>
