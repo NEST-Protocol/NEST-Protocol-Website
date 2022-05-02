@@ -126,7 +126,7 @@ export const App = () => {
     {
       label: 'Whitepaper',
       icon: Whitepaper,
-      link: 'https://nestprotocol.org/doc/ennestwhitepaper.pdf'
+      link: 'https://www.nestprotocol.org/doc/ennestwhitepaper.pdf'
     },
     {
       label: 'Security Report',
@@ -899,7 +899,7 @@ export const App = () => {
               </VStack>
             </VStack>
             <VStack alignItems={'start'} w={"400px"}>
-              <Box pl={4}>
+              <Box pl={4}>w
                 <Text fontWeight={'bold'}>Market Price</Text>
               </Box>
               <Box w={"480px"} h={"full"}>
