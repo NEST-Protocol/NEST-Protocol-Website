@@ -899,7 +899,7 @@ export const App = () => {
               </VStack>
             </VStack>
             <VStack alignItems={'start'} w={"400px"}>
-              <Box pl={4}>w
+              <Box pl={4}>
                 <Text fontWeight={'bold'}>Market Price</Text>
               </Box>
               <Box w={"480px"} h={"full"}>
