@@ -258,7 +258,7 @@ export const App = () => {
         </VStack>
       </VStack>
       <VStack
-        id={'what is a nest nest oracle'}
+        id={'what is nest oracle'}
         zIndex={10}
         w={'full'}
         px={['22px', '22px', '44px']}
@@ -267,7 +267,7 @@ export const App = () => {
       >
         <Box mb={['40px', '40px', '80px']} w={'full'}>
           <Heading fontSize={['30px', '30px', '50px']} w={'full'}>
-            What Is A NEST Oracle
+            What Is NEST Oracle
           </Heading>
         </Box>
         <AspectRatio w={['full', 'full', '720px']} ratio={16 / 9} borderRadius={'12px'} overflow={"hidden"}
