@@ -89,6 +89,7 @@ import map from '../assets/svg/MAP.svg'
 import polygon from '../assets/svg/polygon.svg'
 import nodeless from '../assets/svg/nodeless_icon.svg'
 import stable from '../assets/svg/stable_icon.svg'
+import nest4_4 from '../assets/svg/news_v4.4.png'
 
 export const App = () => {
   const [isLargerThan1024] = useMediaQuery('(min-width: 1024px)')
@@ -771,6 +772,12 @@ export const App = () => {
         <SimpleGrid columns={[1, 1, 2, 3]} spacing={['22px', '22px', '44px']} pb={'27px'}>
           {[
             {
+              label: 'NEST v4.4 Upgrade Proposal',
+              bg: nest4_4,
+              desc: 'Voting for the NESTv4.4 upgrade is now open on snapshot, please participate and cast your vote!',
+              link: 'https://snapshot.org/#/nestprotocols.eth/proposal/0xc44f29b7a8695fc3379fa34d6e78bf933d9d4493121d2d66160a25b8175816a9'
+            },
+            {
               label: 'NEST Oracle Special Awards in KCC',
               bg: new1,
               desc: 'NEST Foundation will pro vide awards, advisory sessions, and integration support to Kucoin Community Chain (KCC) developers',
@@ -911,7 +918,7 @@ export const App = () => {
             <Spacer/>
             <VStack h={'300px'}>
               <Spacer/>
-              <Text fontWeight={'bold'} fontSize={'14px'}>
+              <Text fontWeight={'bold'} fontSize={'14px'} whiteSpace={'nowrap'}>
                 ©2022 NEST
               </Text>
             </VStack>
@@ -968,7 +975,7 @@ export const App = () => {
             </VStack>
             <VStack>
               <Spacer/>
-              <Text fontWeight={'bold'} fontSize={'14px'}>
+              <Text fontWeight={'bold'} fontSize={'14px'} whiteSpace={'nowrap'}>
                 ©2022 NEST
               </Text>
             </VStack>
