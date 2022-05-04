@@ -284,10 +284,10 @@ export const App = () => {
       >
         <Box w={'full'} mb={['40px', '40px', '80px']}>
           <Heading fontSize={['30px', '30px', '50px']} w={'full'}>
-            Impeccable technical
+            Impeccable Technical
           </Heading>
           <Heading fontSize={['30px', '30px', '50px']} w={'full'}>
-            architecture
+            Architecture
           </Heading>
         </Box>
         <SimpleGrid columns={[1, 2, 3]} spacing={['22px', '22px', '44px']} pb={'44px'}>
