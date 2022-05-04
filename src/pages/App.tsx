@@ -15,7 +15,7 @@ import {
   ModalContent,
   Modal,
   ModalCloseButton,
-  useDisclosure
+  useDisclosure, Stack
 } from '@chakra-ui/react'
 import {AspectRatio} from '@chakra-ui/react'
 import nest from '../assets/svg/nest.svg'
@@ -862,9 +862,11 @@ export const App = () => {
             <VStack alignItems={'start'} w={'240px'}>
               <Text fontWeight={'bold'}>App</Text>
               <br/>
-              <Link isExternal href={'https://channel.nestprotocol.org'}>
-                <Text fontWeight={'semibold'}>Create Oracle</Text>
-              </Link>
+              <Stack height={'48px'} justifyContent={"center"}>
+                <Link isExternal href={'https://channel.nestprotocol.org'} fontWeight={'semibold'}>
+                 Create Oracle
+                </Link>
+              </Stack>
             </VStack>
             <VStack alignItems={'start'} w={'240px'}>
               <Text fontWeight={'bold'}>Community</Text>
@@ -902,7 +904,7 @@ export const App = () => {
               <Box pl={4}>
                 <Text fontWeight={'bold'}>Market Price</Text>
               </Box>
-              <Box w={"480px"} h={"full"}>
+              <Box w={"480px"} h={"full"} pt={'8px'}>
                 <div id="crypto-widget-CoinList" data-design="classic" data-transparent="true" data-coins="nest-protocol" />
               </Box>
             </VStack>
