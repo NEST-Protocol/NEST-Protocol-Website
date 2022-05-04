@@ -177,9 +177,10 @@ export const App = () => {
               <Button onClick={onOpen} fontSize={'36px'} alignItems={"end"} p={0} variant={'ghost'}>
                 <HamburgerIcon/>
               </Button>
-              <Modal isOpen={isOpen} onClose={onClose} blockScrollOnMount={false} returnFocusOnClose={false} size={"full"}>
+              <Modal isOpen={isOpen} onClose={onClose} blockScrollOnMount={false} returnFocusOnClose={false}
+                     size={"full"}>
                 <ModalContent zIndex={20}>
-                  <ModalCloseButton size={'36px'} _active={{ bg: 'none' }} _hover={{ bg: 'none' }} pt={'14px'} px={'11px'}/>
+                  <ModalCloseButton size={'36px'} _active={{bg: 'none'}} _hover={{bg: 'none'}} pt={'14px'} px={'11px'}/>
                   <ModalBody p={'22px'}>
                     <VStack alignItems={"start"} pt={"30%"} spacing={'11px'}>
                       {menu.map(item => (
@@ -488,7 +489,7 @@ export const App = () => {
           spacingX={'60px'}
           spacingY={'40px'}
           w={isLargerThan480 ? '' : '80%'}
-          onWheel={e=> {
+          onWheel={e => {
             if (e.deltaX > 10) {
               setPage(1)
             }
@@ -689,7 +690,7 @@ export const App = () => {
                 window.open(item.link)
               }}
             >
-              { isLargerThan1024 ? (
+              {isLargerThan1024 ? (
                 <HStack w={"full"} justifyContent={"space-between"} pb={'8px'}>
                   <chakra.img src={item.icon} alt={item.label}/>
                   <chakra.img src={Right2} alt={'right'} _hover={{transform: 'translateX(8px)'}}/>
@@ -700,7 +701,7 @@ export const App = () => {
                   <chakra.img src={item.icon} alt={item.label}/>
                   <chakra.img src={Right2} alt={'right'} _hover={{transform: 'translateX(8px)'}} h={'16px'} w={'16px'}/>
                 </HStack>
-              ) }
+              )}
               <Text fontSize={'17px'} fontWeight={'bold'}>
                 {item.number}
               </Text>
@@ -812,6 +813,10 @@ export const App = () => {
                 boxShadow={'0px 0px 45px 5px #E5E5E5'}
                 borderRadius={'12px'}
                 overflow={'hidden'}
+                cursor={"pointer"}
+                onClick={()=>{
+                  window.open(item.link)
+                }}
               >
                 <Box overflow={"hidden"}>
                   <chakra.img src={item.bg} alt={item.label} style={{objectFit: 'cover'}}
@@ -825,11 +830,9 @@ export const App = () => {
                   alignItems={isLargerThan480 ? 'center' : 'start'}
                   justifyContent={"start"}
                 >
-                  <Link isExternal href={item.link}>
-                    <Text fontSize={'15px'} fontWeight={'bold'}>
-                      {item.label}
-                    </Text>
-                  </Link>
+                  <Text fontSize={'15px'} fontWeight={'bold'}>
+                    {item.label}
+                  </Text>
                   <Text
                     fontSize={['12px', '12px', '15px']}
                     fontWeight={600}
@@ -871,7 +874,7 @@ export const App = () => {
               <br/>
               <Stack height={'48px'} justifyContent={"center"}>
                 <Link isExternal href={'https://channel.nestprotocol.org'} fontWeight={'semibold'}>
-                 Create Oracle
+                  Create Oracle
                 </Link>
               </Stack>
             </VStack>
@@ -912,7 +915,8 @@ export const App = () => {
                 <Text fontWeight={'bold'}>Market Price</Text>
               </Box>
               <Box w={"480px"} h={"full"} pt={'8px'}>
-                <div id="crypto-widget-CoinList" data-design="classic" data-transparent="true" data-coins="nest-protocol" />
+                <div id="crypto-widget-CoinList" data-design="classic" data-transparent="true"
+                     data-coins="nest-protocol"/>
               </Box>
             </VStack>
             <Spacer/>
@@ -970,7 +974,8 @@ export const App = () => {
             <VStack alignItems={'start'} w={"full"}>
               <Text fontWeight={'bold'}>Market Price</Text>
               <Box w={"full"} h={"full"}>
-                <div id="crypto-widget-CoinList" data-design="classic" data-transparent="true" data-coins="nest-protocol" />
+                <div id="crypto-widget-CoinList" data-design="classic" data-transparent="true"
+                     data-coins="nest-protocol"/>
               </Box>
             </VStack>
             <VStack>
