@@ -272,7 +272,7 @@ export const App = () => {
         </Box>
         <AspectRatio w={['full', 'full', '720px']} ratio={16 / 9} borderRadius={'12px'} overflow={"hidden"}
                      bg={"black"}>
-          <iframe title="naruto" src="https://www.youtube.com/embed/-c7A2CjoJ8E" allowFullScreen/>
+          <iframe title="naruto" src="https://www.youtube.com/embed/mOF8o0OZoxE" allowFullScreen/>
         </AspectRatio>
       </VStack>
       <VStack
