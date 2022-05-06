@@ -241,7 +241,7 @@ export const App = () => {
             </Button>
           </HStack>
 
-          <SimpleGrid columns={[3, 3, 3, 6]} spacing={'44px'}>
+          <SimpleGrid columns={[3, 3, 3, 6]} spacing={'0'}>
             {[
               {id: 'nest_labs', src: nest_labs, link: '#'},
               {id: 'fort', src: fort, link: 'https://fortprotocol.com'},
@@ -251,7 +251,7 @@ export const App = () => {
               {id: 'coinbase', src: coinbase, link: 'https://www.coinbase.com'}
             ].map(item => (
               <Link key={item.id} isExternal href={item.link}>
-                <chakra.img src={item.src} alt={item.id}/>
+                <chakra.img src={item.src} alt={item.id} h={'50px'}/>
               </Link>
             ))}
           </SimpleGrid>
