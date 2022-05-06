@@ -90,6 +90,9 @@ import polygon from '../assets/svg/polygon.svg'
 import nodeless from '../assets/svg/nodeless_icon.svg'
 import stable from '../assets/svg/stable_icon.svg'
 import nest4_4 from '../assets/svg/news_v4.4.png'
+import coinbase2 from '../assets/svg/coinbase2.svg'
+import nestlabs2 from '../assets/svg/nestlabs2.svg'
+import binance2 from '../assets/svg/BSC2.svg'
 
 export const App = () => {
   const [isLargerThan1024] = useMediaQuery('(min-width: 1024px)')
@@ -499,8 +502,8 @@ export const App = () => {
           }}
         >
           {[
-            {id: 'nest_labs', src: nest_labs, link: '#'},
-            {id: 'coinbase', src: coinbase, link: 'https://www.coinbase.com'},
+            {id: 'nest_labs', src: nestlabs2, link: '#'},
+            {id: 'coinbase', src: coinbase2, link: 'https://www.coinbase.com'},
             {id: 'huobi', src: huobi, link: 'https://www.huobi.com/'},
             {id: 'crypto.com', src: crypto, link: 'https://crypto.com/'},
             {id: 'hotbit', src: hotbit, link: 'https://www.hotbit.io/'},
@@ -524,7 +527,7 @@ export const App = () => {
             {id: 'blockster', src: blockster, link: 'https://blockster.com/'},
             {id: 'winkrypto', src: winkrypto, link: 'https://www.winkrypto.com/'},
             {id: 'whatcoin', src: whatcoin, link: 'https://www.whatscoin.com/'},
-            {id: 'binance', src: binance, link: 'https://www.binance.com/'},
+            {id: 'binance', src: binance2, link: 'https://www.binance.com/'},
             {id: 'polygon', src: polygon, link: 'https://polygon.technology/'},
             {id: 'kcc', src: kcc, link: 'https://www.kcc.io/'},
             {id: 'map', src: map, link: 'https://www.maplabs.io/'},
