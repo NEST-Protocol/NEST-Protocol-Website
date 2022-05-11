@@ -59,7 +59,7 @@ import Telegram from '../assets/svg/telegram_icon.svg'
 import Medium from '../assets/svg/medium_icon.svg'
 import {useMediaQuery} from '@chakra-ui/react'
 import {HamburgerIcon} from '@chakra-ui/icons'
-import {useRef, useState} from 'react'
+import {useEffect, useRef, useState} from 'react'
 import arms from '../assets/img/机械臂.png'
 import twitterImg from '../assets/img/Twitter.png'
 import telegramImg from '../assets/img/Telegram.png'
@@ -93,6 +93,7 @@ import nest4_4 from '../assets/svg/news_v4.4.png'
 import coinbase2 from '../assets/svg/coinbase2.svg'
 import nestlabs2 from '../assets/svg/nestlabs2.svg'
 import binance2 from '../assets/svg/BSC2.svg'
+import {formatNumber, parseToBigNumber} from "../util";
 
 export const App = () => {
   const [isLargerThan1024] = useMediaQuery('(min-width: 1024px)')
@@ -105,12 +106,33 @@ export const App = () => {
   const [page, setPage] = useState(0)
   const [showMore, setShowMore] = useBoolean(false)
   const {isOpen, onOpen, onClose} = useDisclosure()
+  const [data, setData] = useState({
+    oracleCount: 0,
+    quoteCount: 0,
+    priceCount: 0,
+    currentProfit: 0,
+    totalProfit: 0,
+    appCount: 0,
+  })
 
   const next = (ref: any) => {
     if (ref) {
       window.scrollTo(0, ref.current.offsetTop || 0)
     }
   }
+
+  const handleFetch = async () => {
+    const res = await fetch(`https://nestdapp.io/nestwebApi/nestWebData`)
+      .then((res)=> res.json())
+      .catch((e)=> console.log(e))
+    if (res) {
+      setData(res.value)
+    }
+  }
+
+  useEffect(()=>{
+    handleFetch()
+  }, [])
 
   const menu = [
     {label: 'About NEST', ref: aboutRef},
@@ -386,12 +408,12 @@ export const App = () => {
         </Box>
         <SimpleGrid columns={[2, 2, 3]} spacing={['20px', '30px', '60px']}>
           {[
-            {label: '60', desc: 'Number of oracle'},
-            {label: '539,929', desc: 'Cumulative quotes'},
-            {label: '10', desc: 'Number of apps called'},
-            {label: '50,729', desc: 'Cumulative calls'},
-            {label: '1.35M', desc: 'Current income (USDT)'},
-            {label: '109.40M', desc: 'Cumulative income (USDT)'}
+            {label: formatNumber(parseToBigNumber(data.oracleCount)), desc: 'Number of oracle'},
+            {label: formatNumber(parseToBigNumber(data.quoteCount)), desc: 'Cumulative quotes'},
+            {label: formatNumber(parseToBigNumber(data.appCount)), desc: 'Number of apps called'},
+            {label: formatNumber(parseToBigNumber(data.priceCount)), desc: 'Cumulative calls'},
+            {label: formatNumber(parseToBigNumber(data.currentProfit)), desc: 'Current income (USDT)'},
+            {label: formatNumber(parseToBigNumber(data.totalProfit)), desc: 'Cumulative income (USDT)'}
           ].map(item => (
             <VStack key={item.desc} alignItems={'start'}>
               <Text fontWeight={'bold'} fontSize={['30px', '41px']} lineHeight={'55px'}>
