@@ -412,8 +412,8 @@ export const App = () => {
             {label: formatNumber(parseToBigNumber(data.quoteCount)), desc: 'Cumulative quotes'},
             {label: formatNumber(parseToBigNumber(data.appCount)), desc: 'Number of apps called'},
             {label: formatNumber(parseToBigNumber(data.priceCount)), desc: 'Cumulative calls'},
-            {label: formatNumber(parseToBigNumber(data.currentProfit)), desc: 'Current income (USDT)'},
-            {label: formatNumber(parseToBigNumber(data.totalProfit)), desc: 'Cumulative income (USDT)'}
+            {label: `${formatNumber(parseToBigNumber(data.currentProfit).shiftedBy(-6), 2)}M`, desc: 'Current income (USDT)'},
+            {label: `${formatNumber(parseToBigNumber(data.totalProfit).shiftedBy(-6), 2)}M`, desc: 'Cumulative income (USDT)'}
           ].map(item => (
             <VStack key={item.desc} alignItems={'start'}>
               <Text fontWeight={'bold'} fontSize={['30px', '41px']} lineHeight={'55px'}>
