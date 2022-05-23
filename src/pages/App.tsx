@@ -147,7 +147,7 @@ export const App = () => {
     {
       label: 'Price Calling API',
       icon: Price,
-      link: 'https://github.com/NEST-Protocol/NEST-Docs/blob/main/CallingPrice.md'
+      link: 'https://docs.nestprotocol.org/#price-calling'
     },
     {
       label: 'Whitepaper',
