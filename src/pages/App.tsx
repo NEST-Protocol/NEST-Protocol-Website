@@ -51,9 +51,6 @@ import ceras from '../assets/svg/Ceras ventures.svg'
 import sevenOclock from "../assets/svg/7 O'Clock.svg"
 import catchervc from '../assets/svg/Catchervc.svg'
 import kyros from '../assets/svg/Kyros.svg'
-import award1 from '../assets/svg/award1_icon.svg'
-import award2 from '../assets/svg/award2_icon.svg'
-import award3 from '../assets/svg/award3_icon.svg'
 import Twitter from '../assets/svg/twitter_icon.svg'
 import Telegram from '../assets/svg/telegram_icon.svg'
 import Medium from '../assets/svg/medium_icon.svg'
@@ -69,6 +66,7 @@ import new1 from '../assets/img/news 1.png'
 import new2 from '../assets/img/news 2.png'
 import new3 from '../assets/img/news 3.png'
 import new4 from '../assets/img/news 4.png'
+import new5 from '../assets/img/news5.png'
 import header from '../assets/img/header.png'
 import defilive from '../assets/svg/difilive_logo.svg'
 import deepchain from '../assets/svg/deepchain.svg'
@@ -663,88 +661,6 @@ export const App = () => {
           ))}
         </SimpleGrid>
       </VStack>
-      <VStack
-        id={'join the nest unicorn'}
-        w={'full'}
-        px={['22px', '22px', '44px']}
-        pt={['40px', '40px', '80px']}
-      >
-        <Box w={'full'} mb={['40px', '40px', '80px']}>
-          <Heading fontSize={['30px', '30px', '50px']} w={'full'}>
-            Join the NEST Unicorn
-          </Heading>
-          <Heading fontSize={['30px', '30px', '50px']} w={'full'}>
-            Rewards Program
-          </Heading>
-        </Box>
-        <SimpleGrid columns={[1, 1, 2, 3]} spacing={['22px', '22px', '44px']}>
-          {[
-            {
-              label: 'Top Oracle miner',
-              icon: award1,
-              number: '$3,000',
-              desc: '3 projects or individuals who open new oracle channels or participate in quote mining will be distributed $1,000 eac',
-              link: 'https://docs.google.com/forms/d/1_0BN03Zo0UeBt9aJVthdQNOdKo7c-yLjXP7Uf4G3Uqg/edit'
-            },
-            {
-              label: 'Excellent Oracle Use-case',
-              icon: award2,
-              number: '$4,000',
-              desc: 'Awards will be distributed according to the proportion of NEST oracle calling counts (until the end of the competition), which could be validated on chain',
-              link: 'https://docs.google.com/forms/d/1_0BN03Zo0UeBt9aJVthdQNOdKo7c-yLjXP7Uf4G3Uqg/edit'
-            },
-            {
-              label: 'Most innovative projects',
-              icon: award3,
-              number: '$3,000',
-              desc: '3 most innovative projects will be distributed $1,000 each, whether in DeFi, NFT, GameFi, SocialFi, Metaverse,or Web3',
-              link: 'https://docs.google.com/forms/d/1_0BN03Zo0UeBt9aJVthdQNOdKo7c-yLjXP7Uf4G3Uqg/edit'
-            }
-          ].map(item => (
-            <VStack
-              key={item.label}
-              w={isLargerThan480 ? '308px' : 'full'}
-              p={['22px', '22px', '44px']}
-              border={'1px solid #EEEEEE'}
-              alignItems={isLargerThan480 ? 'start' : 'center'}
-              spacing={'8px'}
-              boxShadow={'0px 0px 45px 5px #E5E5E5'}
-              borderRadius={'12px'}
-              cursor={"pointer"}
-              onClick={() => {
-                window.open(item.link)
-              }}
-            >
-              {isLargerThan1024 ? (
-                <HStack w={"full"} justifyContent={"space-between"} pb={'8px'}>
-                  <chakra.img src={item.icon} alt={item.label}/>
-                  <chakra.img src={Right2} alt={'right'} _hover={{transform: 'translateX(8px)'}}/>
-                </HStack>
-              ) : (
-                <HStack w={"full"} justifyContent={"space-between"} alignItems={"start"}>
-                  <Box h={'16px'} w={'16px'}/>
-                  <chakra.img src={item.icon} alt={item.label}/>
-                  <chakra.img src={Right2} alt={'right'} _hover={{transform: 'translateX(8px)'}} h={'16px'} w={'16px'}/>
-                </HStack>
-              )}
-              <Text fontSize={'17px'} fontWeight={'bold'}>
-                {item.number}
-              </Text>
-              <Text fontSize={['12px', '12px', '15px']} fontWeight={'bold'} whiteSpace={"nowrap"}>
-                {item.label}
-              </Text>
-              <Text
-                fontSize={['12px', '12px', '15px']}
-                fontWeight={600}
-                color={'#878787'}
-                textAlign={isLargerThan480 ? 'start' : 'center'}
-              >
-                {item.desc}
-              </Text>
-            </VStack>
-          ))}
-        </SimpleGrid>
-      </VStack>
       <VStack id={'coming soon so stay tuned'} w={'full'} pt={['40px', '40px', '80px']}>
         <Box w={'full'} mb={'40px'} px={['22px', '22px', '44px']}>
           <Heading fontSize={['30px', '30px', '50px']} w={'full'}>
@@ -826,6 +742,12 @@ export const App = () => {
               bg: new4,
               desc: 'The project uses a unique “quote mining” mechanism to ensure that off-chain price data is generated on-chain in a synchronous manner',
               link: 'https://coin68.com/nest-protocol-la-gi/'
+            },
+            {
+              label: 'Top Infrastructural Award',
+              bg: new5,
+              desc: 'Based on the feedback of KCC community, and the voting results at the Unicorn Contest, NEST has been awarded “Top Infrastructural Award”!',
+              link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'
             }
           ]
             .filter((item, index) => (showMore ? true : index < 3))
