@@ -777,7 +777,7 @@ export const App = () => {
                   alignItems={isLargerThan480 ? 'center' : 'start'}
                   justifyContent={"start"}
                 >
-                  <Text fontSize={'15px'} fontWeight={'bold'}>
+                  <Text fontSize={'15px'} fontWeight={'bold'} textAlign={"start"} w={"full"}>
                     {item.label}
                   </Text>
                   <Text
