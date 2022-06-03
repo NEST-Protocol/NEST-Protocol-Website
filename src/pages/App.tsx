@@ -714,6 +714,12 @@ export const App = () => {
         <SimpleGrid columns={[1, 1, 2, 3]} spacing={['22px', '22px', '44px']} pb={'27px'}>
           {[
             {
+              label: 'Top Infrastructural Award',
+              bg: new5,
+              desc: 'Based on the feedback of KCC community, and the voting results at the Unicorn Contest, NEST has been awarded “Top Infrastructural Award”!',
+              link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'
+            },
+            {
               label: 'NEST v4.4 Upgrade Proposal',
               bg: nest4_4,
               desc: 'Voting for the NESTv4.4 upgrade is now open on snapshot, please participate and cast your vote!',
@@ -742,12 +748,6 @@ export const App = () => {
               bg: new4,
               desc: 'The project uses a unique “quote mining” mechanism to ensure that off-chain price data is generated on-chain in a synchronous manner',
               link: 'https://coin68.com/nest-protocol-la-gi/'
-            },
-            {
-              label: 'Top Infrastructural Award',
-              bg: new5,
-              desc: 'Based on the feedback of KCC community, and the voting results at the Unicorn Contest, NEST has been awarded “Top Infrastructural Award”!',
-              link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'
             }
           ]
             .filter((item, index) => (showMore ? true : index < 3))
