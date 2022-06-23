@@ -207,7 +207,7 @@ export const App = () => {
                   <ModalBody p={'22px'}>
                     <VStack alignItems={"start"} pt={"30%"} spacing={'11px'}>
                       {menu.map(item => (
-                        <Button key={item.label} fontWeight={600} onClick={() => {
+                        <Button key={item.label} fontWeight={'semibold'} onClick={() => {
                           next(item.ref)
                           onClose()
                         }} variant={"ghost"} fontSize={'25px'} p={0}>
@@ -336,10 +336,10 @@ export const App = () => {
                   border={'1px solid #EEEEEE'}
                 >
                   <chakra.img src={item.logo} alt={item.id}/>
-                  <Text fontWeight={600} fontSize={'15px'}>
+                  <Text fontWeight={'semibold'} fontSize={'15px'}>
                     {item.id}
                   </Text>
-                  <Text color={'#878787'} fontSize={'15px'} fontWeight={600} height={'60px'}>
+                  <Text color={'#878787'} fontSize={'15px'} fontWeight={'semibold'} height={'60px'}>
                     {item.desc}
                   </Text>
                 </VStack>
@@ -354,10 +354,10 @@ export const App = () => {
                 >
                   <chakra.img src={item.logo} alt={item.id}/>
                   <VStack alignItems={'start'}>
-                    <Text fontWeight={600} fontSize={'15px'}>
+                    <Text fontWeight={'semibold'} fontSize={'15px'}>
                       {item.id}
                     </Text>
-                    <Text color={'#878787'} fontSize={'15px'} fontWeight={600}>
+                    <Text color={'#878787'} fontSize={'15px'} fontWeight={'semibold'}>
                       {item.desc}
                     </Text>
                   </VStack>
@@ -379,7 +379,7 @@ export const App = () => {
                   <chakra.img src={item.icon} alt={item.label}/>
                 </Box>
                 <Box>
-                  <Text fontSize={['12px', '12px', '15px']} fontWeight={600}>
+                  <Text fontSize={['12px', '12px', '15px']} fontWeight={'semibold'}>
                     {item.label}
                   </Text>
                 </Box>
@@ -417,7 +417,7 @@ export const App = () => {
               <Text fontWeight={'bold'} fontSize={['30px', '41px']} lineHeight={'55px'}>
                 {item.label}
               </Text>
-              <Text fontWeight={600} fontSize={['12px', '12px', '15px']} color={'#878787'}>
+              <Text fontWeight={'semibold'} fontSize={['12px', '12px', '15px']} color={'#878787'}>
                 {item.desc}
               </Text>
             </VStack>
@@ -472,7 +472,7 @@ export const App = () => {
                     {item.label}
                   </Text>
                   <chakra.img src={item.logo} alt={item.label}/>
-                  <Text fontSize={'15px'} fontWeight={600} color={'#878787'} height={'60px'}>
+                  <Text fontSize={'15px'} fontWeight={'semibold'} color={'#878787'} height={'60px'}>
                     {item.desc}
                   </Text>
                   <Link isExternal href={item.link}>
@@ -499,7 +499,7 @@ export const App = () => {
                       <chakra.img src={Right1} alt={'right'}/>
                     </Link>
                   </HStack>
-                  <Text fontSize={'15px'} fontWeight={600} color={'#878787'}>
+                  <Text fontSize={'15px'} fontWeight={'semibold'} color={'#878787'}>
                     {item.desc}
                   </Text>
                 </VStack>
@@ -646,7 +646,7 @@ export const App = () => {
                 w={'full'}
                 alignItems={'center'}
               >
-                <Text fontSize={['12px', '12px', '17px']} fontWeight={600}>
+                <Text fontSize={['12px', '12px', '17px']} fontWeight={'semibold'}>
                   {item.label}
                 </Text>
                 <Link isExternal href={item.link}>
@@ -685,7 +685,7 @@ export const App = () => {
                   <Text
                     key={item}
                     fontSize={['12px', '12px', '25px']}
-                    fontWeight={600}
+                    fontWeight={'semibold'}
                     color={'#878787'}
                   >
                     {item}
@@ -782,7 +782,7 @@ export const App = () => {
                   </Text>
                   <Text
                     fontSize={['12px', '12px', '15px']}
-                    fontWeight={600}
+                    fontWeight={'semibold'}
                     color={'#878787'}
                   >
                     {item.desc}
@@ -833,7 +833,7 @@ export const App = () => {
                   <Link key={item.label} isExternal href={item.link}>
                     <HStack spacing={'20px'}>
                       <chakra.img src={item.icon} alt={item.label}/>
-                      <Text fontSize={'15px'} fontWeight={600}>
+                      <Text fontSize={'15px'} fontWeight={'semibold'}>
                         {item.label}
                       </Text>
                     </HStack>
@@ -849,7 +849,7 @@ export const App = () => {
                   <Link key={item.label} isExternal href={item.link}>
                     <HStack spacing={'20px'}>
                       <chakra.img src={item.icon} alt={item.label}/>
-                      <Text fontSize={'15px'} fontWeight={600}>
+                      <Text fontSize={'15px'} fontWeight={'semibold'}>
                         {item.label}
                       </Text>
                     </HStack>
@@ -892,7 +892,7 @@ export const App = () => {
                     <Link key={item.label} isExternal href={item.link}>
                       <HStack spacing={'20px'}>
                         <chakra.img src={item.icon} alt={item.label} height={'22px'} width={'22px'}/>
-                        <Text fontSize={'15px'} fontWeight={600}>
+                        <Text fontSize={'15px'} fontWeight={'semibold'}>
                           {item.label}
                         </Text>
                       </HStack>
@@ -909,7 +909,7 @@ export const App = () => {
                     <Link key={item.label} isExternal href={item.link}>
                       <HStack spacing={'20px'}>
                         <chakra.img src={item.icon} alt={item.label} height={'22px'} width={'22px'}/>
-                        <Text fontSize={'15px'} fontWeight={600}>
+                        <Text fontSize={'15px'} fontWeight={'semibold'}>
                           {item.label}
                         </Text>
                       </HStack>
