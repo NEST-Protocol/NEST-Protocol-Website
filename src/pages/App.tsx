@@ -207,7 +207,7 @@ export const App = () => {
                   <ModalBody p={'22px'}>
                     <VStack alignItems={"start"} pt={"30%"} spacing={'11px'}>
                       {menu.map(item => (
-                        <Button key={item.label} fontWeight={'semibold'} onClick={() => {
+                        <Button key={item.label} fontWeight={600} onClick={() => {
                           next(item.ref)
                           onClose()
                         }} variant={"ghost"} fontSize={'25px'} p={0}>
@@ -379,7 +379,7 @@ export const App = () => {
                   <chakra.img src={item.icon} alt={item.label}/>
                 </Box>
                 <Box>
-                  <Text fontSize={['12px', '12px', '15px']} fontWeight={'semibold'}>
+                  <Text fontSize={['12px', '12px', '15px']} fontWeight={600}>
                     {item.label}
                   </Text>
                 </Box>
