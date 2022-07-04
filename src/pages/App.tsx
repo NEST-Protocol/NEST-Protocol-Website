@@ -777,9 +777,9 @@ export const App = () => {
                   alignItems={isLargerThan480 ? 'center' : 'start'}
                   justifyContent={"start"}
                 >
-                  <Text fontSize={'15px'} fontWeight={'bold'} textAlign={"start"} w={"full"}>
+                  <Link isExternal href={item.link} fontSize={'15px'} fontWeight={'bold'} textAlign={"start"} w={"full"}>
                     {item.label}
-                  </Text>
+                  </Link>
                   <Text
                     fontSize={['12px', '12px', '15px']}
                     fontWeight={'semibold'}
@@ -803,7 +803,6 @@ export const App = () => {
           >
             {showMore ? 'Less' : 'More'}
           </Button>
-
         </HStack>
       </VStack>
       <HStack
