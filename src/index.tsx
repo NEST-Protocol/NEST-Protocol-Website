@@ -1,18 +1,36 @@
-import { ChakraProvider } from '@chakra-ui/react'
+import {ChakraProvider, Text} from '@chakra-ui/react'
 import theme from './theme'
 import * as React from 'react'
 import ReactDOM from 'react-dom'
-import { App } from './pages/App'
+import {App} from './pages/App'
 import reportWebVitals from './reportWebVitals'
 import * as serviceWorker from './serviceWorker'
 import 'focus-visible/dist/focus-visible'
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from 'react-router-dom'
 
 ReactDOM.render(
   <React.StrictMode>
-    <ChakraProvider theme={theme}>
-      <App />
-    </ChakraProvider>
-  </React.StrictMode>,
+    <BrowserRouter>
+      <ChakraProvider theme={theme}>
+        <Routes>
+          <Route path="/" element={<App/>}/>
+          <Route
+            path="*"
+            element={
+              <Text p={2}>
+                <p>There's nothing here!</p>
+              </Text>
+            }
+          />
+        </Routes>
+      </ChakraProvider>
+    </BrowserRouter>
+  </React.StrictMode>
+  ,
   document.getElementById('root')
 )
 
