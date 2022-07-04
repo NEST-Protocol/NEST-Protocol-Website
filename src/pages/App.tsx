@@ -171,13 +171,13 @@ export const App = () => {
         {isLargerThan480 ? (
           <chakra.img
             src={header}
-            alt={''}
+            alt={'background'}
             style={{display: 'block', width: '100%', height: '1600px'}}
           />
         ) : (
           <chakra.img
             src={header_phone}
-            alt={''}
+            alt={'background'}
             style={{display: 'block', width: '100%', height: '820px'}}
           />
         )}
@@ -185,7 +185,7 @@ export const App = () => {
       <VStack id={'menu+index'} bg={'#FBEECC'} w={'full'} px={['22px', '22px', '44px']} py={'27px'}>
         <HStack id={'menu'} justifyContent={'space-between'} w={'full'}>
           <Box>
-            <chakra.img src={nest} alt={'nest'}/>
+            <chakra.img src={nest} alt={'nest protocol'}/>
           </Box>
           {isLargerThan1024 ? (
             <HStack>
@@ -522,7 +522,7 @@ export const App = () => {
           }}
         >
           {[
-            {id: 'nest_labs', src: nestlabs2, link: '#'},
+            {id: 'nest labs', src: nestlabs2, link: 'https://nestprotocol.org/'},
             {id: 'coinbase', src: coinbase2, link: 'https://www.coinbase.com'},
             {id: 'huobi', src: huobi, link: 'https://www.huobi.com/'},
             {id: 'crypto.com', src: crypto, link: 'https://crypto.com/'},
@@ -531,33 +531,33 @@ export const App = () => {
             {id: 'okex', src: okex, link: 'https://www.okx.com'},
             {id: 'fbg', src: fbg, link: 'https://twitter.com/fbgcapital'},
             {id: 'kernel', src: kernal, link: 'https://www.kernel-ventures.com/'},
-            {id: 'ybb', src: ybb, link: 'https://www.ybb.io/'},
+            {id: 'ybb.io', src: ybb, link: 'https://www.ybb.io/'},
             {id: 'kyros', src: kyros, link: 'https://kyros.ventures/'},
             {id: 'au21', src: au21, link: 'https://au21.capital/'},
             {id: 'ld', src: ld, link: 'https://ldcap.com/'},
             {id: 'ceras', src: ceras, link: 'https://www.cerasventures.com/'},
             {
-              id: '7oclocklabs',
+              id: '7 O\'Clock Labs',
               src: sevenOclock,
-              link: 'https://www.7oclockcapital.com/community.htm'
+              link: 'https://www.7oclockcapital.com/'
             },
             {id: 'catchervc', src: catchervc, link: 'https://catchervc.chaincatcher.com/'},
             {id: 'defilive', src: defilive, link: 'https://www.defilive.xyz/'},
             {id: 'deepchain', src: deepchain, link: 'https://www.dcnews.io/'},
             {id: 'blockster', src: blockster, link: 'https://blockster.com/'},
             {id: 'winkrypto', src: winkrypto, link: 'https://www.winkrypto.com/'},
-            {id: 'whatcoin', src: whatcoin, link: 'https://www.whatscoin.com/'},
+            {id: 'whats coin', src: whatcoin, link: 'https://www.whatscoin.com/'},
             {id: 'binance', src: binance2, link: 'https://www.binance.com/'},
             {id: 'polygon', src: polygon, link: 'https://polygon.technology/'},
             {id: 'kcc', src: kcc, link: 'https://www.kcc.io/'},
             {id: 'map', src: map, link: 'https://www.maplabs.io/'},
-            {id: 'polynetwork', src: polynetwork, link: 'https://poly.network/'},
-            {id: 'fortube', src: fortube, link: 'https://for.tube/'},
+            {id: 'poly network', src: polynetwork, link: 'https://poly.network/'},
+            {id: 'for.tube', src: fortube, link: 'https://for.tube/'},
             {id: 'husd', src: husd, link: 'https://www.stcoins.com/'},
             {id: 'inft', src: inft, link: 'https://inft.io/'},
-            {id: 'pacific', src: pacific, link: 'https://pacific.one/#/'},
-            {id: 'radomnetwork', src: radomnetwork, link: 'https://www.radom.network/'},
-            {id: 'shoppingio', src: shoppingio, link: 'https://shopping.io/'}
+            {id: 'pacific', src: pacific, link: 'https://pacific.one/'},
+            {id: 'radom network', src: radomnetwork, link: 'https://www.radom.network/'},
+            {id: 'shopping.io', src: shoppingio, link: 'https://shopping.io/'}
           ]
             .filter((item, index) => Math.floor(index / 16) === page)
             .map(item => (
@@ -610,12 +610,12 @@ export const App = () => {
             {
               label: 'Twitter',
               bg: twitterImg,
-              link: 'https://twitter.com/nest_protocol'
+              link: 'https://twitter.com/nest_protocol/'
             },
             {
               label: 'Telegram',
               bg: telegramImg,
-              link: 'https://t.me/nest_chat'
+              link: 'https://t.me/nest_chat/'
             },
             {
               label: 'Medium',
@@ -722,7 +722,7 @@ export const App = () => {
             {
               label: 'NEST v4.4 Upgrade Proposal',
               bg: nest4_4,
-              desc: 'Voting for the NESTv4.4 upgrade is now open on snapshot, please participate and cast your vote!',
+              desc: 'Voting for the NEST v4.4 upgrade is now open on snapshot, please participate and cast your vote!',
               link: 'https://snapshot.org/#/nestprotocols.eth/proposal/0xc44f29b7a8695fc3379fa34d6e78bf933d9d4493121d2d66160a25b8175816a9'
             },
             {
@@ -820,7 +820,7 @@ export const App = () => {
               <Text fontWeight={'bold'}>App</Text>
               <br/>
               <Stack height={'48px'} justifyContent={"center"}>
-                <Link isExternal href={'https://channel.nestprotocol.org'} fontWeight={'semibold'}>
+                <Link isExternal href={'https://channel.nestprotocol.org/'} fontWeight={'semibold'}>
                   Create Oracle
                 </Link>
               </Stack>
@@ -879,7 +879,7 @@ export const App = () => {
             <VStack alignItems={'start'} w={'240px'}>
               <Text fontWeight={'bold'}>App</Text>
               <br/>
-              <Link isExternal href={'https://channel.nestprotocol.org'}>
+              <Link isExternal href={'https://channel.nestprotocol.org/'}>
                 <Text fontWeight={'semibold'}>Create Oracle</Text>
               </Link>
             </VStack>
