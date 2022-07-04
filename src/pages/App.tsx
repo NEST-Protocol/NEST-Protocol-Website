@@ -780,13 +780,15 @@ export const App = () => {
                   <Link isExternal href={item.link} fontSize={'15px'} fontWeight={'bold'} textAlign={"start"} w={"full"}>
                     {item.label}
                   </Link>
-                  <Text
+                  <Link
+                    isExternal
+                    href={item.link}
                     fontSize={['12px', '12px', '15px']}
                     fontWeight={'semibold'}
                     color={'#878787'}
                   >
                     {item.desc}
-                  </Text>
+                  </Link>
                 </VStack>
               </VStack>
             ))}
