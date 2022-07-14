@@ -1,12 +1,16 @@
 export const Button = {
   baseStyle: {
     fontWeight: 'medium',
-    fontSize: 'md'
+    fontSize: 'md',
+    height: '34px',
+    maxH: '34px',
   },
   variants: {
     ghost: {
-      height: '34px',
+      fontWeight: '500',
+      fontSize: '15px',
       _hover: {
+        color: '#EAAA00',
         bg: 'none'
       },
       _active: {
@@ -17,7 +21,9 @@ export const Button = {
       border: '2px solid',
       borderColor: '#EAAA00',
       borderRadius: 'full',
-      height: '34px',
+      fontSize: '15px',
+      fontWeight: '500',
+      px: '20px',
       _hover: {
         bg: '#EAAA00'
       },
@@ -28,9 +34,10 @@ export const Button = {
     solid: {
       bg: '#EAAA00',
       color: 'black',
-      fontWeight: 'semibold',
+      fontWeight: '600',
       borderRadius: 'full',
-      height: '34px',
+      fontSize: '15px',
+      px: '20px',
       _hover: {
         bg: '#EAAA00'
       },
@@ -41,6 +48,6 @@ export const Button = {
   },
   defaultProps: {
     size: 'md',
-    variant: 'solid'
+    variant: 'solid',
   }
 }
