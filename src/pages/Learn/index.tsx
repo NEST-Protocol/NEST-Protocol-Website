@@ -8,7 +8,7 @@ import new5 from '../../assets/img/news5.png'
 import nest4_4 from '../../assets/svg/news_v4.4.png'
 
 const Learn = () => {
-  const [isLargerThan480] = useMediaQuery('(min-width: 480px)')
+  const [isDesktop] = useMediaQuery("(min-width: 768px)");
 
   const pages = [
     {
@@ -95,7 +95,7 @@ const Learn = () => {
               .map(item => (
                 <VStack
                   key={item.label}
-                  w={isLargerThan480 ? '308px' : 'full'}
+                  w={isDesktop ? '308px' : 'full'}
                   spacing={0}
                   border={'1px solid #EEEEEE'}
                   boxShadow={'0px 0px 45px 5px #E5E5E5'}
@@ -115,7 +115,7 @@ const Learn = () => {
                     px={['22px', '22px', '44px']}
                     py={'22px'}
                     spacing={'8px'}
-                    alignItems={isLargerThan480 ? 'center' : 'start'}
+                    alignItems={isDesktop ? 'center' : 'start'}
                     justifyContent={"start"}
                   >
                     <Link isExternal href={item.link} fontSize={['12px', '15px']} fontWeight={'bold'} textAlign={"start"} w={"full"}>

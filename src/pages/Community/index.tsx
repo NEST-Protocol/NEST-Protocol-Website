@@ -7,7 +7,7 @@ import Right1 from '../../assets/svg/RIGHT_1_icon.svg'
 import * as React from "react";
 
 const Community = () => {
-  const [isLargerThan480] = useMediaQuery('(min-width: 480px)')
+  const [isDesktop] = useMediaQuery("(min-width: 768px)");
 
   const menu = [
     {
@@ -68,7 +68,7 @@ const Community = () => {
                   {item.label}
                 </Text>
                 <Link isExternal href={item.link}>
-                  {isLargerThan480 ? (
+                  {isDesktop ? (
                     <chakra.img src={Right1} alt={'right'} _hover={{transform: 'translateX(8px)'}}/>
                   ) : (
                     <chakra.img src={Right1} alt={'right'} height={'24px'} width={'24px'}/>
