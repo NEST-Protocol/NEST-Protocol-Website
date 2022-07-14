@@ -17,7 +17,7 @@ const Header = () => {
   ]
 
   return (
-    <HStack px={['48px']} py={'28px'} spacing={'24px'} position={'fixed'} w={'full'}>
+    <HStack px={['24px', '48px']} py={'28px'} spacing={'24px'} position={'fixed'} w={'full'}>
       <chakra.img
         src={NEST_LOGO} alt="NEST Logo" h={'20px'}
         cursor={'pointer'}
