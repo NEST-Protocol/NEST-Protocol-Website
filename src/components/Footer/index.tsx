@@ -1,4 +1,4 @@
-import {Link, Stack, Text, HStack} from "@chakra-ui/react";
+import {Link, Stack, Text, HStack, Box} from "@chakra-ui/react";
 
 const Footer = () => {
   return (
@@ -61,14 +61,15 @@ const Footer = () => {
           </Link>
         </Stack>
       </Stack>
-      <Stack spacing={'48px'} w={'full'}>
+      <Stack spacing={'48px'} minW={'600px'}>
         <Text fontSize={'15px'} fontWeight={'bold'} color={'#003232'}>
           Market price
         </Text>
-        <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={'15px'}>
-          <Text>Power by crypto.com</Text>
-          <Text color={'#434344'} fontSize={'14px'} fontWeight={'bold'} textAlign={"end"}>@2022 NEST</Text>
-        </Stack>
+        <Box w={"480px"} h={"full"} pt={'8px'}>
+          <div id="crypto-widget-CoinList" data-design="classic" data-transparent="true"
+               data-coins="nest-protocol"/>
+        </Box>
+        <Text color={'#434344'} fontSize={'14px'} fontWeight={'bold'} textAlign={"end"}>@2022 NEST</Text>
       </Stack>
     </HStack>
   )
