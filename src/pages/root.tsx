@@ -1,10 +1,7 @@
-import {Heading, Stack, Text, chakra} from "@chakra-ui/react";
+import {Heading, Stack, chakra} from "@chakra-ui/react";
 import * as React from "react";
-import {useNavigate} from "react-router-dom";
 
 const Root = () => {
-  const navigate = useNavigate()
-
   const pages = [
     {
       name: 'Ecosystem',
@@ -39,25 +36,17 @@ const Root = () => {
           <Heading fontSize={'48px'} px={['48px']} color={'#003232'}>{name}</Heading>
           <Stack align={"center"} minH={'440px'} justify={"center"} spacing={'16px'}>
             <chakra.img/>
-            <Text
-              fontSize={'25px'} fontWeight={'semibold'} color={'#434344'}
-              cursor={'pointer'}
-              onClick={() => {
-                navigate(path)
-              }}
+            <chakra.a
+              fontSize={'25px'} fontWeight={'semibold'} color={'#434344'} href={'/#/' + path}
             >
               {title}
-            </Text>
-            <Text
+            </chakra.a>
+            <chakra.a
               fontSize={'15px'} fontWeight={'semibold'} color={'#7d7d7d'} whiteSpace={'break-spaces'}
-              textAlign={"center"}
-              cursor={'pointer'}
-              onClick={() => {
-                navigate(path)
-              }}
+              textAlign={"center"} href={'/#/' + path}
             >
               {desc}
-            </Text>
+            </chakra.a>
           </Stack>
         </Stack>
       ))}

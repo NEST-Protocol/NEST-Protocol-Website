@@ -8,7 +8,7 @@ const Footer = () => {
           Ecosystem
         </Text>
         <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={'15px'}>
-          <Link>
+          <Link style={{ textDecoration: 'none' }}>
             Explore applications
           </Link>
         </Stack>
@@ -24,7 +24,7 @@ const Footer = () => {
           <Link>
             Github
           </Link>
-          <Link>
+          <Link style={{ textDecoration: 'none' }}>
             Set up local environment
           </Link>
           <Link>
@@ -37,7 +37,7 @@ const Footer = () => {
           Community
         </Text>
         <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={'15px'}>
-          <Link>
+          <Link style={{ textDecoration: 'none' }}>
             Online communities
           </Link>
         </Stack>
@@ -47,10 +47,10 @@ const Footer = () => {
           Learn
         </Text>
         <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={'15px'}>
-          <Link>
+          <Link style={{ textDecoration: 'none' }}>
             What is NEST
           </Link>
-          <Link>
+          <Link style={{ textDecoration: 'none' }}>
             Use cases
           </Link>
           <Link>
