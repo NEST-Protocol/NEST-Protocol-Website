@@ -5,7 +5,6 @@ import Root from "./root";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Ecosystem from "./Ecosystem";
-import Developers from "./Developers";
 import Community from "./Community";
 import Learn from "./Learn";
 
@@ -16,7 +15,6 @@ export const App = () => {
       <Routes>
         <Route path="/" element={<Root />}/>
         <Route path={'ecosystem'} element={<Ecosystem />}/>
-        <Route path={'developers'} element={<Developers />}/>
         <Route path={'community'} element={<Community />}/>
         <Route path={'learn'} element={<Learn />}/>
         <Route
