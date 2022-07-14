@@ -24,25 +24,25 @@ const Learn = () => {
   return (
     <>
       <Stack align={"center"} h={'full'} justify={"center"} minH={'660px'} bg={"red"} spacing={'44px'}>
-        <Text whiteSpace={'break-spaces'} textAlign={"center"} fontSize={'48px'} fontWeight={'bold'}>
+        <Text whiteSpace={'break-spaces'} textAlign={"center"}fontSize={['24px', '48px']} fontWeight={'bold'}>
           What is NEST
         </Text>
-        <Text fontSize={'25px'} fontWeight={"bold"} textAlign={"center"}>
+        <Text fontSize={['17px', '24px']} fontWeight={"bold"} textAlign={"center"}>
           A complete gaming space with applications of DeFi, GameFi<br/>NFT built on the NEST. Swap, hedge, earn and even game<br/> with the NEST network to gain excess returns.
         </Text>
       </Stack>
       {pages.map(({name, path, icon, bg, title, desc}) => (
         <Stack key={name} spacing={'48px'}>
-          <Heading fontSize={'48px'} px={['48px']} color={'#003232'}>{name}</Heading>
+          <Heading fontSize={['24px', '48px']} px={['24px', '48px']} color={'#003232'}>{name}</Heading>
           <Stack align={"center"} minH={'440px'} justify={"center"} spacing={'16px'}>
             <chakra.img/>
             <chakra.a
-              fontSize={'25px'} fontWeight={'semibold'} color={'#434344'} href={'/#/' + path}
+              fontSize={['17px', '24px']} fontWeight={'semibold'} color={'#434344'} href={'/#/' + path}
             >
               {title}
             </chakra.a>
             <chakra.a
-              fontSize={'15px'} fontWeight={'semibold'} color={'#7d7d7d'} whiteSpace={'break-spaces'}
+              fontSize={['12px', '15px']} fontWeight={'semibold'} color={'#7d7d7d'} whiteSpace={'break-spaces'}
               textAlign={"center"} href={'/#/' + path}
             >
               {desc}
@@ -51,7 +51,7 @@ const Learn = () => {
         </Stack>
       ))}
       <Stack spacing={'48px'}>
-        <Heading fontSize={'48px'} px={['48px']} color={'#003232'}>Blogs</Heading>
+        <Heading fontSize={['24px', '48px']} px={['24px', '48px']} color={'#003232'}>Blogs</Heading>
         <Stack align={"center"} minH={'440px'} justify={"center"} spacing={'16px'}>
           <SimpleGrid columns={[1, 1, 2, 3]} spacing={['22px', '22px', '44px']} pb={'27px'}>
             {[
@@ -118,7 +118,7 @@ const Learn = () => {
                     alignItems={isLargerThan480 ? 'center' : 'start'}
                     justifyContent={"start"}
                   >
-                    <Link isExternal href={item.link} fontSize={'15px'} fontWeight={'bold'} textAlign={"start"} w={"full"}>
+                    <Link isExternal href={item.link} fontSize={['12px', '15px']} fontWeight={'bold'} textAlign={"start"} w={"full"}>
                       {item.label}
                     </Link>
                     <Link

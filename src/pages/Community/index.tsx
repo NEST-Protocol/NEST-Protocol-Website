@@ -35,10 +35,10 @@ const Community = () => {
   return (
     <>
       <Stack align={"center"} h={'full'} justify={"center"} minH={'660px'} bg={"red"} spacing={'44px'}>
-        <Text whiteSpace={'break-spaces'} textAlign={"center"} fontSize={'48px'} fontWeight={'bold'}>
+        <Text whiteSpace={'break-spaces'} textAlign={"center"}fontSize={['24px', '48px']} fontWeight={'bold'}>
           NEST Community
         </Text>
-        <Text fontSize={'25px'} fontWeight={"bold"} textAlign={"center"}>
+        <Text fontSize={['17px', '24px']} fontWeight={"bold"} textAlign={"center"}>
           The NEST community is made up of developers, creators,<br/>enthusiasts, explore, contribute to the<br/>community and get reward.
         </Text>
       </Stack>

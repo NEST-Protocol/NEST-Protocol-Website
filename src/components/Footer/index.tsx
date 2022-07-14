@@ -2,22 +2,22 @@ import {Link, Stack, Text, HStack, Box} from "@chakra-ui/react";
 
 const Footer = () => {
   return (
-    <HStack px={['48px']} py={'80px'} align={"start"}>
+    <HStack px={['24px', '48px']} py={'80px'} align={"start"}>
       <Stack spacing={'48px'} w={'full'}>
-        <Text fontSize={'15px'} fontWeight={'bold'} color={'#003232'}>
+        <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
           Ecosystem
         </Text>
-        <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={'15px'}>
+        <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={['12px', '15px']}>
           <Link style={{ textDecoration: 'none' }}>
             Explore applications
           </Link>
         </Stack>
       </Stack>
       <Stack spacing={'48px'} w={'full'}>
-        <Text fontSize={'15px'} fontWeight={'bold'} color={'#003232'}>
+        <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
           Developers
         </Text>
-        <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={'15px'}>
+        <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={['12px', '15px']}>
           <Link>
             Docs
           </Link>
@@ -33,20 +33,20 @@ const Footer = () => {
         </Stack>
       </Stack>
       <Stack spacing={'48px'} w={'full'}>
-        <Text fontSize={'15px'} fontWeight={'bold'} color={'#003232'}>
+        <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
           Community
         </Text>
-        <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={'15px'}>
+        <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={['12px', '15px']}>
           <Link style={{ textDecoration: 'none' }}>
             Online communities
           </Link>
         </Stack>
       </Stack>
       <Stack spacing={'48px'} w={'full'}>
-        <Text fontSize={'15px'} fontWeight={'bold'} color={'#003232'}>
+        <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
           Learn
         </Text>
-        <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={'15px'}>
+        <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={['12px', '15px']}>
           <Link style={{ textDecoration: 'none' }}>
             What is NEST
           </Link>
@@ -62,7 +62,7 @@ const Footer = () => {
         </Stack>
       </Stack>
       <Stack spacing={'48px'} minW={'600px'}>
-        <Text fontSize={'15px'} fontWeight={'bold'} color={'#003232'}>
+        <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
           Market price
         </Text>
         <Box w={"480px"} h={"full"} pt={'8px'}>

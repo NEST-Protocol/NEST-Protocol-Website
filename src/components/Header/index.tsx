@@ -1,14 +1,29 @@
-import {HStack, chakra, Spacer, Button, Link} from "@chakra-ui/react";
+import {
+  HStack,
+  chakra,
+  Spacer,
+  Button,
+  Link,
+  useMediaQuery,
+  ModalBody,
+  ModalContent,
+  VStack,
+  Modal, ModalCloseButton, useDisclosure
+} from "@chakra-ui/react";
 import NEST_LOGO from "../../assets/svg/nest.svg";
 import {useLocation, useNavigate} from "react-router-dom";
 import Ecosystem from "../../pages/Ecosystem";
 import Community from "../../pages/Community";
 import Learn from "../../pages/Learn";
 import * as React from "react";
+import {HamburgerIcon} from "@chakra-ui/icons";
 
 const Header = () => {
   const location = useLocation();
   const navigate = useNavigate();
+  const [isDesktop] = useMediaQuery("(min-width: 768px)");
+  const {isOpen, onOpen, onClose} = useDisclosure()
+
   const Menu = [
     {name: 'Ecosystem', path: '/#/ecosystem'},
     {name: 'Developers', path: 'https://docs.nestprotocol.org/'},
@@ -26,7 +41,7 @@ const Header = () => {
 
       <Spacer/>
 
-      {Menu.map(({name, path}) => (
+      {isDesktop && Menu.map(({name, path}) => (
         <Link
           key={name}
           cursor={'pointer'}
@@ -39,9 +54,42 @@ const Header = () => {
         </Link>
       ))}
 
-      <Button>
-        Start Building
-      </Button>
+      { isDesktop && (
+        <Button>
+          Start Building
+        </Button>
+      ) }
+
+      { !isDesktop && (
+        <>
+          <Button onClick={onOpen} fontSize={'36px'} alignItems={"end"} p={0} variant={'ghost'}>
+            <HamburgerIcon/>
+          </Button>
+          <Modal isOpen={isOpen} onClose={onClose} blockScrollOnMount={false} returnFocusOnClose={false}
+                 size={"full"}>
+            <ModalContent zIndex={20}>
+              <ModalCloseButton size={'36px'} _active={{bg: 'none'}} _hover={{bg: 'none'}} pt={'14px'} px={'11px'}/>
+              <ModalBody p={'22px'}>
+                <VStack alignItems={"center"} pt={'100px'} spacing={'120px'}>
+                  <VStack spacing={'17px'}>
+                    {Menu.map(({name, path}) => (
+                      <Button key={name} fontWeight={'semibold'} variant={'ghost'} fontSize={['17px', '24px']} p={0} onClick={() => {
+                        window.location.href = path
+                        onClose()
+                      }}>
+                        {name}
+                      </Button>
+                    ))}
+                  </VStack>
+                  <Button minH={'44px'} px={'70px'}>
+                    Start Building
+                  </Button>
+                </VStack>
+              </ModalBody>
+            </ModalContent>
+          </Modal>
+        </>
+        ) }
     </HStack>
   );
 }
