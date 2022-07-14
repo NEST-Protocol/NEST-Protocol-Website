@@ -81,8 +81,12 @@ const Header = () => {
                         color={location.pathname === path.slice(2) ? '#EAAA00' : '#000'}
                         variant={'ghost'} fontSize={['17px', '24px']}
                         p={0} onClick={() => {
-                        window.location.href = path
-                        onClose()
+                          if (path.includes('https')) {
+                            window.open(path)
+                          } else {
+                            window.location.href = path
+                            onClose()
+                          }
                       }}>
                         {name}
                       </Button>
