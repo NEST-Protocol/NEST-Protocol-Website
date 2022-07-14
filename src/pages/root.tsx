@@ -33,7 +33,7 @@ const Root = () => {
   return (
     <>
       <Stack spacing={'44px'}>
-        <Stack align={"center"} h={'full'} justify={"center"} minH={'660px'} bg={"red"}>
+        <Stack align={"center"} h={'full'} justify={"center"} minH={['540px', '660px']} bg={"red"}>
           <Text whiteSpace={'break-spaces'} textAlign={"center"} fontSize={['24px', '48px']} fontWeight={'bold'}>
             NEST and FORT<br/>Will merged {!isDesktop && <br/>} on July 29, 2022
           </Text>

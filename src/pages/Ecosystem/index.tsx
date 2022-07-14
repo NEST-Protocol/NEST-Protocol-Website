@@ -24,7 +24,7 @@ const Ecosystem = () => {
 
   return (
     <>
-      <Stack align={"center"} h={'full'} justify={"center"} minH={'660px'} bg={"red"} spacing={['22px', '44px']}>
+      <Stack align={"center"} h={'full'} justify={"center"} minH={['540px', '660px']} bg={"red"} spacing={['22px', '44px']}>
         <Text textAlign={"center"} fontSize={['24px', '48px']} fontWeight={'bold'}>
           Explore the {!isDesktop && <br/> } NEST Ecosystem
         </Text>
