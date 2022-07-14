@@ -39,7 +39,13 @@ const Root = () => {
           </Text>
         </Stack>
         <HStack justify={"center"}>
-          <Button>
+          <Button
+            minH={ isDesktop ? '34px' : '44px' }
+            px={ isDesktop ? '16px' : '70px' }
+            onClick={() => {
+              window.location.href = '/#/learn';
+            }}
+          >
             What is NEST
           </Button>
         </HStack>

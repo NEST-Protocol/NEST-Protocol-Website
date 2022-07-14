@@ -46,7 +46,7 @@ const Header = () => {
           key={name}
           cursor={'pointer'}
           href={path}
-          style={{ textDecoration: path.includes('https') ? '' : 'none' }}
+          style={{textDecoration: path.includes('https') ? '' : 'none'}}
           isExternal={path.includes('https')}
           color={location.pathname === path.slice(2) ? '#EAAA00' : '#000'}
         >
@@ -54,13 +54,16 @@ const Header = () => {
         </Link>
       ))}
 
-      { isDesktop && (
-        <Button>
+      {isDesktop && (
+        <Button
+          onClick={() => {
+            window.open('https://channel.nestprotocol.org/')
+          }}>
           Start Building
         </Button>
-      ) }
+      )}
 
-      { !isDesktop && (
+      {!isDesktop && (
         <>
           <Button onClick={onOpen} fontSize={'36px'} alignItems={"end"} p={0} variant={'ghost'}>
             <HamburgerIcon/>
@@ -85,7 +88,12 @@ const Header = () => {
                       </Button>
                     ))}
                   </VStack>
-                  <Button minH={'44px'} px={'70px'}>
+                  <Button
+                    minH={'44px'} px={'70px'}
+                    onClick={() => {
+                      window.open('https://channel.nestprotocol.org/')
+                    }}
+                  >
                     Start Building
                   </Button>
                 </VStack>
@@ -93,7 +101,7 @@ const Header = () => {
             </ModalContent>
           </Modal>
         </>
-        ) }
+      )}
     </HStack>
   );
 }
