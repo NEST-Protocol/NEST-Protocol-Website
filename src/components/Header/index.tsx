@@ -73,7 +73,11 @@ const Header = () => {
                 <VStack alignItems={"center"} pt={'100px'} spacing={'120px'}>
                   <VStack spacing={'17px'}>
                     {Menu.map(({name, path}) => (
-                      <Button key={name} fontWeight={'semibold'} variant={'ghost'} fontSize={['17px', '24px']} p={0} onClick={() => {
+                      <Button
+                        key={name} fontWeight={'semibold'}
+                        color={location.pathname === path.slice(2) ? '#EAAA00' : '#000'}
+                        variant={'ghost'} fontSize={['17px', '24px']}
+                        p={0} onClick={() => {
                         window.location.href = path
                         onClose()
                       }}>
