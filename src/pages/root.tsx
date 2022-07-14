@@ -1,4 +1,4 @@
-import {Heading, Stack, chakra} from "@chakra-ui/react";
+import {Heading, Stack, chakra, Text} from "@chakra-ui/react";
 import * as React from "react";
 
 const Root = () => {
@@ -31,6 +31,11 @@ const Root = () => {
 
   return (
     <>
+      <Stack align={"center"} h={'full'} justify={"center"} minH={'660px'} bg={"red"}>
+        <Text whiteSpace={'break-spaces'} textAlign={"center"} fontSize={'48px'} fontWeight={'bold'}>
+          NEST and FORT<br/>Will merged on July 29, 2022
+        </Text>
+      </Stack>
       {pages.map(({name, path, icon, bg, title, desc}) => (
         <Stack key={name} spacing={'48px'}>
           <Heading fontSize={'48px'} px={['48px']} color={'#003232'}>{name}</Heading>

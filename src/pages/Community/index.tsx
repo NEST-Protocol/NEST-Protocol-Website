@@ -4,6 +4,7 @@ import telegramImg from '../../assets/img/Telegram.png'
 import mediumImg from '../../assets/img/Medium.png'
 import youtubeImg from '../../assets/img/youtube.png'
 import Right1 from '../../assets/svg/RIGHT_1_icon.svg'
+import * as React from "react";
 
 const Community = () => {
   const [isLargerThan480] = useMediaQuery('(min-width: 480px)')
@@ -32,7 +33,16 @@ const Community = () => {
   ]
 
   return (
-    <Stack align={"center"}>
+    <>
+      <Stack align={"center"} h={'full'} justify={"center"} minH={'660px'} bg={"red"} spacing={'44px'}>
+        <Text whiteSpace={'break-spaces'} textAlign={"center"} fontSize={'48px'} fontWeight={'bold'}>
+          NEST Community
+        </Text>
+        <Text fontSize={'25px'} fontWeight={"bold"} textAlign={"center"}>
+          The NEST community is made up of developers, creators,<br/>enthusiasts, explore, contribute to the<br/>community and get reward.
+        </Text>
+      </Stack>
+      <Stack align={"center"}>
         <SimpleGrid columns={2} spacing={['22px', '22px', '44px']}>
           {menu.map(item => (
             <VStack
@@ -69,6 +79,7 @@ const Community = () => {
           ))}
         </SimpleGrid>
       </Stack>
+    </>
   )
 }
 

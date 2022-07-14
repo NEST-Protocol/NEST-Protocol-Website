@@ -10,23 +10,26 @@ import Learn from "./Learn";
 
 export const App = () => {
   return (
-    <Stack spacing={'80px'}>
+    <>
       <Header />
-      <Routes>
-        <Route path="/" element={<Root />}/>
-        <Route path={'ecosystem'} element={<Ecosystem />}/>
-        <Route path={'community'} element={<Community />}/>
-        <Route path={'learn'} element={<Learn />}/>
-        <Route
-          path="*"
-          element={
-            <Text p={2}>
-              <p>There's nothing here!</p>
-            </Text>
-          }
-        />
-      </Routes>
-      <Footer />
-    </Stack>
+      <Stack spacing={'80px'}>
+        <Routes>
+          <Route path="/" element={<Root />}/>
+          <Route path={'ecosystem'} element={<Ecosystem />}/>
+          <Route path={'community'} element={<Community />}/>
+          <Route path={'learn'} element={<Learn />}/>
+          <Route
+            path="*"
+            element={
+              <Text p={2}>
+                <p>There's nothing here!</p>
+              </Text>
+            }
+          />
+        </Routes>
+        <Footer />
+      </Stack>
+    </>
+
   )
 }

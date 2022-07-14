@@ -1,6 +1,10 @@
 import {HStack, chakra, Spacer, Button, Link} from "@chakra-ui/react";
 import NEST_LOGO from "../../assets/svg/nest.svg";
 import {useLocation, useNavigate} from "react-router-dom";
+import Ecosystem from "../../pages/Ecosystem";
+import Community from "../../pages/Community";
+import Learn from "../../pages/Learn";
+import * as React from "react";
 
 const Header = () => {
   const location = useLocation();
@@ -13,7 +17,7 @@ const Header = () => {
   ]
 
   return (
-    <HStack px={['48px']} py={'28px'} spacing={'24px'}>
+    <HStack px={['48px']} py={'28px'} spacing={'24px'} position={'fixed'} w={'full'}>
       <chakra.img
         src={NEST_LOGO} alt="NEST Logo" h={'20px'}
         cursor={'pointer'}
