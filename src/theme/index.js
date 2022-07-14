@@ -1,4 +1,4 @@
-// theme/index.js
+// theme/index.tsx.js
 import { extendTheme } from '@chakra-ui/react'
 
 // Global style overrides
