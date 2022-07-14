@@ -33,7 +33,7 @@ const Root = () => {
     <>
       {pages.map(({name, path, icon, bg, title, desc}) => (
         <Stack key={name} spacing={'48px'}>
-          <Heading fontSize={'48px'} px={['48px']}>{name}</Heading>
+          <Heading fontSize={'48px'} px={['48px']} color={'#003232'}>{name}</Heading>
           <Stack align={"center"} minH={'440px'} justify={"center"} spacing={'16px'}>
             <chakra.img />
             <Text fontSize={'25px'} fontWeight={'semibold'} color={'#434344'}>
