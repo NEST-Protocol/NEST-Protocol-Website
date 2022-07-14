@@ -5,6 +5,16 @@ const Footer = () => {
     <HStack px={['48px']} py={'80px'} align={"start"}>
       <Stack spacing={'48px'} w={'full'}>
         <Text fontSize={'15px'} fontWeight={'bold'} color={'#003232'}>
+          Ecosystem
+        </Text>
+        <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={'15px'}>
+          <Link>
+            Explore applications
+          </Link>
+        </Stack>
+      </Stack>
+      <Stack spacing={'48px'} w={'full'}>
+        <Text fontSize={'15px'} fontWeight={'bold'} color={'#003232'}>
           Developers
         </Text>
         <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={'15px'}>
@@ -19,16 +29,6 @@ const Footer = () => {
           </Link>
           <Link>
             Developer support
-          </Link>
-        </Stack>
-      </Stack>
-      <Stack spacing={'48px'} w={'full'}>
-        <Text fontSize={'15px'} fontWeight={'bold'} color={'#003232'}>
-          Ecosystem
-        </Text>
-        <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={'15px'}>
-          <Link>
-            Explore applications
           </Link>
         </Stack>
       </Stack>
