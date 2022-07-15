@@ -67,12 +67,12 @@ const Root = () => {
           <Stack align={"center"} minH={'440px'} justify={"center"} spacing={['13px', '16px']} bgImage={bg}>
             <chakra.img src={icon}/>
             <chakra.a
-              fontSize={['17px', '24px']} fontWeight={'semibold'} color={'#434344'} href={'/#/' + path}
+              fontSize={['17px', '24px']} fontWeight={'semibold'} color={'#003232'} href={'/#/' + path}
             >
               {title}
             </chakra.a>
             <chakra.a
-              fontSize={['12px', '15px']} fontWeight={'semibold'} color={'#7d7d7d'} whiteSpace={'break-spaces'}
+              fontSize={['12px', '15px']} fontWeight={'semibold'} color={'#003232'} whiteSpace={'break-spaces'}
               textAlign={"center"} href={'/#/' + path}
             >
               {desc}

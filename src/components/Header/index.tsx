@@ -35,8 +35,11 @@ const Header = () => {
 
   return (
     <Stack px={['24px', '48px']} py={'28px'} position={'fixed'} w={'full'} align={"center"}
-            bg={scrollY > (isDesktop ? 570 : 450) ? "rgba(200,200,200,0.8)" : ''} zIndex={'10'}>
-      <HStack maxW={'1440px'} w={"full"} spacing={'24px'} >
+           bg={scrollY > 90 ? "rgba(220,220,220,0.6)" : ''}
+           backdropFilter={scrollY > 90 ? 'blur(10px)' : ''}
+           overflow={"hidden"}
+           zIndex={'10'}>
+      <HStack maxW={'1440px'} w={"full"} spacing={'24px'}>
         <chakra.img
           src={NEST_LOGO} alt="NEST Logo" h={'20px'}
           cursor={'pointer'}

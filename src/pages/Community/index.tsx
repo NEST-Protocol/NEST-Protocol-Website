@@ -2,6 +2,10 @@ import {Box, HStack, Link, SimpleGrid, VStack, chakra, useMediaQuery, Text, Stac
 import Right1 from '../../assets/svg/RIGHT_1_icon.svg'
 import * as React from "react";
 import Banner_URI from "../../assets/webp/Community_pic_1.webp"
+import Twitter_pic from "../../assets/webp/Twitter_pic.webp"
+import Discord_pic from "../../assets/webp/Discord_pic.webp"
+import Telegram_pic from "../../assets/webp/Telegram_pic.webp"
+import Youtube_pic from "../../assets/webp/Youtube_pic.webp"
 
 const Community = () => {
   const [isDesktop] = useMediaQuery("(min-width: 768px)");
@@ -9,22 +13,22 @@ const Community = () => {
   const menu = [
     {
       label: 'Twitter',
-      bg: '',
+      bg: Twitter_pic,
       link: 'https://twitter.com/nest_protocol/'
     },
     {
       label: 'Telegram',
-      bg: '',
+      bg: Telegram_pic,
       link: 'https://t.me/nest_chat/'
     },
     {
       label: 'Discord',
-      bg: '',
+      bg: Discord_pic,
       link: ''
     },
     {
       label: 'YouTube',
-      bg: '',
+      bg: Youtube_pic,
       link: 'https://www.youtube.com/channel/UC9o8XQ9GGrQFs5x6WYnh9mQ'
     }
   ]

@@ -32,9 +32,6 @@ const Footer = () => {
               <Link style={{textDecoration: 'none'}}>
                 Set up local environment
               </Link>
-              <Link>
-                Developer support
-              </Link>
             </Stack>
           </Stack>
           <Stack spacing={'48px'} w={'full'} minW={'200px'}>
@@ -58,9 +55,9 @@ const Footer = () => {
               <Link style={{textDecoration: 'none'}}>
                 Use cases
               </Link>
-              <Link>
-                NEST whitepaper
-              </Link>
+              {/*<Link>*/}
+              {/*  NEST whitepaper*/}
+              {/*</Link>*/}
               <Link>
                 Blogs
               </Link>
@@ -77,7 +74,6 @@ const Footer = () => {
               data-coin-ids="2204"
               h={'120px'}
               w={'600px'}
-              bg={"red"}
             ></chakra.div>
             <Text color={'#434344'} fontSize={'14px'} fontWeight={'bold'} textAlign={"end"}>©2022 NEST</Text>
           </Stack>
@@ -114,9 +110,6 @@ const Footer = () => {
               <Link style={{textDecoration: 'none'}}>
                 Set up local environment
               </Link>
-              <Link>
-                Developer support
-              </Link>
             </Stack>
           </Stack>
           <Stack spacing={'32px'} w={'full'}>
@@ -149,9 +142,9 @@ const Footer = () => {
               Learn
             </Text>
             <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={['12px', '15px']}>
-              <Link>
-                NEST whitepaper
-              </Link>
+              {/*<Link>*/}
+              {/*  NEST whitepaper*/}
+              {/*</Link>*/}
               <Link>
                 Blogs
               </Link>

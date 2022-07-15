@@ -1,21 +1,29 @@
 import {Box, chakra, Heading, Link, SimpleGrid, Stack, Text, useMediaQuery, VStack} from "@chakra-ui/react";
 import * as React from "react";
 import Banner_URI from "../../assets/webp/NEST_pic_1.webp";
-import UseCase_URI from "../../assets/webp/NEST_pic_2.webp";
+// import UseCase_URI from "../../assets/webp/NEST_pic_2.webp";
+import Blogs_pic_1 from "../../assets/webp/Blogs_pic_1.webp";
+import Blogs_pic_2 from "../../assets/webp/Blogs_pic_2.webp";
+import Blogs_pic_3 from "../../assets/webp/Blogs_pic_3.webp";
+import Blogs_pic_4 from "../../assets/webp/Blogs_pic_4.webp";
+import Blogs_pic_5 from "../../assets/webp/Blogs_pic_5.webp";
+import Blogs_pic_6 from "../../assets/webp/Blogs_pic_6.webp";
 
 const Learn = () => {
   const [isDesktop] = useMediaQuery("(min-width: 768px)");
 
-  const pages = [
-    {
-      name: 'Use cases',
-      path: '',
-      icon: '',
-      bg: UseCase_URI,
-      title: 'NEST Financial Market',
-      desc: 'Get NEST token here and buy futures\noptions\nor do defi games to win NEST.'
-    },
-  ]
+  // const pages = [
+  //   {
+  //     name: 'Use cases',
+  //     path: '',
+  //     icon: '',
+  //     bg: UseCase_URI,
+  //     title: 'NEST Financial Market',
+  //     desc: 'Get NEST token here and buy futures\noptions\nor do defi games to win NEST.'
+  //   },
+  // ]
+
+  const pages: any[] = []
 
   return (
     <>
@@ -61,37 +69,37 @@ const Learn = () => {
             {[
               {
                 label: 'Top Infrastructural Award',
-                bg: '',
+                bg: Blogs_pic_1,
                 desc: 'Based on the feedback of KCC community, and the voting results at the Unicorn Contest, NEST has been awarded “Top Infrastructural Award”!',
                 link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'
               },
               {
                 label: 'NEST v4.4 Upgrade Proposal',
-                bg: '',
+                bg: Blogs_pic_2,
                 desc: 'Voting for the NEST v4.4 upgrade is now open on snapshot, please participate and cast your vote!',
                 link: 'https://snapshot.org/#/nestprotocols.eth/proposal/0xc44f29b7a8695fc3379fa34d6e78bf933d9d4493121d2d66160a25b8175816a9'
               },
               {
                 label: 'NEST Oracle Special Awards in KCC',
-                bg: '',
+                bg: Blogs_pic_3,
                 desc: 'NEST Foundation will pro vide awards, advisory sessions, and integration support to Kucoin Community Chain (KCC) developers',
                 link: 'https://www.newsbtc.com/press-releases/nest-oracle-special-awards-in-kcc-unicorn-contest/'
               },
               {
                 label: 'Strategic Partnership with MAP Protocol',
-                bg: '',
+                bg: Blogs_pic_4,
                 desc: 'NEST has become the first oracle in MAP ecosystem and provides reliable price for the transactions',
                 link: 'https://www.goldentreenews.com/news/article.html?no=278663'
               },
               {
                 label: 'What is NEST, a decentralized price oracle network',
-                bg: '',
+                bg: Blogs_pic_5,
                 desc: 'NEST is one of the projects that is developing the technology to provide this Oracle service in a decentralized way',
                 link: 'https://coinpost.jp/?p=226764'
               },
               {
                 label: 'NEST Protocol project overview and NEST coin',
-                bg: '',
+                bg: Blogs_pic_6,
                 desc: 'The project uses a unique “quote mining” mechanism to ensure that off-chain price data is generated on-chain in a synchronous manner',
                 link: 'https://coin68.com/nest-protocol-la-gi/'
               }
