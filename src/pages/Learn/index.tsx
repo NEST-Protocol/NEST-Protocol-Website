@@ -113,7 +113,7 @@ const Learn = () => {
             </Heading>
           </Stack>
         </Stack>
-        <Stack align={'center'} minH={'440px'} justify={'center'} spacing={'16px'}>
+        <Stack px={['24px', '48px']} align={'center'} minH={'440px'} justify={'center'} spacing={'16px'}>
           <SimpleGrid columns={[1, 1, 2, 3]} spacing={['22px', '22px', '44px']} pb={'27px'}>
             {[
               {
@@ -166,12 +166,13 @@ const Learn = () => {
                   window.open(item.link)
                 }}
               >
-                <Box overflow={'hidden'}>
+                <Box overflow={'hidden'} w={"full"}>
                   <chakra.img
                     src={item.bg}
                     alt={item.label}
                     style={{ objectFit: 'cover' }}
                     _hover={{ transform: 'scale(1.05)' }}
+                    w={"full"}
                   />
                 </Box>
                 <VStack
