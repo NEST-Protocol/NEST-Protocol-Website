@@ -41,7 +41,7 @@ const Root = () => {
         <HStack justify={"center"}>
           <Button
             minH={ isDesktop ? '34px' : '44px' }
-            px={ isDesktop ? '16px' : '70px' }
+            px={ isDesktop ? '20px' : '70px' }
             onClick={() => {
               window.location.href = '/#/learn';
             }}

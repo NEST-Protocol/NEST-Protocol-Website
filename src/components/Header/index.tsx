@@ -26,8 +26,6 @@ const Header = () => {
   const {isOpen, onOpen, onClose} = useDisclosure()
   const scrollY = useScrollPosition()
 
-  console.log(scrollY)
-
   const Menu = [
     {name: 'Ecosystem', path: '/#/ecosystem'},
     {name: 'Developers', path: 'https://docs.nestprotocol.org/'},
