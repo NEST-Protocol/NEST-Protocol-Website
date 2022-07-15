@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Stack, Text, useMediaQuery } from '@chakra-ui/react'
+import { Stack, Text } from '@chakra-ui/react'
 import { Route, Routes } from 'react-router-dom'
 import Root from './root'
 import Footer from '../components/Footer'
