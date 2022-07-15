@@ -39,7 +39,7 @@ const Header = () => {
   return (
     <Stack
       px={['24px', '48px']}
-      py={'28px'}
+      py={'24px'}
       position={'fixed'}
       w={'full'}
       align={'center'}
