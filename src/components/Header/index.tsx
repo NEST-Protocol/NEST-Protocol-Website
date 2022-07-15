@@ -124,7 +124,7 @@ const Header = () => {
                             if (path.includes('https')) {
                               window.open(path)
                             } else {
-                              window.location.href = path
+                              navigate(path)
                               onClose()
                             }
                           }}
