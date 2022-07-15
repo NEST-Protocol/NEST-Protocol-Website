@@ -72,6 +72,7 @@ const Footer = () => {
             <div id="crypto-widget-CoinList" data-design="classic" data-transparent="true"
                  data-coins="nest-protocol"/>
           </Box>
+          <div/>
           <Text color={'#434344'} fontSize={'14px'} fontWeight={'bold'} textAlign={"end"}>©2022 NEST</Text>
         </Stack>
       </HStack>
