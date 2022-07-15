@@ -3,7 +3,6 @@ import {
   chakra,
   Spacer,
   Button,
-  Link,
   useMediaQuery,
   ModalBody,
   ModalContent,
@@ -31,10 +30,10 @@ const Header = () => {
   const scrollY = useScrollPosition()
 
   const Menu = [
-    { name: 'Ecosystem', path: '/#/ecosystem' },
+    { name: 'Ecosystem', path: 'ecosystem' },
     { name: 'Developers', path: 'https://docs.nestprotocol.org/' },
-    { name: 'Community', path: '/#/community' },
-    { name: 'Learn', path: '/#/learn' }
+    { name: 'Community', path: 'community' },
+    { name: 'Learn', path: 'learn' }
   ]
 
   return (
@@ -62,16 +61,22 @@ const Header = () => {
 
         {isDesktop &&
           Menu.map(({ name, path }) => (
-            <Link
+            <Button
+              variant={"ghost"}
               key={name}
               cursor={'pointer'}
-              href={path}
-              style={{ textDecoration: path.includes('https') ? '' : 'none' }}
-              isExternal={path.includes('https')}
-              color={location.pathname === path.slice(2) ? '#EAAA00' : '#000'}
+              onClick={() => {
+                if (path.includes('https')) {
+                  window.open(path, '_blank')
+                } else {
+                  navigate(path)
+                }
+              }}
+              color={location.pathname.slice(1) === path ? '#EAAA00' : '#000'}
+              fontWeight={location.pathname.slice(1) === path ? 'bold' : '500'}
             >
               {name}
-            </Link>
+            </Button>
           ))}
 
         {isDesktop && (
