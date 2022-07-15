@@ -4,6 +4,9 @@ import Banner_URI from "../assets/webp/Home_pic_1.webp";
 import Developer_URI from "../assets/webp/Home_pic_2.webp";
 import Community_URI from "../assets/webp/Home_pic_4.webp";
 import Ecosystem_URI from "../assets/webp/Home_pic_3.webp";
+import Developer_Icon_URI from "../assets/webp/Home_Developers_icon.webp";
+import Community_Icon_URI from "../assets/webp/Home_Community_icon.webp";
+import Ecosystem_Icon_URI from "../assets/webp/Home_Ecosystem_icon.webp";
 
 const Root = () => {
   const [isDesktop] = useMediaQuery("(min-width: 768px)");
@@ -11,7 +14,7 @@ const Root = () => {
     {
       name: 'Ecosystem',
       path: 'ecosystem',
-      icon: '',
+      icon: Ecosystem_Icon_URI,
       bg: Ecosystem_URI,
       title: 'Explore the NEST Ecosystem',
       desc: `A complete gaming space with ${ !isDesktop && '\n' }applications of DeFi, GameFi\nand NFT built on the NEST. Swap, hedge, ${ !isDesktop && '\n' }earn and even game\nwith the NEST network to ${ !isDesktop && '\n' }gain excess returns.`
@@ -19,7 +22,7 @@ const Root = () => {
     {
       name: 'Developers',
       path: 'developers',
-      icon: '',
+      icon: Developer_Icon_URI,
       bg: Developer_URI,
       title: 'Build smart contract with NEST',
       desc: `Technical guidelines, source code,${ !isDesktop && '\n' } and detailed training\nmaterials on how to build NEST-based\napplications from scratch here.`
@@ -27,7 +30,7 @@ const Root = () => {
     {
       name: 'Community',
       path: 'community',
-      icon: '',
+      icon: Community_Icon_URI,
       bg: Community_URI,
       title: 'Community',
       desc: `The NEST community is made${ !isDesktop && '\n' } up of developers, creators,\nenthusiasts, explore, contribute to the${ !isDesktop && '\n' } community and${ isDesktop && '\n' } get reward.`
@@ -62,7 +65,7 @@ const Root = () => {
             </Stack>
           </Stack>
           <Stack align={"center"} minH={'440px'} justify={"center"} spacing={['13px', '16px']} bgImage={bg}>
-            <chakra.img/>
+            <chakra.img src={icon}/>
             <chakra.a
               fontSize={['17px', '24px']} fontWeight={'semibold'} color={'#434344'} href={'/#/' + path}
             >
