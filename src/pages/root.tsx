@@ -40,7 +40,7 @@ const Root = () => {
   return (
     <>
       <Stack spacing={'44px'}>
-        <Stack align={"center"} h={'full'} justify={"center"} minH={['540px', '660px']} bgImage={Banner_URI}>
+        <Stack align={"center"} h={'full'} justify={"center"} minH={['540px', '660px']} bgImage={Banner_URI} bgSize={'cover'}>
           <Text whiteSpace={'break-spaces'} textAlign={"center"} fontSize={['24px', '48px']} fontWeight={'bold'}>
             NEST and FORT<br/>Will merged {!isDesktop && <br/>} on July 29, 2022
           </Text>
@@ -64,7 +64,7 @@ const Root = () => {
               <Heading fontSize={['24px', '48px']} color={'#003232'}>{name}</Heading>
             </Stack>
           </Stack>
-          <Stack align={"center"} minH={'440px'} justify={"center"} spacing={['13px', '16px']} bgImage={bg}>
+          <Stack align={"center"} minH={'440px'} justify={"center"} spacing={['13px', '16px']} bgImage={bg} bgSize={'cover'}>
             <chakra.img src={icon}/>
             <chakra.a
               fontSize={['17px', '24px']} fontWeight={'semibold'} color={'#003232'} href={'/#/' + path}

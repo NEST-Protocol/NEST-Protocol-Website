@@ -35,7 +35,7 @@ const Community = () => {
 
   return (
     <>
-      <Stack align={"center"} h={'full'} justify={"center"} minH={['540px', '660px']} bgImage={Banner_URI} spacing={['22px', '44px']}>
+      <Stack align={"center"} h={'full'} justify={"center"} minH={['540px', '660px']} bgImage={Banner_URI} bgSize={'cover'} spacing={['22px', '44px']}>
         <Text whiteSpace={'break-spaces'} textAlign={"center"} fontSize={['24px', '48px']} fontWeight={'bold'}>
           NEST Community
         </Text>

@@ -6,7 +6,7 @@ const Footer = () => {
 
   if (isDesktop) {
     return (
-      <Stack px={['24px', '48px']} py={'80px'} w={"full"} align={"center"} bgImage={BG_URL}>
+      <Stack px={['24px', '48px']} py={'80px'} w={"full"} align={"center"} bgImage={BG_URL} bgSize={"cover"}>
         <HStack maxW={'1440px'} w={'full'} align={"start"}>
           <Stack spacing={'44px'} w={'full'} minW={'200px'}>
             <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>

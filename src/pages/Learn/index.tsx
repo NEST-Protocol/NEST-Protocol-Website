@@ -27,7 +27,7 @@ const Learn = () => {
 
   return (
     <>
-      <Stack align={"center"} h={'full'} justify={"center"} minH={['540px', '660px']} bgImage={Banner_URI} spacing={['22px', '44px']}>
+      <Stack align={"center"} h={'full'} justify={"center"} minH={['540px', '660px']} bgImage={Banner_URI} bgSize={'cover'} spacing={['22px', '44px']}>
         <Text whiteSpace={'break-spaces'} textAlign={"center"} fontSize={['24px', '48px']} fontWeight={'bold'}>
           What is NEST
         </Text>
@@ -42,8 +42,8 @@ const Learn = () => {
               <Heading fontSize={['24px', '48px']} color={'#003232'}>{name}</Heading>
             </Stack>
           </Stack>
-          <Stack align={"center"} minH={'440px'} justify={"center"} w={"full"} spacing={['13px', '16px']} bgImage={bg}>
-            <chakra.img/>
+          <Stack align={"center"} minH={'440px'} justify={"center"} w={"full"} spacing={['13px', '16px']} bgImage={bg} bgSize={'cover'}>
+            <chakra.img src={icon}/>
             <chakra.a
               fontSize={['17px', '24px']} fontWeight={'semibold'} color={'#434344'} href={'/#/' + path}
             >
