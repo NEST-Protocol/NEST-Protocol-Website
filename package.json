@@ -47,6 +47,7 @@
     ]
   },
   "devDependencies": {
+    "@react-hook/window-scroll": "^1.3.0",
     "focus-visible": "^5.2.0",
     "prettier": "2.6.2",
     "react-router-dom": "6"

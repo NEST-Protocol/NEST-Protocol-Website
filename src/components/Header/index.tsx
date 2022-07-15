@@ -17,12 +17,16 @@ import Community from "../../pages/Community";
 import Learn from "../../pages/Learn";
 import * as React from "react";
 import {HamburgerIcon} from "@chakra-ui/icons";
+import useScrollPosition from '@react-hook/window-scroll'
 
 const Header = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const [isDesktop] = useMediaQuery("(min-width: 768px)");
   const {isOpen, onOpen, onClose} = useDisclosure()
+  const scrollY = useScrollPosition()
+
+  console.log(scrollY)
 
   const Menu = [
     {name: 'Ecosystem', path: '/#/ecosystem'},
@@ -32,7 +36,7 @@ const Header = () => {
   ]
 
   return (
-    <HStack px={['24px', '48px']} py={'28px'} spacing={'24px'} position={'fixed'} w={'full'}>
+    <HStack px={['24px', '48px']} py={'28px'} spacing={'24px'} position={'fixed'} w={'full'} bg={scrollY > 570 ? "rgba(200,200,200,0.8)" : ''} zIndex={'10'}>
       <chakra.img
         src={NEST_LOGO} alt="NEST Logo" h={'20px'}
         cursor={'pointer'}
