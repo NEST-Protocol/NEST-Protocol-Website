@@ -39,7 +39,7 @@ const Learn = () => {
   return (
     <>
       <Helmet>
-        <title>What is NEST | NEST Protocol</title>
+        <title>What is NEST</title>
       </Helmet>
       <Stack
         align={'center'}
