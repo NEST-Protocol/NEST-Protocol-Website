@@ -6,7 +6,7 @@ const Footer = () => {
   if (isDesktop) {
     return (
       <HStack px={'48px'} py={'80px'} align={"start"}>
-        <Stack spacing={'48px'} w={'full'}>
+        <Stack spacing={'48px'} w={'full'} minW={'200px'}>
           <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
             Ecosystem
           </Text>
@@ -16,7 +16,7 @@ const Footer = () => {
             </Link>
           </Stack>
         </Stack>
-        <Stack spacing={'48px'} w={'full'}>
+        <Stack spacing={'48px'} w={'full'} minW={'200px'}>
           <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
             Developers
           </Text>
@@ -35,7 +35,7 @@ const Footer = () => {
             </Link>
           </Stack>
         </Stack>
-        <Stack spacing={'48px'} w={'full'}>
+        <Stack spacing={'48px'} w={'full'} minW={'200px'}>
           <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
             Community
           </Text>
@@ -45,7 +45,7 @@ const Footer = () => {
             </Link>
           </Stack>
         </Stack>
-        <Stack spacing={'48px'} w={'full'}>
+        <Stack spacing={'48px'} w={'full'} minW={'200px'}>
           <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
             Learn
           </Text>
