@@ -18,6 +18,7 @@ import Learn from "../../pages/Learn";
 import * as React from "react";
 import {HamburgerIcon} from "@chakra-ui/icons";
 import useScrollPosition from '@react-hook/window-scroll'
+import BG_URL from "../../assets/webp/Footer_bg.webp";
 
 const Header = () => {
   const location = useLocation();
@@ -35,8 +36,8 @@ const Header = () => {
 
   return (
     <Stack px={['24px', '48px']} py={'28px'} position={'fixed'} w={'full'} align={"center"}
-           bg={scrollY > 90 ? "rgba(220,220,220,0.6)" : ''}
-           backdropFilter={scrollY > 90 ? 'blur(10px)' : ''}
+           bgImage={scrollY > 90 ? BG_URL : ''}
+           bgSize={"cover"}
            overflow={"hidden"}
            zIndex={'10'}>
       <HStack maxW={'1440px'} w={"full"} spacing={'24px'}>
