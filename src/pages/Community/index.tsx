@@ -1,8 +1,4 @@
 import {Box, HStack, Link, SimpleGrid, VStack, chakra, useMediaQuery, Text, Stack} from "@chakra-ui/react";
-import twitterImg from '../../assets/img/Twitter.png'
-import telegramImg from '../../assets/img/Telegram.png'
-import mediumImg from '../../assets/img/Medium.png'
-import youtubeImg from '../../assets/img/youtube.png'
 import Right1 from '../../assets/svg/RIGHT_1_icon.svg'
 import * as React from "react";
 
@@ -12,22 +8,22 @@ const Community = () => {
   const menu = [
     {
       label: 'Twitter',
-      bg: twitterImg,
+      bg: '',
       link: 'https://twitter.com/nest_protocol/'
     },
     {
       label: 'Telegram',
-      bg: telegramImg,
+      bg: '',
       link: 'https://t.me/nest_chat/'
     },
     {
       label: 'Discord',
-      bg: mediumImg,
+      bg: '',
       link: ''
     },
     {
       label: 'YouTube',
-      bg: youtubeImg,
+      bg: '',
       link: 'https://www.youtube.com/channel/UC9o8XQ9GGrQFs5x6WYnh9mQ'
     }
   ]

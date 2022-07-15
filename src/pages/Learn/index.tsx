@@ -1,11 +1,5 @@
 import {Box, chakra, Heading, Link, SimpleGrid, Stack, Text, useMediaQuery, VStack} from "@chakra-ui/react";
 import * as React from "react";
-import new1 from '../../assets/img/news 1.png'
-import new2 from '../../assets/img/news 2.png'
-import new3 from '../../assets/img/news 3.png'
-import new4 from '../../assets/img/news 4.png'
-import new5 from '../../assets/img/news5.png'
-import nest4_4 from '../../assets/svg/news_v4.4.png'
 
 const Learn = () => {
   const [isDesktop] = useMediaQuery("(min-width: 768px)");
@@ -57,37 +51,37 @@ const Learn = () => {
             {[
               {
                 label: 'Top Infrastructural Award',
-                bg: new5,
+                bg: '',
                 desc: 'Based on the feedback of KCC community, and the voting results at the Unicorn Contest, NEST has been awarded “Top Infrastructural Award”!',
                 link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'
               },
               {
                 label: 'NEST v4.4 Upgrade Proposal',
-                bg: nest4_4,
+                bg: '',
                 desc: 'Voting for the NEST v4.4 upgrade is now open on snapshot, please participate and cast your vote!',
                 link: 'https://snapshot.org/#/nestprotocols.eth/proposal/0xc44f29b7a8695fc3379fa34d6e78bf933d9d4493121d2d66160a25b8175816a9'
               },
               {
                 label: 'NEST Oracle Special Awards in KCC',
-                bg: new1,
+                bg: '',
                 desc: 'NEST Foundation will pro vide awards, advisory sessions, and integration support to Kucoin Community Chain (KCC) developers',
                 link: 'https://www.newsbtc.com/press-releases/nest-oracle-special-awards-in-kcc-unicorn-contest/'
               },
               {
                 label: 'Strategic Partnership with MAP Protocol',
-                bg: new2,
+                bg: '',
                 desc: 'NEST has become the first oracle in MAP ecosystem and provides reliable price for the transactions',
                 link: 'https://www.goldentreenews.com/news/article.html?no=278663'
               },
               {
                 label: 'What is NEST, a decentralized price oracle network',
-                bg: new3,
+                bg: '',
                 desc: 'NEST is one of the projects that is developing the technology to provide this Oracle service in a decentralized way',
                 link: 'https://coinpost.jp/?p=226764'
               },
               {
                 label: 'NEST Protocol project overview and NEST coin',
-                bg: new4,
+                bg: '',
                 desc: 'The project uses a unique “quote mining” mechanism to ensure that off-chain price data is generated on-chain in a synchronous manner',
                 link: 'https://coin68.com/nest-protocol-la-gi/'
               }
