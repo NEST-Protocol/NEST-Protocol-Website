@@ -28,7 +28,7 @@ const Ecosystem = () => {
         <Stack align={"center"} minH={'440px'} w={'full'} justify={"center"} spacing={['13px', '16px']} bgImage={Project1_URI}>
           <chakra.img src={Market_Icon_URI}/>
           <chakra.a
-            fontSize={['17px', '24px']} fontWeight={'semibold'} color={'#434344'}
+            fontSize={['17px', '24px']} fontWeight={'semibold'} color={'#003232'}
           >
             NEST Financial Market
           </chakra.a>
@@ -46,7 +46,7 @@ const Ecosystem = () => {
         <Stack align={"center"} maxH={'440px'} w={'full'} justify={"start"} pt={'80px'} spacing={['13px', '16px']} bgImage={Project2_URI}>
           <chakra.img src={Phone_Icon_URI}/>
           <chakra.a
-            fontSize={['17px', '24px']} fontWeight={'semibold'} color={'#434344'}
+            fontSize={['17px', '24px']} fontWeight={'semibold'} color={'#003232'}
           >
             NEST Oracle
           </chakra.a>

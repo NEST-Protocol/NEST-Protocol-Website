@@ -8,7 +8,7 @@ const Footer = () => {
     return (
       <Stack px={['24px', '48px']} py={'80px'} w={"full"} align={"center"} bgImage={BG_URL}>
         <HStack maxW={'1440px'} w={'full'} align={"start"}>
-          <Stack spacing={'48px'} w={'full'} minW={'200px'}>
+          <Stack spacing={'44px'} w={'full'} minW={'200px'}>
             <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
               Ecosystem
             </Text>
@@ -18,7 +18,7 @@ const Footer = () => {
               </Link>
             </Stack>
           </Stack>
-          <Stack spacing={'48px'} w={'full'} minW={'200px'}>
+          <Stack spacing={'44px'} w={'full'} minW={'200px'}>
             <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
               Developers
             </Text>
@@ -34,7 +34,7 @@ const Footer = () => {
               </Link>
             </Stack>
           </Stack>
-          <Stack spacing={'48px'} w={'full'} minW={'200px'}>
+          <Stack spacing={'44px'} w={'full'} minW={'200px'}>
             <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
               Community
             </Text>
@@ -44,7 +44,7 @@ const Footer = () => {
               </Link>
             </Stack>
           </Stack>
-          <Stack spacing={'48px'} w={'full'} minW={'200px'}>
+          <Stack spacing={'44px'} w={'full'} minW={'200px'}>
             <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
               Learn
             </Text>
@@ -63,8 +63,8 @@ const Footer = () => {
               </Link>
             </Stack>
           </Stack>
-          <Stack spacing={'48px'} w={'full'} minW={'600px'}>
-            <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
+          <Stack spacing={7} w={'full'} minW={'500px'}>
+            <Text pl={4} fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
               Market price
             </Text>
             <chakra.div
@@ -73,9 +73,8 @@ const Footer = () => {
               data-design="classic"
               data-coin-ids="2204"
               h={'120px'}
-              w={'600px'}
             ></chakra.div>
-            <Text color={'#434344'} fontSize={'14px'} fontWeight={'bold'} textAlign={"end"}>©2022 NEST</Text>
+            <Text color={'#003232'} fontSize={'14px'} fontWeight={'bold'} textAlign={"end"}>©2022 NEST</Text>
           </Stack>
         </HStack>
       </Stack>
@@ -161,7 +160,6 @@ const Footer = () => {
             data-design="classic"
             data-coin-ids="2204"
             w={"full"}
-            h={'90px'}
           ></chakra.div>
         </Stack>
         <Text color={'#7D7D7D'} fontSize={'12px'} fontWeight={'semibold'}>©2022 NEST</Text>
