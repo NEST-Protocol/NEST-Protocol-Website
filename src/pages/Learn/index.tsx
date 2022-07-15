@@ -1,5 +1,7 @@
 import {Box, chakra, Heading, Link, SimpleGrid, Stack, Text, useMediaQuery, VStack} from "@chakra-ui/react";
 import * as React from "react";
+import Banner_URI from "../../assets/webp/NEST_pic_1.webp";
+import UseCase_URI from "../../assets/webp/NEST_pic_2.webp";
 
 const Learn = () => {
   const [isDesktop] = useMediaQuery("(min-width: 768px)");
@@ -9,7 +11,7 @@ const Learn = () => {
       name: 'Use cases',
       path: '',
       icon: '',
-      bg: '',
+      bg: UseCase_URI,
       title: 'NEST Financial Market',
       desc: 'Get NEST token here and buy futures\noptions\nor do defi games to win NEST.'
     },
@@ -17,7 +19,7 @@ const Learn = () => {
 
   return (
     <>
-      <Stack align={"center"} h={'full'} justify={"center"} minH={['540px', '660px']} bg={"red"} spacing={['22px', '44px']}>
+      <Stack align={"center"} h={'full'} justify={"center"} minH={['540px', '660px']} bgImage={Banner_URI} spacing={['22px', '44px']}>
         <Text whiteSpace={'break-spaces'} textAlign={"center"} fontSize={['24px', '48px']} fontWeight={'bold'}>
           What is NEST
         </Text>
@@ -32,7 +34,7 @@ const Learn = () => {
               <Heading fontSize={['24px', '48px']} color={'#003232'}>{name}</Heading>
             </Stack>
           </Stack>
-          <Stack align={"center"} minH={'440px'} justify={"center"} spacing={['13px', '16px']}>
+          <Stack align={"center"} minH={'440px'} justify={"center"} w={"full"} spacing={['13px', '16px']} bgImage={bg}>
             <chakra.img/>
             <chakra.a
               fontSize={['17px', '24px']} fontWeight={'semibold'} color={'#434344'} href={'/#/' + path}

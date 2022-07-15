@@ -1,6 +1,7 @@
 import {Box, HStack, Link, SimpleGrid, VStack, chakra, useMediaQuery, Text, Stack} from "@chakra-ui/react";
 import Right1 from '../../assets/svg/RIGHT_1_icon.svg'
 import * as React from "react";
+import Banner_URI from "../../assets/webp/Community_pic_1.webp"
 
 const Community = () => {
   const [isDesktop] = useMediaQuery("(min-width: 768px)");
@@ -30,7 +31,7 @@ const Community = () => {
 
   return (
     <>
-      <Stack align={"center"} h={'full'} justify={"center"} minH={['540px', '660px']} bg={"red"} spacing={['22px', '44px']}>
+      <Stack align={"center"} h={'full'} justify={"center"} minH={['540px', '660px']} bgImage={Banner_URI} spacing={['22px', '44px']}>
         <Text whiteSpace={'break-spaces'} textAlign={"center"} fontSize={['24px', '48px']} fontWeight={'bold'}>
           NEST Community
         </Text>

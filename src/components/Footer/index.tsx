@@ -1,11 +1,12 @@
-import {Link, Stack, Text, HStack, Box, useMediaQuery, chakra} from "@chakra-ui/react";
+import {Link, Stack, Text, HStack, useMediaQuery, chakra} from "@chakra-ui/react";
+import BG_URL from "../../assets/webp/Footer_bg.webp";
 
 const Footer = () => {
   const [isDesktop] = useMediaQuery("(min-width: 768px)");
 
   if (isDesktop) {
     return (
-      <Stack px={['24px', '48px']} py={'80px'} w={"full"} align={"center"}>
+      <Stack px={['24px', '48px']} py={'80px'} w={"full"} align={"center"} bgImage={BG_URL}>
         <HStack maxW={'1440px'} w={'full'} align={"start"}>
           <Stack spacing={'48px'} w={'full'} minW={'200px'}>
             <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
