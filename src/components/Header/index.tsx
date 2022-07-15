@@ -116,7 +116,7 @@ const Header = () => {
                         <Button
                           key={name}
                           fontWeight={'semibold'}
-                          color={location.pathname === path.slice(2) ? '#EAAA00' : '#000'}
+                          color={location.pathname.slice(1) === path ? '#EAAA00' : '#000'}
                           variant={'ghost'}
                           fontSize={['17px', '24px']}
                           p={0}
