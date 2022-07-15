@@ -52,12 +52,6 @@ const Footer = () => {
               <Link style={{textDecoration: 'none'}} href={'/#/learn'}>
                 What is NEST
               </Link>
-              {/*<Link style={{textDecoration: 'none'}}>*/}
-              {/*  Use cases*/}
-              {/*</Link>*/}
-              {/*<Link>*/}
-              {/*  NEST whitepaper*/}
-              {/*</Link>*/}
               <Link style={{textDecoration: 'none'}} href={'/#/learn'}>
                 Blogs
               </Link>
@@ -131,9 +125,6 @@ const Footer = () => {
               <Link style={{textDecoration: 'none'}}>
                 What is NEST
               </Link>
-              {/*<Link style={{textDecoration: 'none'}}>*/}
-              {/*  Use cases*/}
-              {/*</Link>*/}
             </Stack>
           </Stack>
           <Stack spacing={'32px'} w={'full'}>
@@ -141,9 +132,6 @@ const Footer = () => {
               Learn
             </Text>
             <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={['12px', '15px']}>
-              {/*<Link>*/}
-              {/*  NEST whitepaper*/}
-              {/*</Link>*/}
               <Link style={{textDecoration: 'none'}} href={'/#/learn'}>
                 Blogs
               </Link>
