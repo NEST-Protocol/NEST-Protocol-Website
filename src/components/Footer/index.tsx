@@ -29,7 +29,7 @@ const Footer = () => {
               <Link href={'https://github.com/NEST-Protocol/'}>
                 Github
               </Link>
-              <Link>
+              <Link href={'https://docs.nestprotocol.org'}>
                 Set up local environment
               </Link>
             </Stack>
@@ -100,7 +100,7 @@ const Footer = () => {
               <Link href={'https://github.com/NEST-Protocol'}>
                 Github
               </Link>
-              <Link>
+              <Link href={'https://docs.nestprotocol.org'}>
                 Set up local environment
               </Link>
             </Stack>
