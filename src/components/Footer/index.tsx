@@ -98,7 +98,7 @@ const Footer = () => {
     )
   } else {
     return (
-      <Stack px={'24px'} py={'56px'} spacing={'32px'}  bgImage={BG_URL} bgSize={'cover'}>
+      <Stack px={'24px'} py={'56px'} spacing={'32px'} bgImage={BG_URL} bgSize={'cover'}>
         <HStack>
           <Stack spacing={'32px'} w={'full'}>
             <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
