@@ -1,5 +1,7 @@
 import {Heading, Stack, chakra, Text, Button, HStack, useMediaQuery} from "@chakra-ui/react";
 import * as React from "react";
+import {Helmet} from "react-helmet";
+
 import Banner_URI from "../assets/webp/Home_pic_1.webp";
 import Developer_URI from "../assets/webp/Home_pic_2.webp";
 import Community_URI from "../assets/webp/Home_pic_4.webp";
@@ -7,6 +9,7 @@ import Ecosystem_URI from "../assets/webp/Home_pic_3.webp";
 import Developer_Icon_URI from "../assets/webp/Home_Developers_icon.webp";
 import Community_Icon_URI from "../assets/webp/Home_Community_icon.webp";
 import Ecosystem_Icon_URI from "../assets/webp/Home_Ecosystem_icon.webp";
+
 
 const Root = () => {
   const [isDesktop] = useMediaQuery("(min-width: 768px)");
@@ -39,6 +42,9 @@ const Root = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Home | NEST Protocol</title>
+      </Helmet>
       <Stack spacing={'44px'}>
         <Stack align={"center"} h={'full'} justify={"center"} minH={['540px', '660px']} bgImage={Banner_URI} bgSize={'cover'}>
           <Text whiteSpace={'break-spaces'} textAlign={"center"} fontSize={['24px', '48px']} fontWeight={'bold'}>

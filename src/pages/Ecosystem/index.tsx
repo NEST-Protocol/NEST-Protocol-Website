@@ -5,12 +5,16 @@ import Project1_URI from "../../assets/webp/Ecosystem_pic_2.webp";
 import Project2_URI from "../../assets/webp/Ecosystem_pic_3.webp";
 import Market_Icon_URI from "../../assets/webp/Ecosystem_Market_icon.webp";
 import Phone_Icon_URI from "../../assets/webp/Ecosystem_iPhone_pic.webp";
+import {Helmet} from "react-helmet";
 
 const Ecosystem = () => {
   const [isDesktop] = useMediaQuery("(min-width: 768px)");
 
   return (
     <>
+      <Helmet>
+        <title>Explore the NEST Ecosystem</title>
+      </Helmet>
       <Stack align={"center"} h={'full'} justify={"center"} minH={['540px', '660px']} bgImage={Banner_URI}
              bgSize={'cover'} spacing={['22px', '44px']}>
         <Text textAlign={"center"} fontSize={['24px', '48px']} fontWeight={'bold'}>

@@ -6,6 +6,7 @@ import Twitter_pic from "../../assets/webp/Twitter_pic.webp"
 import Discord_pic from "../../assets/webp/Discord_pic.webp"
 import Telegram_pic from "../../assets/webp/Telegram_pic.webp"
 import Youtube_pic from "../../assets/webp/Youtube_pic.webp"
+import {Helmet} from "react-helmet";
 
 const Community = () => {
   const [isDesktop] = useMediaQuery("(min-width: 768px)");
@@ -35,6 +36,9 @@ const Community = () => {
 
   return (
     <>
+      <Helmet>
+        <title>NEST Community</title>
+      </Helmet>
       <Stack align={"center"} h={'full'} justify={"center"} minH={['540px', '660px']} bgImage={Banner_URI} bgSize={'cover'} spacing={['22px', '44px']}>
         <Text whiteSpace={'break-spaces'} textAlign={"center"} fontSize={['24px', '48px']} fontWeight={'bold'}>
           NEST Community

@@ -8,6 +8,7 @@ import Blogs_pic_3 from "../../assets/webp/Blogs_pic_3.webp";
 import Blogs_pic_4 from "../../assets/webp/Blogs_pic_4.webp";
 import Blogs_pic_5 from "../../assets/webp/Blogs_pic_5.webp";
 import Blogs_pic_6 from "../../assets/webp/Blogs_pic_6.webp";
+import {Helmet} from "react-helmet";
 
 const Learn = () => {
   const [isDesktop] = useMediaQuery("(min-width: 768px)");
@@ -27,6 +28,9 @@ const Learn = () => {
 
   return (
     <>
+      <Helmet>
+        <title>What is NEST | NEST Protocol</title>
+      </Helmet>
       <Stack align={"center"} h={'full'} justify={"center"} minH={['540px', '660px']} bgImage={Banner_URI} bgSize={'cover'} spacing={['22px', '44px']}>
         <Text whiteSpace={'break-spaces'} textAlign={"center"} fontSize={['24px', '48px']} fontWeight={'bold'}>
           What is NEST
