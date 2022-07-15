@@ -1,4 +1,4 @@
-import {Link, Stack, Text, HStack, Box, useMediaQuery} from "@chakra-ui/react";
+import {Link, Stack, Text, HStack, Box, useMediaQuery, chakra} from "@chakra-ui/react";
 
 const Footer = () => {
   const [isDesktop] = useMediaQuery("(min-width: 768px)");
@@ -11,7 +11,7 @@ const Footer = () => {
             Ecosystem
           </Text>
           <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={['12px', '15px']}>
-            <Link style={{ textDecoration: 'none' }}>
+            <Link style={{textDecoration: 'none'}}>
               Explore applications
             </Link>
           </Stack>
@@ -27,7 +27,7 @@ const Footer = () => {
             <Link>
               Github
             </Link>
-            <Link style={{ textDecoration: 'none' }}>
+            <Link style={{textDecoration: 'none'}}>
               Set up local environment
             </Link>
             <Link>
@@ -40,7 +40,7 @@ const Footer = () => {
             Community
           </Text>
           <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={['12px', '15px']}>
-            <Link style={{ textDecoration: 'none' }}>
+            <Link style={{textDecoration: 'none'}}>
               Online communities
             </Link>
           </Stack>
@@ -50,10 +50,10 @@ const Footer = () => {
             Learn
           </Text>
           <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={['12px', '15px']}>
-            <Link style={{ textDecoration: 'none' }}>
+            <Link style={{textDecoration: 'none'}}>
               What is NEST
             </Link>
-            <Link style={{ textDecoration: 'none' }}>
+            <Link style={{textDecoration: 'none'}}>
               Use cases
             </Link>
             <Link>
@@ -68,17 +68,20 @@ const Footer = () => {
           <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
             Market price
           </Text>
-          <Box w={"480px"} h={"full"} pt={'8px'}>
-            <div id="crypto-widget-CoinList" data-design="classic" data-transparent="true"
-                 data-coins="nest-protocol"/>
-          </Box>
-          <div/>
+          <chakra.div
+            id="crypto-widget-CoinList"
+            data-transparent="true"
+            data-design="classic"
+            data-coin-ids="2204"
+            h={'120px'}
+            w={'600px'}
+            bg={"red"}
+          ></chakra.div>
           <Text color={'#434344'} fontSize={'14px'} fontWeight={'bold'} textAlign={"end"}>©2022 NEST</Text>
         </Stack>
       </HStack>
     )
-  }
-  else {
+  } else {
     return (
       <Stack px={'24px'} py={'56px'} spacing={'32px'}>
         <HStack>
@@ -87,7 +90,7 @@ const Footer = () => {
               Ecosystem
             </Text>
             <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={['12px', '15px']}>
-              <Link style={{ textDecoration: 'none' }}>
+              <Link style={{textDecoration: 'none'}}>
                 Explore applications
               </Link>
             </Stack>
@@ -105,7 +108,7 @@ const Footer = () => {
               <Link>
                 Github
               </Link>
-              <Link style={{ textDecoration: 'none' }}>
+              <Link style={{textDecoration: 'none'}}>
                 Set up local environment
               </Link>
               <Link>
@@ -118,7 +121,7 @@ const Footer = () => {
               Community
             </Text>
             <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={['12px', '15px']}>
-              <Link style={{ textDecoration: 'none' }}>
+              <Link style={{textDecoration: 'none'}}>
                 Online communities
               </Link>
             </Stack>
@@ -130,10 +133,10 @@ const Footer = () => {
               Learn
             </Text>
             <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={['12px', '15px']}>
-              <Link style={{ textDecoration: 'none' }}>
+              <Link style={{textDecoration: 'none'}}>
                 What is NEST
               </Link>
-              <Link style={{ textDecoration: 'none' }}>
+              <Link style={{textDecoration: 'none'}}>
                 Use cases
               </Link>
             </Stack>
@@ -156,10 +159,14 @@ const Footer = () => {
           <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
             Market price
           </Text>
-          <Box w={"full"} h={"full"} pt={'8px'}>
-            <div id="crypto-widget-CoinList" data-design="classic" data-transparent="true"
-                 data-coins="nest-protocol"/>
-          </Box>
+          <chakra.div
+            id="crypto-widget-CoinList"
+            data-transparent="true"
+            data-design="classic"
+            data-coin-ids="2204"
+            w={"full"}
+            h={'90px'}
+          ></chakra.div>
         </Stack>
         <Text color={'#7D7D7D'} fontSize={'12px'} fontWeight={'semibold'}>©2022 NEST</Text>
       </Stack>
