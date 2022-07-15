@@ -13,7 +13,7 @@ const overrides = {
   // Other foundational style overrides go here
   components: {
     Button,
-    Heading,
+    Heading
   }
 }
 

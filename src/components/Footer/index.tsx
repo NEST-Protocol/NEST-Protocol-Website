@@ -1,19 +1,31 @@
-import {Link, Stack, Text, HStack, useMediaQuery, chakra} from "@chakra-ui/react";
-import BG_URL from "../../assets/webp/Footer_bg.webp";
+import { Link, Stack, Text, HStack, useMediaQuery, chakra } from '@chakra-ui/react'
+import BG_URL from '../../assets/webp/Footer_bg.webp'
 
 const Footer = () => {
-  const [isDesktop] = useMediaQuery("(min-width: 768px)");
+  const [isDesktop] = useMediaQuery('(min-width: 768px)')
 
   if (isDesktop) {
     return (
-      <Stack px={['24px', '48px']} py={'80px'} w={"full"} align={"center"} bgImage={BG_URL} bgSize={"cover"}>
-        <HStack maxW={'1440px'} w={'full'} align={"start"}>
+      <Stack
+        px={['24px', '48px']}
+        py={'80px'}
+        w={'full'}
+        align={'center'}
+        bgImage={BG_URL}
+        bgSize={'cover'}
+      >
+        <HStack maxW={'1440px'} w={'full'} align={'start'}>
           <Stack spacing={'44px'} w={'full'} minW={'200px'}>
             <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
               Ecosystem
             </Text>
-            <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={['12px', '15px']}>
-              <Link style={{textDecoration: 'none'}} href={'/#/ecosystem'}>
+            <Stack
+              spacing={'16px'}
+              color={'#7d7d7d'}
+              fontWeight={'semibold'}
+              fontSize={['12px', '15px']}
+            >
+              <Link style={{ textDecoration: 'none' }} href={'/#/ecosystem'}>
                 Explore applications
               </Link>
             </Stack>
@@ -22,24 +34,28 @@ const Footer = () => {
             <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
               Developers
             </Text>
-            <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={['12px', '15px']}>
-              <Link href={'https://docs.nestprotocol.org'}>
-                Docs
-              </Link>
-              <Link href={'https://github.com/NEST-Protocol/'}>
-                Github
-              </Link>
-              <Link href={'https://docs.nestprotocol.org'}>
-                Set up local environment
-              </Link>
+            <Stack
+              spacing={'16px'}
+              color={'#7d7d7d'}
+              fontWeight={'semibold'}
+              fontSize={['12px', '15px']}
+            >
+              <Link href={'https://docs.nestprotocol.org'}>Docs</Link>
+              <Link href={'https://github.com/NEST-Protocol/'}>Github</Link>
+              <Link href={'https://docs.nestprotocol.org'}>Set up local environment</Link>
             </Stack>
           </Stack>
           <Stack spacing={'44px'} w={'full'} minW={'200px'}>
             <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
               Community
             </Text>
-            <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={['12px', '15px']}>
-              <Link style={{textDecoration: 'none'}} href={'/#/community'}>
+            <Stack
+              spacing={'16px'}
+              color={'#7d7d7d'}
+              fontWeight={'semibold'}
+              fontSize={['12px', '15px']}
+            >
+              <Link style={{ textDecoration: 'none' }} href={'/#/community'}>
                 Online communities
               </Link>
             </Stack>
@@ -48,11 +64,16 @@ const Footer = () => {
             <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
               Learn
             </Text>
-            <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={['12px', '15px']}>
-              <Link style={{textDecoration: 'none'}} href={'/#/learn'}>
+            <Stack
+              spacing={'16px'}
+              color={'#7d7d7d'}
+              fontWeight={'semibold'}
+              fontSize={['12px', '15px']}
+            >
+              <Link style={{ textDecoration: 'none' }} href={'/#/learn'}>
                 What is NEST
               </Link>
-              <Link style={{textDecoration: 'none'}} href={'/#/learn'}>
+              <Link style={{ textDecoration: 'none' }} href={'/#/learn'}>
                 Blogs
               </Link>
             </Stack>
@@ -68,7 +89,9 @@ const Footer = () => {
               data-coin-ids="2204"
               h={'120px'}
             ></chakra.div>
-            <Text color={'#003232'} fontSize={'14px'} fontWeight={'bold'} textAlign={"end"}>©2022 NEST</Text>
+            <Text color={'#003232'} fontSize={'14px'} fontWeight={'bold'} textAlign={'end'}>
+              ©2022 NEST
+            </Text>
           </Stack>
         </HStack>
       </Stack>
@@ -81,58 +104,71 @@ const Footer = () => {
             <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
               Ecosystem
             </Text>
-            <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={['12px', '15px']}>
-              <Link href={'/#/ecosystem'}>
-                Explore applications
-              </Link>
+            <Stack
+              spacing={'16px'}
+              color={'#7d7d7d'}
+              fontWeight={'semibold'}
+              fontSize={['12px', '15px']}
+            >
+              <Link href={'/#/ecosystem'}>Explore applications</Link>
             </Stack>
           </Stack>
         </HStack>
-        <HStack align={"start"}>
+        <HStack align={'start'}>
           <Stack spacing={'32px'} w={'full'}>
             <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
               Developers
             </Text>
-            <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={['12px', '15px']}>
-              <Link href={'https://docs.nestprotocol.org/'}>
-                Docs
-              </Link>
-              <Link href={'https://github.com/NEST-Protocol'}>
-                Github
-              </Link>
-              <Link href={'https://docs.nestprotocol.org'}>
-                Set up local environment
-              </Link>
+            <Stack
+              spacing={'16px'}
+              color={'#7d7d7d'}
+              fontWeight={'semibold'}
+              fontSize={['12px', '15px']}
+            >
+              <Link href={'https://docs.nestprotocol.org/'}>Docs</Link>
+              <Link href={'https://github.com/NEST-Protocol'}>Github</Link>
+              <Link href={'https://docs.nestprotocol.org'}>Set up local environment</Link>
             </Stack>
           </Stack>
           <Stack spacing={'32px'} w={'full'}>
             <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
               Community
             </Text>
-            <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={['12px', '15px']}>
-              <Link style={{textDecoration: 'none'}}>
-                Online communities
-              </Link>
+            <Stack
+              spacing={'16px'}
+              color={'#7d7d7d'}
+              fontWeight={'semibold'}
+              fontSize={['12px', '15px']}
+            >
+              <Link style={{ textDecoration: 'none' }}>Online communities</Link>
             </Stack>
           </Stack>
         </HStack>
-        <HStack align={"start"}>
+        <HStack align={'start'}>
           <Stack spacing={'32px'} w={'full'}>
             <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
               Learn
             </Text>
-            <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={['12px', '15px']}>
-              <Link style={{textDecoration: 'none'}}>
-                What is NEST
-              </Link>
+            <Stack
+              spacing={'16px'}
+              color={'#7d7d7d'}
+              fontWeight={'semibold'}
+              fontSize={['12px', '15px']}
+            >
+              <Link style={{ textDecoration: 'none' }}>What is NEST</Link>
             </Stack>
           </Stack>
           <Stack spacing={'32px'} w={'full'}>
             <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'} opacity={0}>
               Learn
             </Text>
-            <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={['12px', '15px']}>
-              <Link style={{textDecoration: 'none'}} href={'/#/learn'}>
+            <Stack
+              spacing={'16px'}
+              color={'#7d7d7d'}
+              fontWeight={'semibold'}
+              fontSize={['12px', '15px']}
+            >
+              <Link style={{ textDecoration: 'none' }} href={'/#/learn'}>
                 Blogs
               </Link>
             </Stack>
@@ -147,13 +183,15 @@ const Footer = () => {
             data-transparent="true"
             data-design="classic"
             data-coin-ids="2204"
-            w={"full"}
+            w={'full'}
           ></chakra.div>
         </Stack>
-        <Text color={'#7D7D7D'} fontSize={'12px'} fontWeight={'semibold'}>©2022 NEST</Text>
+        <Text color={'#7D7D7D'} fontSize={'12px'} fontWeight={'semibold'}>
+          ©2022 NEST
+        </Text>
       </Stack>
     )
   }
 }
 
-export default Footer;
+export default Footer

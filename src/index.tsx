@@ -1,14 +1,12 @@
-import {ChakraProvider} from '@chakra-ui/react'
+import { ChakraProvider } from '@chakra-ui/react'
 import theme from './theme'
 import * as React from 'react'
 import ReactDOM from 'react-dom'
-import {App} from './pages/App'
+import { App } from './pages/App'
 import reportWebVitals from './reportWebVitals'
 import * as serviceWorker from './serviceWorker'
 import 'focus-visible/dist/focus-visible'
-import {
-   HashRouter
-} from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,8 +15,7 @@ ReactDOM.render(
         <App />
       </ChakraProvider>
     </HashRouter>
-  </React.StrictMode>
-  ,
+  </React.StrictMode>,
   document.getElementById('root')
 )
 

@@ -1,15 +1,25 @@
-import {Box, HStack, Link, SimpleGrid, VStack, chakra, useMediaQuery, Text, Stack} from "@chakra-ui/react";
+import {
+  Box,
+  HStack,
+  Link,
+  SimpleGrid,
+  VStack,
+  chakra,
+  useMediaQuery,
+  Text,
+  Stack
+} from '@chakra-ui/react'
 import Right1 from '../../assets/svg/RIGHT_1_icon.svg'
-import * as React from "react";
-import Banner_URI from "../../assets/webp/Community_pic_1.webp"
-import Twitter_pic from "../../assets/webp/Twitter_pic.webp"
-import Discord_pic from "../../assets/webp/Discord_pic.webp"
-import Telegram_pic from "../../assets/webp/Telegram_pic.webp"
-import Youtube_pic from "../../assets/webp/Youtube_pic.webp"
-import {Helmet} from "react-helmet";
+import * as React from 'react'
+import Banner_URI from '../../assets/webp/Community_pic_1.webp'
+import Twitter_pic from '../../assets/webp/Twitter_pic.webp'
+import Discord_pic from '../../assets/webp/Discord_pic.webp'
+import Telegram_pic from '../../assets/webp/Telegram_pic.webp'
+import Youtube_pic from '../../assets/webp/Youtube_pic.webp'
+import { Helmet } from 'react-helmet'
 
 const Community = () => {
-  const [isDesktop] = useMediaQuery("(min-width: 768px)");
+  const [isDesktop] = useMediaQuery('(min-width: 768px)')
 
   const menu = [
     {
@@ -39,15 +49,32 @@ const Community = () => {
       <Helmet>
         <title>NEST Community</title>
       </Helmet>
-      <Stack align={"center"} h={'full'} justify={"center"} minH={['540px', '660px']} bgImage={Banner_URI} bgSize={'cover'} spacing={['22px', '44px']}>
-        <Text whiteSpace={'break-spaces'} textAlign={"center"} fontSize={['24px', '48px']} fontWeight={'bold'}>
+      <Stack
+        align={'center'}
+        h={'full'}
+        justify={'center'}
+        minH={['540px', '660px']}
+        bgImage={Banner_URI}
+        bgSize={'cover'}
+        spacing={['22px', '44px']}
+      >
+        <Text
+          whiteSpace={'break-spaces'}
+          textAlign={'center'}
+          fontSize={['24px', '48px']}
+          fontWeight={'bold'}
+        >
           NEST Community
         </Text>
-        <Text fontSize={['12px', '24px']} fontWeight={"bold"} textAlign={"center"}>
-          The NEST community is made up of developers, creators,<br/>enthusiasts, explore, contribute to the<br/>community and get reward.
+        <Text fontSize={['12px', '24px']} fontWeight={'bold'} textAlign={'center'}>
+          The NEST community is made up of developers, creators,
+          <br />
+          enthusiasts, explore, contribute to the
+          <br />
+          community and get reward.
         </Text>
       </Stack>
-      <Stack align={"center"} px={['24px', '48px']}>
+      <Stack align={'center'} px={['24px', '48px']}>
         <SimpleGrid columns={2} spacing={['22px', '22px', '44px']}>
           {menu.map(item => (
             <VStack
@@ -59,8 +86,8 @@ const Community = () => {
               boxShadow={'0px 0px 45px 5px #E5E5E5'}
               overflow={'hidden'}
             >
-              <Box overflow={"hidden"}>
-                <chakra.img src={item.bg} alt={item.label} _hover={{transform: 'scale(1.05)'}}/>
+              <Box overflow={'hidden'}>
+                <chakra.img src={item.bg} alt={item.label} _hover={{ transform: 'scale(1.05)' }} />
               </Box>
               <HStack
                 px={['22px', '22px', '44px']}
@@ -74,9 +101,13 @@ const Community = () => {
                 </Text>
                 <Link isExternal href={item.link}>
                   {isDesktop ? (
-                    <chakra.img src={Right1} alt={'right'} _hover={{transform: 'translateX(8px)'}}/>
+                    <chakra.img
+                      src={Right1}
+                      alt={'right'}
+                      _hover={{ transform: 'translateX(8px)' }}
+                    />
                   ) : (
-                    <chakra.img src={Right1} alt={'right'} height={'24px'} width={'24px'}/>
+                    <chakra.img src={Right1} alt={'right'} height={'24px'} width={'24px'} />
                   )}
                 </Link>
               </HStack>

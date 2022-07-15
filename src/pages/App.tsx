@@ -1,12 +1,12 @@
 import * as React from 'react'
-import {Stack, Text, useMediaQuery} from "@chakra-ui/react";
-import {Route, Routes} from "react-router-dom";
-import Root from "./root";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import Ecosystem from "./Ecosystem";
-import Community from "./Community";
-import Learn from "./Learn";
+import { Stack, Text, useMediaQuery } from '@chakra-ui/react'
+import { Route, Routes } from 'react-router-dom'
+import Root from './root'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
+import Ecosystem from './Ecosystem'
+import Community from './Community'
+import Learn from './Learn'
 
 export const App = () => {
   return (
@@ -14,10 +14,10 @@ export const App = () => {
       <Header />
       <Stack spacing={['56px', '80px']}>
         <Routes>
-          <Route path="/" element={<Root />}/>
-          <Route path={'ecosystem'} element={<Ecosystem />}/>
-          <Route path={'community'} element={<Community />}/>
-          <Route path={'learn'} element={<Learn />}/>
+          <Route path="/" element={<Root />} />
+          <Route path={'ecosystem'} element={<Ecosystem />} />
+          <Route path={'community'} element={<Community />} />
+          <Route path={'learn'} element={<Learn />} />
           <Route
             path="*"
             element={
@@ -30,6 +30,5 @@ export const App = () => {
         <Footer />
       </Stack>
     </>
-
   )
 }

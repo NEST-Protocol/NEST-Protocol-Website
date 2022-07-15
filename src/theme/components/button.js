@@ -3,7 +3,7 @@ export const Button = {
     fontWeight: 'medium',
     fontSize: 'md',
     height: '34px',
-    maxH: '34px',
+    maxH: '34px'
   },
   variants: {
     ghost: {
@@ -48,6 +48,6 @@ export const Button = {
   },
   defaultProps: {
     size: 'md',
-    variant: 'solid',
+    variant: 'solid'
   }
 }

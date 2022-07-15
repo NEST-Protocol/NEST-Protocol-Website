@@ -17,7 +17,7 @@ export const styles = {
     },
     'div,a,img': {
       '-webkit-tap-highlight-color': 'transparent',
-      '-webkit-touch-callout': 'none',
+      '-webkit-touch-callout': 'none'
     }
   }
 }

@@ -1,17 +1,27 @@
-import {Box, chakra, Heading, Link, SimpleGrid, Stack, Text, useMediaQuery, VStack} from "@chakra-ui/react";
-import * as React from "react";
-import Banner_URI from "../../assets/webp/NEST_pic_1.webp";
+import {
+  Box,
+  chakra,
+  Heading,
+  Link,
+  SimpleGrid,
+  Stack,
+  Text,
+  useMediaQuery,
+  VStack
+} from '@chakra-ui/react'
+import * as React from 'react'
+import Banner_URI from '../../assets/webp/NEST_pic_1.webp'
 // import UseCase_URI from "../../assets/webp/NEST_pic_2.webp";
-import Blogs_pic_1 from "../../assets/webp/Blogs_pic_1.webp";
-import Blogs_pic_2 from "../../assets/webp/Blogs_pic_2.webp";
-import Blogs_pic_3 from "../../assets/webp/Blogs_pic_3.webp";
-import Blogs_pic_4 from "../../assets/webp/Blogs_pic_4.webp";
-import Blogs_pic_5 from "../../assets/webp/Blogs_pic_5.webp";
-import Blogs_pic_6 from "../../assets/webp/Blogs_pic_6.webp";
-import {Helmet} from "react-helmet";
+import Blogs_pic_1 from '../../assets/webp/Blogs_pic_1.webp'
+import Blogs_pic_2 from '../../assets/webp/Blogs_pic_2.webp'
+import Blogs_pic_3 from '../../assets/webp/Blogs_pic_3.webp'
+import Blogs_pic_4 from '../../assets/webp/Blogs_pic_4.webp'
+import Blogs_pic_5 from '../../assets/webp/Blogs_pic_5.webp'
+import Blogs_pic_6 from '../../assets/webp/Blogs_pic_6.webp'
+import { Helmet } from 'react-helmet'
 
 const Learn = () => {
-  const [isDesktop] = useMediaQuery("(min-width: 768px)");
+  const [isDesktop] = useMediaQuery('(min-width: 768px)')
 
   // const pages = [
   //   {
@@ -31,44 +41,79 @@ const Learn = () => {
       <Helmet>
         <title>What is NEST | NEST Protocol</title>
       </Helmet>
-      <Stack align={"center"} h={'full'} justify={"center"} minH={['540px', '660px']} bgImage={Banner_URI} bgSize={'cover'} spacing={['22px', '44px']}>
-        <Text whiteSpace={'break-spaces'} textAlign={"center"} fontSize={['24px', '48px']} fontWeight={'bold'}>
+      <Stack
+        align={'center'}
+        h={'full'}
+        justify={'center'}
+        minH={['540px', '660px']}
+        bgImage={Banner_URI}
+        bgSize={'cover'}
+        spacing={['22px', '44px']}
+      >
+        <Text
+          whiteSpace={'break-spaces'}
+          textAlign={'center'}
+          fontSize={['24px', '48px']}
+          fontWeight={'bold'}
+        >
           What is NEST
         </Text>
-        <Text fontSize={['12px', '24px']} fontWeight={"bold"} textAlign={"center"}>
-          A complete gaming space with applications of DeFi, GameFi<br/>NFT built on the NEST. Swap, hedge, earn and even game<br/> with the NEST network to gain excess returns.
+        <Text fontSize={['12px', '24px']} fontWeight={'bold'} textAlign={'center'}>
+          A complete gaming space with applications of DeFi, GameFi
+          <br />
+          NFT built on the NEST. Swap, hedge, earn and even game
+          <br /> with the NEST network to gain excess returns.
         </Text>
       </Stack>
-      {pages.map(({name, path, icon, bg, title, desc}) => (
-        <Stack key={name} spacing={'48px'} align={"center"}>
-          <Stack px={['24px', '48px']} w={"full"} align={"center"}>
+      {pages.map(({ name, path, icon, bg, title, desc }) => (
+        <Stack key={name} spacing={'48px'} align={'center'}>
+          <Stack px={['24px', '48px']} w={'full'} align={'center'}>
             <Stack maxW={'1440px'} w={'full'}>
-              <Heading fontSize={['24px', '48px']} color={'#003232'}>{name}</Heading>
+              <Heading fontSize={['24px', '48px']} color={'#003232'}>
+                {name}
+              </Heading>
             </Stack>
           </Stack>
-          <Stack align={"center"} minH={'440px'} justify={"center"} w={"full"} spacing={['13px', '16px']} bgImage={bg} bgSize={'cover'}>
-            <chakra.img src={icon}/>
+          <Stack
+            align={'center'}
+            minH={'440px'}
+            justify={'center'}
+            w={'full'}
+            spacing={['13px', '16px']}
+            bgImage={bg}
+            bgSize={'cover'}
+          >
+            <chakra.img src={icon} />
             <chakra.a
-              fontSize={['17px', '24px']} fontWeight={'semibold'} color={'#434344'} href={'/#/' + path}
+              fontSize={['17px', '24px']}
+              fontWeight={'semibold'}
+              color={'#434344'}
+              href={'/#/' + path}
             >
               {title}
             </chakra.a>
             <chakra.a
-              fontSize={['12px', '15px']} fontWeight={'semibold'} color={'#7d7d7d'} whiteSpace={'break-spaces'}
-              textAlign={"center"} href={'/#/' + path}
+              fontSize={['12px', '15px']}
+              fontWeight={'semibold'}
+              color={'#7d7d7d'}
+              whiteSpace={'break-spaces'}
+              textAlign={'center'}
+              href={'/#/' + path}
             >
               {desc}
             </chakra.a>
           </Stack>
         </Stack>
       ))}
-      <Stack spacing={'48px'} align={"center"}>
-        <Stack px={['24px', '48px']} w={"full"} align={"center"}>
+      <Stack spacing={'48px'} align={'center'}>
+        <Stack px={['24px', '48px']} w={'full'} align={'center'}>
           <Stack maxW={'1440px'} w={'full'}>
-            <Heading fontSize={['24px', '48px']} color={'#003232'}>Blogs</Heading>
+            <Heading fontSize={['24px', '48px']} color={'#003232'}>
+              Blogs
+            </Heading>
           </Stack>
         </Stack>
-        <Stack align={"center"} minH={'440px'} justify={"center"} spacing={'16px'}>
+        <Stack align={'center'} minH={'440px'} justify={'center'} spacing={'16px'}>
           <SimpleGrid columns={[1, 1, 2, 3]} spacing={['22px', '22px', '44px']} pb={'27px'}>
             {[
               {
@@ -107,49 +152,61 @@ const Learn = () => {
                 desc: 'The project uses a unique “quote mining” mechanism to ensure that off-chain price data is generated on-chain in a synchronous manner',
                 link: 'https://coin68.com/nest-protocol-la-gi/'
               }
-            ]
-              .map(item => (
+            ].map(item => (
+              <VStack
+                key={item.label}
+                w={isDesktop ? '308px' : 'full'}
+                spacing={0}
+                border={'1px solid #EEEEEE'}
+                boxShadow={'0px 0px 45px 5px #E5E5E5'}
+                borderRadius={'12px'}
+                overflow={'hidden'}
+                cursor={'pointer'}
+                onClick={() => {
+                  window.open(item.link)
+                }}
+              >
+                <Box overflow={'hidden'}>
+                  <chakra.img
+                    src={item.bg}
+                    alt={item.label}
+                    style={{ objectFit: 'cover' }}
+                    _hover={{ transform: 'scale(1.05)' }}
+                  />
+                </Box>
                 <VStack
-                  key={item.label}
-                  w={isDesktop ? '308px' : 'full'}
-                  spacing={0}
-                  border={'1px solid #EEEEEE'}
-                  boxShadow={'0px 0px 45px 5px #E5E5E5'}
-                  borderRadius={'12px'}
-                  overflow={'hidden'}
-                  cursor={"pointer"}
-                  onClick={()=>{
-                    window.open(item.link)
-                  }}
+                  w={'full'}
+                  px={['22px', '22px', '44px']}
+                  py={'22px'}
+                  spacing={'8px'}
+                  alignItems={isDesktop ? 'center' : 'start'}
+                  justifyContent={'start'}
                 >
-                  <Box overflow={"hidden"}>
-                    <chakra.img src={item.bg} alt={item.label} style={{objectFit: 'cover'}}
-                                _hover={{transform: 'scale(1.05)'}}/>
-                  </Box>
-                  <VStack
+                  <Link
+                    isExternal
+                    href={item.link}
+                    style={{ textDecoration: 'none' }}
+                    fontSize={['12px', '15px']}
+                    color={'#003232'}
+                    fontWeight={'bold'}
+                    textAlign={'start'}
                     w={'full'}
-                    px={['22px', '22px', '44px']}
-                    py={'22px'}
-                    spacing={'8px'}
-                    alignItems={isDesktop ? 'center' : 'start'}
-                    justifyContent={"start"}
                   >
-                    <Link isExternal href={item.link} style={{textDecoration: 'none'}} fontSize={['12px', '15px']} color={'#003232'} fontWeight={'bold'} textAlign={"start"} w={"full"}>
-                      {item.label}
-                    </Link>
-                    <Link
-                      isExternal
-                      href={item.link}
-                      style={{textDecoration: 'none'}}
-                      fontSize={['12px', '12px', '15px']}
-                      fontWeight={'semibold'}
-                      color={'#7d7d7d'}
-                    >
-                      {item.desc}
-                    </Link>
-                  </VStack>
+                    {item.label}
+                  </Link>
+                  <Link
+                    isExternal
+                    href={item.link}
+                    style={{ textDecoration: 'none' }}
+                    fontSize={['12px', '12px', '15px']}
+                    fontWeight={'semibold'}
+                    color={'#7d7d7d'}
+                  >
+                    {item.desc}
+                  </Link>
                 </VStack>
-              ))}
+              </VStack>
+            ))}
           </SimpleGrid>
         </Stack>
       </Stack>
