@@ -130,12 +130,13 @@ const Learn = () => {
                     alignItems={isDesktop ? 'center' : 'start'}
                     justifyContent={"start"}
                   >
-                    <Link isExternal href={item.link} fontSize={['12px', '15px']} color={'#003232'} fontWeight={'bold'} textAlign={"start"} w={"full"}>
+                    <Link isExternal href={item.link} style={{textDecoration: 'none'}} fontSize={['12px', '15px']} color={'#003232'} fontWeight={'bold'} textAlign={"start"} w={"full"}>
                       {item.label}
                     </Link>
                     <Link
                       isExternal
                       href={item.link}
+                      style={{textDecoration: 'none'}}
                       fontSize={['12px', '12px', '15px']}
                       fontWeight={'semibold'}
                       color={'#7d7d7d'}

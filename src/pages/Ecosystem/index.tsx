@@ -11,12 +11,15 @@ const Ecosystem = () => {
 
   return (
     <>
-      <Stack align={"center"} h={'full'} justify={"center"} minH={['540px', '660px']} bgImage={Banner_URI} bgSize={'cover'} spacing={['22px', '44px']}>
+      <Stack align={"center"} h={'full'} justify={"center"} minH={['540px', '660px']} bgImage={Banner_URI}
+             bgSize={'cover'} spacing={['22px', '44px']}>
         <Text textAlign={"center"} fontSize={['24px', '48px']} fontWeight={'bold'}>
-          Explore the {!isDesktop && <br/> } NEST Ecosystem
+          Explore the {!isDesktop && <br/>} NEST Ecosystem
         </Text>
         <Text fontSize={['12px', '24px']} fontWeight={"bold"} textAlign={"center"}>
-          A complete gaming space with applications of{ !isDesktop && <br/> } DeFi, GameFi {isDesktop && <br/>}NFT built on the NEST.{ !isDesktop && <br/> } Swap, hedge, earn and even game<br/>with the NEST network to gain excess returns.
+          A complete gaming space with applications of{!isDesktop && <br/>} DeFi, GameFi {isDesktop && <br/>}NFT built
+          on the NEST.{!isDesktop && <br/>} Swap, hedge, earn and even game<br/>with the NEST network to gain excess
+          returns.
         </Text>
       </Stack>
       <Stack spacing={'48px'} align={"center"}>
@@ -25,7 +28,8 @@ const Ecosystem = () => {
             <Heading fontSize={['24px', '48px']} color={'#003232'}>Project</Heading>
           </Stack>
         </Stack>
-        <Stack align={"center"} minH={'440px'} w={'full'} justify={"center"} spacing={['13px', '16px']} bgImage={Project1_URI} bgSize={'cover'}>
+        <Stack align={"center"} minH={'440px'} w={'full'} justify={"center"} spacing={['13px', '16px']}
+               bgImage={Project1_URI} bgSize={'cover'}>
           <chakra.img src={Market_Icon_URI}/>
           <chakra.a
             fontSize={['17px', '24px']} fontWeight={'semibold'} color={'#003232'}
@@ -43,11 +47,16 @@ const Ecosystem = () => {
         </Stack>
       </Stack>
       <Stack spacing={'48px'} align={"center"} h={'700px'} justify={"start"}>
-        <Stack align={"center"} maxH={'440px'} w={'full'} justify={"start"} pt={'80px'} spacing={['13px', '16px']} bgImage={Project2_URI} bgSize={'cover'}>
-          <chakra.img src={Phone_Icon_URI}/>
+        <Stack align={"center"} maxH={'440px'} w={'full'} justify={"start"} pt={'80px'} spacing={['13px', '16px']}
+               bgImage={Project2_URI} bgSize={'cover'}>
+          <chakra.img
+            src={Phone_Icon_URI}
+            cursor={"pointer"}
+            onClick={() => {
+              window.open("https://channel.nestprotocol.org/", "_blank");
+            }}/>
           <chakra.a
-            fontSize={['17px', '24px']} fontWeight={'semibold'} color={'#003232'}
-          >
+            fontSize={['17px', '24px']} fontWeight={'semibold'} color={'#003232'}>
             NEST Oracle
           </chakra.a>
           <chakra.a
