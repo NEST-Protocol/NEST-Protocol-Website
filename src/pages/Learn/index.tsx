@@ -27,8 +27,10 @@ const Learn = () => {
       </Stack>
       {pages.map(({name, path, icon, bg, title, desc}) => (
         <Stack key={name} spacing={'48px'} align={"center"}>
-          <Stack maxW={'1440px'} w={'full'}>
-            <Heading fontSize={['24px', '48px']} px={['24px', '48px']} color={'#003232'}>{name}</Heading>
+          <Stack px={['24px', '48px']} w={"full"} align={"center"}>
+            <Stack maxW={'1440px'} w={'full'}>
+              <Heading fontSize={['24px', '48px']} color={'#003232'}>{name}</Heading>
+            </Stack>
           </Stack>
           <Stack align={"center"} minH={'440px'} justify={"center"} spacing={['13px', '16px']}>
             <chakra.img/>
@@ -47,8 +49,10 @@ const Learn = () => {
         </Stack>
       ))}
       <Stack spacing={'48px'} align={"center"}>
-        <Stack maxW={'1440px'} w={'full'}>
-          <Heading fontSize={['24px', '48px']} px={['24px', '48px']} color={'#003232'}>Blogs</Heading>
+        <Stack px={['24px', '48px']} w={"full"} align={"center"}>
+          <Stack maxW={'1440px'} w={'full'}>
+            <Heading fontSize={['24px', '48px']} color={'#003232'}>Blogs</Heading>
+          </Stack>
         </Stack>
         <Stack align={"center"} minH={'440px'} justify={"center"} spacing={'16px'}>
           <SimpleGrid columns={[1, 1, 2, 3]} spacing={['22px', '22px', '44px']} pb={'27px'}>
