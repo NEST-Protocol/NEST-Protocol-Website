@@ -33,8 +33,10 @@ const Ecosystem = () => {
         </Text>
       </Stack>
       {pages.map(({name, path, icon, bg, title, desc}) => (
-        <Stack key={name} spacing={'48px'}>
-          <Heading fontSize={['24px', '48px']} px={['24px', '48px']} color={'#003232'}>{name}</Heading>
+        <Stack key={name} spacing={'48px'} align={"center"}>
+          <Stack maxW={'1440px'} w={'full'}>
+            <Heading fontSize={['24px', '48px']} px={['24px', '48px']} color={'#003232'}>{name}</Heading>
+          </Stack>
           <Stack align={"center"} minH={'440px'} justify={"center"} spacing={['13px', '16px']}>
             <chakra.img/>
             <chakra.a
