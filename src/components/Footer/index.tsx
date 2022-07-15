@@ -13,7 +13,7 @@ const Footer = () => {
               Ecosystem
             </Text>
             <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={['12px', '15px']}>
-              <Link style={{textDecoration: 'none'}}>
+              <Link style={{textDecoration: 'none'}} href={'/#/ecosystem'}>
                 Explore applications
               </Link>
             </Stack>
@@ -23,13 +23,13 @@ const Footer = () => {
               Developers
             </Text>
             <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={['12px', '15px']}>
-              <Link>
+              <Link href={'https://docs.nestprotocol.org'}>
                 Docs
               </Link>
-              <Link>
+              <Link href={'https://github.com/NEST-Protocol/'}>
                 Github
               </Link>
-              <Link style={{textDecoration: 'none'}}>
+              <Link>
                 Set up local environment
               </Link>
             </Stack>
@@ -39,7 +39,7 @@ const Footer = () => {
               Community
             </Text>
             <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={['12px', '15px']}>
-              <Link style={{textDecoration: 'none'}}>
+              <Link style={{textDecoration: 'none'}} href={'/#/community'}>
                 Online communities
               </Link>
             </Stack>
@@ -49,16 +49,16 @@ const Footer = () => {
               Learn
             </Text>
             <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={['12px', '15px']}>
-              <Link style={{textDecoration: 'none'}}>
+              <Link style={{textDecoration: 'none'}} href={'/#/learn'}>
                 What is NEST
               </Link>
-              <Link style={{textDecoration: 'none'}}>
-                Use cases
-              </Link>
+              {/*<Link style={{textDecoration: 'none'}}>*/}
+              {/*  Use cases*/}
+              {/*</Link>*/}
               {/*<Link>*/}
               {/*  NEST whitepaper*/}
               {/*</Link>*/}
-              <Link>
+              <Link style={{textDecoration: 'none'}} href={'/#/learn'}>
                 Blogs
               </Link>
             </Stack>
@@ -88,7 +88,7 @@ const Footer = () => {
               Ecosystem
             </Text>
             <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={['12px', '15px']}>
-              <Link style={{textDecoration: 'none'}}>
+              <Link href={'/#/ecosystem'}>
                 Explore applications
               </Link>
             </Stack>
@@ -100,13 +100,13 @@ const Footer = () => {
               Developers
             </Text>
             <Stack spacing={'16px'} color={'#7d7d7d'} fontWeight={'semibold'} fontSize={['12px', '15px']}>
-              <Link>
+              <Link href={'https://docs.nestprotocol.org/'}>
                 Docs
               </Link>
-              <Link>
+              <Link href={'https://github.com/NEST-Protocol'}>
                 Github
               </Link>
-              <Link style={{textDecoration: 'none'}}>
+              <Link>
                 Set up local environment
               </Link>
             </Stack>
@@ -131,9 +131,9 @@ const Footer = () => {
               <Link style={{textDecoration: 'none'}}>
                 What is NEST
               </Link>
-              <Link style={{textDecoration: 'none'}}>
-                Use cases
-              </Link>
+              {/*<Link style={{textDecoration: 'none'}}>*/}
+              {/*  Use cases*/}
+              {/*</Link>*/}
             </Stack>
           </Stack>
           <Stack spacing={'32px'} w={'full'}>
@@ -144,7 +144,7 @@ const Footer = () => {
               {/*<Link>*/}
               {/*  NEST whitepaper*/}
               {/*</Link>*/}
-              <Link>
+              <Link style={{textDecoration: 'none'}} href={'/#/learn'}>
                 Blogs
               </Link>
             </Stack>
