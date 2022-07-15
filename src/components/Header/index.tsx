@@ -36,7 +36,8 @@ const Header = () => {
   ]
 
   return (
-    <HStack px={['24px', '48px']} py={'28px'} spacing={'24px'} position={'fixed'} w={'full'} bg={scrollY > 570 ? "rgba(200,200,200,0.8)" : ''} zIndex={'10'}>
+    <HStack px={['24px', '48px']} py={'28px'} spacing={'24px'} position={'fixed'} w={'full'}
+            bg={scrollY > (isDesktop ? 570 : 450) ? "rgba(200,200,200,0.8)" : ''} zIndex={'10'}>
       <chakra.img
         src={NEST_LOGO} alt="NEST Logo" h={'20px'}
         cursor={'pointer'}
@@ -85,12 +86,12 @@ const Header = () => {
                         color={location.pathname === path.slice(2) ? '#EAAA00' : '#000'}
                         variant={'ghost'} fontSize={['17px', '24px']}
                         p={0} onClick={() => {
-                          if (path.includes('https')) {
-                            window.open(path)
-                          } else {
-                            window.location.href = path
-                            onClose()
-                          }
+                        if (path.includes('https')) {
+                          window.open(path)
+                        } else {
+                          window.location.href = path
+                          onClose()
+                        }
                       }}>
                         {name}
                       </Button>
