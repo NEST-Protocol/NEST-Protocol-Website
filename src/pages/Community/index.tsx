@@ -33,9 +33,9 @@ const Community = () => {
       link: 'https://t.me/nest_chat/'
     },
     {
-      label: 'Discord',
+      label: 'Medium',
       bg: Discord_pic,
-      link: ''
+      link: 'https://nest-protocol-82041.medium.com/'
     },
     {
       label: 'YouTube',
