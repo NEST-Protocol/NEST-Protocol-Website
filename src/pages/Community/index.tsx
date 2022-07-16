@@ -55,7 +55,7 @@ const Community = () => {
         justify={'center'}
         minH={['540px', '660px']}
         bgImage={Banner_URI}
-        bgSize={'cover'}
+        bgSize={'100% 100%'}
         spacing={['22px', '44px']}
       >
         <Text

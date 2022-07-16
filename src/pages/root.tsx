@@ -61,7 +61,7 @@ const Root = () => {
           justify={'center'}
           minH={['540px', '660px']}
           bgImage={Banner_URI}
-          bgSize={'cover'}
+          bgSize={'100% 100%'}
         >
           <Text
             whiteSpace={'break-spaces'}
@@ -101,7 +101,7 @@ const Root = () => {
             justify={'center'}
             spacing={['13px', '16px']}
             bgImage={bg}
-            bgSize={'cover'}
+            bgSize={'100% 100%'}
           >
             <chakra.img src={icon} />
             <chakra.a

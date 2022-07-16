@@ -47,7 +47,7 @@ const Learn = () => {
         justify={'center'}
         minH={['540px', '660px']}
         bgImage={Banner_URI}
-        bgSize={'cover'}
+        bgSize={'100% 100%'}
         spacing={['22px', '44px']}
       >
         <Text
@@ -81,7 +81,7 @@ const Learn = () => {
             w={'full'}
             spacing={['13px', '16px']}
             bgImage={bg}
-            bgSize={'cover'}
+            bgSize={'100% 100%'}
           >
             <chakra.img src={icon} />
             <chakra.a

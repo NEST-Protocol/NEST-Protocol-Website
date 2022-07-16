@@ -12,7 +12,7 @@ const Footer = () => {
         w={'full'}
         align={'center'}
         bgImage={BG_URL}
-        bgSize={'cover'}
+        bgSize={'100% 100%'}
       >
         <HStack maxW={'1440px'} w={'full'} align={'start'}>
           <Stack spacing={'44px'} w={'full'} minW={'200px'}>
@@ -98,7 +98,7 @@ const Footer = () => {
     )
   } else {
     return (
-      <Stack px={'24px'} py={'56px'} spacing={'32px'} bgImage={BG_URL} bgSize={'cover'}>
+      <Stack px={'24px'} py={'56px'} spacing={'32px'} bgImage={BG_URL} bgSize={'100% 100%'}>
         <HStack>
           <Stack spacing={'32px'} w={'full'}>
             <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>

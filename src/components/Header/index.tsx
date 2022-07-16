@@ -44,7 +44,7 @@ const Header = () => {
       w={'full'}
       align={'center'}
       bgImage={scrollY > 90 ? BG_URL : ''}
-      bgSize={'cover'}
+      bgSize={'100% 100%'}
       overflow={'hidden'}
       zIndex={'10'}
     >

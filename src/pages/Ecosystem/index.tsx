@@ -21,7 +21,7 @@ const Ecosystem = () => {
         justify={'center'}
         minH={['540px', '660px']}
         bgImage={Banner_URI}
-        bgSize={'cover'}
+        bgSize={'100% 100%'}
         spacing={['22px', '44px']}
       >
         <Text textAlign={'center'} fontSize={['24px', '48px']} fontWeight={'bold'}>
@@ -50,7 +50,7 @@ const Ecosystem = () => {
           justify={'center'}
           spacing={['13px', '16px']}
           bgImage={Project1_URI}
-          bgSize={'cover'}
+          bgSize={'100% 100%'}
         >
           <chakra.img src={Market_Icon_URI} />
           <chakra.a fontSize={['17px', '24px']} fontWeight={'semibold'} color={'#003232'}>
@@ -80,7 +80,7 @@ const Ecosystem = () => {
           pt={'80px'}
           spacing={['13px', '16px']}
           bgImage={Project2_URI}
-          bgSize={'cover'}
+          bgSize={'100% 100%'}
         >
           <chakra.img
             src={Phone_Icon_URI}
