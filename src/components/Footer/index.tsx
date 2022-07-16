@@ -140,7 +140,7 @@ const Footer = () => {
               fontWeight={'semibold'}
               fontSize={['12px', '15px']}
             >
-              <Link style={{ textDecoration: 'none' }}>Online communities</Link>
+              <Link style={{ textDecoration: 'none' }} href={'/#/community'}>Online communities</Link>
             </Stack>
           </Stack>
         </HStack>
@@ -155,7 +155,7 @@ const Footer = () => {
               fontWeight={'semibold'}
               fontSize={['12px', '15px']}
             >
-              <Link style={{ textDecoration: 'none' }}>What is NEST</Link>
+              <Link style={{ textDecoration: 'none' }} href={'/#/learn'}>What is NEST</Link>
             </Stack>
           </Stack>
           <Stack spacing={'32px'} w={'full'}>
