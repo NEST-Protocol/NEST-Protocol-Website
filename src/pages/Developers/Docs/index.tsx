@@ -13,7 +13,7 @@ const Docs = () => {
     fetch('https://raw.githubusercontent.com/NEST-Protocol/NEST-Docs/test/README.md')
       .then(res => res.text())
       .then(text => {
-        setMd(text)
+        setMd('\n' + text)
       })
   }, []);
 
@@ -24,7 +24,7 @@ const Docs = () => {
   return (
     <Stack maxW={'full'} align={"center"} px={['24px', '48px']}>
       <HStack maxW={'1440px'} w={"full"} align={"start"}>
-        <Stack w={'300px'} py={'24px'} position={"fixed"}>
+        <Stack w={'300px'} py={'24px'} position={"fixed"} overflow={"scroll"}>
           <MarkNav
             source={md}
             ordered={false}

@@ -22,7 +22,7 @@
     "focus-visible": "^5.2.0",
     "framer-motion": "^4.0.0",
     "github-markdown-css": "^5.1.0",
-    "markdown-navbar": "^1.4.3",
+    "markdown-navbar": "1.4.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-helmet": "^6.1.0",
