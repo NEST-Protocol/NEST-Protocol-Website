@@ -2,9 +2,7 @@ import { Heading, Stack, chakra, Text, Button, HStack, useMediaQuery } from '@ch
 import * as React from 'react'
 import { Helmet } from 'react-helmet'
 
-import Home_NESTxFORT_icon from '../assets/webp/Home_NESTxFORT_icon.webp'
 import Home_NESTxFORT_pic from '../assets/webp/Home_NESTxFORT_pic.webp'
-import Banner_URI from '../assets/webp/Home_pic_1.webp'
 import Developer_URI from '../assets/webp/Home_pic_2.webp'
 import Community_URI from '../assets/webp/Home_pic_4.webp'
 import Ecosystem_URI from '../assets/webp/Home_pic_3.webp'

@@ -1,4 +1,4 @@
-import {Link, Stack, Text, HStack, useMediaQuery, chakra, Wrap, WrapItem, Spacer} from '@chakra-ui/react'
+import {Link, Stack, Text, HStack, useMediaQuery, chakra, Wrap, WrapItem} from '@chakra-ui/react'
 import BG_URL from '../../assets/webp/Footer_bg.webp'
 
 const Footer = () => {
