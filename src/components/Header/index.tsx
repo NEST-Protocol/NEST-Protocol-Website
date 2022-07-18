@@ -31,7 +31,7 @@ const Header = () => {
 
   const Menu = [
     { name: 'Ecosystem', path: 'ecosystem' },
-    { name: 'Developers', path: 'https://docs.nestprotocol.org/' },
+    { name: 'Developers', path: 'developers' },
     { name: 'Community', path: 'community' },
     { name: 'Learn', path: 'learn' }
   ]
@@ -43,7 +43,7 @@ const Header = () => {
       position={'fixed'}
       w={'full'}
       align={'center'}
-      bgImage={scrollY > 90 ? BG_URL : ''}
+      bgImage={scrollY > 90 || location.pathname.includes('/developers') ? BG_URL : ''}
       bgSize={'100% 100%'}
       overflow={'hidden'}
       zIndex={'10'}
@@ -66,14 +66,10 @@ const Header = () => {
               key={name}
               cursor={'pointer'}
               onClick={() => {
-                if (path.includes('https')) {
-                  window.open(path, '_blank')
-                } else {
-                  navigate(path)
-                }
+                navigate(path)
               }}
-              color={location.pathname.slice(1) === path ? '#EAAA00' : '#000'}
-              fontWeight={location.pathname.slice(1) === path ? 'bold' : '500'}
+              color={location.pathname.includes(path) ? '#EAAA00' : '#000'}
+              fontWeight={location.pathname.includes(path) ? 'bold' : '500'}
             >
               {name}
             </Button>
@@ -81,9 +77,9 @@ const Header = () => {
 
         {isDesktop && (
           <Button
-            onClick={() => {
-              window.open('https://channel.nestprotocol.org/', '_blank')
-            }}
+            // onClick={() => {
+            //   window.open('', '_blank')
+            // }}
           >
             Start Building
           </Button>
@@ -115,8 +111,8 @@ const Header = () => {
                       {Menu.map(({ name, path }) => (
                         <Button
                           key={name}
-                          fontWeight={'semibold'}
-                          color={location.pathname.slice(1) === path ? '#EAAA00' : '#000'}
+                          color={location.pathname.includes(path) ? '#EAAA00' : '#000'}
+                          fontWeight={location.pathname.includes(path) ? 'bold' : '500'}
                           variant={'ghost'}
                           fontSize={['17px', '24px']}
                           p={0}
@@ -136,9 +132,9 @@ const Header = () => {
                     <Button
                       minH={'44px'}
                       px={'70px'}
-                      onClick={() => {
-                        window.open('https://channel.nestprotocol.org/', '_blank')
-                      }}
+                      // onClick={() => {
+                      //   window.open('https://channel.nestprotocol.org/', '_blank')
+                      // }}
                     >
                       Start Building
                     </Button>

@@ -19,11 +19,7 @@ const Root = () => {
       icon: Ecosystem_Icon_URI,
       bg: Ecosystem_URI,
       title: 'Explore the NEST Ecosystem',
-      desc: `A complete gaming space with ${
-        !isDesktop && '\n'
-      }applications of DeFi, GameFi\nand NFT built on the NEST. Swap, hedge, ${
-        !isDesktop && '\n'
-      }earn and even game\nwith the NEST network to ${!isDesktop && '\n'}gain excess returns.`
+      desc: `A complete gaming space with applications of DeFi, GameFi and NFT built on the NEST. Swap, hedge, earn and even game with the NEST network to gain excess returns.`
     },
     {
       name: 'Developers',
@@ -31,9 +27,7 @@ const Root = () => {
       icon: Developer_Icon_URI,
       bg: Developer_URI,
       title: 'Build smart contract with NEST',
-      desc: `Technical guidelines, source code,${
-        !isDesktop && '\n'
-      } and detailed training\nmaterials on how to build NEST-based\napplications from scratch here.`
+      desc: `Technical guidelines, source code, and detailed training materials on how to build NEST-based applications from scratch here.`
     },
     {
       name: 'Community',
@@ -41,11 +35,7 @@ const Root = () => {
       icon: Community_Icon_URI,
       bg: Community_URI,
       title: 'Community',
-      desc: `The NEST community is made${
-        !isDesktop && '\n'
-      } up of developers, creators,\nenthusiasts, explore, contribute to the${
-        !isDesktop && '\n'
-      } community and${isDesktop && '\n'} get reward.`
+      desc: `The NEST community is made up of developers, creators, enthusiasts, explore, contribute to the community and get reward.`
     }
   ]
 
@@ -102,6 +92,7 @@ const Root = () => {
             spacing={['13px', '16px']}
             bgImage={bg}
             bgSize={'100% 100%'}
+            px={'24px'}
           >
             <chakra.img src={icon} />
             <chakra.a
@@ -119,6 +110,7 @@ const Root = () => {
               whiteSpace={'break-spaces'}
               textAlign={'center'}
               href={'/#/' + path}
+              maxW={'480px'}
             >
               {desc}
             </chakra.a>

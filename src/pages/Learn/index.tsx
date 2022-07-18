@@ -49,6 +49,7 @@ const Learn = () => {
         bgImage={Banner_URI}
         bgSize={'100% 100%'}
         spacing={['22px', '44px']}
+        px={'24px'}
       >
         <Text
           whiteSpace={'break-spaces'}
@@ -58,11 +59,8 @@ const Learn = () => {
         >
           What is NEST
         </Text>
-        <Text fontSize={['12px', '24px']} fontWeight={'bold'} textAlign={'center'}>
-          A complete gaming space with applications of DeFi, GameFi
-          <br />
-          NFT built on the NEST. Swap, hedge, earn and even game
-          <br /> with the NEST network to gain excess returns.
+        <Text fontSize={['12px', '24px']} fontWeight={'bold'} textAlign={'center'} maxW={'720px'}>
+          A complete gaming space with applications of DeFi, GameFi NFT built on the NEST. Swap, hedge, earn and even game with the NEST network to gain excess returns.
         </Text>
       </Stack>
       {pages.map(({ name, path, icon, bg, title, desc }) => (

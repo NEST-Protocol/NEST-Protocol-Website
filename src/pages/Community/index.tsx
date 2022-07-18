@@ -15,7 +15,6 @@ import Banner_URI from '../../assets/webp/Community_pic_1.webp'
 import Twitter_pic from '../../assets/webp/Twitter_pic.webp'
 import Discord_pic from '../../assets/webp/Discord_pic.webp'
 import Telegram_pic from '../../assets/webp/Telegram_pic.webp'
-import Youtube_pic from '../../assets/webp/Youtube_pic.webp'
 import { Helmet } from 'react-helmet'
 
 const Community = () => {
@@ -36,11 +35,6 @@ const Community = () => {
       label: 'Medium',
       bg: Discord_pic,
       link: 'https://nest-protocol-82041.medium.com/'
-    },
-    {
-      label: 'YouTube',
-      bg: Youtube_pic,
-      link: 'https://www.youtube.com/channel/UC9o8XQ9GGrQFs5x6WYnh9mQ'
     }
   ]
 
@@ -57,6 +51,7 @@ const Community = () => {
         bgImage={Banner_URI}
         bgSize={'100% 100%'}
         spacing={['22px', '44px']}
+        px={'24px'}
       >
         <Text
           whiteSpace={'break-spaces'}
@@ -66,16 +61,12 @@ const Community = () => {
         >
           NEST Community
         </Text>
-        <Text fontSize={['12px', '24px']} fontWeight={'bold'} textAlign={'center'}>
-          The NEST community is made up of developers, creators,
-          <br />
-          enthusiasts, explore, contribute to the
-          <br />
-          community and get reward.
+        <Text fontSize={['12px', '24px']} fontWeight={'bold'} textAlign={'center'} maxW={'720px'}>
+          The NEST community is made up of developers, creators, enthusiasts, explore, contribute to the community and get reward.
         </Text>
       </Stack>
       <Stack align={'center'} px={['24px', '48px']}>
-        <SimpleGrid columns={2} spacing={['22px', '22px', '44px']}>
+        <SimpleGrid columns={[2, 3]} spacing={['22px', '22px', '44px']}>
           {menu.map(item => (
             <VStack
               key={item.label}
