@@ -36,7 +36,7 @@ const Developers = () => {
             />
           </Stack>
         ) }
-        <Stack maxW={['full', '768px']} pt={'24px'}>
+        <Stack maxW={['full', '768px']} pt={'112px'}>
           <ReactMarkdown  children={md} remarkPlugins={[remarkGfm]} className={'markdown-body'}/>
         </Stack>
       </HStack>
