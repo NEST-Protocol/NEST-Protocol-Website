@@ -26,7 +26,7 @@ const Docs = () => {
   return (
     <Stack maxW={'full'} align={"center"} px={['24px', '48px']}>
       <HStack maxW={'1440px'} w={"full"} align={"start"}>
-        <Stack w={'280px'} py={'24px'} position={"fixed"} fontWeight={500} fontSize={'sm'}>
+        <Stack w={'300px'} py={'24px'} position={"fixed"}>
           <MarkNav
             source={md}
             ordered={false}
