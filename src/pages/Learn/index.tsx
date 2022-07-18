@@ -86,7 +86,7 @@ const Learn = () => {
               fontSize={['17px', '24px']}
               fontWeight={'semibold'}
               color={'#434344'}
-              href={'/#/' + path}
+              href={path}
             >
               {title}
             </chakra.a>
@@ -96,7 +96,7 @@ const Learn = () => {
               color={'#7d7d7d'}
               whiteSpace={'break-spaces'}
               textAlign={'center'}
-              href={'/#/' + path}
+              href={path}
             >
               {desc}
             </chakra.a>

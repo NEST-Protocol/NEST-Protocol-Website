@@ -5,11 +5,9 @@ import remarkGfm from "remark-gfm";
 import MarkNav from 'markdown-navbar';
 import 'github-markdown-css/github-markdown-light.css';
 import './navbar.css';
-import {useNavigate} from "react-router-dom";
 
 const Docs = () => {
   const [md, setMd] = useState('');
-  const navigate = useNavigate()
 
   const fetchMd = useCallback(async () => {
     fetch('https://raw.githubusercontent.com/NEST-Protocol/NEST-Docs/test/README.md')
