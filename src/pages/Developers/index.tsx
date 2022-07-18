@@ -6,10 +6,7 @@ import * as React from "react";
 const Developers = () => {
   return (
     <Stack pt={'82px'}>
-      <Routes>
-        <Route path={'/'} element={<Docs />} />
-        <Route path={'docs'} element={<Docs />} />
-      </Routes>
+      <Docs />
     </Stack>
   )
 }

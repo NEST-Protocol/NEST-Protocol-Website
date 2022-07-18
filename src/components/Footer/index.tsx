@@ -13,6 +13,7 @@ const Footer = () => {
         align={'center'}
         bgImage={BG_URL}
         bgSize={'100% 100%'}
+        zIndex={'10'}
       >
         <HStack maxW={'1440px'} w={'full'} align={'start'}>
           <Stack spacing={'44px'} w={'full'} minW={'200px'}>

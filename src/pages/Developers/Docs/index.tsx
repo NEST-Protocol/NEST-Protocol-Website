@@ -1,9 +1,15 @@
-import {HStack, Stack, Text} from '@chakra-ui/react'
+import {HStack, Stack} from '@chakra-ui/react'
 import {useCallback, useEffect, useState} from "react";
-import MarkdownPreview from '@uiw/react-markdown-preview';
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import MarkNav from 'markdown-navbar';
+import 'github-markdown-css/github-markdown.css';
+import './navbar.css';
+import {useNavigate} from "react-router-dom";
 
 const Docs = () => {
   const [md, setMd] = useState('');
+  const navigate = useNavigate()
 
   const fetchMd = useCallback(async () => {
     fetch('https://raw.githubusercontent.com/NEST-Protocol/NEST-Docs/test/README.md')
@@ -20,26 +26,17 @@ const Docs = () => {
   return (
     <Stack maxW={'full'} align={"center"} px={['24px', '48px']}>
       <HStack maxW={'1440px'} w={"full"} align={"start"}>
-        <Stack w={'280px'} py={'24px'} position={"fixed"} zIndex={'10'} fontWeight={500} fontSize={'sm'}>
-        </Stack>
-        <Stack maxW={'1440px'} pt={'24px'} pl={'360px'} pr={'120px'} overflow={"scroll"}>
-          <MarkdownPreview
+        <Stack w={'280px'} py={'24px'} position={"fixed"} fontWeight={500} fontSize={'sm'}>
+          <MarkNav
             source={md}
-            rehypeRewrite={(node, index, parent) => {
-              // @ts-ignore
-              if (node.tagName === "a" && parent && /^h(1|2|3|4|5|6)/.test(parent.tagName)) {
-                const child0 = parent.children[0]
-                // @ts-ignore
-                child0.properties.href = child0.properties.href.replace('\#' , '/#/developers/docs/?s=')
-                parent.children = [child0, parent.children[1]];
-                console.log(parent.children)
-              }
-            }}
-            onScroll={(e) => {
-              // @ts-ignore
-              console.log(e.target.scrollTop)}
-            }
+            ordered={false}
+            updateHashAuto={false}
+            headingTopOffset={100}
+            declarative={true}
           />
+        </Stack>
+        <Stack maxW={'1440px'} pt={'24px'} pl={'360px'} pr={'120px'}>
+          <ReactMarkdown children={md} remarkPlugins={[remarkGfm]} className={'markdown-body'}/>
         </Stack>
       </HStack>
     </Stack>

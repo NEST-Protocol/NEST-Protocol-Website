@@ -1,0 +1,60 @@
+.markdown-navigation {
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    width: 100%;
+    overflow: hidden;
+}
+
+.markdown-navigation .title-anchor {
+    display: block;
+    transition: all 0.2s;
+    margin: 0.8em 0;
+    font-weight: lighter;
+    line-height: 2em;
+    padding-right: 1.8em;
+    cursor: pointer;
+}
+
+.markdown-navigation .title-anchor:hover,
+.markdown-navigation .title-anchor.active {
+    background-color: #f8f8f8;
+    text-decoration: inherit;
+}
+
+.markdown-navigation .title-anchor.active {
+    color: #EAAA00;
+}
+
+.markdown-navigation .title-anchor small {
+    margin: 0 0.8em;
+}
+
+.markdown-navigation .title-level1 {
+    color: #003232;
+    font-size: 1.2em;
+    padding-left: 1em;
+    font-weight: normal;
+}
+
+.markdown-navigation .title-level2 {
+    color: #333;
+    font-size: 1em;
+    padding-left: 1em;
+    font-weight: normal;
+}
+
+.markdown-navigation .title-level3 {
+    display: none;
+}
+
+.markdown-navigation .title-level4 {
+    display: none;
+}
+
+.markdown-navigation .title-level5 {
+    display: none;
+}
+
+.markdown-navigation .title-level6 {
+    display: none;
+}
