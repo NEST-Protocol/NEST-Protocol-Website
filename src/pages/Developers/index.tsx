@@ -24,9 +24,9 @@ const Developers = () => {
 
   return (
     <Stack w={'full'} align={"center"} px={['24px', '48px']}>
-      <HStack maxW={'1440px'} w={"full"} align={"start"}>
+      <HStack maxW={'1440px'} w={"full"} align={"start"} spacing={'48px'}>
         { isDesktop && (
-          <Stack minW={'300px'} py={'24px'} position={"sticky"} top={'82px'}>
+          <Stack minW={'300px'} maxW={'300px'} py={'24px'} position={"sticky"} top={'82px'}>
             <MarkNav
               source={md}
               ordered={false}
