@@ -26,7 +26,7 @@ const Footer = () => {
               fontWeight={'semibold'}
               fontSize={['12px', '15px']}
             >
-              <Link style={{ textDecoration: 'none' }} href={'/#/ecosystem'}>
+              <Link style={{ textDecoration: 'none' }} href={'ecosystem'}>
                 Explore applications
               </Link>
             </Stack>
@@ -41,9 +41,9 @@ const Footer = () => {
               fontWeight={'semibold'}
               fontSize={['12px', '15px']}
             >
-              <Link href={'https://docs.nestprotocol.org'}>Docs</Link>
+              <Link href={'developers'} style={{ textDecoration: 'none' }}>Docs</Link>
               <Link href={'https://github.com/NEST-Protocol/'}>Github</Link>
-              <Link href={'https://docs.nestprotocol.org'}>Set up local environment</Link>
+              <Link href={'developers#Set%20Up%20Your%20Local%20Environment'} style={{ textDecoration: 'none' }}>Set up local environment</Link>
             </Stack>
           </Stack>
           <Stack spacing={'44px'} w={'full'} minW={'200px'}>
@@ -56,7 +56,7 @@ const Footer = () => {
               fontWeight={'semibold'}
               fontSize={['12px', '15px']}
             >
-              <Link style={{ textDecoration: 'none' }} href={'/#/community'}>
+              <Link style={{ textDecoration: 'none' }} href={'community'}>
                 Online communities
               </Link>
             </Stack>
@@ -71,10 +71,10 @@ const Footer = () => {
               fontWeight={'semibold'}
               fontSize={['12px', '15px']}
             >
-              <Link style={{ textDecoration: 'none' }} href={'/#/learn'}>
+              <Link style={{ textDecoration: 'none' }} href={'learn'}>
                 What is NEST
               </Link>
-              <Link style={{ textDecoration: 'none' }} href={'/#/learn'}>
+              <Link style={{ textDecoration: 'none' }} href={'learn'}>
                 Blogs
               </Link>
             </Stack>
@@ -111,7 +111,7 @@ const Footer = () => {
               fontWeight={'semibold'}
               fontSize={['12px', '15px']}
             >
-              <Link href={'/#/ecosystem'}>Explore applications</Link>
+              <Link href={'ecosystem'}>Explore applications</Link>
             </Stack>
           </Stack>
         </HStack>
@@ -126,9 +126,9 @@ const Footer = () => {
               fontWeight={'semibold'}
               fontSize={['12px', '15px']}
             >
-              <Link href={'https://docs.nestprotocol.org/'}>Docs</Link>
+              <Link href={'developers'}>Docs</Link>
               <Link href={'https://github.com/NEST-Protocol'}>Github</Link>
-              <Link href={'https://docs.nestprotocol.org'}>Set up local environment</Link>
+              <Link href={'developers#Set%20Up%20Your%20Local%20Environment'}>Set up local environment</Link>
             </Stack>
           </Stack>
           <Stack spacing={'32px'} w={'full'}>
