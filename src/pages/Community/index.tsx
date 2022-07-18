@@ -9,7 +9,7 @@ import {
   Text,
   Stack
 } from '@chakra-ui/react'
-import Right1 from '../../assets/svg/RIGHT_1_icon.svg'
+import Right1 from '../../assets/svg/right_icon.svg'
 import * as React from 'react'
 import Banner_URI from '../../assets/webp/Community_pic_1.webp'
 import Twitter_pic from '../../assets/webp/Twitter_pic.webp'
