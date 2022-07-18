@@ -33,12 +33,11 @@
 .markdown-navigation .title-level1 {
     color: #003232;
     font-size: 1em;
-    padding-left: 1em;
-    font-weight: normal;
+    font-weight: 600;
 }
 
 .markdown-navigation .title-level2 {
-    color: #333;
+    color: #003232;
     font-size: 1em;
     padding-left: 1em;
     font-weight: normal;
