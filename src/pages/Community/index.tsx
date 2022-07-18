@@ -66,7 +66,7 @@ const Community = () => {
         </Text>
       </Stack>
       <Stack align={'center'} px={['24px', '48px']}>
-        <SimpleGrid columns={[2, 3]} spacing={['22px', '22px', '44px']}>
+        <SimpleGrid columns={2} spacing={['22px', '22px', '44px']}>
           {menu.map(item => (
             <VStack
               key={item.label}
