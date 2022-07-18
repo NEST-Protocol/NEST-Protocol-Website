@@ -3,7 +3,7 @@ import {useCallback, useEffect, useState} from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import MarkNav from 'markdown-navbar';
-import 'github-markdown-css/github-markdown.css';
+import 'github-markdown-css/github-markdown-light.css';
 import './navbar.css';
 import {useNavigate} from "react-router-dom";
 
