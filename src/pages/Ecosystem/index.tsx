@@ -65,7 +65,7 @@ const Ecosystem = () => {
             <br />
             options
             <br />
-            or do defi games to win NEST.
+            or play DeFi games to win NEST.
           </chakra.a>
         </Stack>
       </Stack>

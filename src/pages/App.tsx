@@ -8,7 +8,6 @@ import Ecosystem from './Ecosystem'
 import Community from './Community'
 import Learn from './Learn'
 import Developers from "./Developers";
-import Docs from "./Developers/Docs";
 
 export const App = () => {
   return (
@@ -19,6 +18,7 @@ export const App = () => {
           <Route path="/" element={<Root />} />
           <Route path={'ecosystem'} element={<Ecosystem />} />
           <Route path={'developers'} element={<Developers />} />
+          <Route path={'developers/*'} element={<Developers />} />
           <Route path={'community'} element={<Community />} />
           <Route path={'learn'} element={<Learn />} />
           <Route
