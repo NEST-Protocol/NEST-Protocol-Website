@@ -20,7 +20,14 @@ export const App = () => {
           <Route path={'developers'} element={<Developers />} />
           <Route path={'community'} element={<Community />} />
           <Route path={'learn'} element={<Learn />} />
-          <Route path={"*"} element={<Developers />}/>
+          <Route
+            path="*"
+            element={
+              <Text p={2}>
+                <p>There's nothing here!</p>
+              </Text>
+            }
+          />
         </Routes>
         <Footer />
       </Stack>

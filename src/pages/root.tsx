@@ -9,9 +9,11 @@ import Ecosystem_URI from '../assets/webp/Home_pic_3.webp'
 import Developer_Icon_URI from '../assets/webp/Home_Developers_icon.webp'
 import Community_Icon_URI from '../assets/webp/Home_Community_icon.webp'
 import Ecosystem_Icon_URI from '../assets/webp/Home_Ecosystem_icon.webp'
+import {useNavigate} from "react-router-dom";
 
 const Root = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
+  const navigate = useNavigate()
   const pages = [
     {
       name: 'Ecosystem',
@@ -69,7 +71,7 @@ const Root = () => {
             minH={isDesktop ? '34px' : '44px'}
             px={isDesktop ? '20px' : '70px'}
             onClick={() => {
-              window.location.href = '/#/learn'
+              navigate('learn')
             }}
           >
             What is NEST
@@ -99,7 +101,7 @@ const Root = () => {
               fontSize={['17px', '24px']}
               fontWeight={'semibold'}
               color={'#003232'}
-              href={'/#/' + path}
+              href={path}
             >
               {title}
             </chakra.a>
@@ -109,7 +111,7 @@ const Root = () => {
               color={'#003232'}
               whiteSpace={'break-spaces'}
               textAlign={'center'}
-              href={'/#/' + path}
+              href={path}
               maxW={'480px'}
             >
               {desc}

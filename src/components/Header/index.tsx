@@ -77,9 +77,9 @@ const Header = () => {
 
         {isDesktop && (
           <Button
-            // onClick={() => {
-            //   window.open('', '_blank')
-            // }}
+            onClick={() => {
+              navigate('developers#Set%20Up%20Your%20Local%20Environment')
+            }}
           >
             Start Building
           </Button>
@@ -132,9 +132,9 @@ const Header = () => {
                     <Button
                       minH={'44px'}
                       px={'70px'}
-                      // onClick={() => {
-                      //   window.open('https://channel.nestprotocol.org/', '_blank')
-                      // }}
+                      onClick={() => {
+                        navigate('developers#Set%20Up%20Your%20Local%20Environment')
+                      }}
                     >
                       Start Building
                     </Button>
