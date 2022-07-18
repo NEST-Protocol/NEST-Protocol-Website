@@ -15,7 +15,7 @@ const Footer = () => {
         bgSize={'100% 100%'}
         zIndex={'10'}
       >
-        <Wrap maxW={'1440px'} w={'full'} align={'start'}>
+        <Wrap maxW={'1440px'} w={'full'} align={'start'} spacingY={'48px'}>
           <WrapItem pl={4} >
             <Stack spacing={'44px'} w={'full'} minW={'200px'}>
               <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
