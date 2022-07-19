@@ -59,7 +59,7 @@ const Header = () => {
         {isDesktop &&
           Menu.map(({ name, pathname }) => (
             <Button
-              variant={"ghost"}
+              variant={'ghost'}
               key={name}
               cursor={'pointer'}
               onClick={() => {

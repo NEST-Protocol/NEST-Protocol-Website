@@ -1,4 +1,4 @@
-import {Heading, Stack, chakra, Text, Button, HStack, useMediaQuery} from '@chakra-ui/react'
+import { Heading, Stack, chakra, Text, Button, HStack, useMediaQuery } from '@chakra-ui/react'
 import * as React from 'react'
 import { Helmet } from 'react-helmet'
 
@@ -9,14 +9,14 @@ import Ecosystem_URI from '../assets/webp/Home_pic_3.webp'
 import Developer_Icon_URI from '../assets/webp/Home_Developers_icon.webp'
 import Community_Icon_URI from '../assets/webp/Home_Community_icon.webp'
 import Ecosystem_Icon_URI from '../assets/webp/Home_Ecosystem_icon.webp'
-import {useNavigate} from "react-router-dom";
-import NEST_URI from "../assets/svg/nest.svg";
-import FORT_URI from "../assets/svg/fort.svg";
-import Home_NESTxFORT_icon from '../assets/webp/Home_NESTxFORT_icon.webp';
-import Home_icon_3 from '../assets/webp/Home_icon_3.webp';
-import Home_icon_2 from '../assets/webp/Home_icon_2.webp';
-import Home_icon_4 from '../assets/webp/Home_icon_4.webp';
-import ChakraBox from "../components/ChakraBox";
+import { useNavigate } from 'react-router-dom'
+import NEST_URI from '../assets/svg/nest.svg'
+import FORT_URI from '../assets/svg/fort.svg'
+import Home_NESTxFORT_icon from '../assets/webp/Home_NESTxFORT_icon.webp'
+import Home_icon_3 from '../assets/webp/Home_icon_3.webp'
+import Home_icon_2 from '../assets/webp/Home_icon_2.webp'
+import Home_icon_4 from '../assets/webp/Home_icon_4.webp'
+import ChakraBox from '../components/ChakraBox'
 
 const Root = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -66,11 +66,18 @@ const Root = () => {
           bgSize={'100% 100%'}
           spacing={'24px'}
         >
-          <ChakraBox position={'absolute'} h={'360px'} w={"full"} bgSize={'contain'}
-                     bgImage={Home_NESTxFORT_icon} bgRepeat={"no-repeat"} bgPosition={"center"} zIndex={0}
+          <ChakraBox
+            position={'absolute'}
+            h={'360px'}
+            w={'full'}
+            bgSize={'contain'}
+            bgImage={Home_NESTxFORT_icon}
+            bgRepeat={'no-repeat'}
+            bgPosition={'center'}
+            zIndex={0}
           />
-          <chakra.img src={NEST_URI} h={'34px'} alt={'nest_logo'} zIndex={1}/>
-          <chakra.img src={FORT_URI} h={'34px'} alt={'fort_logo'} zIndex={1}/>
+          <chakra.img src={NEST_URI} h={'34px'} alt={'nest_logo'} zIndex={1} />
+          <chakra.img src={FORT_URI} h={'34px'} alt={'fort_logo'} zIndex={1} />
           <Text
             whiteSpace={'break-spaces'}
             textAlign={'center'}
@@ -114,8 +121,16 @@ const Root = () => {
             bgSize={'100% 100%'}
             px={'24px'}
           >
-            <Stack position={'absolute'} h={'440px'} w={"full"} bgImage={bgIcon} bgRepeat={"no-repeat"} bgPosition={"center"} zIndex={0}/>
-            <chakra.img src={icon} zIndex={1}/>
+            <Stack
+              position={'absolute'}
+              h={'440px'}
+              w={'full'}
+              bgImage={bgIcon}
+              bgRepeat={'no-repeat'}
+              bgPosition={'center'}
+              zIndex={0}
+            />
+            <chakra.img src={icon} zIndex={1} />
             <chakra.a
               fontSize={['17px', '24px']}
               fontWeight={'semibold'}

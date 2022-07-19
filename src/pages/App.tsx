@@ -1,5 +1,5 @@
 import * as React from 'react'
-import {Spacer, Stack, Text} from '@chakra-ui/react'
+import { Spacer, Stack, Text } from '@chakra-ui/react'
 import { Route, Routes } from 'react-router-dom'
 import Root from './root'
 import Footer from '../components/Footer'
@@ -7,7 +7,7 @@ import Header from '../components/Header'
 import Ecosystem from './Ecosystem'
 import Community from './Community'
 import Learn from './Learn'
-import Developers from "./Developers";
+import Developers from './Developers'
 
 export const App = () => {
   return (
@@ -31,7 +31,7 @@ export const App = () => {
           />
         </Routes>
       </Stack>
-      <Spacer/>
+      <Spacer />
       <Footer />
     </Stack>
   )

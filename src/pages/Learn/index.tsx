@@ -18,11 +18,10 @@ import Blogs_pic_4 from '../../assets/webp/Blogs_pic_4.webp'
 import Blogs_pic_5 from '../../assets/webp/Blogs_pic_5.webp'
 import Blogs_pic_6 from '../../assets/webp/Blogs_pic_6.webp'
 import { Helmet } from 'react-helmet'
-import NEST_icon1  from '../../assets/webp/NEST_icon_1.webp'
+import NEST_icon1 from '../../assets/webp/NEST_icon_1.webp'
 import blogs_logo_1 from '../../assets/webp/blogs_logo_1.webp'
 import blogs_logo_2 from '../../assets/webp/blogs_logo_2.webp'
 import NEST_logo from '../../assets/svg/nest.svg'
-
 
 const Learn = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -55,8 +54,15 @@ const Learn = () => {
         spacing={['22px', '44px']}
         px={'24px'}
       >
-        <Stack position={'absolute'} h={'660px'} w={"full"} bgSize={'contain'}
-               bgImage={NEST_icon1} bgRepeat={"no-repeat"} bgPosition={"center"} zIndex={0}
+        <Stack
+          position={'absolute'}
+          h={'660px'}
+          w={'full'}
+          bgSize={'contain'}
+          bgImage={NEST_icon1}
+          bgRepeat={'no-repeat'}
+          bgPosition={'center'}
+          zIndex={0}
         />
         <Text
           whiteSpace={'break-spaces'}
@@ -67,8 +73,15 @@ const Learn = () => {
         >
           What is NEST
         </Text>
-        <Text fontSize={['12px', '24px']} fontWeight={'bold'} textAlign={'center'} maxW={'720px'} zIndex={1}>
-          A complete gaming space with applications of DeFi, GameFi NFT built on the NEST. Swap, hedge, earn and even game with the NEST network to gain excess returns.
+        <Text
+          fontSize={['12px', '24px']}
+          fontWeight={'bold'}
+          textAlign={'center'}
+          maxW={'720px'}
+          zIndex={1}
+        >
+          A complete gaming space with applications of DeFi, GameFi NFT built on the NEST. Swap,
+          hedge, earn and even game with the NEST network to gain excess returns.
         </Text>
       </Stack>
       {pages.map(({ name, path, icon, bg, title, desc }) => (
@@ -119,7 +132,13 @@ const Learn = () => {
             </Heading>
           </Stack>
         </Stack>
-        <Stack px={['24px', '48px']} align={'center'} minH={'440px'} justify={'center'} spacing={'16px'}>
+        <Stack
+          px={['24px', '48px']}
+          align={'center'}
+          minH={'440px'}
+          justify={'center'}
+          spacing={'16px'}
+        >
           <SimpleGrid columns={[1, 1, 2, 3]} spacing={['22px', '22px', '44px']} pb={'27px'}>
             {[
               {
@@ -178,11 +197,16 @@ const Learn = () => {
                   window.open(item.link)
                 }}
               >
-                <Stack bgImage={item.bg} bgRepeat={"no-repeat"}
-                       w={'full'} bgSize={"cover"}
-                       align={"center"} justify={"center"}
-                       h={['120px', '160px']}>
-                  <chakra.img src={item.logo} _hover={{ transform: 'scale(1.05)' }}/>
+                <Stack
+                  bgImage={item.bg}
+                  bgRepeat={'no-repeat'}
+                  w={'full'}
+                  bgSize={'cover'}
+                  align={'center'}
+                  justify={'center'}
+                  h={['120px', '160px']}
+                >
+                  <chakra.img src={item.logo} _hover={{ transform: 'scale(1.05)' }} />
                 </Stack>
                 <VStack
                   w={'full'}

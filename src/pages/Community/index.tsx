@@ -60,8 +60,15 @@ const Community = () => {
         spacing={['22px', '44px']}
         px={'24px'}
       >
-        <Stack position={'absolute'} h={'600px'} w={"full"} bgSize={'contain'}
-               bgImage={Community_icon} bgRepeat={"no-repeat"} bgPosition={"center"} zIndex={0}
+        <Stack
+          position={'absolute'}
+          h={'600px'}
+          w={'full'}
+          bgSize={'contain'}
+          bgImage={Community_icon}
+          bgRepeat={'no-repeat'}
+          bgPosition={'center'}
+          zIndex={0}
         />
         <Text
           whiteSpace={'break-spaces'}
@@ -72,12 +79,19 @@ const Community = () => {
         >
           NEST Community
         </Text>
-        <Text fontSize={['12px', '24px']} fontWeight={'bold'} textAlign={'center'} maxW={'720px'} zIndex={1}>
-          The NEST community is made up of developers, creators, enthusiasts, explore, contribute to the community and get reward.
+        <Text
+          fontSize={['12px', '24px']}
+          fontWeight={'bold'}
+          textAlign={'center'}
+          maxW={'720px'}
+          zIndex={1}
+        >
+          The NEST community is made up of developers, creators, enthusiasts, explore, contribute to
+          the community and get reward.
         </Text>
       </Stack>
-      <Stack align={'center'} px={['24px', '48px']} w={"full"}>
-        <SimpleGrid columns={2} spacing={['22px', '22px', '44px']} w={"full"} maxW={'660px'}>
+      <Stack align={'center'} px={['24px', '48px']} w={'full'}>
+        <SimpleGrid columns={2} spacing={['22px', '22px', '44px']} w={'full'} maxW={'660px'}>
           {menu.map(item => (
             <VStack
               key={item.label}
@@ -88,11 +102,16 @@ const Community = () => {
               boxShadow={'0px 0px 45px 5px #E5E5E5'}
               overflow={'hidden'}
             >
-              <Stack bgImage={item.bg} bgRepeat={"no-repeat"}
-                     w={'full'} bgSize={"cover"}
-                     align={"center"} justify={"center"}
-                     h={['120px', '200px']}>
-                <chakra.img src={item.icon} _hover={{ transform: 'scale(1.05)' }}/>
+              <Stack
+                bgImage={item.bg}
+                bgRepeat={'no-repeat'}
+                w={'full'}
+                bgSize={'cover'}
+                align={'center'}
+                justify={'center'}
+                h={['120px', '200px']}
+              >
+                <chakra.img src={item.icon} _hover={{ transform: 'scale(1.05)' }} />
               </Stack>
               <HStack
                 px={['22px', '22px', '44px']}

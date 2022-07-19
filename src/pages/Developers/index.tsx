@@ -1,21 +1,21 @@
-import {HStack, Stack, useMediaQuery, Text, Divider, Button} from '@chakra-ui/react'
-import {useCallback, useEffect, useState} from "react";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
-import 'github-markdown-css/github-markdown-light.css';
-import {useLocation, useNavigate} from "react-router-dom";
+import { HStack, Stack, useMediaQuery, Text, Divider, Button } from '@chakra-ui/react'
+import { useCallback, useEffect, useState } from 'react'
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
+import 'github-markdown-css/github-markdown-light.css'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 const Developers = () => {
-  const [md, setMd] = useState('');
-  const [isDesktop] = useMediaQuery('(min-width: 768px)');
+  const [md, setMd] = useState('')
+  const [isDesktop] = useMediaQuery('(min-width: 768px)')
   const menu = [
     {
       title: 'Overview',
       children: [
         {
           title: 'What is NEST?',
-          pathname: '/docs/overview.md',
-        },
+          pathname: '/docs/overview.md'
+        }
       ]
     },
     {
@@ -24,7 +24,7 @@ const Developers = () => {
         {
           title: 'Set Up Local Environment',
           pathname: '/docs/Guide/Set-Up-Local-Environment.md'
-        },
+        }
       ]
     },
     {
@@ -45,9 +45,9 @@ const Developers = () => {
         {
           title: 'Error Codes',
           pathname: '/docs/Technical-Reference/Error-Codes.md'
-        },
+        }
       ]
-    },
+    }
   ]
   const navigate = useNavigate()
   const location = useLocation()
@@ -65,7 +65,7 @@ const Developers = () => {
         .then(text => {
           setMd(text)
         })
-        .catch((e) => {
+        .catch(e => {
           console.log(e)
         })
     }
@@ -76,16 +76,29 @@ const Developers = () => {
   }, [fetchMd])
 
   return (
-    <Stack w={'full'} align={"center"} px={['24px', '48px']}>
-      <HStack maxW={'1440px'} w={"full"} align={"start"} spacing={'48px'} justifyContent={"space-between"}>
+    <Stack w={'full'} align={'center'} px={['24px', '48px']}>
+      <HStack
+        maxW={'1440px'}
+        w={'full'}
+        align={'start'}
+        spacing={'48px'}
+        justifyContent={'space-between'}
+      >
         {isDesktop && (
-          <Stack minW={'300px'} maxW={'300px'} py={'24px'} position={"sticky"} top={'88px'} fontSize={'15px'}
-                 spacing={'24px'}>
+          <Stack
+            minW={'300px'}
+            maxW={'300px'}
+            py={'24px'}
+            position={'sticky'}
+            top={'88px'}
+            fontSize={'15px'}
+            spacing={'24px'}
+          >
             <HStack>
               <Button
                 w={'150px'}
                 fontWeight={600}
-                variant={"outline"}
+                variant={'outline'}
                 onClick={() => {
                   window.open('https://github.com/NEST-Protocol/', '_blank')
                 }}
@@ -93,42 +106,57 @@ const Developers = () => {
                 Github
               </Button>
             </HStack>
-            <Divider/>
-            {menu.map((item => (
+            <Divider />
+            {menu.map(item => (
               <Stack key={item.title}>
-                <Text fontWeight={600} color={'#003232'}>{item.title}</Text>
+                <Text fontWeight={600} color={'#003232'}>
+                  {item.title}
+                </Text>
                 {item.children.map(child => (
                   <Text
                     _hover={{ color: '#EAAA00' }}
                     color={location.pathname === child.pathname ? '#EAAA00' : '#003232'}
                     fontWeight={location.pathname === child.pathname ? 600 : 400}
                     key={child.title}
-                    cursor={"pointer"}
+                    cursor={'pointer'}
                     onClick={() => {
                       navigate(child.pathname)
                     }}
-                  >{child.title}</Text>
+                  >
+                    {child.title}
+                  </Text>
                 ))}
               </Stack>
-            )))}
+            ))}
           </Stack>
         )}
         <Stack minW={['full', '768px']} maxW={['full', '768px']} pt={'112px'} minH={'50vh'}>
-          <ReactMarkdown children={md} remarkPlugins={[remarkGfm]} className={'markdown-body'}/>
+          <ReactMarkdown children={md} remarkPlugins={[remarkGfm]} className={'markdown-body'} />
         </Stack>
 
         {isDesktop && (
-          <Stack minW={'300px'} maxW={'300px'} py={'24px'} position={"sticky"} top={'88px'} fontSize={'15px'}
-                 spacing={'24px'}>
+          <Stack
+            minW={'300px'}
+            maxW={'300px'}
+            py={'24px'}
+            position={'sticky'}
+            top={'88px'}
+            fontSize={'15px'}
+            spacing={'24px'}
+          >
             <Text
               _hover={{ color: '#EAAA00' }}
               fontSize={'15px'}
               color={'#003232'}
-              cursor={"pointer"}
+              cursor={'pointer'}
               fontWeight={'600'}
               onClick={() => {
-                window.open('https://github.com/NEST-Protocol/NEST-Docs/blob/test' + location.pathname, '_blank')
-              }}>
+                window.open(
+                  'https://github.com/NEST-Protocol/NEST-Docs/blob/test' + location.pathname,
+                  '_blank'
+                )
+              }}
+            >
               Edit on GitHub
             </Text>
           </Stack>
