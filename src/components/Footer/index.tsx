@@ -1,10 +1,12 @@
-import {Link, Stack, Text, HStack, useMediaQuery, chakra, Wrap, WrapItem} from '@chakra-ui/react'
+import {Stack, Text, HStack, useMediaQuery, chakra, Wrap, WrapItem} from '@chakra-ui/react'
 import BG_URL from '../../assets/webp/Footer_bg.webp'
 import Footer_icon from '../../assets/webp/Footer_icon.webp';
 import * as React from "react";
+import {useNavigate} from "react-router-dom";
 
 const Footer = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
+  const navigate = useNavigate()
 
   if (isDesktop) {
     return (
@@ -31,9 +33,13 @@ const Footer = () => {
                 fontWeight={'semibold'}
                 fontSize={['12px', '15px']}
               >
-                <Link style={{textDecoration: 'none'}} href={'ecosystem'}>
+                <Text
+                  cursor={"pointer"}
+                  onClick={() => {
+                  navigate('ecosystem')
+                }}>
                   Explore applications
-                </Link>
+                </Text>
               </Stack>
             </Stack>
           </WrapItem>
@@ -48,10 +54,27 @@ const Footer = () => {
                 fontWeight={'semibold'}
                 fontSize={['12px', '15px']}
               >
-                <Link href={'developers'} style={{textDecoration: 'none'}}>Docs</Link>
-                <Link href={'https://github.com/NEST-Protocol/'}>Github</Link>
-                <Link href={'developers#Set%20Up%20Your%20Local%20Environment'} style={{textDecoration: 'none'}}>Set up
-                  local environment</Link>
+                <Text
+                  cursor={"pointer"}
+                  onClick={() => {
+                    navigate('developers')
+                  }}>
+                  Docs
+                </Text>
+                <Text
+                  cursor={"pointer"}
+                  onClick={() => {
+                    window.open('https://github.com/NEST-Protocol/', '_blank')
+                  }}>
+                  Github
+                </Text>
+                <Text
+                  cursor={"pointer"}
+                  onClick={() => {
+                    navigate('developers')
+                  }}>
+                  Set up local environment
+                </Text>
               </Stack>
             </Stack>
           </WrapItem>
@@ -66,9 +89,13 @@ const Footer = () => {
                 fontWeight={'semibold'}
                 fontSize={['12px', '15px']}
               >
-                <Link style={{textDecoration: 'none'}} href={'community'}>
+                <Text
+                  cursor={"pointer"}
+                  onClick={() => {
+                    navigate('community')
+                  }}>
                   Online communities
-                </Link>
+                </Text>
               </Stack>
             </Stack>
           </WrapItem>
@@ -83,12 +110,20 @@ const Footer = () => {
                 fontWeight={'semibold'}
                 fontSize={['12px', '15px']}
               >
-                <Link style={{textDecoration: 'none'}} href={'learn'}>
+                <Text
+                  cursor={"pointer"}
+                  onClick={() => {
+                    navigate('learn')
+                  }}>
                   What is NEST
-                </Link>
-                <Link style={{textDecoration: 'none'}} href={'learn'}>
+                </Text>
+                <Text
+                  cursor={"pointer"}
+                  onClick={() => {
+                    navigate('learn')
+                  }}>
                   Blogs
-                </Link>
+                </Text>
               </Stack>
             </Stack>
           </WrapItem>
@@ -128,7 +163,13 @@ const Footer = () => {
               fontWeight={'semibold'}
               fontSize={['12px', '15px']}
             >
-              <Link href={'ecosystem'}>Explore applications</Link>
+              <Text
+                cursor={"pointer"}
+                onClick={() => {
+                  navigate('ecosystem')
+                }}>
+                Explore applications
+              </Text>
             </Stack>
           </Stack>
         </HStack>
@@ -143,9 +184,27 @@ const Footer = () => {
               fontWeight={'semibold'}
               fontSize={['12px', '15px']}
             >
-              <Link href={'developers'}>Docs</Link>
-              <Link href={'https://github.com/NEST-Protocol'}>Github</Link>
-              <Link href={'developers#Set%20Up%20Your%20Local%20Environment'}>Set up local environment</Link>
+              <Text
+                cursor={"pointer"}
+                onClick={() => {
+                  navigate('developers')
+                }}>
+                Docs
+              </Text>
+              <Text
+                cursor={"pointer"}
+                onClick={() => {
+                  window.open('https://github.com/NEST-Protocol', '_blank')
+                }}>
+                Github
+              </Text>
+              <Text
+                cursor={"pointer"}
+                onClick={() => {
+                  navigate('developers')
+                }}>
+                Set up local environment
+              </Text>
             </Stack>
           </Stack>
           <Stack spacing={'32px'} w={'full'}>
@@ -158,7 +217,13 @@ const Footer = () => {
               fontWeight={'semibold'}
               fontSize={['12px', '15px']}
             >
-              <Link style={{textDecoration: 'none'}} href={'/community'}>Online communities</Link>
+              <Text
+                cursor={"pointer"}
+                onClick={() => {
+                  navigate('community')
+                }}>
+                Online communities
+              </Text>
             </Stack>
           </Stack>
         </HStack>
@@ -173,7 +238,13 @@ const Footer = () => {
               fontWeight={'semibold'}
               fontSize={['12px', '15px']}
             >
-              <Link style={{textDecoration: 'none'}} href={'/learn'}>What is NEST</Link>
+              <Text
+                cursor={"pointer"}
+                onClick={() => {
+                  navigate('learn')
+                }}>
+                What is NEST
+              </Text>
             </Stack>
           </Stack>
           <Stack spacing={'32px'} w={'full'}>
@@ -186,9 +257,13 @@ const Footer = () => {
               fontWeight={'semibold'}
               fontSize={['12px', '15px']}
             >
-              <Link style={{textDecoration: 'none'}} href={'learn'}>
+              <Text
+                cursor={"pointer"}
+                onClick={() => {
+                  navigate('learn')
+                }}>
                 Blogs
-              </Link>
+              </Text>
             </Stack>
           </Stack>
         </HStack>

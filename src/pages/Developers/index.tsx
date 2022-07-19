@@ -2,9 +2,7 @@ import {HStack, Stack, useMediaQuery} from '@chakra-ui/react'
 import {useCallback, useEffect, useState} from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import MarkNav from 'markdown-navbar';
 import 'github-markdown-css/github-markdown-light.css';
-import './navbar.css';
 
 const Developers = () => {
   const [md, setMd] = useState('');
@@ -14,7 +12,7 @@ const Developers = () => {
     fetch('https://raw.githubusercontent.com/NEST-Protocol/NEST-Docs/test/README.md')
       .then(res => res.text())
       .then(text => {
-        setMd('\n' + text)
+        setMd(text)
       })
   }, []);
 
@@ -27,13 +25,7 @@ const Developers = () => {
       <HStack maxW={'1440px'} w={"full"} align={"start"} spacing={'48px'}>
         { isDesktop && (
           <Stack minW={'300px'} maxW={'300px'} py={'24px'} position={"sticky"} top={'82px'}>
-            <MarkNav
-              source={md}
-              ordered={false}
-              updateHashAuto={false}
-              headingTopOffset={100}
-              declarative={true}
-            />
+
           </Stack>
         ) }
         <Stack maxW={['full', '768px']} pt={'112px'}>

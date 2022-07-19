@@ -169,15 +169,12 @@ const Learn = () => {
                   window.open(item.link)
                 }}
               >
-                <Box overflow={'hidden'} w={"full"}>
-                  <chakra.img
-                    src={item.bg}
-                    alt={item.label}
-                    style={{ objectFit: 'fill' }}
-                    _hover={{ transform: 'scale(1.05)' }}
-                    w={"full"}
-                  />
-                </Box>
+                <Stack bgImage={item.bg} bgRepeat={"no-repeat"}
+                       w={'full'} bgSize={"cover"}
+                       align={"center"} justify={"center"}
+                       h={['120px', '160px']}>
+                  {/*<chakra.img src={item.bg} _hover={{ transform: 'scale(1.05)' }}/>*/}
+                </Stack>
                 <VStack
                   w={'full'}
                   px={['22px', '22px', '44px']}
