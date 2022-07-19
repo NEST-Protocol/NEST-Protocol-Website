@@ -77,11 +77,10 @@ const Developers = () => {
 
   return (
     <Stack w={'full'} align={"center"} px={['24px', '48px']}>
-      <HStack maxW={'1440px'} w={"full"} align={"start"} spacing={'48px'}>
+      <HStack maxW={'1440px'} w={"full"} align={"start"} spacing={'48px'} justifyContent={"space-between"}>
         {isDesktop && (
-          <Stack minW={'300px'} maxW={'300px'} py={'24px'} position={"sticky"} top={'82px'} fontSize={'15px'}
-                 spacing={'24px'} overflow={"scroll"}
-          >
+          <Stack minW={'300px'} maxW={'300px'} py={'24px'} position={"sticky"} top={'88px'} fontSize={'15px'}
+                 spacing={'24px'}>
             <Button
               fontWeight={600}
               variant={"outline"}
@@ -97,6 +96,7 @@ const Developers = () => {
                 <Text fontWeight={600}>{item.title}</Text>
                 {item.children.map(child => (
                   <Text
+                    _hover={{ color: '#EAAA00' }}
                     color={location.pathname === child.pathname ? '#EAAA00' : '#003232'}
                     fontWeight={location.pathname === child.pathname ? 600 : 400}
                     key={child.title}
@@ -110,9 +110,24 @@ const Developers = () => {
             )))}
           </Stack>
         )}
-        <Stack maxW={['full', '768px']} pt={'112px'} minH={'50vh'}>
+        <Stack minW={['full', '768px']} maxW={['full', '768px']} pt={'112px'} minH={'50vh'}>
           <ReactMarkdown children={md} remarkPlugins={[remarkGfm]} className={'markdown-body'}/>
         </Stack>
+
+        {isDesktop && (
+          <Stack minW={'300px'} maxW={'300px'} py={'24px'} position={"sticky"} top={'88px'} fontSize={'15px'}
+                 spacing={'24px'}>
+            <Text
+              _hover={{ color: '#EAAA00' }}
+              cursor={"pointer"}
+              fontWeight={'600'}
+              onClick={() => {
+                window.open('https://github.com/NEST-Protocol/NEST-Docs/blob/test' + location.pathname, '_blank')
+              }}>
+              Edit on GitHub
+            </Text>
+          </Stack>
+        )}
       </HStack>
     </Stack>
   )

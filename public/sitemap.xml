@@ -7,32 +7,67 @@
 
 <url>
   <loc>https://nestprotocol.org/</loc>
-  <lastmod>2021-12-15T11:09:06+00:00</lastmod>
+  <lastmod>2022-7-20T00:00:00+00:00</lastmod>
 </url>
 
 <url>
   <loc>https://nestprotocol.org/doc/ennestwhitepaper.pdf</loc>
-  <lastmod>2021-12-15T11:09:06+00:00</lastmod>
+  <lastmod>2022-7-20T00:00:00+00:00</lastmod>
 </url>
 
 <url>
   <loc>https://nestprotocol.org/doc/zhnestwhitepaper.pdf</loc>
-  <lastmod>2021-12-15T11:09:06+00:00</lastmod>
+  <lastmod>2022-7-20T00:00:00+00:00</lastmod>
 </url>
 
 <url>
-  <loc>https://nestprotocol.org/ecosystem</loc>
-  <lastmod>2021-12-15T11:09:06+00:00</lastmod>
+  <loc>https://nestprotocol.org/#/ecosystem</loc>
+  <lastmod>2022-7-20T00:00:00+00:00</lastmod>
 </url>
 
 <url>
-  <loc>https://nestprotocol.org/community</loc>
-  <lastmod>2021-12-15T11:09:06+00:00</lastmod>
+  <loc>https://nestprotocol.org/#/community</loc>
+  <lastmod>2022-7-20T00:00:00+00:00</lastmod>
 </url>
 
 <url>
-  <loc>https://nestprotocol.org/learn</loc>
-  <lastmod>2021-12-15T11:09:06+00:00</lastmod>
+  <loc>https://nestprotocol.org/#/learn</loc>
+  <lastmod>2022-7-20T00:00:00+00:00</lastmod>
 </url>
+
+<url>
+  <loc>https://nestprotocol.org/#/learn</loc>
+  <lastmod>2022-7-20T00:00:00+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://nestprotocol.org/#/docs/overview.md</loc>
+  <lastmod>2022-7-20T00:00:00+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://nestprotocol.org/#/docs/Guide/Set-Up-Local-Environment.md</loc>
+  <lastmod>2022-7-20T00:00:00+00:00</lastmod>
+</url>
+
+  <url>
+    <loc>https://nestprotocol.org/#/docs/Technical-Reference/NEST-Probability-Virtual-Machine.md</loc>
+    <lastmod>2022-7-20T00:00:00+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://nestprotocol.org/#/docs/Technical-Reference/NEST-Oracle.md</loc>
+    <lastmod>2022-7-20T00:00:00+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://nestprotocol.org/#/docs//Technical-Reference/Contract-Deployment.md</loc>
+    <lastmod>2022-7-20T00:00:00+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://nestprotocol.org/#/docs/Technical-Reference/Error-Codes.md</loc>
+    <lastmod>2022-7-20T00:00:00+00:00</lastmod>
+  </url>
 
 </urlset>
