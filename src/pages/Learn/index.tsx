@@ -168,7 +168,7 @@ const Learn = () => {
                   <chakra.img
                     src={item.bg}
                     alt={item.label}
-                    style={{ objectFit: 'cover' }}
+                    style={{ objectFit: 'fill' }}
                     _hover={{ transform: 'scale(1.05)' }}
                     w={"full"}
                   />
