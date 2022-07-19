@@ -4,6 +4,8 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import 'github-markdown-css/github-markdown-light.css'
 import { useLocation, useNavigate } from 'react-router-dom'
+import {Helmet} from "react-helmet";
+import * as React from "react";
 
 const Developers = () => {
   const [md, setMd] = useState('')
@@ -77,6 +79,9 @@ const Developers = () => {
 
   return (
     <Stack w={'full'} align={'center'} px={['24px', '48px']}>
+      <Helmet>
+        <title>NEST Developers</title>
+      </Helmet>
       <HStack
         maxW={'1440px'}
         w={'full'}
