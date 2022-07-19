@@ -75,7 +75,7 @@ const Header = () => {
         {isDesktop && (
           <Button
             onClick={() => {
-              navigate('developers#Set%20Up%20Your%20Local%20Environment')
+              navigate('/docs/Guide/Set-Up-Local-Environment.md')
             }}
           >
             Start Building
@@ -130,7 +130,7 @@ const Header = () => {
                       minH={'44px'}
                       px={'70px'}
                       onClick={() => {
-                        navigate('developers#Set%20Up%20Your%20Local%20Environment')
+                        navigate('/docs/Guide/Set-Up-Local-Environment.md')
                       }}
                     >
                       Start Building

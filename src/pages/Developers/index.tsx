@@ -14,7 +14,7 @@ const Developers = () => {
       children: [
         {
           title: 'What is NEST?',
-          pathname: 'docs/overview.md',
+          pathname: '/docs/overview.md',
         },
       ]
     },
@@ -23,7 +23,7 @@ const Developers = () => {
       children: [
         {
           title: 'Set Up Local Environment',
-          pathname: 'docs/Guide/Set-Up-Local-Environment.md'
+          pathname: '/docs/Guide/Set-Up-Local-Environment.md'
         },
       ]
     },
@@ -32,19 +32,19 @@ const Developers = () => {
       children: [
         {
           title: 'NEST Probability Virtual Machine',
-          pathname: 'docs/Technical-Reference/NEST-Probability-Virtual-Machine.md'
+          pathname: '/docs/Technical-Reference/NEST-Probability-Virtual-Machine.md'
         },
         {
           title: 'NEST Oracle',
-          pathname: 'docs/Technical-Reference/NEST-Oracle.md'
+          pathname: '/docs/Technical-Reference/NEST-Oracle.md'
         },
         {
           title: 'Contract Deployment',
-          pathname: 'docs/Technical-Reference/Contract-Deployment.md'
+          pathname: '/docs/Technical-Reference/Contract-Deployment.md'
         },
         {
           title: 'Error Codes',
-          pathname: 'docs/Technical-Reference/Error-Codes.md'
+          pathname: '/docs/Technical-Reference/Error-Codes.md'
         },
       ]
     },
@@ -52,9 +52,15 @@ const Developers = () => {
   const navigate = useNavigate()
   const location = useLocation()
 
+  useEffect(() => {
+    if (location.pathname === '/docs') {
+      navigate('/docs/overview.md')
+    }
+  }, [location.pathname])
+
   const fetchMd = useCallback(async () => {
-    if (location.pathname.replace('/docs/', '')) {
-      fetch('https://raw.githubusercontent.com/NEST-Protocol/NEST-Docs/test/' + location.pathname)
+    if (location.pathname.replace('/docs', '') !== '') {
+      fetch('https://raw.githubusercontent.com/NEST-Protocol/NEST-Docs/test' + location.pathname)
         .then(res => res.text())
         .then(text => {
           setMd(text)
@@ -96,7 +102,7 @@ const Developers = () => {
                     key={child.title}
                     cursor={"pointer"}
                     onClick={() => {
-                      navigate('/' + child.pathname)
+                      navigate(child.pathname)
                     }}
                   >{child.title}</Text>
                 ))}
