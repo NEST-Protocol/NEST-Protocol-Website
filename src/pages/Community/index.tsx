@@ -90,55 +90,63 @@ const Community = () => {
           the community and get reward.
         </Text>
       </Stack>
-      <Stack align={'center'} px={['24px', '48px']} w={'full'}>
-        <SimpleGrid columns={2} spacing={['22px', '22px', '44px']} w={'full'} maxW={'660px'}>
-          {menu.map(item => (
-            <VStack
-              key={item.label}
-              borderRadius={'12px'}
-              spacing={0}
-              w={['full', 'full', '308px']}
-              border={'1px solid #EEEEEE'}
-              boxShadow={'0px 0px 45px 5px #E5E5E5'}
-              overflow={'hidden'}
-            >
-              <Stack
-                bgImage={item.bg}
-                bgRepeat={'no-repeat'}
-                w={'full'}
-                bgSize={'cover'}
-                align={'center'}
-                justify={'center'}
-                h={['120px', '200px']}
+      <Stack align={'center'}>
+        <Stack
+          px={['24px', '48px']}
+          align={'center'}
+          minH={'440px'}
+          justify={'center'}
+          spacing={'16px'}
+        >
+          <SimpleGrid columns={2} spacing={['22px', '22px', '44px']} w={'full'}>
+            {menu.map(item => (
+              <VStack
+                key={item.label}
+                borderRadius={'12px'}
+                spacing={0}
+                w={['full', 'full', '308px']}
+                border={'1px solid #EEEEEE'}
+                boxShadow={'0px 0px 45px 5px #E5E5E5'}
+                overflow={'hidden'}
               >
-                <chakra.img src={item.icon} _hover={{ transform: 'scale(1.05)' }} />
-              </Stack>
-              <HStack
-                px={['22px', '22px', '44px']}
-                py={['11px', '11px', '33px']}
-                justifyContent={'space-between'}
-                w={'full'}
-                alignItems={'center'}
-              >
-                <Text fontSize={['12px', '12px', '17px']} fontWeight={'semibold'} color={'#003232'}>
-                  {item.label}
-                </Text>
-                <Link isExternal href={item.link}>
-                  {isDesktop ? (
-                    <chakra.img
-                      src={Right}
-                      alt={'right'}
-                      w={'44px'}
-                      _hover={{ transform: 'translateX(8px)' }}
-                    />
-                  ) : (
-                    <chakra.img src={Right} alt={'right'} height={'24px'} width={'24px'} />
-                  )}
-                </Link>
-              </HStack>
-            </VStack>
-          ))}
-        </SimpleGrid>
+                <Stack
+                  bgImage={item.bg}
+                  bgRepeat={'no-repeat'}
+                  w={'full'}
+                  bgSize={'cover'}
+                  align={'center'}
+                  justify={'center'}
+                  h={['120px', '200px']}
+                >
+                  <chakra.img src={item.icon} _hover={{ transform: 'scale(1.05)' }} />
+                </Stack>
+                <HStack
+                  px={['22px', '22px', '44px']}
+                  py={['11px', '11px', '33px']}
+                  justifyContent={'space-between'}
+                  w={'full'}
+                  alignItems={'center'}
+                >
+                  <Text fontSize={['12px', '12px', '17px']} fontWeight={'semibold'} color={'#003232'}>
+                    {item.label}
+                  </Text>
+                  <Link isExternal href={item.link}>
+                    {isDesktop ? (
+                      <chakra.img
+                        src={Right}
+                        alt={'right'}
+                        w={'44px'}
+                        _hover={{ transform: 'translateX(8px)' }}
+                      />
+                    ) : (
+                      <chakra.img src={Right} alt={'right'} height={'24px'} width={'24px'} />
+                    )}
+                  </Link>
+                </HStack>
+              </VStack>
+            ))}
+          </SimpleGrid>
+        </Stack>
       </Stack>
     </>
   )

@@ -131,6 +131,9 @@ const Ecosystem = () => {
             w={'44px'}
             cursor={'pointer'}
             _hover={{ transform: 'translateX(8px)' }}
+            onClick={() => {
+              window.open('https://finance.nestprotocol.org', '_blank')
+            }}
           />
         </Stack>
       </Stack>
@@ -196,7 +199,7 @@ const Ecosystem = () => {
             cursor={'pointer'}
             _hover={{ transform: 'translateX(8px)' }}
             onClick={() => {
-              window.open('https://channel.nestprotocol.org/', '_blank')
+              window.open('https://oracle.nestprotocol.org/', '_blank')
             }}
           />
         </Stack>
