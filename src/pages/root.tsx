@@ -10,6 +10,8 @@ import Developer_Icon_URI from '../assets/webp/Home_Developers_icon.webp'
 import Community_Icon_URI from '../assets/webp/Home_Community_icon.webp'
 import Ecosystem_Icon_URI from '../assets/webp/Home_Ecosystem_icon.webp'
 import {useNavigate} from "react-router-dom";
+import NEST_URI from "../assets/svg/nest.svg";
+import FORT_URI from "../assets/svg/fort.svg";
 
 const Root = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -54,11 +56,14 @@ const Root = () => {
           minH={['540px', '660px']}
           bgImage={Home_NESTxFORT_pic}
           bgSize={'100% 100%'}
+          spacing={'24px'}
         >
+          <chakra.img src={NEST_URI} h={'34px'} alt={'nest_logo'}/>
+          <chakra.img src={FORT_URI} h={'34px'} alt={'fort_logo'}/>
           <Text
             whiteSpace={'break-spaces'}
             textAlign={'center'}
-            fontSize={['24px', '48px']}
+            fontSize={['24px', '38px']}
             fontWeight={'bold'}
           >
             NEST and FORT
