@@ -1,4 +1,4 @@
-import { Heading, Stack, chakra, Text, Button, HStack, useMediaQuery } from '@chakra-ui/react'
+import {Heading, Stack, chakra, Text, Button, HStack, useMediaQuery, Box} from '@chakra-ui/react'
 import * as React from 'react'
 import { Helmet } from 'react-helmet'
 
@@ -12,6 +12,10 @@ import Ecosystem_Icon_URI from '../assets/webp/Home_Ecosystem_icon.webp'
 import {useNavigate} from "react-router-dom";
 import NEST_URI from "../assets/svg/nest.svg";
 import FORT_URI from "../assets/svg/fort.svg";
+import Home_NESTxFORT_icon from '../assets/webp/Home_NESTxFORT_icon.webp';
+import Home_icon_3 from '../assets/webp/Home_icon_3.webp';
+import Home_icon_2 from '../assets/webp/Home_icon_2.webp';
+import Home_icon_4 from '../assets/webp/Home_icon_4.webp';
 
 const Root = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -22,6 +26,7 @@ const Root = () => {
       path: 'ecosystem',
       icon: Ecosystem_Icon_URI,
       bg: Ecosystem_URI,
+      bgIcon: Home_icon_3,
       title: 'Explore the NEST Ecosystem',
       desc: `A complete gaming space with applications of DeFi, GameFi and NFT built on the NEST. Swap, hedge, earn and even game with the NEST network to gain excess returns.`
     },
@@ -30,6 +35,7 @@ const Root = () => {
       path: 'developers',
       icon: Developer_Icon_URI,
       bg: Developer_URI,
+      bgIcon: Home_icon_2,
       title: 'Build smart contract with NEST',
       desc: `Technical guidelines, source code, and detailed training materials on how to build NEST-based applications from scratch here.`
     },
@@ -38,6 +44,7 @@ const Root = () => {
       path: 'community',
       icon: Community_Icon_URI,
       bg: Community_URI,
+      bgIcon: Home_icon_4,
       title: 'Community',
       desc: `The NEST community is made up of developers, creators, enthusiasts, explore, contribute to the community and get reward.`
     }
@@ -58,13 +65,15 @@ const Root = () => {
           bgSize={'100% 100%'}
           spacing={'24px'}
         >
-          <chakra.img src={NEST_URI} h={'34px'} alt={'nest_logo'}/>
-          <chakra.img src={FORT_URI} h={'34px'} alt={'fort_logo'}/>
+          <chakra.img src={Home_NESTxFORT_icon} position={'absolute'} zIndex={0}/>
+          <chakra.img src={NEST_URI} h={'34px'} alt={'nest_logo'} zIndex={1}/>
+          <chakra.img src={FORT_URI} h={'34px'} alt={'fort_logo'} zIndex={1}/>
           <Text
             whiteSpace={'break-spaces'}
             textAlign={'center'}
             fontSize={['24px', '38px']}
             fontWeight={'bold'}
+            zIndex={1}
           >
             NEST and FORT
             <br />
@@ -83,7 +92,7 @@ const Root = () => {
           </Button>
         </HStack>
       </Stack>
-      {pages.map(({ name, path, icon, bg, title, desc }) => (
+      {pages.map(({ name, path, icon, bg, bgIcon, title, desc }) => (
         <Stack key={name} spacing={'48px'}>
           <Stack px={['24px', '48px']} w={'full'} align={'center'}>
             <Stack maxW={'1440px'} w={'full'}>
@@ -101,16 +110,21 @@ const Root = () => {
             bgSize={'100% 100%'}
             px={'24px'}
           >
-            <chakra.img src={icon} />
+            <Stack position={'absolute'} h={'440px'} w={"full"} overflow={"hidden"} align={"center"} zIndex={0}>
+              <chakra.img src={bgIcon} position={'absolute'}/>
+            </Stack>
+            <chakra.img src={icon} zIndex={1}/>
             <chakra.a
               fontSize={['17px', '24px']}
               fontWeight={'semibold'}
               color={'#003232'}
               href={path}
+              zIndex={1}
             >
               {title}
             </chakra.a>
             <chakra.a
+              zIndex={1}
               fontSize={['12px', '15px']}
               fontWeight={'semibold'}
               color={'#003232'}
