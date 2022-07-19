@@ -3,6 +3,7 @@ import {useCallback, useEffect, useState} from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import 'github-markdown-css/github-markdown-light.css';
+import {useLocation, useNavigate} from "react-router-dom";
 
 const Developers = () => {
   const [md, setMd] = useState('');
@@ -13,7 +14,7 @@ const Developers = () => {
       children: [
         {
           title: 'What is NEST?',
-          uri: 'https://raw.githubusercontent.com/NEST-Protocol/NEST-Docs/test/docs/overview.md'
+          pathname: 'docs/overview.md',
         },
       ]
     },
@@ -22,7 +23,7 @@ const Developers = () => {
       children: [
         {
           title: 'Set Up Local Environment',
-          uri: 'https://raw.githubusercontent.com/NEST-Protocol/NEST-Docs/test/docs/Guide/Set-Up-Local-Environment.md'
+          pathname: 'docs/Guide/Set-Up-Local-Environment.md'
         },
       ]
     },
@@ -31,28 +32,29 @@ const Developers = () => {
       children: [
         {
           title: 'NEST Probability Virtual Machine',
-          uri: 'https://raw.githubusercontent.com/NEST-Protocol/NEST-Docs/test/docs/Technical-Reference/NEST-Probability-Virtual-Machine.md'
+          pathname: 'docs/Technical-Reference/NEST-Probability-Virtual-Machine.md'
         },
         {
           title: 'NEST Oracle',
-          uri: 'https://raw.githubusercontent.com/NEST-Protocol/NEST-Docs/test/docs/Technical-Reference/NEST-Oracle.md'
+          pathname: 'docs/Technical-Reference/NEST-Oracle.md'
         },
         {
           title: 'Contract Deployment',
-          uri: 'https://raw.githubusercontent.com/NEST-Protocol/NEST-Docs/test/docs/Technical-Reference/Contract-Deployment.md'
+          pathname: 'docs/Technical-Reference/Contract-Deployment.md'
         },
         {
           title: 'Error Codes',
-          uri: 'https://raw.githubusercontent.com/NEST-Protocol/NEST-Docs/test/docs/Technical-Reference/Error-Codes.md'
+          pathname: 'docs/Technical-Reference/Error-Codes.md'
         },
       ]
     },
   ]
-  const [target, setTarget] = useState<{ title: string, uri: string }>(menu[0].children[0]);
+  const navigate = useNavigate()
+  const location = useLocation()
 
   const fetchMd = useCallback(async () => {
-    if (target.uri) {
-      fetch(target.uri)
+    if (location.pathname.replace('/docs/', '')) {
+      fetch('https://raw.githubusercontent.com/NEST-Protocol/NEST-Docs/test/' + location.pathname)
         .then(res => res.text())
         .then(text => {
           setMd(text)
@@ -61,7 +63,7 @@ const Developers = () => {
           console.log(e)
         })
     }
-  }, [target]);
+  }, [location.pathname])
 
   useEffect(() => {
     fetchMd()
@@ -89,15 +91,12 @@ const Developers = () => {
                 <Text fontWeight={600}>{item.title}</Text>
                 {item.children.map(child => (
                   <Text
-                    color={target.uri === child.uri ? '#EAAA00' : '#003232'}
-                    fontWeight={target.uri === child.uri ? 600 : 400}
+                    color={location.pathname === child.pathname ? '#EAAA00' : '#003232'}
+                    fontWeight={location.pathname === child.pathname ? 600 : 400}
                     key={child.title}
                     cursor={"pointer"}
                     onClick={() => {
-                      setTarget({
-                        title: child.title,
-                        uri: child.uri
-                      })
+                      navigate('/' + child.pathname)
                     }}
                   >{child.title}</Text>
                 ))}

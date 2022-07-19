@@ -57,7 +57,7 @@ const Footer = () => {
                 <Text
                   cursor={"pointer"}
                   onClick={() => {
-                    navigate('developers')
+                    navigate('docs')
                   }}>
                   Docs
                 </Text>
@@ -71,7 +71,7 @@ const Footer = () => {
                 <Text
                   cursor={"pointer"}
                   onClick={() => {
-                    navigate('developers')
+                    navigate('docs')
                   }}>
                   Set up local environment
                 </Text>
@@ -187,7 +187,7 @@ const Footer = () => {
               <Text
                 cursor={"pointer"}
                 onClick={() => {
-                  navigate('developers')
+                  navigate('docs')
                 }}>
                 Docs
               </Text>
@@ -201,7 +201,7 @@ const Footer = () => {
               <Text
                 cursor={"pointer"}
                 onClick={() => {
-                  navigate('developers')
+                  navigate('docs')
                 }}>
                 Set up local environment
               </Text>

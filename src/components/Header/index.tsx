@@ -27,10 +27,10 @@ const Header = () => {
   const scrollY = useScrollPosition()
 
   const Menu = [
-    { name: 'Ecosystem', path: 'ecosystem' },
-    { name: 'Developers', path: 'developers' },
-    { name: 'Community', path: 'community' },
-    { name: 'Learn', path: 'learn' }
+    { name: 'Ecosystem', pathname: 'ecosystem' },
+    { name: 'Developers', pathname: 'docs' },
+    { name: 'Community', pathname: 'community' },
+    { name: 'Learn', pathname: 'learn' }
   ]
 
   return (
@@ -40,7 +40,7 @@ const Header = () => {
       position={'fixed'}
       w={'full'}
       align={'center'}
-      bgImage={scrollY > 90 || location.pathname.includes('/developers') ? BG_URL : ''}
+      bgImage={scrollY > 90 || location.pathname.includes('/docs') ? BG_URL : ''}
       bgSize={'100% 100%'}
       overflow={'hidden'}
       zIndex={'10'}
@@ -57,16 +57,16 @@ const Header = () => {
         <Spacer />
 
         {isDesktop &&
-          Menu.map(({ name, path }) => (
+          Menu.map(({ name, pathname }) => (
             <Button
               variant={"ghost"}
               key={name}
               cursor={'pointer'}
               onClick={() => {
-                navigate(path)
+                navigate(pathname)
               }}
-              color={location.pathname.includes(path) ? '#EAAA00' : '#000'}
-              fontWeight={location.pathname.includes(path) ? 'bold' : '500'}
+              color={location.pathname.includes(pathname) ? '#EAAA00' : '#000'}
+              fontWeight={location.pathname.includes(pathname) ? 'bold' : '500'}
             >
               {name}
             </Button>
@@ -105,19 +105,19 @@ const Header = () => {
                 <ModalBody p={'22px'}>
                   <VStack alignItems={'center'} pt={'100px'} spacing={'120px'}>
                     <VStack spacing={'17px'}>
-                      {Menu.map(({ name, path }) => (
+                      {Menu.map(({ name, pathname }) => (
                         <Button
                           key={name}
-                          color={location.pathname.includes(path) ? '#EAAA00' : '#000'}
-                          fontWeight={location.pathname.includes(path) ? 'bold' : '500'}
+                          color={location.pathname.includes(pathname) ? '#EAAA00' : '#000'}
+                          fontWeight={location.pathname.includes(pathname) ? 'bold' : '500'}
                           variant={'ghost'}
                           fontSize={['17px', '24px']}
                           p={0}
                           onClick={() => {
-                            if (path.includes('https')) {
-                              window.open(path)
+                            if (pathname.includes('https')) {
+                              window.open(pathname)
                             } else {
-                              navigate(path)
+                              navigate(pathname)
                               onClose()
                             }
                           }}

@@ -17,7 +17,8 @@ export const App = () => {
         <Routes>
           <Route path="/" element={<Root />} />
           <Route path={'ecosystem'} element={<Ecosystem />} />
-          <Route path={'developers'} element={<Developers />} />
+          <Route path={'docs'} element={<Developers />} />
+          <Route path={'docs/*'} element={<Developers />} />
           <Route path={'community'} element={<Community />} />
           <Route path={'learn'} element={<Learn />} />
           <Route

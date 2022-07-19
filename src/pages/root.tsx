@@ -23,7 +23,7 @@ const Root = () => {
   const pages = [
     {
       name: 'Ecosystem',
-      path: 'ecosystem',
+      pathname: 'ecosystem',
       icon: Ecosystem_Icon_URI,
       bg: Ecosystem_URI,
       bgIcon: Home_icon_3,
@@ -32,7 +32,7 @@ const Root = () => {
     },
     {
       name: 'Developers',
-      path: 'developers',
+      pathname: 'developers',
       icon: Developer_Icon_URI,
       bg: Developer_URI,
       bgIcon: Home_icon_2,
@@ -41,7 +41,7 @@ const Root = () => {
     },
     {
       name: 'Community',
-      path: 'community',
+      pathname: 'community',
       icon: Community_Icon_URI,
       bg: Community_URI,
       bgIcon: Home_icon_4,
@@ -94,7 +94,7 @@ const Root = () => {
           </Button>
         </HStack>
       </Stack>
-      {pages.map(({ name, path, icon, bg, bgIcon, title, desc }) => (
+      {pages.map(({ name, pathname, icon, bg, bgIcon, title, desc }) => (
         <Stack key={name} spacing={'48px'}>
           <Stack px={['24px', '48px']} w={'full'} align={'center'}>
             <Stack maxW={'1440px'} w={'full'}>
@@ -118,7 +118,7 @@ const Root = () => {
               fontSize={['17px', '24px']}
               fontWeight={'semibold'}
               color={'#003232'}
-              href={path}
+              href={pathname}
               zIndex={1}
             >
               {title}
@@ -129,7 +129,7 @@ const Root = () => {
               color={'#003232'}
               whiteSpace={'break-spaces'}
               textAlign={'center'}
-              href={path}
+              href={pathname}
               maxW={'480px'}
               zIndex={1}
             >
