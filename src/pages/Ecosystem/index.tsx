@@ -10,6 +10,7 @@ import {Helmet} from 'react-helmet'
 import Ecosystem_icon1 from '../../assets/webp/Ecosystem_icon_1.webp'
 import Ecosystem_icon2 from '../../assets/webp/Ecosystem_icon_2.webp'
 import Ecosystem_icon3 from '../../assets/webp/Ecosystem_icon_3.webp'
+import ChakraBox from "../../components/ChakraBox";
 
 const Ecosystem = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -29,8 +30,18 @@ const Ecosystem = () => {
         spacing={['22px', '44px']}
         px={'24px'}
       >
-        <Stack position={'absolute'} h={'600px'} w={"full"} overflow={"hidden"} align={"center"} bgSize={'contain'}
+        <ChakraBox position={'absolute'} h={'600px'} w={"full"} overflow={"hidden"} bgSize={'contain'}
                bgImage={Ecosystem_icon1} bgRepeat={"no-repeat"} bgPosition={"center"} zIndex={0}
+                   animate={{
+                     rotate: [0, 360],
+                   }}
+          // @ts-ignore
+                   transition={{
+                     duration: 60,
+                     ease: "linear",
+                     repeat: Infinity,
+                     repeatType: "loop",
+                   }}
         />
         <Text textAlign={'center'} fontSize={['24px', '48px']} fontWeight={'bold'} zIndex={1}>
           Explore the {!isDesktop && <br/>} NEST Ecosystem

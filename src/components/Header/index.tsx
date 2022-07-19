@@ -65,7 +65,7 @@ const Header = () => {
               onClick={() => {
                 navigate(pathname)
               }}
-              color={location.pathname.includes(pathname) ? '#EAAA00' : '#000'}
+              color={location.pathname.includes(pathname) ? '#EAAA00' : '#003232'}
               fontWeight={location.pathname.includes(pathname) ? 'bold' : '500'}
             >
               {name}

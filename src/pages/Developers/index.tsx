@@ -81,19 +81,22 @@ const Developers = () => {
         {isDesktop && (
           <Stack minW={'300px'} maxW={'300px'} py={'24px'} position={"sticky"} top={'88px'} fontSize={'15px'}
                  spacing={'24px'}>
-            <Button
-              fontWeight={600}
-              variant={"outline"}
-              onClick={() => {
-                window.open('https://github.com/NEST-Protocol/', '_blank')
-              }}
-            >
-              Github
-            </Button>
+            <HStack>
+              <Button
+                w={'150px'}
+                fontWeight={600}
+                variant={"outline"}
+                onClick={() => {
+                  window.open('https://github.com/NEST-Protocol/', '_blank')
+                }}
+              >
+                Github
+              </Button>
+            </HStack>
             <Divider/>
             {menu.map((item => (
               <Stack key={item.title}>
-                <Text fontWeight={600}>{item.title}</Text>
+                <Text fontWeight={600} color={'#003232'}>{item.title}</Text>
                 {item.children.map(child => (
                   <Text
                     _hover={{ color: '#EAAA00' }}
@@ -119,6 +122,8 @@ const Developers = () => {
                  spacing={'24px'}>
             <Text
               _hover={{ color: '#EAAA00' }}
+              fontSize={'15px'}
+              color={'#003232'}
               cursor={"pointer"}
               fontWeight={'600'}
               onClick={() => {
