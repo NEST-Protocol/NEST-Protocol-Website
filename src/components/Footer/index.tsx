@@ -1,5 +1,7 @@
 import {Link, Stack, Text, HStack, useMediaQuery, chakra, Wrap, WrapItem} from '@chakra-ui/react'
 import BG_URL from '../../assets/webp/Footer_bg.webp'
+import Footer_icon from '../../assets/webp/Footer_icon.webp';
+import * as React from "react";
 
 const Footer = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -8,14 +10,16 @@ const Footer = () => {
     return (
       <Stack
         px={['24px', '48px']}
-        py={'80px'}
         w={'full'}
         align={'center'}
         bgImage={BG_URL}
         bgSize={'100% 100%'}
         zIndex={'10'}
       >
-        <Wrap maxW={'1440px'} w={'full'} align={'start'} spacingY={'48px'}>
+        <Stack position={'absolute'} h={'360px'} w={"full"} bgSize={"contain"}
+               bgImage={Footer_icon} bgRepeat={"no-repeat"} bgPosition={"center"} zIndex={0}
+        />
+        <Wrap maxW={'1440px'} w={'full'} align={'start'} spacingY={'48px'} pt={'80px'} zIndex={1}>
           <WrapItem pl={4} >
             <Stack spacing={'44px'} w={'full'} minW={'200px'}>
               <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
@@ -103,7 +107,7 @@ const Footer = () => {
             </Stack>
           </WrapItem>
         </Wrap>
-        <HStack maxW={'1440px'} w={'full'} pr={4} justifyContent={"end"}>
+        <HStack maxW={'1440px'} w={'full'} pr={4} justifyContent={"end"} pb={'80px'} zIndex={1}>
           <Text color={'#003232'} fontSize={'14px'} fontWeight={'bold'} textAlign={'end'}>
             ©2022 NEST
           </Text>

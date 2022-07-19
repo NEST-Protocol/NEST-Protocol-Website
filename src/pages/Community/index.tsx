@@ -1,5 +1,4 @@
 import {
-  Box,
   HStack,
   Link,
   SimpleGrid,
@@ -15,6 +14,11 @@ import Banner_URI from '../../assets/webp/Community_pic_1.webp'
 import Twitter_pic from '../../assets/webp/Twitter_pic.webp'
 import Discord_pic from '../../assets/webp/Discord_pic.webp'
 import Telegram_pic from '../../assets/webp/Telegram_pic.webp'
+import Twitter_icon from '../../assets/webp/Twitter_icon.webp'
+import Discord_icon from '../../assets/webp/Discord_icon.webp'
+import Telegram_icon from '../../assets/webp/Telegram_icon.webp'
+import Community_icon from '../../assets/webp/Community_icon_1.webp'
+
 import { Helmet } from 'react-helmet'
 
 const Community = () => {
@@ -24,16 +28,19 @@ const Community = () => {
     {
       label: 'Twitter',
       bg: Twitter_pic,
+      icon: Twitter_icon,
       link: 'https://twitter.com/nest_protocol/'
     },
     {
       label: 'Telegram',
       bg: Telegram_pic,
+      icon: Telegram_icon,
       link: 'https://t.me/nest_chat/'
     },
     {
       label: 'Medium',
       bg: Discord_pic,
+      icon: Discord_icon,
       link: 'https://nest-protocol-82041.medium.com/'
     }
   ]
@@ -53,20 +60,24 @@ const Community = () => {
         spacing={['22px', '44px']}
         px={'24px'}
       >
+        <Stack position={'absolute'} h={'600px'} w={"full"} bgSize={'contain'}
+               bgImage={Community_icon} bgRepeat={"no-repeat"} bgPosition={"center"} zIndex={0}
+        />
         <Text
           whiteSpace={'break-spaces'}
           textAlign={'center'}
           fontSize={['24px', '48px']}
           fontWeight={'bold'}
+          zIndex={1}
         >
           NEST Community
         </Text>
-        <Text fontSize={['12px', '24px']} fontWeight={'bold'} textAlign={'center'} maxW={'720px'}>
+        <Text fontSize={['12px', '24px']} fontWeight={'bold'} textAlign={'center'} maxW={'720px'} zIndex={1}>
           The NEST community is made up of developers, creators, enthusiasts, explore, contribute to the community and get reward.
         </Text>
       </Stack>
-      <Stack align={'center'} px={['24px', '48px']}>
-        <SimpleGrid columns={2} spacing={['22px', '22px', '44px']}>
+      <Stack align={'center'} px={['24px', '48px']} w={"full"}>
+        <SimpleGrid columns={2} spacing={['22px', '22px', '44px']} w={"full"} maxW={'660px'}>
           {menu.map(item => (
             <VStack
               key={item.label}
@@ -77,9 +88,12 @@ const Community = () => {
               boxShadow={'0px 0px 45px 5px #E5E5E5'}
               overflow={'hidden'}
             >
-              <Box overflow={'hidden'}>
-                <chakra.img src={item.bg} alt={item.label} _hover={{ transform: 'scale(1.05)' }} />
-              </Box>
+              <Stack bgImage={item.bg} bgRepeat={"no-repeat"}
+                     w={'full'} bgSize={"cover"}
+                     align={"center"} justify={"center"}
+                     h={['120px', '200px']}>
+                <chakra.img src={item.icon} _hover={{ transform: 'scale(1.05)' }}/>
+              </Stack>
               <HStack
                 px={['22px', '22px', '44px']}
                 py={['11px', '11px', '33px']}

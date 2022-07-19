@@ -65,7 +65,9 @@ const Root = () => {
           bgSize={'100% 100%'}
           spacing={'24px'}
         >
-          <chakra.img src={Home_NESTxFORT_icon} position={'absolute'} zIndex={0}/>
+          <Stack position={'absolute'} h={'360px'} w={"full"} bgSize={'contain'}
+                 bgImage={Home_NESTxFORT_icon} bgRepeat={"no-repeat"} bgPosition={"center"} zIndex={0}
+          />
           <chakra.img src={NEST_URI} h={'34px'} alt={'nest_logo'} zIndex={1}/>
           <chakra.img src={FORT_URI} h={'34px'} alt={'fort_logo'} zIndex={1}/>
           <Text
@@ -110,9 +112,7 @@ const Root = () => {
             bgSize={'100% 100%'}
             px={'24px'}
           >
-            <Stack position={'absolute'} h={'440px'} w={"full"} overflow={"hidden"} align={"center"} zIndex={0}>
-              <chakra.img src={bgIcon} position={'absolute'}/>
-            </Stack>
+            <Stack position={'absolute'} h={'440px'} w={"full"} bgImage={bgIcon} bgRepeat={"no-repeat"} bgPosition={"center"} zIndex={0}/>
             <chakra.img src={icon} zIndex={1}/>
             <chakra.a
               fontSize={['17px', '24px']}
@@ -124,7 +124,6 @@ const Root = () => {
               {title}
             </chakra.a>
             <chakra.a
-              zIndex={1}
               fontSize={['12px', '15px']}
               fontWeight={'semibold'}
               color={'#003232'}
@@ -132,6 +131,7 @@ const Root = () => {
               textAlign={'center'}
               href={path}
               maxW={'480px'}
+              zIndex={1}
             >
               {desc}
             </chakra.a>

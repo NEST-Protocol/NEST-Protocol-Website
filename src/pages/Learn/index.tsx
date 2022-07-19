@@ -19,6 +19,7 @@ import Blogs_pic_4 from '../../assets/webp/Blogs_pic_4.webp'
 import Blogs_pic_5 from '../../assets/webp/Blogs_pic_5.webp'
 import Blogs_pic_6 from '../../assets/webp/Blogs_pic_6.webp'
 import { Helmet } from 'react-helmet'
+import NEST_icon1  from '../../assets/webp/NEST_icon_1.webp'
 
 const Learn = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -51,15 +52,19 @@ const Learn = () => {
         spacing={['22px', '44px']}
         px={'24px'}
       >
+        <Stack position={'absolute'} h={'660px'} w={"full"} bgSize={'contain'}
+               bgImage={NEST_icon1} bgRepeat={"no-repeat"} bgPosition={"center"} zIndex={0}
+        />
         <Text
           whiteSpace={'break-spaces'}
           textAlign={'center'}
           fontSize={['24px', '48px']}
           fontWeight={'bold'}
+          zIndex={1}
         >
           What is NEST
         </Text>
-        <Text fontSize={['12px', '24px']} fontWeight={'bold'} textAlign={'center'} maxW={'720px'}>
+        <Text fontSize={['12px', '24px']} fontWeight={'bold'} textAlign={'center'} maxW={'720px'} zIndex={1}>
           A complete gaming space with applications of DeFi, GameFi NFT built on the NEST. Swap, hedge, earn and even game with the NEST network to gain excess returns.
         </Text>
       </Stack>

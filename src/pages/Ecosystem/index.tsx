@@ -7,6 +7,9 @@ import Market_Icon_URI from '../../assets/webp/Market_icon.webp'
 import Phone_Icon_URI from '../../assets/webp/iPhone_pic.webp'
 import RIGHT_URI from '../../assets/svg/right_icon.svg'
 import {Helmet} from 'react-helmet'
+import Ecosystem_icon1 from '../../assets/webp/Ecosystem_icon_1.webp'
+import Ecosystem_icon2 from '../../assets/webp/Ecosystem_icon_2.webp'
+import Ecosystem_icon3 from '../../assets/webp/Ecosystem_icon_3.webp'
 
 const Ecosystem = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -26,10 +29,13 @@ const Ecosystem = () => {
         spacing={['22px', '44px']}
         px={'24px'}
       >
-        <Text textAlign={'center'} fontSize={['24px', '48px']} fontWeight={'bold'}>
+        <Stack position={'absolute'} h={'600px'} w={"full"} overflow={"hidden"} align={"center"} bgSize={'contain'}
+               bgImage={Ecosystem_icon1} bgRepeat={"no-repeat"} bgPosition={"center"} zIndex={0}
+        />
+        <Text textAlign={'center'} fontSize={['24px', '48px']} fontWeight={'bold'} zIndex={1}>
           Explore the {!isDesktop && <br/>} NEST Ecosystem
         </Text>
-        <Text fontSize={['12px', '24px']} fontWeight={'bold'} textAlign={'center'} maxW={'720px'}>
+        <Text fontSize={['12px', '24px']} fontWeight={'bold'} textAlign={'center'} maxW={'720px'} zIndex={1}>
           A complete gaming space with applications of DeFi, GameFi NFT built on the NEST. Swap, hedge, earn and even
           game with the NEST network to gain excess returns.
         </Text>
@@ -51,11 +57,15 @@ const Ecosystem = () => {
           bgImage={Project1_URI}
           bgSize={'100% 100%'}
         >
-          <chakra.img src={Market_Icon_URI}/>
-          <chakra.a fontSize={['17px', '24px']} fontWeight={'semibold'} color={'#003232'}>
+          <Stack position={'absolute'} h={'400px'} w={"full"} overflow={"hidden"} align={"center"} bgSize={'contain'}
+                 bgImage={Ecosystem_icon2} bgRepeat={"no-repeat"} bgPosition={"center"} zIndex={0}
+          />
+          <chakra.img src={Market_Icon_URI} zIndex={1}/>
+          <chakra.a fontSize={['17px', '24px']} fontWeight={'semibold'} color={'#003232'} zIndex={1}>
             NEST Financial Market
           </chakra.a>
           <chakra.a
+            zIndex={1}
             fontSize={['12px', '15px']}
             fontWeight={'semibold'}
             color={'#003232'}
@@ -66,6 +76,7 @@ const Ecosystem = () => {
             Get NEST token here and buy futures, options or play DeFi games to win NEST.
           </chakra.a>
           <chakra.a
+            zIndex={1}
             fontSize={['12px', '15px']}
             fontWeight={'semibold'}
             color={'#003232'}
@@ -76,6 +87,7 @@ const Ecosystem = () => {
             Win NEST and Trade
           </chakra.a>
           <chakra.img
+            zIndex={1}
             src={RIGHT_URI}
             w={'44px'}
             cursor={"pointer"}
@@ -88,18 +100,23 @@ const Ecosystem = () => {
           maxH={'440px'}
           w={'full'}
           justify={'start'}
-          pt={'80px'}
           spacing={['13px', '16px']}
           bgImage={Project2_URI}
           bgSize={'100% 100%'}
         >
+          <Stack position={'absolute'} h={'440px'} w={"full"} overflow={"hidden"}
+                 bgImage={Ecosystem_icon3} bgRepeat={"no-repeat"} bgPosition={"bottom"} zIndex={0}
+          />
           <chakra.img
+            zIndex={1}
+            pt={'80px'}
             src={Phone_Icon_URI}
           />
-          <chakra.a fontSize={['17px', '24px']} fontWeight={'semibold'} color={'#003232'}>
+          <chakra.a fontSize={['17px', '24px']} fontWeight={'semibold'} color={'#003232'} zIndex={1}>
             NEST Oracle
           </chakra.a>
           <chakra.a
+            zIndex={1}
             fontSize={['12px', '15px']}
             fontWeight={'semibold'}
             color={'#003232'}
@@ -114,6 +131,7 @@ const Ecosystem = () => {
             On-chain verification.
           </chakra.a>
           <chakra.a
+            zIndex={1}
             fontSize={['12px', '15px']}
             fontWeight={'semibold'}
             color={'#003232'}
@@ -124,6 +142,7 @@ const Ecosystem = () => {
             Create Your Own Oracle
           </chakra.a>
           <chakra.img
+            zIndex={1}
             src={RIGHT_URI}
             w={'44px'}
             cursor={'pointer'}
