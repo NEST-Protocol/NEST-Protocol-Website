@@ -9,7 +9,7 @@ import {
   Text,
   Stack
 } from '@chakra-ui/react'
-import Right1 from '../../assets/svg/right_icon.svg'
+import Right from '../../assets/svg/right_icon.svg'
 import * as React from 'react'
 import Banner_URI from '../../assets/webp/Community_pic_1.webp'
 import Twitter_pic from '../../assets/webp/Twitter_pic.webp'
@@ -93,12 +93,13 @@ const Community = () => {
                 <Link isExternal href={item.link}>
                   {isDesktop ? (
                     <chakra.img
-                      src={Right1}
+                      src={Right}
                       alt={'right'}
+                      w={'44px'}
                       _hover={{ transform: 'translateX(8px)' }}
                     />
                   ) : (
-                    <chakra.img src={Right1} alt={'right'} height={'24px'} width={'24px'} />
+                    <chakra.img src={Right} alt={'right'} height={'24px'} width={'24px'} />
                   )}
                 </Link>
               </HStack>

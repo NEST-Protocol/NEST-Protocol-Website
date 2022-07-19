@@ -75,7 +75,11 @@ const Ecosystem = () => {
           >
             Win NEST and Trade
           </chakra.a>
-          <chakra.img src={RIGHT_URI} w={'44px'}/>
+          <chakra.img
+            src={RIGHT_URI}
+            w={'44px'}
+            cursor={"pointer"}
+            _hover={{ transform: 'translateX(8px)' }}/>
         </Stack>
       </Stack>
       <Stack spacing={'48px'} align={'center'} h={'840px'} justify={'start'}>
@@ -123,6 +127,7 @@ const Ecosystem = () => {
             src={RIGHT_URI}
             w={'44px'}
             cursor={'pointer'}
+            _hover={{ transform: 'translateX(8px)' }}
             onClick={() => {
               window.open('https://channel.nestprotocol.org/', '_blank')
             }}/>
