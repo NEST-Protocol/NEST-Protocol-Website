@@ -135,7 +135,7 @@ const Developers = () => {
             ))}
           </Stack>
         )}
-        <Stack minW={['full', '768px']} maxW={['full', '768px']} pt={'112px'} minH={'50vh'}>
+        <Stack minW={['full', '768px']} maxW={['full', '768px']} pt={'112px'} minH={'720px'}>
           <ReactMarkdown children={md} remarkPlugins={[remarkGfm]} className={'markdown-body'} />
         </Stack>
 
