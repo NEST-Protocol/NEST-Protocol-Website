@@ -1,4 +1,4 @@
-import {Heading, Stack, chakra, Text, Button, HStack, useMediaQuery, Box} from '@chakra-ui/react'
+import {Heading, Stack, chakra, Text, Button, HStack, useMediaQuery} from '@chakra-ui/react'
 import * as React from 'react'
 import { Helmet } from 'react-helmet'
 
