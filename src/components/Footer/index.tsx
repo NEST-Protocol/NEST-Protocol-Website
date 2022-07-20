@@ -184,7 +184,7 @@ const Footer = () => {
           zIndex={0}
         />
         <HStack>
-          <Stack spacing={'32px'} w={'full'}>
+          <Stack spacing={'32px'} w={'full'} zIndex={1}>
             <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
               Ecosystem
             </Text>
@@ -206,7 +206,7 @@ const Footer = () => {
           </Stack>
         </HStack>
         <HStack align={'start'}>
-          <Stack spacing={'32px'} w={'full'}>
+          <Stack spacing={'32px'} w={'full'} zIndex={1}>
             <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
               Developers
             </Text>
@@ -242,7 +242,7 @@ const Footer = () => {
               </Text>
             </Stack>
           </Stack>
-          <Stack spacing={'32px'} w={'full'}>
+          <Stack spacing={'32px'} w={'full'} zIndex={1}>
             <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
               Community
             </Text>
@@ -264,7 +264,7 @@ const Footer = () => {
           </Stack>
         </HStack>
         <HStack align={'start'}>
-          <Stack spacing={'32px'} w={'full'}>
+          <Stack spacing={'32px'} w={'full'} zIndex={1}>
             <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
               Learn
             </Text>
@@ -284,7 +284,7 @@ const Footer = () => {
               </Text>
             </Stack>
           </Stack>
-          <Stack spacing={'32px'} w={'full'}>
+          <Stack spacing={'32px'} w={'full'} zIndex={1}>
             <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'} opacity={0}>
               Learn
             </Text>
@@ -305,7 +305,7 @@ const Footer = () => {
             </Stack>
           </Stack>
         </HStack>
-        <Stack spacing={'32px'}>
+        <Stack spacing={'32px'} zIndex={1}>
           <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
             Market price
           </Text>
