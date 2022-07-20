@@ -30,7 +30,7 @@ const Footer = () => {
         />
         <Wrap maxW={'1440px'} w={'full'} align={'start'} spacingY={'48px'} pt={'80px'} zIndex={1}>
           <WrapItem pl={4}>
-            <Stack spacing={'44px'} w={'full'} minW={'200px'}>
+            <Stack spacing={'44px'} w={'full'} minW={'180px'}>
               <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
                 Ecosystem
               </Text>
@@ -52,7 +52,7 @@ const Footer = () => {
             </Stack>
           </WrapItem>
           <WrapItem>
-            <Stack spacing={'44px'} w={'full'} minW={'200px'}>
+            <Stack spacing={'44px'} w={'full'} minW={'180px'}>
               <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
                 Developers
               </Text>
@@ -90,7 +90,7 @@ const Footer = () => {
             </Stack>
           </WrapItem>
           <WrapItem>
-            <Stack spacing={'44px'} w={'full'} minW={'200px'}>
+            <Stack spacing={'44px'} w={'full'} minW={'180px'}>
               <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
                 Community
               </Text>
@@ -112,7 +112,7 @@ const Footer = () => {
             </Stack>
           </WrapItem>
           <WrapItem>
-            <Stack spacing={'44px'} w={'full'} minW={'200px'}>
+            <Stack spacing={'44px'} w={'full'} minW={'180px'}>
               <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
                 Learn
               </Text>
@@ -142,7 +142,7 @@ const Footer = () => {
             </Stack>
           </WrapItem>
           <WrapItem>
-            <Stack spacing={7} w={'full'} minW={'500px'}>
+            <Stack spacing={7} w={'full'} minW={'400px'}>
               <Text pl={4} fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
                 Market price
               </Text>
