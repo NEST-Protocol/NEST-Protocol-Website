@@ -15,7 +15,7 @@ const Footer = () => {
         w={'full'}
         align={'center'}
         bgImage={BG_URL}
-        bgSize={'100% 100%'}
+        bgSize={'cover'}
         zIndex={'10'}
       >
         <Stack
@@ -165,7 +165,24 @@ const Footer = () => {
     )
   } else {
     return (
-      <Stack px={'24px'} py={'56px'} spacing={'32px'} bgImage={BG_URL} bgSize={'100% 100%'}>
+      <Stack
+        px={'24px'}
+        py={'56px'}
+        spacing={'32px'}
+        bgImage={BG_URL}
+        bgSize={'cover'}
+        bgPosition={'center'}
+      >
+        <Stack
+          position={'absolute'}
+          h={'360px'}
+          w={'full'}
+          bgSize={'cover'}
+          bgImage={Footer_icon}
+          bgRepeat={'no-repeat'}
+          bgPosition={'center'}
+          zIndex={0}
+        />
         <HStack>
           <Stack spacing={'32px'} w={'full'}>
             <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>

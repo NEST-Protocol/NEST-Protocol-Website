@@ -40,12 +40,12 @@ const AlertNESTandFORT = () => {
               <Text>✖️</Text>
               <chakra.img src={FORT_URI}/>
             </HStack>
-            <Text textAlign={"justify"}>
+            <Text>
               The technical teams of the FORT protocol and NEST
               protocol will jointly advance the merger, and the merger is
               expected to be completed on July 29th.
             </Text>
-            <Text textAlign={"justify"}>
+            <Text>
               Starting from 10:00 (GMT+0) July 7 (some suspensions will
               take place a few hours earlier due to technical reason).
             </Text>
