@@ -19,7 +19,7 @@ import Discord_icon from '../../assets/webp/Discord_icon.webp'
 import Telegram_icon from '../../assets/webp/Telegram_icon.webp'
 import Community_icon from '../../assets/webp/Community_icon_1.webp'
 
-import { Helmet } from 'react-helmet'
+import {Helmet} from 'react-helmet'
 
 const Community = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -100,8 +100,9 @@ const Community = () => {
           minH={'440px'}
           justify={'center'}
           spacing={'16px'}
+          w={'full'}
         >
-          <SimpleGrid columns={2} spacing={['22px', '22px', '44px']} w={'full'}>
+          <SimpleGrid columns={[1, 3]} spacing={['22px', '22px', '44px']}>
             {menu.map(item => (
               <VStack
                 key={item.label}
@@ -115,13 +116,13 @@ const Community = () => {
                 <Stack
                   bgImage={item.bg}
                   bgRepeat={'no-repeat'}
-                  w={'full'}
                   bgSize={'cover'}
                   align={'center'}
                   justify={'center'}
-                  h={['120px', '200px']}
+                  h={'200px'}
+                  w={'100vw'}
                 >
-                  <chakra.img src={item.icon} _hover={{ transform: 'scale(1.05)' }} />
+                  <chakra.img src={item.icon} _hover={{transform: 'scale(1.05)'}}/>
                 </Stack>
                 <HStack
                   px={['22px', '22px', '44px']}
@@ -139,10 +140,10 @@ const Community = () => {
                         src={Right}
                         alt={'right'}
                         w={'44px'}
-                        _hover={{ transform: 'translateX(8px)' }}
+                        _hover={{transform: 'translateX(8px)'}}
                       />
                     ) : (
-                      <chakra.img src={Right} alt={'right'} height={'24px'} width={'24px'} />
+                      <chakra.img src={Right} alt={'right'} height={'24px'} width={'24px'}/>
                     )}
                   </Link>
                 </HStack>
