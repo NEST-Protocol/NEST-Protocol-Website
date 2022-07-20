@@ -1,9 +1,16 @@
-import { HStack, Stack, useMediaQuery, Text, Divider, Button } from '@chakra-ui/react'
-import { useCallback, useEffect, useState } from 'react'
+import {
+  HStack,
+  Stack,
+  useMediaQuery,
+  Text,
+  Divider,
+  Button, DrawerBody, DrawerContent, DrawerOverlay, Drawer, useDisclosure,
+} from '@chakra-ui/react'
+import {useCallback, useEffect, useState} from 'react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import 'github-markdown-css/github-markdown-light.css'
-import { useLocation, useNavigate } from 'react-router-dom'
+import {useLocation, useNavigate} from 'react-router-dom'
 import {Helmet} from "react-helmet";
 import * as React from "react";
 
@@ -53,6 +60,7 @@ const Developers = () => {
   ]
   const navigate = useNavigate()
   const location = useLocation()
+  const { isOpen, onOpen, onClose } = useDisclosure()
 
   useEffect(() => {
     if (location.pathname === '/docs') {
@@ -111,7 +119,7 @@ const Developers = () => {
                 Github
               </Button>
             </HStack>
-            <Divider />
+            <Divider/>
             {menu.map(item => (
               <Stack key={item.title}>
                 <Text fontWeight={600} color={'#003232'}>
@@ -119,7 +127,7 @@ const Developers = () => {
                 </Text>
                 {item.children.map(child => (
                   <Text
-                    _hover={{ color: '#EAAA00' }}
+                    _hover={{color: '#EAAA00'}}
                     color={location.pathname === child.pathname ? '#EAAA00' : '#003232'}
                     fontWeight={location.pathname === child.pathname ? 600 : 400}
                     key={child.title}
@@ -135,8 +143,85 @@ const Developers = () => {
             ))}
           </Stack>
         )}
-        <Stack minW={['full', '768px']} maxW={['full', '768px']} pt={'112px'} minH={'720px'}>
-          <ReactMarkdown children={md} remarkPlugins={[remarkGfm]} className={'markdown-body'} />
+
+        <Stack minW={['full', '768px']} maxW={['full', '768px']} pt={['94px', '112px']} minH={'720px'} spacing={'48px'}>
+          <ReactMarkdown children={md} remarkPlugins={[remarkGfm]} className={'markdown-body'}/>
+          {!isDesktop && (
+            <Stack spacing={'48px'}>
+              <HStack justifyContent={"end"} spacing={'24px'}>
+                <Text
+                  _hover={{color: '#EAAA00'}}
+                  fontSize={'15px'}
+                  color={'#003232'}
+                  cursor={'pointer'}
+                  fontWeight={'600'}
+                  onClick={() => {
+                    window.open(
+                      'https://github.com/NEST-Protocol/NEST-Docs/blob/test' + location.pathname,
+                      '_blank'
+                    )
+                  }}
+                >
+                  Edit on GitHub
+                </Text>
+              </HStack>
+              <HStack spacing={'24px'} position={"fixed"} bottom={'24px'} right={'24px'}>
+                <Button onClick={onOpen}>
+                  Menu
+                </Button>
+              </HStack>
+              <Drawer placement={'left'} onClose={onClose} isOpen={isOpen}>
+                <DrawerOverlay />
+                <DrawerContent>
+                  <DrawerBody>
+                    <Stack
+                      minW={'300px'}
+                      maxW={'300px'}
+                      py={'24px'}
+                      position={'sticky'}
+                      fontSize={'15px'}
+                      spacing={'24px'}
+                    >
+                      <HStack>
+                        <Button
+                          w={'150px'}
+                          fontWeight={600}
+                          variant={'outline'}
+                          onClick={() => {
+                            window.open('https://github.com/NEST-Protocol/', '_blank')
+                          }}
+                        >
+                          Github
+                        </Button>
+                      </HStack>
+                      <Divider/>
+                      {menu.map(item => (
+                        <Stack key={item.title}>
+                          <Text fontWeight={600} color={'#003232'}>
+                            {item.title}
+                          </Text>
+                          {item.children.map(child => (
+                            <Text
+                              _hover={{color: '#EAAA00'}}
+                              color={location.pathname === child.pathname ? '#EAAA00' : '#003232'}
+                              fontWeight={location.pathname === child.pathname ? 600 : 400}
+                              key={child.title}
+                              cursor={'pointer'}
+                              onClick={() => {
+                                navigate(child.pathname)
+                              }}
+                            >
+                              {child.title}
+                            </Text>
+                          ))}
+                        </Stack>
+                      ))}
+                    </Stack>
+                  </DrawerBody>
+                </DrawerContent>
+              </Drawer>
+            </Stack>
+          )}
         </Stack>
 
         {isDesktop && (
@@ -150,7 +235,7 @@ const Developers = () => {
             spacing={'24px'}
           >
             <Text
-              _hover={{ color: '#EAAA00' }}
+              _hover={{color: '#EAAA00'}}
               fontSize={'15px'}
               color={'#003232'}
               cursor={'pointer'}
