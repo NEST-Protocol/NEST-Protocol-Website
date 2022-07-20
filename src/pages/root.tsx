@@ -8,10 +8,10 @@ import {
   useMediaQuery,
   useDisclosure,
   AlertDialog,
-  AlertDialogOverlay, AlertDialogContent, AlertDialogHeader, AlertDialogCloseButton, AlertDialogBody, AlertDialogFooter
+  AlertDialogOverlay, AlertDialogContent, AlertDialogCloseButton, AlertDialogBody
 } from '@chakra-ui/react'
 import * as React from 'react'
-import { Helmet } from 'react-helmet'
+import {Helmet} from 'react-helmet'
 
 import Home_NESTxFORT_pic from '../assets/webp/Home_NESTxFORT_pic.webp'
 import Developer_URI from '../assets/webp/Home_pic_2.webp'
@@ -63,8 +63,8 @@ const Root = () => {
       desc: `The NEST community is made up of developers, creators, enthusiasts, explore, contribute to the community and get reward.`
     }
   ]
-  let [searchParams, setSearchParams] = useSearchParams();
-  const { isOpen, onOpen, onClose } = useDisclosure()
+  let [searchParams] = useSearchParams();
+  const {isOpen, onOpen, onClose} = useDisclosure()
   const cancelRef = useRef(null)
 
   const from = searchParams.get('from') || undefined;
@@ -87,14 +87,14 @@ const Root = () => {
         isOpen={isOpen}
         isCentered
       >
-        <AlertDialogOverlay />
+        <AlertDialogOverlay/>
         <AlertDialogContent p={'24px'}>
-          <AlertDialogCloseButton />
+          <AlertDialogCloseButton/>
           <AlertDialogBody>
             <Stack fontSize={'md'} color={'#003434'} fontWeight={'500'} spacing={'24px'}>
-              <HStack align={"center"} justify={"center"}>
+              <HStack justify={"center"}>
                 <chakra.img src={NEST_URI}/>
-                <Text>x</Text>
+                <Text>✖️</Text>
                 <chakra.img src={FORT_URI}/>
               </HStack>
               <Text>
@@ -104,7 +104,18 @@ const Root = () => {
               </Text>
               <Text>
                 Starting from 10:00 (GMT+0) July 7 (some suspensions will
-                take place a few hours earlier due to technical reason)
+                take place a few hours earlier due to technical reason).
+              </Text>
+              <Text>
+                1. the users will be suspended from buying DCU, although
+                the holder can still sell it;
+                <br/>
+                2. the investors cannot open any positions for the future and
+                option contracts, but all the contracts already purchased can
+                still be settled;
+                <br/>
+                3. Probability coin is suspended from buying and selling but
+                the holder can still spend it to win DCU.
               </Text>
               <Text textAlign={"end"}>FORT DAO July 6th, 2022</Text>
             </Stack>
@@ -131,8 +142,8 @@ const Root = () => {
             bgPosition={'center'}
             zIndex={0}
           />
-          <chakra.img src={NEST_URI} h={'34px'} alt={'nest_logo'} zIndex={1} />
-          <chakra.img src={FORT_URI} h={'34px'} alt={'fort_logo'} zIndex={1} />
+          <chakra.img src={NEST_URI} h={'34px'} alt={'nest_logo'} zIndex={1}/>
+          <chakra.img src={FORT_URI} h={'34px'} alt={'fort_logo'} zIndex={1}/>
           <Text
             whiteSpace={'break-spaces'}
             textAlign={'center'}
@@ -159,7 +170,7 @@ const Root = () => {
           </Button>
         </HStack>
       </Stack>
-      {pages.map(({ name, pathname, icon, bg, bgIcon, title, desc }) => (
+      {pages.map(({name, pathname, icon, bg, bgIcon, title, desc}) => (
         <Stack key={name} spacing={'48px'}>
           <Stack px={['24px', '48px']} w={'full'} align={'center'}>
             <Stack maxW={'1440px'} w={'full'}>
@@ -186,7 +197,7 @@ const Root = () => {
               bgPosition={'center'}
               zIndex={0}
             />
-            <chakra.img src={icon} zIndex={1} />
+            <chakra.img src={icon} zIndex={1}/>
             <chakra.a
               fontSize={['17px', '24px']}
               fontWeight={'semibold'}
