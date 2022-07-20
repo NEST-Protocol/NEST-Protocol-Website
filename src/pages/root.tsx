@@ -142,8 +142,8 @@ const Root = () => {
             letterSpacing={'10px'}
           >
             NEST and FORT
-            <br />
-            Will merged {!isDesktop && <br />} on July 29, 2022
+            <br/>
+            Will merged on July 29, 2022
           </Text>
         </Stack>
         <HStack justify={'center'}>
