@@ -1,20 +1,25 @@
-import { ChakraProvider } from '@chakra-ui/react'
+import {ChakraProvider} from '@chakra-ui/react'
 import theme from './theme'
 import * as React from 'react'
 import ReactDOM from 'react-dom'
-import { App } from './pages/App'
+import {App} from './pages/App'
 import reportWebVitals from './reportWebVitals'
 import * as serviceWorker from './serviceWorker'
 import 'focus-visible/dist/focus-visible'
-import { HashRouter } from 'react-router-dom'
+import {HashRouter} from 'react-router-dom'
 import AlertFromFORT from "./components/AlertFromFORT";
+import {RecoilRoot} from "recoil";
+import AlertNESTandFORT from "./components/AlertNESTandFORT";
 
 ReactDOM.render(
   <React.StrictMode>
     <HashRouter>
       <ChakraProvider theme={theme}>
-        <AlertFromFORT/>
-        <App />
+        <RecoilRoot>
+          <AlertFromFORT />
+          <AlertNESTandFORT />
+          <App/>
+        </RecoilRoot>
       </ChakraProvider>
     </HashRouter>
   </React.StrictMode>,
