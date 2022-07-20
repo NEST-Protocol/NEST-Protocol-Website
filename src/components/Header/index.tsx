@@ -131,6 +131,7 @@ const Header = () => {
                       px={'70px'}
                       onClick={() => {
                         navigate('/docs/Guide/Set-Up-Local-Environment.md')
+                        onClose()
                       }}
                     >
                       Start Building
