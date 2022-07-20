@@ -76,6 +76,7 @@ const Community = () => {
           fontSize={['24px', '48px']}
           fontWeight={'bold'}
           zIndex={1}
+          color={'#003434'}
         >
           NEST Community
         </Text>
@@ -85,6 +86,7 @@ const Community = () => {
           textAlign={'center'}
           maxW={'720px'}
           zIndex={1}
+          color={'#003434'}
         >
           The NEST community is made up of developers, creators, enthusiasts, explore, contribute to
           the community and get reward.

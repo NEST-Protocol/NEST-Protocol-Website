@@ -140,6 +140,7 @@ const Root = () => {
             fontWeight={'bold'}
             zIndex={1}
             letterSpacing={'10px'}
+            color={'#003434'}
           >
             NEST and FORT
             <br/>

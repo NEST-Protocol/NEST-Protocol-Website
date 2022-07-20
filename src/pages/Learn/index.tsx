@@ -70,6 +70,7 @@ const Learn = () => {
           fontSize={['24px', '48px']}
           fontWeight={'bold'}
           zIndex={1}
+          color={'#003434'}
         >
           What is NEST
         </Text>
@@ -79,6 +80,7 @@ const Learn = () => {
           textAlign={'center'}
           maxW={'720px'}
           zIndex={1}
+          color={'#003434'}
         >
           A complete gaming space with applications of DeFi, GameFi NFT built on the NEST. Swap,
           hedge, earn and even game with the NEST network to gain excess returns.
