@@ -62,7 +62,7 @@ const Learn = () => {
         >
           <Stack
             h={"full"}
-            bgSize={'cover'}
+            bgSize={['cover', 'contain']}
             bgImage={NEST_icon1}
             bgRepeat={'no-repeat'}
             bgPosition={'center'}

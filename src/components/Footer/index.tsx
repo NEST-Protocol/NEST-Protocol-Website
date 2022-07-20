@@ -157,7 +157,7 @@ const Footer = () => {
           </WrapItem>
         </Wrap>
         <HStack maxW={'1440px'} w={'full'} pr={4} justifyContent={'end'} pb={'80px'} zIndex={1}>
-          <Text color={'#003232'} fontSize={'14px'} fontWeight={'bold'} textAlign={'end'}>
+          <Text color={'#003434'} fontSize={'14px'} fontWeight={'bold'} textAlign={'end'}>
             ©2022 NEST
           </Text>
         </HStack>
