@@ -24,7 +24,6 @@ import Home_NESTxFORT_icon from '../assets/webp/Home_NESTxFORT_icon.webp'
 import Home_icon_3 from '../assets/webp/Home_icon_3.webp'
 import Home_icon_2 from '../assets/webp/Home_icon_2.webp'
 import Home_icon_4 from '../assets/webp/Home_icon_4.webp'
-import ChakraBox from '../components/ChakraBox'
 
 const Root = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -74,30 +73,30 @@ const Root = () => {
           bgSize={'100% 100%'}
           spacing={'24px'}
         >
-          <ChakraBox
-            position={'absolute'}
-            h={'360px'}
-            w={'full'}
-            bgSize={'contain'}
-            bgImage={Home_NESTxFORT_icon}
-            bgRepeat={'no-repeat'}
-            bgPosition={'center'}
-            zIndex={0}
-          />
-          <chakra.img src={NEST_URI} h={'34px'} alt={'nest_logo'} zIndex={1}/>
-          <chakra.img src={FORT_URI} h={'34px'} alt={'fort_logo'} zIndex={1}/>
+          <Stack w={"full"} p={'12px'} position={"absolute"} zIndex={0}>
+            <chakra.img
+              src={Home_NESTxFORT_icon}
+              alt="NEST"
+              objectFit={"contain"}
+              maxH={'308px'}
+            />
+          </Stack>
+          <chakra.img src={NEST_URI} h={['20px', '34px']} alt={'nest_logo'} zIndex={1}/>
+          <chakra.img src={FORT_URI} h={['17px', '30px']} alt={'fort_logo'} zIndex={1}/>
           <Text
             whiteSpace={'break-spaces'}
             textAlign={'center'}
             fontSize={['24px', '38px']}
             fontWeight={'bold'}
             zIndex={1}
-            letterSpacing={'10px'}
+            letterSpacing={['7px', '10px']}
             color={'#003434'}
           >
             NEST and FORT
             <br/>
-            Will merged on July 29, 2022
+            Will merged
+            {!isDesktop ? <br/> : <span>&nbsp;</span>}
+            on July 29, 2022
           </Text>
         </Stack>
         <HStack justify={'center'}>
@@ -112,7 +111,7 @@ const Root = () => {
           </Button>
         </HStack>
       </Stack>
-      {pages.map(({name, pathname, icon, bg, bgIcon, title, desc}) => (
+      {pages.map(({name, icon, bg, bgIcon, title, desc}) => (
         <Stack key={name} spacing={'48px'}>
           <Stack px={['24px', '48px']} w={'full'} align={'center'}>
             <Stack maxW={'1440px'} w={'full'}>
