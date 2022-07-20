@@ -48,7 +48,7 @@ const Learn = () => {
         align={'center'}
         h={'full'}
         justify={'center'}
-        minH={['540px', '660px']}
+        minH={'660px'}
         bgImage={Banner_URI}
         bgSize={'100% 100%'}
         spacing={['22px', '44px']}
@@ -56,14 +56,19 @@ const Learn = () => {
       >
         <Stack
           position={'absolute'}
-          h={'660px'}
           w={'full'}
-          bgSize={'contain'}
-          bgImage={NEST_icon1}
-          bgRepeat={'no-repeat'}
-          bgPosition={'center'}
-          zIndex={0}
-        />
+          overflow={"hidden"}
+          h={['500px', '660px']}
+        >
+          <Stack
+            h={"full"}
+            bgSize={'cover'}
+            bgImage={NEST_icon1}
+            bgRepeat={'no-repeat'}
+            bgPosition={'center'}
+            zIndex={0}
+          />
+        </Stack>
         <Text
           whiteSpace={'break-spaces'}
           textAlign={'center'}

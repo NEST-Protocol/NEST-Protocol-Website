@@ -30,27 +30,33 @@ const Ecosystem = () => {
         spacing={['22px', '44px']}
         px={'24px'}
       >
-        <ChakraBox
+        <Stack
           position={'absolute'}
           h={'600px'}
-          w={'full'}
-          overflow={'hidden'}
-          bgSize={'contain'}
-          bgImage={Ecosystem_icon1}
-          bgRepeat={'no-repeat'}
-          bgPosition={'center'}
           zIndex={0}
-          animate={{
-            rotate: [0, 360]
-          }}
-          // @ts-ignore
-          transition={{
-            duration: 60,
-            ease: 'linear',
-            repeat: Infinity,
-            repeatType: 'loop'
-          }}
-        />
+          w={'full'}
+          p={'48px'}
+        >
+          <ChakraBox
+            w={'full'}
+            h={'full'}
+            overflow={'hidden'}
+            bgSize={'contain'}
+            bgImage={Ecosystem_icon1}
+            bgRepeat={'no-repeat'}
+            bgPosition={'center'}
+            animate={{
+              rotate: [0, 360]
+            }}
+            // @ts-ignore
+            transition={{
+              duration: 60,
+              ease: 'linear',
+              repeat: Infinity,
+              repeatType: 'loop'
+            }}
+          />
+        </Stack>
         <Text textAlign={'center'} fontSize={['24px', '48px']} fontWeight={'bold'} zIndex={1} color={'#003434'}>
           Explore the {!isDesktop && <br/>} NEST Ecosystem
         </Text>
@@ -140,10 +146,10 @@ const Ecosystem = () => {
           </Stack>
         </Stack>
       </Stack>
-      <Stack spacing={'48px'} align={'center'} h={'840px'} justify={'start'}>
+      <Stack spacing={'48px'} align={'center'} h={['600px', '720px']} justify={'start'}>
         <Stack
           align={'center'}
-          maxH={'440px'}
+          h={['375px', '440px']}
           w={'full'}
           justify={'start'}
           spacing={['13px', '16px']}
@@ -152,7 +158,7 @@ const Ecosystem = () => {
         >
           <Stack
             position={'absolute'}
-            h={'440px'}
+            h={['375px', '440px']}
             w={'full'}
             overflow={'hidden'}
             bgImage={Ecosystem_icon3}
@@ -160,7 +166,10 @@ const Ecosystem = () => {
             bgPosition={'bottom'}
             zIndex={0}
           />
-          <chakra.img zIndex={1} pt={'80px'} src={Phone_Icon_URI}/>
+          <Stack pt={'40px'}>
+            <chakra.img zIndex={1} h={['360px', '440px']} src={Phone_Icon_URI}/>
+          </Stack>
+
           <Text
             fontSize={['17px', '24px']}
             fontWeight={'semibold'}
