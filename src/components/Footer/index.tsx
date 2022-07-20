@@ -218,7 +218,7 @@ const Footer = () => {
               <Text
                 cursor={'pointer'}
                 onClick={() => {
-                  navigate('docs')
+                  navigate('docs/Guide/Set-Up-Local-Environment.md')
                 }}
               >
                 Set up local environment
