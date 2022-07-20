@@ -7,11 +7,13 @@ import reportWebVitals from './reportWebVitals'
 import * as serviceWorker from './serviceWorker'
 import 'focus-visible/dist/focus-visible'
 import { HashRouter } from 'react-router-dom'
+import AlertFromFORT from "./components/AlertFromFORT";
 
 ReactDOM.render(
   <React.StrictMode>
     <HashRouter>
       <ChakraProvider theme={theme}>
+        <AlertFromFORT/>
         <App />
       </ChakraProvider>
     </HashRouter>
