@@ -5,7 +5,7 @@ export const styles = {
       'font-family': 'Montserrat'
     },
     '.js-focus-visible :focus:not([data-focus-visible-added])': {
-      outline: 'none',
+      'outline': 'none',
       'box-shadow': 'none'
     },
     '*': {

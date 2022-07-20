@@ -30,6 +30,8 @@ const AlertFromFORT = () => {
       onClose={onClose}
       isOpen={isOpen}
       isCentered
+      autoFocus={false}
+      closeOnOverlayClick={false}
     >
       <AlertDialogOverlay/>
       <AlertDialogContent p={'24px'}>
