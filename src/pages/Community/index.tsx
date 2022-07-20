@@ -6,7 +6,7 @@ import {
   chakra,
   useMediaQuery,
   Text,
-  Stack
+  Stack, IconButton
 } from '@chakra-ui/react'
 import Right from '../../assets/svg/right_icon.svg'
 import * as React from 'react'
@@ -136,14 +136,19 @@ const Community = () => {
                   </Text>
                   <Link isExternal href={item.link}>
                     {isDesktop ? (
-                      <chakra.img
-                        src={Right}
-                        alt={'right'}
-                        w={'44px'}
+                      <IconButton
+                        aria-label={''}
                         _hover={{transform: 'translateX(8px)'}}
-                      />
+                        icon={<chakra.img
+                          src={Right}
+                          alt={'right'}
+                          w={'44px'}
+                        />} size={'24px'}/>
                     ) : (
-                      <chakra.img src={Right} alt={'right'} height={'24px'} width={'24px'}/>
+                      <IconButton
+                        aria-label={''}
+                        icon={ <chakra.img src={Right} alt={'right'} height={'24px'} width={'24px'}/>}
+                      />
                     )}
                   </Link>
                 </HStack>

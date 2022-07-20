@@ -36,7 +36,8 @@ const Root = () => {
       bg: Ecosystem_URI,
       bgIcon: Home_icon_3,
       title: 'Explore the NEST Ecosystem',
-      desc: `A complete gaming space with applications of DeFi, GameFi and NFT built on the NEST. Swap, hedge, earn and even game with the NEST network to gain excess returns.`
+      desc: `A complete gaming space with applications of DeFi, GameFi and NFT built on the NEST. Swap, hedge, earn and even game with the NEST network to gain excess returns.`,
+      bgSize: ['160%' ,'80%'],
     },
     {
       name: 'Developers',
@@ -45,7 +46,8 @@ const Root = () => {
       bg: Developer_URI,
       bgIcon: Home_icon_2,
       title: 'Build smart contract with NEST',
-      desc: `Technical guidelines, source code, and detailed training materials on how to build NEST-based\napplications from scratch here.`
+      desc: `Technical guidelines, source code, and detailed training materials on how to build NEST-based\napplications from scratch here.`,
+      bgSize: ['160%' ,'100%'],
     },
     {
       name: 'Community',
@@ -54,7 +56,8 @@ const Root = () => {
       bg: Community_URI,
       bgIcon: Home_icon_4,
       title: 'Community',
-      desc: `The NEST community is made up of developers, creators, enthusiasts, explore, contribute to the community and\nget reward.`
+      desc: `The NEST community is made up of developers, creators, enthusiasts, explore, contribute to the community and\nget reward.`,
+      bgSize: ['140%' ,'100%'],
     }
   ]
 
@@ -111,7 +114,7 @@ const Root = () => {
           </Button>
         </HStack>
       </Stack>
-      {pages.map(({name, icon, bg, bgIcon, title, desc}) => (
+      {pages.map(({name, icon, bg, bgSize, bgIcon, title, desc}) => (
         <Stack key={name} spacing={'48px'}>
           <Stack px={['24px', '48px']} w={'full'} align={'center'}>
             <Stack maxW={'1440px'} w={'full'}>
@@ -136,6 +139,7 @@ const Root = () => {
               bgImage={bgIcon}
               bgRepeat={'no-repeat'}
               bgPosition={'center'}
+              bgSize={bgSize}
               zIndex={0}
             />
             <chakra.img src={icon} h={['55px', '110px']} zIndex={1}/>
