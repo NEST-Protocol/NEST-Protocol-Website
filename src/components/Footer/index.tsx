@@ -166,7 +166,6 @@ const Footer = () => {
   } else {
     return (
       <Stack
-        px={'24px'}
         py={'56px'}
         spacing={'32px'}
         bgImage={BG_URL}
@@ -183,7 +182,7 @@ const Footer = () => {
           bgPosition={'center'}
           zIndex={0}
         />
-        <HStack>
+        <HStack px={'24px'}>
           <Stack spacing={'32px'} w={'full'} zIndex={1}>
             <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
               Ecosystem
@@ -205,7 +204,7 @@ const Footer = () => {
             </Stack>
           </Stack>
         </HStack>
-        <HStack align={'start'}>
+        <HStack px={'24px'} align={'start'}>
           <Stack spacing={'32px'} w={'full'} zIndex={1}>
             <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
               Developers
@@ -263,7 +262,7 @@ const Footer = () => {
             </Stack>
           </Stack>
         </HStack>
-        <HStack align={'start'}>
+        <HStack px={'24px'} align={'start'}>
           <Stack spacing={'32px'} w={'full'} zIndex={1}>
             <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
               Learn
@@ -305,7 +304,7 @@ const Footer = () => {
             </Stack>
           </Stack>
         </HStack>
-        <Stack spacing={'32px'} zIndex={1}>
+        <Stack px={'24px'} spacing={'32px'} zIndex={1}>
           <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
             Market price
           </Text>
@@ -317,7 +316,7 @@ const Footer = () => {
             w={'full'}
           ></chakra.div>
         </Stack>
-        <Text color={'#7D7D7D'} fontSize={'12px'} fontWeight={'semibold'}>
+        <Text px={'24px'} color={'#7D7D7D'} fontSize={'12px'} fontWeight={'semibold'}>
           ©2022 NEST
         </Text>
       </Stack>
