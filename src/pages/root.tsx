@@ -138,7 +138,7 @@ const Root = () => {
               bgPosition={'center'}
               zIndex={0}
             />
-            <chakra.img src={icon} zIndex={1}/>
+            <chakra.img src={icon} h={['55px', '110px']} zIndex={1}/>
             <chakra.a
               fontSize={['17px', '24px']}
               fontWeight={'semibold'}
