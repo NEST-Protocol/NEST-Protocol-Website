@@ -10,6 +10,7 @@ import NEST_URI from "../../assets/svg/nest.svg";
 import FORT_URI from "../../assets/svg/fort.svg";
 import * as React from "react";
 import {atom, useRecoilState} from "recoil";
+import {SmallCloseIcon} from "@chakra-ui/icons";
 
 const showAlertNESTandFORTAtom = atom({
   key: 'showAlertNESTandFORT',
@@ -37,7 +38,7 @@ const AlertNESTandFORT = () => {
           <Stack fontSize={'md'} color={'#003434'} fontWeight={'500'} spacing={'24px'}>
             <HStack justify={"center"}>
               <chakra.img src={NEST_URI}/>
-              <Text>✖️</Text>
+              <SmallCloseIcon />
               <chakra.img src={FORT_URI}/>
             </HStack>
             <Text>

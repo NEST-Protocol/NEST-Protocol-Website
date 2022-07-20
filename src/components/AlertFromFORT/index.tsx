@@ -10,6 +10,7 @@ import {
 import NEST_URI from "../../assets/svg/nest.svg";
 import FORT_URI from "../../assets/svg/fort.svg";
 import * as React from "react";
+import {SmallCloseIcon} from "@chakra-ui/icons";
 
 const AlertFromFORT = () => {
   let [searchParams] = useSearchParams();
@@ -40,7 +41,7 @@ const AlertFromFORT = () => {
           <Stack fontSize={'md'} color={'#003434'} fontWeight={'500'} spacing={'24px'}>
             <HStack justify={"center"}>
               <chakra.img src={NEST_URI}/>
-              <Text>✖️</Text>
+              <SmallCloseIcon />
               <chakra.img src={FORT_URI}/>
             </HStack>
             <Text>
