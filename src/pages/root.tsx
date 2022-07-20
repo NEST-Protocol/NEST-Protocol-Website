@@ -46,7 +46,7 @@ const Root = () => {
       bg: Developer_URI,
       bgIcon: Home_icon_2,
       title: 'Build smart contract with NEST',
-      desc: `Technical guidelines, source code, and detailed training materials on how to build NEST-based applications from scratch here.`
+      desc: `Technical guidelines, source code, and detailed training materials on how to build NEST-based\napplications from scratch here.`
     },
     {
       name: 'Community',
@@ -55,7 +55,7 @@ const Root = () => {
       bg: Community_URI,
       bgIcon: Home_icon_4,
       title: 'Community',
-      desc: `The NEST community is made up of developers, creators, enthusiasts, explore, contribute to the community and get reward.`
+      desc: `The NEST community is made up of developers, creators, enthusiasts, explore, contribute to the community and\nget reward.`
     }
   ]
 
@@ -144,7 +144,6 @@ const Root = () => {
               fontSize={['17px', '24px']}
               fontWeight={'semibold'}
               color={'#003232'}
-              href={pathname}
               zIndex={1}
             >
               {title}
@@ -155,7 +154,6 @@ const Root = () => {
               color={'#003232'}
               whiteSpace={'break-spaces'}
               textAlign={'center'}
-              href={pathname}
               maxW={'480px'}
               zIndex={1}
             >
