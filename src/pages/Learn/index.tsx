@@ -78,7 +78,7 @@ const Learn = () => {
           fontSize={['12px', '24px']}
           fontWeight={'bold'}
           textAlign={'center'}
-          maxW={'720px'}
+          maxW={'740px'}
           zIndex={1}
           color={'#003434'}
         >

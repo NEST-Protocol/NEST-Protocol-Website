@@ -88,8 +88,9 @@ const Community = () => {
           zIndex={1}
           color={'#003434'}
         >
-          The NEST community is made up of developers, creators, enthusiasts, explore, contribute to
-          the community and get reward.
+          The NEST community is made up of developers, creators, enthusiasts, explore, contribute to the
+          <br/>
+          community and get reward.
         </Text>
       </Stack>
       <Stack align={'center'}>

@@ -108,10 +108,10 @@ const Header = () => {
                       {Menu.map(({ name, pathname }) => (
                         <Button
                           key={name}
-                          color={location.pathname.includes(pathname) ? '#EAAA00' : '#000'}
-                          fontWeight={location.pathname.includes(pathname) ? 'bold' : '500'}
+                          color={location.pathname.includes(pathname) ? '#EAAA00' : '#003232'}
+                          fontWeight={location.pathname.includes(pathname) ? 'bold' : '600'}
                           variant={'ghost'}
-                          fontSize={['17px', '24px']}
+                          fontSize={'25px'}
                           p={0}
                           onClick={() => {
                             if (pathname.includes('https')) {

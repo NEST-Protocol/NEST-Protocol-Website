@@ -1,4 +1,4 @@
-import { chakra, Heading, Stack, Text, useMediaQuery } from '@chakra-ui/react'
+import {chakra, Heading, IconButton, Stack, Text, useMediaQuery} from '@chakra-ui/react'
 import * as React from 'react'
 import Banner_URI from '../../assets/webp/Ecosystem_pic_1.webp'
 import Project1_URI from '../../assets/webp/Ecosystem_pic_2.webp'
@@ -6,7 +6,7 @@ import Project2_URI from '../../assets/webp/Ecosystem_pic_3.webp'
 import Market_Icon_URI from '../../assets/webp/Market_icon.webp'
 import Phone_Icon_URI from '../../assets/webp/iPhone_pic.webp'
 import RIGHT_URI from '../../assets/svg/right_icon.svg'
-import { Helmet } from 'react-helmet'
+import {Helmet} from 'react-helmet'
 import Ecosystem_icon1 from '../../assets/webp/Ecosystem_icon_1.webp'
 import Ecosystem_icon2 from '../../assets/webp/Ecosystem_icon_2.webp'
 import Ecosystem_icon3 from '../../assets/webp/Ecosystem_icon_3.webp'
@@ -52,13 +52,13 @@ const Ecosystem = () => {
           }}
         />
         <Text textAlign={'center'} fontSize={['24px', '48px']} fontWeight={'bold'} zIndex={1} color={'#003434'}>
-          Explore the {!isDesktop && <br />} NEST Ecosystem
+          Explore the {!isDesktop && <br/>} NEST Ecosystem
         </Text>
         <Text
           fontSize={['12px', '24px']}
           fontWeight={'bold'}
           textAlign={'center'}
-          maxW={'720px'}
+          maxW={'740px'}
           zIndex={1}
           color={'#003434'}
         >
@@ -95,16 +95,16 @@ const Ecosystem = () => {
             bgPosition={'center'}
             zIndex={0}
           />
-          <chakra.img src={Market_Icon_URI} zIndex={1} />
-          <chakra.a
+          <chakra.img src={Market_Icon_URI} zIndex={1}/>
+          <Text
             fontSize={['17px', '24px']}
             fontWeight={'semibold'}
             color={'#003232'}
             zIndex={1}
           >
             NEST Financial Market
-          </chakra.a>
-          <chakra.a
+          </Text>
+          <Text
             zIndex={1}
             fontSize={['12px', '15px']}
             fontWeight={'semibold'}
@@ -114,28 +114,30 @@ const Ecosystem = () => {
             maxW={'320px'}
           >
             Get NEST token here and buy futures, options or play DeFi games to win NEST.
-          </chakra.a>
-          <chakra.a
-            zIndex={1}
-            fontSize={['12px', '15px']}
-            fontWeight={'semibold'}
-            color={'#003232'}
-            whiteSpace={'break-spaces'}
-            textAlign={'center'}
-            maxW={'320px'}
-          >
-            Win NEST and Trade
-          </chakra.a>
-          <chakra.img
-            zIndex={1}
-            src={RIGHT_URI}
-            w={'44px'}
-            cursor={'pointer'}
-            _hover={{ transform: 'translateX(8px)' }}
-            onClick={() => {
-              window.open('https://finance.nestprotocol.org', '_blank')
-            }}
-          />
+          </Text>
+          <Stack align={"center"}>
+            <Text
+              zIndex={1}
+              fontSize={['12px', '15px']}
+              fontWeight={'semibold'}
+              color={'#003232'}
+              whiteSpace={'break-spaces'}
+              textAlign={'center'}
+              maxW={'320px'}
+            >
+              Win NEST and Trade
+            </Text>
+            <IconButton
+              aria-label={''}
+              zIndex={1}
+              w={'44px'}
+              _hover={{transform: 'translateX(8px)'}}
+              icon={<chakra.img src={RIGHT_URI} />}
+              onClick={() => {
+                window.open('https://finance.nestprotocol.org', '_blank')
+              }}
+            />
+          </Stack>
         </Stack>
       </Stack>
       <Stack spacing={'48px'} align={'center'} h={'840px'} justify={'start'}>
@@ -158,16 +160,16 @@ const Ecosystem = () => {
             bgPosition={'bottom'}
             zIndex={0}
           />
-          <chakra.img zIndex={1} pt={'80px'} src={Phone_Icon_URI} />
-          <chakra.a
+          <chakra.img zIndex={1} pt={'80px'} src={Phone_Icon_URI}/>
+          <Text
             fontSize={['17px', '24px']}
             fontWeight={'semibold'}
             color={'#003232'}
             zIndex={1}
           >
             NEST Oracle
-          </chakra.a>
-          <chakra.a
+          </Text>
+          <Text
             zIndex={1}
             fontSize={['12px', '15px']}
             fontWeight={'semibold'}
@@ -177,32 +179,34 @@ const Ecosystem = () => {
             maxW={'320px'}
           >
             Truly decentralized oracle
-            <br />
+            <br/>
             Nodeless permissionless quotation
-            <br />
+            <br/>
             On-chain verification.
-          </chakra.a>
-          <chakra.a
-            zIndex={1}
-            fontSize={['12px', '15px']}
-            fontWeight={'semibold'}
-            color={'#003232'}
-            whiteSpace={'break-spaces'}
-            textAlign={'center'}
-            maxW={'320px'}
-          >
-            Create Your Own Oracle
-          </chakra.a>
-          <chakra.img
-            zIndex={1}
-            src={RIGHT_URI}
-            w={'44px'}
-            cursor={'pointer'}
-            _hover={{ transform: 'translateX(8px)' }}
-            onClick={() => {
-              window.open('https://oracle.nestprotocol.org/', '_blank')
-            }}
-          />
+          </Text>
+          <Stack align={"center"}>
+            <Text
+              zIndex={1}
+              fontSize={['12px', '15px']}
+              fontWeight={'semibold'}
+              color={'#003232'}
+              whiteSpace={'break-spaces'}
+              textAlign={'center'}
+              maxW={'320px'}
+            >
+              Create Your Own Oracle
+            </Text>
+            <IconButton
+              aria-label={''}
+              zIndex={1}
+              w={'44px'}
+              _hover={{transform: 'translateX(8px)'}}
+              icon={<chakra.img src={RIGHT_URI} />}
+              onClick={() => {
+                window.open('https://oracle.nestprotocol.org/', '_blank')
+              }}
+            />
+          </Stack>
         </Stack>
       </Stack>
     </>
