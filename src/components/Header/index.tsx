@@ -17,7 +17,6 @@ import {useLocation, useNavigate} from 'react-router-dom'
 import * as React from 'react'
 import {HamburgerIcon} from '@chakra-ui/icons'
 import BG_URL from '../../assets/webp/Footer_bg.webp'
-import Banner from "../Banner";
 
 const Header = () => {
   const location = useLocation()
@@ -44,7 +43,6 @@ const Header = () => {
       zIndex={'10'}
       spacing={0}
     >
-      <Banner/>
       <HStack
         maxW={'1440px'}
         w={'full'}

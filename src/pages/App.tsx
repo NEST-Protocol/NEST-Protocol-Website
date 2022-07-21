@@ -8,10 +8,12 @@ import Ecosystem from './Ecosystem'
 import Community from './Community'
 import Learn from './Learn'
 import Developers from './Developers'
+import Banner from "../components/Banner";
 
 export const App = () => {
   return (
     <Stack spacing={0} minH={'100vh'}>
+      <Banner/>
       <Header />
       <Stack spacing={['56px', '80px']} pb={['56px', '80px']}>
         <Routes>

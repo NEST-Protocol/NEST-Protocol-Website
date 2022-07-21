@@ -20,8 +20,6 @@ const Banner = () => {
     <Collapse in={show} animateOpacity>
       <Stack
         w={'100vw'}
-        position={'sticky'}
-        top={0}
         bgSize={'cover'}
         align={'center'}
         bg={"white"}
