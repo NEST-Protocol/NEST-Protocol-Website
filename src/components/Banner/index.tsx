@@ -1,8 +1,9 @@
-import {CloseButton, HStack, Stack, Text} from "@chakra-ui/react";
+import {CloseButton, HStack, Stack, Text, useMediaQuery} from "@chakra-ui/react";
 import {useEffect, useState} from "react";
 
 const Banner = () => {
   const [show, setShow] = useState(true)
+  const [isDesktop] = useMediaQuery('(min-width: 768px)')
 
   useEffect(() => {
     const isHidden = window.localStorage.getItem('nest:hidden:banner')
@@ -29,7 +30,7 @@ const Banner = () => {
         spacing={'24px'}
         justify={"space-between"}
       >
-        <div/>
+        { isDesktop && <div/> }
         <Text
           fontSize={'7px'}
           fontWeight={"medium"}
