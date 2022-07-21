@@ -41,7 +41,7 @@ const Header = () => {
       top={0}
       w={'full'}
       align={'center'}
-      bgImage={scrollY > 90 ? BG_URL : ''}
+      bgImage={scrollY > (location.pathname.includes('docs') ? 0 : 90) ? BG_URL : ''}
       bgSize={'cover'}
       overflow={'hidden'}
       zIndex={'10'}
