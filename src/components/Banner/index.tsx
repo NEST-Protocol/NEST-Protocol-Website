@@ -1,8 +1,16 @@
 import {CloseButton, HStack, Stack, Text} from "@chakra-ui/react";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 const Banner = () => {
   const [show, setShow] = useState(true)
+
+  useEffect(() => {
+    const isHidden = window.localStorage.getItem('nest:hidden:banner')
+    if (isHidden) {
+      setShow(false)
+    }
+  }, [])
+
   return (
     <Stack
       w={'full'}
@@ -33,7 +41,10 @@ const Banner = () => {
           borderRadius={'full'}
           color={'#003232'}
           size={'sm'}
-          onClick={() => setShow(false)}
+          onClick={() => {
+            setShow(false)
+            window.localStorage.setItem('nest:hidden:banner', 'true')
+          }}
         />
       </HStack>
     </Stack>
