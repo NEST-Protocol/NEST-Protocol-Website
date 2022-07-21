@@ -47,7 +47,7 @@ const AlertNESTandFORT = () => {
           <HStack justify={"center"}>
             <chakra.img src={NEST_URI} h={'20px'}/>
             <SmallCloseIcon />
-            <chakra.img src={FORT_URI} h={'20px'}/>
+            <chakra.img src={FORT_URI} h={'34px'}/>
           </HStack>
         </AlertDialogHeader>
         <AlertDialogBody p={'40px'}>
@@ -62,6 +62,7 @@ const AlertNESTandFORT = () => {
                 Starting from 10:00 (GMT+0) July 7 (some suspensions will
                 take place a few hours earlier due to technical reason).
               </Text>
+              <br/>
               <Text textAlign={"end"}>FORT DAO July 6th, 2022</Text>
             </Stack>
           </Stack>

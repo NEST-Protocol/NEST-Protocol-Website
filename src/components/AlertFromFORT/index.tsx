@@ -50,7 +50,7 @@ const AlertFromFORT = () => {
           <HStack justify={"center"}>
             <chakra.img src={NEST_URI} h={'20px'}/>
             <SmallCloseIcon />
-            <chakra.img src={FORT_URI} h={'20px'}/>
+            <chakra.img src={FORT_URI} h={'34px'}/>
           </HStack>
         </AlertDialogHeader>
         <AlertDialogBody p={'40px'}>
@@ -68,14 +68,17 @@ const AlertFromFORT = () => {
               <Text>
                 1. the users will be suspended from buying DCU, although
                 the holder can still sell it;
-                <br/>
+              </Text>
+              <Text>
                 2. the investors cannot open any positions for the future and
                 option contracts, but all the contracts already purchased can
                 still be settled;
-                <br/>
+              </Text>
+              <Text>
                 3. Probability coin is suspended from buying and selling but
                 the holder can still spend it to win DCU.
               </Text>
+              <br/>
               <Text textAlign={"end"}>FORT DAO July 6th, 2022</Text>
             </Stack>
           </Stack>
