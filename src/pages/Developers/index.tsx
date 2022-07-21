@@ -129,7 +129,7 @@ const Developers = () => {
                   <Text
                     _hover={{color: '#EAAA00'}}
                     color={location.pathname === child.pathname ? '#EAAA00' : '#003232'}
-                    fontWeight={location.pathname === child.pathname ? 600 : 400}
+                    fontWeight={location.pathname === child.pathname ? 600 : 500}
                     key={child.title}
                     cursor={'pointer'}
                     onClick={() => {
@@ -205,7 +205,7 @@ const Developers = () => {
                             <Text
                               _hover={{color: '#EAAA00'}}
                               color={location.pathname === child.pathname ? '#EAAA00' : '#003232'}
-                              fontWeight={location.pathname === child.pathname ? 600 : 400}
+                              fontWeight={location.pathname === child.pathname ? 600 : 500}
                               key={child.title}
                               cursor={'pointer'}
                               onClick={() => {

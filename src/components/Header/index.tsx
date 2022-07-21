@@ -13,40 +13,44 @@ import {
   useDisclosure
 } from '@chakra-ui/react'
 import NEST_LOGO from '../../assets/svg/nest.svg'
-import { useLocation, useNavigate } from 'react-router-dom'
+import {useLocation, useNavigate} from 'react-router-dom'
 import * as React from 'react'
-import { HamburgerIcon } from '@chakra-ui/icons'
-import useScrollPosition from '@react-hook/window-scroll'
+import {HamburgerIcon} from '@chakra-ui/icons'
 import BG_URL from '../../assets/webp/Footer_bg.webp'
+import Banner from "../Banner";
 
 const Header = () => {
   const location = useLocation()
   const navigate = useNavigate()
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
-  const { isOpen, onOpen, onClose } = useDisclosure()
-  const scrollY = useScrollPosition()
+  const {isOpen, onOpen, onClose} = useDisclosure()
 
   const Menu = [
-    { name: 'Ecosystem', pathname: 'ecosystem' },
-    { name: 'Developers', pathname: 'docs' },
-    { name: 'Community', pathname: 'community' },
-    { name: 'Learn', pathname: 'learn' }
+    {name: 'Ecosystem', pathname: 'ecosystem'},
+    {name: 'Developers', pathname: 'docs'},
+    {name: 'Community', pathname: 'community'},
+    {name: 'Learn', pathname: 'learn'}
   ]
 
   return (
     <Stack
-      px={['24px', '48px']}
-      py={'24px'}
       position={'sticky'}
       top={0}
       w={'full'}
       align={'center'}
-      bgImage={scrollY > (location.pathname.includes('docs') ? 0 : 90) ? BG_URL : ''}
+      bgImage={BG_URL}
       bgSize={'cover'}
       overflow={'hidden'}
       zIndex={'10'}
+      spacing={0}
     >
-      <HStack maxW={'1440px'} w={'full'} spacing={'24px'}>
+      <Banner/>
+      <HStack
+        maxW={'1440px'}
+        w={'full'}
+        px={['24px', '48px']}
+        py={'24px'}
+        spacing={'24px'}>
         <chakra.img
           src={NEST_LOGO}
           alt="NEST Logo"
@@ -58,10 +62,10 @@ const Header = () => {
           }}
         />
 
-        <Spacer />
+        <Spacer/>
 
         {isDesktop &&
-          Menu.map(({ name, pathname }) => (
+          Menu.map(({name, pathname}) => (
             <Button
               variant={'ghost'}
               key={name}
@@ -91,7 +95,7 @@ const Header = () => {
         {!isDesktop && (
           <>
             <Button onClick={onOpen} fontSize={'36px'} alignItems={'end'} p={0} variant={'ghost'}>
-              <HamburgerIcon />
+              <HamburgerIcon/>
             </Button>
             <Modal
               isOpen={isOpen}
@@ -103,15 +107,15 @@ const Header = () => {
               <ModalContent zIndex={20}>
                 <ModalCloseButton
                   size={'36px'}
-                  _active={{ bg: 'none' }}
-                  _hover={{ bg: 'none' }}
+                  _active={{bg: 'none'}}
+                  _hover={{bg: 'none'}}
                   pt={'14px'}
                   px={'11px'}
                 />
                 <ModalBody p={'22px'}>
                   <VStack alignItems={'center'} pt={'100px'} spacing={'120px'}>
                     <VStack spacing={'17px'}>
-                      {Menu.map(({ name, pathname }) => (
+                      {Menu.map(({name, pathname}) => (
                         <Button
                           key={name}
                           color={location.pathname.includes(pathname) ? '#EAAA00' : '#003232'}
