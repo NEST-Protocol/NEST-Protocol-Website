@@ -38,8 +38,9 @@ const Banner = () => {
             fontWeight={"medium"}
             maxW={'500px'}
             color={'#003232'}
-          >The technical teams of the FORT protocol and NEST protocol will jointly advance the merger, and the merger is
-            expected to be completed on July 29th.</Text>
+          >The technical teams of the FORT protocol and NEST
+            protocol worked together to advance the merger, and the merger is
+            completed ahead of schedule on July 22nd.</Text>
           <CloseButton
             border={'2px'}
             borderRadius={'full'}

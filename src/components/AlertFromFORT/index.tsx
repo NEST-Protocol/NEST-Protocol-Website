@@ -58,8 +58,8 @@ const AlertFromFORT = () => {
             <Stack spacing={'24px'}>
               <Text>
                 The technical teams of the FORT protocol and NEST
-                protocol will jointly advance the merger, and the merger is
-                expected to be completed on July 29th.
+                protocol worked together to advance the merger, and the merger is
+                completed ahead of schedule on July 22nd.
               </Text>
               <Text>
                 Starting from 10:00 (GMT+0) July 7 (some suspensions will
