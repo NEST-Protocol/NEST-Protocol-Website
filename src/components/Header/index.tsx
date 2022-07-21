@@ -41,7 +41,7 @@ const Header = () => {
       w={'full'}
       align={'center'}
       bgImage={scrollY > 90 || location.pathname.includes('/docs') ? BG_URL : ''}
-      bgSize={'100% 100%'}
+      bgSize={'cover'}
       overflow={'hidden'}
       zIndex={'10'}
     >
@@ -51,7 +51,10 @@ const Header = () => {
           alt="NEST Logo"
           h={'20px'}
           cursor={'pointer'}
-          onClick={() => navigate('/')}
+          onClick={() => {
+            navigate('/')
+            window.scrollTo(0, 0)
+          }}
         />
 
         <Spacer />
@@ -64,6 +67,7 @@ const Header = () => {
               cursor={'pointer'}
               onClick={() => {
                 navigate(pathname)
+                window.scrollTo(0, 0)
               }}
               color={location.pathname.includes(pathname) ? '#EAAA00' : '#003232'}
               fontWeight={location.pathname.includes(pathname) ? 'bold' : '500'}
@@ -76,6 +80,7 @@ const Header = () => {
           <Button
             onClick={() => {
               navigate('/docs/Guide/Set-Up-Local-Environment.md')
+              window.scrollTo(0, 0)
             }}
           >
             Start Building
