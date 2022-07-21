@@ -1,4 +1,4 @@
-import {useRef} from "react";
+import {useEffect, useRef} from "react";
 import {
   AlertDialog,
   AlertDialogBody,
@@ -12,6 +12,7 @@ import * as React from "react";
 import {atom, useRecoilState} from "recoil";
 import {SmallCloseIcon} from "@chakra-ui/icons";
 import Banner_URI from '../../assets/webp/Ecosystem_pic_1.webp'
+import {useSearchParams} from "react-router-dom";
 
 const showAlertNESTandFORTAtom = atom({
   key: 'showAlertNESTandFORT',
@@ -19,8 +20,16 @@ const showAlertNESTandFORTAtom = atom({
 });
 
 const AlertNESTandFORT = () => {
+  let [searchParams] = useSearchParams();
+  const from = searchParams.get('from') || undefined;
   const cancelRef = useRef(null)
   const [show, setShow] = useRecoilState(showAlertNESTandFORTAtom);
+
+  useEffect(() => {
+    if (from === 'fort') {
+      setShow(false)
+    }
+  }, [show]);
 
   return (
     <AlertDialog
