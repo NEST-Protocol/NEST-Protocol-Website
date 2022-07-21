@@ -134,6 +134,7 @@ const Developers = () => {
                     cursor={'pointer'}
                     onClick={() => {
                       navigate(child.pathname)
+                      window.scrollTo(0, 0)
                     }}
                   >
                     {child.title}
@@ -144,7 +145,7 @@ const Developers = () => {
           </Stack>
         )}
 
-        <Stack minW={['full', '768px']} maxW={['full', '768px']} pt={['94px', '112px']} minH={'720px'} spacing={'48px'}>
+        <Stack minW={['full', '768px']} maxW={['full', '768px']} pt={['24px', '24px']} minH={'720px'} spacing={'48px'}>
           <ReactMarkdown children={md} remarkPlugins={[remarkGfm]} className={'markdown-body'}/>
           {!isDesktop && (
             <Stack spacing={'48px'}>
@@ -209,6 +210,8 @@ const Developers = () => {
                               cursor={'pointer'}
                               onClick={() => {
                                 navigate(child.pathname)
+                                window.scrollTo(0, 0)
+                                onClose()
                               }}
                             >
                               {child.title}

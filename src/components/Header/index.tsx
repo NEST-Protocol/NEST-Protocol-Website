@@ -37,10 +37,11 @@ const Header = () => {
     <Stack
       px={['24px', '48px']}
       py={'24px'}
-      position={'fixed'}
+      position={'sticky'}
+      top={0}
       w={'full'}
       align={'center'}
-      bgImage={scrollY > 90 || location.pathname.includes('/docs') ? BG_URL : ''}
+      bgImage={scrollY > 90 ? BG_URL : ''}
       bgSize={'cover'}
       overflow={'hidden'}
       zIndex={'10'}
