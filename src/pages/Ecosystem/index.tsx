@@ -26,7 +26,8 @@ const Ecosystem = () => {
         justify={'center'}
         minH={['540px', '660px']}
         bgImage={Banner_URI}
-        bgSize={'100% 100%'}
+        bgSize={'cover'}
+        bgPosition={"center"}
         spacing={['22px', '44px']}
         px={'24px'}
       >

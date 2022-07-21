@@ -16,6 +16,7 @@ const Footer = () => {
         align={'center'}
         bgImage={BG_URL}
         bgSize={'cover'}
+        bgPosition={"center"}
         zIndex={'10'}
       >
         <Stack
@@ -170,7 +171,7 @@ const Footer = () => {
         spacing={'32px'}
         bgImage={BG_URL}
         bgSize={'cover'}
-        bgPosition={'center'}
+        bgPosition={"center"}
       >
         <Stack
           position={'absolute'}

@@ -50,7 +50,8 @@ const Learn = () => {
         justify={'center'}
         minH={'660px'}
         bgImage={Banner_URI}
-        bgSize={'100% 100%'}
+        bgSize={'cover'}
+        bgPosition={"center"}
         spacing={['22px', '44px']}
         px={'24px'}
       >

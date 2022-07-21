@@ -73,7 +73,8 @@ const Root = () => {
           justify={'center'}
           minH={['540px', '660px']}
           bgImage={Home_NESTxFORT_pic}
-          bgSize={'100% 100%'}
+          bgSize={'cover'}
+          bgPosition={"center"}
           spacing={'24px'}
         >
           <Stack w={"full"} p={'12px'} position={"absolute"} zIndex={0}>
