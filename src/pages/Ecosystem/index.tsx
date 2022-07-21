@@ -88,7 +88,8 @@ const Ecosystem = () => {
           justify={'center'}
           spacing={['13px', '16px']}
           bgImage={Project1_URI}
-          bgSize={'100% 100%'}
+          bgSize={'cover'}
+          bgPosition={"center"}
         >
           <Stack
             position={'absolute'}
@@ -155,7 +156,8 @@ const Ecosystem = () => {
           justify={'start'}
           spacing={['13px', '16px']}
           bgImage={Project2_URI}
-          bgSize={'100% 100%'}
+          bgSize={'cover'}
+          bgPosition={"center"}
         >
           <Stack
             position={'absolute'}
