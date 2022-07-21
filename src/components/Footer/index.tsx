@@ -45,6 +45,7 @@ const Footer = () => {
                   cursor={'pointer'}
                   onClick={() => {
                     navigate('ecosystem')
+                    window.scrollTo(0, 0)
                   }}
                 >
                   Explore applications
@@ -67,6 +68,7 @@ const Footer = () => {
                   cursor={'pointer'}
                   onClick={() => {
                     navigate('docs')
+                    window.scrollTo(0, 0)
                   }}
                 >
                   Docs
@@ -83,6 +85,7 @@ const Footer = () => {
                   cursor={'pointer'}
                   onClick={() => {
                     navigate('docs/Guide/Set-Up-Local-Environment.md')
+                    window.scrollTo(0, 0)
                   }}
                 >
                   Set up local environment
@@ -105,6 +108,7 @@ const Footer = () => {
                   cursor={'pointer'}
                   onClick={() => {
                     navigate('community')
+                    window.scrollTo(0, 0)
                   }}
                 >
                   Online communities
@@ -127,6 +131,7 @@ const Footer = () => {
                   cursor={'pointer'}
                   onClick={() => {
                     navigate('learn')
+                    window.scrollTo(0, 0)
                   }}
                 >
                   What is NEST
@@ -135,6 +140,7 @@ const Footer = () => {
                   cursor={'pointer'}
                   onClick={() => {
                     navigate('learn')
+                    window.scrollTo(0, 0)
                   }}
                 >
                   Blogs
@@ -221,6 +227,7 @@ const Footer = () => {
                 cursor={'pointer'}
                 onClick={() => {
                   navigate('docs')
+                  window.scrollTo(0, 0)
                 }}
               >
                 Docs
