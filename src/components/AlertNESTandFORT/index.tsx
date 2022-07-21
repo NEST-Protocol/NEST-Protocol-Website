@@ -6,7 +6,7 @@ import {
   AlertDialogContent, AlertDialogHeader,
   AlertDialogOverlay, chakra, HStack, Stack, Text, useMediaQuery
 } from "@chakra-ui/react";
-import NEST_URI from "../../assets/svg/nest.svg";
+import NEST_URI from "../../assets/svg/nest_blue.svg";
 import FORT_URI from "../../assets/svg/fort.svg";
 import * as React from "react";
 import {atom, useRecoilState} from "recoil";
