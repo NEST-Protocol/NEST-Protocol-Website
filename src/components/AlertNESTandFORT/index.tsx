@@ -3,7 +3,7 @@ import {
   AlertDialog,
   AlertDialogBody,
   AlertDialogCloseButton,
-  AlertDialogContent,
+  AlertDialogContent, AlertDialogHeader,
   AlertDialogOverlay, chakra, HStack, Stack, Text
 } from "@chakra-ui/react";
 import NEST_URI from "../../assets/svg/nest.svg";
@@ -11,6 +11,7 @@ import FORT_URI from "../../assets/svg/fort.svg";
 import * as React from "react";
 import {atom, useRecoilState} from "recoil";
 import {SmallCloseIcon} from "@chakra-ui/icons";
+import Banner_URI from '../../assets/webp/Ecosystem_pic_1.webp'
 
 const showAlertNESTandFORTAtom = atom({
   key: 'showAlertNESTandFORT',
@@ -30,27 +31,39 @@ const AlertNESTandFORT = () => {
       isCentered
       autoFocus={false}
       closeOnOverlayClick={false}
+      size={'lg'}
     >
       <AlertDialogOverlay/>
-      <AlertDialogContent p={'24px'}>
-        <AlertDialogCloseButton/>
-        <AlertDialogBody>
-          <Stack fontSize={'md'} color={'#003434'} fontWeight={'500'} spacing={'24px'}>
-            <HStack justify={"center"}>
-              <chakra.img src={NEST_URI}/>
-              <SmallCloseIcon />
-              <chakra.img src={FORT_URI}/>
-            </HStack>
-            <Text>
-              The technical teams of the FORT protocol and NEST
-              protocol will jointly advance the merger, and the merger is
-              expected to be completed on July 29th.
-            </Text>
-            <Text>
-              Starting from 10:00 (GMT+0) July 7 (some suspensions will
-              take place a few hours earlier due to technical reason).
-            </Text>
-            <Text textAlign={"end"}>FORT DAO July 6th, 2022</Text>
+      <AlertDialogContent borderRadius={'20px'} bgImage={Banner_URI} bgPosition={"center"} bgSize={"cover"}>
+        <AlertDialogCloseButton
+          top={0}
+          right={'-48px'}
+          color={'white'}
+          borderRadius={'full'}
+          border={'2px'}
+          size={'sm'}
+        />
+        <AlertDialogHeader pt={'40px'} pb={0} fontSize='lg' fontWeight='bold'>
+          <HStack justify={"center"}>
+            <chakra.img src={NEST_URI} h={'20px'}/>
+            <SmallCloseIcon />
+            <chakra.img src={FORT_URI} h={'20px'}/>
+          </HStack>
+        </AlertDialogHeader>
+        <AlertDialogBody p={'40px'}>
+          <Stack fontSize={'14px'} color={'#003434'} fontWeight={'600'} spacing={'44px'} minH={'240px'} justify={"center"}>
+            <Stack spacing={'24px'}>
+              <Text>
+                The technical teams of the FORT protocol and NEST
+                protocol will jointly advance the merger, and the merger is
+                expected to be completed on July 29th.
+              </Text>
+              <Text>
+                Starting from 10:00 (GMT+0) July 7 (some suspensions will
+                take place a few hours earlier due to technical reason).
+              </Text>
+              <Text textAlign={"end"}>FORT DAO July 6th, 2022</Text>
+            </Stack>
           </Stack>
         </AlertDialogBody>
       </AlertDialogContent>
