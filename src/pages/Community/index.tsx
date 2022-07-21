@@ -1,7 +1,6 @@
 import {
   HStack,
   Link,
-  SimpleGrid,
   VStack,
   chakra,
   useMediaQuery,
