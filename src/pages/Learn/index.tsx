@@ -21,7 +21,7 @@ import { Helmet } from 'react-helmet'
 import NEST_icon1 from '../../assets/webp/NEST_icon_1.webp'
 import blogs_logo_1 from '../../assets/webp/blogs_logo_1.webp'
 import blogs_logo_2 from '../../assets/webp/blogs_logo_2.webp'
-import NEST_logo from '../../assets/svg/nest.svg'
+import NEST_logo from '../../assets/svg/nest_blue.svg'
 
 const Learn = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
