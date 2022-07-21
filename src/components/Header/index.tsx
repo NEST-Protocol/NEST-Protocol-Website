@@ -16,7 +16,6 @@ import NEST_LOGO from '../../assets/svg/nest.svg'
 import {useLocation, useNavigate} from 'react-router-dom'
 import * as React from 'react'
 import {HamburgerIcon} from '@chakra-ui/icons'
-import BG_URL from '../../assets/webp/Footer_bg.webp'
 
 const Header = () => {
   const location = useLocation()
@@ -33,14 +32,13 @@ const Header = () => {
 
   return (
     <Stack
-      position={'sticky'}
+      position={'absolute'}
       top={0}
       w={'full'}
       align={'center'}
-      bgImage={BG_URL}
       bgSize={'cover'}
       overflow={'hidden'}
-      zIndex={'10'}
+      zIndex={10}
       spacing={0}
     >
       <HStack

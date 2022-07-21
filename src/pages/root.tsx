@@ -24,6 +24,7 @@ import Home_NESTxFORT_icon from '../assets/webp/Home_NESTxFORT_icon.webp'
 import Home_icon_3 from '../assets/webp/Home_icon_3.webp'
 import Home_icon_2 from '../assets/webp/Home_icon_2.webp'
 import Home_icon_4 from '../assets/webp/Home_icon_4.webp'
+import Header from "../components/Header";
 
 const Root = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')

@@ -1,5 +1,6 @@
 import {CloseButton, Collapse, HStack, Stack, Text, useMediaQuery} from "@chakra-ui/react";
 import {useEffect, useState} from "react";
+import BG from '../../assets/webp/Footer_bg.webp'
 
 const Banner = () => {
   const [show, setShow] = useState(false);
@@ -22,7 +23,9 @@ const Banner = () => {
         w={'100vw'}
         bgSize={'cover'}
         align={'center'}
-        bg={"white"}
+        bgImage={BG}
+        zIndex={100}
+        position={'fixed'}
       >
         <HStack
           maxW={'1440px'}
@@ -36,7 +39,7 @@ const Banner = () => {
           <Text
             fontSize={'7px'}
             fontWeight={"medium"}
-            maxW={'500px'}
+            maxW={'600px'}
             color={'#003232'}
           >The technical teams of the FORT protocol and NEST
             protocol worked together to advance the merger, and the merger is

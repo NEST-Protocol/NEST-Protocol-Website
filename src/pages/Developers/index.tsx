@@ -96,14 +96,14 @@ const Developers = () => {
         align={'start'}
         spacing={'48px'}
         justifyContent={'space-between'}
+        pt={['88px', '112px']}
       >
         {isDesktop && (
           <Stack
             minW={'300px'}
             maxW={'300px'}
-            py={'24px'}
             position={'sticky'}
-            top={'88px'}
+            top={'24px'}
             fontSize={'15px'}
             spacing={'24px'}
           >
@@ -145,7 +145,7 @@ const Developers = () => {
           </Stack>
         )}
 
-        <Stack minW={['full', '768px']} maxW={['full', '768px']} pt={['24px', '24px']} minH={'720px'} spacing={'48px'}>
+        <Stack minW={['full', '768px']} maxW={['full', '768px']} minH={'720px'} spacing={'48px'}>
           <ReactMarkdown children={md} remarkPlugins={[remarkGfm]} className={'markdown-body'}/>
           {!isDesktop && (
             <Stack spacing={'48px'}>
@@ -231,9 +231,8 @@ const Developers = () => {
           <Stack
             minW={'300px'}
             maxW={'300px'}
-            py={'24px'}
             position={'sticky'}
-            top={'88px'}
+            top={'24px'}
             fontSize={'15px'}
             spacing={'24px'}
           >
