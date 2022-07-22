@@ -105,9 +105,9 @@ const Root = () => {
           >
             NEST and FORT
             <br/>
-            Will merged
+            is merged
             {!isDesktop ? <br/> : <span>&nbsp;</span>}
-            on July 29, 2022
+            on July 22, 2022
           </Text>
         </Stack>
         <HStack justify={'center'}>

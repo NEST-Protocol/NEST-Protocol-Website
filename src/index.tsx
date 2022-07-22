@@ -16,8 +16,8 @@ ReactDOM.render(
     <HashRouter>
       <ChakraProvider theme={theme}>
         <RecoilRoot>
-          <AlertFromFORT />
-          <AlertNESTandFORT />
+          {/*<AlertFromFORT />*/}
+          {/*<AlertNESTandFORT />*/}
           <App/>
         </RecoilRoot>
       </ChakraProvider>
