@@ -70,7 +70,7 @@ const Developers = () => {
 
   const fetchMd = useCallback(async () => {
     if (location.pathname.replace('/docs', '') !== '') {
-      fetch('https://raw.githubusercontent.com/NEST-Protocol/NEST-Docs/test' + location.pathname)
+      fetch('https://raw.githubusercontent.com/NEST-Protocol/NEST-Docs/main' + location.pathname)
         .then(res => res.text())
         .then(text => {
           setMd(text)
