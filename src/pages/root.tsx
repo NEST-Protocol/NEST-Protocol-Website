@@ -105,7 +105,7 @@ const Root = () => {
           >
             NEST and FORT
             <br/>
-            is merged
+            merged
             {!isDesktop ? <br/> : <span>&nbsp;</span>}
             on July 22, 2022
           </Text>
