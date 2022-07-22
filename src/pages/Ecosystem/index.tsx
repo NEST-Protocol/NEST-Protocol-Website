@@ -69,7 +69,7 @@ const Ecosystem = () => {
           zIndex={1}
           color={'#003434'}
         >
-          A complete gaming space with applications of DeFi, GameFi NFT built on the NEST. Swap,
+          A complete gaming space with applications of DeFi, GameFi, NFT built on the NEST. Swap,
           hedge, earn and even game with the NEST network to gain excess returns.
         </Text>
       </Stack>
