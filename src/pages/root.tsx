@@ -24,7 +24,11 @@ import Home_NESTxFORT_icon from '../assets/webp/Home_NESTxFORT_icon.webp'
 import Home_icon_3 from '../assets/webp/Home_icon_3.webp'
 import Home_icon_2 from '../assets/webp/Home_icon_2.webp'
 import Home_icon_4 from '../assets/webp/Home_icon_4.webp'
-import Header from "../components/Header";
+import phone_home_01 from '../assets/webp/phone_Home_01.webp'
+import phone_home_02 from '../assets/webp/phone_Home_02.webp'
+import phone_home_03 from '../assets/webp/phone_Home_03.webp'
+import phone_home_04 from '../assets/webp/phone_Home_04.webp'
+import phone_home_05 from '../assets/webp/phone_Home_05.webp'
 
 const Root = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -36,9 +40,10 @@ const Root = () => {
       icon: Ecosystem_Icon_URI,
       bg: Ecosystem_URI,
       bgIcon: Home_icon_3,
+      phoneBg: phone_home_03,
       title: 'Explore the NEST Ecosystem',
       desc: `A complete gaming space with applications of DeFi, GameFi and NFT built on the NEST. Swap, hedge, earn and even game with the NEST network to gain excess returns.`,
-      bgSize: ['160%' ,'80%'],
+      bgSize: ['160%', '80%'],
     },
     {
       name: 'Developers',
@@ -46,9 +51,10 @@ const Root = () => {
       icon: Developer_Icon_URI,
       bg: Developer_URI,
       bgIcon: Home_icon_2,
+      phoneBg: phone_home_02,
       title: 'Build smart contract with NEST',
       desc: `Technical guidelines, source code, and detailed training materials on how to build NEST-based\napplications from scratch here.`,
-      bgSize: ['160%' ,'100%'],
+      bgSize: ['160%', '100%'],
     },
     {
       name: 'Community',
@@ -56,9 +62,10 @@ const Root = () => {
       icon: Community_Icon_URI,
       bg: Community_URI,
       bgIcon: Home_icon_4,
+      phoneBg: phone_home_04,
       title: 'Community',
       desc: `The NEST community is made up of developers, creators, enthusiasts, explore, contribute to the community and\nget reward.`,
-      bgSize: ['140%' ,'100%'],
+      bgSize: ['140%', '100%'],
     }
   ]
 
@@ -73,7 +80,7 @@ const Root = () => {
           h={'full'}
           justify={'center'}
           minH={['540px', '660px']}
-          bgImage={Home_NESTxFORT_pic}
+          bgImage={isDesktop ? Home_NESTxFORT_pic : phone_home_01}
           bgSize={'cover'}
           bgPosition={"center"}
           spacing={'24px'}
@@ -116,7 +123,7 @@ const Root = () => {
           </Button>
         </HStack>
       </Stack>
-      {pages.map(({name, icon, bg, bgSize, bgIcon, title, desc}) => (
+      {pages.map(({name, icon, bg, bgSize, phoneBg, bgIcon, title, desc}) => (
         <Stack key={name} spacing={'48px'}>
           <Stack px={['24px', '48px']} w={'full'} align={'center'}>
             <Stack maxW={'1440px'} w={'full'}>
@@ -130,8 +137,8 @@ const Root = () => {
             minH={'440px'}
             justify={'center'}
             spacing={['13px', '16px']}
-            bgImage={bg}
-            bgSize={'100% 100%'}
+            bgImage={isDesktop ? bg : phoneBg}
+            bgSize={"cover"}
             px={'24px'}
           >
             <Stack

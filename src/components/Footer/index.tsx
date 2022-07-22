@@ -1,6 +1,7 @@
 import { Stack, Text, HStack, useMediaQuery, chakra, Wrap, WrapItem } from '@chakra-ui/react'
 import BG_URL from '../../assets/webp/Footer_bg.webp'
 import Footer_icon from '../../assets/webp/Footer_icon.webp'
+import phone_Footer from '../../assets/webp/phone_Home_05.webp'
 import * as React from 'react'
 import { useNavigate } from 'react-router-dom'
 
@@ -175,7 +176,7 @@ const Footer = () => {
       <Stack
         py={'56px'}
         spacing={'32px'}
-        bgImage={BG_URL}
+        bgImage={phone_Footer}
         bgSize={'cover'}
         bgPosition={"center"}
       >
