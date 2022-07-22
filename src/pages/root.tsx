@@ -28,7 +28,6 @@ import phone_home_01 from '../assets/webp/phone_Home_01.webp'
 import phone_home_02 from '../assets/webp/phone_Home_02.webp'
 import phone_home_03 from '../assets/webp/phone_Home_03.webp'
 import phone_home_04 from '../assets/webp/phone_Home_04.webp'
-import phone_home_05 from '../assets/webp/phone_Home_05.webp'
 
 const Root = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
