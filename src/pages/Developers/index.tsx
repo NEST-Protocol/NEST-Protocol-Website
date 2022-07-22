@@ -158,7 +158,7 @@ const Developers = () => {
                   fontWeight={'600'}
                   onClick={() => {
                     window.open(
-                      'https://github.com/NEST-Protocol/NEST-Docs/blob/test' + location.pathname,
+                      'https://github.com/NEST-Protocol/NEST-Docs/blob/main' + location.pathname,
                       '_blank'
                     )
                   }}
