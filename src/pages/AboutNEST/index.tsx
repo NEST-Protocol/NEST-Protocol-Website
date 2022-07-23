@@ -18,9 +18,12 @@ import Blogs_pic_5 from '../../assets/webp/Blogs_pic_5.webp'
 import Blogs_pic_6 from '../../assets/webp/Blogs_pic_6.webp'
 import { Helmet } from 'react-helmet'
 import NEST_icon1 from '../../assets/webp/NEST_icon_1.webp'
-import blogs_logo_1 from '../../assets/webp/blogs_logo_1.webp'
-import blogs_logo_2 from '../../assets/webp/blogs_logo_2.webp'
-import NEST_logo from '../../assets/svg/nest_blue.svg'
+import blogs_icon_1 from '../../assets/webp/Blogs_icon_1.webp'
+import blogs_icon_2 from '../../assets/webp/Blogs_icon_2.webp'
+import blogs_icon_3 from '../../assets/webp/Blogs_icon_3.webp'
+import blogs_icon_4 from '../../assets/webp/Blogs_icon_4.webp'
+import blogs_icon_5 from '../../assets/webp/Blogs_icon_5.webp'
+import blogs_icon_6 from '../../assets/webp/Blogs_icon_6.webp'
 
 const AboutNEST = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -78,68 +81,68 @@ const AboutNEST = () => {
           hedge, earn and even game with the NEST network to gain excess returns.
         </Text>
       </Stack>
-      <Stack spacing={'48px'} align={'center'}>
-        <Stack px={['24px', '48px']} w={'full'} align={'center'}>
-          <Stack maxW={'1440px'} w={'full'}>
-            <Heading fontSize={['24px', '48px']} color={'#003232'}>
-              Integrations & Partners
-            </Heading>
-          </Stack>
-        </Stack>
-        <Stack
-          px={['24px', '48px']}
-          align={'center'}
-          justify={'center'}
-          spacing={'16px'}
-        >
-          <SimpleGrid columns={[2, 2, 4, 4]} spacing={['20px', '40px']} pb={'27px'}>
-            {[
-              {
-                label: 'Top Infrastructural Award',
-                logo: blogs_logo_1,
-                link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'
-              },
-              {
-                label: 'Top Infrastructural Award',
-                logo: blogs_logo_1,
-                link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'
-              },
-              {
-                label: 'Top Infrastructural Award',
-                logo: blogs_logo_1,
-                link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'
-              },
-              {
-                label: 'Top Infrastructural Award',
-                logo: blogs_logo_1,
-                link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'
-              },
-              {
-                label: 'Top Infrastructural Award',
-                logo: blogs_logo_1,
-                link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'
-              },
-              {
-                label: 'Top Infrastructural Award',
-                logo: blogs_logo_1,
-                link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'
-              },
-              {
-                label: 'Top Infrastructural Award',
-                logo: blogs_logo_1,
-                link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'
-              },
-              {
-                label: 'Top Infrastructural Award',
-                logo: blogs_logo_1,
-                link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'
-              },
-            ].map(item => (
-              <chakra.img src={item.logo} alt={item.label} />
-            ))}
-          </SimpleGrid>
-        </Stack>
-      </Stack>
+      {/*<Stack spacing={'48px'} align={'center'}>*/}
+      {/*  <Stack px={['24px', '48px']} w={'full'} align={'center'}>*/}
+      {/*    <Stack maxW={'1440px'} w={'full'}>*/}
+      {/*      <Heading fontSize={['24px', '48px']} color={'#003232'}>*/}
+      {/*        Integrations & Partners*/}
+      {/*      </Heading>*/}
+      {/*    </Stack>*/}
+      {/*  </Stack>*/}
+      {/*  <Stack*/}
+      {/*    px={['24px', '48px']}*/}
+      {/*    align={'center'}*/}
+      {/*    justify={'center'}*/}
+      {/*    spacing={'16px'}*/}
+      {/*  >*/}
+      {/*    <SimpleGrid columns={[2, 2, 4, 4]} spacing={['20px', '40px']} pb={'27px'}>*/}
+      {/*      {[*/}
+      {/*        {*/}
+      {/*          label: 'Top Infrastructural Award',*/}
+      {/*          logo: blogs_logo_1,*/}
+      {/*          link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'*/}
+      {/*        },*/}
+      {/*        {*/}
+      {/*          label: 'Top Infrastructural Award',*/}
+      {/*          logo: blogs_logo_1,*/}
+      {/*          link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'*/}
+      {/*        },*/}
+      {/*        {*/}
+      {/*          label: 'Top Infrastructural Award',*/}
+      {/*          logo: blogs_logo_1,*/}
+      {/*          link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'*/}
+      {/*        },*/}
+      {/*        {*/}
+      {/*          label: 'Top Infrastructural Award',*/}
+      {/*          logo: blogs_logo_1,*/}
+      {/*          link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'*/}
+      {/*        },*/}
+      {/*        {*/}
+      {/*          label: 'Top Infrastructural Award',*/}
+      {/*          logo: blogs_logo_1,*/}
+      {/*          link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'*/}
+      {/*        },*/}
+      {/*        {*/}
+      {/*          label: 'Top Infrastructural Award',*/}
+      {/*          logo: blogs_logo_1,*/}
+      {/*          link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'*/}
+      {/*        },*/}
+      {/*        {*/}
+      {/*          label: 'Top Infrastructural Award',*/}
+      {/*          logo: blogs_logo_1,*/}
+      {/*          link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'*/}
+      {/*        },*/}
+      {/*        {*/}
+      {/*          label: 'Top Infrastructural Award',*/}
+      {/*          logo: blogs_logo_1,*/}
+      {/*          link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'*/}
+      {/*        },*/}
+      {/*      ].map(item => (*/}
+      {/*        <chakra.img src={item.logo} alt={item.label} />*/}
+      {/*      ))}*/}
+      {/*    </SimpleGrid>*/}
+      {/*  </Stack>*/}
+      {/*</Stack>*/}
       <Stack spacing={'48px'} align={'center'}>
         <Stack px={['24px', '48px']} w={'full'} align={'center'}>
           <Stack maxW={'1440px'} w={'full'}>
@@ -160,44 +163,44 @@ const AboutNEST = () => {
               {
                 label: 'NEST Protocol: A New Paradigm of Game Theoretic Oracle',
                 bg: Blogs_pic_1,
-                logo: blogs_logo_1,
+                logo: blogs_icon_1,
                 desc: 'Blockchain innovation defined the major part of the last decade,with cryptocurrency disrupting.',
-                link: ''
+                link: 'https://nest-protocol-82041.medium.com/nest-protocol-a-new-paradigm-of-game-theoretic-oracle-187c1f853128'
               },
               {
                 label: 'NEST’s RSS FEED INTEGRATED WITH CRYPTO.COM PRICE PAGE',
                 bg: Blogs_pic_2,
-                logo: blogs_logo_2,
+                logo: blogs_icon_2,
                 desc: 'Through Crypto.com’s NEST Price Page, you can now directly access NEST’s RSS news feed.',
-                link: ''
+                link: 'https://nest-protocol-82041.medium.com/nests-rss-feed-integrated-with-crypto-com-price-page-9323828d28d9'
               },
               {
                 label: 'NEST Protocol partners with UTU.ONE to seek and create more opportunities in DAO governance',
                 bg: Blogs_pic_3,
-                logo: NEST_logo,
+                logo: blogs_icon_3,
                 desc: 'NEST Protocol is delighted to announce a strategic.',
-                link: ''
+                link: 'https://nest-protocol-82041.medium.com/nest-protocol-partners-with-utu-one-to-seek-and-create-more-opportunities-in-dao-governance-1ab02d072d7d'
               },
               {
                 label: 'Comments on Vitalik’s Twitter',
                 bg: Blogs_pic_4,
-                logo: blogs_logo_1,
+                logo: blogs_icon_4,
                 desc: 'Introduction Vitalik, the founder of Ethereum, delivered something interesting on Twitter at the beginning of 2022.',
-                link: ''
+                link: 'https://nest-protocol-82041.medium.com/comments-on-vitaliks-twitter-227c9198b85c'
               },
               {
                 label: 'James Talks | \nThree major genres in the blockchain jungle',
                 bg: Blogs_pic_5,
-                logo: blogs_logo_2,
+                logo: blogs_icon_5,
                 desc: 'The blockchain world is also like the corner of the country with genres of thought.',
-                link: ''
+                link: 'https://nest-protocol-82041.medium.com/james-talks-three-major-genres-in-the-blockchain-jungle-dcf075824204'
               },
               {
                 label: 'NEST Protocol is Open as a Self-looping Oracle System',
                 bg: Blogs_pic_6,
-                logo: NEST_logo,
+                logo: blogs_icon_6,
                 desc: 'It is reasonable to use NEST Token or nToken as an incentive for quoting mainstream assets because',
-                link: ''
+                link: 'https://nest-protocol-82041.medium.com/nest-protocol-is-open-as-a-self-looping-oracle-system-16ed1fd1536'
               }
             ].map(item => (
               <VStack

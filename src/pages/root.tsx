@@ -9,7 +9,7 @@ import {
 import * as React from 'react'
 import {Helmet} from 'react-helmet'
 
-import Home_NESTxFORT_pic from '../assets/webp/Home_NESTxFORT_pic.webp'
+import Home from '../assets/webp/Home.webp'
 import Developer_URI from '../assets/webp/Home_pic_2.webp'
 import Community_URI from '../assets/webp/Home_pic_4.webp'
 import Ecosystem_URI from '../assets/webp/Home_pic_3.webp'
@@ -17,11 +17,10 @@ import Developer_Icon_URI from '../assets/webp/Home_Developers_icon.webp'
 import Community_Icon_URI from '../assets/webp/Home_Community_icon.webp'
 import Ecosystem_Icon_URI from '../assets/webp/Home_Ecosystem_icon.webp'
 import {useNavigate} from 'react-router-dom'
-import Home_NESTxFORT_icon from '../assets/webp/Home_NESTxFORT_icon.webp'
+import Home_icon from '../assets/webp/Home_icon.webp'
 import Home_icon_3 from '../assets/webp/Home_icon_3.webp'
 import Home_icon_2 from '../assets/webp/Home_icon_2.webp'
 import Home_icon_4 from '../assets/webp/Home_icon_4.webp'
-import phone_home_01 from '../assets/webp/phone_Home_01.webp'
 import phone_home_02 from '../assets/webp/phone_Home_02.webp'
 import phone_home_03 from '../assets/webp/phone_Home_03.webp'
 import phone_home_04 from '../assets/webp/phone_Home_04.webp'
@@ -76,17 +75,17 @@ const Root = () => {
           h={'full'}
           justify={'center'}
           minH={['540px', '660px']}
-          bgImage={isDesktop ? Home_NESTxFORT_pic : phone_home_01}
+          bgImage={Home}
           bgSize={'cover'}
           bgPosition={"center"}
           spacing={'24px'}
         >
           <Stack w={"full"} p={'12px'} position={"absolute"} zIndex={0}>
             <chakra.img
-              src={Home_NESTxFORT_icon}
+              src={Home_icon}
               alt="NEST"
-              objectFit={"contain"}
-              maxH={'308px'}
+              objectFit={["cover", 'contain']}
+              h={'400px'}
             />
           </Stack>
           <Text
@@ -101,8 +100,9 @@ const Root = () => {
           </Text>
           <Text
             fontWeight={"bold"}
-            fontSize={'25px'}
+            fontSize={['12px', '25px']}
             textAlign={"center"}
+            color={'#003434'}
             zIndex={1}
           >
             Trade BTC, ETH futures and options directly
