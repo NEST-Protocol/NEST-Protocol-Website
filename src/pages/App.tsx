@@ -5,10 +5,10 @@ import Root from './root'
 import Footer from '../components/Footer'
 import Ecosystem from './Ecosystem'
 import Community from './Community'
-import Learn from './Learn'
 import Developers from './Developers'
-// import Banner from "../components/Banner";
 import Header from "../components/Header";
+import AboutNEST from "./AboutNEST";
+import Research from "./Research";
 
 export const App = () => {
   return (
@@ -21,7 +21,8 @@ export const App = () => {
           <Route path={'docs'} element={<Developers/>}/>
           <Route path={'docs/*'} element={<Developers/>}/>
           <Route path={'community'} element={<Community/>}/>
-          <Route path={'learn'} element={<Learn/>}/>
+          <Route path={'about'} element={<AboutNEST/>}/>
+          <Route path={'research'} element={<Research/>}/>
           <Route
             path="*"
             element={

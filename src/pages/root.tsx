@@ -18,8 +18,6 @@ import Developer_Icon_URI from '../assets/webp/Home_Developers_icon.webp'
 import Community_Icon_URI from '../assets/webp/Home_Community_icon.webp'
 import Ecosystem_Icon_URI from '../assets/webp/Home_Ecosystem_icon.webp'
 import {useNavigate} from 'react-router-dom'
-import NEST_URI from '../assets/svg/nest_blue.svg'
-import FORT_URI from '../assets/svg/fort.svg'
 import Home_NESTxFORT_icon from '../assets/webp/Home_NESTxFORT_icon.webp'
 import Home_icon_3 from '../assets/webp/Home_icon_3.webp'
 import Home_icon_2 from '../assets/webp/Home_icon_2.webp'
@@ -92,35 +90,36 @@ const Root = () => {
               maxH={'308px'}
             />
           </Stack>
-          <chakra.img src={NEST_URI} h={['20px', '34px']} alt={'nest_logo'} zIndex={1}/>
-          <chakra.img src={FORT_URI} h={['17px', '30px']} alt={'fort_logo'} zIndex={1}/>
           <Text
             whiteSpace={'break-spaces'}
             textAlign={'center'}
-            fontSize={['24px', '38px']}
+            fontSize={['24px', '40px']}
             fontWeight={'bold'}
             zIndex={1}
-            letterSpacing={['7px', '10px']}
             color={'#003434'}
           >
-            NEST and FORT
-            <br/>
-            merged
-            {!isDesktop ? <br/> : <span>&nbsp;</span>}
-            on July 22, 2022
+            NEST Financial Market
           </Text>
-        </Stack>
-        <HStack justify={'center'}>
+          <Text
+            fontWeight={"bold"}
+            fontSize={'25px'}
+            textAlign={"center"}
+          >
+            Trade BTC, ETH futures and options directly
+            <br />
+            from your wallet with infinite liquidity.
+          </Text>
           <Button
             minH={isDesktop ? '34px' : '44px'}
             px={isDesktop ? '20px' : '70px'}
+            minW={'160px'}
             onClick={() => {
               navigate('learn')
             }}
           >
-            About NEST
+            Launch APP
           </Button>
-        </HStack>
+        </Stack>
       </Stack>
       {pages.map(({name, icon, bg, bgSize, pathname, phoneBg, bgIcon, title, desc}) => (
         <Stack key={name} spacing={'48px'}>

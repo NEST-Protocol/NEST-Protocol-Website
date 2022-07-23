@@ -10,7 +10,6 @@ import {
 } from '@chakra-ui/react'
 import * as React from 'react'
 import Banner_URI from '../../assets/webp/NEST_pic_1.webp'
-// import UseCase_URI from "../../assets/webp/NEST_pic_2.webp";
 import Blogs_pic_1 from '../../assets/webp/Blogs_pic_1.webp'
 import Blogs_pic_2 from '../../assets/webp/Blogs_pic_2.webp'
 import Blogs_pic_3 from '../../assets/webp/Blogs_pic_3.webp'
@@ -23,26 +22,13 @@ import blogs_logo_1 from '../../assets/webp/blogs_logo_1.webp'
 import blogs_logo_2 from '../../assets/webp/blogs_logo_2.webp'
 import NEST_logo from '../../assets/svg/nest_blue.svg'
 
-const Learn = () => {
+const AboutNEST = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
-
-  // const pages = [
-  //   {
-  //     name: 'Use cases',
-  //     path: '',
-  //     icon: '',
-  //     bg: UseCase_URI,
-  //     title: 'NEST Financial Market',
-  //     desc: 'Get NEST token here and buy futures\noptions\nor do defi games to win NEST.'
-  //   },
-  // ]
-
-  const pages: any[] = []
 
   return (
     <>
       <Helmet>
-        <title>About NEST</title>
+        <title>What is NEST</title>
       </Helmet>
       <Stack
         align={'center'}
@@ -78,7 +64,7 @@ const Learn = () => {
           zIndex={1}
           color={'#003434'}
         >
-          About NEST
+          What is NEST
         </Text>
         <Text
           fontSize={['12px', '24px']}
@@ -92,46 +78,68 @@ const Learn = () => {
           hedge, earn and even game with the NEST network to gain excess returns.
         </Text>
       </Stack>
-      {pages.map(({ name, path, icon, bg, title, desc }) => (
-        <Stack key={name} spacing={'48px'} align={'center'}>
-          <Stack px={['24px', '48px']} w={'full'} align={'center'}>
-            <Stack maxW={'1440px'} w={'full'}>
-              <Heading fontSize={['24px', '48px']} color={'#003232'}>
-                {name}
-              </Heading>
-            </Stack>
-          </Stack>
-          <Stack
-            align={'center'}
-            minH={'440px'}
-            justify={'center'}
-            w={'full'}
-            spacing={['13px', '16px']}
-            bgImage={bg}
-            bgSize={'100% 100%'}
-          >
-            <chakra.img src={icon} />
-            <chakra.a
-              fontSize={['17px', '24px']}
-              fontWeight={'semibold'}
-              color={'#434344'}
-              href={path}
-            >
-              {title}
-            </chakra.a>
-            <chakra.a
-              fontSize={['12px', '15px']}
-              fontWeight={'semibold'}
-              color={'#7d7d7d'}
-              whiteSpace={'break-spaces'}
-              textAlign={'center'}
-              href={path}
-            >
-              {desc}
-            </chakra.a>
+      <Stack spacing={'48px'} align={'center'}>
+        <Stack px={['24px', '48px']} w={'full'} align={'center'}>
+          <Stack maxW={'1440px'} w={'full'}>
+            <Heading fontSize={['24px', '48px']} color={'#003232'}>
+              Integrations & Partners
+            </Heading>
           </Stack>
         </Stack>
-      ))}
+        <Stack
+          px={['24px', '48px']}
+          align={'center'}
+          justify={'center'}
+          spacing={'16px'}
+        >
+          <SimpleGrid columns={[2, 2, 4, 4]} spacing={['20px', '40px']} pb={'27px'}>
+            {[
+              {
+                label: 'Top Infrastructural Award',
+                logo: blogs_logo_1,
+                link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'
+              },
+              {
+                label: 'Top Infrastructural Award',
+                logo: blogs_logo_1,
+                link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'
+              },
+              {
+                label: 'Top Infrastructural Award',
+                logo: blogs_logo_1,
+                link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'
+              },
+              {
+                label: 'Top Infrastructural Award',
+                logo: blogs_logo_1,
+                link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'
+              },
+              {
+                label: 'Top Infrastructural Award',
+                logo: blogs_logo_1,
+                link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'
+              },
+              {
+                label: 'Top Infrastructural Award',
+                logo: blogs_logo_1,
+                link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'
+              },
+              {
+                label: 'Top Infrastructural Award',
+                logo: blogs_logo_1,
+                link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'
+              },
+              {
+                label: 'Top Infrastructural Award',
+                logo: blogs_logo_1,
+                link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'
+              },
+            ].map(item => (
+              <chakra.img src={item.logo} alt={item.label} />
+            ))}
+          </SimpleGrid>
+        </Stack>
+      </Stack>
       <Stack spacing={'48px'} align={'center'}>
         <Stack px={['24px', '48px']} w={'full'} align={'center'}>
           <Stack maxW={'1440px'} w={'full'}>
@@ -150,46 +158,46 @@ const Learn = () => {
           <SimpleGrid columns={[1, 1, 2, 3]} spacing={['22px', '22px', '44px']} pb={'27px'}>
             {[
               {
-                label: 'Top Infrastructural Award',
+                label: 'NEST Protocol: A New Paradigm of Game Theoretic Oracle',
                 bg: Blogs_pic_1,
                 logo: blogs_logo_1,
-                desc: 'Based on the feedback of KCC community, and the voting results at the Unicorn Contest, NEST has been awarded “Top Infrastructural Award”!',
-                link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'
+                desc: 'Blockchain innovation defined the major part of the last decade,with cryptocurrency disrupting.',
+                link: ''
               },
               {
-                label: 'NEST v4.4 Upgrade Proposal',
+                label: 'NEST’s RSS FEED INTEGRATED WITH CRYPTO.COM PRICE PAGE',
                 bg: Blogs_pic_2,
                 logo: blogs_logo_2,
-                desc: 'Voting for the NEST v4.4 upgrade is now open on snapshot, please participate and cast your vote!',
-                link: 'https://snapshot.org/#/nestprotocols.eth/proposal/0xc44f29b7a8695fc3379fa34d6e78bf933d9d4493121d2d66160a25b8175816a9'
+                desc: 'Through Crypto.com’s NEST Price Page, you can now directly access NEST’s RSS news feed.',
+                link: ''
               },
               {
-                label: 'NEST Oracle Special Awards in KCC',
+                label: 'NEST Protocol partners with UTU.ONE to seek and create more opportunities in DAO governance',
                 bg: Blogs_pic_3,
                 logo: NEST_logo,
-                desc: 'NEST Foundation will pro vide awards, advisory sessions, and integration support to Kucoin Community Chain (KCC) developers',
-                link: 'https://www.newsbtc.com/press-releases/nest-oracle-special-awards-in-kcc-unicorn-contest/'
+                desc: 'NEST Protocol is delighted to announce a strategic.',
+                link: ''
               },
               {
-                label: 'Strategic Partnership with MAP Protocol',
+                label: 'Comments on Vitalik’s Twitter',
                 bg: Blogs_pic_4,
                 logo: blogs_logo_1,
-                desc: 'NEST has become the first oracle in MAP ecosystem and provides reliable price for the transactions',
-                link: 'https://www.goldentreenews.com/news/article.html?no=278663'
+                desc: 'Introduction Vitalik, the founder of Ethereum, delivered something interesting on Twitter at the beginning of 2022.',
+                link: ''
               },
               {
-                label: 'What is NEST, a decentralized price oracle network',
+                label: 'James Talks | \nThree major genres in the blockchain jungle',
                 bg: Blogs_pic_5,
                 logo: blogs_logo_2,
-                desc: 'NEST is one of the projects that is developing the technology to provide this Oracle service in a decentralized way',
-                link: 'https://coinpost.jp/?p=226764'
+                desc: 'The blockchain world is also like the corner of the country with genres of thought.',
+                link: ''
               },
               {
-                label: 'NEST Protocol project overview and NEST coin',
+                label: 'NEST Protocol is Open as a Self-looping Oracle System',
                 bg: Blogs_pic_6,
                 logo: NEST_logo,
-                desc: 'The project uses a unique “quote mining” mechanism to ensure that off-chain price data is generated on-chain in a synchronous manner',
-                link: 'https://coin68.com/nest-protocol-la-gi/'
+                desc: 'It is reasonable to use NEST Token or nToken as an incentive for quoting mainstream assets because',
+                link: ''
               }
             ].map(item => (
               <VStack
@@ -233,6 +241,7 @@ const Learn = () => {
                     fontWeight={'bold'}
                     textAlign={'start'}
                     w={'full'}
+                    whiteSpace={'break-spaces'}
                   >
                     {item.label}
                   </Link>
@@ -256,4 +265,4 @@ const Learn = () => {
   )
 }
 
-export default Learn
+export default AboutNEST
