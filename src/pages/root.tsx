@@ -114,7 +114,7 @@ const Root = () => {
             px={isDesktop ? '20px' : '70px'}
             minW={'160px'}
             onClick={() => {
-              navigate('learn')
+              window.open('https://finance.nestprotocol.org/', '_blank')
             }}
           >
             Launch APP

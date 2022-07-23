@@ -288,7 +288,7 @@ const Footer = () => {
               <Text
                 cursor={'pointer'}
                 onClick={() => {
-                  navigate('learn')
+                  navigate('about')
                   window.scrollTo(0, 0)
                 }}
               >
@@ -309,7 +309,7 @@ const Footer = () => {
               <Text
                 cursor={'pointer'}
                 onClick={() => {
-                  navigate('learn')
+                  navigate('about')
                   window.scrollTo(0, 0)
                 }}
               >
