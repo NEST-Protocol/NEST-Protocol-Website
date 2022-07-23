@@ -104,6 +104,7 @@ const Root = () => {
             fontWeight={"bold"}
             fontSize={'25px'}
             textAlign={"center"}
+            zIndex={1}
           >
             Trade BTC, ETH futures and options directly
             <br />
