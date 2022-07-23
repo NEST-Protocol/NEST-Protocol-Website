@@ -16,7 +16,7 @@ import Blogs_pic_3 from '../../assets/webp/Blogs_pic_3.webp'
 import Blogs_pic_4 from '../../assets/webp/Blogs_pic_4.webp'
 import Blogs_pic_5 from '../../assets/webp/Blogs_pic_5.webp'
 import Blogs_pic_6 from '../../assets/webp/Blogs_pic_6.webp'
-import { Helmet } from 'react-helmet'
+import {Helmet} from 'react-helmet'
 import NEST_icon1 from '../../assets/webp/NEST_icon_1.webp'
 import blogs_icon_1 from '../../assets/webp/Blogs_icon_1.webp'
 import blogs_icon_2 from '../../assets/webp/Blogs_icon_2.webp'
@@ -24,6 +24,20 @@ import blogs_icon_3 from '../../assets/webp/Blogs_icon_3.webp'
 import blogs_icon_4 from '../../assets/webp/Blogs_icon_4.webp'
 import blogs_icon_5 from '../../assets/webp/Blogs_icon_5.webp'
 import blogs_icon_6 from '../../assets/webp/Blogs_icon_6.webp'
+import Home_icon from '../../assets/webp/Home_icon.webp'
+
+import huobi from '../../assets/svg/huobi.svg'
+import binance from '../../assets/svg/binance.svg'
+import certik from '../../assets/svg/certik.svg'
+import CoFiX from '../../assets/svg/CoFiX.svg'
+import cointelegraph from '../../assets/svg/cointelegraph.svg'
+import cube from '../../assets/svg/cube.svg'
+import fortube from '../../assets/svg/fortube.svg'
+import kcc from '../../assets/svg/kcc.svg'
+import Parasset from '../../assets/svg/Parasset.svg'
+import peckshield from '../../assets/svg/peckshield.svg'
+import polygon from '../../assets/svg/polygon.svg'
+import polynetwork from '../../assets/svg/polynetwork.svg'
 
 const AboutNEST = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -81,68 +95,105 @@ const AboutNEST = () => {
           hedge, earn and even game with the NEST network to gain excess returns.
         </Text>
       </Stack>
-      {/*<Stack spacing={'48px'} align={'center'}>*/}
-      {/*  <Stack px={['24px', '48px']} w={'full'} align={'center'}>*/}
-      {/*    <Stack maxW={'1440px'} w={'full'}>*/}
-      {/*      <Heading fontSize={['24px', '48px']} color={'#003232'}>*/}
-      {/*        Integrations & Partners*/}
-      {/*      </Heading>*/}
-      {/*    </Stack>*/}
-      {/*  </Stack>*/}
-      {/*  <Stack*/}
-      {/*    px={['24px', '48px']}*/}
-      {/*    align={'center'}*/}
-      {/*    justify={'center'}*/}
-      {/*    spacing={'16px'}*/}
-      {/*  >*/}
-      {/*    <SimpleGrid columns={[2, 2, 4, 4]} spacing={['20px', '40px']} pb={'27px'}>*/}
-      {/*      {[*/}
-      {/*        {*/}
-      {/*          label: 'Top Infrastructural Award',*/}
-      {/*          logo: blogs_logo_1,*/}
-      {/*          link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'*/}
-      {/*        },*/}
-      {/*        {*/}
-      {/*          label: 'Top Infrastructural Award',*/}
-      {/*          logo: blogs_logo_1,*/}
-      {/*          link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'*/}
-      {/*        },*/}
-      {/*        {*/}
-      {/*          label: 'Top Infrastructural Award',*/}
-      {/*          logo: blogs_logo_1,*/}
-      {/*          link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'*/}
-      {/*        },*/}
-      {/*        {*/}
-      {/*          label: 'Top Infrastructural Award',*/}
-      {/*          logo: blogs_logo_1,*/}
-      {/*          link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'*/}
-      {/*        },*/}
-      {/*        {*/}
-      {/*          label: 'Top Infrastructural Award',*/}
-      {/*          logo: blogs_logo_1,*/}
-      {/*          link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'*/}
-      {/*        },*/}
-      {/*        {*/}
-      {/*          label: 'Top Infrastructural Award',*/}
-      {/*          logo: blogs_logo_1,*/}
-      {/*          link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'*/}
-      {/*        },*/}
-      {/*        {*/}
-      {/*          label: 'Top Infrastructural Award',*/}
-      {/*          logo: blogs_logo_1,*/}
-      {/*          link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'*/}
-      {/*        },*/}
-      {/*        {*/}
-      {/*          label: 'Top Infrastructural Award',*/}
-      {/*          logo: blogs_logo_1,*/}
-      {/*          link: 'https://twitter.com/nest_protocol/status/1531909822408699904?s=21'*/}
-      {/*        },*/}
-      {/*      ].map(item => (*/}
-      {/*        <chakra.img src={item.logo} alt={item.label} />*/}
-      {/*      ))}*/}
-      {/*    </SimpleGrid>*/}
-      {/*  </Stack>*/}
-      {/*</Stack>*/}
+      <Stack spacing={'48px'} align={'center'}>
+        <Stack px={['24px', '48px']} w={'full'} align={'center'}>
+          <Stack maxW={'1440px'} w={'full'}>
+            <Heading fontSize={['24px', '48px']} color={'#003232'}>
+              Integrations & Partners
+            </Heading>
+          </Stack>
+        </Stack>
+        <Stack
+          px={['24px', '48px']}
+          align={'center'}
+          justify={'center'}
+          spacing={'16px'}
+          minH={'440px'}
+          w={"full"}
+          bgImage={Banner_URI}
+          bgPosition={"bottom"}
+        >
+          <Stack w={"full"} p={'12px'} position={"absolute"} zIndex={0}>
+            <chakra.img
+              src={Home_icon}
+              alt="NEST"
+              objectFit={["cover", 'contain']}
+              h={'400px'}
+            />
+          </Stack>
+          <SimpleGrid columns={[3, 3, 4, 4]} zIndex={1} spacing={['20px', '40px']} pb={'27px'}>
+            {[
+              {
+                label: 'Huobi',
+                logo: huobi,
+                link: 'https://www.huobi.com/'
+              },
+              {
+                label: 'Binance',
+                logo: binance,
+                link: 'https://www.binance.com/'
+              },
+              {
+                label: 'kcc',
+                logo: kcc,
+                link: 'https://kcc.io'
+              },
+              {
+                label: 'polygon',
+                logo: polygon,
+                link: 'https://polygon.technology/'
+              },
+              {
+                label: 'cointelegraph',
+                logo: cointelegraph,
+                link: 'https://cointelegraph.com/'
+              },
+              {
+                label: 'cube',
+                logo: cube,
+                link: 'https://cube.network/'
+              },
+              {
+                label: 'pechshield',
+                logo: peckshield,
+                link: 'https://peckshield.com/'
+              },
+              {
+                label: 'fortube',
+                logo: fortube,
+                link: 'https://for.tube'
+              },
+              {
+                label: 'polynetwork',
+                logo: polynetwork,
+                link: 'https://polygon.technology/'
+              },
+              {
+                label: 'cofix',
+                logo: CoFiX,
+                link: 'https://cofix.tech/'
+              },
+              {
+                label: 'parasset',
+                logo: Parasset,
+                link: 'https://www.parasset.top/'
+              },
+              {
+                label: 'certik',
+                logo: certik,
+                link: 'https://www.certik.com/'
+              },
+            ].map(item => (
+              <chakra.img
+                src={item.logo} alt={item.label} h={'48px'}
+                cursor={"pointer"}
+                onClick={() => {
+                  window.open(item.link, '_blank')
+                }}/>
+            ))}
+          </SimpleGrid>
+        </Stack>
+      </Stack>
       <Stack spacing={'48px'} align={'center'}>
         <Stack px={['24px', '48px']} w={'full'} align={'center'}>
           <Stack maxW={'1440px'} w={'full'}>
@@ -225,7 +276,7 @@ const AboutNEST = () => {
                   justify={'center'}
                   h={['120px', '160px']}
                 >
-                  <chakra.img src={item.logo} _hover={{ transform: 'scale(1.05)' }} />
+                  <chakra.img src={item.logo} _hover={{transform: 'scale(1.05)'}}/>
                 </Stack>
                 <VStack
                   w={'full'}
@@ -238,7 +289,7 @@ const AboutNEST = () => {
                   <Link
                     isExternal
                     href={item.link}
-                    style={{ textDecoration: 'none' }}
+                    style={{textDecoration: 'none'}}
                     fontSize={['12px', '15px']}
                     color={'#003232'}
                     fontWeight={'bold'}
@@ -251,7 +302,7 @@ const AboutNEST = () => {
                   <Link
                     isExternal
                     href={item.link}
-                    style={{ textDecoration: 'none' }}
+                    style={{textDecoration: 'none'}}
                     fontSize={['12px', '12px', '15px']}
                     fontWeight={'semibold'}
                     color={'#7d7d7d'}
