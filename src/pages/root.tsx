@@ -4,7 +4,6 @@ import {
   chakra,
   Text,
   Button,
-  HStack,
   useMediaQuery,
 } from '@chakra-ui/react'
 import * as React from 'react'
