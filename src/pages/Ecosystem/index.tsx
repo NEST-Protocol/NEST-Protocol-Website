@@ -90,7 +90,7 @@ const Ecosystem = () => {
             minW={'160px'}
             minH={['44px', '34px']}
             onClick={() => {
-              window.open('https://finance.nestprotocol.org/#/win-nest', '_blank')
+              window.open('https://finance.nestprotocol.org/#/win', '_blank')
             }}
           >
             Win NEST
