@@ -1,4 +1,4 @@
-import {Button, chakra, Heading, Stack, Text, useMediaQuery} from '@chakra-ui/react'
+import {Button, chakra, Stack, Text, useMediaQuery} from '@chakra-ui/react'
 import * as React from 'react'
 import Banner_URI from '../../assets/webp/Ecosystem_pic_1.webp'
 import Project1_URI from '../../assets/webp/Ecosystem_pic_2.webp'
