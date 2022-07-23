@@ -39,13 +39,4 @@ export const App = () => {
   )
 }
 
-const AppWithBanner = () => {
-  return (
-    <Stack spacing={0}>
-      {/*<Banner/>*/}
-      <App/>
-    </Stack>
-  )
-}
-
 export default App
