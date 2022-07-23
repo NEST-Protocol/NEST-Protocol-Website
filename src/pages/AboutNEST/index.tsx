@@ -51,7 +51,7 @@ const AboutNEST = () => {
         align={'center'}
         h={'full'}
         justify={'center'}
-        minH={'660px'}
+        minH={['540px', '660px']}
         bgImage={Banner_URI}
         bgSize={'cover'}
         bgPosition={"center"}
