@@ -6,10 +6,9 @@ import Project2_URI from '../../assets/webp/Ecosystem_pic_3.webp'
 import Market_Icon_URI from '../../assets/webp/Market_icon.webp'
 import Phone_Icon_URI from '../../assets/webp/iPhone_pic.webp'
 import {Helmet} from 'react-helmet'
-import Ecosystem_icon1 from '../../assets/webp/Ecosystem_icon_1.webp'
+import Ecosystem_icon1 from '../../assets/webp/Ecosystem_icon_1.png'
 import Ecosystem_icon2 from '../../assets/webp/Ecosystem_icon_2.webp'
 import Ecosystem_icon3 from '../../assets/webp/Ecosystem_icon_3.webp'
-import ChakraBox from '../../components/ChakraBox'
 
 const Ecosystem = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -21,27 +20,30 @@ const Ecosystem = () => {
       </Helmet>
       <Stack
         align={'center'}
-        h={'full'}
         justify={'center'}
-        minH={['540px', '330px']}
+        h={'330px'}
         bgImage={Banner_URI}
         bgSize={'cover'}
         bgPosition={"center"}
         spacing={['22px', '44px']}
         px={'24px'}
       >
+        <Stack
+          w={'full'}
+          h={'330px'}
+          position={'absolute'}
+          bgImage={Ecosystem_icon1}
+          bgSize={'contain'}
+          bgRepeat={"no-repeat"}
+          bgPosition={"bottom"}
+        >
+
+        </Stack>
         <Text textAlign={'center'} fontSize={['24px', '48px']} fontWeight={'bold'} zIndex={1} color={'#003434'}>
           Explore the {!isDesktop && <br/>} NEST Ecosystem
         </Text>
       </Stack>
       <Stack spacing={'48px'} align={'center'}>
-        <Stack px={['24px', '48px']} w={'full'} align={'center'}>
-          <Stack maxW={'1440px'} w={'full'}>
-            <Heading fontSize={['24px', '48px']} color={'#003232'}>
-              Project
-            </Heading>
-          </Stack>
-        </Stack>
         <Stack
           align={'center'}
           minH={'440px'}
@@ -86,6 +88,7 @@ const Ecosystem = () => {
           </Text>
           <Button
             minW={'160px'}
+            minH={['44px', '34px']}
             onClick={() => {
               window.open('https://finance.nestprotocol.org/#/win-nest', '_blank')
             }}
@@ -144,7 +147,7 @@ const Ecosystem = () => {
           </Text>
           <Button
             minW={'160px'}
-            minH={'34px'}
+            minH={['44px', '34px']}
             onClick={() => {
               window.open('https://oracle.nestprotocol.org/', '_blank')
             }}
