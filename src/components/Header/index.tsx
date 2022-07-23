@@ -80,11 +80,10 @@ const Header = () => {
         {isDesktop && (
           <Button
             onClick={() => {
-              navigate('/docs/Guide/Set-Up-Local-Environment.md')
-              window.scrollTo(0, 0)
+              window.open('https://finance.nestprotocol.org/#/win', '_blank')
             }}
           >
-            Start Building
+            Trade
           </Button>
         )}
 
@@ -136,11 +135,10 @@ const Header = () => {
                       minH={'44px'}
                       px={'70px'}
                       onClick={() => {
-                        navigate('/docs/Guide/Set-Up-Local-Environment.md')
-                        onClose()
+                        window.open('https://finance.nestprotocol.org/#/win', '_blank')
                       }}
                     >
-                      Start Building
+                      Trade
                     </Button>
                   </VStack>
                 </ModalBody>

@@ -46,7 +46,7 @@ const Root = () => {
     },
     {
       name: 'Developers',
-      pathname: 'developers',
+      pathname: 'docs',
       icon: Developer_Icon_URI,
       bg: Developer_URI,
       bgIcon: Home_icon_2,
@@ -118,11 +118,11 @@ const Root = () => {
               navigate('learn')
             }}
           >
-            What is NEST
+            About NEST
           </Button>
         </HStack>
       </Stack>
-      {pages.map(({name, icon, bg, bgSize, phoneBg, bgIcon, title, desc}) => (
+      {pages.map(({name, icon, bg, bgSize, pathname, phoneBg, bgIcon, title, desc}) => (
         <Stack key={name} spacing={'48px'}>
           <Stack px={['24px', '48px']} w={'full'} align={'center'}>
             <Stack maxW={'1440px'} w={'full'}>
@@ -139,6 +139,11 @@ const Root = () => {
             bgImage={isDesktop ? bg : phoneBg}
             bgSize={"cover"}
             px={'24px'}
+            cursor={"pointer"}
+            onClick={() => {
+              navigate(pathname)
+              window.scrollTo(0,0)
+            }}
           >
             <Stack
               position={'absolute'}

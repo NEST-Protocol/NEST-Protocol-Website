@@ -42,7 +42,7 @@ const Learn = () => {
   return (
     <>
       <Helmet>
-        <title>What is NEST</title>
+        <title>About NEST</title>
       </Helmet>
       <Stack
         align={'center'}
@@ -78,7 +78,7 @@ const Learn = () => {
           zIndex={1}
           color={'#003434'}
         >
-          What is NEST
+          About NEST
         </Text>
         <Text
           fontSize={['12px', '24px']}
