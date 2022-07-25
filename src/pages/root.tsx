@@ -69,58 +69,6 @@ const Root = () => {
       <Helmet>
         <title>Home | NEST Protocol</title>
       </Helmet>
-      <Stack spacing={'44px'}>
-        <Stack
-          align={'center'}
-          h={'full'}
-          justify={'center'}
-          minH={['540px', '660px']}
-          bgImage={Home}
-          bgSize={'cover'}
-          bgPosition={"center"}
-          spacing={'24px'}
-        >
-          <Stack w={"full"} p={'12px'} position={"absolute"} zIndex={0}>
-            <chakra.img
-              src={Home_icon}
-              alt="NEST"
-              objectFit={["cover", 'contain']}
-              h={'400px'}
-            />
-          </Stack>
-          <Text
-            whiteSpace={'break-spaces'}
-            textAlign={'center'}
-            fontSize={['24px', '40px']}
-            fontWeight={'bold'}
-            zIndex={1}
-            color={'#003434'}
-          >
-            NEST Financial Market
-          </Text>
-          <Text
-            fontWeight={"bold"}
-            fontSize={['12px', '25px']}
-            textAlign={"center"}
-            color={'#003434'}
-            zIndex={1}
-          >
-            Trade BTC, ETH futures and options directly
-            <br />
-            from your wallet with infinite liquidity.
-          </Text>
-          <Button
-            minH={isDesktop ? '34px' : '44px'}
-            px={isDesktop ? '20px' : '70px'}
-            minW={'160px'}
-            onClick={() => {
-              window.open('https://finance.nestprotocol.org/', '_blank')
-            }}
-          >
-            Launch APP
-          </Button>
-        </Stack>
-      </Stack>
       {pages.map(({name, icon, bg, bgSize, pathname, phoneBg, bgIcon, title, desc}) => (
         <Stack key={name} spacing={'48px'}>
           <Stack px={['24px', '48px']} w={'full'} align={'center'}>

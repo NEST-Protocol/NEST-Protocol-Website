@@ -1,7 +1,7 @@
 import * as React from 'react'
 import {Spacer, Stack, Text} from '@chakra-ui/react'
 import {Route, Routes} from 'react-router-dom'
-import Root from './root'
+import Root from './Root/index'
 import Footer from '../components/Footer'
 import NESTFi from './NESTFi'
 import News from './News'
