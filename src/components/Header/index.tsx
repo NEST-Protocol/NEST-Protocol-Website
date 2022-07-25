@@ -11,9 +11,6 @@ import {
   Modal,
   ModalCloseButton,
   useDisclosure,
-  PopoverContent,
-  Portal,
-  Popover, PopoverTrigger,
 } from '@chakra-ui/react'
 import NEST_LOGO from '../../assets/svg/nest.svg'
 import {useLocation, useNavigate} from 'react-router-dom'
@@ -29,14 +26,10 @@ const Header = () => {
   const [showLearn, setShowLearn] = useState(false)
 
   const menu = [
-    {name: 'Ecosystem', pathname: 'ecosystem'},
+    {name: 'NEST Fi', pathname: 'nest-fi'},
     {name: 'Developers', pathname: 'docs'},
-    {name: 'Community', pathname: 'community'},
-  ]
-
-  const learn = [
-    {name: 'About NEST', pathname: 'about'},
-    // {name: 'NEST Research Academy', pathname: 'research'},
+    {name: 'News', pathname: 'news'},
+    {name: 'NEST Research Academy', pathname: 'nest-research-academy' }
   ]
 
   return (
@@ -87,37 +80,13 @@ const Header = () => {
           ))}
 
         {isDesktop && (
-          <Popover orientation={'vertical'} size={'sm'}>
-            <PopoverTrigger>
-              <Button variant={"ghost"}>Learn</Button>
-            </PopoverTrigger>
-            <Portal>
-              <PopoverContent borderRadius={'20px'} py={'12px'} w={'260px'}>
-                { learn.map(({pathname, name}) => (
-                  <Button
-                    color={location.pathname.includes(pathname) ? '#EAAA00' : '#003232'}
-                    fontWeight={location.pathname.includes(pathname) ? 'bold' : '500'}
-                    key={name}
-                    variant={'ghost'}
-                    onClick={() => {
-                      navigate(pathname)
-                      window.scrollTo(0, 0)
-                    }}
-                  >{name}</Button>
-                )) }
-              </PopoverContent>
-            </Portal>
-          </Popover>
-        ) }
-
-        {isDesktop && (
           <Button
             minW={'120px'}
             onClick={() => {
-              window.open('https://finance.nestprotocol.org/#/win', '_blank')
+              window.open('https://finance.nestprotocol.org/', '_blank')
             }}
           >
-            Trade
+            App
           </Button>
         )}
 
@@ -177,31 +146,16 @@ const Header = () => {
                         Learn
                       </Button>
 
-                      { showLearn && learn.map(({pathname, name}) => (
-                        <Button
-                          color={location.pathname.includes(pathname) ? '#EAAA00' : '#003232'}
-                          fontWeight={location.pathname.includes(pathname) ? 'bold' : '600'}
-                          key={name}
-                          fontSize={'20px'}
-                          variant={'ghost'}
-                          p={0}
-                          onClick={() => {
-                            navigate(pathname)
-                            window.scrollTo(0, 0)
-                            onClose()
-                          }}
-                        >{name}</Button>
-                      )) }
                     </VStack>
                     <Button
                       minH={'44px'}
                       px={'70px'}
                       minW={'120px'}
                       onClick={() => {
-                        window.open('https://finance.nestprotocol.org/#/futures', '_blank')
+                        window.open('https://finance.nestprotocol.org/', '_blank')
                       }}
                     >
-                      Trade
+                      App
                     </Button>
                   </VStack>
                 </ModalBody>
