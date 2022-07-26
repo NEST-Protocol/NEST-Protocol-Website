@@ -2,6 +2,7 @@ import {chakra, Link, Stack, Text} from "@chakra-ui/react";
 import BigTitle from "../../components/BigTitle";
 import * as React from "react";
 import Research_bg_4 from '../../assets/image/Research/Research_bg_4.jpg'
+import icon1 from '../../assets/image/Research/icon_1.png'
 
 const FundingOpportunity = () => {
   return (
@@ -17,19 +18,7 @@ const FundingOpportunity = () => {
         bgSize={'cover'}
         bgPosition={"center"}
       >
-        <Stack
-          position={'absolute'}
-          h={'400px'}
-          w={'full'}
-          overflow={'hidden'}
-          align={'center'}
-          bgSize={'contain'}
-          bgImage={""}
-          bgRepeat={'no-repeat'}
-          bgPosition={'center'}
-          zIndex={0}
-        />
-        <chakra.img src={""} zIndex={1}/>
+        <chakra.img src={icon1} zIndex={1}/>
         <Text
           zIndex={1}
           fontSize={['12px', '15px']}
