@@ -62,34 +62,33 @@ const Info = () => {
     return (
       <Stack spacing={'48px'} align={'center'}>
         <BigTitle title={'Developers'}/>
-        <HStack w={"full"} spacing={'44px'} maxW={'1440px'}>
+        <Stack w={"full"} spacing={'44px'} maxW={'1440px'}>
           <Center color={'#003232'} fontWeight={"semibold"} w={'full'} h={'440px'} bgImage={Research_bg_2}
                   bgSize={"cover"}>
             <Stack
+              p={'24px'}
               fontWeight={'semibold'}
               color={'#003232'}
               whiteSpace={'break-spaces'}
             >
               <Text fontSize={'25px'}>Promote Industry <br/>Communication</Text>
               <Text fontSize={'15px'}>NRA’s research activities include but are not
-                <br/>
                 limited to writing research papers published in
-                <br/>
                 peer-reviewed international academic journals,
-                <br/>
                 writing research reports for the public and
-                <br/>
                 investors, and organizing conferences,
-                <br/>
-                workshops, webinars, and AMA.</Text>
+                workshops, webinars, and AMA.
+              </Text>
             </Stack>
           </Center>
           <Center color={'#003232'} fontWeight={"semibold"} w={'full'} h={'440px'} bgImage={Research_bg_3}
                   bgSize={"cover"}>
             <Stack
+              p={'24px'}
               fontWeight={'semibold'}
               color={'#003232'}
-              whiteSpace={'break-spaces'}>
+              whiteSpace={'break-spaces'}
+            >
               <Text fontSize={'25px'}>Facilitate Academic
                 <br/>
                 Exploration</Text>
@@ -106,7 +105,7 @@ const Info = () => {
                 various perspectives.</Text>
             </Stack>
           </Center>
-        </HStack>
+        </Stack>
       </Stack>
     )
   }

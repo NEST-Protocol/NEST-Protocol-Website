@@ -22,7 +22,7 @@ const Developers = () => {
                 is a virtual machine-like structure based
                 on the basic function library.
               </Text>
-              <Link color={'#00A0E9'} fontSize={15} href={'/#/docs/Technical-Reference/NEST-Probability-Virtual-Machine.md'}>
+              <Link color={'#00A0E9'} fontSize={15} href={'/#/docs/NEST-PVM/Concept.md'}>
                 Learn more about NEST PVM
               </Link>
             </Stack>
@@ -38,7 +38,7 @@ const Developers = () => {
                 <br/>
                 <br/>
               </Text>
-              <Link color={'#00A0E9'} fontSize={15} href={'/#/docs/Technical-Reference/NEST-Oracle.md'}>
+              <Link color={'#00A0E9'} fontSize={15} href={'/#/docs/NEST-Oracle/Concept.md'}>
                 Learn more about NEST Oracle
               </Link>
             </Stack>

@@ -43,7 +43,7 @@ const Research = () => {
           engineering and helps to spread this knowledge to the public.
         </Text>
         <Link color={'#00A0E9'} fontWeight={'semibold'} fontSize={'15px'} zIndex={1}
-              href={'https://finance.nestprotocol.org/#/win'} isExternal>
+              href={'/#/nest-research-academy'} isExternal>
           Know more about NRA
         </Link>
       </Stack>
