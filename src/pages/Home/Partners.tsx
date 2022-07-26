@@ -14,7 +14,6 @@ import certik from "../../assets/svg/certik.svg";
 import * as React from "react";
 import BigTitle from "../../components/BigTitle";
 import Home_bg_6 from '../../assets/image/Home/Home_bg_6.jpg'
-import Home_bg_icon_6 from '../../assets/image/Home/Home_bg_icon_6.png'
 
 const Partners = () => {
   return (
@@ -30,14 +29,6 @@ const Partners = () => {
         bgPosition={"bottom"}
         bgSize={'cover'}
       >
-        <Stack w={"full"} position={"absolute"} zIndex={0}>
-          <chakra.img
-            src={Home_bg_icon_6}
-            alt="NEST"
-            objectFit={["cover", 'contain']}
-            h={'400px'}
-          />
-        </Stack>
         <SimpleGrid columns={[3, 3, 4, 4]} zIndex={1} spacing={['20px', '40px']}>
           {[
             {
