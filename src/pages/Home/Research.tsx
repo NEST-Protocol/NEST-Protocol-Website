@@ -3,6 +3,7 @@ import * as React from "react";
 import BigTitle from "../../components/BigTitle";
 import Home_bg_5 from '../../assets/image/Home/Home_bg_5.jpg'
 import Icon2 from '../../assets/image/Home/icon_2.png'
+import {ChevronRightIcon} from "@chakra-ui/icons";
 
 const Research = () => {
   return (
@@ -45,7 +46,7 @@ const Research = () => {
         </Text>
         <Link color={'#00A0E9'} fontWeight={'semibold'} fontSize={'15px'} zIndex={1}
               href={'/#/nest-research-academy'} isExternal>
-          Know more about NRA
+          Know more about NRA<ChevronRightIcon/>
         </Link>
       </Stack>
     </Stack>

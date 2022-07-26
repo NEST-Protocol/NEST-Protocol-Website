@@ -3,6 +3,7 @@ import * as React from "react";
 import BigTitle from "../../components/BigTitle";
 import Home_bg_3 from '../../assets/image/Home/Home_bg_3.jpg'
 import Home_bg_4 from '../../assets/image/Home/Home_bg_4.jpg'
+import {ChevronRightIcon} from "@chakra-ui/icons";
 
 const Developers = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -23,7 +24,7 @@ const Developers = () => {
                 on the basic function library.
               </Text>
               <Link color={'#00A0E9'} fontSize={15} href={'/#/docs/NEST-PVM/Concept.md'}>
-                Learn more about NEST PVM
+                Learn more about NEST PVM<ChevronRightIcon/>
               </Link>
             </Stack>
           </Center>
@@ -39,7 +40,7 @@ const Developers = () => {
                 <br/>
               </Text>
               <Link color={'#00A0E9'} fontSize={15} href={'/#/docs/NEST-Oracle/Concept.md'}>
-                Learn more about NEST Oracle
+                Learn more about NEST Oracle<ChevronRightIcon/>
               </Link>
             </Stack>
           </Center>
@@ -62,7 +63,7 @@ const Developers = () => {
                 on the basic function library.
               </Text>
               <Link color={'#00A0E9'} fontSize={15} href={'/#/docs/NEST-PVM/Concept.md'}>
-                Learn more about NEST PVM
+                Learn more about NEST PVM<ChevronRightIcon/>
               </Link>
             </Stack>
           </Center>
@@ -78,7 +79,7 @@ const Developers = () => {
                 <br/>
               </Text>
               <Link color={'#00A0E9'} fontSize={15} href={'/#/docs/NEST-Oracle/Concept.md'}>
-                Learn more about NEST Oracle
+                Learn more about NEST Oracle<ChevronRightIcon/>
               </Link>
             </Stack>
           </Center>

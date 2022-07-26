@@ -8,6 +8,7 @@ import News_card_icon_1 from '../../assets/image/Home/News_card_icon_1.png'
 import News_card_icon_2 from '../../assets/image/Home/News_card_icon_2.png'
 import News_card_icon_3 from '../../assets/image/Home/News_card_icon_3.png'
 import {useNavigate} from "react-router-dom";
+import {ChevronRightIcon} from "@chakra-ui/icons";
 
 const News = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -112,7 +113,7 @@ const News = () => {
         navigate('news')
         window.scrollTo(0, 0)
       }}>
-        More news
+        More news<ChevronRightIcon/>
       </Text>
     </Stack>
   )
