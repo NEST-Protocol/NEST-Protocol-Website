@@ -28,6 +28,7 @@ const Partners = () => {
         w={"full"}
         bgImage={Home_bg_6}
         bgPosition={"bottom"}
+        bgSize={'cover'}
       >
         <Stack w={"full"} position={"absolute"} zIndex={0}>
           <chakra.img

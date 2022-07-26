@@ -1,7 +1,6 @@
-import {chakra, Stack, Text} from "@chakra-ui/react";
+import {Stack, Text} from "@chakra-ui/react";
 import * as React from "react";
 import Home_bg_1 from "../../assets/image/Home/Home_bg_1.jpg"
-import Home_bg_icon_1 from "../../assets/image/Home/Home_bg_icon_1.png"
 
 const Banner = () => {
   return (
@@ -15,15 +14,6 @@ const Banner = () => {
         bgPosition={"center"}
         spacing={'24px'}
       >
-        <Stack w={"full"} position={"absolute"} zIndex={0}>
-          <chakra.img
-            src={Home_bg_icon_1}
-            alt=""
-            objectFit={"cover"}
-            h={['540px', '615px']}
-            pb={'40px'}
-          />
-        </Stack>
         <Text
           whiteSpace={'break-spaces'}
           textAlign={'center'}
