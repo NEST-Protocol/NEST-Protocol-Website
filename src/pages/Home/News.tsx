@@ -68,14 +68,14 @@ const News = () => {
                 bgSize={'cover'}
                 align={'center'}
                 justify={'center'}
-                h={['120px', '160px']}
+                h={['135px', '160px']}
               >
-                <chakra.img src={item.logo} _hover={{transform: 'scale(1.05)'}}/>
+                <chakra.img src={item.logo} _hover={{transform: 'scale(1.05)'}} h={['99px', '132px']}/>
               </Stack>
               <VStack
                 w={'full'}
-                px={['22px', '22px', '44px']}
-                py={'22px'}
+                px={'44px'}
+                py={'44px'}
                 spacing={'8px'}
                 alignItems={isDesktop ? 'center' : 'start'}
                 justifyContent={'start'}

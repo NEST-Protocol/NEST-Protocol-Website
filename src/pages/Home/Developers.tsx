@@ -53,31 +53,32 @@ const Developers = () => {
         <BigTitle title={'Developers'}/>
         <Stack w={"full"} spacing={'44px'} maxW={'1440px'}>
           <Center color={'#003232'} fontWeight={"semibold"} w={'full'} h={'440px'} bgImage={Home_bg_3} bgSize={"cover"}>
-            <Stack maxW={'360px'} p={'12px'}>
+            <Stack maxW={'360px'} p={'12px'} align={"center"}>
               <Text fontSize={25}>
                 NEST PVM
               </Text>
-              <Text>
+              <Text textAlign={"center"}>
                 NEST Probability Virtual Machine (PVM)
                 is a virtual machine-like structure based
                 on the basic function library.
               </Text>
+              <br/>
               <Link color={'#00A0E9'} fontSize={15} href={'/#/docs/NEST-PVM/Concept.md'}>
                 Learn more about NEST PVM<ChevronRightIcon/>
               </Link>
             </Stack>
           </Center>
           <Center color={'#003232'} fontWeight={"semibold"} w={'full'} h={'440px'} bgImage={Home_bg_4}  bgSize={"cover"}>
-            <Stack maxW={'360px'} p={'12px'}>
+            <Stack maxW={'360px'} p={'12px'} align={"center"}>
               <Text fontSize={25}>
                 NEST Oracle
               </Text>
-              <Text>
-                NEST oracle is the only truly decentralized
-                oracle on the market today.
+              <Text textAlign={"center"}>
+                NEST oracle is the only truly decentralized oracle on the market today.
                 <br/>
                 <br/>
               </Text>
+              <br/>
               <Link color={'#00A0E9'} fontSize={15} href={'/#/docs/NEST-Oracle/Concept.md'}>
                 Learn more about NEST Oracle<ChevronRightIcon/>
               </Link>

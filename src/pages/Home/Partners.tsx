@@ -28,6 +28,7 @@ const Partners = () => {
         bgImage={Home_bg_6}
         bgPosition={"bottom"}
         bgSize={'cover'}
+        px={['30px']}
       >
         <SimpleGrid columns={[3, 3, 4, 4]} zIndex={1} spacing={['20px', '40px']}>
           {[

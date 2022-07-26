@@ -1,8 +1,10 @@
-import {Stack, Text} from "@chakra-ui/react";
+import {Button, HStack, Stack, Text, useMediaQuery} from "@chakra-ui/react";
 import * as React from "react";
 import Home_bg_1 from "../../assets/image/Home/Home_bg_1.jpg"
 
 const Banner = () => {
+  const [isDesktop] = useMediaQuery('(min-width: 768px)')
+
   return (
     <Stack spacing={'44px'}>
       <Stack
@@ -24,21 +26,45 @@ const Banner = () => {
         >
           What is NEST
         </Text>
-        <Text
-          fontWeight={"bold"}
-          fontSize={['12px', '25px']}
-          textAlign={"center"}
-          color={'#003434'}
-          zIndex={1}
-        >
-          NEST is a blockchain-based probability virtual machine (PVM) system
-          <br/>
-          with web3 applications of DeFi, GameFi, NFT built on it.
-          <br/>
-          Swap, hedge, earn and even game with the NEST network
-          <br/>
-          to gain excess returns.
-        </Text>
+
+        { isDesktop ? (
+          <Text
+            fontWeight={"bold"}
+            fontSize={['12px', '25px']}
+            textAlign={"center"}
+            color={'#003434'}
+            zIndex={1}
+          >
+            NEST is a blockchain-based probability virtual machine (PVM) system
+            <br/>
+            with web3 applications of DeFi, GameFi, NFT built on it.
+            <br/>
+            Swap, hedge, earn and even game with the NEST network
+            <br/>
+            to gain excess returns.
+          </Text>
+        ) : (
+          <Stack>
+            <Text
+              fontWeight={"bold"}
+              fontSize={['12px', '25px']}
+              textAlign={"center"}
+              color={'#003434'}
+              zIndex={1}
+              px={'24px'}
+            >
+              NEST is a blockchain-based probability virtual machine (PVM) system
+              with web3 applications of DeFi, GameFi, NFT built on it.
+              Swap, hedge, earn and even game with the NEST network
+              to gain excess returns.
+            </Text>
+            <HStack justify={"center"} pt={'50px'}>
+              <Button minW={'200px'}>
+                App
+              </Button>
+            </HStack>
+          </Stack>
+        ) }
       </Stack>
     </Stack>
   )
