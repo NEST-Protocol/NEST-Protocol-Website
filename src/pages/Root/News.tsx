@@ -1,18 +1,13 @@
 import {chakra, Heading, Link, SimpleGrid, Stack, useMediaQuery, VStack} from "@chakra-ui/react";
 import * as React from "react";
+import BigTitle from "../../components/BigTitle";
 
 const News = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
 
   return (
     <Stack spacing={'48px'} align={'center'}>
-      <Stack px={['24px', '48px']} w={'full'} align={'center'}>
-        <Stack maxW={'1440px'} w={'full'}>
-          <Heading fontSize={['24px', '48px']} color={'#003232'}>
-            News
-          </Heading>
-        </Stack>
-      </Stack>
+      <BigTitle title={'News'}/>
       <Stack
         px={['24px', '48px']}
         align={'center'}
@@ -104,6 +99,9 @@ const News = () => {
           ))}
         </SimpleGrid>
       </Stack>
+      <Link color={'#00A0E9'} fontWeight={'semibold'} fontSize={'15px'}>
+        More news
+      </Link>
     </Stack>
   )
 }

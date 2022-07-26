@@ -8,7 +8,7 @@ const NESTFi = () => {
   return (
     <>
       <Helmet>
-        <title>Explore the NEST Ecosystem</title>
+        <title>NEST Financial Market</title>
       </Helmet>
       <Banner/>
       <Stack spacing={'48px'} align={'center'} h={['600px', '720px']} justify={'start'}>
@@ -35,30 +35,6 @@ const NESTFi = () => {
           <Stack pt={'40px'}>
             <chakra.img zIndex={1} h={['360px', '440px']} src={""}/>
           </Stack>
-
-          <Text
-            fontSize={['17px', '24px']}
-            fontWeight={'semibold'}
-            color={'#003232'}
-            zIndex={1}
-          >
-            NEST Oracle
-          </Text>
-          <Text
-            zIndex={1}
-            fontSize={['12px', '15px']}
-            fontWeight={'semibold'}
-            color={'#003232'}
-            whiteSpace={'break-spaces'}
-            textAlign={'center'}
-            maxW={'320px'}
-          >
-            Truly decentralized oracle
-            <br/>
-            Nodeless permissionless quotation
-            <br/>
-            On-chain verification.
-          </Text>
           <Button
             minW={'160px'}
             minH={['44px', '34px']}
@@ -66,7 +42,7 @@ const NESTFi = () => {
               window.open('https://oracle.nestprotocol.org/', '_blank')
             }}
           >
-            Create Oracle
+            Launch App
           </Button>
         </Stack>
       </Stack>

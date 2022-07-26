@@ -7,7 +7,7 @@ const Banner = () => {
       align={'center'}
       h={'full'}
       justify={'center'}
-      minH={['540px', '660px']}
+      minH={['540px', '410px']}
       bgImage={""}
       bgSize={'cover'}
       bgPosition={"center"}
@@ -25,16 +25,6 @@ const Banner = () => {
         zIndex={0}
       />
       <Text
-        whiteSpace={'break-spaces'}
-        textAlign={'center'}
-        fontSize={['24px', '48px']}
-        fontWeight={'bold'}
-        zIndex={1}
-        color={'#003434'}
-      >
-        NEST Community
-      </Text>
-      <Text
         fontSize={['12px', '24px']}
         fontWeight={'bold'}
         textAlign={'center'}
@@ -42,9 +32,7 @@ const Banner = () => {
         zIndex={1}
         color={'#003434'}
       >
-        The NEST community is made up of developers, creators, enthusiasts, explore, contribute to the
-        <br/>
-        community and get reward.
+        Know NEST from Our News, Blogs and Announcements
       </Text>
     </Stack>
   )

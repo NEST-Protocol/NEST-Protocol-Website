@@ -1,16 +1,11 @@
-import {Button, chakra, Heading, Stack, Text} from "@chakra-ui/react";
+import {chakra, Link, Stack, Text} from "@chakra-ui/react";
 import * as React from "react";
+import BigTitle from "../../components/BigTitle";
 
 const Research = () => {
   return (
     <Stack spacing={'48px'} align={'center'}>
-      <Stack px={['24px', '48px']} w={'full'} align={'center'}>
-        <Stack maxW={'1440px'} w={'full'}>
-          <Heading fontSize={['24px', '48px']} color={'#003232'}>
-            NEST Research Academy
-          </Heading>
-        </Stack>
-      </Stack>
+      <BigTitle title={'NEST Research Academy'}/>
       <Stack
         align={'center'}
         minH={'440px'}
@@ -50,18 +45,18 @@ const Research = () => {
           whiteSpace={'break-spaces'}
           textAlign={'center'}
         >
-
+          NEST Research Academy (NRA), initialized by the NEST protocol, aims to boost
+          <br/>
+          theoretical and applied research in related fields such as blockchain, finance,
+          <br/>
+          economics, game theory, machine learning, computer science, and software
+          <br/>
+          engineering and helps to spread this knowledge to the public.
         </Text>
-        <Button
-          variant={'ghost'}
-          minW={'160px'}
-          minH={['44px', '34px']}
-          onClick={() => {
-            window.open('https://finance.nestprotocol.org/#/win', '_blank')
-          }}
-        >
+        <Link color={'#00A0E9'} fontWeight={'semibold'} fontSize={'15px'} zIndex={1}
+              href={'https://finance.nestprotocol.org/#/win'} isExternal>
           Know more about NRA
-        </Button>
+        </Link>
       </Stack>
     </Stack>
   )

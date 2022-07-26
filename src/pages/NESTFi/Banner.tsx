@@ -27,7 +27,12 @@ const Banner = () => {
 
       </Stack>
       <Text textAlign={'center'} fontSize={['24px', '48px']} fontWeight={'bold'} zIndex={1} color={'#003434'}>
-        Explore the {!isDesktop && <br/>} NEST Ecosystem
+        NEST Financial Market
+      </Text>
+      <Text textAlign={"center"} fontWeight={"bold"} fontSize={25} color={'#003434'} zIndex={1}>
+        Get NEST token here and buy futures,
+        <br/>
+        options or play DeFi games to win NEST.
       </Text>
     </Stack>
   )

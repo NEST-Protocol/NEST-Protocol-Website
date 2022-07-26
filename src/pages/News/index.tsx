@@ -7,7 +7,7 @@ const News = () => {
   return (
     <>
       <Helmet>
-        <title>NEST Community</title>
+        <title>NEST News</title>
       </Helmet>
       <Banner/>
       <LatestNews/>

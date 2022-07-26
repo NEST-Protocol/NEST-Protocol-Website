@@ -12,17 +12,12 @@ import CoFiX from "../../assets/svg/CoFiX.svg";
 import Parasset from "../../assets/svg/Parasset.svg";
 import certik from "../../assets/svg/certik.svg";
 import * as React from "react";
+import BigTitle from "../../components/BigTitle";
 
 const Partners = () => {
   return (
     <Stack spacing={'48px'} align={'center'}>
-      <Stack px={['24px', '48px']} w={'full'} align={'center'}>
-        <Stack maxW={'1440px'} w={'full'}>
-          <Heading fontSize={['24px', '48px']} color={'#003232'}>
-            Integrations & Partners
-          </Heading>
-        </Stack>
-      </Stack>
+      <BigTitle title={'Integrations & Partners'}/>
       <Stack
         px={['24px', '48px']}
         align={'center'}
