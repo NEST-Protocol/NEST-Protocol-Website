@@ -1,6 +1,7 @@
 import {Stack, Text, HStack, useMediaQuery, chakra, Wrap, WrapItem, VStack} from '@chakra-ui/react'
 import * as React from 'react'
 import { useNavigate } from 'react-router-dom'
+import BG_URL from "../../assets/image/Footer/Footer_bg.jpg"
 
 const Footer = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -11,15 +12,15 @@ const Footer = () => {
       p={['24px', '48px']}
       w={'full'}
       align={'center'}
-      // bgImage={BG_URL}
+      bgImage={BG_URL}
       bgSize={'cover'}
-      bgPosition={"center"}
+      bgPosition={"right"}
       zIndex={'10'}
     >
       <Stack maxW={'1440px'} justify={'space-around'} w={'full'}>
         <Wrap spacing={['22px', '44px']} fontSize={15} w={"full"}>
           <WrapItem>
-            <Stack spacing={'40px'} minW={'300px'} pl={'24px'} >
+            <Stack px={'24px'} spacing={'40px'} minW={'300px'} >
               <VStack spacing={'22px'} align={"start"}>
                 <Text fontWeight={"bold"} color={'#003232'}>Launch App</Text>
                 <Text color={'#7D7D7D'} fontWeight={'semibold'}>Buy futures, options and win NEST</Text>
@@ -35,7 +36,7 @@ const Footer = () => {
             </Stack>
           </WrapItem>
           <WrapItem>
-            <Stack spacing={'40px'} pl={'24px'} minW={'300px'}>
+            <Stack px={'24px'} spacing={'40px'} minW={'300px'}>
               <VStack spacing={'22px'} align={"start"}>
                 <Text fontWeight={"bold"} color={'#003232'}>NEST PVM Docs</Text>
                 <Text color={'#7D7D7D'} fontWeight={'semibold'}>Know how to develop on NEST PVM</Text>
@@ -53,8 +54,8 @@ const Footer = () => {
             </Stack>
           </WrapItem>
           <WrapItem>
-            <Stack px={'24px'} spacing={'32px'} zIndex={1} minW={'500px'} w={'full'}>
-              <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
+            <Stack spacing={'32px'} zIndex={1} minW={'500px'} w={'full'}>
+              <Text px={'24px'} fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
                 Market price
               </Text>
               <chakra.div

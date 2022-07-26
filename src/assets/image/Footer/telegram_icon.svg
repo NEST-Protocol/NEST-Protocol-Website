@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="telegram_icon" transform="translate(-252 -328)">
+    <circle id="椭圆_2" data-name="椭圆 2" cx="24" cy="24" r="24" transform="translate(252 328)" fill="#eaaa00"/>
+    <path id="路径_2" data-name="路径 2" d="M27.513,28.653l3.905-18.461c.355-1.6-.533-2.308-1.6-1.953L6.744,17.115c-1.6.533-1.6,1.42-.355,1.953l5.858,1.775,13.668-8.7c.71-.355,1.243-.178.71.178L15.442,22.262l-.178,6.39a2.651,2.651,0,0,0,1.243-.533l2.84-2.84,6.035,4.438q1.6.8,2.13-1.065Z" transform="translate(256 333)" fill="#003232"/>
+  </g>
+</svg>
