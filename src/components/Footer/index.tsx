@@ -132,7 +132,7 @@ const Footer = () => {
           </WrapItem>
         </Wrap>
       </Stack>
-      <HStack justify={"end"} w={'full'}>
+      <HStack justify={isDesktop ? "end" : "center"} w={'full'}>
         <Text px={'24px'} color={'#7D7D7D'} fontSize={'15px'} fontWeight={'semibold'}>
           ©2022 NEST
         </Text>
