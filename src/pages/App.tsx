@@ -1,7 +1,7 @@
 import * as React from 'react'
 import {Spacer, Stack, Text} from '@chakra-ui/react'
 import {Route, Routes} from 'react-router-dom'
-import Root from './Root/index'
+import Home from './Home/index'
 import Footer from '../components/Footer'
 import NESTFi from './NESTFi'
 import News from './News'
@@ -15,7 +15,7 @@ export const App = () => {
       <Header />
       <Stack spacing={['56px', '80px']} pb={['56px', '80px']}>
         <Routes>
-          <Route path="/" element={<Root/>}/>
+          <Route path="/" element={<Home/>}/>
           <Route path={'nest-fi'} element={<NESTFi/>}/>
           <Route path={'docs'} element={<Developers/>}/>
           <Route path={'docs/*'} element={<Developers/>}/>

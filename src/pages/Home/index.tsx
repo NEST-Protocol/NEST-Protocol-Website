@@ -5,7 +5,7 @@ import News from "./News";
 import Research from "./Research";
 import Partners from "./Partners";
 
-const Root = () => {
+const Home = () => {
   return (
     <>
       <Banner/>
@@ -18,4 +18,4 @@ const Root = () => {
   )
 }
 
-export default Root
+export default Home
