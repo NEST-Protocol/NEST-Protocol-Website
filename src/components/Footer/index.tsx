@@ -24,7 +24,7 @@ const Footer = () => {
       <Stack maxW={'1440px'} justify={'space-around'} w={'full'}>
         <Wrap spacing={['22px', '44px']} fontSize={15} w={"full"}>
           <WrapItem>
-            <Stack px={'16px'} spacing={'40px'} minW={'300px'}>
+            <Stack px={isDesktop ? '0' : '16px'} spacing={'40px'} minW={'300px'}>
               <VStack spacing={'16px'} align={"start"}>
                 <Text fontWeight={"bold"}
                       cursor={"pointer"}
@@ -56,7 +56,7 @@ const Footer = () => {
             </Stack>
           </WrapItem>
           <WrapItem>
-            <Stack px={'16px'} spacing={'40px'} minW={'300px'}>
+            <Stack px={isDesktop ? '0' : '16px'} spacing={'40px'} minW={'300px'}>
               <VStack spacing={'16px'} align={"start"}>
                 <Text fontWeight={"bold"} color={'#003232'} cursor={"pointer"} onClick={() => {
                   navigate('docs/NEST-PVM/Concept.md')

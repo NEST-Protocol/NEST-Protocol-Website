@@ -37,15 +37,17 @@ const NESTFi = () => {
         >
           Get NEST token here and buy futures, options or play DeFi games to win NEST.
         </Text>
-        <Button
-          minW={'160px'}
-          minH={['44px', '34px']}
-          onClick={() => {
-            window.open('https://finance.nestprotocol.org/#/win', '_blank')
-          }}
-        >
-          Launch App
-        </Button>
+        <Stack pt={'16px'}>
+          <Button
+            minW={'160px'}
+            minH={['44px', '34px']}
+            onClick={() => {
+              window.open('https://finance.nestprotocol.org/#/win', '_blank')
+            }}
+          >
+            Launch App
+          </Button>
+        </Stack>
       </Stack>
     </Stack>
   )

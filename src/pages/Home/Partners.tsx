@@ -1,4 +1,4 @@
-import {chakra, Heading, SimpleGrid, Stack} from "@chakra-ui/react";
+import {chakra, SimpleGrid, Stack} from "@chakra-ui/react";
 import huobi from "../../assets/svg/huobi.svg";
 import binance from "../../assets/svg/binance.svg";
 import kcc from "../../assets/svg/kcc.svg";
