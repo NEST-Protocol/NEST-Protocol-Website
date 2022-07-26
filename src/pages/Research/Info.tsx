@@ -1,4 +1,4 @@
-import {HStack, Link, Spacer, Stack, Text} from "@chakra-ui/react";
+import {HStack, Spacer, Stack, Text} from "@chakra-ui/react";
 import * as React from "react";
 import BigTitle from "../../components/BigTitle";
 
@@ -7,9 +7,9 @@ const Info = () => {
     <Stack spacing={'48px'} align={'center'}>
       <BigTitle title={'Developers'}/>
       <HStack w={"full"} spacing={'44px'}>
-        <HStack color={'#003232'} fontWeight={"semibold"} spacing={'20px'} w={'full'}>
+        <HStack color={'#003232'} fontWeight={"semibold"} spacing={'20px'} w={'full'} h={'440px'}>
           <Spacer/>
-          <Stack p={'168px'}>
+          <Stack pr={'60px'} minW={'320px'}>
             <Stack
               fontWeight={'semibold'}
               color={'#003232'}
@@ -30,8 +30,8 @@ const Info = () => {
             </Stack>
           </Stack>
         </HStack>
-        <HStack color={'#003232'} fontWeight={"semibold"} spacing={'20px'} w={'full'}>
-          <Stack p={'168px'}>
+        <HStack color={'#003232'} fontWeight={"semibold"} spacing={'20px'} w={'full'} h={'440px'}>
+          <Stack pl={'60px'} minW={'320px'}>
             <Stack
               w={'full'}
               fontWeight={'semibold'}

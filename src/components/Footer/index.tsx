@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <Stack
-      px={['24px', '48px']}
+      p={['24px', '48px']}
       w={'full'}
       align={'center'}
       // bgImage={BG_URL}
@@ -19,7 +19,7 @@ const Footer = () => {
       <Stack maxW={'1440px'} justify={'space-around'} w={'full'}>
         <Wrap spacing={['22px', '44px']} fontSize={15} w={"full"}>
           <WrapItem>
-            <Stack spacing={'40px'} minW={'300px'}>
+            <Stack spacing={'40px'} minW={'300px'} pl={'24px'} >
               <VStack spacing={'22px'} align={"start"}>
                 <Text fontWeight={"bold"} color={'#003232'}>Launch App</Text>
                 <Text color={'#7D7D7D'} fontWeight={'semibold'}>Buy futures, options and win NEST</Text>
@@ -35,7 +35,7 @@ const Footer = () => {
             </Stack>
           </WrapItem>
           <WrapItem>
-            <Stack spacing={'40px'} minW={'300px'}>
+            <Stack spacing={'40px'} pl={'24px'} minW={'300px'}>
               <VStack spacing={'22px'} align={"start"}>
                 <Text fontWeight={"bold"} color={'#003232'}>NEST PVM Docs</Text>
                 <Text color={'#7D7D7D'} fontWeight={'semibold'}>Know how to develop on NEST PVM</Text>
@@ -53,7 +53,7 @@ const Footer = () => {
             </Stack>
           </WrapItem>
           <WrapItem>
-            <Stack px={'24px'} spacing={'32px'} zIndex={1} w={'500px'}>
+            <Stack px={'24px'} spacing={'32px'} zIndex={1} minW={'500px'} w={'full'}>
               <Text fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
                 Market price
               </Text>
@@ -64,15 +64,15 @@ const Footer = () => {
                 data-coin-ids="2204"
                 w={'full'}
               ></chakra.div>
-              <HStack justify={"end"}>
-                <Text px={'24px'} color={'#7D7D7D'} fontSize={'15px'} fontWeight={'semibold'}>
-                  ©2022 NEST
-                </Text>
-              </HStack>
             </Stack>
           </WrapItem>
         </Wrap>
       </Stack>
+      <HStack justify={"end"} w={'full'}>
+        <Text px={'24px'} color={'#7D7D7D'} fontSize={'15px'} fontWeight={'semibold'}>
+          ©2022 NEST
+        </Text>
+      </HStack>
     </Stack>
   )
 }
