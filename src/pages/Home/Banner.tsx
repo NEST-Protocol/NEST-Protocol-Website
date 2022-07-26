@@ -31,9 +31,9 @@ const Banner = () => {
           color={'#003434'}
           zIndex={1}
         >
-          A complete gaming space with applications of
+          NEST is a blockchain-based probability virtual machine (PVM) system
           <br/>
-          DeFi, GameFi, NFT built on the NEST.
+          with web3 applications of DeFi, GameFi, NFT built on it.
           <br/>
           Swap, hedge, earn and even game with the NEST network
           <br/>
