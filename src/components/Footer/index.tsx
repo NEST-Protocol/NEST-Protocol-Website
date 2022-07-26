@@ -13,7 +13,8 @@ const Footer = () => {
 
   return (
     <Stack
-      p={['24px', '48px']}
+      px={['24px', '48px']}
+      py={['88px']}
       w={'full'}
       align={'center'}
       bgImage={BG_URL}
