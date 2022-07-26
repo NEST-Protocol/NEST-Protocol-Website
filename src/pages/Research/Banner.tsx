@@ -15,16 +15,6 @@ const Banner = () => {
       spacing={['22px', '44px']}
       px={'24px'}
     >
-      <Stack
-        position={'absolute'}
-        h={'600px'}
-        w={'full'}
-        bgSize={'contain'}
-        bgImage={""}
-        bgRepeat={'no-repeat'}
-        bgPosition={'center'}
-        zIndex={0}
-      />
       <Text
         whiteSpace={'break-spaces'}
         textAlign={'center'}
