@@ -23,29 +23,46 @@ const Developers = () => {
       children: [
         {
           title: 'What is NEST?',
-          pathname: '/docs/overview.md'
+          pathname: '/docs/overview.md',
         }
       ]
     },
     {
-      title: 'Guild',
+      title: 'NEST-Oracle',
       children: [
         {
-          title: 'Set Up Local Environment',
-          pathname: '/docs/Guide/Set-Up-Local-Environment.md'
+          title: 'Concept',
+          pathname: '/docs/NEST-Oracle/Concept.md'
+        },
+        {
+          title: 'Calling Price',
+          pathname: '/docs/NEST-Oracle/Calling-Price.md'
+        },
+        {
+          title: 'Mining on NEST Oracle',
+          pathname: '/docs/NEST-Oracle/Mining-on-NEST-Oracle.md'
         }
+      ]
+    },
+    {
+      title: 'NEST-PVM',
+      children: [
+        {
+          title: 'Concept',
+          pathname: '/docs/NEST-PVM/Concept.md'
+        },
+        {
+          title: 'Build on NEST PVM',
+          pathname: '/docs/NEST-PVM/Build-on-NEST-PVM.md'
+        },
       ]
     },
     {
       title: 'Technical Reference',
       children: [
         {
-          title: 'NEST Probability Virtual Machine',
-          pathname: '/docs/Technical-Reference/NEST-Probability-Virtual-Machine.md'
-        },
-        {
-          title: 'NEST Oracle',
-          pathname: '/docs/Technical-Reference/NEST-Oracle.md'
+          title: 'Set Up Local Environment',
+          pathname: '/docs/Technical-Reference/Set-Up-Local-Environment.md'
         },
         {
           title: 'Contract Deployment',
@@ -54,7 +71,7 @@ const Developers = () => {
         {
           title: 'Error Codes',
           pathname: '/docs/Technical-Reference/Error-Codes.md'
-        }
+        },
       ]
     }
   ]
@@ -70,7 +87,7 @@ const Developers = () => {
 
   const fetchMd = useCallback(async () => {
     if (location.pathname.replace('/docs', '') !== '') {
-      fetch('https://raw.githubusercontent.com/NEST-Protocol/NEST-Docs/main' + location.pathname)
+      fetch('https://raw.githubusercontent.com/NEST-Protocol/NEST-Docs/test' + location.pathname)
         .then(res => res.text())
         .then(text => {
           setMd(text)
@@ -158,7 +175,7 @@ const Developers = () => {
                   fontWeight={'600'}
                   onClick={() => {
                     window.open(
-                      'https://github.com/NEST-Protocol/NEST-Docs/blob/main' + location.pathname,
+                      'https://github.com/NEST-Protocol/NEST-Docs/blob/test' + location.pathname,
                       '_blank'
                     )
                   }}
@@ -244,7 +261,7 @@ const Developers = () => {
               fontWeight={'600'}
               onClick={() => {
                 window.open(
-                  'https://github.com/NEST-Protocol/NEST-Docs/blob/main' + location.pathname,
+                  'https://github.com/NEST-Protocol/NEST-Docs/blob/test' + location.pathname,
                   '_blank'
                 )
               }}

@@ -25,48 +25,51 @@ const Footer = () => {
         <Wrap spacing={['22px', '44px']} fontSize={15} w={"full"}>
           <WrapItem>
             <Stack px={'24px'} spacing={'40px'} minW={'300px'}>
-              <VStack spacing={'22px'} align={"start"}>
-                <Text fontWeight={"bold"} color={'#003232'}>Launch App</Text>
+              <VStack spacing={'16px'} align={"start"}>
+                <Text fontWeight={"bold"}
+                      cursor={"pointer"}
+                      onClick={() => {
+                        window.open('https://finance.nestprotocol.org/', '_blank')
+                      }}
+                      color={'#003232'}>Launch App</Text>
                 <Text
                   color={'#7D7D7D'}
-                  cursor={"pointer"}
                   fontWeight={'semibold'}
-                  onClick={() => {
-                    window.open('https://finance.nestprotocol.org/', '_blank')
-                  }}
                 >Buy futures, options and win NEST</Text>
               </VStack>
-              <VStack spacing={'22px'} align={"start"}>
-                <Text fontWeight={"bold"} color={'#003232'}>NEST News</Text>
-                <Text color={'#7D7D7D'} fontWeight={'semibold'} cursor={"pointer"} onClick={() => {
+              <VStack spacing={'16px'} align={"start"}>
+                <Text fontWeight={"bold"} color={'#003232'}
+                      cursor={"pointer"} onClick={() => {
                   navigate('news')
                   window.scrollTo(0, 0)
-                }}>Latest news from NEST</Text>
+                }}
+                >NEST News</Text>
+                <Text color={'#7D7D7D'} fontWeight={'semibold'}>Latest news from NEST</Text>
               </VStack>
-              <VStack spacing={'22px'} align={"start"}>
-                <Text fontWeight={"bold"} color={'#003232'}>NEST Research Academy</Text>
-                <Text color={'#7D7D7D'} fontWeight={'semibold'} cursor={"pointer"} onClick={() => {
+              <VStack spacing={'16px'} align={"start"}>
+                <Text fontWeight={"bold"} color={'#003232'} cursor={"pointer"} onClick={() => {
                   navigate('nest-research-academy')
                   window.scrollTo(0, 0)
-                }}>Know about NRA</Text>
+                }}>NEST Research Academy</Text>
+                <Text color={'#7D7D7D'} fontWeight={'semibold'}>Know about NRA</Text>
               </VStack>
             </Stack>
           </WrapItem>
           <WrapItem>
             <Stack px={'24px'} spacing={'40px'} minW={'300px'}>
-              <VStack spacing={'22px'} align={"start"}>
-                <Text fontWeight={"bold"} color={'#003232'}>NEST PVM Docs</Text>
-                <Text color={'#7D7D7D'} fontWeight={'semibold'} cursor={"pointer"} onClick={() => {
-                  navigate('/docs/Guide/Set-Up-Local-Environment.md')
+              <VStack spacing={'16px'} align={"start"}>
+                <Text fontWeight={"bold"} color={'#003232'} cursor={"pointer"} onClick={() => {
+                  navigate('/#/docs/NEST-PVM/Concept.md')
                   window.scrollTo(0, 0)
-                }}>Know how to develop on NEST PVM</Text>
+                }}>NEST PVM Docs</Text>
+                <Text color={'#7D7D7D'} fontWeight={'semibold'}>Know how to develop on NEST PVM</Text>
               </VStack>
-              <VStack spacing={'22px'} align={"start"}>
-                <Text fontWeight={"bold"} color={'#003232'}>NEST Oracle Docs</Text>
-                <Text color={'#7D7D7D'} fontWeight={'semibold'} cursor={"pointer"} onClick={() => {
-                  navigate('/docs/Technical-Reference/NEST-Oracle.md')
+              <VStack spacing={'16px'} align={"start"}>
+                <Text fontWeight={"bold"} color={'#003232'} cursor={"pointer"} onClick={() => {
+                  navigate('/#/docs/NEST-Oracle/Concept.md')
                   window.scrollTo(0, 0)
-                }}>Know how to use NEST Oracle</Text>
+                }}>NEST Oracle Docs</Text>
+                <Text color={'#7D7D7D'} fontWeight={'semibold'}>Know how to use NEST Oracle</Text>
               </VStack>
               <HStack spacing={'24px'}>
                 <chakra.img
