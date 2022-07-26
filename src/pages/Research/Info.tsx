@@ -93,15 +93,10 @@ const Info = () => {
                 <br/>
                 Exploration</Text>
               <Text fontSize={'15px'}>NRA provides funding and job opportunities for
-                <br/>
                 researchers in different stages. NRA and NEST
-                <br/>
                 feel honored if the support helps scholars make
-                <br/>
                 breakthrough progress in academics and achieve
-                <br/>
                 significant contributions to human society from
-                <br/>
                 various perspectives.</Text>
             </Stack>
           </Center>

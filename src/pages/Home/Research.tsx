@@ -2,6 +2,7 @@ import {chakra, Link, Stack, Text} from "@chakra-ui/react";
 import * as React from "react";
 import BigTitle from "../../components/BigTitle";
 import Home_bg_5 from '../../assets/image/Home/Home_bg_5.jpg'
+import Icon2 from '../../assets/image/Home/icon_2.png'
 
 const Research = () => {
   return (
@@ -17,7 +18,7 @@ const Research = () => {
         bgSize={'cover'}
         bgPosition={"center"}
       >
-        <chakra.img src={""} zIndex={1}/>
+        <chakra.img src={Icon2} zIndex={1}/>
         <Text
           fontSize={['17px', '24px']}
           fontWeight={'semibold'}

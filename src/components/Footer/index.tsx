@@ -116,7 +116,7 @@ const Footer = () => {
             </Stack>
           </WrapItem>
           <WrapItem>
-            <Stack spacing={'32px'} zIndex={1} minW={isDesktop ? '500px' : ''} w={'full'}>
+            <Stack spacing={'32px'} zIndex={1} w={isDesktop ? '500px' : 'full'}>
               <Text px={'24px'} fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
                 Market price
               </Text>
