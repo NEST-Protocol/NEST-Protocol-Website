@@ -1,10 +1,13 @@
-import {Stack, Text, HStack, useMediaQuery, chakra, Wrap, WrapItem, VStack} from '@chakra-ui/react'
+import {Stack, Text, HStack, chakra, Wrap, WrapItem, VStack, Link} from '@chakra-ui/react'
 import * as React from 'react'
-import { useNavigate } from 'react-router-dom'
 import BG_URL from "../../assets/image/Footer/Footer_bg.jpg"
+import Github_URL from "../../assets/image/Footer/github_icon.svg"
+import Twitter_URL from "../../assets/image/Footer/twitter_icon.svg"
+import Telegram_URL from "../../assets/image/Footer/telegram_icon.svg"
+import Medium_URL from "../../assets/image/Footer/medium_icon.svg"
+import {useNavigate} from "react-router-dom";
 
 const Footer = () => {
-  const [isDesktop] = useMediaQuery('(min-width: 768px)')
   const navigate = useNavigate()
 
   return (
@@ -20,18 +23,31 @@ const Footer = () => {
       <Stack maxW={'1440px'} justify={'space-around'} w={'full'}>
         <Wrap spacing={['22px', '44px']} fontSize={15} w={"full"}>
           <WrapItem>
-            <Stack px={'24px'} spacing={'40px'} minW={'300px'} >
+            <Stack px={'24px'} spacing={'40px'} minW={'300px'}>
               <VStack spacing={'22px'} align={"start"}>
                 <Text fontWeight={"bold"} color={'#003232'}>Launch App</Text>
-                <Text color={'#7D7D7D'} fontWeight={'semibold'}>Buy futures, options and win NEST</Text>
+                <Text
+                  color={'#7D7D7D'}
+                  cursor={"pointer"}
+                  fontWeight={'semibold'}
+                  onClick={() => {
+                    window.open('https://finance.nestprotocol.org/', '_blank')
+                  }}
+                >Buy futures, options and win NEST</Text>
               </VStack>
               <VStack spacing={'22px'} align={"start"}>
                 <Text fontWeight={"bold"} color={'#003232'}>NEST News</Text>
-                <Text color={'#7D7D7D'} fontWeight={'semibold'}>Latest news from NEST</Text>
+                <Text color={'#7D7D7D'} fontWeight={'semibold'} cursor={"pointer"} onClick={() => {
+                  navigate('news')
+                  window.scrollTo(0, 0)
+                }}>Latest news from NEST</Text>
               </VStack>
               <VStack spacing={'22px'} align={"start"}>
                 <Text fontWeight={"bold"} color={'#003232'}>NEST Research Academy</Text>
-                <Text color={'#7D7D7D'} fontWeight={'semibold'}>Know about NRA</Text>
+                <Text color={'#7D7D7D'} fontWeight={'semibold'} cursor={"pointer"} onClick={() => {
+                  navigate('nest-research-academy')
+                  window.scrollTo(0, 0)
+                }}>Know about NRA</Text>
               </VStack>
             </Stack>
           </WrapItem>
@@ -39,17 +55,59 @@ const Footer = () => {
             <Stack px={'24px'} spacing={'40px'} minW={'300px'}>
               <VStack spacing={'22px'} align={"start"}>
                 <Text fontWeight={"bold"} color={'#003232'}>NEST PVM Docs</Text>
-                <Text color={'#7D7D7D'} fontWeight={'semibold'}>Know how to develop on NEST PVM</Text>
+                <Text color={'#7D7D7D'} fontWeight={'semibold'} cursor={"pointer"} onClick={() => {
+                  navigate('/docs/Guide/Set-Up-Local-Environment.md')
+                  window.scrollTo(0, 0)
+                }}>Know how to develop on NEST PVM</Text>
               </VStack>
               <VStack spacing={'22px'} align={"start"}>
                 <Text fontWeight={"bold"} color={'#003232'}>NEST Oracle Docs</Text>
-                <Text color={'#7D7D7D'} fontWeight={'semibold'}>Know how to use NEST Oracle</Text>
+                <Text color={'#7D7D7D'} fontWeight={'semibold'} cursor={"pointer"} onClick={() => {
+                  navigate('/docs/Technical-Reference/NEST-Oracle.md')
+                  window.scrollTo(0, 0)
+                }}>Know how to use NEST Oracle</Text>
               </VStack>
-              <HStack>
-                <Text>Github</Text>
-                <Text>Twitter</Text>
-                <Text>Telegram</Text>
-                <Text>Medium</Text>
+              <HStack spacing={'24px'}>
+                <chakra.img
+                  alt={'https://github.com/NEST-Protocol'}
+                  src={Github_URL}
+                  width={'44px'}
+                  height={'44px'}
+                  cursor={"pointer"}
+                  onClick={() => {
+                    window.open('https://github.com/NEST-Protocol', '_blank')
+                  }}
+                />
+                <chakra.img
+                  alt={'https://twitter.com/nest_protocol/'}
+                  src={Twitter_URL}
+                  width={'44px'}
+                  height={'44px'}
+                  cursor={"pointer"}
+                  onClick={() => {
+                    window.open('https://twitter.com/nest_protocol/', '_blank')
+                  }}
+                />
+                <chakra.img
+                  alt={'https://t.me/nest_chat/'}
+                  src={Telegram_URL}
+                  width={'44px'}
+                  height={'44px'}
+                  cursor={"pointer"}
+                  onClick={() => {
+                    window.open('https://t.me/nest_chat/', '_blank')
+                  }}
+                />
+                <chakra.img
+                  alt={'https://nest-protocol-82041.medium.com/'}
+                  src={Medium_URL}
+                  width={'44px'}
+                  height={'44px'}
+                  cursor={"pointer"}
+                  onClick={() => {
+                    window.open('https://nest-protocol-82041.medium.com/', '_blank')
+                  }}
+                />
               </HStack>
             </Stack>
           </WrapItem>
