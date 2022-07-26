@@ -9,7 +9,7 @@ const News = () => {
       <Stack px={['24px', '48px']} w={'full'} align={'center'}>
         <Stack maxW={'1440px'} w={'full'}>
           <Heading fontSize={['24px', '48px']} color={'#003232'}>
-            The Latest from NEST
+            News
           </Heading>
         </Stack>
       </Stack>

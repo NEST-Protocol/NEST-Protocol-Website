@@ -7,7 +7,7 @@ const NESTFi = () => {
       <Stack px={['24px', '48px']} w={'full'} align={'center'}>
         <Stack maxW={'1440px'} w={'full'}>
           <Heading fontSize={['24px', '48px']} color={'#003232'}>
-            Integrations & Partners
+            NEST Fi
           </Heading>
         </Stack>
       </Stack>
@@ -49,7 +49,6 @@ const NESTFi = () => {
           color={'#003232'}
           whiteSpace={'break-spaces'}
           textAlign={'center'}
-          maxW={'320px'}
         >
           Get NEST token here and buy futures, options or play DeFi games to win NEST.
         </Text>
@@ -60,7 +59,7 @@ const NESTFi = () => {
             window.open('https://finance.nestprotocol.org/#/win', '_blank')
           }}
         >
-          Win NEST
+          Launch App
         </Button>
       </Stack>
     </Stack>
