@@ -34,6 +34,7 @@ const NESTFi = () => {
             bgImage={iPhone}
             bgRepeat={'no-repeat'}
             bgPosition={'bottom'}
+            bgSize={'contain'}
             zIndex={0}
           />
         </Stack>

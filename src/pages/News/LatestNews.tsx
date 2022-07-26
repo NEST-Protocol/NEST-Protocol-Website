@@ -94,7 +94,7 @@ const LatestNews = () => {
                 bgSize={'cover'}
                 align={'center'}
                 justify={'center'}
-                h={['120px', '160px']}
+                h={'160px'}
               >
                 <chakra.img src={item.logo} _hover={{transform: 'scale(1.05)'}}/>
               </Stack>

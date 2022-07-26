@@ -9,7 +9,6 @@ export const Button = {
     ghost: {
       fontWeight: '500',
       fontSize: '15px',
-      color: '#00A0E9',
       _hover: {
         bg: 'none'
       },

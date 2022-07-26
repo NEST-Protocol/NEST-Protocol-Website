@@ -131,21 +131,6 @@ const Header = () => {
                         </Button>
                       ))}
 
-                      <Button
-                        variant={'ghost'}
-                        fontSize={'25px'}
-                        _active={{ color: '#7D7D7D' }}
-                        _hover={{ color: '#7D7D7D' }}
-                        color={showLearn ? '#7D7D7D' : '#003232'}
-                        fontWeight={'600'}
-                        p={0}
-                        onClick={() => {
-                          setShowLearn(!showLearn)
-                        }}
-                      >
-                        Learn
-                      </Button>
-
                     </VStack>
                     <Button
                       minH={'44px'}

@@ -41,15 +41,12 @@ const Banner = () => {
         textAlign={'center'}
         zIndex={1}
         color={'#003434'}
+        maxW={['full', '700px']}
       >
         NEST Research Academy (NRA), initialized by the NEST protocol,
-        <br/>
         aims to boost theoretical and applied research in related
-        <br/>
         fields such as blockchain,finance, economics, game theory,
-        <br/>
         machine learning, computer science,and software engineering and
-        <br/>
         helps to spread this knowledge to the public.
       </Text>
     </Stack>

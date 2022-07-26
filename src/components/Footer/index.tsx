@@ -1,4 +1,4 @@
-import {Stack, Text, HStack, chakra, Wrap, WrapItem, VStack, Link} from '@chakra-ui/react'
+import {Stack, Text, HStack, chakra, Wrap, WrapItem, VStack, Link, useMediaQuery} from '@chakra-ui/react'
 import * as React from 'react'
 import BG_URL from "../../assets/image/Footer/Footer_bg.jpg"
 import Github_URL from "../../assets/image/Footer/github_icon.svg"
@@ -8,6 +8,7 @@ import Medium_URL from "../../assets/image/Footer/medium_icon.svg"
 import {useNavigate} from "react-router-dom";
 
 const Footer = () => {
+  const [isDesktop] = useMediaQuery('(min-width: 768px)')
   const navigate = useNavigate()
 
   return (
@@ -112,7 +113,7 @@ const Footer = () => {
             </Stack>
           </WrapItem>
           <WrapItem>
-            <Stack spacing={'32px'} zIndex={1} minW={'500px'} w={'full'}>
+            <Stack spacing={'32px'} zIndex={1} minW={isDesktop ? '500px' : ''} w={'full'}>
               <Text px={'24px'} fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
                 Market price
               </Text>
