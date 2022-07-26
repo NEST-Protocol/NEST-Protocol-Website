@@ -1,6 +1,4 @@
 import {chakra, Heading, SimpleGrid, Stack} from "@chakra-ui/react";
-import Banner_URI from "../../assets/webp/NEST_pic_1.webp";
-import Home_icon from "../../assets/webp/Home_icon.webp";
 import huobi from "../../assets/svg/huobi.svg";
 import binance from "../../assets/svg/binance.svg";
 import kcc from "../../assets/svg/kcc.svg";
@@ -32,17 +30,17 @@ const Partners = () => {
         spacing={'16px'}
         minH={'440px'}
         w={"full"}
-        bgImage={Banner_URI}
+        bgImage={""}
         bgPosition={"bottom"}
       >
-        <Stack w={"full"} p={'12px'} position={"absolute"} zIndex={0}>
-          <chakra.img
-            src={Home_icon}
-            alt="NEST"
-            objectFit={["cover", 'contain']}
-            h={'400px'}
-          />
-        </Stack>
+        {/*<Stack w={"full"} p={'12px'} position={"absolute"} zIndex={0}>*/}
+        {/*  <chakra.img*/}
+        {/*    src={""}*/}
+        {/*    alt="NEST"*/}
+        {/*    objectFit={["cover", 'contain']}*/}
+        {/*    h={'400px'}*/}
+        {/*  />*/}
+        {/*</Stack>*/}
         <SimpleGrid columns={[3, 3, 4, 4]} zIndex={1} spacing={['20px', '40px']} pb={'27px'}>
           {[
             {

@@ -1,6 +1,4 @@
 import {chakra, Stack, Text} from "@chakra-ui/react";
-import Home from "../../assets/webp/Home.webp";
-import Home_icon from "../../assets/webp/Home_icon.webp";
 import * as React from "react";
 
 const Banner = () => {
@@ -11,19 +9,19 @@ const Banner = () => {
         h={'full'}
         justify={'center'}
         minH={['540px', '660px']}
-        bgImage={Home}
+        bgImage={""}
         bgSize={'cover'}
         bgPosition={"center"}
         spacing={'24px'}
       >
-        <Stack w={"full"} p={'12px'} position={"absolute"} zIndex={0}>
-          <chakra.img
-            src={Home_icon}
-            alt="NEST"
-            objectFit={["cover", 'contain']}
-            h={'400px'}
-          />
-        </Stack>
+        {/*<Stack w={"full"} p={'12px'} position={"absolute"} zIndex={0}>*/}
+        {/*  <chakra.img*/}
+        {/*    src={""}*/}
+        {/*    alt=""*/}
+        {/*    objectFit={["cover", 'contain']}*/}
+        {/*    h={'400px'}*/}
+        {/*  />*/}
+        {/*</Stack>*/}
         <Text
           whiteSpace={'break-spaces'}
           textAlign={'center'}

@@ -11,7 +11,7 @@ import NEST_URI from "../../assets/svg/nest_blue.svg";
 import FORT_URI from "../../assets/svg/fort.svg";
 import * as React from "react";
 import {SmallCloseIcon} from "@chakra-ui/icons";
-import Banner_URI from "../../assets/webp/Ecosystem_pic_1.webp";
+// import Banner_URI from "../../assets/webp/Ecosystem_pic_1.webp";
 
 const AlertFromFORT = () => {
   let [searchParams] = useSearchParams();
@@ -37,7 +37,12 @@ const AlertFromFORT = () => {
       size={isDesktop ? 'lg' : 'xs'}
     >
       <AlertDialogOverlay/>
-      <AlertDialogContent borderRadius={'20px'} bgImage={Banner_URI} bgPosition={"center"} bgSize={"cover"}>
+      <AlertDialogContent
+        borderRadius={'20px'}
+        // bgImage={Banner_URI}
+        bgPosition={"center"}
+        bgSize={"cover"}
+      >
         <AlertDialogCloseButton
           top={0}
           right={['-30px', '-48px']}
@@ -49,12 +54,13 @@ const AlertFromFORT = () => {
         <AlertDialogHeader pt={['24px', '40px']} pb={0} fontSize='lg' fontWeight='bold'>
           <HStack justify={"center"}>
             <chakra.img src={NEST_URI} h={'20px'}/>
-            <SmallCloseIcon />
+            <SmallCloseIcon/>
             <chakra.img src={FORT_URI} h={'34px'}/>
           </HStack>
         </AlertDialogHeader>
         <AlertDialogBody p={['24px', '40px']}>
-          <Stack fontSize={'14px'} color={'#003434'} fontWeight={'600'} spacing={'44px'} minH={'240px'} justify={"center"}>
+          <Stack fontSize={'14px'} color={'#003434'} fontWeight={'600'} spacing={'44px'} minH={'240px'}
+                 justify={"center"}>
             <Stack spacing={'24px'}>
               <Text>
                 The technical teams of the FORT protocol and NEST

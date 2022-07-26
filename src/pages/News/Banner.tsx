@@ -1,6 +1,4 @@
 import {Stack, Text} from "@chakra-ui/react";
-import Banner_URI from "../../assets/webp/Community_pic_1.webp";
-import Community_icon from "../../assets/webp/Community_icon_1.webp";
 import * as React from "react";
 
 const Banner = () => {
@@ -10,7 +8,7 @@ const Banner = () => {
       h={'full'}
       justify={'center'}
       minH={['540px', '660px']}
-      bgImage={Banner_URI}
+      bgImage={""}
       bgSize={'cover'}
       bgPosition={"center"}
       spacing={['22px', '44px']}
@@ -21,7 +19,7 @@ const Banner = () => {
         h={'600px'}
         w={'full'}
         bgSize={'contain'}
-        bgImage={Community_icon}
+        bgImage={""}
         bgRepeat={'no-repeat'}
         bgPosition={'center'}
         zIndex={0}

@@ -1,17 +1,5 @@
 import {chakra, Heading, Link, SimpleGrid, Stack, useMediaQuery, VStack} from "@chakra-ui/react";
 import * as React from "react";
-import Blogs_pic_1 from "../../assets/webp/Blogs_pic_1.webp";
-import blogs_icon_1 from "../../assets/webp/Blogs_icon_1.webp";
-import Blogs_pic_2 from "../../assets/webp/Blogs_pic_2.webp";
-import blogs_icon_2 from "../../assets/webp/Blogs_icon_2.webp";
-import Blogs_pic_3 from "../../assets/webp/Blogs_pic_3.webp";
-import blogs_icon_3 from "../../assets/webp/Blogs_icon_3.webp";
-import Blogs_pic_4 from "../../assets/webp/Blogs_pic_4.webp";
-import blogs_icon_4 from "../../assets/webp/Blogs_icon_4.webp";
-import Blogs_pic_5 from "../../assets/webp/Blogs_pic_5.webp";
-import blogs_icon_5 from "../../assets/webp/Blogs_icon_5.webp";
-import Blogs_pic_6 from "../../assets/webp/Blogs_pic_6.webp";
-import blogs_icon_6 from "../../assets/webp/Blogs_icon_6.webp";
 
 const LatestNews = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -36,43 +24,43 @@ const LatestNews = () => {
           {[
             {
               label: 'NEST Protocol: A New Paradigm of Game Theoretic Oracle',
-              bg: Blogs_pic_1,
-              logo: blogs_icon_1,
+              bg: "",
+              logo: "",
               desc: 'Blockchain innovation defined the major part of the last decade,with cryptocurrency disrupting.',
               link: 'https://nest-protocol-82041.medium.com/nest-protocol-a-new-paradigm-of-game-theoretic-oracle-187c1f853128'
             },
             {
               label: 'NEST’s RSS FEED INTEGRATED WITH CRYPTO.COM PRICE PAGE',
-              bg: Blogs_pic_2,
-              logo: blogs_icon_2,
+              bg: "",
+              logo: "",
               desc: 'Through Crypto.com’s NEST Price Page, you can now directly access NEST’s RSS news feed.',
               link: 'https://nest-protocol-82041.medium.com/nests-rss-feed-integrated-with-crypto-com-price-page-9323828d28d9'
             },
             {
               label: 'NEST Protocol partners with UTU.ONE to seek and create more opportunities in DAO governance',
-              bg: Blogs_pic_3,
-              logo: blogs_icon_3,
+              bg: "",
+              logo: "",
               desc: 'NEST Protocol is delighted to announce a strategic.',
               link: 'https://nest-protocol-82041.medium.com/nest-protocol-partners-with-utu-one-to-seek-and-create-more-opportunities-in-dao-governance-1ab02d072d7d'
             },
             {
               label: 'Comments on Vitalik’s Twitter',
-              bg: Blogs_pic_4,
-              logo: blogs_icon_4,
+              bg: "",
+              logo: "",
               desc: 'Introduction Vitalik, the founder of Ethereum, delivered something interesting on Twitter at the beginning of 2022.',
               link: 'https://nest-protocol-82041.medium.com/comments-on-vitaliks-twitter-227c9198b85c'
             },
             {
               label: 'James Talks | \nThree major genres in the blockchain jungle',
-              bg: Blogs_pic_5,
-              logo: blogs_icon_5,
+              bg: "",
+              logo: "",
               desc: 'The blockchain world is also like the corner of the country with genres of thought.',
               link: 'https://nest-protocol-82041.medium.com/james-talks-three-major-genres-in-the-blockchain-jungle-dcf075824204'
             },
             {
               label: 'NEST Protocol is Open as a Self-looping Oracle System',
-              bg: Blogs_pic_6,
-              logo: blogs_icon_6,
+              bg: "",
+              logo: "",
               desc: 'It is reasonable to use NEST Token or nToken as an incentive for quoting mainstream assets because',
               link: 'https://nest-protocol-82041.medium.com/nest-protocol-is-open-as-a-self-looping-oracle-system-16ed1fd1536'
             }

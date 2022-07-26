@@ -1,47 +1,13 @@
 import {
-  chakra,
-  Heading,
-  Link,
-  SimpleGrid,
   Stack,
   Text,
-  useMediaQuery,
-  VStack
 } from '@chakra-ui/react'
 import * as React from 'react'
 import Banner_URI from '../../assets/webp/NEST_pic_1.webp'
-import Blogs_pic_1 from '../../assets/webp/Blogs_pic_1.webp'
-import Blogs_pic_2 from '../../assets/webp/Blogs_pic_2.webp'
-import Blogs_pic_3 from '../../assets/webp/Blogs_pic_3.webp'
-import Blogs_pic_4 from '../../assets/webp/Blogs_pic_4.webp'
-import Blogs_pic_5 from '../../assets/webp/Blogs_pic_5.webp'
-import Blogs_pic_6 from '../../assets/webp/Blogs_pic_6.webp'
 import {Helmet} from 'react-helmet'
 import NEST_icon1 from '../../assets/webp/NEST_icon_1.webp'
-import blogs_icon_1 from '../../assets/webp/Blogs_icon_1.webp'
-import blogs_icon_2 from '../../assets/webp/Blogs_icon_2.webp'
-import blogs_icon_3 from '../../assets/webp/Blogs_icon_3.webp'
-import blogs_icon_4 from '../../assets/webp/Blogs_icon_4.webp'
-import blogs_icon_5 from '../../assets/webp/Blogs_icon_5.webp'
-import blogs_icon_6 from '../../assets/webp/Blogs_icon_6.webp'
-import Home_icon from '../../assets/webp/Home_icon.webp'
-
-import huobi from '../../assets/svg/huobi.svg'
-import binance from '../../assets/svg/binance.svg'
-import certik from '../../assets/svg/certik.svg'
-import CoFiX from '../../assets/svg/CoFiX.svg'
-import cointelegraph from '../../assets/svg/cointelegraph.svg'
-import cube from '../../assets/svg/cube.svg'
-import fortube from '../../assets/svg/fortube.svg'
-import kcc from '../../assets/svg/kcc.svg'
-import Parasset from '../../assets/svg/Parasset.svg'
-import peckshield from '../../assets/svg/peckshield.svg'
-import polygon from '../../assets/svg/polygon.svg'
-import polynetwork from '../../assets/svg/polynetwork.svg'
 
 const AboutNEST = () => {
-  const [isDesktop] = useMediaQuery('(min-width: 768px)')
-
   return (
     <>
       <Helmet>
@@ -95,8 +61,6 @@ const AboutNEST = () => {
           hedge, earn and even game with the NEST network to gain excess returns.
         </Text>
       </Stack>
-
-
     </>
   )
 }

@@ -1,9 +1,6 @@
-import {Button, chakra, Stack, Text, useMediaQuery} from '@chakra-ui/react'
+import {Button, chakra, Stack, Text} from '@chakra-ui/react'
 import * as React from 'react'
-import Project2_URI from '../../assets/webp/Ecosystem_pic_3.webp'
-import Phone_Icon_URI from '../../assets/webp/iPhone_pic.webp'
 import {Helmet} from 'react-helmet'
-import Ecosystem_icon3 from '../../assets/webp/Ecosystem_icon_3.webp'
 import Banner from "./Banner";
 
 const NESTFi = () => {
@@ -21,7 +18,7 @@ const NESTFi = () => {
           w={'full'}
           justify={'start'}
           spacing={['13px', '16px']}
-          bgImage={Project2_URI}
+          bgImage={""}
           bgSize={'cover'}
           bgPosition={"center"}
         >
@@ -30,13 +27,13 @@ const NESTFi = () => {
             h={['375px', '440px']}
             w={'full'}
             overflow={'hidden'}
-            bgImage={Ecosystem_icon3}
+            bgImage={""}
             bgRepeat={'no-repeat'}
             bgPosition={'bottom'}
             zIndex={0}
           />
           <Stack pt={'40px'}>
-            <chakra.img zIndex={1} h={['360px', '440px']} src={Phone_Icon_URI}/>
+            <chakra.img zIndex={1} h={['360px', '440px']} src={""}/>
           </Stack>
 
           <Text

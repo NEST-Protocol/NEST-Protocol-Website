@@ -1,6 +1,4 @@
 import {Stack, Text, useMediaQuery} from "@chakra-ui/react";
-import Banner_URI from "../../assets/webp/Ecosystem_pic_1.webp";
-import Ecosystem_icon1 from "../../assets/webp/Ecosystem_icon_1.png";
 import * as React from "react";
 
 const Banner = () => {
@@ -11,7 +9,7 @@ const Banner = () => {
       align={'center'}
       justify={'center'}
       h={'330px'}
-      bgImage={Banner_URI}
+      bgImage={""}
       bgSize={'cover'}
       bgPosition={"center"}
       spacing={['22px', '44px']}
@@ -21,7 +19,7 @@ const Banner = () => {
         w={'full'}
         h={'330px'}
         position={'absolute'}
-        bgImage={Ecosystem_icon1}
+        bgImage={""}
         bgSize={'contain'}
         bgRepeat={"no-repeat"}
         bgPosition={"bottom"}

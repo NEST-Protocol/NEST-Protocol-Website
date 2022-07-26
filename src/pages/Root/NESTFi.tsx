@@ -1,7 +1,4 @@
 import {Button, Stack, chakra, Text, Heading} from "@chakra-ui/react"
-import Project1_URI from '../../assets/webp/Ecosystem_pic_2.webp'
-import Market_Icon_URI from '../../assets/webp/Market_icon.webp'
-import Ecosystem_icon2 from '../../assets/webp/Ecosystem_icon_2.webp'
 import * as React from "react";
 
 const NESTFi = () => {
@@ -20,7 +17,7 @@ const NESTFi = () => {
         w={'full'}
         justify={'center'}
         spacing={['13px', '16px']}
-        bgImage={Project1_URI}
+        bgImage={""}
         bgSize={'cover'}
         bgPosition={"center"}
       >
@@ -31,12 +28,12 @@ const NESTFi = () => {
           overflow={'hidden'}
           align={'center'}
           bgSize={'contain'}
-          bgImage={Ecosystem_icon2}
+          bgImage={""}
           bgRepeat={'no-repeat'}
           bgPosition={'center'}
           zIndex={0}
         />
-        <chakra.img src={Market_Icon_URI} zIndex={1}/>
+        <chakra.img src={""} zIndex={1}/>
         <Text
           fontSize={['17px', '24px']}
           fontWeight={'semibold'}

@@ -11,7 +11,7 @@ import FORT_URI from "../../assets/svg/fort.svg";
 import * as React from "react";
 import {atom, useRecoilState} from "recoil";
 import {SmallCloseIcon} from "@chakra-ui/icons";
-import Banner_URI from '../../assets/webp/Ecosystem_pic_1.webp'
+// import Banner_URI from '../../assets/webp/Ecosystem_pic_1.webp'
 import {useSearchParams} from "react-router-dom";
 
 const showAlertNESTandFORTAtom = atom({
@@ -43,7 +43,9 @@ const AlertNESTandFORT = () => {
       size={isDesktop ? 'lg' : 'xs'}
     >
       <AlertDialogOverlay/>
-      <AlertDialogContent borderRadius={'20px'} bgImage={Banner_URI} bgPosition={"center"} bgSize={"cover"}>
+      <AlertDialogContent borderRadius={'20px'}
+                          // bgImage={Banner_URI}
+                          bgPosition={"center"} bgSize={"cover"}>
         <AlertDialogCloseButton
           top={0}
           right={['-30px', '-48px']}

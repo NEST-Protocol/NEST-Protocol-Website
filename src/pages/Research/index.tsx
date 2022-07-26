@@ -1,18 +1,6 @@
 import {Helmet} from "react-helmet";
 import * as React from "react";
-import {chakra, Heading, HStack, Stack, Text, useMediaQuery} from "@chakra-ui/react";
-import Research_icon_1 from "../../assets/webp/Research_icon_1.webp";
-import Top_pic_1 from "../../assets/webp/Top_pic_1.webp";
-import text_pic_1 from "../../assets/webp/text_pic_1.webp";
-import text_pic_2 from "../../assets/webp/text_pic_2.webp";
-import text_icon_1 from "../../assets/webp/text_icon_1.webp";
-import text_icon_2 from "../../assets/webp/text_icon_2.webp";
-import FundingOpportunityIcon1 from "../../assets/webp/Funding Opportunity_icon_1.webp"
-import FundingOpportunityIcon2 from "../../assets/webp/Funding Opportunity_icon_2.webp"
-import FundingOpportunityPic from "../../assets/webp/Funding Opportunity_pic.webp"
-import VacantPostitionsIcon1 from "../../assets/webp/Vacant Positions_icon_1.webp"
-import VacantPostitionsIcon2 from "../../assets/webp/Vacant Positions_icon_2.webp"
-import VacantPostitionsPic from "../../assets/webp/Vacant Positions_pic.webp"
+import {chakra, Heading, HStack, Stack, Text} from "@chakra-ui/react";
 import Banner from "./Banner";
 
 const Research = () => {
@@ -20,18 +8,18 @@ const Research = () => {
   const pages = [
     {
       name: 'Funding Opportunity',
-      icon: FundingOpportunityIcon2,
-      bg: FundingOpportunityPic,
-      bgIcon: FundingOpportunityIcon1,
+      icon: "",
+      bg: "",
+      bgIcon: "",
       desc: `NRA welcomes research in fields such as blockchain, finance, \neconomics, game theory, machine learning, computer science, and software engineering.\n Those interested, please send your research proposal (maximum 10 pages) to`,
       email: 'nra@nestprotocol.org',
       bgSize: 'cover',
     },
     {
       name: 'Vacant Positions',
-      icon: VacantPostitionsIcon2,
-      bg: VacantPostitionsPic,
-      bgIcon: VacantPostitionsIcon1,
+      icon: "",
+      bg: "",
+      bgIcon: "",
       desc: `NRA welcomes applicants to researchers of all levels. \nNRA evaluates the work of its researchers in a result-oriented manner with flexibility in terms \nof working location and hours. The salary is decided case by case. \nThose interested, please send your academic CV to`,
       email: 'nra@nestprotocol.org',
       bgSize: 'cover',
@@ -42,14 +30,14 @@ const Research = () => {
     {
       title: 'Promote Industry \nCommunication',
       desc: 'NRA’s research activities include but are not \nlimited to writing research papers published in \npeer-reviewed international academic journals, \nwriting research reports for the public and \ninvestors, and organizing conferences, \nworkshops, webinars, and AMA.',
-      bg: text_pic_1,
-      icon: text_icon_1,
+      bg: "",
+      icon: "",
     },
     {
       title: 'Facilitate Academic \nExploration',
       desc: 'NRA provides funding and job opportunities for \nresearchers in different stages. NRA and NEST \nfeel honored if the support helps scholars make \nbreakthrough progress in academics and achieve \nsignificant contributions to human society from \nvarious perspectives.',
-      bg: text_pic_2,
-      icon: text_icon_2,
+      bg: "",
+      icon: "",
     },
   ]
 

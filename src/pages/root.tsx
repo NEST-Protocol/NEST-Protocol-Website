@@ -2,28 +2,11 @@ import {
   Heading,
   Stack,
   chakra,
-  Text,
-  Button,
   useMediaQuery,
 } from '@chakra-ui/react'
 import * as React from 'react'
 import {Helmet} from 'react-helmet'
-
-import Home from '../assets/webp/Home.webp'
-import Developer_URI from '../assets/webp/Home_pic_2.webp'
-import Community_URI from '../assets/webp/Home_pic_4.webp'
-import Ecosystem_URI from '../assets/webp/Home_pic_3.webp'
-import Developer_Icon_URI from '../assets/webp/Home_Developers_icon.webp'
-import Community_Icon_URI from '../assets/webp/Home_Community_icon.webp'
-import Ecosystem_Icon_URI from '../assets/webp/Home_Ecosystem_icon.webp'
 import {useNavigate} from 'react-router-dom'
-import Home_icon from '../assets/webp/Home_icon.webp'
-import Home_icon_3 from '../assets/webp/Home_icon_3.webp'
-import Home_icon_2 from '../assets/webp/Home_icon_2.webp'
-import Home_icon_4 from '../assets/webp/Home_icon_4.webp'
-import phone_home_02 from '../assets/webp/phone_Home_02.webp'
-import phone_home_03 from '../assets/webp/phone_Home_03.webp'
-import phone_home_04 from '../assets/webp/phone_Home_04.webp'
 
 const Root = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -32,10 +15,10 @@ const Root = () => {
     {
       name: 'Ecosystem',
       pathname: 'ecosystem',
-      icon: Ecosystem_Icon_URI,
-      bg: Ecosystem_URI,
-      bgIcon: Home_icon_3,
-      phoneBg: phone_home_03,
+      icon: "",
+      bg: "",
+      bgIcon: "",
+      phoneBg: "",
       title: 'Explore the NEST Ecosystem',
       desc: `A complete gaming space with applications of DeFi, GameFi and NFT built on the NEST. Swap, hedge, earn and even game with the NEST network to gain excess returns.`,
       bgSize: ['160%', '80%'],
@@ -43,10 +26,10 @@ const Root = () => {
     {
       name: 'Developers',
       pathname: 'docs',
-      icon: Developer_Icon_URI,
-      bg: Developer_URI,
-      bgIcon: Home_icon_2,
-      phoneBg: phone_home_02,
+      icon: "",
+      bg: "",
+      bgIcon: "",
+      phoneBg: "",
       title: 'Build smart contract with NEST',
       desc: `Technical guidelines, source code, and detailed training materials on how to build NEST-based\napplications from scratch here.`,
       bgSize: ['160%', '100%'],
@@ -54,10 +37,10 @@ const Root = () => {
     {
       name: 'Community',
       pathname: 'community',
-      icon: Community_Icon_URI,
-      bg: Community_URI,
-      bgIcon: Home_icon_4,
-      phoneBg: phone_home_04,
+      icon: "",
+      bg: "",
+      bgIcon: "",
+      phoneBg: "",
       title: 'Community',
       desc: `The NEST community is made up of developers, creators, enthusiasts, explore, contribute to the community and\nget reward.`,
       bgSize: ['140%', '100%'],

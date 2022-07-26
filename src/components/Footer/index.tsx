@@ -1,7 +1,4 @@
 import { Stack, Text, HStack, useMediaQuery, chakra, Wrap, WrapItem } from '@chakra-ui/react'
-import BG_URL from '../../assets/webp/Footer_bg.webp'
-import Footer_icon from '../../assets/webp/Footer_icon.webp'
-import phone_Footer from '../../assets/webp/phone_Home_05.webp'
 import * as React from 'react'
 import { useNavigate } from 'react-router-dom'
 
@@ -15,7 +12,7 @@ const Footer = () => {
         px={['24px', '48px']}
         w={'full'}
         align={'center'}
-        bgImage={BG_URL}
+        // bgImage={BG_URL}
         bgSize={'cover'}
         bgPosition={"center"}
         zIndex={'10'}
@@ -25,7 +22,7 @@ const Footer = () => {
           h={'360px'}
           w={'full'}
           bgSize={'contain'}
-          bgImage={Footer_icon}
+          // bgImage={Footer_icon}
           bgRepeat={'no-repeat'}
           bgPosition={'center'}
           zIndex={0}
@@ -176,7 +173,7 @@ const Footer = () => {
       <Stack
         py={'56px'}
         spacing={'32px'}
-        bgImage={phone_Footer}
+        // bgImage={phone_Footer}
         bgSize={'cover'}
         bgPosition={"center"}
       >
@@ -185,7 +182,7 @@ const Footer = () => {
           h={'360px'}
           w={'full'}
           bgSize={'cover'}
-          bgImage={Footer_icon}
+          // bgImage={Footer_icon}
           bgRepeat={'no-repeat'}
           bgPosition={'center'}
           zIndex={0}
