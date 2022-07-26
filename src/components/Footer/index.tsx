@@ -116,8 +116,8 @@ const Footer = () => {
               </HStack>
             </Stack>
           </WrapItem>
-          <WrapItem w={"full"}>
-            <Stack spacing={'32px'} zIndex={1} w={isDesktop ? '500px' : 'full'}>
+          <WrapItem w={'400px'}>
+            <Stack spacing={'32px'} zIndex={1} w={"full"}>
               <Text px={'16px'} fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
                 Market price
               </Text>
