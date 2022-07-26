@@ -1,6 +1,8 @@
 import {chakra, Link, Stack, Text} from "@chakra-ui/react";
 import * as React from "react";
 import BigTitle from "../../components/BigTitle";
+import Home_bg_5 from '../../assets/image/Home/Home_bg_5.jpg'
+import Home_bg_icon_5 from '../../assets/image/Home/Home_bg_icon_5.png'
 
 const Research = () => {
   return (
@@ -12,7 +14,7 @@ const Research = () => {
         w={'full'}
         justify={'center'}
         spacing={['13px', '16px']}
-        bgImage={""}
+        bgImage={Home_bg_5}
         bgSize={'cover'}
         bgPosition={"center"}
       >
@@ -22,8 +24,8 @@ const Research = () => {
           w={'full'}
           overflow={'hidden'}
           align={'center'}
-          bgSize={'contain'}
-          bgImage={""}
+          bgSize={'cover'}
+          bgImage={Home_bg_icon_5}
           bgRepeat={'no-repeat'}
           bgPosition={'center'}
           zIndex={0}

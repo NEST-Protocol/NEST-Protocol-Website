@@ -1,6 +1,9 @@
-import {Button, Stack, chakra, Text, Heading} from "@chakra-ui/react"
+import {Button, Stack, chakra, Text} from "@chakra-ui/react"
 import * as React from "react";
 import BigTitle from "../../components/BigTitle";
+import Home_bg_2 from '../../assets/image/Home/Home_bg_2.jpg'
+import Home_bg_icon_2 from '../../assets/image/Home/Home_bg_icon_2.png'
+import icon_1 from '../../assets/image/Home/icon_1.png'
 
 const NESTFi = () => {
   return (
@@ -12,23 +15,23 @@ const NESTFi = () => {
         w={'full'}
         justify={'center'}
         spacing={['13px', '16px']}
-        bgImage={""}
+        bgImage={Home_bg_2}
         bgSize={'cover'}
         bgPosition={"center"}
       >
         <Stack
           position={'absolute'}
-          h={'400px'}
+          h={'440px'}
           w={'full'}
           overflow={'hidden'}
           align={'center'}
-          bgSize={'contain'}
-          bgImage={""}
+          bgSize={'cover'}
+          bgImage={Home_bg_icon_2}
           bgRepeat={'no-repeat'}
           bgPosition={'center'}
           zIndex={0}
         />
-        <chakra.img src={""} zIndex={1}/>
+        <chakra.img src={icon_1} zIndex={1} h={'110px'}/>
         <Text
           fontSize={['17px', '24px']}
           fontWeight={'semibold'}

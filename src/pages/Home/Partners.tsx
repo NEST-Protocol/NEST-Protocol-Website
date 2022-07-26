@@ -13,30 +13,31 @@ import Parasset from "../../assets/svg/Parasset.svg";
 import certik from "../../assets/svg/certik.svg";
 import * as React from "react";
 import BigTitle from "../../components/BigTitle";
+import Home_bg_6 from '../../assets/image/Home/Home_bg_6.jpg'
+import Home_bg_icon_6 from '../../assets/image/Home/Home_bg_icon_6.png'
 
 const Partners = () => {
   return (
     <Stack spacing={'48px'} align={'center'}>
       <BigTitle title={'Integrations & Partners'}/>
       <Stack
-        px={['24px', '48px']}
         align={'center'}
         justify={'center'}
         spacing={'16px'}
-        minH={'440px'}
+        h={'440px'}
         w={"full"}
-        bgImage={""}
+        bgImage={Home_bg_6}
         bgPosition={"bottom"}
       >
-        {/*<Stack w={"full"} p={'12px'} position={"absolute"} zIndex={0}>*/}
-        {/*  <chakra.img*/}
-        {/*    src={""}*/}
-        {/*    alt="NEST"*/}
-        {/*    objectFit={["cover", 'contain']}*/}
-        {/*    h={'400px'}*/}
-        {/*  />*/}
-        {/*</Stack>*/}
-        <SimpleGrid columns={[3, 3, 4, 4]} zIndex={1} spacing={['20px', '40px']} pb={'27px'}>
+        <Stack w={"full"} position={"absolute"} zIndex={0}>
+          <chakra.img
+            src={Home_bg_icon_6}
+            alt="NEST"
+            objectFit={["cover", 'contain']}
+            h={'400px'}
+          />
+        </Stack>
+        <SimpleGrid columns={[3, 3, 4, 4]} zIndex={1} spacing={['20px', '40px']}>
           {[
             {
               label: 'Huobi',

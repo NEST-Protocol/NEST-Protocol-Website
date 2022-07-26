@@ -1,7 +1,10 @@
-import {Button, chakra, Stack, Text} from '@chakra-ui/react'
+import {Button, chakra, HStack, Stack, Text} from '@chakra-ui/react'
 import * as React from 'react'
 import {Helmet} from 'react-helmet'
 import Banner from "./Banner";
+import iPhone from "../../assets/image/NEST_Fi/iPhone.png";
+import NESTFI_bg_2 from '../../assets/image/NEST_Fi/NEST_Fi_bg_2.jpg'
+import NESTFI_bg_icon_2 from '../../assets/image/NEST_Fi/NEST_Fi_bg_icon_2.png'
 
 const NESTFi = () => {
 
@@ -11,41 +14,41 @@ const NESTFi = () => {
         <title>NEST Financial Market</title>
       </Helmet>
       <Banner/>
-      <Stack spacing={'48px'} align={'center'} h={['600px', '720px']} justify={'start'}>
+      <Stack spacing={'48px'} align={'center'} justify={'start'}>
         <Stack
           align={'center'}
           h={['375px', '440px']}
           w={'full'}
           justify={'start'}
           spacing={['13px', '16px']}
-          bgImage={""}
+          bgImage={NESTFI_bg_2}
           bgSize={'cover'}
           bgPosition={"center"}
+          pt={'40px'}
         >
           <Stack
             position={'absolute'}
             h={['375px', '440px']}
             w={'full'}
             overflow={'hidden'}
-            bgImage={""}
+            bgImage={iPhone}
             bgRepeat={'no-repeat'}
             bgPosition={'bottom'}
             zIndex={0}
           />
-          <Stack pt={'40px'}>
-            <chakra.img zIndex={1} h={['360px', '440px']} src={""}/>
-          </Stack>
-          <Button
-            minW={'160px'}
-            minH={['44px', '34px']}
-            onClick={() => {
-              window.open('https://oracle.nestprotocol.org/', '_blank')
-            }}
-          >
-            Launch App
-          </Button>
         </Stack>
       </Stack>
+      <HStack justify={"center"}>
+        <Button
+          minW={'160px'}
+          minH={['44px', '34px']}
+          onClick={() => {
+            window.open('https://oracle.nestprotocol.org/', '_blank')
+          }}
+        >
+          Launch App
+        </Button>
+      </HStack>
     </>
   )
 }

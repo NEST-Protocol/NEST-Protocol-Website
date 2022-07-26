@@ -1,5 +1,7 @@
 import {Stack, Text, useMediaQuery} from "@chakra-ui/react";
 import * as React from "react";
+import NESTFI_bg_1 from '../../assets/image/NEST_Fi/NEST_Fi_bg_1.jpg'
+import NESTFI_bg_icon_1 from '../../assets/image/NEST_Fi/NEST_Fi_bg_icon_1.png'
 
 const Banner = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -8,23 +10,23 @@ const Banner = () => {
     <Stack
       align={'center'}
       justify={'center'}
-      h={'330px'}
-      bgImage={""}
+      h={'410px'}
+      w={"full"}
+      bgImage={NESTFI_bg_1}
       bgSize={'cover'}
       bgPosition={"center"}
       spacing={['22px', '44px']}
       px={'24px'}
     >
       <Stack
-        w={'full'}
-        h={'330px'}
+        w={'400px'}
+        h={'410px'}
         position={'absolute'}
-        bgImage={""}
-        bgSize={'contain'}
+        bgImage={NESTFI_bg_icon_1}
+        bgSize={'cover'}
         bgRepeat={"no-repeat"}
-        bgPosition={"bottom"}
+        bgPosition={"top"}
       >
-
       </Stack>
       <Text textAlign={'center'} fontSize={['24px', '48px']} fontWeight={'bold'} zIndex={1} color={'#003434'}>
         NEST Financial Market

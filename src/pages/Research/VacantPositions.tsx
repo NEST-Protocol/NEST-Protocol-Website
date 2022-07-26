@@ -1,6 +1,7 @@
 import {chakra, Link, Stack, Text} from "@chakra-ui/react";
 import BigTitle from "../../components/BigTitle";
 import * as React from "react";
+import Research_bg_5 from '../../assets/image/Research/Research_bg_5.jpg'
 
 const VacantPositions = () => {
   return (
@@ -12,7 +13,7 @@ const VacantPositions = () => {
         w={'full'}
         justify={'center'}
         spacing={['13px', '16px']}
-        bgImage={""}
+        bgImage={Research_bg_5}
         bgSize={'cover'}
         bgPosition={"center"}
       >

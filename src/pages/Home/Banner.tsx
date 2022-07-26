@@ -1,27 +1,29 @@
 import {chakra, Stack, Text} from "@chakra-ui/react";
 import * as React from "react";
+import Home_bg_1 from "../../assets/image/Home/Home_bg_1.jpg"
+import Home_bg_icon_1 from "../../assets/image/Home/Home_bg_icon_1.png"
 
 const Banner = () => {
   return (
     <Stack spacing={'44px'}>
       <Stack
         align={'center'}
-        h={'full'}
         justify={'center'}
-        minH={['540px', '660px']}
-        bgImage={""}
+        h={['540px', '615px']}
+        bgImage={Home_bg_1}
         bgSize={'cover'}
         bgPosition={"center"}
         spacing={'24px'}
       >
-        {/*<Stack w={"full"} p={'12px'} position={"absolute"} zIndex={0}>*/}
-        {/*  <chakra.img*/}
-        {/*    src={""}*/}
-        {/*    alt=""*/}
-        {/*    objectFit={["cover", 'contain']}*/}
-        {/*    h={'400px'}*/}
-        {/*  />*/}
-        {/*</Stack>*/}
+        <Stack w={"full"} position={"absolute"} zIndex={0}>
+          <chakra.img
+            src={Home_bg_icon_1}
+            alt=""
+            objectFit={"cover"}
+            h={['540px', '615px']}
+            pb={'40px'}
+          />
+        </Stack>
         <Text
           whiteSpace={'break-spaces'}
           textAlign={'center'}

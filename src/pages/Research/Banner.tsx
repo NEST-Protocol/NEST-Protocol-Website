@@ -1,5 +1,6 @@
 import {Stack, Text} from "@chakra-ui/react";
 import * as React from "react";
+import Research_bg_1 from '../../assets/image/Research/Research_bg_1.jpg'
 
 const Banner = () => {
   return (
@@ -8,7 +9,7 @@ const Banner = () => {
       h={'full'}
       justify={'center'}
       minH={['540px', '660px']}
-      bgImage={""}
+      bgImage={Research_bg_1}
       bgSize={'cover'}
       bgPosition={"center"}
       spacing={['22px', '44px']}
