@@ -34,7 +34,7 @@ const FundingOpportunity = () => {
           Those interested, please send your research proposal (maximum 10 pages) to
           <br/>
           <Link color={'#00A0E9'} fontWeight={'semibold'} fontSize={'15px'} zIndex={1}
-                href={''} isExternal>
+                href={'mailto:nra@nestprotocol.org'} isExternal>
             nra@nestprotocol.org
           </Link>
         </Text>
