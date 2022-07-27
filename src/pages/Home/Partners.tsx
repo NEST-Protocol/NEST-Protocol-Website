@@ -25,13 +25,12 @@ const Partners = () => {
         align={'center'}
         justify={'center'}
         spacing={'16px'}
-        // h={'440px'}
+        h={'440px'}
         w={"full"}
         bgImage={Home_bg_6}
         bgPosition={"bottom"}
         bgSize={'cover'}
         px={['30px']}
-        py={['130px']}
       >
         <chakra.img
           position={"absolute"}

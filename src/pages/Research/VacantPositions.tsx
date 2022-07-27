@@ -47,6 +47,7 @@ const VacantPositions = () => {
           { isDesktop && ( <br/>) }
           Those interested, please send your academic CV to
           { isDesktop && ( <br/>) }
+          <br/>
           <Link color={'#00A0E9'} fontWeight={'semibold'} fontSize={'15px'} zIndex={1}
                 href={'mailto:nra@nestprotocol.org'} isExternal>
             nra@nestprotocol.org

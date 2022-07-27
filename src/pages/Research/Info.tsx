@@ -61,7 +61,6 @@ const Info = () => {
   } else {
     return (
       <Stack spacing={'48px'} align={'center'}>
-        <BigTitle title={'Developers'}/>
         <Stack w={"full"} spacing={'44px'} maxW={'1440px'}>
           <Center color={'#003232'} fontWeight={"semibold"} w={'full'} h={'440px'} bgImage={Research_bg_2}
                   bgSize={"cover"}>
@@ -71,8 +70,8 @@ const Info = () => {
               color={'#003232'}
               whiteSpace={'break-spaces'}
             >
-              <Text fontSize={'25px'}>Promote Industry <br/>Communication</Text>
-              <Text fontSize={'15px'}>NRA’s research activities include but are not
+              <Text fontSize={'25px'} textAlign={"center"}>Promote Industry <br/>Communication</Text>
+              <Text fontSize={'15px'} textAlign={"center"}>NRA’s research activities include but are not
                 limited to writing research papers published in
                 peer-reviewed international academic journals,
                 writing research reports for the public and
@@ -89,10 +88,10 @@ const Info = () => {
               color={'#003232'}
               whiteSpace={'break-spaces'}
             >
-              <Text fontSize={'25px'}>Facilitate Academic
+              <Text fontSize={'25px'} textAlign={"center"}>Facilitate Academic
                 <br/>
                 Exploration</Text>
-              <Text fontSize={'15px'}>NRA provides funding and job opportunities for
+              <Text fontSize={'15px'} textAlign={"center"}>NRA provides funding and job opportunities for
                 researchers in different stages. NRA and NEST
                 feel honored if the support helps scholars make
                 breakthrough progress in academics and achieve

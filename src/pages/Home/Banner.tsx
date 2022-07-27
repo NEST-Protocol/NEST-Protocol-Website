@@ -68,7 +68,10 @@ const Banner = () => {
               to gain excess returns.
             </Text>
             <HStack justify={"center"} pt={'50px'}>
-              <Button minW={'200px'}>
+              <Button
+                minW={'160px'}
+                minH={['44px', '34px']}
+              >
                 App
               </Button>
             </HStack>

@@ -1,9 +1,11 @@
-import {Stack, Text, chakra} from "@chakra-ui/react";
+import {Stack, Text, chakra, useMediaQuery} from "@chakra-ui/react";
 import * as React from "react";
 import Research_bg_1 from '../../assets/image/Research/Research_bg_1.jpg'
 import Research_bg_icon_1 from '../../assets/image/Research/Research_bg_icon_1.png'
 
 const Banner = () => {
+  const [isDesktop] = useMediaQuery('(min-width: 768px)')
+
   return (
     <Stack
       align={'center'}
@@ -32,9 +34,11 @@ const Banner = () => {
           fontWeight={'bold'}
           zIndex={1}
           color={'#003434'}
-          maxW={['200px', '720px']}
+          maxW={['full', '720px']}
         >
-          NEST Research Academy (NRA)
+          NEST Research
+          { !isDesktop ? (<br/>) : ' ' }
+          Academy (NRA)
         </Text>
         <Text
           fontSize={['12px', '17px']}
