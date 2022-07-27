@@ -52,7 +52,7 @@ const Developers = () => {
       <Stack spacing={'48px'} align={'center'}>
         <BigTitle title={'Developers'}/>
         <Stack w={"full"} spacing={'44px'} maxW={'1440px'}>
-          <Center color={'#003232'} fontWeight={"semibold"} w={'full'} h={'440px'} bgImage={Home_bg_3} bgSize={"cover"}>
+          <Center color={'#003232'} fontWeight={"semibold"} w={'full'} h={'440px'} bgImage={Home_bg_3} bgSize={"cover"} bgPosition={"center"}>
             <Stack maxW={'360px'} p={'12px'} align={"center"}>
               <Text fontSize={25}>
                 NEST PVM
@@ -68,7 +68,7 @@ const Developers = () => {
               </Link>
             </Stack>
           </Center>
-          <Center color={'#003232'} fontWeight={"semibold"} w={'full'} h={'440px'} bgImage={Home_bg_4}  bgSize={"cover"}>
+          <Center color={'#003232'} fontWeight={"semibold"} w={'full'} h={'440px'} bgImage={Home_bg_4}  bgSize={"cover"} bgPosition={"center"}>
             <Stack maxW={'360px'} p={'12px'} align={"center"}>
               <Text fontSize={25}>
                 NEST Oracle
