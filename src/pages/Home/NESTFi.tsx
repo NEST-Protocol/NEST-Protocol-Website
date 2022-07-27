@@ -29,7 +29,7 @@ const NESTFi = () => {
           objectFit={'cover'}
           overflow={"hidden"}
         />
-        <chakra.img src={icon_1} zIndex={1} h={'110px'}/>
+        <chakra.img src={icon_1} zIndex={1} h={['55px', '110px']}/>
         <Text
           fontSize={['17px', '24px']}
           fontWeight={'semibold'}
