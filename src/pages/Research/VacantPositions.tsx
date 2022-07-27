@@ -3,6 +3,7 @@ import BigTitle from "../../components/BigTitle";
 import * as React from "react";
 import Research_bg_5 from '../../assets/image/Research/Research_bg_5.jpg'
 import icon2 from '../../assets/image/Research/icon_2.png'
+import Research_bg_icon_3 from '../../assets/image/Research/Research_bg_icon_3.png'
 
 const VacantPositions = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -21,6 +22,14 @@ const VacantPositions = () => {
         bgPosition={"center"}
         px={'24px'}
       >
+        <chakra.img
+          position={"absolute"}
+          src={Research_bg_icon_3}
+          alt={'NEST'}
+          minH={'440px'}
+          objectFit={'cover'}
+          overflow={"hidden"}
+        />
         <chakra.img src={icon2} zIndex={1}/>
         <Text
           zIndex={1}

@@ -15,6 +15,7 @@ import * as React from "react";
 import BigTitle from "../../components/BigTitle";
 import Home_bg_6 from '../../assets/image/Home/Home_bg_6.jpg'
 import Coinbase from "../../assets/svg/Coinbase.svg"
+import Home_bg_icon_4 from '../../assets/image/Home/Home_bg_icon_4.png'
 
 const Partners = () => {
   return (
@@ -32,6 +33,14 @@ const Partners = () => {
         px={['30px']}
         py={['130px']}
       >
+        <chakra.img
+          position={"absolute"}
+          src={Home_bg_icon_4}
+          alt={'NEST'}
+          minH={'440px'}
+          objectFit={'cover'}
+          overflow={"hidden"}
+        />
         <SimpleGrid columns={[3, 3, 4, 4]} zIndex={1} spacing={['20px', '40px']}>
           {[
             {

@@ -4,6 +4,8 @@ import BigTitle from "../../components/BigTitle";
 import Home_bg_5 from '../../assets/image/Home/Home_bg_5.jpg'
 import Icon2 from '../../assets/image/Home/icon_2.png'
 import {ChevronRightIcon} from "@chakra-ui/icons";
+import Home_bg_icon_3 from '../../assets/image/Home/Home_bg_icon_3.png'
+
 
 const Research = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -21,6 +23,14 @@ const Research = () => {
         bgSize={'cover'}
         bgPosition={"center"}
       >
+        <chakra.img
+          position={"absolute"}
+          src={Home_bg_icon_3}
+          alt={'NEST'}
+          minH={'440px'}
+          objectFit={'cover'}
+          overflow={"hidden"}
+        />
         <chakra.img src={Icon2} zIndex={1} h={['55px', '110px']}/>
         <Text
           fontSize={['17px', '24px']}

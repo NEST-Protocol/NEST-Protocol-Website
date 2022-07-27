@@ -6,6 +6,7 @@ import Twitter_URL from "../../assets/image/Footer/twitter_icon.svg"
 import Telegram_URL from "../../assets/image/Footer/telegram_icon.svg"
 import Medium_URL from "../../assets/image/Footer/medium_icon.svg"
 import {useNavigate} from "react-router-dom";
+import Footer_bg_icon from '../../assets/image/Footer/Footer_bg_icon.png'
 
 const Footer = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -22,7 +23,16 @@ const Footer = () => {
       bgPosition={"right"}
       zIndex={'10'}
     >
-      <Stack maxW={'1440px'} justify={'space-around'} w={'full'}>
+      <chakra.img
+        zIndex={0}
+        position={"absolute"}
+        src={Footer_bg_icon}
+        alt={'NEST'}
+        minH={'380px'}
+        objectFit={'cover'}
+        overflow={"hidden"}
+      />
+      <Stack maxW={'1440px'} justify={'space-around'} w={'full'}  zIndex={1}>
         <Wrap spacing={['22px', '44px']} fontSize={['12px', '15px']} w={"full"}>
           <WrapItem>
             <Stack px={isDesktop ? '0' : '16px'} spacing={['22px', '44px']} minW={'300px'}>

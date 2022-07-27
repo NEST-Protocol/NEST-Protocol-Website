@@ -3,6 +3,7 @@ import BigTitle from "../../components/BigTitle";
 import * as React from "react";
 import Research_bg_4 from '../../assets/image/Research/Research_bg_4.jpg'
 import icon1 from '../../assets/image/Research/icon_1.png'
+import Research_bg_icon_2 from '../../assets/image/Research/Research_bg_icon_2.png'
 
 const FundingOpportunity = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -21,6 +22,14 @@ const FundingOpportunity = () => {
         bgPosition={"center"}
         px={'24px'}
       >
+        <chakra.img
+          position={"absolute"}
+          src={Research_bg_icon_2}
+          alt={'NEST'}
+          minH={'440px'}
+          objectFit={'cover'}
+          overflow={"hidden"}
+        />
         <chakra.img src={icon1} zIndex={1}/>
         <Text
           zIndex={1}

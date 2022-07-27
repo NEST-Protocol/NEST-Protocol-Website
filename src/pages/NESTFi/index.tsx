@@ -20,12 +20,19 @@ const NESTFi = () => {
           h={['300px', '440px']}
           w={'full'}
           justify={'start'}
-          spacing={['13px', '16px']}
+          spacing={['30px', '40px']}
           bgImage={NESTFI_bg_2}
           bgSize={'cover'}
           bgPosition={"center"}
-          pt={'40px'}
         >
+          <chakra.img
+            position={"absolute"}
+            src={NESTFI_bg_icon_2}
+            alt={'NEST'}
+            h={['300px', '440px']}
+            objectFit={'cover'}
+            overflow={"hidden"}
+          />
           <Stack
             position={'absolute'}
             h={['375px', '440px']}

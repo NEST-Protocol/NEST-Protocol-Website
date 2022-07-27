@@ -1,6 +1,7 @@
-import {Button, HStack, Stack, Text, useMediaQuery} from "@chakra-ui/react";
+import {Button, HStack, Stack, Text, useMediaQuery, chakra} from "@chakra-ui/react";
 import * as React from "react";
 import Home_bg_1 from "../../assets/image/Home/Home_bg_1.jpg"
+import Home_bg_icon_1 from "../../assets/image/Home/Home_bg_icon_1.png"
 
 const Banner = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -16,6 +17,14 @@ const Banner = () => {
         bgPosition={"center"}
         spacing={'24px'}
       >
+        <chakra.img
+          position={"absolute"}
+          src={Home_bg_icon_1}
+          alt={'NEST'}
+          h={['540px', '615px']}
+          objectFit={'cover'}
+          overflow={"hidden"}
+        />
         <Text
           whiteSpace={'break-spaces'}
           textAlign={'center'}
