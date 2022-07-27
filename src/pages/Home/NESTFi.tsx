@@ -1,4 +1,4 @@
-import {Button, Stack, chakra, Text} from "@chakra-ui/react"
+import {Button, Stack, chakra, Text, useMediaQuery} from "@chakra-ui/react"
 import * as React from "react";
 import BigTitle from "../../components/BigTitle";
 import Home_bg_2 from '../../assets/image/Home/Home_bg_2.jpg'
@@ -6,6 +6,8 @@ import icon_1 from '../../assets/image/Home/icon_1.png'
 import Home_bg_icon_2 from '../../assets/image/Home/Home_bg_icon_2.png'
 
 const NESTFi = () => {
+  const [isDesktop] = useMediaQuery('(min-width: 768px)')
+
   return (
     <Stack spacing={'48px'} align={'center'}>
       <BigTitle title={'NEST Fi'}/>
@@ -44,7 +46,9 @@ const NESTFi = () => {
           whiteSpace={'break-spaces'}
           textAlign={'center'}
         >
-          Get NEST token here and buy futures, options or play DeFi games to win NEST.
+          Get NEST token here and buy futures,
+          { isDesktop ? ' ' : <br/> }
+          options or play DeFi games to win NEST.
         </Text>
         <Stack pt={'16px'}>
           <Button
