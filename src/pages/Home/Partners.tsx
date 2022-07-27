@@ -14,6 +14,7 @@ import certik from "../../assets/svg/certik.svg";
 import * as React from "react";
 import BigTitle from "../../components/BigTitle";
 import Home_bg_6 from '../../assets/image/Home/Home_bg_6.jpg'
+import Coinbase from "../../assets/svg/Coinbase.svg"
 
 const Partners = () => {
   return (
@@ -23,12 +24,13 @@ const Partners = () => {
         align={'center'}
         justify={'center'}
         spacing={'16px'}
-        h={'440px'}
+        // h={'440px'}
         w={"full"}
         bgImage={Home_bg_6}
         bgPosition={"bottom"}
         bgSize={'cover'}
         px={['30px']}
+        py={['130px']}
       >
         <SimpleGrid columns={[3, 3, 4, 4]} zIndex={1} spacing={['20px', '40px']}>
           {[
@@ -41,6 +43,11 @@ const Partners = () => {
               label: 'Binance',
               logo: binance,
               link: 'https://www.binance.com/'
+            },
+            {
+              label: 'Coinbase',
+              logo: Coinbase,
+              link: 'https://www.coinbase.com/'
             },
             {
               label: 'kcc',
