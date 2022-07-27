@@ -22,6 +22,7 @@ const Banner = () => {
         fontWeight={'bold'}
         zIndex={1}
         color={'#003434'}
+        maxW={['200px', '720px']}
       >
         NEST Research Academy (NRA)
       </Text>

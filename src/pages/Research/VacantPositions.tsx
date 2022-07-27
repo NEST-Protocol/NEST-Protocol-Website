@@ -1,10 +1,12 @@
-import {chakra, Link, Stack, Text} from "@chakra-ui/react";
+import {chakra, Link, Stack, Text, useMediaQuery} from "@chakra-ui/react";
 import BigTitle from "../../components/BigTitle";
 import * as React from "react";
 import Research_bg_5 from '../../assets/image/Research/Research_bg_5.jpg'
 import icon2 from '../../assets/image/Research/icon_2.png'
 
 const VacantPositions = () => {
+  const [isDesktop] = useMediaQuery('(min-width: 768px)')
+
   return (
     <Stack spacing={'48px'} align={'center'}>
       <BigTitle title={'Vacant Positions'}/>
@@ -17,6 +19,7 @@ const VacantPositions = () => {
         bgImage={Research_bg_5}
         bgSize={'cover'}
         bgPosition={"center"}
+        px={'24px'}
       >
         <chakra.img src={icon2} zIndex={1}/>
         <Text
@@ -28,13 +31,13 @@ const VacantPositions = () => {
           textAlign={'center'}
         >
           NRA welcomes applicants to researchers of all levels.
-          <br/>
+          { isDesktop && ( <br/>) }
           NRA evaluates the work of its researchers in a result-oriented manner with flexibility in terms
-          <br/>
+          { isDesktop && ( <br/>) }
           of working location and hours. The salary is decided case by case.
-          <br/>
+          { isDesktop && ( <br/>) }
           Those interested, please send your academic CV to
-          <br/>
+          { isDesktop && ( <br/>) }
           <Link color={'#00A0E9'} fontWeight={'semibold'} fontSize={'15px'} zIndex={1}
                 href={'mailto:nra@nestprotocol.org'} isExternal>
             nra@nestprotocol.org

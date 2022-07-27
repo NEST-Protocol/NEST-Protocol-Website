@@ -25,7 +25,7 @@ const Footer = () => {
       <Stack maxW={'1440px'} justify={'space-around'} w={'full'}>
         <Wrap spacing={['22px', '44px']} fontSize={['12px', '15px']} w={"full"}>
           <WrapItem>
-            <Stack px={isDesktop ? '0' : '16px'} spacing={'40px'} minW={'300px'}>
+            <Stack px={isDesktop ? '0' : '16px'} spacing={['22px', '44px']} minW={'300px'}>
               <VStack spacing={'16px'} align={"start"}>
                 <Text fontWeight={"bold"}
                       cursor={"pointer"}
@@ -57,7 +57,7 @@ const Footer = () => {
             </Stack>
           </WrapItem>
           <WrapItem>
-            <Stack px={isDesktop ? '0' : '16px'} spacing={'40px'} minW={'300px'}>
+            <Stack px={isDesktop ? '0' : '16px'} spacing={['22px', '44px']} minW={'300px'}>
               <VStack spacing={'16px'} align={"start"}>
                 <Text fontWeight={"bold"} color={'#003232'} cursor={"pointer"} onClick={() => {
                   navigate('docs/NEST-PVM/Concept.md')
@@ -178,7 +178,7 @@ const Footer = () => {
           />
         </HStack>
       )}
-      <HStack justify={isDesktop ? "end" : "center"} w={'full'} pt={['30px', 0]}>
+      <HStack justify={isDesktop ? "end" : "center"} w={'full'} pt={['22px', 0]}>
         <Text px={'24px'} color={'#7D7D7D'} fontSize={'15px'} fontWeight={'semibold'}>
           ©2022 NEST
         </Text>
