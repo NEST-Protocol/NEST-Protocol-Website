@@ -18,9 +18,11 @@ const Banner = () => {
       px={'24px'}
     >
       <Text textAlign={'center'} fontSize={['24px', '48px']} fontWeight={'bold'} zIndex={1} color={'#003434'}>
-        NEST Financial Market
+        NEST
+        { !isDesktop && (<br/>) }
+        Financial Market
       </Text>
-      <Text textAlign={"center"} fontWeight={"bold"} fontSize={25} color={'#003434'} zIndex={1}>
+      <Text textAlign={"center"} fontWeight={"bold"} fontSize={[12, 24]} color={'#003434'} zIndex={1}>
         Get NEST token here and buy futures,
         <br/>
         options or play DeFi games to win NEST.

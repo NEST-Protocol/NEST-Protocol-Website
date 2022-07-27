@@ -9,7 +9,7 @@ import NESTFI_bg_icon_2 from '../../assets/image/NEST_Fi/NEST_Fi_bg_icon_2.png'
 const NESTFi = () => {
 
   return (
-    <>
+    <Stack spacing={['30px', '80px']} pb={['30px', '80px']}>
       <Helmet>
         <title>NEST Financial Market</title>
       </Helmet>
@@ -17,7 +17,7 @@ const NESTFi = () => {
       <Stack spacing={'48px'} align={'center'} justify={'start'}>
         <Stack
           align={'center'}
-          h={['375px', '440px']}
+          h={['300px', '440px']}
           w={'full'}
           justify={'start'}
           spacing={['13px', '16px']}
@@ -39,18 +39,18 @@ const NESTFi = () => {
           />
         </Stack>
       </Stack>
-      <HStack justify={"center"}>
+      <HStack justify={"center"} pt={['110px', 0]}>
         <Button
           minW={'160px'}
           minH={['44px', '34px']}
           onClick={() => {
-            window.open('https://oracle.nestprotocol.org/', '_blank')
+            window.open('https://finance.nestprotocol.org/', '_blank')
           }}
         >
           Launch App
         </Button>
       </HStack>
-    </>
+    </Stack>
   )
 }
 

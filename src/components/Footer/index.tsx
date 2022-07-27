@@ -1,4 +1,4 @@
-import {Stack, Text, HStack, chakra, Wrap, WrapItem, VStack, Link, useMediaQuery} from '@chakra-ui/react'
+import {Stack, Text, HStack, chakra, Wrap, WrapItem, VStack, useMediaQuery} from '@chakra-ui/react'
 import * as React from 'react'
 import BG_URL from "../../assets/image/Footer/Footer_bg.jpg"
 import Github_URL from "../../assets/image/Footer/github_icon.svg"
@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <Stack
       px={['24px', '48px']}
-      py={['88px']}
+      py={['66px', '88px']}
       w={'full'}
       align={'center'}
       bgImage={BG_URL}
@@ -23,7 +23,7 @@ const Footer = () => {
       zIndex={'10'}
     >
       <Stack maxW={'1440px'} justify={'space-around'} w={'full'}>
-        <Wrap spacing={['22px', '44px']} fontSize={15} w={"full"}>
+        <Wrap spacing={['22px', '44px']} fontSize={['12px', '15px']} w={"full"}>
           <WrapItem>
             <Stack px={isDesktop ? '0' : '16px'} spacing={'40px'} minW={'300px'}>
               <VStack spacing={'16px'} align={"start"}>
@@ -72,52 +72,54 @@ const Footer = () => {
                 }}>NEST Oracle Docs</Text>
                 <Text color={'#7D7D7D'} fontWeight={'semibold'}>Know how to use NEST Oracle</Text>
               </VStack>
-              <HStack spacing={'24px'}>
-                <chakra.img
-                  alt={'https://github.com/NEST-Protocol'}
-                  src={Github_URL}
-                  width={'44px'}
-                  height={'44px'}
-                  cursor={"pointer"}
-                  onClick={() => {
-                    window.open('https://github.com/NEST-Protocol', '_blank')
-                  }}
-                />
-                <chakra.img
-                  alt={'https://twitter.com/nest_protocol/'}
-                  src={Twitter_URL}
-                  width={'44px'}
-                  height={'44px'}
-                  cursor={"pointer"}
-                  onClick={() => {
-                    window.open('https://twitter.com/nest_protocol/', '_blank')
-                  }}
-                />
-                <chakra.img
-                  alt={'https://t.me/nest_chat/'}
-                  src={Telegram_URL}
-                  width={'44px'}
-                  height={'44px'}
-                  cursor={"pointer"}
-                  onClick={() => {
-                    window.open('https://t.me/nest_chat/', '_blank')
-                  }}
-                />
-                <chakra.img
-                  alt={'https://nest-protocol-82041.medium.com/'}
-                  src={Medium_URL}
-                  width={'44px'}
-                  height={'44px'}
-                  cursor={"pointer"}
-                  onClick={() => {
-                    window.open('https://nest-protocol-82041.medium.com/', '_blank')
-                  }}
-                />
-              </HStack>
+              { isDesktop && (
+                <HStack spacing={'24px'}>
+                  <chakra.img
+                    alt={'https://github.com/NEST-Protocol'}
+                    src={Github_URL}
+                    width={'44px'}
+                    height={'44px'}
+                    cursor={"pointer"}
+                    onClick={() => {
+                      window.open('https://github.com/NEST-Protocol', '_blank')
+                    }}
+                  />
+                  <chakra.img
+                    alt={'https://twitter.com/nest_protocol/'}
+                    src={Twitter_URL}
+                    width={'44px'}
+                    height={'44px'}
+                    cursor={"pointer"}
+                    onClick={() => {
+                      window.open('https://twitter.com/nest_protocol/', '_blank')
+                    }}
+                  />
+                  <chakra.img
+                    alt={'https://t.me/nest_chat/'}
+                    src={Telegram_URL}
+                    width={'44px'}
+                    height={'44px'}
+                    cursor={"pointer"}
+                    onClick={() => {
+                      window.open('https://t.me/nest_chat/', '_blank')
+                    }}
+                  />
+                  <chakra.img
+                    alt={'https://nest-protocol-82041.medium.com/'}
+                    src={Medium_URL}
+                    width={'44px'}
+                    height={'44px'}
+                    cursor={"pointer"}
+                    onClick={() => {
+                      window.open('https://nest-protocol-82041.medium.com/', '_blank')
+                    }}
+                  />
+                </HStack>
+              ) }
             </Stack>
           </WrapItem>
           <WrapItem w={'400px'}>
-            <Stack spacing={'32px'} zIndex={1} w={"full"}>
+            <Stack spacing={'0px'} zIndex={1} w={"full"}>
               <Text px={'16px'} fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
                 Market price
               </Text>
@@ -132,7 +134,51 @@ const Footer = () => {
           </WrapItem>
         </Wrap>
       </Stack>
-      <HStack justify={isDesktop ? "end" : "center"} w={'full'}>
+      { !isDesktop && (
+        <HStack spacing={'24px'}>
+          <chakra.img
+            alt={'https://github.com/NEST-Protocol'}
+            src={Github_URL}
+            width={'44px'}
+            height={'44px'}
+            cursor={"pointer"}
+            onClick={() => {
+              window.open('https://github.com/NEST-Protocol', '_blank')
+            }}
+          />
+          <chakra.img
+            alt={'https://twitter.com/nest_protocol/'}
+            src={Twitter_URL}
+            width={'44px'}
+            height={'44px'}
+            cursor={"pointer"}
+            onClick={() => {
+              window.open('https://twitter.com/nest_protocol/', '_blank')
+            }}
+          />
+          <chakra.img
+            alt={'https://t.me/nest_chat/'}
+            src={Telegram_URL}
+            width={'44px'}
+            height={'44px'}
+            cursor={"pointer"}
+            onClick={() => {
+              window.open('https://t.me/nest_chat/', '_blank')
+            }}
+          />
+          <chakra.img
+            alt={'https://nest-protocol-82041.medium.com/'}
+            src={Medium_URL}
+            width={'44px'}
+            height={'44px'}
+            cursor={"pointer"}
+            onClick={() => {
+              window.open('https://nest-protocol-82041.medium.com/', '_blank')
+            }}
+          />
+        </HStack>
+      )}
+      <HStack justify={isDesktop ? "end" : "center"} w={'full'} pt={['30px', 0]}>
         <Text px={'24px'} color={'#7D7D7D'} fontSize={'15px'} fontWeight={'semibold'}>
           ©2022 NEST
         </Text>
