@@ -1,4 +1,4 @@
-import {Text, HStack, Stack, Button, Link, Spacer, Center, Wrap, WrapItem, useMediaQuery} from "@chakra-ui/react";
+import {Text, HStack, Stack, Link, Center, useMediaQuery} from "@chakra-ui/react";
 import * as React from "react";
 import BigTitle from "../../components/BigTitle";
 import Home_bg_3 from '../../assets/image/Home/Home_bg_3.jpg'

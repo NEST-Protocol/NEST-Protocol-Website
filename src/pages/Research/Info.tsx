@@ -1,6 +1,5 @@
-import {Center, HStack, Spacer, Stack, Text, useMediaQuery} from "@chakra-ui/react";
+import {Center, HStack, Stack, Text, useMediaQuery} from "@chakra-ui/react";
 import * as React from "react";
-import BigTitle from "../../components/BigTitle";
 import Research_bg_2 from '../../assets/image/Research/Research_bg_2.jpg'
 import Research_bg_3 from '../../assets/image/Research/Research_bg_3.jpg'
 
