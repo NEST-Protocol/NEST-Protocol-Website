@@ -10,9 +10,8 @@ const Info = () => {
   if (isDesktop) {
     return (
       <Stack spacing={'48px'} align={'center'}>
-        <BigTitle title={'Developers'}/>
         <HStack w={"full"} spacing={'44px'} maxW={'1440px'}>
-          <Center color={'#003232'} fontWeight={"semibold"} w={'full'} h={'440px'} bgImage={Research_bg_2}
+          <Center color={'#003232'} fontWeight={"semibold"} w={'full'} h={'440px'} bgImage={Research_bg_2} bgPosition={"center"}
                   bgSize={"cover"}>
             <Stack
               fontWeight={'semibold'}
@@ -33,7 +32,7 @@ const Info = () => {
                 workshops, webinars, and AMA.</Text>
             </Stack>
           </Center>
-          <Center color={'#003232'} fontWeight={"semibold"} w={'full'} h={'440px'} bgImage={Research_bg_3}
+          <Center color={'#003232'} fontWeight={"semibold"} w={'full'} h={'440px'} bgImage={Research_bg_3} bgPosition={"center"}
                   bgSize={"cover"}>
             <Stack
               fontWeight={'semibold'}
