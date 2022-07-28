@@ -1,73 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-<url>
-  <loc>https://nestprotocol.org/</loc>
-  <lastmod>2022-7-20T00:00:00+00:00</lastmod>
-</url>
+    <url>
+        <loc>https://www.nestprotocol.org/</loc>
+        <lastmod>2022-7-28T00:00:00+00:00</lastmod>
+    </url>
 
-<url>
-  <loc>https://nestprotocol.org/doc/ennestwhitepaper.pdf</loc>
-  <lastmod>2022-7-20T00:00:00+00:00</lastmod>
-</url>
+    <url>
+        <loc>https://www.nestprotocol.org/doc/ennestwhitepaper.pdf</loc>
+        <lastmod>2022-7-28T00:00:00+00:00</lastmod>
+    </url>
 
-<url>
-  <loc>https://nestprotocol.org/doc/zhnestwhitepaper.pdf</loc>
-  <lastmod>2022-7-20T00:00:00+00:00</lastmod>
-</url>
+    <url>
+        <loc>https://www.nestprotocol.org/doc/zhnestwhitepaper.pdf</loc>
+        <lastmod>2022-7-28T00:00:00+00:00</lastmod>
+    </url>
 
-<url>
-  <loc>https://nestprotocol.org/#/ecosystem</loc>
-  <lastmod>2022-7-20T00:00:00+00:00</lastmod>
-</url>
+    <url>
+        <loc>https://www.nestprotocol.org/#/nest-fi</loc>
+        <lastmod>2022-7-28T00:00:00+00:00</lastmod>
+    </url>
 
-<url>
-  <loc>https://nestprotocol.org/#/community</loc>
-  <lastmod>2022-7-20T00:00:00+00:00</lastmod>
-</url>
+    <url>
+        <loc>https://www.nestprotocol.org/#/docs/overview.md</loc>
+        <lastmod>2022-7-28T00:00:00+00:00</lastmod>
+    </url>
 
-<url>
-  <loc>https://nestprotocol.org/#/learn</loc>
-  <lastmod>2022-7-20T00:00:00+00:00</lastmod>
-</url>
+    <url>
+        <loc>https://www.nestprotocol.org/#/news</loc>
+        <lastmod>2022-7-28T00:00:00+00:00</lastmod>
+    </url>
 
-<url>
-  <loc>https://nestprotocol.org/#/about</loc>
-  <lastmod>2022-7-20T00:00:00+00:00</lastmod>
-</url>
+    <url>
+        <loc>https://www.nestprotocol.org/#/nest-research-academy</loc>
+        <lastmod>2022-7-28T00:00:00+00:00</lastmod>
+    </url>
 
-<url>
-  <loc>https://nestprotocol.org/#/docs/overview.md</loc>
-  <lastmod>2022-7-20T00:00:00+00:00</lastmod>
-</url>
+    <url>
+        <loc>https://www.nestprotocol.org/#/docs/NEST-Oracle/Concept.md</loc>
+        <lastmod>2022-7-28T00:00:00+00:00</lastmod>
+    </url>
 
-<url>
-  <loc>https://nestprotocol.org/#/docs/Guide/Set-Up-Local-Environment.md</loc>
-  <lastmod>2022-7-20T00:00:00+00:00</lastmod>
-</url>
+    <url>
+        <loc>https://www.nestprotocol.org/#/docs/NEST-Oracle/Calling-Price.md</loc>
+        <lastmod>2022-7-28T00:00:00+00:00</lastmod>
+    </url>
 
-  <url>
-    <loc>https://nestprotocol.org/#/docs/Technical-Reference/NEST-Probability-Virtual-Machine.md</loc>
-    <lastmod>2022-7-20T00:00:00+00:00</lastmod>
-  </url>
+    <url>
+        <loc>https://www.nestprotocol.org/#/docs/NEST-Oracle/Mining-on-NEST-Oracle.md</loc>
+        <lastmod>2022-7-28T00:00:00+00:00</lastmod>
+    </url>
 
-  <url>
-    <loc>https://nestprotocol.org/#/docs/Technical-Reference/NEST-Oracle.md</loc>
-    <lastmod>2022-7-20T00:00:00+00:00</lastmod>
-  </url>
+    <url>
+        <loc>https://www.nestprotocol.org/#/docs/NEST-PVM/Concept.md</loc>
+        <lastmod>2022-7-28T00:00:00+00:00</lastmod>
+    </url>
 
-  <url>
-    <loc>https://nestprotocol.org/#/docs//Technical-Reference/Contract-Deployment.md</loc>
-    <lastmod>2022-7-20T00:00:00+00:00</lastmod>
-  </url>
+    <url>
+        <loc>https://www.nestprotocol.org/#/docs/NEST-PVM/Build-on-NEST-PVM.md</loc>
+        <lastmod>2022-7-28T00:00:00+00:00</lastmod>
+    </url>
 
-  <url>
-    <loc>https://nestprotocol.org/#/docs/Technical-Reference/Error-Codes.md</loc>
-    <lastmod>2022-7-20T00:00:00+00:00</lastmod>
-  </url>
+    <url>
+        <loc>https://www.nestprotocol.org/#/Technical-Reference/Set-Up-Local-Environment.md</loc>
+        <lastmod>2022-7-28T00:00:00+00:00</lastmod>
+    </url>
 
+    <url>
+        <loc>https://www.nestprotocol.org/#/Technical-Reference/Contract-Deployment.md</loc>
+        <lastmod>2022-7-28T00:00:00+00:00</lastmod>
+    </url>
+
+    <url>
+        <loc>https://www.nestprotocol.org/#/Technical-Reference/Error-Codes.md</loc>
+        <lastmod>2022-7-28T00:00:00+00:00</lastmod>
+    </url>
 </urlset>
