@@ -2,8 +2,10 @@ import {Button, Stack, chakra, Text, useMediaQuery} from "@chakra-ui/react"
 import * as React from "react";
 import BigTitle from "../../components/BigTitle";
 import Home_bg_2 from '../../assets/image/Home/Home_bg_2.jpg'
+import Home_bg_2_phone from '../../assets/image/Home/Home_bg_2_phone.jpg'
 import icon_1 from '../../assets/image/Home/icon_1.png'
 import Home_bg_icon_2 from '../../assets/image/Home/Home_bg_icon_2.png'
+import Home_bg_icon_2_phone from '../../assets/image/Home/Home_bg_icon_2_phone.png'
 
 const NESTFi = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -17,13 +19,13 @@ const NESTFi = () => {
         w={'full'}
         justify={'center'}
         spacing={['13px', '16px']}
-        bgImage={Home_bg_2}
+        bgImage={isDesktop ? Home_bg_2 : Home_bg_2_phone}
         bgSize={'cover'}
         bgPosition={"center"}
       >
         <chakra.img
           position={"absolute"}
-          src={Home_bg_icon_2}
+          src={isDesktop ? Home_bg_icon_2 : Home_bg_icon_2_phone}
           alt={'NEST'}
           minH={'440px'}
           objectFit={'cover'}

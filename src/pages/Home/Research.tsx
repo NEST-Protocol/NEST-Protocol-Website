@@ -2,10 +2,11 @@ import {chakra, Link, Stack, Text, useMediaQuery} from "@chakra-ui/react";
 import * as React from "react";
 import BigTitle from "../../components/BigTitle";
 import Home_bg_5 from '../../assets/image/Home/Home_bg_5.jpg'
+import Home_bg_5_phone from '../../assets/image/Home/Home_bg_5_phone.jpg'
 import Icon2 from '../../assets/image/Home/icon_2.png'
 import {ChevronRightIcon} from "@chakra-ui/icons";
 import Home_bg_icon_3 from '../../assets/image/Home/Home_bg_icon_3.png'
-
+import Home_bg_icon_3_phone from '../../assets/image/Home/Home_bg_icon_3_phone.png'
 
 const Research = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -19,13 +20,13 @@ const Research = () => {
         w={'full'}
         justify={'center'}
         spacing={['13px', '16px']}
-        bgImage={Home_bg_5}
+        bgImage={isDesktop ? Home_bg_5: Home_bg_5_phone}
         bgSize={'cover'}
         bgPosition={"center"}
       >
         <chakra.img
           position={"absolute"}
-          src={Home_bg_icon_3}
+          src={isDesktop ? Home_bg_icon_3 : Home_bg_icon_3_phone}
           alt={'NEST'}
           minH={'440px'}
           objectFit={'cover'}

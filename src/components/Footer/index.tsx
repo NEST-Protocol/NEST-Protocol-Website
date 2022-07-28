@@ -7,6 +7,8 @@ import Telegram_URL from "../../assets/image/Footer/telegram_icon.svg"
 import Medium_URL from "../../assets/image/Footer/medium_icon.svg"
 import {useNavigate} from "react-router-dom";
 import Footer_bg_icon from '../../assets/image/Footer/Footer_bg_icon.png'
+import Footer_bg_icon_phone from '../../assets/image/Footer/Footer_bg_icon_phone.png'
+import Footer_bg_phone from '../../assets/image/Footer/Footer_bg_phone.jpg'
 
 const Footer = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -18,7 +20,7 @@ const Footer = () => {
       py={['66px', '88px']}
       w={'full'}
       align={'center'}
-      bgImage={BG_URL}
+      bgImage={isDesktop ? BG_URL : Footer_bg_phone}
       bgSize={'cover'}
       bgPosition={"right"}
       zIndex={'10'}
@@ -26,11 +28,12 @@ const Footer = () => {
       <chakra.img
         zIndex={0}
         position={"absolute"}
-        src={Footer_bg_icon}
+        src={isDesktop ? Footer_bg_icon : Footer_bg_icon_phone}
         alt={'NEST'}
         minH={'380px'}
         objectFit={'cover'}
         overflow={"hidden"}
+        objectPosition={"center"}
       />
       <Stack maxW={'1440px'} justify={'space-around'} w={'full'}  zIndex={1}>
         <Wrap spacing={['22px', '44px']} fontSize={['12px', '15px']} w={"full"}>

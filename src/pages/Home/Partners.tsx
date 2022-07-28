@@ -1,4 +1,4 @@
-import {chakra, SimpleGrid, Stack} from "@chakra-ui/react";
+import {chakra, SimpleGrid, Stack, useMediaQuery} from "@chakra-ui/react";
 import huobi from "../../assets/svg/huobi.svg";
 import binance from "../../assets/svg/binance.svg";
 import kcc from "../../assets/svg/kcc.svg";
@@ -14,10 +14,14 @@ import certik from "../../assets/svg/certik.svg";
 import * as React from "react";
 import BigTitle from "../../components/BigTitle";
 import Home_bg_6 from '../../assets/image/Home/Home_bg_6.jpg'
+import Home_bg_6_phone from '../../assets/image/Home/Home_bg_6_phone.jpg'
 import Coinbase from "../../assets/svg/Coinbase.svg"
 import Home_bg_icon_4 from '../../assets/image/Home/Home_bg_icon_4.png'
+import Home_bg_icon_4_phone from '../../assets/image/Home/Home_bg_icon_4_phone.png'
 
 const Partners = () => {
+  const [isDesktop] = useMediaQuery('(min-width: 768px)')
+
   return (
     <Stack spacing={'48px'} align={'center'}>
       <BigTitle title={'Integrations & Partners'}/>
@@ -27,14 +31,14 @@ const Partners = () => {
         spacing={'16px'}
         h={'440px'}
         w={"full"}
-        bgImage={Home_bg_6}
+        bgImage={isDesktop ? Home_bg_6 : Home_bg_6_phone}
         bgPosition={"bottom"}
         bgSize={'cover'}
         px={['30px']}
       >
         <chakra.img
           position={"absolute"}
-          src={Home_bg_icon_4}
+          src={isDesktop ? Home_bg_icon_4 : Home_bg_icon_4_phone}
           alt={'NEST'}
           minH={'440px'}
           objectFit={'cover'}

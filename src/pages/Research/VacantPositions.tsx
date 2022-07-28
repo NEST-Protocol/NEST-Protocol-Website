@@ -2,8 +2,10 @@ import {chakra, Link, Stack, Text, useMediaQuery} from "@chakra-ui/react";
 import BigTitle from "../../components/BigTitle";
 import * as React from "react";
 import Research_bg_5 from '../../assets/image/Research/Research_bg_5.jpg'
+import Research_bg_5_phone from '../../assets/image/Research/Research_bg_5_phone.jpg'
 import icon2 from '../../assets/image/Research/icon_2.png'
 import Research_bg_icon_3 from '../../assets/image/Research/Research_bg_icon_3.png'
+import Research_bg_icon_3_phone from '../../assets/image/Research/Research_bg_icon_3_phone.png'
 
 const VacantPositions = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -17,14 +19,14 @@ const VacantPositions = () => {
         w={'full'}
         justify={'center'}
         spacing={['13px', '16px']}
-        bgImage={Research_bg_5}
+        bgImage={isDesktop ? Research_bg_5 : Research_bg_5_phone}
         bgSize={'cover'}
         bgPosition={"center"}
         px={'24px'}
       >
         <chakra.img
           position={"absolute"}
-          src={Research_bg_icon_3}
+          src={isDesktop ? Research_bg_icon_3 : Research_bg_icon_3_phone}
           alt={'NEST'}
           minH={'440px'}
           objectFit={'cover'}

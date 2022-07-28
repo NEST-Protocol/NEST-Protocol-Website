@@ -2,6 +2,8 @@ import {Button, HStack, Stack, Text, useMediaQuery, chakra} from "@chakra-ui/rea
 import * as React from "react";
 import Home_bg_1 from "../../assets/image/Home/Home_bg_1.jpg"
 import Home_bg_icon_1 from "../../assets/image/Home/Home_bg_icon_1.png"
+import Home_bg_1_phone from "../../assets/image/Home/Home_bg_1_phone.jpg"
+import Home_bg_icon_1_phone from "../../assets/image/Home/Home_bg_icon_1_phone.png"
 
 const Banner = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -12,14 +14,14 @@ const Banner = () => {
         align={'center'}
         justify={'center'}
         h={['540px', '615px']}
-        bgImage={Home_bg_1}
+        bgImage={isDesktop ? Home_bg_1 : Home_bg_1_phone}
         bgSize={'cover'}
         bgPosition={"center"}
         spacing={'24px'}
       >
         <chakra.img
           position={"absolute"}
-          src={Home_bg_icon_1}
+          src={isDesktop ? Home_bg_icon_1 : Home_bg_icon_1_phone}
           alt={'NEST'}
           h={['540px', '615px']}
           objectFit={'cover'}

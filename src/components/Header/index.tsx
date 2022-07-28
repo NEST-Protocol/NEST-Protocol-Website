@@ -16,14 +16,12 @@ import NEST_LOGO from '../../assets/svg/nest.svg'
 import {useLocation, useNavigate} from 'react-router-dom'
 import * as React from 'react'
 import {HamburgerIcon} from '@chakra-ui/icons'
-import {useState} from "react";
 
 const Header = () => {
   const location = useLocation()
   const navigate = useNavigate()
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
   const {isOpen, onOpen, onClose} = useDisclosure()
-  const [showLearn, setShowLearn] = useState(false)
 
   const menu = [
     {name: 'NEST Fi', pathname: 'nest-fi'},

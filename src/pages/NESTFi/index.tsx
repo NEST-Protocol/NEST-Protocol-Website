@@ -1,12 +1,15 @@
-import {Button, chakra, HStack, Stack, Text} from '@chakra-ui/react'
+import {Button, chakra, HStack, Stack, useMediaQuery} from '@chakra-ui/react'
 import * as React from 'react'
 import {Helmet} from 'react-helmet'
 import Banner from "./Banner";
 import iPhone from "../../assets/image/NEST_Fi/iPhone.png";
 import NESTFI_bg_2 from '../../assets/image/NEST_Fi/NEST_Fi_bg_2.jpg'
 import NESTFI_bg_icon_2 from '../../assets/image/NEST_Fi/NEST_Fi_bg_icon_2.png'
+import NESTFI_bg_2_phone from '../../assets/image/NEST_Fi/NEST_Fi_bg_2_phone.jpg'
+import NESTFI_bg_icon_2_phone from '../../assets/image/NEST_Fi/NEST_Fi_bg_icon_2_phone.png'
 
 const NESTFi = () => {
+  const [isDesktop] = useMediaQuery('(min-width: 768px)')
 
   return (
     <Stack spacing={['30px', '80px']} pb={['30px', '80px']}>
@@ -21,13 +24,13 @@ const NESTFi = () => {
           w={'full'}
           justify={'start'}
           spacing={['30px', '40px']}
-          bgImage={NESTFI_bg_2}
+          bgImage={isDesktop ? NESTFI_bg_2 : NESTFI_bg_2_phone}
           bgSize={'cover'}
           bgPosition={"center"}
         >
           <chakra.img
             position={"absolute"}
-            src={NESTFI_bg_icon_2}
+            src={isDesktop ? NESTFI_bg_icon_2 : NESTFI_bg_icon_2_phone}
             alt={'NEST'}
             h={['300px', '440px']}
             objectFit={'cover'}
