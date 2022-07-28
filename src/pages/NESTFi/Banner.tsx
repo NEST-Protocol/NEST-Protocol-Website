@@ -31,7 +31,7 @@ const Banner = () => {
       <Stack spacing={['22px', '44px']}>
         <Text textAlign={'center'} fontSize={['24px', '48px']} fontWeight={'bold'} zIndex={1} color={'#003434'}>
           NEST
-          { !isDesktop && (<br/>) }
+          { !isDesktop ? (<br/>) : " " }
           Financial Market
         </Text>
         <Text textAlign={"center"} fontWeight={"bold"} fontSize={[12, 24]} color={'#003434'} zIndex={1}>
