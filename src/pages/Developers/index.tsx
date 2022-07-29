@@ -81,7 +81,7 @@ const Developers = () => {
 
   useEffect(() => {
     if (location.pathname === '/docs') {
-      navigate('/docs/overview.md')
+      navigate('/docs/NEST-PVM/Concept.md')
     }
   }, [location.pathname])
 
