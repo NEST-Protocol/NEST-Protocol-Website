@@ -77,7 +77,7 @@ const Research = () => {
 
         <Link color={'#00A0E9'} fontWeight={'semibold'} fontSize={'15px'} zIndex={1}
               href={'/#/nest-research-academy'} isExternal>
-          Know more about NRA<ChevronRightIcon/>
+          Learn more about NRA<ChevronRightIcon/>
         </Link>
       </Stack>
     </Stack>

@@ -65,7 +65,7 @@ const Footer = () => {
                   navigate('nest-research-academy')
                   window.scrollTo(0, 0)
                 }}>NEST Research Academy</Text>
-                <Text color={'#7D7D7D'} fontWeight={'semibold'}>Know about NRA</Text>
+                <Text color={'#7D7D7D'} fontWeight={'semibold'}>Learn about NRA</Text>
               </VStack>
             </Stack>
           </WrapItem>
