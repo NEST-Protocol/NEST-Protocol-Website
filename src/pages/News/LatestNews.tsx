@@ -5,7 +5,6 @@ import New_card_icon_2 from "../../assets/image/Home/News_card_icon_2.png";
 import New_card_icon_3 from "../../assets/image/Home/News_card_icon_3.png";
 import New_card_icon_4 from '../../assets/image/News/News_card_icon_4.png'
 import New_card_icon_5 from '../../assets/image/News/News_card_icon_5.png'
-import New_card_icon_6 from '../../assets/image/News/News_card_icon_6.png'
 import New_card_bg_1 from '../../assets/image/Home/News_card_bg_1.png'
 import New_card_bg_2 from '../../assets/image/Home/News_card_bg_2.png'
 import New_card_bg_3 from '../../assets/image/Home/News_card_bg_3.png'
