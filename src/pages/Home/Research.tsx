@@ -1,4 +1,4 @@
-import {chakra, Link, Stack, Text, useMediaQuery} from "@chakra-ui/react";
+import {chakra, Heading, Link, Stack, Text, useMediaQuery} from "@chakra-ui/react";
 import * as React from "react";
 import BigTitle from "../../components/BigTitle";
 import Home_bg_5 from '../../assets/image/Home/Home_bg_5.jpg'
@@ -33,14 +33,14 @@ const Research = () => {
           overflow={"hidden"}
         />
         <chakra.img src={Icon2} zIndex={1} h={['55px', '110px']}/>
-        <Text
+        <Heading
           fontSize={['17px', '24px']}
           fontWeight={'semibold'}
           color={'#003232'}
           zIndex={1}
         >
           NEST Research Academy (NRA)
-        </Text>
+        </Heading>
         {isDesktop ? (
           <Text
             zIndex={1}

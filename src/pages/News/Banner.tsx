@@ -1,4 +1,4 @@
-import {Stack, Text, chakra, useMediaQuery} from "@chakra-ui/react";
+import {Stack, chakra, useMediaQuery, Heading} from "@chakra-ui/react";
 import * as React from "react";
 import News_bg_1 from '../../assets/image/News/News_bg_1.jpg'
 import News_bg_icon_1 from '../../assets/image/News/News_bg_icon_1.png'
@@ -27,7 +27,7 @@ const Banner = () => {
         objectFit={'cover'}
         overflow={"hidden"}
       />
-      <Text
+      <Heading
         fontSize={['12px', '24px']}
         fontWeight={'bold'}
         textAlign={'center'}
@@ -36,7 +36,7 @@ const Banner = () => {
         color={'#003434'}
       >
         Know NEST from Our News, Blogs and Announcements
-      </Text>
+      </Heading>
     </Stack>
   )
 }

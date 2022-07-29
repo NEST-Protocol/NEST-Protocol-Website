@@ -1,4 +1,4 @@
-import {Button, HStack, Stack, Text, useMediaQuery, chakra} from "@chakra-ui/react";
+import {Button, HStack, Stack, Text, useMediaQuery, chakra, Heading} from "@chakra-ui/react";
 import * as React from "react";
 import Home_bg_1 from "../../assets/image/Home/Home_bg_1.jpg"
 import Home_bg_icon_1 from "../../assets/image/Home/Home_bg_icon_1.png"
@@ -27,7 +27,7 @@ const Banner = () => {
           objectFit={'cover'}
           overflow={"hidden"}
         />
-        <Text
+        <Heading
           whiteSpace={'break-spaces'}
           textAlign={'center'}
           fontSize={['24px', '40px']}
@@ -36,7 +36,7 @@ const Banner = () => {
           color={'#003434'}
         >
           What is NEST
-        </Text>
+        </Heading>
 
         { isDesktop ? (
           <Text

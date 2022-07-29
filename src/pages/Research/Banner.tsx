@@ -1,4 +1,4 @@
-import {Stack, Text, chakra, useMediaQuery} from "@chakra-ui/react";
+import {Stack, Text, chakra, useMediaQuery, Heading} from "@chakra-ui/react";
 import * as React from "react";
 import Research_bg_1 from '../../assets/image/Research/Research_bg_1.jpg'
 import Research_bg_icon_1 from '../../assets/image/Research/Research_bg_icon_1.png'
@@ -29,7 +29,7 @@ const Banner = () => {
         overflow={"hidden"}
       />
       <Stack spacing={['22px', '44px']}>
-        <Text
+        <Heading
           whiteSpace={'break-spaces'}
           textAlign={'center'}
           fontSize={['24px', '48px']}
@@ -41,7 +41,7 @@ const Banner = () => {
           NEST Research
           { !isDesktop ? (<br/>) : ' ' }
           Academy (NRA)
-        </Text>
+        </Heading>
         <Text
           fontSize={['12px', '17px']}
           fontWeight={'bold'}

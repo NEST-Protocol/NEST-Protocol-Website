@@ -1,4 +1,4 @@
-import {Center, HStack, Stack, Text, useMediaQuery} from "@chakra-ui/react";
+import {Center, Heading, HStack, Stack, Text, useMediaQuery} from "@chakra-ui/react";
 import * as React from "react";
 import Research_bg_2 from '../../assets/image/Research/Research_bg_2.jpg'
 import Research_bg_3 from '../../assets/image/Research/Research_bg_3.jpg'
@@ -68,7 +68,7 @@ const Info = () => {
               color={'#003232'}
               whiteSpace={'break-spaces'}
             >
-              <Text fontSize={'25px'} textAlign={"center"}>Promote Industry <br/>Communication</Text>
+              <Heading fontSize={'25px'} textAlign={"center"}>Promote Industry <br/>Communication</Heading>
               <Text fontSize={'15px'} textAlign={"center"}>NRA’s research activities include but are not
                 limited to writing research papers published in
                 peer-reviewed international academic journals,
@@ -86,9 +86,9 @@ const Info = () => {
               color={'#003232'}
               whiteSpace={'break-spaces'}
             >
-              <Text fontSize={'25px'} textAlign={"center"}>Facilitate Academic
+              <Heading fontSize={'25px'} textAlign={"center"}>Facilitate Academic
                 <br/>
-                Exploration</Text>
+                Exploration</Heading>
               <Text fontSize={'15px'} textAlign={"center"}>NRA provides funding and job opportunities for
                 researchers in different stages. NRA and NEST
                 feel honored if the support helps scholars make
