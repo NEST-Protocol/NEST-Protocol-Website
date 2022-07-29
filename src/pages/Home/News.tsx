@@ -1,6 +1,8 @@
 import {chakra, Text, Link, SimpleGrid, Stack, useMediaQuery, VStack} from "@chakra-ui/react";
 import * as React from "react";
 import BigTitle from "../../components/BigTitle";
+import New_card_bg from '../../assets/image/Home/News_card_bg.png'
+import New_card_icon from '../../assets/image/Home/News_card_icon.png'
 import News_card_bg_1 from '../../assets/image/Home/News_card_bg_1.png'
 import News_card_bg_2 from '../../assets/image/Home/News_card_bg_2.png'
 import News_card_bg_3 from '../../assets/image/Home/News_card_bg_3.png'
@@ -24,8 +26,15 @@ const News = () => {
         justify={'center'}
         spacing={'16px'}
       >
-        <SimpleGrid columns={[1, 1, 2, 3]} spacing={['22px', '22px', '44px']} pb={'27px'}>
+        <SimpleGrid columns={[2]} spacing={['22px', '22px', '44px']} pb={'27px'}>
           {[
+            {
+              label: `Coinbase Announces Planned Listing of Tokens, Adds $NEST to ‘Experimental Asset’ Label`,
+              bg: New_card_bg,
+              logo: New_card_icon,
+              desc: `Leading United States-based cryptocurrency exchange`,
+              link: 'https://cryptonews.net/news/market/9582857'
+            },
             {
               label: 'NEST Protocol: A New Paradigm of Game Theoretic Oracle',
               bg: News_card_bg_1,

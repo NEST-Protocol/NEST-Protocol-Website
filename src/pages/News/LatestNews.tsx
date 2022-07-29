@@ -9,6 +9,8 @@ import New_card_icon_6 from '../../assets/image/News/News_card_icon_6.png'
 import New_card_bg_1 from '../../assets/image/Home/News_card_bg_1.png'
 import New_card_bg_2 from '../../assets/image/Home/News_card_bg_2.png'
 import New_card_bg_3 from '../../assets/image/Home/News_card_bg_3.png'
+import New_card_bg from "../../assets/image/Home/News_card_bg.png";
+import New_card_icon from "../../assets/image/Home/News_card_icon.png";
 
 const LatestNews = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -31,6 +33,13 @@ const LatestNews = () => {
       >
         <SimpleGrid columns={[1, 1, 2, 3]} spacing={['22px', '22px', '44px']} pb={'27px'}>
           {[
+            {
+              label: `Coinbase Announces Planned Listing of Tokens, Adds $NEST to ‘Experimental Asset’ Label`,
+              bg: New_card_bg,
+              logo: New_card_icon,
+              desc: `Leading United States-based cryptocurrency exchange`,
+              link: 'https://cryptonews.net/news/market/9582857'
+            },
             {
               label: 'NEST Protocol: A New Paradigm of Game Theoretic Oracle',
               bg: New_card_bg_1,
@@ -65,13 +74,6 @@ const LatestNews = () => {
               logo: New_card_icon_5,
               desc: 'The blockchain world is also like the corner of the country with genres of thought.',
               link: 'https://nest-protocol-82041.medium.com/james-talks-three-major-genres-in-the-blockchain-jungle-dcf075824204'
-            },
-            {
-              label: 'NEST Protocol is Open as a Self-looping Oracle System',
-              bg: New_card_bg_3,
-              logo: New_card_icon_6,
-              desc: 'It is reasonable to use NEST Token or nToken as an incentive for quoting mainstream assets because',
-              link: 'https://nest-protocol-82041.medium.com/nest-protocol-is-open-as-a-self-looping-oracle-system-16ed1fd1536'
             }
           ].map(item => (
             <VStack
