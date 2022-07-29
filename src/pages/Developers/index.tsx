@@ -18,15 +18,15 @@ const Developers = () => {
   const [md, setMd] = useState('')
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
   const menu = [
-    {
-      title: 'Overview',
-      children: [
-        {
-          title: 'What is NEST?',
-          pathname: '/docs/overview.md',
-        }
-      ]
-    },
+    // {
+    //   title: 'Overview',
+    //   children: [
+    //     {
+    //       title: 'What is NEST?',
+    //       pathname: '/docs/overview.md',
+    //     }
+    //   ]
+    // },
     {
       title: 'NEST-Oracle',
       children: [
