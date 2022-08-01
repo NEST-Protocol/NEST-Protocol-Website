@@ -26,7 +26,7 @@ const News = () => {
         justify={'center'}
         spacing={'16px'}
       >
-        <SimpleGrid columns={[2]} spacing={['22px', '22px', '44px']} pb={'27px'}>
+        <SimpleGrid columns={[1, 1, 2]} spacing={['22px', '22px', '44px']} pb={'27px'}>
           {[
             {
               label: `Coinbase Announces Planned Listing of Tokens, Adds $NEST to ‘Experimental Asset’ Label`,
