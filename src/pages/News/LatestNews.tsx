@@ -101,8 +101,8 @@ const LatestNews = () => {
               </Stack>
               <VStack
                 w={'full'}
-                px={'40px'}
-                py={['40px', '20px']}
+                px={'44px'}
+                py={'44px'}
                 spacing={'8px'}
                 alignItems={isDesktop ? 'center' : 'start'}
                 justifyContent={'start'}
