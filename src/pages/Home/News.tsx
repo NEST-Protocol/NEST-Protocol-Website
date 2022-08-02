@@ -26,7 +26,7 @@ const News = () => {
         justify={'center'}
         spacing={'16px'}
       >
-        <SimpleGrid columns={[1, 1, 2]} spacing={['22px', '22px', '44px']} pb={'27px'}>
+        <SimpleGrid columns={[1, 1, 3]} spacing={['22px', '22px', '44px']} pb={'27px'}>
           {[
             {
               label: `Coinbase Announces Planned Listing of Tokens, Adds $NEST to ‘Experimental Asset’ Label`,
@@ -48,13 +48,6 @@ const News = () => {
               logo: News_card_icon_2,
               desc: 'Through Crypto.com’s NEST Price Page, you can now directly access NEST’s RSS news feed.',
               link: 'https://nest-protocol-82041.medium.com/nests-rss-feed-integrated-with-crypto-com-price-page-9323828d28d9'
-            },
-            {
-              label: 'NEST Protocol partners with UTU.ONE to seek and create more opportunities in DAO governance',
-              bg: News_card_bg_3,
-              logo: News_card_icon_3,
-              desc: 'NEST Protocol is delighted to announce a strategic.',
-              link: 'https://nest-protocol-82041.medium.com/nest-protocol-partners-with-utu-one-to-seek-and-create-more-opportunities-in-dao-governance-1ab02d072d7d'
             }
           ].map(item => (
             <VStack
