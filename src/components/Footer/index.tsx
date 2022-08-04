@@ -76,14 +76,14 @@ const Footer = () => {
                   navigate('docs/NEST-PVM/Concept.md')
                   window.scrollTo(0, 0)
                 }}>NEST PVM Docs</Text>
-                <Text color={'#7D7D7D'} fontWeight={'semibold'}>Know how to develop on NEST PVM</Text>
+                <Text color={'#7D7D7D'} fontWeight={'semibold'}>Learn how to develop on NEST PVM</Text>
               </VStack>
               <VStack spacing={'16px'} align={"start"}>
                 <Text fontWeight={"bold"} color={'#003232'} cursor={"pointer"} onClick={() => {
                   navigate('docs/NEST-Oracle/Concept.md')
                   window.scrollTo(0, 0)
                 }}>NEST Oracle Docs</Text>
-                <Text color={'#7D7D7D'} fontWeight={'semibold'}>Know how to use NEST Oracle</Text>
+                <Text color={'#7D7D7D'} fontWeight={'semibold'}>Learn how to use NEST Oracle</Text>
               </VStack>
               { isDesktop && (
                 <HStack spacing={'24px'}>
