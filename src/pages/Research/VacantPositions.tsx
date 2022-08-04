@@ -41,13 +41,13 @@ const VacantPositions = () => {
           whiteSpace={'break-spaces'}
           textAlign={'center'}
         >
-          NRA welcomes applicants to researchers of all levels.
+          NRA accepts applications from researchers of all levels.
           { isDesktop && ( <br/>) }
-          NRA evaluates the work of its researchers in a result-oriented manner with flexibility in terms
+          The work of NRA's researchers is evaluated in a result-oriented manner, with flexibility in terms
           { isDesktop && ( <br/>) }
-          of working location and hours. The salary is decided case by case.
+          of working location and hours. Salary is determined on an individual basis.
           { isDesktop && ( <br/>) }
-          Those interested, please send your academic CV to
+          Please send your academic CV to
           { isDesktop && ( <br/>) }
           <br/>
           <Link color={'#00A0E9'} fontWeight={'semibold'} fontSize={'15px'} zIndex={1}

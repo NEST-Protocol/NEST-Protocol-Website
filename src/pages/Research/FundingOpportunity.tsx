@@ -41,11 +41,11 @@ const FundingOpportunity = () => {
           whiteSpace={'break-spaces'}
           textAlign={'center'}
         >
-          NRA welcomes research in fields such as blockchain, finance,
+          NRA encourages research in areas such as blockchain, finance,
           { isDesktop && ( <br/>) }
           economics, game theory, machine learning, computer science, and software engineering.
           { isDesktop && ( <br/>) }
-          Those interested, please send your research proposal (maximum 10 pages) to
+          Those interested should send a research proposal (maximum of 10 pages) to
           { isDesktop && ( <br/>) }
           <br/>
           <Link color={'#00A0E9'} fontWeight={'semibold'} fontSize={'15px'} zIndex={1}

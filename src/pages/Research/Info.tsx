@@ -18,17 +18,16 @@ const Info = () => {
               whiteSpace={'break-spaces'}
             >
               <Text fontSize={'25px'}>Promote Industry <br/>Communication</Text>
-              <Text fontSize={'15px'}>NRA’s research activities include but are not
+              <Text fontSize={'15px'}>NRA’s research activities include but are not limited
                 <br/>
-                limited to writing research papers published in
+                to writing research papers published in peer-reviewed
                 <br/>
-                peer-reviewed international academic journals,
+                international academic journals, writing research
                 <br/>
-                writing research reports for the public and
+                reports for the public and investors, and organizing
                 <br/>
-                investors, and organizing conferences,
-                <br/>
-                workshops, webinars, and AMA.</Text>
+                conferences, workshops, webinars, and AMA.
+              </Text>
             </Stack>
           </Center>
           <Center color={'#003232'} fontWeight={"semibold"} w={'full'} h={'440px'} bgImage={Research_bg_3} bgPosition={"center"}
@@ -40,17 +39,17 @@ const Info = () => {
               <Text fontSize={'25px'}>Facilitate Academic
                 <br/>
                 Exploration</Text>
-              <Text fontSize={'15px'}>NRA provides funding and job opportunities for
+              <Text fontSize={'15px'}>
+                NRA offers funding and job opportunities to
                 <br/>
-                researchers in different stages. NRA and NEST
+                researchers at various stages. NRA and NEST consider
                 <br/>
-                feel honored if the support helps scholars make
+                it an honour if their assistance enables scholars to make
                 <br/>
-                breakthrough progress in academics and achieve
+                significant contributions to human society from various
                 <br/>
-                significant contributions to human society from
-                <br/>
-                various perspectives.</Text>
+                perspectives.
+              </Text>
             </Stack>
           </Center>
         </HStack>
@@ -69,12 +68,10 @@ const Info = () => {
               whiteSpace={'break-spaces'}
             >
               <Heading fontSize={'25px'} textAlign={"center"}>Promote Industry <br/>Communication</Heading>
-              <Text fontSize={'15px'} textAlign={"center"}>NRA’s research activities include but are not
-                limited to writing research papers published in
-                peer-reviewed international academic journals,
-                writing research reports for the public and
-                investors, and organizing conferences,
-                workshops, webinars, and AMA.
+              <Text fontSize={'15px'} textAlign={"center"}>
+                NRA’s research activities include but are not limited to writing research papers published in
+                peer-reviewed international academic journals, writing research reports for the public and investors,
+                and organizing conferences, workshops, webinars, and AMA.
               </Text>
             </Stack>
           </Center>
@@ -89,12 +86,11 @@ const Info = () => {
               <Heading fontSize={'25px'} textAlign={"center"}>Facilitate Academic
                 <br/>
                 Exploration</Heading>
-              <Text fontSize={'15px'} textAlign={"center"}>NRA provides funding and job opportunities for
-                researchers in different stages. NRA and NEST
-                feel honored if the support helps scholars make
-                breakthrough progress in academics and achieve
-                significant contributions to human society from
-                various perspectives.</Text>
+              <Text fontSize={'15px'} textAlign={"center"}>
+                NRA offers funding and job opportunities to researchers at various stages. NRA and NEST consider it an
+                honour if their assistance enables scholars to make significant contributions to human society from
+                various perspectives.
+              </Text>
             </Stack>
           </Center>
         </Stack>

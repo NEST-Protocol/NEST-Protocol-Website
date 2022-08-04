@@ -50,11 +50,9 @@ const Banner = () => {
           color={'#003434'}
           maxW={['full', '700px']}
         >
-          NEST Research Academy (NRA), initialized by the NEST protocol,
-          aims to boost theoretical and applied research in related
-          fields such as blockchain,finance, economics, game theory,
-          machine learning, computer science,and software engineering and
-          helps to spread this knowledge to the public.
+          The NEST Research Academy (NRA), founded by the NEST protocol, aims to promote theoretical and
+          applied research in fields such as blockchain, finance, economics, game theory, machine learning,
+          computer science, and software engineering, as well as to disseminate this knowledge to the general public.
         </Text>
       </Stack>
     </Stack>
