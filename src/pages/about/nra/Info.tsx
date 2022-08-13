@@ -8,7 +8,7 @@ const Info = () => {
     return (
       <Stack spacing={'48px'} align={'center'}>
         <HStack w={"100%"} spacing={'44px'} maxW={'1440px'}>
-          <Center color={'#003232'} fontWeight={"600"} w={'100%'} h={'440px'}
+          <Center color={'#003232'} fontWeight={"600"} w={'100%'} h={'440px'} borderRadius={'12px'}
                   bgImage={"/image/Research/Research_bg_2.jpg"} bgPosition={"center"}
                   bgSize={"cover"}>
             <Stack
@@ -29,7 +29,7 @@ const Info = () => {
               </Text>
             </Stack>
           </Center>
-          <Center color={'#003232'} fontWeight={"600"} w={'100%'} h={'440px'}
+          <Center color={'#003232'} fontWeight={"600"} w={'100%'} h={'440px'} borderRadius={'12px'}
                   bgImage={"/image/Research/Research_bg_3.jpg"} bgPosition={"center"}
                   bgSize={"cover"}>
             <Stack

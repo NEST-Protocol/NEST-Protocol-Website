@@ -9,7 +9,7 @@ const Apps = () => {
       <Stack align={"center"} spacing={0} w={'100%'} alignItems={"center"}>
         <Stack maxW={'1440px'} w={'100%'} spacing={'80px'}>
           <HStack spacing={0} w={'100%'}>
-            <Stack bgImage={'/image/NEST_Fi/NEST_Fi_bg_2.jpg'} w={'100%'} h={'100%'} align={"center"} justify={"center"}
+            <Stack bgImage={'/image/NEST_Fi/NEST_Fi_bg_2.jpg'} borderRadius={'12px'} w={'100%'} h={'100%'} align={"center"} justify={"center"}
                    bgRepeat={"no-repeat"} bgSize={"cover"}>
               <img src={'/image/NEST_Fi/iphone_1.png'} alt={''} width={'189px'} />
             </Stack>
@@ -57,7 +57,7 @@ const Apps = () => {
                 </Stack>
               </Stack>
             </Center>
-            <Stack bgImage={'/image/NEST_Fi/NEST_Fi_bg_3.jpg'} w={'100%'} h={'100%'} bgRepeat={"no-repeat"}
+            <Stack bgImage={'/image/NEST_Fi/NEST_Fi_bg_3.jpg'} borderRadius={'12px'} w={'100%'} h={'100%'} bgRepeat={"no-repeat"}
                    align={"center"} justify={"center"} bgSize={"cover"}>
               <img src={'/image/NEST_Fi/iphone_2.png'} alt={''} width={'189px'} />
             </Stack>
