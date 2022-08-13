@@ -1,0 +1,18 @@
+{
+  "item.label.NEST Fi": {
+    "message": "NEST Fi",
+    "description": "Navbar item with label NEST Fi"
+  },
+  "item.label.Developers": {
+    "message": "Developers",
+    "description": "Navbar item with label Developers"
+  },
+  "item.label.News": {
+    "message": "News",
+    "description": "Navbar item with label News"
+  },
+  "item.label.About": {
+    "message": "About",
+    "description": "Navbar item with label About"
+  }
+}

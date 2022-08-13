@@ -1,0 +1,26 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.NEST-Oracle": {
+    "message": "NEST-Oracle",
+    "description": "The label for category NEST-Oracle in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.NEST-PVM": {
+    "message": "NEST-PVM",
+    "description": "The label for category NEST-PVM in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Technical-Reference": {
+    "message": "Technical-Reference",
+    "description": "The label for category Technical-Reference in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Concept": {
+    "message": "Concept",
+    "description": "The label for category Concept in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Building-On-NEST": {
+    "message": "Building-On-NEST",
+    "description": "The label for category Building-On-NEST in sidebar tutorialSidebar"
+  }
+}
