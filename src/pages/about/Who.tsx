@@ -216,7 +216,7 @@ const Who = () => {
               </HStack>
               <HStack spacing={'30px'}>
                 <Button variant={"outline"} onClick={() => {
-                  window.open('', '_blank');
+                  window.open('https://discord.gg/C6fCtZE2', '_blank');
                 }}>
                   Discord
                 </Button>
