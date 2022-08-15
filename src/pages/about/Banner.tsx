@@ -93,7 +93,7 @@ const Banner = () => {
           <Link color={'#00A0E9'} fontWeight={600} fontSize={15} href={'/about/faqs/'}>
             FAQs <ChevronRightIcon/>
           </Link>
-          <Link color={'#00A0E9'} fontWeight={600} fontSize={15} href={'/pdf/NEST_WP_2022_08_05.pdf'} isExternal>
+          <Link color={'#00A0E9'} fontWeight={600} fontSize={15} href={'/doc/ennestwhitepaper.pdf'} isExternal>
             Whitepaper <ChevronRightIcon/>
           </Link>
         </HStack>
