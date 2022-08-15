@@ -11,7 +11,7 @@ const Apps = () => {
           <HStack spacing={0} w={'100%'}>
             <Stack bgImage={'/image/NEST_Fi/NEST_Fi_bg_2.jpg'} borderRadius={'12px'} w={'100%'} h={'100%'} align={"center"} justify={"center"}
                    bgRepeat={"no-repeat"} bgSize={"cover"}>
-              <img src={'/image/NEST_Fi/iphone_1.png'} alt={''} width={'189px'} />
+              <img src={'/image/NEST_Fi/iPhone_1.png'} alt={''} width={'189px'} />
             </Stack>
             <Center w={'100%'} h={'100%'}>
               <Stack px={'20px'}>
@@ -59,7 +59,7 @@ const Apps = () => {
             </Center>
             <Stack bgImage={'/image/NEST_Fi/NEST_Fi_bg_3.jpg'} borderRadius={'12px'} w={'100%'} h={'100%'} bgRepeat={"no-repeat"}
                    align={"center"} justify={"center"} bgSize={"cover"}>
-              <img src={'/image/NEST_Fi/iphone_2.png'} alt={''} width={'189px'} />
+              <img src={'/image/NEST_Fi/iPhone_2.png'} alt={''} width={'189px'} />
             </Stack>
           </HStack>
         </Stack>
@@ -71,7 +71,7 @@ const Apps = () => {
     <Stack spacing={'35px'}>
       <Stack bgImage={'/image/NEST_Fi/Phone_NEST_Fi_bg_2.jpg'} w={'100%'} h={'425px'} align={"center"} justify={"center"}
              bgRepeat={"no-repeat"} bgSize={"cover"}>
-        <img src={'/image/NEST_Fi/iphone_1.png'} alt={''} width={'189px'} />
+        <img src={'/image/NEST_Fi/iPhone_1.png'} alt={''} width={'189px'} />
       </Stack>
       <Stack px={'20px'} textAlign={"center"}>
         <Text fontSize={'16px'} fontWeight={'600'} m={0}>NEST Fi Futures</Text>
@@ -93,7 +93,7 @@ const Apps = () => {
       </Stack>
       <Stack bgImage={'/image/NEST_Fi/Phone_NEST_Fi_bg_3.jpg'} w={'100%'} h={'425px'} bgRepeat={"no-repeat"}
              align={"center"} justify={"center"} bgSize={"cover"}>
-        <img src={'/image/NEST_Fi/iphone_2.png'} alt={''} width={'189px'} />
+        <img src={'/image/NEST_Fi/iPhone_2.png'} alt={''} width={'189px'} />
       </Stack>
       <Stack px={'20px'} textAlign={"center"}>
         <Text fontSize={'16px'} fontWeight={'600'} m={0}>NEST Fi Options</Text>
