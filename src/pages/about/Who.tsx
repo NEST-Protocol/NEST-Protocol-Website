@@ -122,7 +122,7 @@ const Who = () => {
                   </HStack>
                   <HStack spacing={'28px'}>
                     <Button variant={"outline"} onClick={() => {
-                      window.open('https://discord.gg/C6fCtZE2', '_blank');
+                      window.open('https://discord.gg/nestprotocol', '_blank');
                     }}>
                       Discord
                     </Button>
@@ -216,7 +216,7 @@ const Who = () => {
               </HStack>
               <HStack spacing={'30px'}>
                 <Button variant={"outline"} onClick={() => {
-                  window.open('https://discord.gg/C6fCtZE2', '_blank');
+                  window.open('https://discord.gg/nestprotocol', '_blank');
                 }}>
                   Discord
                 </Button>
