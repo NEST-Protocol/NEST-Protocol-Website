@@ -16,7 +16,7 @@ export default function Home(): JSX.Element {
   return (
     <ChakraProvider theme={theme}>
       <Head>
-        <title>NEST Protocol | NEST is the stochastic computer based on PVM</title>
+        <title>NEST Protocol | The stochastic computer based on PVM</title>
       </Head>
       <Stack spacing={isDesktop ? "80px" : "56px"}>
         <Banner/>
