@@ -59,7 +59,7 @@ const Developers = () => {
                 on the basic function library.
               </Text>
               <br/>
-              <Link color={'#00A0E9'} fontSize={12} href={'/docs/NEST-PVM/Concept'}>
+              <Link color={'#00A0E9'} fontSize={12} href={'/docs/Concept/What-is-NEST'}>
                 Learn more about NEST PVM<ChevronRightIcon/>
               </Link>
             </Stack>

@@ -66,7 +66,7 @@ const TheFooter = () => {
               <Stack px={['0', '16px']} spacing={isDesktop ? "44px" : "22px"} minW={'300px'}>
                 <VStack spacing={'20px'} align={"start"}>
                   <Text fontWeight={"700"} color={'#003232'} cursor={"pointer"} onClick={() => {
-                    window.location.pathname = '/docs/NEST-PVM/Concept'
+                    window.location.pathname = '/docs/Concept/What-is-NEST'
                   }}>Developer Docs</Text>
                   <Text color={'#7D7D7D'} fontWeight={'600'}>Learn how to develop on NEST PVM</Text>
                 </VStack>
