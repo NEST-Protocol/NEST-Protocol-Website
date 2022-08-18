@@ -9,29 +9,24 @@ import {Stack, useMediaQuery, ChakraProvider} from "@chakra-ui/react";
 import TheFooter from "@site/src/components/TheFooter";
 import Head from "@docusaurus/Head";
 import theme from "../chakra"
-import BrowserOnly from '@docusaurus/BrowserOnly';
 
 
 export default function Home(): JSX.Element {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
   return (
-    <BrowserOnly>
-      {() => (
-        <ChakraProvider theme={theme}>
-          <Head>
-            <title>Home | NEST Protocol</title>
-          </Head>
-          <Stack spacing={isDesktop ? "80px" : "56px"}>
-            <Banner/>
-            <NestFi/>
-            <Developers/>
-            <News/>
-            <Research/>
-            <Partners/>
-            <TheFooter/>
-          </Stack>
-        </ChakraProvider>
-      )}
-    </BrowserOnly>
+    <ChakraProvider theme={theme}>
+      <Head>
+        <title>NEST Protocol | NEST is the stochastic computer based on PVM</title>
+      </Head>
+      <Stack spacing={isDesktop ? "80px" : "56px"}>
+        <Banner/>
+        <NestFi/>
+        <Developers/>
+        <News/>
+        <Research/>
+        <Partners/>
+        <TheFooter/>
+      </Stack>
+    </ChakraProvider>
   );
 }

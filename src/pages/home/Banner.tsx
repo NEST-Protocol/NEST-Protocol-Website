@@ -44,9 +44,9 @@ const Banner = () => {
             color={'#003434'}
             zIndex={1}
           >
-            NEST is a blockchain-based probabilistic virtual machine (PVM) system
+            NEST is the stochastic computer based on PVM,
             <br/>
-            with web3 applications of DeFi, GameFi, and NFT built on it.
+            enables the generation and programming of stochastic assets.
           </Text>
         ) : (
           <Stack>
@@ -58,8 +58,7 @@ const Banner = () => {
               zIndex={1}
               px={'24px'}
             >
-              NEST is a blockchain-based probabilistic virtual machine (PVM) system with web3 applications of DeFi,
-              GameFi, and NFT built on it.
+              NEST is the stochastic computer based on PVM, enables the generation and programming of stochastic assets.
             </Text>
           </Stack>
         )}
