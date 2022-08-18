@@ -27,7 +27,7 @@ const Research = () => {
           objectFit={'cover'}
           overflow={"hidden"}
         />
-        <chakra.img src={"/image/Home/icon_2.png"} zIndex={1} h={isDesktop ? "110px" : "55px"}/>
+        <chakra.img src={"/image/Home/icon_2.png"} zIndex={1} h={isDesktop ? "90px" : "55px"}/>
         <Heading
           fontSize={isDesktop ? "24px" : "17px"}
           fontWeight={'600'}
