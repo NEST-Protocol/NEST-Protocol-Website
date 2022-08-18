@@ -17,7 +17,7 @@ const Developers = () => {
                 NEST PVM
               </Text>
               <Text>
-                NEST Probabilistic Virtual Machine (PVM) is a virtual machine-like structure based on the basic function library.
+                NEST Probabilistic Virtual Machine (NEST PVM) is a virtual machine-like structure based on the basic function library.
               </Text>
               <Link color={'#00A0E9'} fontSize={15} href={'/docs/Concept/What-is-NEST'}>
                 Learn more about NEST PVM<ChevronRightIcon/>
@@ -54,7 +54,7 @@ const Developers = () => {
                 NEST PVM
               </Text>
               <Text textAlign={"center"} fontSize={12}>
-                NEST Probabilistic Virtual Machine (PVM)
+                NEST Probabilistic Virtual Machine (NEST PVM)
                 is a virtual machine-like structure based
                 on the basic function library.
               </Text>

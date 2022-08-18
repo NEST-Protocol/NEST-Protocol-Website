@@ -1,4 +1,4 @@
-import {Stack, Text, Center, Button, useMediaQuery, HStack} from "@chakra-ui/react";
+import {Stack, Text, Center, Button, useMediaQuery, HStack, Heading} from "@chakra-ui/react";
 import React from "react";
 
 const Apps = () => {
@@ -11,11 +11,11 @@ const Apps = () => {
           <HStack spacing={0} w={'100%'}>
             <Stack bgImage={'/image/NEST_Fi/NEST_Fi_bg_2.jpg'} borderRadius={'12px'} w={'100%'} h={'100%'} align={"center"} justify={"center"}
                    bgRepeat={"no-repeat"} bgSize={"cover"}>
-              <img src={'/image/NEST_Fi/iPhone_1.png'} alt={''} width={'189px'} />
+              <img src={'/image/NEST_Fi/iPhone_1.png'} alt={'NEST Fi Futures'} width={'189px'} />
             </Stack>
             <Center w={'100%'} h={'100%'}>
               <Stack px={'20px'}>
-                <Text fontSize={'24px'} fontWeight={'600'} m={0}>NEST Fi Futures</Text>
+                <Heading fontSize={'24px'} fontWeight={'600'} m={0}>NEST Fi Futures</Heading>
                 <Text fontSize={'15px'} fontWeight={'600'}>
                   Trade BTC/USDT and ETH/USDT futures directly
                   <br/>
@@ -38,7 +38,7 @@ const Apps = () => {
           <HStack w={'100%'} spacing={0}>
             <Center w={'100%'} h={'100%'}>
               <Stack px={'20px'}>
-                <Text fontSize={'24px'} fontWeight={'600'} m={0}>NEST Fi Options</Text>
+                <Heading fontSize={'24px'} fontWeight={'600'} m={0}>NEST Fi Options</Heading>
                 <Text fontSize={'15px'} fontWeight={'600'}>
                   Buy options with flexible choices on exercise date,
                   <br/>
@@ -59,7 +59,7 @@ const Apps = () => {
             </Center>
             <Stack bgImage={'/image/NEST_Fi/NEST_Fi_bg_3.jpg'} borderRadius={'12px'} w={'100%'} h={'100%'} bgRepeat={"no-repeat"}
                    align={"center"} justify={"center"} bgSize={"cover"}>
-              <img src={'/image/NEST_Fi/iPhone_2.png'} alt={''} width={'189px'} />
+              <img src={'/image/NEST_Fi/iPhone_2.png'} alt={'NEST Fi Options'} width={'189px'} />
             </Stack>
           </HStack>
         </Stack>
@@ -71,10 +71,10 @@ const Apps = () => {
     <Stack spacing={'35px'}>
       <Stack bgImage={'/image/NEST_Fi/Phone_NEST_Fi_bg_2.jpg'} w={'100%'} h={'425px'} align={"center"} justify={"center"}
              bgRepeat={"no-repeat"} bgSize={"cover"}>
-        <img src={'/image/NEST_Fi/iPhone_1.png'} alt={''} width={'189px'} />
+        <img src={'/image/NEST_Fi/iPhone_1.png'} alt={'NEST Fi Futures'} width={'189px'} />
       </Stack>
       <Stack px={'20px'} textAlign={"center"}>
-        <Text fontSize={'16px'} fontWeight={'600'} m={0}>NEST Fi Futures</Text>
+        <Heading fontSize={'16px'} fontWeight={'600'} m={0}>NEST Fi Futures</Heading>
         <Text fontSize={'12px'} fontWeight={'600'}>
           Trade BTC/USDT and ETH/USDT futures directly
           from your wallet without trading fee.
@@ -93,10 +93,10 @@ const Apps = () => {
       </Stack>
       <Stack bgImage={'/image/NEST_Fi/Phone_NEST_Fi_bg_3.jpg'} w={'100%'} h={'425px'} bgRepeat={"no-repeat"}
              align={"center"} justify={"center"} bgSize={"cover"}>
-        <img src={'/image/NEST_Fi/iPhone_2.png'} alt={''} width={'189px'} />
+        <img src={'/image/NEST_Fi/iPhone_2.png'} alt={'NEST Fi Options'} width={'189px'} />
       </Stack>
       <Stack px={'20px'} textAlign={"center"}>
-        <Text fontSize={'16px'} fontWeight={'600'} m={0}>NEST Fi Options</Text>
+        <Heading fontSize={'16px'} fontWeight={'600'} m={0}>NEST Fi Options</Heading>
         <Text fontSize={'12px'} fontWeight={'600'}>
           Buy options with flexible choices on exercise date,
           <br/>

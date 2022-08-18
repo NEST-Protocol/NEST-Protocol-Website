@@ -1,4 +1,4 @@
-import {Button, HStack, Link, Stack, Text, useMediaQuery} from "@chakra-ui/react";
+import {Button, Heading, HStack, Link, Stack, Text, useMediaQuery} from "@chakra-ui/react";
 import React from "react";
 import {ChevronRightIcon} from "@chakra-ui/icons";
 
@@ -11,12 +11,12 @@ const Who = () => {
              textAlign={"center"} bgRepeat={"no-repeat"} bgSize={"cover"} py={'40px'}>
         { isDesktop ? (
           <>
-            <Text fontSize={'33px'} fontWeight={'700'} mb={0}>Who is Behind NEST Protocol</Text>
+            <Heading fontSize={'33px'} fontWeight={'700'} mb={0}>Who is Behind NEST Protocol</Heading>
             <Text fontWeight={'700'} fontSize={['12px', '15px']}>The NEST protocol is coordinated by the NEST DAO and has the following organisation:</Text>
           </>
         ) : (
           <>
-            <Text fontSize={'25px'} fontWeight={'700'} mb={0}>Who is Behind<br/>NEST Protocol</Text>
+            <Heading fontSize={'25px'} fontWeight={'700'} mb={0}>Who is Behind<br/>NEST Protocol</Heading>
             <Text fontWeight={'700'} fontSize={['12px', '15px']}>The NEST protocol is coordinated by the<br/>NEST DAO and has the following organisation:</Text>
           </>
         ) }
@@ -28,7 +28,7 @@ const Who = () => {
               <Stack w={'500px'} h={'100%'} bgImage={'/image/About/About_NRA_icon.png'} bgRepeat={"no-repeat"} bgSize={"cover"}>
               </Stack>
               <Stack spacing={'25px'} w={'500px'}>
-                <Text fontSize={'25px'} fontWeight={'600'} ml={'-260px'} mb={'10px'}>NEST Research Academy (NRA)</Text>
+                <Heading fontSize={'25px'} fontWeight={'600'} ml={'-260px'} mb={'10px'}>NEST Research Academy (NRA)</Heading>
                 <Text fontSize={'15px'} fontWeight={'600'}>
                   The NRA core is made up of practitioners from<br/>
                   academic and industrial institutions in Europe<br/>
@@ -51,7 +51,7 @@ const Who = () => {
               <Stack w={'500px'} h={'100%'} bgImage={'/image/About/About_NIB_icon.png'} bgRepeat={"no-repeat"} bgSize={"cover"}>
               </Stack>
               <Stack spacing={'25px'} w={'500px'}>
-                <Text fontSize={'25px'} fontWeight={'600'} ml={'-260px'} mb={'10px'}>NEST Influence Block (NIB)</Text>
+                <Heading fontSize={'25px'} fontWeight={'600'} ml={'-260px'} mb={'10px'}>NEST Influence Block (NIB)</Heading>
                 <Text fontSize={'15px'} fontWeight={'600'}>
                   The main goal of NIB is to spread the new concept,<br/>
                   category,and vision of NEST, provide the public<br/>
@@ -76,7 +76,7 @@ const Who = () => {
               <Stack w={'500px'} h={'100%'} bgImage={'/image/About/About_NDA_icon.png'} bgRepeat={"no-repeat"} bgSize={"cover"}>
               </Stack>
               <Stack spacing={'25px'} w={'500px'}>
-                <Text fontSize={'25px'} fontWeight={'600'} ml={'-260px'} mb={'10px'}>NEST Developer Alliance (NDA)</Text>
+                <Heading fontSize={'25px'} fontWeight={'600'} ml={'-260px'} mb={'10px'}>NEST Developer Alliance (NDA)</Heading>
                 <Text fontSize={'15px'} fontWeight={'600'}>
                   NDA is in charge of the development of core<br/>
                   protocols and peripheral applications, as well<br/>
@@ -96,7 +96,7 @@ const Who = () => {
               <Stack w={'500px'} h={'100%'} bgImage={'/image/About/About_Community_icon.png'} bgRepeat={"no-repeat"} bgSize={"cover"}>
               </Stack>
               <Stack spacing={'25px'} w={'500px'}>
-                <Text fontSize={'25px'} fontWeight={'600'} ml={'-260px'} mb={'10px'}>NEST Community</Text>
+                <Heading fontSize={'25px'} fontWeight={'600'} ml={'-260px'} mb={'10px'}>NEST Community</Heading>
                 <Text fontSize={'15px'} fontWeight={'600'}>
                   The NEST Community is primarily responsible<br/>
                   for the community's growth, the promotion of<br/>
@@ -140,7 +140,7 @@ const Who = () => {
       ) : (
         <Stack px={'24px'} spacing={'40px'} textAlign={"center"}>
           <Stack spacing={'20px'} justify={"center"} h={'350px'} w={'full'} py={'28px'} bgImage={'/image/About/About_NRA_icon.png'} bgRepeat={"no-repeat"} bgSize={"cover"}>
-            <Text fontSize={'18px'} fontWeight={'600'}>NEST Research Academy (NRA)</Text>
+            <Heading fontSize={'18px'} fontWeight={'600'}>NEST Research Academy (NRA)</Heading>
             <Text fontSize={'12px'} fontWeight={'600'}>
               The NRA core is made up of practitioners from<br/>
               academic and industrial institutions in Europe<br/>
@@ -157,7 +157,7 @@ const Who = () => {
             </HStack>
           </Stack>
           <Stack spacing={'20px'} justify={"center"} h={'350px'} w={'full'} py={'28px'} bgImage={'/image/About/About_NIB_icon.png'} bgRepeat={"no-repeat"} bgSize={"cover"}>
-            <Text fontSize={'18px'} fontWeight={'600'} mb={'10px'}>NEST Influence Block (NIB)</Text>
+            <Heading fontSize={'18px'} fontWeight={'600'} mb={'10px'}>NEST Influence Block (NIB)</Heading>
             <Text fontSize={'12px'} fontWeight={'600'}>
               The main goal of NIB is to spread the new concept,<br/>
               category,and vision of NEST, provide the public<br/>
@@ -176,7 +176,7 @@ const Who = () => {
             </HStack>
           </Stack>
           <Stack spacing={'20px'} justify={"center"} h={'350px'} w={'full'} py={'28px'} bgImage={'/image/About/About_NDA_icon.png'} bgRepeat={"no-repeat"} bgSize={"cover"}>
-            <Text fontSize={'18px'} fontWeight={'600'} mb={'10px'}>NEST Developer Alliance (NDA)</Text>
+            <Heading fontSize={'18px'} fontWeight={'600'} mb={'10px'}>NEST Developer Alliance (NDA)</Heading>
             <Text fontSize={'12px'} fontWeight={'600'}>
               NDA is in charge of the development of core<br/>
               protocols and peripheral applications, as well<br/>
@@ -190,7 +190,7 @@ const Who = () => {
             </HStack>
           </Stack>
           <Stack spacing={'20px'} justify={"center"} h={'350px'} w={'full'} py={'28px'} bgImage={'/image/About/About_Community_icon.png'} bgRepeat={"no-repeat"} bgSize={"cover"}>
-            <Text fontSize={'18px'} fontWeight={'600'}>NEST Community</Text>
+            <Heading fontSize={'18px'} fontWeight={'600'}>NEST Community</Heading>
             <Text fontSize={'12px'} fontWeight={'600'}>
               The NEST Community is primarily responsible<br/>
               for the community's growth, the promotion of<br/>

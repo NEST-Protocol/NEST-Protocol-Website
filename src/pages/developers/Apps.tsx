@@ -14,13 +14,13 @@ const Apps = () => {
               bgImage={'/image/Developer/Developers_bg_2.jpg'} borderRadius={'12px'}
               w={'100%'} h={'100%'} bgRepeat={"no-repeat"}
               align={"center"} justify={"center"} bgSize={"cover"}>
-              <img src={'/image/Developer/Flowchart_1.svg'} alt={''} width={'98%'}/>
+              <img src={'/image/Developer/Flowchart_1.svg'} alt={'what is NEST PVM'} width={'98%'}/>
             </Stack>
             <Center w={'100%'} h={'100%'} minW={'500px'}>
               <Stack px={'20px'}>
                 <Text fontSize={'24px'} fontWeight={'600'} m={0}>NEST PVM</Text>
                 <Text fontSize={'15px'} fontWeight={'600'}>
-                  NEST Probabilistic Virtual Machine (PVM) is a virtual
+                  NEST Probabilistic Virtual Machine (NEST PVM) is a virtual
                   <br/>
                   machine-like structure based on the basic function
                   <br/>
@@ -62,7 +62,7 @@ const Apps = () => {
                    align={"center"} justify={"center"} bgSize={"cover"} borderRadius={'12px'}>
               <img
                 src={'/image/Developer/Flowchart_2.svg'}
-                alt={''} height={'94%'}/>
+                alt={'what is NEST Oracle'} height={'94%'}/>
             </Stack>
           </HStack>
         </Stack>
@@ -74,12 +74,12 @@ const Apps = () => {
     <Stack spacing={'35px'}>
       <Stack bgImage={'/image/Developer/Developers_bg_2.jpg'} w={'100%'} h={'375px'} bgRepeat={"no-repeat"} borderRadius={'12px'}
              align={"center"} justify={"center"} bgSize={"cover"}>
-        <img src={'/image/Developer/Phone_Flowchart_1.svg'} alt={''} width={'98%'}/>
+        <img src={'/image/Developer/Phone_Flowchart_1.svg'} alt={'what is NEST PVM'} width={'98%'}/>
       </Stack>
       <Stack px={'20px'} textAlign={"center"}>
         <Text fontSize={'16px'} fontWeight={'600'} m={0}>NEST PVM</Text>
         <Text fontSize={'12px'} fontWeight={'600'}>
-          NEST Probabilistic Virtual Machine (PVM) is a virtual
+          NEST Probabilistic Virtual Machine (NEST PVM) is a virtual
           machine-like structure based on the basic function
           library. Developers can develop various exciting
           applications based on the function library, similar
@@ -93,7 +93,7 @@ const Apps = () => {
       </Stack>
       <Stack bgImage={'/image/Developer/Developers_bg_3.jpg'} w={'100%'} h={'375px'} bgRepeat={"no-repeat"} borderRadius={'12px'}
              align={"center"} justify={"center"} bgSize={"cover"}>
-        <img src={'/image/Developer/Phone_Flowchart_2.svg'} alt={''} height={'375px'}/>
+        <img src={'/image/Developer/Phone_Flowchart_2.svg'} alt={'what is NEST Oracle'} height={'375px'}/>
       </Stack>
       <Stack px={'20px'} textAlign={"center"}>
         <Text fontSize={'16px'} fontWeight={'600'} m={0}>NEST Oracle</Text>
