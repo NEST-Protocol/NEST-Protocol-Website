@@ -30,7 +30,8 @@ const TheFooter = () => {
           objectPosition={"center"}
         />
         <Stack maxW={'1440px'} justify={'space-around'} w={'100%'} zIndex={1} py={isDesktop ? "88px" : "66px"}>
-          <Wrap spacing={isDesktop ? "44px" : "22px"} justify={"space-between"} fontSize={isDesktop ? "15px" : "12px"} w={"100%"}>
+          <Wrap spacing={isDesktop ? "44px" : "22px"} justify={"space-between"} fontSize={isDesktop ? "15px" : "12px"}
+                w={"100%"}>
             <WrapItem>
               <Stack px={['0', '16px']} spacing={isDesktop ? "44px" : "22px"} minW={'300px'}>
                 <VStack align={"start"} spacing={'20px'}>
@@ -75,7 +76,7 @@ const TheFooter = () => {
                   }}>FAQs</Text>
                   <Text color={'#7D7D7D'} fontWeight={'600'}>Frequently asked questions</Text>
                 </VStack>
-                { isDesktop && (
+                {isDesktop && (
                   <HStack spacing={'24px'}>
                     <chakra.img
                       alt={'https://github.com/NEST-Protocol'}
@@ -118,7 +119,7 @@ const TheFooter = () => {
                       }}
                     />
                   </HStack>
-                ) }
+                )}
               </Stack>
             </WrapItem>
             <WrapItem w={'400px'}>
@@ -134,18 +135,18 @@ const TheFooter = () => {
                   w={'100%'}
                 ></chakra.div>
                 <Spacer/>
-                { isDesktop && (
+                {isDesktop && (
                   <HStack pt={'80px'}>
                     <Spacer/>
                     <Text color={'#7D7D7D'} fontSize={'15px'} fontWeight={'600'}>
                       ©2022 NEST
                     </Text>
                   </HStack>
-                ) }
+                )}
               </Stack>
             </WrapItem>
-            <WrapItem w={"full"} justifyContent={"center"}>
-              { !isDesktop && (
+            {!isDesktop && (
+              <WrapItem w={"full"} justifyContent={"center"}>
                 <HStack spacing={'24px'}>
                   <chakra.img
                     alt={'https://github.com/NEST-Protocol'}
@@ -188,15 +189,15 @@ const TheFooter = () => {
                     }}
                   />
                 </HStack>
-              )}
-            </WrapItem>
-            { !isDesktop && (
+              </WrapItem>
+            )}
+            {!isDesktop && (
               <HStack justify={"center"} w={'full'}>
                 <Text color={'#7D7D7D'} fontSize={'12px'} fontWeight={'600'}>
                   ©2022 NEST
                 </Text>
               </HStack>
-            ) }
+            )}
           </Wrap>
         </Stack>
       </Stack>
