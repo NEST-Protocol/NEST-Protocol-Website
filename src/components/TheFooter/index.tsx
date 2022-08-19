@@ -118,6 +118,16 @@ const TheFooter = () => {
                         window.open('https://nest-protocol-82041.medium.com/', '_blank')
                       }}
                     />
+                    <chakra.img
+                      alt={'https://discord.gg/nestprotocol'}
+                      src={"/image/Footer/discord_icon.svg"}
+                      width={'44px'}
+                      height={'44px'}
+                      cursor={"pointer"}
+                      onClick={() => {
+                        window.open('https://discord.gg/nestprotocol', '_blank')
+                      }}
+                    />
                   </HStack>
                 )}
               </Stack>
@@ -186,6 +196,16 @@ const TheFooter = () => {
                     cursor={"pointer"}
                     onClick={() => {
                       window.open('https://nest-protocol-82041.medium.com/', '_blank')
+                    }}
+                  />
+                  <chakra.img
+                    alt={'https://discord.gg/nestprotocol'}
+                    src={"/image/Footer/discord_icon.svg"}
+                    width={'44px'}
+                    height={'44px'}
+                    cursor={"pointer"}
+                    onClick={() => {
+                      window.open('https://discord.gg/nestprotocol', '_blank')
                     }}
                   />
                 </HStack>
