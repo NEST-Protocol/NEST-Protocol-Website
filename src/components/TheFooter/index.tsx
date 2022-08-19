@@ -1,12 +1,13 @@
-import {chakra, HStack, Spacer, Stack, Text, useMediaQuery, VStack, Wrap, WrapItem} from "@chakra-ui/react";
+import {chakra, HStack, Spacer, Stack, Text, useMediaQuery, VStack, Wrap, WrapItem, ChakraProvider} from "@chakra-ui/react";
 import React from "react";
 import Head from '@docusaurus/Head';
+import theme from "../../chakra"
 
 const TheFooter = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
 
   return (
-    <>
+    <ChakraProvider theme={theme} >
       <Head>
         <script src="https://crypto.com/price/static/widget/index.js"></script>
       </Head>
@@ -201,7 +202,7 @@ const TheFooter = () => {
           </Wrap>
         </Stack>
       </Stack>
-    </>
+    </ChakraProvider>
   )
 }
 
