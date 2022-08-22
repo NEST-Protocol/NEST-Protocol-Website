@@ -17,19 +17,19 @@ const NESTFi = () => {
             w={'100%'}
             justify={'center'}
             spacing={isDesktop ? "16px" : "13px"}
-            bgImage={isDesktop ? "/image/Home/Home_bg_2.jpg" : "/image/Home/Home_bg_2_phone.jpg"}
+            bgImage={isDesktop ? "/image/Home/Home_bg_2.webp" : "/image/Home/Home_bg_2_phone.webp"}
             bgSize={'cover'}
             bgPosition={"center"}
           >
             <chakra.img
               position={"absolute"}
-              src={isDesktop ? "/image/Home/Home_bg_icon_2.png" : "/image/Home/Home_bg_icon_2_phone.png"}
+              src={isDesktop ? "/image/Home/Home_bg_icon_2.webp" : "/image/Home/Home_bg_icon_2_phone.webp"}
               alt={'NEST'}
               minH={'440px'}
               objectFit={'cover'}
               overflow={"hidden"}
             />
-            <chakra.img src={"/image/Home/icon_1.png"} zIndex={1} h={isDesktop ? "90px" : "55px"}/>
+            <chakra.img src={"/image/Home/icon_1.webp"} zIndex={1} h={isDesktop ? "90px" : "55px"}/>
             <Heading
               fontSize={isDesktop ? "24px" : "17px"}
               fontWeight={'600'}

@@ -24,7 +24,7 @@ const Banner2 = () => {
           </HStack>
         )}
       </Stack>
-      <Stack w={'100%'} align={"center"} pt={'48px'} h={'440px'} bgImage={'/image/Research/RNA_bg_icon.png'}
+      <Stack w={'100%'} align={"center"} pt={'48px'} h={'440px'} bgImage={'/image/Research/RNA_bg_icon.webp'}
              bgRepeat={"no-repeat"} bgSize={["120%", "contain"]} bgPos={"center"} justify={"center"}>
         <Stack spacing={isDesktop ? "44px" : "22px"}>
           {isDesktop ? (

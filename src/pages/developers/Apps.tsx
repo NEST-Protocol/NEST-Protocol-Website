@@ -11,7 +11,7 @@ const Apps = () => {
         <Stack maxW={'1440px'} w={'100%'} spacing={'80px'}>
           <HStack spacing={0} w={'100%'}>
             <Stack
-              bgImage={'/image/Developer/Developers_bg_2.jpg'} borderRadius={'12px'}
+              bgImage={'/image/Developer/Developers_bg_2.webp'} borderRadius={'12px'}
               w={'100%'} h={'100%'} bgRepeat={"no-repeat"}
               align={"center"} justify={"center"} bgSize={"cover"}>
               <img src={'/image/Developer/Flowchart_1.svg'} alt={'what is NEST PVM'} width={'98%'}/>
@@ -58,7 +58,7 @@ const Apps = () => {
                 </HStack>
               </Stack>
             </Center>
-            <Stack bgImage={'/image/Developer/Developers_bg_3.jpg'} w={'100%'} h={'100%'} bgRepeat={"no-repeat"}
+            <Stack bgImage={'/image/Developer/Developers_bg_3.webp'} w={'100%'} h={'100%'} bgRepeat={"no-repeat"}
                    align={"center"} justify={"center"} bgSize={"cover"} borderRadius={'12px'}>
               <img
                 src={'/image/Developer/Flowchart_2.svg'}
@@ -72,7 +72,7 @@ const Apps = () => {
 
   return (
     <Stack spacing={'35px'}>
-      <Stack bgImage={'/image/Developer/Developers_bg_2.jpg'} w={'100%'} h={'375px'} bgRepeat={"no-repeat"} borderRadius={'12px'}
+      <Stack bgImage={'/image/Developer/Developers_bg_2.webp'} w={'100%'} h={'375px'} bgRepeat={"no-repeat"} borderRadius={'12px'}
              align={"center"} justify={"center"} bgSize={"cover"}>
         <img src={'/image/Developer/Phone_Flowchart_1.svg'} alt={'what is NEST PVM'} width={'98%'}/>
       </Stack>
@@ -91,7 +91,7 @@ const Apps = () => {
           </Link>
         </Stack>
       </Stack>
-      <Stack bgImage={'/image/Developer/Developers_bg_3.jpg'} w={'100%'} h={'375px'} bgRepeat={"no-repeat"} borderRadius={'12px'}
+      <Stack bgImage={'/image/Developer/Developers_bg_3.webp'} w={'100%'} h={'375px'} bgRepeat={"no-repeat"} borderRadius={'12px'}
              align={"center"} justify={"center"} bgSize={"cover"}>
         <img src={'/image/Developer/Phone_Flowchart_2.svg'} alt={'what is NEST Oracle'} height={'375px'}/>
       </Stack>

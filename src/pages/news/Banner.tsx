@@ -10,7 +10,7 @@ const Banner = () => {
       align={'center'}
       justify={'center'}
       minH={isDesktop ? "410px" : "300px"}
-      bgImage={isDesktop ? "/image/News/News_bg_1.jpg" : "/image/News/News_bg_phone.jpg"}
+      bgImage={isDesktop ? "/image/News/News_bg_1.webp" : "/image/News/News_bg_phone.webp"}
       bgSize={'cover'}
       bgPosition={"center"}
       px={'24px'}
@@ -19,7 +19,7 @@ const Banner = () => {
       <TheHeader />
       <chakra.img
         position={"absolute"}
-        src={isDesktop ? "/image/News/News_bg_icon_1.png" : "/image/News/News_bg_icon_phone.jpg"}
+        src={isDesktop ? "/image/News/News_bg_icon_1.webp" : "/image/News/News_bg_icon_phone.webp"}
         alt={'NEST'}
         minH={isDesktop ? "410px" : "300px"}
         objectFit={'cover'}

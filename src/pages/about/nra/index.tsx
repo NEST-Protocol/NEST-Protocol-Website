@@ -8,7 +8,6 @@ import Banner2 from "@site/src/pages/about/nra/Banner2";
 import TheFooter from "@site/src/components/TheFooter";
 import Head from "@docusaurus/Head";
 import theme from "../../../chakra";
-import BrowserOnly from '@docusaurus/BrowserOnly';
 
 
 export default function NRA(): JSX.Element {
@@ -18,6 +17,7 @@ export default function NRA(): JSX.Element {
     <ChakraProvider theme={theme}>
       <Head>
         <title>NRA | NEST Protocol</title>
+        <script src={"https://crypto.com/price/static/widget/index.js"}></script>
       </Head>
       <Stack spacing={isDesktop ? "80px" : "56px"}>
         <Banner/>

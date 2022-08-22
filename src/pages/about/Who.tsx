@@ -7,7 +7,7 @@ const Who = () => {
 
   return (
     <>
-      <Stack align={"center"} justify={"center"} bgImage={'/image/About/About_bg_2.jpg'}
+      <Stack align={"center"} justify={"center"} bgImage={'/image/About/About_bg_2.webp'}
              textAlign={"center"} bgRepeat={"no-repeat"} bgSize={"cover"} py={'40px'}>
         { isDesktop ? (
           <>
@@ -25,7 +25,7 @@ const Who = () => {
         <>
           <Stack align={"center"} justify={"center"} h={'500px'}>
             <HStack h={'100%'} spacing={'40px'}>
-              <Stack w={'500px'} h={'100%'} bgImage={'/image/About/About_NRA_icon.png'} bgRepeat={"no-repeat"} bgSize={"cover"}>
+              <Stack w={'500px'} h={'100%'} bgImage={'/image/About/About_NRA_icon.webp'} bgRepeat={"no-repeat"} bgSize={"cover"}>
               </Stack>
               <Stack spacing={'25px'} w={'500px'}>
                 <Heading fontSize={'25px'} fontWeight={'600'} ml={'-260px'} mb={'10px'}>NEST Research Academy (NRA)</Heading>
@@ -48,7 +48,7 @@ const Who = () => {
           </Stack>
           <Stack align={"center"} justify={"center"} h={'500px'}>
             <HStack h={'100%'} spacing={'40px'}>
-              <Stack w={'500px'} h={'100%'} bgImage={'/image/About/About_NIB_icon.png'} bgRepeat={"no-repeat"} bgSize={"cover"}>
+              <Stack w={'500px'} h={'100%'} bgImage={'/image/About/About_NIB_icon.webp'} bgRepeat={"no-repeat"} bgSize={"cover"}>
               </Stack>
               <Stack spacing={'25px'} w={'500px'}>
                 <Heading fontSize={'25px'} fontWeight={'600'} ml={'-260px'} mb={'10px'}>NEST Influence Block (NIB)</Heading>
@@ -73,7 +73,7 @@ const Who = () => {
           </Stack>
           <Stack align={"center"} justify={"center"} h={'500px'}>
             <HStack h={'100%'} spacing={'40px'}>
-              <Stack w={'500px'} h={'100%'} bgImage={'/image/About/About_NDA_icon.png'} bgRepeat={"no-repeat"} bgSize={"cover"}>
+              <Stack w={'500px'} h={'100%'} bgImage={'/image/About/About_NDA_icon.webp'} bgRepeat={"no-repeat"} bgSize={"cover"}>
               </Stack>
               <Stack spacing={'25px'} w={'500px'}>
                 <Heading fontSize={'25px'} fontWeight={'600'} ml={'-260px'} mb={'10px'}>NEST Developer Alliance (NDA)</Heading>
@@ -93,7 +93,7 @@ const Who = () => {
           </Stack>
           <Stack align={"center"} justify={"center"} h={'500px'}>
             <HStack h={'100%'} spacing={'40px'}>
-              <Stack w={'500px'} h={'100%'} bgImage={'/image/About/About_Community_icon.png'} bgRepeat={"no-repeat"} bgSize={"cover"}>
+              <Stack w={'500px'} h={'100%'} bgImage={'/image/About/About_Community_icon.webp'} bgRepeat={"no-repeat"} bgSize={"cover"}>
               </Stack>
               <Stack spacing={'25px'} w={'500px'}>
                 <Heading fontSize={'25px'} fontWeight={'600'} ml={'-260px'} mb={'10px'}>NEST Community</Heading>
@@ -139,7 +139,7 @@ const Who = () => {
         </>
       ) : (
         <Stack px={'24px'} spacing={'40px'} textAlign={"center"}>
-          <Stack spacing={'20px'} justify={"center"} h={'350px'} w={'full'} py={'28px'} bgImage={'/image/About/About_NRA_icon.png'} bgRepeat={"no-repeat"} bgSize={"cover"}>
+          <Stack spacing={'20px'} justify={"center"} h={'350px'} w={'full'} py={'28px'} bgImage={'/image/About/About_NRA_icon.webp'} bgRepeat={"no-repeat"} bgSize={"cover"}>
             <Heading fontSize={'18px'} fontWeight={'600'}>NEST Research Academy (NRA)</Heading>
             <Text fontSize={'12px'} fontWeight={'600'}>
               The NRA core is made up of practitioners from<br/>
@@ -156,7 +156,7 @@ const Who = () => {
               </Link>
             </HStack>
           </Stack>
-          <Stack spacing={'20px'} justify={"center"} h={'350px'} w={'full'} py={'28px'} bgImage={'/image/About/About_NIB_icon.png'} bgRepeat={"no-repeat"} bgSize={"cover"}>
+          <Stack spacing={'20px'} justify={"center"} h={'350px'} w={'full'} py={'28px'} bgImage={'/image/About/About_NIB_icon.webp'} bgRepeat={"no-repeat"} bgSize={"cover"}>
             <Heading fontSize={'18px'} fontWeight={'600'} mb={'10px'}>NEST Influence Block (NIB)</Heading>
             <Text fontSize={'12px'} fontWeight={'600'}>
               The main goal of NIB is to spread the new concept,<br/>
@@ -175,7 +175,7 @@ const Who = () => {
               </Link>
             </HStack>
           </Stack>
-          <Stack spacing={'20px'} justify={"center"} h={'350px'} w={'full'} py={'28px'} bgImage={'/image/About/About_NDA_icon.png'} bgRepeat={"no-repeat"} bgSize={"cover"}>
+          <Stack spacing={'20px'} justify={"center"} h={'350px'} w={'full'} py={'28px'} bgImage={'/image/About/About_NDA_icon.webp'} bgRepeat={"no-repeat"} bgSize={"cover"}>
             <Heading fontSize={'18px'} fontWeight={'600'} mb={'10px'}>NEST Developer Alliance (NDA)</Heading>
             <Text fontSize={'12px'} fontWeight={'600'}>
               NDA is in charge of the development of core<br/>
@@ -189,7 +189,7 @@ const Who = () => {
               </Link>
             </HStack>
           </Stack>
-          <Stack spacing={'20px'} justify={"center"} h={'350px'} w={'full'} py={'28px'} bgImage={'/image/About/About_Community_icon.png'} bgRepeat={"no-repeat"} bgSize={"cover"}>
+          <Stack spacing={'20px'} justify={"center"} h={'350px'} w={'full'} py={'28px'} bgImage={'/image/About/About_Community_icon.webp'} bgRepeat={"no-repeat"} bgSize={"cover"}>
             <Heading fontSize={'18px'} fontWeight={'600'}>NEST Community</Heading>
             <Text fontSize={'12px'} fontWeight={'600'}>
               The NEST Community is primarily responsible<br/>

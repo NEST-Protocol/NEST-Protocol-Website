@@ -9,7 +9,7 @@ const Info = () => {
       <Stack spacing={'48px'} align={'center'}>
         <HStack w={"100%"} spacing={'44px'} maxW={'1440px'}>
           <Center color={'#003232'} fontWeight={"600"} w={'100%'} h={'440px'} borderRadius={'12px'}
-                  bgImage={"/image/Research/Research_bg_2.jpg"} bgPosition={"center"}
+                  bgImage={"/image/Research/Research_bg_2.webp"} bgPosition={"center"}
                   bgSize={"cover"}>
             <Stack
               fontWeight={'600'}
@@ -30,7 +30,7 @@ const Info = () => {
             </Stack>
           </Center>
           <Center color={'#003232'} fontWeight={"600"} w={'100%'} h={'440px'} borderRadius={'12px'}
-                  bgImage={"/image/Research/Research_bg_3.jpg"} bgPosition={"center"}
+                  bgImage={"/image/Research/Research_bg_3.webp"} bgPosition={"center"}
                   bgSize={"cover"}>
             <Stack
               fontWeight={'600'}
@@ -60,7 +60,7 @@ const Info = () => {
       <Stack spacing={'48px'} align={'center'}>
         <Stack w={"100%"} spacing={'44px'} maxW={'1440px'}>
           <Center color={'#003232'} fontWeight={"600"} w={'100%'} h={'440px'}
-                  bgImage={"/image/Research/Research_bg_2.jpg"} bgPosition={"center"}
+                  bgImage={"/image/Research/Research_bg_2.webp"} bgPosition={"center"}
                   bgSize={"cover"}>
             <Stack
               p={'24px'}
@@ -79,7 +79,7 @@ const Info = () => {
             </Stack>
           </Center>
           <Center color={'#003232'} fontWeight={"600"} w={'100%'} h={'440px'}
-                  bgImage={"/image/Research/Research_bg_3.jpg"} bgPosition={"center"}
+                  bgImage={"/image/Research/Research_bg_3.webp"} bgPosition={"center"}
                   bgSize={"cover"}>
             <Stack
               p={'24px'}

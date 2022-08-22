@@ -15,19 +15,19 @@ const Research = () => {
         w={'100%'}
         justify={'center'}
         spacing={isDesktop ? "16px" : "13px"}
-        bgImage={isDesktop ? "/image/Home/Home_bg_5.jpg" : "/image/Home/Home_bg_5_phone.jpg"}
+        bgImage={isDesktop ? "/image/Home/Home_bg_5.webp" : "/image/Home/Home_bg_5_phone.webp"}
         bgSize={'cover'}
         bgPosition={"center"}
       >
         <chakra.img
           position={"absolute"}
-          src={isDesktop ? "/image/Home/Home_bg_icon_3.png" : "/image/Home/Home_bg_icon_3_phone.png"}
+          src={isDesktop ? "/image/Home/Home_bg_icon_3.webp" : "/image/Home/Home_bg_icon_3_phone.webp"}
           alt={'NEST'}
           minH={'440px'}
           objectFit={'cover'}
           overflow={"hidden"}
         />
-        <chakra.img src={"/image/Home/icon_2.png"} zIndex={1} h={isDesktop ? "90px" : "55px"}/>
+        <chakra.img src={"/image/Home/icon_2.webp"} zIndex={1} h={isDesktop ? "90px" : "55px"}/>
         <Heading
           fontSize={isDesktop ? "24px" : "17px"}
           fontWeight={'600'}

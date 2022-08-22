@@ -11,7 +11,7 @@ const Banner = () => {
       h={'full'}
       justify={'center'}
       minH={isDesktop ? "88px" : "60px"}
-      bgImage={isDesktop ? "/image/Research/Research_bg_1.jpg" : "/image/Research/Research_bg_1_phone.jpg"}
+      bgImage={isDesktop ? "/image/Research/Research_bg_1.webp" : "/image/Research/Research_bg_1_phone.webp"}
       bgSize={'cover'}
       bgPosition={"center"}
       spacing={0}

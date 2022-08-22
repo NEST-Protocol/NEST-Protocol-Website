@@ -14,14 +14,14 @@ const Partners = () => {
         spacing={'16px'}
         h={'440px'}
         w={"100vw"}
-        bgImage={isDesktop ? "/image/Home/Home_bg_6.jpg" : "/image/Home/Home_bg_6_phone.jpg"}
+        bgImage={isDesktop ? "/image/Home/Home_bg_6.webp" : "/image/Home/Home_bg_6_phone.webp"}
         bgPosition={"bottom"}
         bgSize={'cover'}
         px={['30px']}
       >
         <chakra.img
           position={"absolute"}
-          src={isDesktop ? "/image/Home/Home_bg_icon_4.png" : "image/Home/Home_bg_icon_4_phone.png"}
+          src={isDesktop ? "/image/Home/Home_bg_icon_4.webp" : "image/Home/Home_bg_icon_4_phone.webp"}
           alt={'NEST'}
           minH={'440px'}
           objectFit={'cover'}

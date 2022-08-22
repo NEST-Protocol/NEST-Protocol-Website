@@ -20,24 +20,24 @@ const News = () => {
           {[
             {
               label: `Coinbase Announces Planned Listing of Tokens, Adds $NEST to ‘Experimental Asset’ Label`,
-              bg: "/image/Home/News_card_bg.png",
-              logo: "/image/Home/News_card_icon.png",
+              bg: "/image/Home/News_card_bg.webp",
+              logo: "/image/Home/News_card_icon.webp",
               desc: `Leading United States-based cryptocurrency exchange`,
               link: '/blog/Coinbase-Announces-Adds-$NEST-to-Experimental-Asset-Label',
               date: "July 25, 2022"
             },
             {
               label: 'NEST Protocol: A New Paradigm of Game Theoretic Oracle',
-              bg: "/image/Home/News_card_bg_1.png",
-              logo: "/image/Home/News_card_icon_1.png",
+              bg: "/image/Home/News_card_bg_1.webp",
+              logo: "/image/Home/News_card_icon_1.webp",
               desc: 'Blockchain innovation defined the major part of the last decade,with cryptocurrency disrupting.',
               link: '/blog/NEST-Protocol-A-New-Paradigm-of-Game-Theoretic-Oracle',
               date: "July 9, 2022"
             },
             {
               label: 'NEST’s RSS FEED INTEGRATED WITH CRYPTO.COM PRICE PAGE',
-              bg: "/image/Home/News_card_bg_2.png",
-              logo: "/image/Home/News_card_icon_2.png",
+              bg: "/image/Home/News_card_bg_2.webp",
+              logo: "/image/Home/News_card_icon_2.webp",
               desc: 'Through Crypto.com’s NEST Price Page, you can now directly access NEST’s RSS news feed.',
               link: '/blog/NEST\'s-RSS-FEED-INTEGRATED-WITH-CRYPTO.COM-PRICE-PAGE',
               date: "May 6, 2022"

@@ -11,6 +11,7 @@ const Faqs = () => {
     <ChakraProvider theme={theme}>
       <Head>
         <title>FAQs | NEST Protocol</title>
+        <script src={"https://crypto.com/price/static/widget/index.js"}></script>
       </Head>
       <Stack spacing={'24px'}>
         <Banner/>

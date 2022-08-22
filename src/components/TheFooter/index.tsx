@@ -1,20 +1,16 @@
-import {chakra, HStack, Spacer, Stack, Text, useMediaQuery, VStack, Wrap, WrapItem, ChakraProvider} from "@chakra-ui/react";
+import {chakra, HStack, Spacer, Stack, Text, useMediaQuery, VStack, Wrap, WrapItem} from "@chakra-ui/react";
 import React from "react";
-import Head from '@docusaurus/Head';
 
 const TheFooter = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
 
   return (
     <>
-      <Head>
-        <script src="https://crypto.com/price/static/widget/index.js"></script>
-      </Head>
       <Stack
         px={isDesktop ? "48px" : "24px"}
         w={'100%'}
         align={'center'}
-        bgImage={isDesktop ? "/image/Footer/Footer_bg.jpg" : "/image/Footer/Footer_bg_phone.jpg"}
+        bgImage={isDesktop ? "/image/Footer/Footer_bg.webp" : "/image/Footer/Footer_bg_phone.webp"}
         bgSize={'cover'}
         bgPosition={"right"}
         zIndex={'10'}
@@ -22,7 +18,7 @@ const TheFooter = () => {
         <chakra.img
           zIndex={0}
           position={"absolute"}
-          src={isDesktop ? "/image/Footer/Footer_bg_icon.png" : "/image/Footer/Footer_bg_icon_phone.png"}
+          src={isDesktop ? "/image/Footer/Footer_bg_icon.webp" : "/image/Footer/Footer_bg_icon_phone.webp"}
           alt={'NEST'}
           minH={'380px'}
           objectFit={'cover'}

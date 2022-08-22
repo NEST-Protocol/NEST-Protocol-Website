@@ -14,20 +14,20 @@ const VacantPositions = () => {
         w={'100%'}
         justify={'center'}
         spacing={isDesktop ? "16px" : "13px"}
-        bgImage={isDesktop ? "/image/Research/Research_bg_5.jpg" : "/image/Research/Research_bg_5_phone.jpg"}
+        bgImage={isDesktop ? "/image/Research/Research_bg_5.webp" : "/image/Research/Research_bg_5_phone.webp"}
         bgSize={'cover'}
         bgPosition={"center"}
         px={'24px'}
       >
         <chakra.img
           position={"absolute"}
-          src={isDesktop ? "/image/Research/Research_bg_icon_3.png" : "/image/Research/Research_bg_icon_3_phone.png"}
+          src={isDesktop ? "/image/Research/Research_bg_icon_3.webp" : "/image/Research/Research_bg_icon_3_phone.webp"}
           alt={'NEST'}
           minH={'440px'}
           objectFit={'cover'}
           overflow={"hidden"}
         />
-        <chakra.img src={"/image/Research/icon_2.png"} zIndex={1}/>
+        <chakra.img src={"/image/Research/icon_2.webp"} zIndex={1}/>
         <Text
           zIndex={1}
           fontSize={isDesktop ? "15px" : "12px"}

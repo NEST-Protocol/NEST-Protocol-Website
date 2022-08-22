@@ -12,7 +12,7 @@ const Banner = () => {
       h={'full'}
       justify={'center'}
       minH={["600px", "615px"]}
-      bgImage={isDesktop ? "/image/About/About_bg_1.jpg" : "/image/About/Phone_About_bg_1.jpg"}
+      bgImage={isDesktop ? "/image/About/About_bg_1.webp" : "/image/About/Phone_About_bg_1.webp"}
       bgSize={'cover'}
       bgPosition={"center"}
       spacing={0}
@@ -21,7 +21,7 @@ const Banner = () => {
       <TheHeader/>
       <chakra.img
         position={"absolute"}
-        src={isDesktop ? "/image/About/About_bg_icon_1.png" : "/image/About/Phone_About_bg_icon.png"}
+        src={isDesktop ? "/image/About/About_bg_icon_1.webp" : "/image/About/Phone_About_bg_icon.webp"}
         alt={''}
         minH={["600px", "615px"]}
         objectFit={'cover'}
@@ -38,7 +38,7 @@ const Banner = () => {
               </Text>
             </Stack>
             <Stack h={'40px'} align={"center"} justify={"center"}>
-              <img src={'/image/About/about_arrow_icon.svg'}/>
+              <img src={'/image/About/about_arrow_icon.svg'} alt={''}/>
             </Stack>
             <Stack w={'280px'} align={"center"} textAlign={"center"} spacing={'28px'}>
               <chakra.img src={'/image/About/ETH.png'} w={'24px'} h={'40px'}/>
@@ -48,7 +48,7 @@ const Banner = () => {
               </Text>
             </Stack>
             <Stack h={'40px'} align={"center"} justify={"center"}>
-              <img src={'/image/About/about_arrow_icon.svg'}/>
+              <img src={'/image/About/about_arrow_icon.svg'} alt={''}/>
             </Stack>
             <Stack w={'280px'} align={"center"} textAlign={"center"} spacing={'28px'}>
               <chakra.img src={'/image/About/NEST.svg'} w={'40px'} h={'40px'}/>
@@ -68,7 +68,7 @@ const Banner = () => {
               </Text>
             </Stack>
             <Stack h={'70px'} align={"center"} justify={"center"} transform={"rotate(90deg)"}>
-              <img src={'/image/About/about_arrow_icon.svg'}/>
+              <img src={'/image/About/about_arrow_icon.svg'} alt={''}/>
             </Stack>
             <Stack minW={'200px'} align={"center"} textAlign={"center"} spacing={'10px'}>
               <chakra.img src={'/image/About/ETH.png'} w={'24px'} h={'40px'}/>
@@ -78,7 +78,7 @@ const Banner = () => {
               </Text>
             </Stack>
             <Stack h={'70px'} align={"center"} justify={"center"} transform={"rotate(90deg)"}>
-              <img src={'/image/About/about_arrow_icon.svg'}/>
+              <img src={'/image/About/about_arrow_icon.svg'} alt={''}/>
             </Stack>
             <Stack minW={'200px'} align={"center"} textAlign={"center"} spacing={'10px'}>
               <chakra.img src={'/image/About/NEST.svg'} w={'40px'} h={'40px'}/>

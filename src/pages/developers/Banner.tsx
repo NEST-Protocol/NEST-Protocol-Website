@@ -11,7 +11,7 @@ const Banner = () => {
       h={'full'}
       justify={'center'}
       minH={["600px", "660px"]}
-      bgImage={isDesktop ? "/image/Developer/Developers_bg.jpg" : "/image/Developer/Phone_Developers_bg_1.jpg"}
+      bgImage={isDesktop ? "/image/Developer/Developers_bg.webp" : "/image/Developer/Phone_Developers_bg_1.webp"}
       bgSize={'cover'}
       bgPosition={"center"}
       spacing={0}
@@ -20,7 +20,7 @@ const Banner = () => {
       <TheHeader/>
       <chakra.img
         position={"absolute"}
-        src={isDesktop ? "/image/Developer/Developers_bg_icon.png" : "/image/Developer/Phone_Developers_bg_icon.png"}
+        src={isDesktop ? "/image/Developer/Developers_bg_icon.webp" : "/image/Developer/Phone_Developers_bg_icon.webp"}
         alt={''}
         minH={["600px", "660px"]}
         objectFit={'cover'}

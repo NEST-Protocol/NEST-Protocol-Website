@@ -145,7 +145,7 @@ const FAQItem = ({q, a}) => {
 
   return (
     <>
-      <HStack h={'48px'} bgImage={"/image/FAQs/FAQ.png"} px={'20px'} align={"center"} borderRadius={'10px'}
+      <HStack h={'48px'} bgImage={"/image/FAQs/FAQ.webp"} px={'20px'} align={"center"} borderRadius={'10px'}
               onClick={onToggle} cursor={"pointer"} bgSize={"cover"} bgRepeat={"no-repeat"}
               justify={"space-between"}>
         <Text fontSize={'13px'} fontWeight={'500'}>{q}</Text>

@@ -11,7 +11,7 @@ const Banner = () => {
       justify={'center'}
       h={'410px'}
       w={"100%"}
-      bgImage={isDesktop ? "/image/NEST_Fi/NEST_Fi_bg_1.jpg" : "/image/NEST_Fi/NEST_Fi_bg_1_phone.jpg"}
+      bgImage={isDesktop ? "/image/NEST_Fi/NEST_Fi_bg_1.webp" : "/image/NEST_Fi/NEST_Fi_bg_1_phone.webp"}
       bgSize={'cover'}
       bgPosition={"center"}
       spacing={0}
@@ -20,7 +20,7 @@ const Banner = () => {
       <TheHeader/>
       <chakra.img
         position={"absolute"}
-        src={isDesktop ? "/image/NEST_Fi/NEST_Fi_bg_icon_1.png" : "/image/NEST_Fi/NEST_Fi_bg_icon_1_phone.png"}
+        src={isDesktop ? "/image/NEST_Fi/NEST_Fi_bg_icon_1.webp" : "/image/NEST_Fi/NEST_Fi_bg_icon_1_phone.webp"}
         alt={'NEST Fi'}
         h={'410px'}
         objectFit={'cover'}

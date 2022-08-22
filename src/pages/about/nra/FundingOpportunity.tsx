@@ -1,7 +1,6 @@
 import {chakra, Link, Stack, Text, useMediaQuery} from "@chakra-ui/react";
 import BigTitle from "../../../components/BigTitle";
 import * as React from "react";
-import BrowserOnly from '@docusaurus/BrowserOnly';
 
 const FundingOpportunity = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -15,20 +14,20 @@ const FundingOpportunity = () => {
         w={'100%'}
         justify={'center'}
         spacing={isDesktop ? "16px" : "13px"}
-        bgImage={isDesktop ? "/image/Research/Research_bg_4.jpg" : "/image/Research/Research_bg_4.jpg"}
+        bgImage={isDesktop ? "/image/Research/Research_bg_4.webp" : "/image/Research/Research_bg_4.webp"}
         bgSize={'cover'}
         bgPosition={"center"}
         px={'24px'}
       >
         <chakra.img
           position={"absolute"}
-          src={isDesktop ? "/image/Research/Research_bg_icon_2.png" : "/image/Research/Research_bg_icon_2_phone.png"}
+          src={isDesktop ? "/image/Research/Research_bg_icon_2.webp" : "/image/Research/Research_bg_icon_2_phone.webp"}
           alt={'NEST'}
           minH={'440px'}
           objectFit={'cover'}
           overflow={"hidden"}
         />
-        <chakra.img src={"/image/Research/icon_1.png"} zIndex={1}/>
+        <chakra.img src={"/image/Research/icon_1.webp"} zIndex={1}/>
         <Text
           zIndex={1}
           fontSize={isDesktop ? "15px" : "12px"}
