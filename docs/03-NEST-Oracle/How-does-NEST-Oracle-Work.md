@@ -6,7 +6,7 @@ sidebar_position: 0
 
 NEST Oracle is a truly decentralized oracle, check the [whitepaper](https://www.nestprotocol.org/doc/ennestwhitepaper.pdf) to learn more about it.
 
-## Valuation Asset and Auotation Asset
+## Valuation Asset and Quotation Asset
 
 Each quotation track requires a unified amount of valuation asset and quotation asset. Thus, to participate in the price quotation, the maker needs to provide sufficient quotation asset with the same value as the valuation asset.
 
