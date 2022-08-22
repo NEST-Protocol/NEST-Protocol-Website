@@ -12,7 +12,6 @@ export default function News(): JSX.Element {
     <ChakraProvider theme={theme}>
       <Head>
         <title>News | NEST Protocol</title>
-        <script src={"https://crypto.com/price/static/widget/index.js"}></script>
       </Head>
       <Stack spacing={isDesktop ? "80px" : "40px"}>
         <Banner/>

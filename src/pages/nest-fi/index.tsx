@@ -13,7 +13,6 @@ const NESTFi = () => {
     <ChakraProvider theme={theme}>
       <Head>
         <title>NEST Fi | NEST Protocol</title>
-        <script src={"https://crypto.com/price/static/widget/index.js"}></script>
       </Head>
       <Stack spacing={isDesktop ? "80px" : "30px"}>
         <Banner/>

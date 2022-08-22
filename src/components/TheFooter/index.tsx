@@ -1,11 +1,15 @@
 import {chakra, HStack, Spacer, Stack, Text, useMediaQuery, VStack, Wrap, WrapItem} from "@chakra-ui/react";
 import React from "react";
+import Head from "@docusaurus/Head";
 
 const TheFooter = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
 
   return (
     <>
+      <Head>
+        <script src={"https://crypto.com/price/static/widget/index.js"}></script>
+      </Head>
       <Stack
         px={isDesktop ? "48px" : "24px"}
         w={'100%'}

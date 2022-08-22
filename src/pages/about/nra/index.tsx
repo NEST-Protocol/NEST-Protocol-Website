@@ -9,7 +9,6 @@ import TheFooter from "@site/src/components/TheFooter";
 import Head from "@docusaurus/Head";
 import theme from "../../../chakra";
 
-
 export default function NRA(): JSX.Element {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
 
@@ -17,7 +16,6 @@ export default function NRA(): JSX.Element {
     <ChakraProvider theme={theme}>
       <Head>
         <title>NRA | NEST Protocol</title>
-        <script src={"https://crypto.com/price/static/widget/index.js"}></script>
       </Head>
       <Stack spacing={isDesktop ? "80px" : "56px"}>
         <Banner/>
