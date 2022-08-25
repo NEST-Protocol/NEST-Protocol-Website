@@ -17,7 +17,7 @@ import {HamburgerIcon} from '@chakra-ui/icons'
 import {useLocation} from '@docusaurus/router';
 
 const TheHeader = () => {
-  const [isDesktop] = useMediaQuery('(min-width: 768px)')
+  const [isPhone] = useMediaQuery('(max-width: 768px)')
   const {isOpen, onOpen, onClose} = useDisclosure()
   const location = useLocation();
 
@@ -59,7 +59,7 @@ const TheHeader = () => {
 
         <Spacer/>
 
-        {isDesktop &&
+        {!isPhone &&
           menu.map(({name, pathname}) => (
             <Button
               key={name}
@@ -76,7 +76,7 @@ const TheHeader = () => {
             </Button>
           ))}
 
-        {isDesktop && (
+        {!isPhone && (
           <Button
             minW={'120px'}
             variant={"solid"}
@@ -91,7 +91,7 @@ const TheHeader = () => {
           </Button>
         )}
 
-        {!isDesktop && (
+        {isPhone && (
           <>
             <Button onClick={onOpen} fontSize={'36px'} alignItems={'end'} p={0} variant={"ghost"} _active={{bg: null}}
                     _hover={{bg: null}}>
