@@ -214,7 +214,7 @@ const NESTFi = () => {
               objectFit={'cover'}
               overflow={"hidden"}
             />
-            <chakra.img src={"/image/Home/icon_1.webp"} zIndex={1} h={isDesktop ? "90px" : "55px"}/>
+            <chakra.img src={"/image/Home/icon_1.webp"} alt={'NEST Financial Market'} zIndex={1} h={isDesktop ? "90px" : "55px"}/>
             <Heading
               fontSize={isDesktop ? "24px" : "17px"}
               fontWeight={'600'}
@@ -312,7 +312,7 @@ const News = () => {
                 justify={'center'}
                 h={isDesktop ? "160px" : "135px"}
               >
-                <chakra.img src={item.logo} _hover={{transform: 'scale(1.05)'}} h={'90px'}/>
+                <chakra.img src={item.logo} alt={''} _hover={{transform: 'scale(1.05)'}} h={'90px'}/>
               </Stack>
               <VStack
                 w={'full'}
@@ -495,7 +495,7 @@ const Research = () => {
           objectFit={'cover'}
           overflow={"hidden"}
         />
-        <chakra.img src={"/image/Home/icon_2.webp"} zIndex={1} h={isDesktop ? "90px" : "55px"}/>
+        <chakra.img src={"/image/Home/icon_2.webp"} alt={''} zIndex={1} h={isDesktop ? "90px" : "55px"}/>
         <Heading
           fontSize={isDesktop ? "24px" : "17px"}
           fontWeight={'600'}

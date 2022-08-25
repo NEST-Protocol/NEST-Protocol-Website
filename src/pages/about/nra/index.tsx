@@ -159,7 +159,7 @@ const FundingOpportunity = () => {
           objectFit={'cover'}
           overflow={"hidden"}
         />
-        <chakra.img src={"/image/Research/icon_1.webp"} zIndex={1}/>
+        <chakra.img src={"/image/Research/icon_1.webp"} alt={''} zIndex={1}/>
         <Text
           zIndex={1}
           fontSize={isDesktop ? "15px" : "12px"}
@@ -314,7 +314,7 @@ const VacantPositions = () => {
           objectFit={'cover'}
           overflow={"hidden"}
         />
-        <chakra.img src={"/image/Research/icon_2.webp"} zIndex={1}/>
+        <chakra.img src={"/image/Research/icon_2.webp"} alt={''} zIndex={1}/>
         <Text
           zIndex={1}
           fontSize={isDesktop ? "15px" : "12px"}

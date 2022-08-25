@@ -8,14 +8,13 @@ import {
   Link,
   Heading,
   Button,
-  useDisclosure, SlideFade
 } from "@chakra-ui/react";
 import React from "react";
 import TheFooter from "@site/src/components/TheFooter";
 import Head from "@docusaurus/Head";
 import theme from "../../chakra";
 import TheHeader from "@site/src/components/TheHeader";
-import {ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon} from "@chakra-ui/icons";
+import {ChevronRightIcon} from "@chakra-ui/icons";
 
 const About = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -64,7 +63,7 @@ const Banner = () => {
         {isDesktop ? (
           <HStack alignItems={"start"} py={'90px'} spacing={'70px'}>
             <Stack w={'280px'} align={"center"} textAlign={"center"} spacing={'28px'}>
-              <chakra.img src={'/image/About/BTC.svg'} w={'40px'}/>
+              <chakra.img src={'/image/About/BTC.svg'} alt={'BTC'} w={'40px'}/>
               <Text fontSize={'20px'} fontWeight={'600'}>
                 Creating Informationized<br/>
                 Assets
@@ -74,7 +73,7 @@ const Banner = () => {
               <img src={'/image/About/about_arrow_icon.svg'} alt={''}/>
             </Stack>
             <Stack w={'280px'} align={"center"} textAlign={"center"} spacing={'28px'}>
-              <chakra.img src={'/image/About/ETH.png'} w={'24px'} h={'40px'}/>
+              <chakra.img src={'/image/About/ETH.png'} alt={'ETH'} w={'24px'} h={'40px'}/>
               <Text fontSize={'20px'} fontWeight={'600'}>
                 Programming with<br/>
                 Informationized Assets
@@ -84,7 +83,7 @@ const Banner = () => {
               <img src={'/image/About/about_arrow_icon.svg'} alt={''}/>
             </Stack>
             <Stack w={'280px'} align={"center"} textAlign={"center"} spacing={'28px'}>
-              <chakra.img src={'/image/About/NEST.svg'} w={'40px'} h={'40px'}/>
+              <chakra.img src={'/image/About/NEST.svg'} alt={''} w={'40px'} h={'40px'}/>
               <Text fontSize={'20px'} fontWeight={'600'}>
                 Programming with<br/>
                 Stochastic Assets
@@ -94,7 +93,7 @@ const Banner = () => {
         ) : (
           <Stack spacing={'15px'} pt={'50px'}>
             <Stack minW={'200px'} align={"center"} textAlign={"center"} spacing={'10px'}>
-              <chakra.img src={'/image/About/BTC.svg'} w={'40px'}/>
+              <chakra.img src={'/image/About/BTC.svg'} alt={''} w={'40px'}/>
               <Text fontSize={'12px'} fontWeight={'600'}>
                 Creating Informationized<br/>
                 Assets
@@ -104,7 +103,7 @@ const Banner = () => {
               <img src={'/image/About/about_arrow_icon.svg'} alt={''}/>
             </Stack>
             <Stack minW={'200px'} align={"center"} textAlign={"center"} spacing={'10px'}>
-              <chakra.img src={'/image/About/ETH.png'} w={'24px'} h={'40px'}/>
+              <chakra.img src={'/image/About/ETH.png'} alt={''} w={'24px'} h={'40px'}/>
               <Text fontSize={'12px'} fontWeight={'600'}>
                 Programming with<br/>
                 Informationized Assets
@@ -114,7 +113,7 @@ const Banner = () => {
               <img src={'/image/About/about_arrow_icon.svg'} alt={''}/>
             </Stack>
             <Stack minW={'200px'} align={"center"} textAlign={"center"} spacing={'10px'}>
-              <chakra.img src={'/image/About/NEST.svg'} w={'40px'} h={'40px'}/>
+              <chakra.img src={'/image/About/NEST.svg'} alt={''} w={'40px'} h={'40px'}/>
               <Text fontSize={'12px'} fontWeight={'600'}>
                 Programming with<br/>
                 Stochastic Assets

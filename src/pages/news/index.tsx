@@ -152,7 +152,7 @@ const LatestNews = () => {
                 justify={'center'}
                 h={'160px'}
               >
-                <chakra.img src={item.logo} _hover={{transform: 'scale(1.05)'}} h={'90px'}/>
+                <chakra.img src={item.logo} alt={''} _hover={{transform: 'scale(1.05)'}} h={'90px'}/>
               </Stack>
               <VStack
                 w={'100%'}
