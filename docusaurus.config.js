@@ -114,7 +114,8 @@ const config = {
           {name: "og:type", content: "website"},
           {name: "og:site_name", content: "NEST Protocol"},
           {name: "og:image", content: "https://nestprotocol.org/img/logo.svg"},
-          {name: "google-site-verification", content: "Taax65uDIhSEcZALM9plxpcfWAkJipGzu-sxjJjNp8w"}
+          {name: "google-site-verification", content: "Taax65uDIhSEcZALM9plxpcfWAkJipGzu-sxjJjNp8w"},
+          {name: "description", content: "NEST is a blockchain-based probability virtual machine (PVM) system with web3 applications of DeFi, GameFi, NFT built on it."}
         ],
       }),
 };
