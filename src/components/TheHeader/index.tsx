@@ -94,7 +94,7 @@ const TheHeader = () => {
         {isPhone && (
           <>
             <Button onClick={onOpen} fontSize={'36px'} alignItems={'end'} p={0} variant={"ghost"} _active={{bg: null}}
-                    _hover={{bg: null}}>
+                    _hover={{bg: null}} aria-label={'menu'}>
               <HamburgerIcon/>
             </Button>
             <Modal
