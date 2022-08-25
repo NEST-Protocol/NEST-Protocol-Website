@@ -153,6 +153,7 @@ const Apps = () => {
                 </Text>
                 <Stack pt={'10px'}>
                   <Button
+                    aria-label={'Buy Futures'}
                     className={'button--primary'}
                     w={'160px'}
                     onClick={() => {
@@ -176,6 +177,7 @@ const Apps = () => {
                 </Text>
                 <Stack pt={'10px'}>
                   <Button
+                    aria-label={'Buy Options'}
                     className={'button--primary'}
                     w={'160px'}
                     onClick={() => {
@@ -215,6 +217,7 @@ const Apps = () => {
           <Button
             className={'button--primary'}
             w={'160px'}
+            aria-label={'Buy Futures'}
             onClick={() => {
               window.open('https://finance.nestprotocol.org/#/futures', '_blank')
             }}
@@ -238,6 +241,7 @@ const Apps = () => {
           <Button
             className={'button--primary'}
             w={'160px'}
+            aria-label={'Buy Options'}
             onClick={() => {
               window.open('https://finance.nestprotocol.org/#/options', '_blank')
             }}

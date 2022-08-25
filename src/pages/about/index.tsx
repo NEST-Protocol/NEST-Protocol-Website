@@ -256,24 +256,24 @@ const Who = () => {
                 </Text>
                 <Stack spacing={'20px'}>
                   <HStack spacing={'28px'}>
-                    <Button variant={"outline"} onClick={() => {
+                    <Button variant={"outline"} aria-label={'twitter'} onClick={() => {
                       window.open('https://twitter.com/nest_protocol/', '_blank');
                     }}>
                       Twitter
                     </Button>
-                    <Button variant={"outline"} onClick={() => {
+                    <Button aria-label={'telegram'} variant={"outline"} onClick={() => {
                       window.open('https://t.me/nest_chat/', '_blank');
                     }}>
                       Telegram
                     </Button>
                   </HStack>
                   <HStack spacing={'28px'}>
-                    <Button variant={"outline"} onClick={() => {
+                    <Button aria-label={'discord'} variant={"outline"} onClick={() => {
                       window.open('https://discord.gg/nestprotocol', '_blank');
                     }}>
                       Discord
                     </Button>
-                    <Button variant={"outline"} onClick={() => {
+                    <Button variant={"outline"} aria-label={'medium'} onClick={() => {
                       window.open('https://nest-protocol-82041.medium.com/', '_blank');
                     }}>
                       Medium
@@ -354,24 +354,24 @@ const Who = () => {
             </Text>
             <Stack spacing={'20px'} justify={"center"} align={"center"}>
               <HStack spacing={'30px'}>
-                <Button variant={"outline"} onClick={() => {
+                <Button aria-label={'twitter'} variant={"outline"} onClick={() => {
                   window.open('https://twitter.com/nest_protocol/', '_blank');
                 }}>
                   Twitter
                 </Button>
-                <Button variant={"outline"} onClick={() => {
+                <Button aria-label={'telegram'} variant={"outline"} onClick={() => {
                   window.open('https://t.me/nest_chat/', '_blank');
                 }}>
                   Telegram
                 </Button>
               </HStack>
               <HStack spacing={'30px'}>
-                <Button variant={"outline"} onClick={() => {
+                <Button aria-label={'discord'} variant={"outline"} onClick={() => {
                   window.open('https://discord.gg/nestprotocol', '_blank');
                 }}>
                   Discord
                 </Button>
-                <Button variant={"outline"} onClick={() => {
+                <Button aria-label={'medium'} variant={"outline"} onClick={() => {
                   window.open('https://nest-protocol-82041.medium.com/', '_blank');
                 }}>
                   Medium

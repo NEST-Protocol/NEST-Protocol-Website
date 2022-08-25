@@ -64,6 +64,7 @@ const TheHeader = () => {
             <Button
               key={name}
               cursor={'pointer'}
+              aria-label={name}
               onClick={() => {
                 window.location.pathname = pathname
               }}
@@ -80,6 +81,7 @@ const TheHeader = () => {
           <Button
             minW={'120px'}
             variant={"solid"}
+            aria-label={'App'}
             color={'#003232'}
             borderRadius={'full'}
             bg={'#EAAA00'}
@@ -116,6 +118,7 @@ const TheHeader = () => {
                       {menu.map(({name, pathname}) => (
                         <Button
                           key={name}
+                          aria-label={name}
                           color={location.pathname.includes(pathname) ? '#EAAA00' : '#003232'}
                           fontWeight={location.pathname.includes(pathname) ? 'bold' : '600'}
                           variant={'ghost'}
@@ -135,6 +138,7 @@ const TheHeader = () => {
                     </VStack>
                     <Button
                       variant={'solid'}
+                      aria-label={'App'}
                       bg={'#EAAA00'}
                       borderRadius={'full'}
                       _active={{bg: null}}

@@ -107,7 +107,7 @@ const Banner = () => {
           </Text>
         )}
 
-        <Button className={'button--primary'} w={'160px'} onClick={() => {
+        <Button aria-label={'Developer Docs'} className={'button--primary'} w={'160px'} onClick={() => {
           window.location.pathname = '/docs/Building-On-NEST/Contracts'
         }}>
           Developer Docs

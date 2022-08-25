@@ -257,6 +257,7 @@ const NESTFi = () => {
             </Text>
             <Stack pt={'16px'}>
               <Button
+                aria-label={'Launch App'}
                 className={"button--primary"}
                 minW={'160px'}
                 minH={isDesktop ? "34px" : "44px"}
