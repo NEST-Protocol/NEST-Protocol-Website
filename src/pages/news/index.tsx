@@ -24,9 +24,15 @@ export default function News(): JSX.Element {
         <title>News | NEST Protocol</title>
       </Head>
       <Stack spacing={isDesktop ? "80px" : "40px"}>
-        <Banner/>
-        <LatestNews/>
-        <TheFooter/>
+        <React.Suspense fallback={<div></div>}>
+          <Banner/>
+        </React.Suspense>
+        <React.Suspense fallback={<div></div>}>
+          <LatestNews/>
+        </React.Suspense>
+        <React.Suspense fallback={<div></div>}>
+          <TheFooter/>
+        </React.Suspense>
       </Stack>
     </ChakraProvider>
   );
@@ -46,7 +52,7 @@ const Banner = () => {
       px={'24px'}
       spacing={0}
     >
-      <TheHeader />
+      <TheHeader/>
       <chakra.img
         position={"absolute"}
         src={isDesktop ? "/image/News/News_bg_icon_1.webp" : "/image/News/News_bg_icon_phone.webp"}
@@ -60,7 +66,7 @@ const Banner = () => {
         fontSize={["12px", "24px"]}
         fontWeight={'700'}
         textAlign={'center'}
-        maxW={ isDesktop ? "720px" : "200px"}
+        maxW={isDesktop ? "720px" : "200px"}
         zIndex={1}
         color={'#003434'}
       >

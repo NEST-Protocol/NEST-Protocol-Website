@@ -16,12 +16,24 @@ export default function NRA(): JSX.Element {
         <title>NRA | NEST Protocol</title>
       </Head>
       <Stack spacing={isDesktop ? "80px" : "56px"}>
-        <Banner/>
-        <Banner2/>
-        <Info/>
-        <FundingOpportunity/>
-        <VacantPositions/>
-        <TheFooter/>
+        <React.Suspense fallback={<div></div>}>
+          <Banner/>
+        </React.Suspense>
+        <React.Suspense fallback={<div></div>}>
+          <Banner2/>
+        </React.Suspense>
+        <React.Suspense fallback={<div></div>}>
+          <Info/>
+        </React.Suspense>
+        <React.Suspense fallback={<div></div>}>
+          <FundingOpportunity/>
+        </React.Suspense>
+        <React.Suspense fallback={<div></div>}>
+          <VacantPositions/>
+        </React.Suspense>
+        <React.Suspense fallback={<div></div>}>
+          <TheFooter/>
+        </React.Suspense>
       </Stack>
     </ChakraProvider>
   );

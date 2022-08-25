@@ -26,9 +26,15 @@ const Developer = () => {
         <title>Developers | NEST Protocol</title>
       </Head>
       <Stack spacing={isDesktop ? "80px" : "56px"}>
-        <Banner/>
-        <Apps/>
-        <TheFooter/>
+        <React.Suspense fallback={<div></div>}>
+          <Banner/>
+        </React.Suspense>
+        <React.Suspense fallback={<div></div>}>
+          <Apps/>
+        </React.Suspense>
+        <React.Suspense fallback={<div></div>}>
+          <TheFooter/>
+        </React.Suspense>
       </Stack>
     </ChakraProvider>
   );
@@ -181,7 +187,8 @@ const Apps = () => {
 
   return (
     <Stack spacing={'35px'}>
-      <Stack bgImage={'/image/Developer/Developers_bg_2.webp'} w={'100%'} h={'375px'} bgRepeat={"no-repeat"} borderRadius={'12px'}
+      <Stack bgImage={'/image/Developer/Developers_bg_2.webp'} w={'100%'} h={'375px'} bgRepeat={"no-repeat"}
+             borderRadius={'12px'}
              align={"center"} justify={"center"} bgSize={"cover"}>
         <img src={'/image/Developer/Phone_Flowchart_1.svg'} alt={'what is NEST PVM'} width={'98%'}/>
       </Stack>
@@ -195,12 +202,14 @@ const Apps = () => {
           to Ethereum virtual machine (EVM) programming.
         </Text>
         <Stack pt={'10px'}>
-          <Link color={'#00A0E9'} fontWeight={'600'} fontSize={12} href={'/docs/Concept/What-is-NEST#probabilistic-virtual-machine-pvm'}>
+          <Link color={'#00A0E9'} fontWeight={'600'} fontSize={12}
+                href={'/docs/Concept/What-is-NEST#probabilistic-virtual-machine-pvm'}>
             PVM Mechanism<ChevronRightIcon/>
           </Link>
         </Stack>
       </Stack>
-      <Stack bgImage={'/image/Developer/Developers_bg_3.webp'} w={'100%'} h={'375px'} bgRepeat={"no-repeat"} borderRadius={'12px'}
+      <Stack bgImage={'/image/Developer/Developers_bg_3.webp'} w={'100%'} h={'375px'} bgRepeat={"no-repeat"}
+             borderRadius={'12px'}
              align={"center"} justify={"center"} bgSize={"cover"}>
         <img src={'/image/Developer/Phone_Flowchart_2.svg'} alt={'what is NEST Oracle'} height={'375px'}/>
       </Stack>

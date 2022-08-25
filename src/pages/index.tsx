@@ -28,13 +28,27 @@ export default function Home(): JSX.Element {
         <title>NEST Protocol | The stochastic computer based on PVM</title>
       </Head>
       <Stack spacing={isDesktop ? "80px" : "56px"}>
-        <Banner/>
-        <NESTFi/>
-        <Developers/>
-        <News/>
-        <Research/>
-        <Partners/>
-        <TheFooter/>
+        <React.Suspense fallback={<div></div>}>
+          <Banner/>
+        </React.Suspense>
+        <React.Suspense fallback={<div></div>}>
+          <NESTFi/>
+        </React.Suspense>
+        <React.Suspense fallback={<div></div>}>
+          <Developers/>
+        </React.Suspense>
+        <React.Suspense fallback={<div></div>}>
+          <News/>
+        </React.Suspense>
+        <React.Suspense fallback={<div></div>}>
+          <Research/>
+        </React.Suspense>
+        <React.Suspense fallback={<div></div>}>
+          <Partners/>
+        </React.Suspense>
+        <React.Suspense fallback={<div></div>}>
+          <TheFooter/>
+        </React.Suspense>
       </Stack>
     </ChakraProvider>
   );
@@ -113,20 +127,23 @@ const Developers = () => {
       <Stack spacing={'48px'} align={'center'}>
         <BigTitle title={'Developers'}/>
         <HStack w={"100%"} spacing={'44px'} maxW={'1440px'}>
-          <Center color={'#003232'} borderRadius={'12px'} fontWeight={"600"} w={'100%'} h={'440px'} bgImage={"/image/Home/Home_bg_3.webp"} bgSize={"cover"} bgPosition={"center"}>
+          <Center color={'#003232'} borderRadius={'12px'} fontWeight={"600"} w={'100%'} h={'440px'}
+                  bgImage={"/image/Home/Home_bg_3.webp"} bgSize={"cover"} bgPosition={"center"}>
             <Stack maxW={'360px'}>
               <Text fontSize={25}>
                 NEST PVM
               </Text>
               <Text>
-                NEST Probabilistic Virtual Machine (NEST PVM) is a virtual machine-like structure based on the basic function library.
+                NEST Probabilistic Virtual Machine (NEST PVM) is a virtual machine-like structure based on the basic
+                function library.
               </Text>
               <Link color={'#00A0E9'} fontSize={15} href={'/docs/Concept/What-is-NEST'}>
                 Learn more about NEST PVM<ChevronRightIcon/>
               </Link>
             </Stack>
           </Center>
-          <Center color={'#003232'} borderRadius={'12px'} fontWeight={"600"} w={'100%'} h={'440px'} bgImage={"/image/Home/Home_bg_4.webp"} bgSize={"cover"} bgPosition={"center"}>
+          <Center color={'#003232'} borderRadius={'12px'} fontWeight={"600"} w={'100%'} h={'440px'}
+                  bgImage={"/image/Home/Home_bg_4.webp"} bgSize={"cover"} bgPosition={"center"}>
             <Stack maxW={'360px'}>
               <Text fontSize={25}>
                 NEST Oracle
@@ -150,7 +167,8 @@ const Developers = () => {
       <Stack spacing={'48px'} align={'center'}>
         <BigTitle title={'Developers'}/>
         <Stack w={"100%"} spacing={'44px'} maxW={'1440px'}>
-          <Center color={'#003232'} fontWeight={"600"} w={'100%'} h={'440px'} bgImage={"/image/Home/Home_bg_3.webp"} bgSize={"cover"} bgPosition={"center"}>
+          <Center color={'#003232'} fontWeight={"600"} w={'100%'} h={'440px'} bgImage={"/image/Home/Home_bg_3.webp"}
+                  bgSize={"cover"} bgPosition={"center"}>
             <Stack maxW={'360px'} p={'12px'} align={"center"}>
               <Text fontSize={17}>
                 NEST PVM
@@ -166,7 +184,8 @@ const Developers = () => {
               </Link>
             </Stack>
           </Center>
-          <Center color={'#003232'} fontWeight={"600"} w={'100%'} h={'440px'} bgImage={"/image/Home/Home_bg_4.webp"}  bgSize={"cover"} bgPosition={"center"}>
+          <Center color={'#003232'} fontWeight={"600"} w={'100%'} h={'440px'} bgImage={"/image/Home/Home_bg_4.webp"}
+                  bgSize={"cover"} bgPosition={"center"}>
             <Stack maxW={'360px'} p={'12px'} align={"center"}>
               <Text fontSize={17}>
                 NEST Oracle
@@ -214,7 +233,8 @@ const NESTFi = () => {
               objectFit={'cover'}
               overflow={"hidden"}
             />
-            <chakra.img src={"/image/Home/icon_1.webp"} alt={'NEST Financial Market'} zIndex={1} h={isDesktop ? "90px" : "55px"}/>
+            <chakra.img src={"/image/Home/icon_1.webp"} alt={'NEST Financial Market'} zIndex={1}
+                        h={isDesktop ? "90px" : "55px"}/>
             <Heading
               fontSize={isDesktop ? "24px" : "17px"}
               fontWeight={'600'}

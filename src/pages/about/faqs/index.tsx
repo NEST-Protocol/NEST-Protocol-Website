@@ -14,9 +14,15 @@ const Faqs = () => {
         <script src={"https://crypto.com/price/static/widget/index.js"}></script>
       </Head>
       <Stack spacing={'24px'}>
-        <Banner/>
-        <Content/>
-        <TheFooter/>
+        <React.Suspense fallback={<div></div>}>
+          <Banner/>
+        </React.Suspense>
+        <React.Suspense fallback={<div></div>}>
+          <Content/>
+        </React.Suspense>
+        <React.Suspense fallback={<div></div>}>
+          <TheFooter/>
+        </React.Suspense>
       </Stack>
     </ChakraProvider>
   )
@@ -47,7 +53,15 @@ const Banner = () => {
 const Content = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)');
   const nest_concepts = [
-    {q: "What is NEST?", a: <Text>NEST Protocol creatively introduces random information flow with a decentralized oracle and tokenizes random information flow through the OMM (omnipotent market maker) mechanism, generating many stochastic assets. The NEST PVM (probabilistic virtual machine), based on basic functions, can program stochastic assets, which applies to a large number of real-world scenarios. An inherent cost mechanism ensures the system supply converges, resulting in a new universal coin with an innate price appreciation logic. The NEST coin provides a whole new development tool and is a creative new asset for the blockchain world.<br/><br/>Check the <Link href={'/doc/ennestwhitepaper.pdf'} isExternal textDecoration={"underline"}>whitepaper</Link> for more detail.</Text>},
+    {q: "What is NEST?",
+      a: <Text>NEST Protocol creatively introduces random information flow with a decentralized oracle and tokenizes
+        random information flow through the OMM (omnipotent market maker) mechanism, generating many stochastic assets.
+        The NEST PVM (probabilistic virtual machine), based on basic functions, can program stochastic assets, which
+        applies to a large number of real-world scenarios. An inherent cost mechanism ensures the system supply
+        converges, resulting in a new universal coin with an innate price appreciation logic. The NEST coin provides a
+        whole new development tool and is a creative new asset for the blockchain world.<br/><br/>Check the <Link
+          href={'/doc/ennestwhitepaper.pdf'} isExternal textDecoration={"underline"}>whitepaper</Link> for more detail.</Text>
+    },
     {
       q: "What is Truly Decentralized Gaming Oracle?", a: `If any part of the decentralized system is centralized, the entire system is said to be centralized. Only a truly decentralized oracle can develop truly decentralized applications or assets. The NEST oracle is completely open and free of charge, allowing miners and arbitrageurs to verify prices based on gaming, and it solves the on-chain price problem via a decentralized incentive scheme. 
     
@@ -87,7 +101,8 @@ Given that PVM supports random variables and their programming in the full proba
   ]
   const trading_relates = [
     {
-      q: "Which Centralized exchange can I buy NEST on?", a: <Text>1. Huobi Global: <Link href={" https://www.huobi.com/"} isExternal> https://www.huobi.com/</Link><br/>
+      q: "Which Centralized exchange can I buy NEST on?",
+      a: <Text>1. Huobi Global: <Link href={" https://www.huobi.com/"} isExternal> https://www.huobi.com/</Link><br/>
         2. Gate.io：<Link href="https://www.gate.io/tw" isExternal>https://www.gate.io/tw</Link><br/>
         3. Coinone：<Link href={"https://coinone.co.kr/"} isExternal>https://coinone.co.kr/</Link><br/>
         4. Bibox：<Link href={"https://www.bibox.pro/"} isExternal>https://www.bibox.pro/</Link><br/>
@@ -106,13 +121,17 @@ Given that PVM supports random variables and their programming in the full proba
       </Text>
     },
     {
-      q: "Which Decentralized exchange can I buy NEST on?", a: <Text>CoFiX: <Link isExternal href={"https://bsc.cofix.tech/#/swap"}>https://bsc.cofix.tech/#/swap</Link><br/>
-        Uniswap: <Link href={"https://app.uniswap.org/#/swap?chain=mainnet"} isExternal>https://app.uniswap.org/#/swap?chain=mainnet</Link><br/>
+      q: "Which Decentralized exchange can I buy NEST on?",
+      a: <Text>CoFiX: <Link isExternal href={"https://bsc.cofix.tech/#/swap"}>https://bsc.cofix.tech/#/swap</Link><br/>
+        Uniswap: <Link href={"https://app.uniswap.org/#/swap?chain=mainnet"}
+                       isExternal>https://app.uniswap.org/#/swap?chain=mainnet</Link><br/>
         PancakeSwap: <Link href={"https://pancakeswap.finance/swap"} isExternal>https://pancakeswap.finance/swap</Link></Text>
     },
     {
       q: "How to convert NEST tokens from BSC to Ethereum?",
-      a: <Text>NEST token cross-chain tutorial：<Link href={"https://nest-protocol-82041.medium.com/cross-chain-bridge-tutorial-c8a9eae85e8b"} isExternal>https://nest-protocol-82041.medium.com/cross-chain-bridge-tutorial-c8a9eae85e8b</Link></Text>
+      a: <Text>NEST token cross-chain tutorial：<Link
+        href={"https://nest-protocol-82041.medium.com/cross-chain-bridge-tutorial-c8a9eae85e8b"}
+        isExternal>https://nest-protocol-82041.medium.com/cross-chain-bridge-tutorial-c8a9eae85e8b</Link></Text>
     },
   ]
   const contract_issues = [
