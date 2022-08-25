@@ -212,11 +212,13 @@ const TheFooter = () => {
               </WrapItem>
             )}
             {!isDesktop && (
-              <HStack justify={"center"} w={'full'}>
-                <Text color={'#7D7D7D'} fontSize={'12px'} fontWeight={'600'}>
-                  ©2022 NEST
-                </Text>
-              </HStack>
+              <WrapItem w={"full"} justifyContent={"center"}>
+                <HStack justify={"center"} w={'full'}>
+                  <Text color={'#7D7D7D'} fontSize={'12px'} fontWeight={'600'}>
+                    ©2022 NEST
+                  </Text>
+                </HStack>
+              </WrapItem>
             )}
           </Wrap>
         </Stack>
