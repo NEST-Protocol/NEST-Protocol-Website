@@ -1,4 +1,4 @@
-import {chakra, HStack, Spacer, Stack, Text, useMediaQuery, VStack, Wrap, WrapItem} from "@chakra-ui/react";
+import {chakra, HStack, Link, Spacer, Stack, Text, useMediaQuery, VStack, Wrap, WrapItem} from "@chakra-ui/react";
 import React from "react";
 import Head from "@docusaurus/Head";
 
@@ -77,58 +77,65 @@ const TheFooter = () => {
                   <Text color={'#7D7D7D'} fontWeight={'600'}>Frequently asked questions</Text>
                 </VStack>
                 {isDesktop && (
-                  <HStack spacing={'24px'}>
-                    <chakra.img
-                      alt={'https://github.com/NEST-Protocol'}
-                      src={"/image/Footer/github_icon.svg"}
-                      width={'44px'}
-                      height={'44px'}
-                      cursor={"pointer"}
-                      onClick={() => {
-                        window.open('https://github.com/NEST-Protocol', '_blank')
-                      }}
-                    />
-                    <chakra.img
-                      alt={'https://twitter.com/nest_protocol/'}
-                      src={"/image/Footer/twitter_icon.svg"}
-                      width={'44px'}
-                      height={'44px'}
-                      cursor={"pointer"}
-                      onClick={() => {
-                        window.open('https://twitter.com/nest_protocol/', '_blank')
-                      }}
-                    />
-                    <chakra.img
-                      alt={'https://t.me/nest_chat/'}
-                      src={"/image/Footer/telegram_icon.svg"}
-                      width={'44px'}
-                      height={'44px'}
-                      cursor={"pointer"}
-                      onClick={() => {
-                        window.open('https://t.me/nest_chat/', '_blank')
-                      }}
-                    />
-                    <chakra.img
-                      alt={'https://nest-protocol-82041.medium.com/'}
-                      src={"/image/Footer/medium_icon.svg"}
-                      width={'44px'}
-                      height={'44px'}
-                      cursor={"pointer"}
-                      onClick={() => {
-                        window.open('https://nest-protocol-82041.medium.com/', '_blank')
-                      }}
-                    />
-                    <chakra.img
-                      alt={'https://discord.gg/nestprotocol'}
-                      src={"/image/Footer/discord_icon.svg"}
-                      width={'44px'}
-                      height={'44px'}
-                      cursor={"pointer"}
-                      onClick={() => {
-                        window.open('https://discord.gg/nestprotocol', '_blank')
-                      }}
-                    />
-                  </HStack>
+                  <Stack spacing={'24px'}>
+                    <HStack spacing={'24px'}>
+                      <chakra.img
+                        alt={'https://github.com/NEST-Protocol'}
+                        src={"/image/Footer/github_icon.svg"}
+                        width={'44px'}
+                        height={'44px'}
+                        cursor={"pointer"}
+                        onClick={() => {
+                          window.open('https://github.com/NEST-Protocol', '_blank')
+                        }}
+                      />
+                      <chakra.img
+                        alt={'https://twitter.com/nest_protocol/'}
+                        src={"/image/Footer/twitter_icon.svg"}
+                        width={'44px'}
+                        height={'44px'}
+                        cursor={"pointer"}
+                        onClick={() => {
+                          window.open('https://twitter.com/nest_protocol/', '_blank')
+                        }}
+                      />
+                      <chakra.img
+                        alt={'https://t.me/nest_chat/'}
+                        src={"/image/Footer/telegram_icon.svg"}
+                        width={'44px'}
+                        height={'44px'}
+                        cursor={"pointer"}
+                        onClick={() => {
+                          window.open('https://t.me/nest_chat/', '_blank')
+                        }}
+                      />
+                      <chakra.img
+                        alt={'https://nest-protocol-82041.medium.com/'}
+                        src={"/image/Footer/medium_icon.svg"}
+                        width={'44px'}
+                        height={'44px'}
+                        cursor={"pointer"}
+                        onClick={() => {
+                          window.open('https://nest-protocol-82041.medium.com/', '_blank')
+                        }}
+                      />
+                      <chakra.img
+                        alt={'https://discord.gg/nestprotocol'}
+                        src={"/image/Footer/discord_icon.svg"}
+                        width={'44px'}
+                        height={'44px'}
+                        cursor={"pointer"}
+                        onClick={() => {
+                          window.open('https://discord.gg/nestprotocol', '_blank')
+                        }}
+                      />
+                    </HStack>
+                    <Link
+                      color={'#7D7D7D'}
+                      fontWeight={'600'}
+                      href={'mailto:hello@nestprotocol.org'}
+                    >hello@nestprotocol.org</Link>
+                  </Stack>
                 )}
               </Stack>
             </WrapItem>
@@ -209,6 +216,15 @@ const TheFooter = () => {
                     }}
                   />
                 </HStack>
+              </WrapItem>
+            )}
+            {!isDesktop && (
+              <WrapItem w={"full"} justifyContent={"center"}>
+                <Link
+                  color={'#7D7D7D'}
+                  fontWeight={'600'}
+                  href={'mailto:hello@nestprotocol.org'}
+                >hello@nestprotocol.org</Link>
               </WrapItem>
             )}
             {!isDesktop && (
