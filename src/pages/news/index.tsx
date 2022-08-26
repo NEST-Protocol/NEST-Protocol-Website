@@ -96,7 +96,7 @@ const LatestNews = () => {
               bg: "/image/News/News_card_1.webp",
               logo: "/image/Home/News_card_icon.webp",
               desc: `Leading United States-based cryptocurrency exchange`,
-              link: '/blog/Coinbase-Announces-Adds-$NEST-to-Experimental-Asset-Label',
+              link: '/blog/Coinbase-Announces-Planned-Listing-of-Tokens-Adds-NEST',
               date: "July 25, 2022"
             },
             {
