@@ -107,7 +107,7 @@ const config = {
           {name: "twitter:title", content: "NEST Protocol"},
           {
             name: "twitter:description",
-            content: "NEST is a blockchain-based probability virtual machine (PVM) system with web3 applications of DeFi, GameFi, NFT built on it."
+            content: "NEST Protocol is the stochastic computer based on PVM, enables the generation and programming of stochastic assets."
           },
           {name: "og:url", content: "https://nestprotocol.org/"},
           {name: "og:title", content: "NEST Protocol"},
@@ -115,7 +115,7 @@ const config = {
           {name: "og:site_name", content: "NEST Protocol"},
           {name: "og:image", content: "https://nestprotocol.org/img/logo.svg"},
           {name: "google-site-verification", content: "Taax65uDIhSEcZALM9plxpcfWAkJipGzu-sxjJjNp8w"},
-          {name: "description", content: "NEST is a blockchain-based probability virtual machine (PVM) system with web3 applications of DeFi, GameFi, NFT built on it."},
+          {name: "description", content: "NEST Protocol is the stochastic computer based on PVM, enables the generation and programming of stochastic assets."},
           {name: "theme-color", content: "#ffffff"},
         ],
       }),
