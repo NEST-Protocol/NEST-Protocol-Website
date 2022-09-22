@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  ChakraProvider, Text, Stack, Link, Button, Heading, HStack, chakra, Box,
+  ChakraProvider, Text, Stack, Link, Button, Heading, HStack, chakra,
 } from "@chakra-ui/react";
 import Head from "@docusaurus/Head";
 import theme from "../../../chakra"
