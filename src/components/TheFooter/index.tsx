@@ -29,7 +29,7 @@ const TheFooter = () => {
           overflow={"hidden"}
           objectPosition={"center"}
         />
-        <Stack maxW={'1440px'} justify={'space-around'} w={'100%'} zIndex={1} py={isDesktop ? "88px" : "66px"}>
+        <Stack maxW={'1920px'} justify={'space-around'} w={'100%'} zIndex={1} py={isDesktop ? "88px" : "66px"}>
           <Wrap spacing={isDesktop ? "44px" : "22px"} justify={"space-between"} fontSize={isDesktop ? "15px" : "12px"}
                 w={"100%"}>
             <WrapItem>
@@ -80,22 +80,22 @@ const TheFooter = () => {
                   <Stack spacing={'24px'}>
                     <HStack spacing={'24px'}>
                       <Link href={'https://github.com/NEST-Protocol'} isExternal>
-                        <chakra.img src={'image/Footer/github_icon.svg'} />
+                        <chakra.img src={'image/Footer/github_icon.svg'} h={'44px'} w={'44px'}/>
                       </Link>
                       <Link href={'https://twitter.com/nest_protocol/'} isExternal>
-                        <chakra.img src={'image/Footer/twitter_icon.svg'} />
+                        <chakra.img src={'image/Footer/twitter_icon.svg'} h={'44px'} w={'44px'}/>
                       </Link>
                       <Link href={'https://t.me/nest_chat/'} isExternal>
-                        <chakra.img src={'image/Footer/telegram_icon.svg'} />
+                        <chakra.img src={'image/Footer/telegram_icon.svg'} h={'44px'} w={'44px'}/>
                       </Link>
                       <Link href={'https://nest-protocol-82041.medium.com/'} isExternal>
-                        <chakra.img src={'image/Footer/medium_icon.svg'} />
+                        <chakra.img src={'image/Footer/medium_icon.svg'} h={'44px'} w={'44px'}/>
                       </Link>
                       <Link href={'https://discord.gg/nestprotocol'} isExternal>
-                        <chakra.img src={'image/Footer/discord_icon.svg'} />
+                        <chakra.img src={'image/Footer/discord_icon.svg'} h={'44px'} w={'44px'}/>
                       </Link>
                       <Link href={'mailto:hello@nestprotocol.org'} isExternal>
-                        <chakra.img src={'image/Footer/email_icon.svg'} />
+                        <chakra.img src={'image/Footer/email_icon.svg'} h={'44px'} w={'44px'}/>
                       </Link>
                     </HStack>
                   </Stack>
@@ -103,7 +103,7 @@ const TheFooter = () => {
               </Stack>
             </WrapItem>
             <WrapItem w={'400px'}>
-              <Stack spacing={['10px', "-12px"]} zIndex={1} w={"100%"} h={'full'}>
+              <Stack spacing={'10px'} zIndex={1} w={"100%"} h={'full'}>
                 <Text px={[0, '16px']} fontSize={isDesktop ? "15px" : "12px"} fontWeight={'700'} color={'#003232'}>
                   Market price
                 </Text>

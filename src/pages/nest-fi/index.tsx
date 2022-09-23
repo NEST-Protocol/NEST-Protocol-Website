@@ -3,10 +3,14 @@ import {
   ChakraProvider, Text, Stack, Link, Button, Heading, HStack, chakra, Box, Spacer,
 } from "@chakra-ui/react";
 import theme from "../../chakra"
+import Head from "@docusaurus/Head";
 
 export default function NestFi(): JSX.Element {
   return (
     <ChakraProvider theme={theme}>
+      <Head>
+        <script src={"https://crypto.com/price/static/widget/index.js"}></script>
+      </Head>
       <Stack h={'100%'} w={'100vw'} align={"center"}>
         <Stack w={'100%'} maxW={'1920px'} h={'100%'} bgImage={'image/NEST_Fi/NESTFi_bg.jpg'} spacing={0}>
           <Stack px={'45px'} h={'88px'} direction={"row"} justifyContent={"space-between"} align={"center"}>
@@ -74,7 +78,7 @@ export default function NestFi(): JSX.Element {
             <Heading fontSize={'50px'}>Dapps in NEST FI</Heading>
             <HStack w={'full'}>
               <Stack w={'50%'} align={"center"} justify={"center"}>
-                <Text>image</Text>
+                <chakra.img src={'image/NEST_Fi/iphone_1.webp'} h={'400px'}/>
               </Stack>
               <Stack w={'50%'} px={'135px'} py={'155px'} bg={'white'} borderRadius={'20px'}>
                 <Text fontSize={'25px'} fontWeight={600}>NEST FI - Futures</Text>
@@ -98,7 +102,7 @@ export default function NestFi(): JSX.Element {
                 </Box>
               </Stack>
               <Stack w={'50%'} align={"center"} justify={"center"}>
-                <Text>image</Text>
+                <chakra.img src={'image/NEST_Fi/iphone_2.webp'} h={'400px'}/>
               </Stack>
             </HStack>
           </Stack>

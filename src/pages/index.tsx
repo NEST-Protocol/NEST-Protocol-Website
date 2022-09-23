@@ -123,21 +123,21 @@ export default function Home(): JSX.Element {
                 <Stack align={"center"}>
                   <AiOutlineTwitter fontSize={'48px'} color={'#003232'}/>
                 </Stack>
-                <Link>@NEST_Protocol <ChevronRightIcon/></Link>
-                <Link>@NESTDAOSupport <ChevronRightIcon/></Link>
+                <Link href={'https://twitter.com/NEST_Protocol'} isExternal>@NEST_Protocol <ChevronRightIcon/></Link>
+                <Link href={'https://twitter.com/NESTDAOSupport'} isExternal>@NESTDAOSupport <ChevronRightIcon/></Link>
               </Stack>
               <Stack spacing={'20px'}>
                 <Stack align={"center"}>
                   <FaTelegramPlane fontSize={'48px'} color={'#003232'}/>
                 </Stack>
-                <Link>@NEST_Community <ChevronRightIcon/></Link>
-                <Link>@nest_chat <ChevronRightIcon/></Link>
+                <Link href={'https://t.me/NEST_Community'} isExternal>@NEST_Community <ChevronRightIcon/></Link>
+                <Link href={'https://t.me/nest_chat'} isExternal>@nest_chat <ChevronRightIcon/></Link>
               </Stack>
               <Stack spacing={'20px'}>
                 <Stack align={"center"}>
                   <AiOutlineGithub fontSize={'48px'} color={'#003232'}/>
                 </Stack>
-                <Link>For developers <ChevronRightIcon/></Link>
+                <Link href={'/developers'}>For developers <ChevronRightIcon/></Link>
               </Stack>
             </HStack>
             <Stack spacing={'60px'} align={"center"}>

@@ -4,10 +4,14 @@ import {
 } from "@chakra-ui/react";
 import theme from "../../../chakra"
 import {ChevronRightIcon} from "@chakra-ui/icons";
+import Head from "@docusaurus/Head";
 
 export default function NRA(): JSX.Element {
   return (
     <ChakraProvider theme={theme}>
+      <Head>
+        <script src={"https://crypto.com/price/static/widget/index.js"}></script>
+      </Head>
       <Stack h={'100%'} w={'100vw'} align={"center"}>
         <Stack w={'100%'} maxW={'1920px'} h={'100%'} bgImage={'/image/About/About_bg_nra.jpg'} bgPosition={"center"} spacing={0}>
           <Stack px={'45px'} h={'88px'} direction={"row"} justifyContent={"space-between"} align={"center"}>

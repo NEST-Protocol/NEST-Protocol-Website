@@ -3,10 +3,14 @@ import {
   ChakraProvider, Text, Stack, Link, Button, Heading, HStack, chakra, Box, Spacer,
 } from "@chakra-ui/react";
 import theme from "../../chakra"
+import Head from "@docusaurus/Head";
 
 export default function Home(): JSX.Element {
   return (
     <ChakraProvider theme={theme}>
+      <Head>
+        <script src={"https://crypto.com/price/static/widget/index.js"}></script>
+      </Head>
       <Stack h={'100%'} w={'100vw'} align={"center"}>
         <Stack w={'100%'} maxW={'1920px'} h={'100%'} bgImage={'image/Developer/Developer_bg.jpg'} spacing={0}>
           <Stack px={'45px'} h={'88px'} direction={"row"} justifyContent={"space-between"} align={"center"}>
