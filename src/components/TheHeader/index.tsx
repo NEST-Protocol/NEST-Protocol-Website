@@ -24,7 +24,7 @@ const TheHeader = () => {
   const menu = [
     {name: 'NEST Fi', pathname: 'nest-fi'},
     {name: 'Developers', pathname: 'developers'},
-    {name: 'Doc', pathname: 'docs'},
+    {name: 'Doc', pathname: 'docs/Building-On-NEST/Contracts/'},
     {name: 'Blog', pathname: 'blogs'},
     {name: 'About', pathname: 'about'}
   ]
@@ -46,7 +46,6 @@ const TheHeader = () => {
     >
       <HStack
         maxW={'1920px'}
-        px={'45px'}
         w={'100%'}
         spacing={'24px'}>
         <chakra.img
