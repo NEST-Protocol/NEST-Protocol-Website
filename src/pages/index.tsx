@@ -1,15 +1,16 @@
 import React from 'react';
 import {
-  ChakraProvider, Text, Stack, Link, Button, Heading, HStack, chakra, Box, Spacer,
+  ChakraProvider, Text, Stack, Link, Button, Heading, HStack, chakra, Box, Spacer
 } from "@chakra-ui/react";
 import theme from "../chakra"
 import {ChevronRightIcon} from "@chakra-ui/icons";
+import {AiOutlineTwitter, FaTelegramPlane, AiOutlineGithub} from "react-icons/all";
 
 export default function Home(): JSX.Element {
   return (
     <ChakraProvider theme={theme}>
       <Stack h={'100%'} w={'100vw'} align={"center"}>
-        <Stack w={'100%'} maxW={'1920px'} h={'100%'} bg={'gray.200'} spacing={0}>
+        <Stack w={'100%'} maxW={'1920px'} h={'5752px'} bgImage={"image/Home/Home_bg.jpg"} bgPosition={"center"} spacing={0}>
           <Stack px={'45px'} h={'88px'} direction={"row"} justifyContent={"space-between"} align={"center"}>
             <Link href={'/'}>
               <chakra.img
@@ -115,14 +116,23 @@ export default function Home(): JSX.Element {
             <HStack justify={"center"} alignItems={"start"} spacing={'120px'} py={'62px'} color={'#00A0E9'}
                     fontWeight={'600'}>
               <Stack spacing={'20px'}>
+                <Stack align={"center"}>
+                  <AiOutlineTwitter fontSize={'48px'} color={'#003232'}/>
+                </Stack>
                 <Link>@NEST_Protocol <ChevronRightIcon/></Link>
                 <Link>@NESTDAOSupport <ChevronRightIcon/></Link>
               </Stack>
               <Stack spacing={'20px'}>
+                <Stack align={"center"}>
+                  <FaTelegramPlane fontSize={'48px'} color={'#003232'}/>
+                </Stack>
                 <Link>@NEST_Community <ChevronRightIcon/></Link>
                 <Link>@nest_chat <ChevronRightIcon/></Link>
               </Stack>
               <Stack spacing={'20px'}>
+                <Stack align={"center"}>
+                  <AiOutlineGithub fontSize={'48px'} color={'#003232'}/>
+                </Stack>
                 <Link>For developers <ChevronRightIcon/></Link>
               </Stack>
             </HStack>
@@ -185,23 +195,23 @@ export default function Home(): JSX.Element {
             <Heading fontSize={'50px'} textAlign={"center"}>Integrations & Partners</Heading>
             <Stack bg={'rgba(255,255,255, 0.7)'} h={'440px'} align={"center"} spacing={'60px'} justify={"center"}>
               <HStack spacing={'80px'}>
-                <Text>image1</Text>
-                <Text>image2</Text>
-                <Text>image3</Text>
-                <Text>image4</Text>
+                <chakra.img src={"/svg/huobi.svg"} h={'45px'}/>
+                <chakra.img src={"/svg/binance.svg"} h={'45px'}/>
+                <chakra.img src={"/svg/Coinbase.svg"} h={'45px'}/>
+                <chakra.img src={"/svg/polygon.svg"} h={'45px'}/>
               </HStack>
               <HStack spacing={'80px'}>
-                <Text>image1</Text>
-                <Text>image2</Text>
-                <Text>image3</Text>
-                <Text>image4</Text>
-                <Text>image5</Text>
+                <chakra.img src={"/svg/kcc.svg"} h={'45px'}/>
+                <chakra.img src={"/svg/cointelegraph.svg"} h={'45px'} />
+                <chakra.img src={"/svg/cube.svg"} h={'45px'}/>
+                <chakra.img src={"/svg/peckshield.svg"} h={'45px'}/>
+                <chakra.img src={"/svg/fortube.svg"} h={'45px'}/>
               </HStack>
               <HStack spacing={'80px'}>
-                <Text>image1</Text>
-                <Text>image2</Text>
-                <Text>image3</Text>
-                <Text>image4</Text>
+                <chakra.img src={"/svg/polynetwork.svg"} h={'45px'}/>
+                <chakra.img src={"/svg/CoFiX.svg"} h={'45px'}/>
+                <chakra.img src={"/svg/Parasset.svg"} h={'45px'}/>
+                <chakra.img src={"/svg/certik.svg"} h={'45px'}/>
               </HStack>
             </Stack>
           </Stack>

@@ -8,7 +8,7 @@ export default function NestFi(): JSX.Element {
   return (
     <ChakraProvider theme={theme}>
       <Stack h={'100%'} w={'100vw'} align={"center"}>
-        <Stack w={'100%'} maxW={'1920px'} h={'100%'} bg={'gray.200'} spacing={0}>
+        <Stack w={'100%'} maxW={'1920px'} h={'100%'} bgImage={'image/NEST_Fi/NESTFi_bg.jpg'} spacing={0}>
           <Stack px={'45px'} h={'88px'} direction={"row"} justifyContent={"space-between"} align={"center"}>
             <Link href={'/'}>
               <chakra.img
@@ -89,12 +89,11 @@ export default function NestFi(): JSX.Element {
             </HStack>
             <HStack w={'full'} pt={'40px'}>
               <Stack w={'50%'} px={'135px'} py={'155px'} bg={'white'} borderRadius={'20px'}>
-                <Text fontSize={'25px'} fontWeight={600}>NEST FI - Futures</Text>
-                <Text fontSize={'15px'} fontWeight={600}>Trade BTC/USDT and ETH/USDT futures directly<br/>from your
-                  wallet without trading fee.</Text>
+                <Text fontSize={'25px'} fontWeight={600}>NEST FI - Options</Text>
+                <Text fontSize={'15px'} fontWeight={600}>Buy options with flexible choices on exercise date,<br/>direction and strike price, and no commission.</Text>
                 <Box pt={'25px'}>
                   <Button w={'160px'}>
-                    Buy futures
+                    Buy Options
                   </Button>
                 </Box>
               </Stack>
