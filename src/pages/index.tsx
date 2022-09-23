@@ -3,12 +3,35 @@ import {
   ChakraProvider, Text, Stack, Link, Button, Heading, HStack, chakra, Box, Spacer, Divider
 } from "@chakra-ui/react";
 import theme from "../chakra"
-import {ChevronRightIcon} from "@chakra-ui/icons";
+import {ChevronDownIcon, ChevronRightIcon} from "@chakra-ui/icons";
 import {AiOutlineTwitter, FaTelegramPlane, AiOutlineGithub} from "react-icons/all";
 import Head from "@docusaurus/Head";
 
 export default function Home(): JSX.Element {
   const [start, setStart] = useState(0)
+  const [selected, setSelected] = useState(0)
+
+  const work = [
+    {
+      type: 'PVM',
+      title: `PVM (Probabilistic Virtual Machine) is a class of\nvirtual machine structures based on a library of basic\nfunctions that allow a developer to assemble as many\napplications as he wants - similar to EVM programming`,
+      desc: `PVM enables the generation and programming of\nstochastic assets, which is widely used in DeFi, GameFi,\nNFT, etc.`,
+      link: '/docs/Concept/History-of-EVM-&-PVM'
+    },
+    {
+      type: 'NEST Oracle',
+      title: ``,
+      desc: ``,
+      link: ''
+    },
+    {
+      type: 'OMM',
+      title: `OMM is a new trading and settlement paradigm:\nEveryone trades and settle stochastic assets with\ncontracts rather than individuals.`,
+      desc: `OMM addresses the issue of liquidity and settlement.\nNEST tokens can be used to circulate any stochastic\nasset. Any benefit, even if it is greater than the\nexpected value, can be settled.\nThere is no need to match makers and takers, and all\nNEST holders share the same risks and rewards.
+`,
+      link: ''
+    },
+  ]
 
   const developmentPath = [
     {title: `2018.12 v1.0`, desc: `Start! A lending\nprotocol goes live.`},
@@ -78,14 +101,44 @@ export default function Home(): JSX.Element {
             <Heading pt={'138px'} fontSize={'50px'} textAlign={"center"} pb={'57px'}>How does NEST Protocol
               work?</Heading>
             <Stack bg={'rgba(255, 255, 255, 0.7)'} align={"center"} py={'130px'} spacing={'18px'} w={'full'}>
-              <Text>image</Text>
-              <Text fontSize={'25px'} textAlign={"center"} fontWeight={'bold'}>PVM</Text>
-              <Text fontSize={'15px'} fontWeight={'600'} textAlign={"center"}>PVM (Probabilistic Virtual Machine) is a
-                class of<br/>virtual machine structures based on a library of basic<br/>functions that allow a developer
-                to assemble as many<br/>applications as he wants - similar to EVM programming</Text>
-              <Text textAlign={"center"} color={'#7D7D7D'} fontWeight={'600'} fontSize={'15px'}>PVM enables the
-                generation and programming of<br/>stochastic assets, which is widely used in DeFi, GameFi,<br/>NFT,
-                etc. <Link color={'#00A0E9'} href={'/docs/Concept/History-of-EVM-&-PVM'}>Learn more <ChevronRightIcon/></Link></Text>
+              <Stack align={"center"} spacing={0} fontSize={'15px'} fontWeight={600} onClick={() => setSelected(0)}
+                     cursor={'pointer'}>
+                <Text>Program stochastic asset</Text>
+                <Text color={'#00A0E9'}>PVM</Text>
+                <ChevronDownIcon color={'#00A0E9'}/>
+              </Stack>
+              <HStack align={"end"} spacing={'24px'}>
+                <Stack w={'300px'} align={"end"}>
+                  <Stack align={"center"} spacing={0} fontSize={'15px'} fontWeight={600}
+                         onClick={() => setSelected(1)} cursor={'pointer'}>
+                    <Text>Provide random information flow</Text>
+                    <Text color={'#00A0E9'}>NEST Oracle</Text>
+                    <ChevronDownIcon color={'#00A0E9'}/>
+                  </Stack>
+                </Stack>
+                <Stack w={'220px'} h={'220px'} bg={"red"} borderRadius={'full'}>
+                </Stack>
+                <Stack align={"start"} w={'300px'}>
+                  <Stack align={"center"} spacing={0} fontSize={'15px'} fontWeight={600}
+                         onClick={() => setSelected(2)} cursor={'pointer'}>
+                    <Text>Generate stochastic assets</Text>
+                    <Text color={'#00A0E9'}>OMM</Text>
+                    <ChevronDownIcon color={'#00A0E9'}/>
+                  </Stack>
+                </Stack>
+              </HStack>
+              <Stack pt={'50px'} h={'300px'}>
+                <Text fontSize={'25px'} textAlign={"center"} fontWeight={'bold'}>
+                  {work[selected].type}
+                </Text>
+                <Text fontSize={'15px'} fontWeight={'600'} textAlign={"center"} whiteSpace={'break-spaces'}>
+                  {work[selected].title}
+                </Text>
+                <Text textAlign={"center"} color={'#7D7D7D'} fontWeight={'600'} fontSize={'15px'} whiteSpace={'break-spaces'}>
+                  {work[selected].desc}
+                  <Link color={'#00A0E9'} href={work[selected].link}> Learn more <ChevronRightIcon/></Link>
+                </Text>
+              </Stack>
             </Stack>
           </Stack>
           <Stack py={'138px'} spacing={'48px'}>
@@ -111,9 +164,9 @@ export default function Home(): JSX.Element {
                       <Stack h={'24px'} w={'36px'} bg={"red"} mb={'22px'}/>
                       <Text fontSize={'17px'} fontWeight={'bold'}>{item.title}</Text>
                       <Text fontSize={'15px'} fontWeight={'600'} textAlign={"center"}>{item.desc}</Text>
-                      { item?.icon && (
+                      {item?.icon && (
                         <chakra.img src={item.icon} w={'44px'} h={'44px'} mt={'22px'}/>
-                      ) }
+                      )}
                     </Stack>
                   ))}
                 </HStack>
