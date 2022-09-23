@@ -71,6 +71,9 @@ export default function Home(): JSX.Element {
             <Heading fontSize={'50px'} textAlign={"center"}>Development path</Heading>
             <Text fontSize={'21px'} fontWeight={'bold'} textAlign={"center"}>The NEST community always insists<br/>on
               decentralization and innovation</Text>
+            <HStack>
+
+            </HStack>
           </Stack>
           <Stack bg={'rgba(255, 255, 255, 0.7)'} py={'90px'}>
             <Stack spacing={'28px'}>
