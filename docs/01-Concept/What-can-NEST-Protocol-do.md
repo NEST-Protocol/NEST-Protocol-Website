@@ -2,9 +2,9 @@
 sidebar_position: 4
 ---
 
-# What NEST can do？
+# What can NEST Protocol do？
 
-NEST can be simplified to a production and programming system for stochastic assets. This not only solves the deriva- tives settlement problem that ETH cannot accomplish but also dramati- cally simplifies the development process of Defi and Gamefi. It also avoids the problem of running a new unit of value while developing a project, allowing developers to focus on application development rather than token liquidity operations.
+NEST Protocol can be simplified to a production and programming system for stochastic assets. This not only solves the derivatives settlement problem that ETH cannot accomplish but also dramatically simplifies the development process of Defi and Gamefi. It also avoids the problem of running a new unit of value while developing a project, allowing developers to focus on application development rather than token liquidity operations.
 
 Because NEST is the new risk-trading archetype, it does not need to be hedged like traditional financial assets. It is therefore perfect for providing large amounts of liquidity. Below we shall discuss how this can be applied to different scenarios:
 
@@ -22,7 +22,7 @@ The system can create an endogenous bond reflecting the overall supply and deman
 
 ## Borrowing and lending
 
-In the case of parallel assets, borrowing and lending become very simple, and liquidity is suﬀicient, provided, of course, that the overall convergence property of the system, the inter- est rate of borrowing and lending, needs to be discounted against the price information flow, and can reflect the future price changes and changes in the interest rate oracle.
+In the case of parallel assets, borrowing and lending become very simple, and liquidity is suﬀicient, provided, of course, that the overall convergence property of the system, the interest rate of borrowing and lending, needs to be discounted against the price information flow, and can reflect the future price changes and changes in the interest rate oracle.
 
 ## Dabs
 
@@ -46,4 +46,4 @@ When different platforms are developed with NEST, they have the same system algo
 
 ## Putable NFT
 
-A Nest-linked NFT structure that can set a floor price according to a given algorithm and be interconnected as a whole to trade with the system after certain constraints are met.
+A NEST-linked NFT structure that can set a floor price according to a given algorithm and be interconnected as a whole to trade with the system after certain constraints are met.
