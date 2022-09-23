@@ -19,17 +19,12 @@ export default function Home(): JSX.Element {
     },
     {title: '2021.04 v3.6', desc: `Voting governance\nmodule was added`},
     {title: '2021.11 v4.1', desc: `NEST oracle upgraded.\nAllows anyone\nto build their oracle\nfor their project.`},
-    {title: `2018.12 v1.0 fake`, desc: `Start! A lending\nprotocol goes live.`},
-    {title: '2019.12 v2.0 fake', desc: `NEST oracle V1.0\ngoes live.`},
-    {
-      title: '2020.07 v3.0 fake',
-      desc: `NEST oracle upgraded.\nOpen all oracle tracks\nand supported all\nERC20 Token/ETH price`
-    },
-    {title: '2021.04 v3.6 fake', desc: `Voting governance\nmodule was added`},
-    {
-      title: '2021.11 v4.1 fake',
-      desc: `NEST oracle upgraded.\nAllows anyone\nto build their oracle\nfor their project.`
-    },
+    {title: '2021.12 v4.3', desc: `NEST oracle upgraded.\nAllows each channel for\nmultiple quotation pairs.`},
+    {title: '2022.07 v5.0', desc: `Merge FORT protocol\nNEST protocol= NEST oracle\n+ OMM +PVM`},
+    {title: 'Gene game', desc: '', icon: '/svg/icon_17.svg'},
+    {title: 'Keyboard boy game', desc: '', icon: '/svg/icon_16.svg'},
+    {title: 'DABS', desc: '', icon: ''},
+    {title: 'Cyber ink', desc: '', icon: ''},
   ]
 
   return (
@@ -112,10 +107,13 @@ export default function Home(): JSX.Element {
                 </Stack>
                 <HStack px={'45px'} justify={"space-around"} w={'full'} align={"start"}>
                   {developmentPath.slice(start, start + 5).map((item, index) => (
-                    <Stack key={index} align={"center"} w={'200px'}>
+                    <Stack key={index} align={"center"} w={'200px'} h={'180px'}>
                       <Stack h={'24px'} w={'36px'} bg={"red"} mb={'22px'}/>
                       <Text fontSize={'17px'} fontWeight={'bold'}>{item.title}</Text>
                       <Text fontSize={'15px'} fontWeight={'600'} textAlign={"center"}>{item.desc}</Text>
+                      { item?.icon && (
+                        <chakra.img src={item.icon} w={'44px'} h={'44px'} mt={'22px'}/>
+                      ) }
                     </Stack>
                   ))}
                 </HStack>
