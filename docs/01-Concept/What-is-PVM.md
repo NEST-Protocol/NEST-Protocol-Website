@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-wait for edit...
+waiting for more information...
 
 Satoshi Nakamoto’s ground-breaking insights about blockchain have drawn our attention from traditional assets. 
 Blockchain and Bitcoin strengthen the security and openness of information and data by employing the consensus mechanism,
