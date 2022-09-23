@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
-  ChakraProvider, Text, Stack, Link, Button, Heading, HStack, chakra, Box, Spacer
+  ChakraProvider, Text, Stack, Link, Button, Heading, HStack, chakra, Box, Spacer, Divider
 } from "@chakra-ui/react";
 import theme from "../chakra"
 import {ChevronRightIcon} from "@chakra-ui/icons";
@@ -8,13 +8,38 @@ import {AiOutlineTwitter, FaTelegramPlane, AiOutlineGithub} from "react-icons/al
 import Head from "@docusaurus/Head";
 
 export default function Home(): JSX.Element {
+  const [start, setStart] = useState(0)
+
+  const developmentPath = [
+    {title: `2018.12 v1.0`, desc: `Start! A lending\nprotocol goes live.`},
+    {title: '2019.12 v2.0', desc: `NEST oracle V1.0\ngoes live.`},
+    {
+      title: '2020.07 v3.0',
+      desc: `NEST oracle upgraded.\nOpen all oracle tracks\nand supported all\nERC20 Token/ETH price`
+    },
+    {title: '2021.04 v3.6', desc: `Voting governance\nmodule was added`},
+    {title: '2021.11 v4.1', desc: `NEST oracle upgraded.\nAllows anyone\nto build their oracle\nfor their project.`},
+    {title: `2018.12 v1.0 fake`, desc: `Start! A lending\nprotocol goes live.`},
+    {title: '2019.12 v2.0 fake', desc: `NEST oracle V1.0\ngoes live.`},
+    {
+      title: '2020.07 v3.0 fake',
+      desc: `NEST oracle upgraded.\nOpen all oracle tracks\nand supported all\nERC20 Token/ETH price`
+    },
+    {title: '2021.04 v3.6 fake', desc: `Voting governance\nmodule was added`},
+    {
+      title: '2021.11 v4.1 fake',
+      desc: `NEST oracle upgraded.\nAllows anyone\nto build their oracle\nfor their project.`
+    },
+  ]
+
   return (
     <ChakraProvider theme={theme}>
       <Head>
         <script src={"https://crypto.com/price/static/widget/index.js"}></script>
       </Head>
       <Stack h={'100%'} w={'100vw'} align={"center"}>
-        <Stack w={'100%'} maxW={'1920px'} h={'5752px'} bgImage={"image/Home/Home_bg.jpg"} bgPosition={"center"} spacing={0}>
+        <Stack w={'100%'} maxW={'1920px'} h={'5752px'} bgImage={"image/Home/Home_bg.jpg"} bgPosition={"center"}
+               spacing={0}>
           <Stack px={'45px'} h={'88px'} direction={"row"} justifyContent={"space-between"} align={"center"}>
             <Link href={'/'}>
               <chakra.img
@@ -65,7 +90,7 @@ export default function Home(): JSX.Element {
                 to assemble as many<br/>applications as he wants - similar to EVM programming</Text>
               <Text textAlign={"center"} color={'#7D7D7D'} fontWeight={'600'} fontSize={'15px'}>PVM enables the
                 generation and programming of<br/>stochastic assets, which is widely used in DeFi, GameFi,<br/>NFT,
-                etc. <Link color={'#00A0E9'}>learn more about PVM</Link></Text>
+                etc. <Link color={'#00A0E9'} href={'/docs/Concept/History-of-EVM-&-PVM'}>Learn more <ChevronRightIcon/></Link></Text>
             </Stack>
           </Stack>
           <Stack py={'138px'} spacing={'48px'}>
@@ -73,42 +98,35 @@ export default function Home(): JSX.Element {
             <Text fontSize={'21px'} fontWeight={'bold'} textAlign={"center"}>The NEST community always insists<br/>on
               decentralization and innovation</Text>
             <HStack px={'45px'} align={"start"}>
-              <Stack>
-                <Text>image1</Text>
-              </Stack>
-              <Stack w={'full'} align={"center"}>
-                <Text>image2</Text>
+              <chakra.img src={'/svg/right_icon.svg'} w={'44px'} h={'44px'} transform={'rotate(180deg)'}
+                          opacity={start === 0 ? 0.5 : 1}
+                          cursor={"pointer"}
+                          onClick={() => {
+                            if (start > 0) {
+                              setStart(start - 1)
+                            }
+                          }}/>
+              <Stack w={'full'} spacing={'-34px'} align={"center"}>
+                <Stack h={'44px'} w={'full'} justify={"center"} px={'15px'}>
+                  <Divider h={'1px'} color={'#C9C9C9'}/>
+                </Stack>
                 <HStack px={'45px'} justify={"space-around"} w={'full'} align={"start"}>
-                  <Stack align={"center"} w={'200px'}>
-                    <Text fontSize={'17px'} fontWeight={'bold'}>2018.12 v1.0</Text>
-                    <Text fontSize={'15px'} fontWeight={'600'} textAlign={"center"}>Start! A lending<br/>protocol goes
-                      live.</Text>
-                  </Stack>
-                  <Stack align={"center"} w={'200px'}>
-                    <Text fontSize={'17px'} fontWeight={'bold'}>2019.12 v2.0</Text>
-                    <Text fontSize={'15px'} fontWeight={'600'} textAlign={"center"}>NEST oracle V1.0<br/>goes
-                      live.</Text>
-                  </Stack>
-                  <Stack align={"center"} w={'200px'}>
-                    <Text fontSize={'17px'} fontWeight={'bold'}>2020.07 v3.0</Text>
-                    <Text fontSize={'15px'} fontWeight={'600'} textAlign={"center"}>NEST oracle upgraded.<br/>Open all
-                      oracle tracks<br/>and supported all <br/>ERC20 Token/ETH price</Text>
-                  </Stack>
-                  <Stack align={"center"} w={'200px'}>
-                    <Text fontSize={'17px'} fontWeight={'bold'}>2021.04 v3.6</Text>
-                    <Text fontSize={'15px'} fontWeight={'600'} textAlign={"center"}>Voting governance<br/>module was
-                      added</Text>
-                  </Stack>
-                  <Stack align={"center"} w={'200px'}>
-                    <Text fontSize={'17px'} fontWeight={'bold'}>2021.11 v4.1</Text>
-                    <Text fontSize={'15px'} fontWeight={'600'} textAlign={"center"}>NEST oracle upgraded.<br/>Allows
-                      anyone<br/>to build their oracle<br/>for their project.</Text>
-                  </Stack>
+                  {developmentPath.slice(start, start + 5).map((item, index) => (
+                    <Stack key={index} align={"center"} w={'200px'}>
+                      <Stack h={'24px'} w={'36px'} bg={"red"} mb={'22px'}/>
+                      <Text fontSize={'17px'} fontWeight={'bold'}>{item.title}</Text>
+                      <Text fontSize={'15px'} fontWeight={'600'} textAlign={"center"}>{item.desc}</Text>
+                    </Stack>
+                  ))}
                 </HStack>
               </Stack>
-              <Stack>
-                <Text>image3</Text>
-              </Stack>
+              <chakra.img src={'/svg/right_icon.svg'} w={'44px'} h={'44px'} cursor={"pointer"}
+                          opacity={start === developmentPath.length - 5 ? 0.5 : 1}
+                          onClick={() => {
+                            if (start < developmentPath.length - 5) {
+                              setStart(start + 1)
+                            }
+                          }}/>
             </HStack>
           </Stack>
           <Stack bg={'rgba(255, 255, 255, 0.7)'} py={'90px'}>
@@ -206,7 +224,7 @@ export default function Home(): JSX.Element {
               </HStack>
               <HStack spacing={'80px'}>
                 <chakra.img src={"/svg/kcc.svg"} h={'45px'}/>
-                <chakra.img src={"/svg/cointelegraph.svg"} h={'45px'} />
+                <chakra.img src={"/svg/cointelegraph.svg"} h={'45px'}/>
                 <chakra.img src={"/svg/cube.svg"} h={'45px'}/>
                 <chakra.img src={"/svg/peckshield.svg"} h={'45px'}/>
                 <chakra.img src={"/svg/fortube.svg"} h={'45px'}/>
@@ -220,10 +238,12 @@ export default function Home(): JSX.Element {
             </Stack>
           </Stack>
           <Stack h={'138px'}/>
-          <HStack py={'88px'} px={'45px'} bg={'rgba(255, 255,255, 0.7)'} justifyContent={"space-between"} align={"start"}>
+          <HStack py={'88px'} px={'45px'} bg={'rgba(255, 255,255, 0.7)'} justifyContent={"space-between"}
+                  align={"start"}>
             <Stack spacing={'40px'} align={"start"}>
               <Stack spacing={'22px'}>
-                <Link fontSize={'15px'} fontWeight={'bold'} href={'https://finance.nestprotocol.org/'} isExternal>Launch App</Link>
+                <Link fontSize={'15px'} fontWeight={'bold'} href={'https://finance.nestprotocol.org/'} isExternal>Launch
+                  App</Link>
                 <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Buy futures, options and win NEST</Text>
               </Stack>
               <Stack spacing={'22px'}>
@@ -237,7 +257,8 @@ export default function Home(): JSX.Element {
             </Stack>
             <Stack spacing={'40px'}>
               <Stack spacing={'22px'}>
-                <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/Building-On-NEST/Contracts/'}>Developer Docs</Link>
+                <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/Building-On-NEST/Contracts/'}>Developer
+                  Docs</Link>
                 <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know how to develop on NEST</Text>
               </Stack>
               <Stack spacing={'22px'}>
