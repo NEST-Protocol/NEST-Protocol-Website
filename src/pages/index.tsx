@@ -1,17 +1,13 @@
 import React from 'react';
 import {
-  ChakraProvider, Text, Stack, Link, Button, Heading, HStack, chakra, Box,
+  ChakraProvider, Text, Stack, Link, Button, Heading, HStack, chakra, Box, Spacer,
 } from "@chakra-ui/react";
-import Head from "@docusaurus/Head";
 import theme from "../chakra"
 import {ChevronRightIcon} from "@chakra-ui/icons";
 
 export default function Home(): JSX.Element {
   return (
     <ChakraProvider theme={theme}>
-      <Head>
-        <title>NEST Protocol | The stochastic computer based on PVM</title>
-      </Head>
       <Stack h={'100%'} w={'100vw'} align={"center"}>
         <Stack w={'100%'} maxW={'1920px'} h={'100%'} bg={'gray.200'} spacing={0}>
           <Stack px={'45px'} h={'88px'} direction={"row"} justifyContent={"space-between"} align={"center"}>
@@ -71,8 +67,43 @@ export default function Home(): JSX.Element {
             <Heading fontSize={'50px'} textAlign={"center"}>Development path</Heading>
             <Text fontSize={'21px'} fontWeight={'bold'} textAlign={"center"}>The NEST community always insists<br/>on
               decentralization and innovation</Text>
-            <HStack>
-
+            <HStack px={'45px'} align={"start"}>
+              <Stack>
+                <Text>image1</Text>
+              </Stack>
+              <Stack w={'full'} align={"center"}>
+                <Text>image2</Text>
+                <HStack px={'45px'} justify={"space-around"} w={'full'} align={"start"}>
+                  <Stack align={"center"} w={'200px'}>
+                    <Text fontSize={'17px'} fontWeight={'bold'}>2018.12 v1.0</Text>
+                    <Text fontSize={'15px'} fontWeight={'600'} textAlign={"center"}>Start! A lending<br/>protocol goes
+                      live.</Text>
+                  </Stack>
+                  <Stack align={"center"} w={'200px'}>
+                    <Text fontSize={'17px'} fontWeight={'bold'}>2019.12 v2.0</Text>
+                    <Text fontSize={'15px'} fontWeight={'600'} textAlign={"center"}>NEST oracle V1.0<br/>goes
+                      live.</Text>
+                  </Stack>
+                  <Stack align={"center"} w={'200px'}>
+                    <Text fontSize={'17px'} fontWeight={'bold'}>2020.07 v3.0</Text>
+                    <Text fontSize={'15px'} fontWeight={'600'} textAlign={"center"}>NEST oracle upgraded.<br/>Open all
+                      oracle tracks<br/>and supported all <br/>ERC20 Token/ETH price</Text>
+                  </Stack>
+                  <Stack align={"center"} w={'200px'}>
+                    <Text fontSize={'17px'} fontWeight={'bold'}>2021.04 v3.6</Text>
+                    <Text fontSize={'15px'} fontWeight={'600'} textAlign={"center"}>Voting governance<br/>module was
+                      added</Text>
+                  </Stack>
+                  <Stack align={"center"} w={'200px'}>
+                    <Text fontSize={'17px'} fontWeight={'bold'}>2021.11 v4.1</Text>
+                    <Text fontSize={'15px'} fontWeight={'600'} textAlign={"center"}>NEST oracle upgraded.<br/>Allows
+                      anyone<br/>to build their oracle<br/>for their project.</Text>
+                  </Stack>
+                </HStack>
+              </Stack>
+              <Stack>
+                <Text>image3</Text>
+              </Stack>
             </HStack>
           </Stack>
           <Stack bg={'rgba(255, 255, 255, 0.7)'} py={'90px'}>
@@ -116,24 +147,30 @@ export default function Home(): JSX.Element {
               <Stack w={'308px'} bg={"white"} borderRadius={'20px'} h={'352px'}>
                 <Text>image</Text>
                 <Stack spacing={'20px'} p={'20px'}>
-                  <Text fontSize={'18px'} fontWeight={'bold'}>Coinbase Announces Planned Listing of Tokens, Adds $NEST to ‘Experimental Asset’ Label</Text>
-                  <Text fontSize={'13px'} fontWeight={'600'} color={'#878787'}>Leading United States-based cryptocurrency</Text>
+                  <Text fontSize={'18px'} fontWeight={'bold'}>Coinbase Announces Planned Listing of Tokens, Adds $NEST
+                    to ‘Experimental Asset’ Label</Text>
+                  <Text fontSize={'13px'} fontWeight={'600'} color={'#878787'}>Leading United States-based
+                    cryptocurrency</Text>
                   <Text fontSize={'13px'} fontWeight={500} color={'#878787'}>July 25, 2022</Text>
                 </Stack>
               </Stack>
               <Stack w={'308px'} bg={"white"} h={'352px'} borderRadius={'20px'}>
                 <Text>image</Text>
                 <Stack spacing={'20px'} p={'20px'}>
-                  <Text fontSize={'18px'} fontWeight={'bold'}>NEST Protocol: A New Paradigm of Game Theoretic Oracle</Text>
-                  <Text fontSize={'13px'} fontWeight={'600'} color={'#878787'}>Blockchain innovation defined the major part of the last decade, with</Text>
+                  <Text fontSize={'18px'} fontWeight={'bold'}>NEST Protocol: A New Paradigm of Game Theoretic
+                    Oracle</Text>
+                  <Text fontSize={'13px'} fontWeight={'600'} color={'#878787'}>Blockchain innovation defined the major
+                    part of the last decade, with</Text>
                   <Text fontSize={'13px'} fontWeight={500} color={'#878787'}>Jun 9, 2022</Text>
                 </Stack>
               </Stack>
               <Stack w={'308px'} bg={"white"} h={'352px'} borderRadius={'20px'}>
                 <Text>image</Text>
                 <Stack spacing={'20px'} p={'20px'}>
-                  <Text fontSize={'18px'} fontWeight={'bold'}>NEST’s RSS FEED INTEGRATED WITH CRYPTO.COM PRICE PAGE</Text>
-                  <Text fontSize={'13px'} fontWeight={'600'} color={'#878787'}>Through Crypto.com’s NEST Price Page, you can now directly access NEST’s</Text>
+                  <Text fontSize={'18px'} fontWeight={'bold'}>NEST’s RSS FEED INTEGRATED WITH CRYPTO.COM PRICE
+                    PAGE</Text>
+                  <Text fontSize={'13px'} fontWeight={'600'} color={'#878787'}>Through Crypto.com’s NEST Price Page, you
+                    can now directly access NEST’s</Text>
                   <Text fontSize={'13px'} fontWeight={500} color={'#878787'}>May 6, 2022</Text>
                 </Stack>
               </Stack>
@@ -169,6 +206,47 @@ export default function Home(): JSX.Element {
             </Stack>
           </Stack>
           <Stack h={'138px'}/>
+          <HStack py={'88px'} px={'45px'} bg={'rgba(255, 255,255, 0.7)'} justifyContent={"space-between"} align={"start"}>
+            <Stack spacing={'40px'} align={"start"}>
+              <Stack spacing={'22px'}>
+                <Link fontSize={'15px'} fontWeight={'bold'}>Launch App</Link>
+                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Buy futures, options and win NEST</Text>
+              </Stack>
+              <Stack spacing={'22px'}>
+                <Link fontSize={'15px'} fontWeight={'bold'}>NEST Blog</Link>
+                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Latest blogs from NEST</Text>
+              </Stack>
+              <Stack spacing={'22px'}>
+                <Link fontSize={'15px'} fontWeight={'bold'}>NEST Research Academy</Link>
+                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know about NRA</Text>
+              </Stack>
+            </Stack>
+            <Stack spacing={'40px'}>
+              <Stack spacing={'22px'}>
+                <Link fontSize={'15px'} fontWeight={'bold'}>Developer Docs</Link>
+                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know how to develop on NEST</Text>
+              </Stack>
+              <Stack spacing={'22px'}>
+                <Link fontSize={'15px'} fontWeight={'bold'}>FAQs</Link>
+                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Frequently asked questions</Text>
+              </Stack>
+              <HStack>
+                <Text>Twitter</Text>
+                <Text>github</Text>
+              </HStack>
+            </Stack>
+            <Stack spacing={'40px'} w={'420px'} h={'281px'}>
+              <Stack spacing={'22px'}>
+                <Text fontSize={'15px'} fontWeight={'bold'}>Market price</Text>
+                <Text>Buy futures, options and win NEST</Text>
+              </Stack>
+              <Spacer/>
+              <HStack spacing={'22px'}>
+                <Spacer/>
+                <Text fontSize={'14px'} fontWeight={'bold'} color={'#434344'}>@2022 NEST</Text>
+              </HStack>
+            </Stack>
+          </HStack>
         </Stack>
       </Stack>
     </ChakraProvider>

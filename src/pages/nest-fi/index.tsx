@@ -1,16 +1,12 @@
 import React from 'react';
 import {
-  ChakraProvider, Text, Stack, Link, Button, Heading, HStack, chakra, Box, Center,
+  ChakraProvider, Text, Stack, Link, Button, Heading, HStack, chakra, Box, Spacer,
 } from "@chakra-ui/react";
-import Head from "@docusaurus/Head";
 import theme from "../../chakra"
 
 export default function NestFi(): JSX.Element {
   return (
     <ChakraProvider theme={theme}>
-      <Head>
-        <title>NEST Protocol | The stochastic computer based on PVM</title>
-      </Head>
       <Stack h={'100%'} w={'100vw'} align={"center"}>
         <Stack w={'100%'} maxW={'1920px'} h={'100%'} bg={'gray.200'} spacing={0}>
           <Stack px={'45px'} h={'88px'} direction={"row"} justifyContent={"space-between"} align={"center"}>
@@ -22,7 +18,7 @@ export default function NestFi(): JSX.Element {
               />
             </Link>
             <Stack direction={"row"} align={"center"} spacing={'24px'} fontWeight={'500'} fontSize={'15px'}>
-              <Link href={'/nest-fi'} color={'#EAAA00'}>NEST Fi</Link>
+              <Link href={'/nest-fi'} color={'#EAAA00'} fontWeight={'700'}>NEST Fi</Link>
               <Link href={'/developers'}>Developers</Link>
               <Link href={'/docs/Building-On-NEST/Contracts/'}>Doc</Link>
               <Link href={'/blog'}>Blog</Link>
@@ -108,6 +104,47 @@ export default function NestFi(): JSX.Element {
             </HStack>
           </Stack>
           <Stack h={'138px'}/>
+          <HStack py={'88px'} px={'45px'} bg={'rgba(255, 255,255, 0.7)'} justifyContent={"space-between"} align={"start"}>
+            <Stack spacing={'40px'} align={"start"}>
+              <Stack spacing={'22px'}>
+                <Link fontSize={'15px'} fontWeight={'bold'}>Launch App</Link>
+                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Buy futures, options and win NEST</Text>
+              </Stack>
+              <Stack spacing={'22px'}>
+                <Link fontSize={'15px'} fontWeight={'bold'}>NEST Blog</Link>
+                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Latest blogs from NEST</Text>
+              </Stack>
+              <Stack spacing={'22px'}>
+                <Link fontSize={'15px'} fontWeight={'bold'}>NEST Research Academy</Link>
+                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know about NRA</Text>
+              </Stack>
+            </Stack>
+            <Stack spacing={'40px'}>
+              <Stack spacing={'22px'}>
+                <Link fontSize={'15px'} fontWeight={'bold'}>Developer Docs</Link>
+                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know how to develop on NEST</Text>
+              </Stack>
+              <Stack spacing={'22px'}>
+                <Link fontSize={'15px'} fontWeight={'bold'}>FAQs</Link>
+                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Frequently asked questions</Text>
+              </Stack>
+              <HStack>
+                <Text>Twitter</Text>
+                <Text>github</Text>
+              </HStack>
+            </Stack>
+            <Stack spacing={'40px'} w={'420px'} h={'281px'}>
+              <Stack spacing={'22px'}>
+                <Text fontSize={'15px'} fontWeight={'bold'}>Market price</Text>
+                <Text>Buy futures, options and win NEST</Text>
+              </Stack>
+              <Spacer/>
+              <HStack spacing={'22px'}>
+                <Spacer/>
+                <Text fontSize={'14px'} fontWeight={'bold'} color={'#434344'}>@2022 NEST</Text>
+              </HStack>
+            </Stack>
+          </HStack>
         </Stack>
       </Stack>
     </ChakraProvider>

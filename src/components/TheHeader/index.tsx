@@ -10,7 +10,7 @@ import {
   Stack,
   Modal,
   ModalCloseButton,
-  useDisclosure,
+  useDisclosure, Link,
 } from '@chakra-ui/react'
 import * as React from 'react'
 import {HamburgerIcon} from '@chakra-ui/icons'
@@ -24,7 +24,8 @@ const TheHeader = () => {
   const menu = [
     {name: 'NEST Fi', pathname: 'nest-fi'},
     {name: 'Developers', pathname: 'developers'},
-    {name: 'News', pathname: 'news'},
+    {name: 'Doc', pathname: 'docs'},
+    {name: 'Blog', pathname: 'blogs'},
     {name: 'About', pathname: 'about'}
   ]
 
@@ -44,7 +45,8 @@ const TheHeader = () => {
       justify={"center"}
     >
       <HStack
-        maxW={'1440px'}
+        maxW={'1920px'}
+        px={'45px'}
         w={'100%'}
         spacing={'24px'}>
         <chakra.img
@@ -61,20 +63,18 @@ const TheHeader = () => {
 
         {!isPhone &&
           menu.map(({name, pathname}) => (
-            <Button
+            <Link
               key={name}
               cursor={'pointer'}
               aria-label={name}
-              onClick={() => {
-                window.location.pathname = pathname
-              }}
+              href={pathname}
               variant={"ghost"}
-              _hover={{bg: null}} _active={{bg: null}}
+              fontSize={'15px'}
               color={location.pathname.includes(pathname) ? '#EAAA00' : '#003232'}
               fontWeight={location.pathname.includes(pathname) ? '700' : '500'}
             >
               {name}
-            </Button>
+            </Link>
           ))}
 
         {!isPhone && (
