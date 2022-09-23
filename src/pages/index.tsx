@@ -9,7 +9,31 @@ import Head from "@docusaurus/Head";
 
 export default function Home(): JSX.Element {
   const [start, setStart] = useState(0)
-  const [selected, setSelected] = useState(0)
+  const [selectedWork, setSelectedWork] = useState(0)
+  const [selectedStochastic, setSelectedStochastic] = useState(0)
+
+  const stochastic = [
+    {
+      icon: '',
+      title: 'Stochastic Asset is an on-chain asset that can be issued and destroyed in response to random information flows',
+      desc: ''
+    },
+    {
+      icon: '',
+      title: 'Token is information asset',
+      desc: 'The blockchain mechanism prevents consensus information (such as wallet balance) from being spent twice. The source of token value and the basis for token becoming an asset is the scarcity of consensus information. As a result, we refer to a token as an information asset that can generate scarce information and is a unit that measures the value of information.'
+    },
+    {
+      icon: '',
+      title: 'What is the difference between BTC, ETH and NEST?',
+      desc: 'The mechanisms of BTC\'s UTXO and ETH\'s EVM both ensure that the quantity of tokens will not increase during the transaction. NEST\'s PVM extends this scenario by controlling the expected value rather than by controlling the quantity, which will lead to a new paradigm revolution.'
+    },
+    {
+      icon: '',
+      title: 'Why do blockchain need stochastic assets?',
+      desc: `Almost all financial applications can be thought of as the acquisition of stochastic assets with varying risk-return structures. Stochastic assets are a more natural way for building on-chain finance, such as decentralized derivatives.`
+    }
+  ]
 
   const work = [
     {
@@ -56,7 +80,8 @@ export default function Home(): JSX.Element {
         <script src={"https://crypto.com/price/static/widget/index.js"}></script>
       </Head>
       <Stack h={'100%'} w={'100vw'} align={"center"}>
-        <Stack w={'100%'} maxW={'1920px'} h={'100%'} bgSize={'cover'} bgImage={"image/Home/Home_bg.jpg"} bgPosition={"center"}
+        <Stack w={'100%'} maxW={'1920px'} h={'100%'} bgSize={'cover'} bgImage={"image/Home/Home_bg.jpg"}
+               bgPosition={"center"}
                spacing={0}>
           <Stack px={'45px'} h={'88px'} direction={"row"} justifyContent={"space-between"} align={"center"}>
             <Link href={'/'}>
@@ -85,23 +110,46 @@ export default function Home(): JSX.Element {
                 based on PVM,<br/>enables the generation and programming of stochastic assets.</Text>
             </Stack>
           </Stack>
-          <Stack px={['20px', '40px', '80px', '120px', '160px']}>
+          <Stack px={['20px', '40px', '80px', '160px']}>
             <Stack bg={'rgba(255, 255, 255, 0.7)'} py={'92px'} w={'full'} align={"center"} borderRadius={'20px'}>
               <Heading fontSize={'50px'} textAlign={"center"}>What is stochastic assets?</Heading>
               <Text py={'50px'}>image</Text>
-              <Text fontSize={'25px'} fontWeight={"bold"} textAlign={"center"}>Why do blockchain need stochastic
-                assets?</Text>
-              <Text fontSize={'15px'} fontWeight={'600'} textAlign={"center"}>Almost all financial applications can be
-                thought of as the<br/>acquisition of stochastic assets with varying risk-return structures.<br/>Stochastic
-                assets are a more natural way for building on-chain finance, <br/>such as decentralized
-                derivatives.</Text>
+              <Stack h={'200px'} align={"center"}>
+                <Text fontSize={'25px'} fontWeight={"bold"} w={'620px'}
+                      textAlign={"center"}>{stochastic[selectedStochastic].title}</Text>
+                <Text fontSize={'15px'} fontWeight={'600'} textAlign={"center"} w={'600px'}>
+                  {stochastic[selectedStochastic].desc}
+                </Text>
+              </Stack>
+              <HStack spacing={'12px'} pt={'20px'}>
+                <chakra.div w={'10px'} h={'10px'} bg={selectedStochastic === 0 ? '#EAAA00' : ''}
+                            border={selectedStochastic === 0 ? '' : '1px solid #003344'}
+                            onClick={() => setSelectedStochastic(0)}
+                            cursor={'pointer'}
+                            borderRadius={'full'}/>
+                <chakra.div w={'10px'} h={'10px'} bg={selectedStochastic === 1 ? '#EAAA00' : ''}
+                            border={selectedStochastic === 1 ? '' : '1px solid #003344'}
+                            onClick={() => setSelectedStochastic(1)}
+                            cursor={'pointer'}
+                            borderRadius={'full'}/>
+                <chakra.div w={'10px'} h={'10px'} bg={selectedStochastic === 2 ? '#EAAA00' : ''}
+                            border={selectedStochastic === 2 ? '' : '1px solid #003344'}
+                            onClick={() => setSelectedStochastic(2)}
+                            cursor={'pointer'}
+                            borderRadius={'full'}/>
+                <chakra.div w={'10px'} h={'10px'} bg={selectedStochastic === 3 ? '#EAAA00' : ''}
+                            border={selectedStochastic === 3 ? '' : '1px solid #003344'}
+                            onClick={() => setSelectedStochastic(3)}
+                            cursor={'pointer'}
+                            borderRadius={'full'}/>
+              </HStack>
             </Stack>
           </Stack>
           <Stack align={"center"}>
             <Heading pt={'138px'} fontSize={'50px'} textAlign={"center"} pb={'57px'}>How does NEST Protocol
               work?</Heading>
             <Stack bg={'rgba(255, 255, 255, 0.7)'} align={"center"} py={'130px'} spacing={'18px'} w={'full'}>
-              <Stack align={"center"} spacing={0} fontSize={'15px'} fontWeight={600} onClick={() => setSelected(0)}
+              <Stack align={"center"} spacing={0} fontSize={'15px'} fontWeight={600} onClick={() => setSelectedWork(0)}
                      cursor={'pointer'}>
                 <Text>Program stochastic asset</Text>
                 <Text color={'#00A0E9'}>PVM</Text>
@@ -110,7 +158,7 @@ export default function Home(): JSX.Element {
               <HStack align={"end"} spacing={'24px'}>
                 <Stack w={'300px'} align={"end"}>
                   <Stack align={"center"} spacing={0} fontSize={'15px'} fontWeight={600}
-                         onClick={() => setSelected(1)} cursor={'pointer'}>
+                         onClick={() => setSelectedWork(1)} cursor={'pointer'}>
                     <Text>Provide random information flow</Text>
                     <Text color={'#00A0E9'}>NEST Oracle</Text>
                     <ChevronDownIcon color={'#00A0E9'}/>
@@ -120,7 +168,7 @@ export default function Home(): JSX.Element {
                 </Stack>
                 <Stack align={"start"} w={'300px'}>
                   <Stack align={"center"} spacing={0} fontSize={'15px'} fontWeight={600}
-                         onClick={() => setSelected(2)} cursor={'pointer'}>
+                         onClick={() => setSelectedWork(2)} cursor={'pointer'}>
                     <Text>Generate stochastic assets</Text>
                     <Text color={'#00A0E9'}>OMM</Text>
                     <ChevronDownIcon color={'#00A0E9'}/>
@@ -129,14 +177,15 @@ export default function Home(): JSX.Element {
               </HStack>
               <Stack pt={'50px'} h={'300px'}>
                 <Text fontSize={'25px'} textAlign={"center"} fontWeight={'bold'}>
-                  {work[selected].type}
+                  {work[selectedWork].type}
                 </Text>
                 <Text fontSize={'15px'} fontWeight={'600'} textAlign={"center"} whiteSpace={'break-spaces'}>
-                  {work[selected].title}
+                  {work[selectedWork].title}
                 </Text>
-                <Text textAlign={"center"} color={'#7D7D7D'} fontWeight={'600'} fontSize={'15px'} whiteSpace={'break-spaces'}>
-                  {work[selected].desc}
-                  <Link color={'#00A0E9'} href={work[selected].link}> Learn more <ChevronRightIcon/></Link>
+                <Text textAlign={"center"} color={'#7D7D7D'} fontWeight={'600'} fontSize={'15px'}
+                      whiteSpace={'break-spaces'}>
+                  {work[selectedWork].desc}
+                  <Link color={'#00A0E9'} href={work[selectedWork].link}> Learn more <ChevronRightIcon/></Link>
                 </Text>
               </Stack>
             </Stack>
