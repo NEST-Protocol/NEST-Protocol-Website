@@ -13,18 +13,18 @@ export default function Home(): JSX.Element {
       </Head>
       <Stack h={'100%'} w={'100vw'} align={"center"}>
         <Stack w={'100%'} maxW={'1920px'} h={'100%'} bg={'gray.200'} spacing={0}>
-          <Stack px={'45px'} py={'34px'} direction={"row"} justifyContent={"space-between"}>
+          <Stack px={'45px'} h={'88px'} direction={"row"} justifyContent={"space-between"} align={"center"}>
             <Link href={'/'}>
               <chakra.img
                 src={"/img/logo.svg"}
-                alt=""
+                alt="nest"
                 h={'20px'}
               />
             </Link>
-            <Stack direction={"row"} align={"center"} spacing={'22px'} fontWeight={'500'} fontSize={'15px'}>
+            <Stack direction={"row"} align={"center"} spacing={'24px'} fontWeight={'500'} fontSize={'15px'}>
               <Link href={'/nest-fi'}>NEST Fi</Link>
               <Link href={'/developers'} color={'#EAAA00'}>Developers</Link>
-              <Link href={'/'}>Doc</Link>
+              <Link href={'/docs/Building-On-NEST/Contracts/'}>Doc</Link>
               <Link href={'/blog'}>Blog</Link>
               <Link href={'/about'}>About</Link>
               <Button>
