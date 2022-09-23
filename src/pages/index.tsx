@@ -20,9 +20,9 @@ export default function Home(): JSX.Element {
     },
     {
       type: 'NEST Oracle',
-      title: ``,
-      desc: ``,
-      link: ''
+      title: `The NEST oracle is currently the market's\nonly truly decentralized oracle. The stochastic\ninformation of decentralized price flow is introduced\ninto the chain using the Game Theoretical\nmechanism of arbitrage.`,
+      desc: `The NEST token is generated using the NEST\noracle's stochastic information. The NEST token\n serves as the monetary unit for all stochastic assets\nin the NEST ecosystem.`,
+      link: '/docs/NEST-Oracle/How-does-NEST-Oracle-Work'
     },
     {
       type: 'OMM',
@@ -56,7 +56,7 @@ export default function Home(): JSX.Element {
         <script src={"https://crypto.com/price/static/widget/index.js"}></script>
       </Head>
       <Stack h={'100%'} w={'100vw'} align={"center"}>
-        <Stack w={'100%'} maxW={'1920px'} h={'5752px'} bgImage={"image/Home/Home_bg.jpg"} bgPosition={"center"}
+        <Stack w={'100%'} maxW={'1920px'} h={'100%'} bgSize={'cover'} bgImage={"image/Home/Home_bg.jpg"} bgPosition={"center"}
                spacing={0}>
           <Stack px={'45px'} h={'88px'} direction={"row"} justifyContent={"space-between"} align={"center"}>
             <Link href={'/'}>
@@ -85,7 +85,7 @@ export default function Home(): JSX.Element {
                 based on PVM,<br/>enables the generation and programming of stochastic assets.</Text>
             </Stack>
           </Stack>
-          <Stack px={'160px'}>
+          <Stack px={['20px', '40px', '80px', '120px', '160px']}>
             <Stack bg={'rgba(255, 255, 255, 0.7)'} py={'92px'} w={'full'} align={"center"} borderRadius={'20px'}>
               <Heading fontSize={'50px'} textAlign={"center"}>What is stochastic assets?</Heading>
               <Text py={'50px'}>image</Text>

@@ -12,7 +12,7 @@ export default function NestFi(): JSX.Element {
         <script src={"https://crypto.com/price/static/widget/index.js"}></script>
       </Head>
       <Stack h={'100%'} w={'100vw'} align={"center"}>
-        <Stack w={'100%'} maxW={'1920px'} h={'100%'} bgImage={'image/NEST_Fi/NESTFi_bg.jpg'} spacing={0}>
+        <Stack w={'100%'} maxW={'1920px'} h={'100%'} bgPosition={"center"} bgSize={'cover'} bgImage={'image/NEST_Fi/NESTFi_bg.jpg'} spacing={0}>
           <Stack px={'45px'} h={'88px'} direction={"row"} justifyContent={"space-between"} align={"center"}>
             <Link href={'/'}>
               <chakra.img
