@@ -74,8 +74,8 @@ export default function Home(): JSX.Element {
     {title: '2022.07 v5.0', desc: `Merge FORT protocol\nNEST protocol= NEST oracle\n+ OMM +PVM`},
     {title: 'Gene game', desc: '', icon: '/svg/icon_17.svg'},
     {title: 'Keyboard boy game', desc: '', icon: '/svg/icon_16.svg'},
-    {title: 'DABS', desc: '', icon: ''},
-    {title: 'Cyber ink', desc: '', icon: ''},
+    {title: 'DABS', desc: '', icon: '/image/Home/01-icon-dabs.svg'},
+    {title: 'Cyber ink', desc: '', icon: '/image/Home/01-icon-cyberink.png'},
   ]
 
   return (
@@ -219,7 +219,7 @@ export default function Home(): JSX.Element {
                       <Text fontSize={'17px'} fontWeight={'bold'}>{item.title}</Text>
                       <Text fontSize={'15px'} fontWeight={'600'} textAlign={"center"}>{item.desc}</Text>
                       {item?.icon && (
-                        <chakra.img src={item.icon} w={'44px'} h={'44px'} mt={'22px'}/>
+                        <chakra.img src={item.icon} h={'44px'} mt={'22px'}/>
                       )}
                     </Stack>
                   ))}
@@ -265,14 +265,32 @@ export default function Home(): JSX.Element {
             </HStack>
             <Stack spacing={'60px'} align={"center"}>
               <HStack spacing={'100px'}>
-                <Text>image1</Text>
-                <Text>image2</Text>
-                <Text>image3</Text>
+                <Stack w={'130px'} align={"center"}>
+                  <Link href={'https://www.coinbase.com/'} isExternal>
+                    <chakra.img src={'/image/Home/01-icon-coinbase.png'} h={'34px'} alt={''}/>
+                  </Link>
+                </Stack>
+                <Stack w={'130px'} align={"center"}>
+                  <Link href={'https://www.huobi.com/'} isExternal>
+                    <chakra.img src={'/image/Home/01-icon-huobiresearch.png'} h={'34px'} alt={''}/>
+                  </Link>
+                </Stack>
+                <Stack w={'130px'} align={"center"}>
+                  <Link href={'https://www.mexc.com/'} isExternal>
+                    <chakra.img src={'/image/Home/01-icon-mexc.png'} h={'45px'} alt={''}/>
+                  </Link>
+                </Stack>
               </HStack>
               <HStack spacing={'100px'}>
-                <Text>image1</Text>
-                <Text>image2</Text>
-                <Text>image3</Text>
+                <Link w={'130px'} href={'https://www.lbank.info/'} isExternal>
+                  <chakra.img src={'/image/Home/01-icon-LBANK.svg'} h={'45px'} alt={''}/>
+                </Link>
+                <Link w={'130px'} href={'https://www.bibox.com/'} isExternal>
+                  <chakra.img src={'/image/Home/01-icon-Bibox.svg'} h={'45px'} alt={''}/>
+                </Link>
+                <Link w={'130px'} href={'https://www.gate.io/'} isExternal>
+                  <chakra.img src={'/image/Home/01-icon-Gate.svg'} w={'130px'} h={'45px'} alt={''}/>
+                </Link>
               </HStack>
             </Stack>
             <Text fontSize={'21px'} fontWeight={'bold'} textAlign={"center"} pt={'93px'}>Listed on more than 15
