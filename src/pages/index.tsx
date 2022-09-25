@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {
-  ChakraProvider, Text, Stack, Link, Button, Heading, HStack, chakra, Box, Spacer, Divider
+  ChakraProvider, Text, Stack, Link, Button, Heading, HStack, chakra, Box, Spacer, Divider, useInterval
 } from "@chakra-ui/react";
 import theme from "../chakra"
 import {ChevronDownIcon, ChevronRightIcon} from "@chakra-ui/icons";
@@ -11,6 +11,10 @@ export default function Home(): JSX.Element {
   const [start, setStart] = useState(0)
   const [selectedWork, setSelectedWork] = useState(0)
   const [selectedStochastic, setSelectedStochastic] = useState(0)
+
+  useInterval(() => {
+    setSelectedStochastic((selectedStochastic + 1) % 4)
+  }, 10000)
 
   const stochastic = [
     {
@@ -116,7 +120,7 @@ export default function Home(): JSX.Element {
             <Stack bg={'rgba(255, 255, 255, 0.7)'} py={'92px'} w={'full'} align={"center"} borderRadius={'20px'}>
               <Heading fontSize={'50px'} textAlign={"center"}>What is stochastic assets?</Heading>
               <chakra.img src={'/image/Home/01-icon-01.png'} alt={''} py={'50px'}/>
-              <Stack h={'200px'} align={"center"}>
+              <Stack h={'200px'} align={"center"} overflow={"scroll"}>
                 <Text fontSize={'25px'} fontWeight={"bold"} w={'620px'}
                       textAlign={"center"}>{stochastic[selectedStochastic].title}</Text>
                 <Text fontSize={'15px'} fontWeight={'600'} textAlign={"center"} w={'600px'}>
