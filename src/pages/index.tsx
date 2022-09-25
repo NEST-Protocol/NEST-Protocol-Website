@@ -113,7 +113,7 @@ export default function Home(): JSX.Element {
           <Stack px={['20px', '40px', '80px', '160px']}>
             <Stack bg={'rgba(255, 255, 255, 0.7)'} py={'92px'} w={'full'} align={"center"} borderRadius={'20px'}>
               <Heading fontSize={'50px'} textAlign={"center"}>What is stochastic assets?</Heading>
-              <Text py={'50px'}>image</Text>
+              <chakra.img src={'/image/Home/01-icon-01.png'} alt={''} py={'50px'}/>
               <Stack h={'200px'} align={"center"}>
                 <Text fontSize={'25px'} fontWeight={"bold"} w={'620px'}
                       textAlign={"center"}>{stochastic[selectedStochastic].title}</Text>
@@ -156,7 +156,7 @@ export default function Home(): JSX.Element {
                 <ChevronDownIcon color={'#00A0E9'}/>
               </Stack>
               <HStack align={"end"} spacing={'24px'}>
-                <Stack w={'300px'} align={"end"}>
+                <Stack w={'300px'} align={"end"} pb={'40px'}>
                   <Stack align={"center"} spacing={0} fontSize={'15px'} fontWeight={600}
                          onClick={() => setSelectedWork(1)} cursor={'pointer'}>
                     <Text>Provide random information flow</Text>
@@ -164,9 +164,8 @@ export default function Home(): JSX.Element {
                     <ChevronDownIcon color={'#00A0E9'}/>
                   </Stack>
                 </Stack>
-                <Stack w={'220px'} h={'220px'} bg={"red"} borderRadius={'full'}>
-                </Stack>
-                <Stack align={"start"} w={'300px'}>
+                <chakra.img src={'/image/Home/01-icon-02.png'} alt={''}/>
+                <Stack align={"start"} w={'300px'} pb={'40px'}>
                   <Stack align={"center"} spacing={0} fontSize={'15px'} fontWeight={600}
                          onClick={() => setSelectedWork(2)} cursor={'pointer'}>
                     <Text>Generate stochastic assets</Text>
@@ -210,7 +209,7 @@ export default function Home(): JSX.Element {
                 <HStack px={'45px'} justify={"space-around"} w={'full'} align={"start"}>
                   {developmentPath.slice(start, start + 5).map((item, index) => (
                     <Stack key={index} align={"center"} w={'200px'} h={'180px'}>
-                      <Stack h={'24px'} w={'36px'} bg={"red"} mb={'22px'}/>
+                      <chakra.img src={'/image/Home/01-icon-03.png'} h={'24px'} w={'36px'} alt={''} mb={'22px'}/>
                       <Text fontSize={'17px'} fontWeight={'bold'}>{item.title}</Text>
                       <Text fontSize={'15px'} fontWeight={'600'} textAlign={"center"}>{item.desc}</Text>
                       {item?.icon && (
@@ -276,9 +275,9 @@ export default function Home(): JSX.Element {
           <Stack py={'138px'} align={"center"} spacing={'48px'}>
             <Heading fontSize={'50px'} textAlign={"center"}>Blogs</Heading>
             <HStack spacing={'44px'}>
-              <Stack w={'308px'} bg={"white"} borderRadius={'20px'} h={'352px'}>
-                <Text>image</Text>
-                <Stack spacing={'20px'} p={'20px'}>
+              <Stack w={'308px'} bg={"white"} borderRadius={'20px'} spacing={0}>
+                <chakra.img src={'/image/Home/01-card-01.png'} alt={''} />
+                <Stack spacing={'10px'} p={'20px'} h={'230px'}>
                   <Text fontSize={'18px'} fontWeight={'bold'}>Coinbase Announces Planned Listing of Tokens, Adds $NEST
                     to ‘Experimental Asset’ Label</Text>
                   <Text fontSize={'13px'} fontWeight={'600'} color={'#878787'}>Leading United States-based
@@ -286,9 +285,9 @@ export default function Home(): JSX.Element {
                   <Text fontSize={'13px'} fontWeight={500} color={'#878787'}>July 25, 2022</Text>
                 </Stack>
               </Stack>
-              <Stack w={'308px'} bg={"white"} h={'352px'} borderRadius={'20px'}>
-                <Text>image</Text>
-                <Stack spacing={'20px'} p={'20px'}>
+              <Stack w={'308px'} bg={"white"} borderRadius={'20px'} spacing={0}>
+                <chakra.img src={'/image/Home/01-card-02.png'} alt={''} />
+                <Stack spacing={'20px'} p={'20px'} h={'230px'}>
                   <Text fontSize={'18px'} fontWeight={'bold'}>NEST Protocol: A New Paradigm of Game Theoretic
                     Oracle</Text>
                   <Text fontSize={'13px'} fontWeight={'600'} color={'#878787'}>Blockchain innovation defined the major
@@ -296,9 +295,9 @@ export default function Home(): JSX.Element {
                   <Text fontSize={'13px'} fontWeight={500} color={'#878787'}>Jun 9, 2022</Text>
                 </Stack>
               </Stack>
-              <Stack w={'308px'} bg={"white"} h={'352px'} borderRadius={'20px'}>
-                <Text>image</Text>
-                <Stack spacing={'20px'} p={'20px'}>
+              <Stack w={'308px'} bg={"white"} borderRadius={'20px'} spacing={0}>
+                <chakra.img src={'/image/Home/01-card-03.png'} alt={''} />
+                <Stack spacing={'20px'} p={'20px'} h={'230px'}>
                   <Text fontSize={'18px'} fontWeight={'bold'}>NEST’s RSS FEED INTEGRATED WITH CRYPTO.COM PRICE
                     PAGE</Text>
                   <Text fontSize={'13px'} fontWeight={'600'} color={'#878787'}>Through Crypto.com’s NEST Price Page, you
