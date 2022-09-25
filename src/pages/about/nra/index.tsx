@@ -71,10 +71,10 @@ export default function NRA(): JSX.Element {
             <Heading fontSize={'50px'} pt={'138px'}>Funding Opportunity</Heading>
             <Stack px={'160px'} w={'full'}>
               <Stack bg={'white'} align={"center"} textAlign={"center"} py={'130px'} borderRadius={'20px'}>
-                <Text>image</Text>
+                <chakra.img src={'/image/About/04-icon-01.png'} alt={''} mb={'26px'}/>
                 <Text fontSize={'15px'} fontWeight={'600'}>NRA welcomes research in fields such as blockchain, finance, <br/>economics, game theory, machine
                   learning, computer science, and software engineering.<br/>Those interested, please send your research
-                  proposal (maximum 10 pages) to <br/><Link>nra@nestprotocol.org</Link></Text>
+                  proposal (maximum 10 pages) to <br/><Link href={'mailto:nra@nestprotocol.org'} isExternal color={'#00A0E9'}>nra@nestprotocol.org</Link></Text>
               </Stack>
             </Stack>
 
@@ -83,11 +83,11 @@ export default function NRA(): JSX.Element {
             <Heading fontSize={'50px'} pt={'138px'}>Vacant Position</Heading>
             <Stack px={'160px'} w={'full'}>
               <Stack bg={'white'} align={"center"} textAlign={"center"} py={'130px'} borderRadius={'20px'}>
-                <Text>image</Text>
+                <chakra.img src={'/image/About/04-icon-02.png'} alt={''} mb={'26px'}/>
                 <Text fontSize={'15px'} fontWeight={'600'}>NRA welcomes applicants to researchers of all levels.<br/>NRA evaluates the work of its
                   researchers in a result-oriented manner with flexibility in terms<br/>of working location and hours.
                   The salary is decided case by case.<br/>Those interested, please send your academic CV
-                  to<br/><Link>nra@nestprotocol.org</Link></Text>
+                  to<br/><Link href={'mailto:nra@nestprotocol.org'} isExternal color={'#00A0E9'}>nra@nestprotocol.org</Link></Text>
               </Stack>
             </Stack>
           </Stack>
@@ -118,22 +118,22 @@ export default function NRA(): JSX.Element {
               </Stack>
               <HStack spacing={'24px'}>
                 <Link href={'https://github.com/NEST-Protocol'} isExternal>
-                  <chakra.img src={'image/Footer/github_icon.svg'} h={'44px'} w={'44px'}/>
+                  <chakra.img src={'/image/Footer/github_icon.svg'} h={'44px'} w={'44px'}/>
                 </Link>
                 <Link href={'https://twitter.com/nest_protocol/'} isExternal>
-                  <chakra.img src={'image/Footer/twitter_icon.svg'} h={'44px'} w={'44px'}/>
+                  <chakra.img src={'/image/Footer/twitter_icon.svg'} h={'44px'} w={'44px'}/>
                 </Link>
                 <Link href={'https://t.me/nest_chat/'} isExternal>
-                  <chakra.img src={'image/Footer/telegram_icon.svg'} h={'44px'} w={'44px'}/>
+                  <chakra.img src={'/image/Footer/telegram_icon.svg'} h={'44px'} w={'44px'}/>
                 </Link>
                 <Link href={'https://nest-protocol-82041.medium.com/'} isExternal>
-                  <chakra.img src={'image/Footer/medium_icon.svg'} h={'44px'} w={'44px'}/>
+                  <chakra.img src={'/image/Footer/medium_icon.svg'} h={'44px'} w={'44px'}/>
                 </Link>
                 <Link href={'https://discord.gg/nestprotocol'} isExternal>
-                  <chakra.img src={'image/Footer/discord_icon.svg'} h={'44px'} w={'44px'}/>
+                  <chakra.img src={'/image/Footer/discord_icon.svg'} h={'44px'} w={'44px'}/>
                 </Link>
                 <Link href={'mailto:hello@nestprotocol.org'} isExternal>
-                  <chakra.img src={'image/Footer/email_icon.svg'} h={'44px'} w={'44px'} />
+                  <chakra.img src={'/image/Footer/email_icon.svg'} h={'44px'} w={'44px'} />
                 </Link>
               </HStack>
             </Stack>
