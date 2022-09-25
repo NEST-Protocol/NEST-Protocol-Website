@@ -72,10 +72,10 @@ export default function Home(): JSX.Element {
     {title: '2021.11 v4.1', desc: `NEST oracle upgraded.\nAllows anyone\nto build their oracle\nfor their project.`},
     {title: '2021.12 v4.3', desc: `NEST oracle upgraded.\nAllows each channel for\nmultiple quotation pairs.`},
     {title: '2022.07 v5.0', desc: `Merge FORT protocol\nNEST protocol= NEST oracle\n+ OMM +PVM`},
-    {title: 'Gene game', desc: '', icon: '/svg/icon_17.svg'},
-    {title: 'Keyboard boy game', desc: '', icon: '/svg/icon_16.svg'},
-    {title: 'DABS', desc: '', icon: '/image/Home/01-icon-dabs.svg'},
-    {title: 'Cyber ink', desc: '', icon: '/image/Home/01-icon-cyberink.png'},
+    {title: 'Gene game', desc: '', icon: <chakra.img src={'/svg/icon_17.svg'} w={'37px'} h={'37px'}/>},
+    {title: 'Keyboard boy game', desc: '', icon: <chakra.img src={'/svg/icon_16.svg'} w={'39px'} h={'39px'}/>},
+    {title: 'DABS', desc: '', icon: <chakra.img src={'/image/Home/01-icon-dabs.svg'} w={'70px'} h={'31px'}/>},
+    {title: 'Cyber ink', desc: '', icon: <chakra.img src={'/image/Home/01-icon-cyberink.png'} w={'56px'} h={'45px'}/>},
   ]
 
   return (
@@ -219,7 +219,9 @@ export default function Home(): JSX.Element {
                       <Text fontSize={'17px'} fontWeight={'bold'}>{item.title}</Text>
                       <Text fontSize={'15px'} fontWeight={'600'} textAlign={"center"}>{item.desc}</Text>
                       {item?.icon && (
-                        <chakra.img src={item.icon} h={'44px'} mt={'22px'}/>
+                        <>
+                          {item.icon}
+                        </>
                       )}
                     </Stack>
                   ))}
