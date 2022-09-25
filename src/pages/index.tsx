@@ -97,7 +97,9 @@ export default function Home(): JSX.Element {
               <Link href={'/docs/Building-On-NEST/Contracts/'}>Doc</Link>
               <Link href={'/blog'}>Blog</Link>
               <Link href={'/about'}>About</Link>
-              <Button>
+              <Button onClick={() => {
+                window.open('https://finance.nestprotocol.org/', '_blank')
+              }}>
                 App
               </Button>
             </Stack>
@@ -276,7 +278,7 @@ export default function Home(): JSX.Element {
             <Heading fontSize={'50px'} textAlign={"center"}>Blogs</Heading>
             <HStack spacing={'44px'}>
               <Stack w={'308px'} bg={"white"} borderRadius={'20px'} spacing={0}>
-                <chakra.img src={'/image/Home/01-card-01.png'} alt={''} />
+                <chakra.img src={'/image/Home/01-card-01.png'} alt={''}/>
                 <Stack spacing={'10px'} p={'20px'} h={'230px'}>
                   <Text fontSize={'18px'} fontWeight={'bold'}>Coinbase Announces Planned Listing of Tokens, Adds $NEST
                     to ‘Experimental Asset’ Label</Text>
@@ -286,7 +288,7 @@ export default function Home(): JSX.Element {
                 </Stack>
               </Stack>
               <Stack w={'308px'} bg={"white"} borderRadius={'20px'} spacing={0}>
-                <chakra.img src={'/image/Home/01-card-02.png'} alt={''} />
+                <chakra.img src={'/image/Home/01-card-02.png'} alt={''}/>
                 <Stack spacing={'20px'} p={'20px'} h={'230px'}>
                   <Text fontSize={'18px'} fontWeight={'bold'}>NEST Protocol: A New Paradigm of Game Theoretic
                     Oracle</Text>
@@ -296,7 +298,7 @@ export default function Home(): JSX.Element {
                 </Stack>
               </Stack>
               <Stack w={'308px'} bg={"white"} borderRadius={'20px'} spacing={0}>
-                <chakra.img src={'/image/Home/01-card-03.png'} alt={''} />
+                <chakra.img src={'/image/Home/01-card-03.png'} alt={''}/>
                 <Stack spacing={'20px'} p={'20px'} h={'230px'}>
                   <Text fontSize={'18px'} fontWeight={'bold'}>NEST’s RSS FEED INTEGRATED WITH CRYPTO.COM PRICE
                     PAGE</Text>
@@ -316,23 +318,49 @@ export default function Home(): JSX.Element {
             <Heading fontSize={'50px'} textAlign={"center"}>Integrations & Partners</Heading>
             <Stack bg={'rgba(255,255,255, 0.7)'} h={'440px'} align={"center"} spacing={'60px'} justify={"center"}>
               <HStack spacing={'80px'}>
-                <chakra.img src={"/svg/huobi.svg"} h={'45px'}/>
-                <chakra.img src={"/svg/binance.svg"} h={'45px'}/>
-                <chakra.img src={"/svg/Coinbase.svg"} h={'45px'}/>
-                <chakra.img src={"/svg/polygon.svg"} h={'45px'}/>
+                <Link href={'https://www.huobi.com/zh-cn/'} isExternal>
+                  <chakra.img src={"/svg/huobi.svg"} h={'45px'}/>
+                </Link>
+                <Link href={'https://www.binance.com/'} isExternal>
+                  <chakra.img src={"/svg/binance.svg"} h={'45px'}/>
+                </Link>
+                <Link href={'https://www.coinbase.com/'} isExternal>
+                  <chakra.img src={"/svg/Coinbase.svg"} h={'45px'}/>
+                </Link>
+                <Link href={'https://polygon.technology/'} isExternal>
+                  <chakra.img src={"/svg/polygon.svg"} h={'45px'}/>
+                </Link>
               </HStack>
               <HStack spacing={'80px'}>
-                <chakra.img src={"/svg/kcc.svg"} h={'45px'}/>
-                <chakra.img src={"/svg/cointelegraph.svg"} h={'45px'}/>
-                <chakra.img src={"/svg/cube.svg"} h={'45px'}/>
-                <chakra.img src={"/svg/peckshield.svg"} h={'45px'}/>
-                <chakra.img src={"/svg/fortube.svg"} h={'45px'}/>
+                <Link href={'https://kcc.io/'} isExternal>
+                  <chakra.img src={"/svg/kcc.svg"} h={'45px'}/>
+                </Link>
+                <Link href={'https://cointelegraph.com/'} isExternal>
+                  <chakra.img src={"/svg/cointelegraph.svg"} h={'45px'}/>
+                </Link>
+                <Link href={'https://cube.network/'} isExternal>
+                  <chakra.img src={"/svg/cube.svg"} h={'45px'}/>
+                </Link>
+                <Link href={'https://peckshield.com/'} isExternal>
+                  <chakra.img src={"/svg/peckshield.svg"} h={'45px'}/>
+                </Link>
+                <Link href={'https://for.tube/'} isExternal>
+                  <chakra.img src={"/svg/fortube.svg"} h={'45px'}/>
+                </Link>
               </HStack>
               <HStack spacing={'80px'}>
-                <chakra.img src={"/svg/polynetwork.svg"} h={'45px'}/>
-                <chakra.img src={"/svg/CoFiX.svg"} h={'45px'}/>
-                <chakra.img src={"/svg/Parasset.svg"} h={'45px'}/>
-                <chakra.img src={"/svg/certik.svg"} h={'45px'}/>
+                <Link href={'https://polygon.technology/'} isExternal>
+                  <chakra.img src={"/svg/polynetwork.svg"} h={'45px'}/>
+                </Link>
+                <Link href={'https://cofix.tech/'} isExternal>
+                  <chakra.img src={"/svg/CoFiX.svg"} h={'45px'}/>
+                </Link>
+                <Link href={'https://www.parasset.top/'} isExternal>
+                  <chakra.img src={"/svg/Parasset.svg"} h={'45px'}/>
+                </Link>
+                <Link href={'https://www.certik.com/'} isExternal>
+                  <chakra.img src={"/svg/certik.svg"} h={'45px'}/>
+                </Link>
               </HStack>
             </Stack>
           </Stack>

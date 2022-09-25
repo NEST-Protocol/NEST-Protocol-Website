@@ -28,7 +28,9 @@ export default function NRA(): JSX.Element {
               <Link href={'/docs/Building-On-NEST/Contracts/'}>Doc</Link>
               <Link href={'/blogs'}>Blog</Link>
               <Link href={'/about'} color={'#EAAA00'}>About</Link>
-              <Button>
+              <Button onClick={() => {
+                window.open('https://finance.nestprotocol.org/', '_blank')
+              }}>
                 App
               </Button>
             </Stack>
