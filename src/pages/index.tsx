@@ -19,6 +19,7 @@ import theme from "../chakra"
 import {ChevronDownIcon, ChevronRightIcon, HamburgerIcon} from "@chakra-ui/icons";
 import {AiOutlineTwitter, FaTelegramPlane, AiOutlineGithub} from "react-icons/all";
 import Head from "@docusaurus/Head";
+import {useLocation} from "@docusaurus/router";
 
 export const menu = [
   {name: 'NEST Fi', pathname: '/nest-fi'},
@@ -34,6 +35,7 @@ export default function Home(): JSX.Element {
   const [selectedWork, setSelectedWork] = useState(0)
   const [selectedStochastic, setSelectedStochastic] = useState(0)
   const {isOpen, onOpen, onClose} = useDisclosure()
+  const location = useLocation();
 
   useInterval(() => {
     setSelectedStochastic((selectedStochastic + 1) % 4)

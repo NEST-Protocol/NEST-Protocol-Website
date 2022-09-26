@@ -18,10 +18,12 @@ import theme from "../../chakra"
 import Head from "@docusaurus/Head";
 import {HamburgerIcon} from "@chakra-ui/icons";
 import {menu} from "@site/src/pages";
+import {useLocation} from "@docusaurus/router";
 
 export default function NestFi(): JSX.Element {
   const [isDesktop] = useMediaQuery("(min-width: 768px)");
   const {isOpen, onOpen, onClose} = useDisclosure()
+  const location = useLocation();
 
   return (
     <ChakraProvider theme={theme}>

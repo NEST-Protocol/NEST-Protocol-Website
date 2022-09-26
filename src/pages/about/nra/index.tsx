@@ -18,10 +18,12 @@ import theme from "../../../chakra"
 import {ChevronLeftIcon, ChevronRightIcon, HamburgerIcon} from "@chakra-ui/icons";
 import Head from "@docusaurus/Head";
 import {menu} from "@site/src/pages";
+import {useLocation} from "@docusaurus/router";
 
 export default function NRA(): JSX.Element {
   const [isDesktop] = useMediaQuery("(min-width: 768px)");
   const {isOpen, onOpen, onClose} = useDisclosure()
+  const location = useLocation();
 
   return (
     <ChakraProvider theme={theme}>
