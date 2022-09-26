@@ -20,6 +20,14 @@ import {ChevronDownIcon, ChevronRightIcon, HamburgerIcon} from "@chakra-ui/icons
 import {AiOutlineTwitter, FaTelegramPlane, AiOutlineGithub} from "react-icons/all";
 import Head from "@docusaurus/Head";
 
+export const menu = [
+  {name: 'NEST Fi', pathname: '/nest-fi'},
+  {name: 'Developers', pathname: '/developers'},
+  {name: 'Doc', pathname: '/docs/Building-On-NEST/Contracts/'},
+  {name: 'Blog', pathname: '/blogs'},
+  {name: 'About', pathname: '/about'}
+]
+
 export default function Home(): JSX.Element {
   // const [isDesktop] = useMediaQuery("(min-width: 768px)");
   const isDesktop = false
@@ -27,14 +35,6 @@ export default function Home(): JSX.Element {
   const [selectedWork, setSelectedWork] = useState(0)
   const [selectedStochastic, setSelectedStochastic] = useState(0)
   const {isOpen, onOpen, onClose} = useDisclosure()
-
-  const menu = [
-    {name: 'NEST Fi', pathname: '/nest-fi'},
-    {name: 'Developers', pathname: '/developers'},
-    {name: 'Doc', pathname: '/docs/Building-On-NEST/Contracts/'},
-    {name: 'Blog', pathname: '/blogs'},
-    {name: 'About', pathname: '/about'}
-  ]
 
   useInterval(() => {
     setSelectedStochastic((selectedStochastic + 1) % 4)
@@ -488,7 +488,7 @@ export default function Home(): JSX.Element {
           </Stack>
         </Stack>
       ) : (
-        <Stack h={'100%'} bgImage={'/image/Home/01-Phone-bg.jpg'} bgPosition={"center"}>
+        <Stack h={'100%'} bgImage={'/image/Home/01-Phone-bg.jpg'} bgPosition={"center"} bgSize={'cover'}>
           <HStack w={'full'} px={'24px'} py={'20px'}>
             <Link href={'/'}>
               <chakra.img
