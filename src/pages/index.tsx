@@ -531,7 +531,7 @@ export default function Home(): JSX.Element {
             <Spacer/>
             <Button onClick={onOpen} fontSize={'36px'} alignItems={'end'} p={0} variant={"ghost"} _active={{bg: null}}
                     _hover={{bg: null}} aria-label={'menu'}>
-              <HamburgerIcon w={'20px'}/>
+              <HamburgerIcon/>
             </Button>
             <Modal
               isOpen={isOpen}
@@ -672,8 +672,8 @@ export default function Home(): JSX.Element {
                             spacing={'24px'}>
                       <chakra.img src={'/image/Home/01-icon-03.png'} h={'20px'} w={'30px'} alt={''}/>
                       <Text fontSize={'12.5px'} fontWeight={'bold'}
-                            w={item.desc !== '' ? '100px' : ''}> {item.title}</Text>
-                      <Text fontSize={'10.5px'} fontWeight={'600'} w={item.desc !== '' ? '180px' : ''}>{item.desc}</Text>
+                            w={item.desc !== '' ? '80px' : ''}> {item.title}</Text>
+                      <Text fontSize={'10.5px'} fontWeight={'600'} w={item.desc !== '' ? '160px' : ''}>{item.desc}</Text>
                       {item?.icon && (
                         <>
                           {item.icon}
@@ -715,36 +715,36 @@ export default function Home(): JSX.Element {
               <Link color={'#00A0E9'} fontWeight={'600'} fontSize={'12.5px'}>For developers <ChevronRightIcon/></Link>
             </Stack>
             <HStack pt={'60px'} pb={'30px'}>
-              <Stack w={'130px'} align={"center"}>
+              <Stack w={'100px'} align={"center"}>
                 <Link href={'https://www.coinbase.com/'} isExternal>
                   <chakra.img src={'/image/Home/01-icon-coinbase.png'} h={'17px'} alt={''}/>
                 </Link>
               </Stack>
-              <Stack w={'130px'} align={"center"}>
+              <Stack w={'100px'} align={"center"}>
                 <Link href={'https://www.huobi.com/'} isExternal>
                   <chakra.img src={'/image/Home/01-icon-huobiresearch.png'} h={'17px'} alt={''}/>
                 </Link>
               </Stack>
-              <Stack w={'130px'} align={"center"}>
+              <Stack w={'100px'} align={"center"}>
                 <Link href={'https://www.mexc.com/'} isExternal>
                   <chakra.img src={'/image/Home/01-icon-mexc.png'} h={'22.5px'} alt={''}/>
                 </Link>
               </Stack>
             </HStack>
             <HStack pb={'50px'}>
-              <Stack w={'130px'} align={"center"}>
+              <Stack w={'100px'} align={"center"}>
                 <Link href={'https://www.lbank.info/'} isExternal>
                   <chakra.img src={'/image/Home/01-icon-LBANK.svg'} h={'22.5px'} alt={''}/>
                 </Link>
               </Stack>
-              <Stack w={'130px'} align={"center"}>
+              <Stack w={'100px'} align={"center"}>
                 <Link href={'https://www.bibox.com/'} isExternal>
                   <chakra.img src={'/image/Home/01-icon-Bibox.svg'} h={'22.5px'} alt={''}/>
                 </Link>
               </Stack>
-              <Stack w={'130px'} align={"center"}>
+              <Stack w={'100px'} align={"center"}>
                 <Link href={'https://www.gate.io/'} isExternal>
-                  <chakra.img src={'/image/Home/01-icon-Gate.svg'} w={'130px'} h={'22.5px'} alt={''}/>
+                  <chakra.img src={'/image/Home/01-icon-Gate.svg'} w={'100px'} h={'22.5px'} alt={''}/>
                 </Link>
               </Stack>
             </HStack>
