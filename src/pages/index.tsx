@@ -95,10 +95,28 @@ export default function Home(): JSX.Element {
     {title: '2021.11 v4.1', desc: `NEST oracle upgraded.\nAllows anyone\nto build their oracle\nfor their project.`},
     {title: '2021.12 v4.3', desc: `NEST oracle upgraded.\nAllows each channel for\nmultiple quotation pairs.`},
     {title: '2022.07 v5.0', desc: `Merge FORT protocol\nNEST protocol= NEST oracle\n+ OMM +PVM`},
-    {title: 'Gene game', desc: '', icon: <chakra.img src={'/svg/icon_17.svg'} w={isDesktop ? '37px' : '19px'} h={isDesktop ? '37px' : '19px'}/>},
-    {title: 'Keyboard boy game', desc: '', icon: <chakra.img src={'/svg/icon_16.svg'} w={isDesktop ? '39px' : '20px'} h={isDesktop ? '39px' : '20px'}/>},
-    {title: 'DABS', desc: '', icon: <chakra.img src={'/image/Home/01-icon-dabs.svg'} w={isDesktop ? '70px' : '45px'} h={isDesktop ? '31px' : '15px'}/>},
-    {title: 'Cyber ink', desc: '', icon: <chakra.img src={'/image/Home/01-icon-cyberink.png'} w={isDesktop ? '56px' : '29px'} h={isDesktop ? '45px': '28px'}/>},
+    {
+      title: 'Gene game',
+      desc: '',
+      icon: <chakra.img src={'/svg/icon_17.svg'} w={isDesktop ? '37px' : '19px'} h={isDesktop ? '37px' : '19px'}/>
+    },
+    {
+      title: 'Keyboard boy game',
+      desc: '',
+      icon: <chakra.img src={'/svg/icon_16.svg'} w={isDesktop ? '39px' : '20px'} h={isDesktop ? '39px' : '20px'}/>
+    },
+    {
+      title: 'DABS',
+      desc: '',
+      icon: <chakra.img src={'/image/Home/01-icon-dabs.svg'} w={isDesktop ? '70px' : '45px'}
+                        h={isDesktop ? '31px' : '15px'}/>
+    },
+    {
+      title: 'Cyber ink',
+      desc: '',
+      icon: <chakra.img src={'/image/Home/01-icon-cyberink.png'} w={isDesktop ? '56px' : '29px'}
+                        h={isDesktop ? '45px' : '28px'}/>
+    },
   ]
 
   return (
@@ -281,8 +299,20 @@ export default function Home(): JSX.Element {
                   <Stack align={"center"}>
                     <FaTelegramPlane fontSize={'48px'} color={'#003232'}/>
                   </Stack>
-                  <Link href={'https://t.me/NEST_Community'} isExternal>@NEST_Community <ChevronRightIcon/></Link>
-                  <Link href={'https://t.me/nest_chat'} isExternal>@nest_chat <ChevronRightIcon/></Link>
+                  <Link href={'https://t.me/NEST_Community'} isExternal>
+                    <HStack align={"center"}>
+                      <chakra.img src={'/image/Home/icon_8.svg'} w={'17px'} h={'16px'}/>
+                      <Text color={'#00A0E9'} fontWeight={'600'}>@NEST_Community</Text>
+                      <ChevronRightIcon color={'#00A0E9'}/>
+                    </HStack>
+                  </Link>
+                  <Link href={'https://t.me/nest_chat'} isExternal>
+                    <HStack align={"center"}>
+                      <chakra.img src={'/image/Home/icon_7.svg'} w={'17px'} h={'16px'}/>
+                      <Text color={'#00A0E9'} fontWeight={'600'}>@nest_chat</Text>
+                      <ChevronRightIcon color={'#00A0E9'}/>
+                    </HStack>
+                  </Link>
                 </Stack>
                 <Stack spacing={'20px'}>
                   <Stack align={"center"}>
@@ -636,15 +666,17 @@ export default function Home(): JSX.Element {
               <chakra.div w={'1px'} h={'880px'} bg={'#C9C9C9'}/>
               <Stack spacing={'32px'}>
                 {developmentPath.map((item) => (
-                    <HStack key={item.title} textAlign={"start"} align={item.desc !== '' ? "start" : 'center'} spacing={'24px'}>
+                    <HStack key={item.title} textAlign={"start"} align={item.desc !== '' ? "start" : 'center'}
+                            spacing={'24px'}>
                       <chakra.img src={'/image/Home/01-icon-03.png'} h={'20px'} w={'30px'} alt={''}/>
-                      <Text fontSize={'12.5px'} fontWeight={'bold'} w={item.desc !== '' ? '100px' : ''}> {item.title}</Text>
+                      <Text fontSize={'12.5px'} fontWeight={'bold'}
+                            w={item.desc !== '' ? '100px' : ''}> {item.title}</Text>
                       <Text fontSize={'10.5px'} fontWeight={'600'} w={item.desc !== '' ? '180px' : ''}>{item.desc}</Text>
-                      { item?.icon && (
+                      {item?.icon && (
                         <>
                           {item.icon}
                         </>
-                      ) }
+                      )}
                     </HStack>
                   )
                 )}
@@ -661,8 +693,20 @@ export default function Home(): JSX.Element {
             </Stack>
             <Stack pt={'30px'} align={"center"}>
               <FaTelegramPlane fontSize={'24px'} color={'#003232'}/>
-              <Link color={'#00A0E9'} fontWeight={'600'} fontSize={'12.5px'}>@NEST_Community <ChevronRightIcon/></Link>
-              <Link color={'#00A0E9'} fontWeight={'600'} fontSize={'12.5px'}>@nest_chat <ChevronRightIcon/></Link>
+              <Link href={'https://t.me/NEST_Community'} isExternal>
+                <HStack align={"center"}>
+                  <chakra.img src={'/image/Home/icon_8.svg'} w={'14px'} h={'14px'}/>
+                  <Text fontSize={'12.5px'} fontWeight={'600'} color={'#00A0E9'}>@NEST_Community</Text>
+                  <ChevronRightIcon color={'#00A0E9'}/>
+                </HStack>
+              </Link>
+              <Link href={'https://t.me/nest_chat'} isExternal>
+                <HStack align={"center"}>
+                  <chakra.img src={'/image/Home/icon_7.svg'} w={'14px'} h={'14px'}/>
+                  <Text fontSize={'12.5px'} fontWeight={'600'} color={'#00A0E9'}>@nest_chat</Text>
+                  <ChevronRightIcon color={'#00A0E9'}/>
+                </HStack>
+              </Link>
             </Stack>
             <Stack pt={'30px'} align={"center"}>
               <AiOutlineGithub fontSize={'24px'} color={'#003232'}/>
@@ -707,14 +751,16 @@ export default function Home(): JSX.Element {
           <Stack align={"center"} py={'62px'}>
             <Text fontSize={'25px'} fontWeight={'bold'}>Blog</Text>
             <Stack px={'24px'} w={'full'} py={'38px'}>
-              <chakra.img src={'/image/Home/01-card-01.png'} alt={''}/>
-              <Stack bg={"white"} borderRadius={'16px'} px={'35px'} py={'25px'}>
-                <Text fontSize={'12.5px'} fontWeight={'bold'}>Coinbase Announces Planned Listing<br/>of Tokens, Adds
-                  $NEST to ‘<br/>Experimental Asset’
-                  Label</Text>
-                <Text fontSize={'10.5px'} fontWeight={'600'} color={'#878787'}>Leading United States-based <br/>cryptocurrency
-                </Text>
-                <Text fontSize={'10.5px'} fontWeight={'500'} color={'#878787'}>July 25, 2022</Text>
+              <Stack bg={"white"} spacing={0} borderRadius={'32px'}>
+                <chakra.img src={'/image/Home/01-card-01.png'} alt={''}/>
+                <Stack px={'35px'} py={'25px'}>
+                  <Text fontSize={'12.5px'} fontWeight={'bold'}>Coinbase Announces Planned Listing<br/>of Tokens, Adds
+                    $NEST to ‘<br/>Experimental Asset’
+                    Label</Text>
+                  <Text fontSize={'10.5px'} fontWeight={'600'} color={'#878787'}>Leading United States-based <br/>cryptocurrency
+                  </Text>
+                  <Text fontSize={'10.5px'} fontWeight={'500'} color={'#878787'}>July 25, 2022</Text>
+                </Stack>
               </Stack>
             </Stack>
             <Stack>
