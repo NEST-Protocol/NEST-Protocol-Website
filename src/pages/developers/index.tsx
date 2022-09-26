@@ -34,7 +34,7 @@ export default function Home(): JSX.Element {
       { isDesktop ? (
         <Stack h={'100%'} w={'100vw'} align={"center"}>
           <Stack w={'100%'} maxW={'1920px'} h={'100%'} bgPosition={"center"} bgSize={'cover'}
-                 bgImage={'image/Developer/Developer_bg.jpg'} spacing={0}>
+                 bgImage={'/image/Developer/Developer_bg.jpg'} spacing={0}>
             <Stack px={'45px'} h={'88px'} direction={"row"} justifyContent={"space-between"} align={"center"}>
               <Link href={'/'}>
                 <chakra.img
@@ -73,7 +73,7 @@ export default function Home(): JSX.Element {
             </Stack>
             <Stack bg={'rgba(255, 255, 255, 0.8)'} direction={"row"} spacing={0}>
               <Stack w={'50%'} px={'100px'}>
-                <chakra.img src={'image/Developer/03-Flowchart-01.svg'}/>
+                <chakra.img src={'/image/Developer/03-Flowchart-01.svg'}/>
               </Stack>
               <Stack w={'50%'} py={'216px'} px={'120px'} spacing={'21px'}>
                 <Text fontSize={'25px'} fontWeight={600}>NEST PVM</Text>
@@ -99,7 +99,7 @@ export default function Home(): JSX.Element {
                 </HStack>
               </Stack>
               <Stack w={'50%'} px={'100px'}>
-                <chakra.img src={'image/Developer/03-Flowchart-02.svg'}/>
+                <chakra.img src={'/image/Developer/03-Flowchart-02.svg'}/>
               </Stack>
             </HStack>
             <Stack h={'138px'}/>
