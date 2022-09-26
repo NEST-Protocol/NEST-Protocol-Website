@@ -111,7 +111,7 @@ export default function NestFi(): JSX.Element {
               <Heading fontSize={'50px'}>Dapps in NEST FI</Heading>
               <HStack w={'full'}>
                 <Stack w={'50%'} align={"center"} justify={"center"}>
-                  <chakra.img src={'/image/NEST_Fi/iphone_1.webp'} h={'400px'}/>
+                  <chakra.img src={'/image/NEST_Fi/iPhone_1.webp'} h={'400px'}/>
                 </Stack>
                 <Stack w={'50%'} px={'135px'} py={'155px'} bg={'white'} borderRadius={'20px'}>
                   <Text fontSize={'25px'} fontWeight={600}>NEST FI - Futures</Text>
@@ -140,7 +140,7 @@ export default function NestFi(): JSX.Element {
                   </Box>
                 </Stack>
                 <Stack w={'50%'} align={"center"} justify={"center"}>
-                  <chakra.img src={'/image/NEST_Fi/iphone_2.webp'} h={'400px'}/>
+                  <chakra.img src={'/image/NEST_Fi/iPhone_2.webp'} h={'400px'}/>
                 </Stack>
               </HStack>
             </Stack>
