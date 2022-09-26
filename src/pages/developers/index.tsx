@@ -280,7 +280,7 @@ export default function Home(): JSX.Element {
             </Stack>
           </Stack>
           <Stack h={'62px'}/>
-          <Stack py={'88px'} px={'45px'} bg={'rgba(255, 255,255, 0.7)'} justifyContent={"space-between"}
+          <Stack py={'44px'} px={'24px'} bg={'rgba(255, 255,255, 0.7)'} justifyContent={"space-between"}
                  align={"start"}>
             <Stack spacing={'40px'} align={"start"} w={'full'}>
               <Stack spacing={'22px'}>
