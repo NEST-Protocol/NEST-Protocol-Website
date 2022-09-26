@@ -13,7 +13,7 @@ import {
   useDisclosure,
   Modal,
   ModalContent,
-  ModalCloseButton, ModalBody, VStack,
+  ModalCloseButton, ModalBody, VStack, useMediaQuery,
 } from "@chakra-ui/react";
 import theme from "../../chakra"
 import Head from "@docusaurus/Head";
@@ -21,7 +21,7 @@ import {ChevronRightIcon, HamburgerIcon} from "@chakra-ui/icons";
 import {menu} from "@site/src/pages";
 
 export default function Home(): JSX.Element {
-  const isDesktop = false
+  const [isDesktop] = useMediaQuery("(min-width: 768px)");
   const {isOpen, onOpen, onClose} = useDisclosure()
 
   return (
@@ -303,7 +303,7 @@ export default function Home(): JSX.Element {
                 <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/faqs'}>FAQs</Link>
                 <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Frequently asked questions</Text>
               </Stack>
-              <Stack spacing={'10px'}>
+              <Stack spacing={'10px'} w={'full'}>
                 <Text fontSize={'15px'} fontWeight={'bold'}>Market price</Text>
                 <chakra.div
                   id="crypto-widget-CoinList"

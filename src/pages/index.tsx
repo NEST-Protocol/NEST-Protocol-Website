@@ -29,8 +29,7 @@ export const menu = [
 ]
 
 export default function Home(): JSX.Element {
-  // const [isDesktop] = useMediaQuery("(min-width: 768px)");
-  const isDesktop = false
+  const [isDesktop] = useMediaQuery("(min-width: 768px)");
   const [start, setStart] = useState(0)
   const [selectedWork, setSelectedWork] = useState(0)
   const [selectedStochastic, setSelectedStochastic] = useState(0)
@@ -96,10 +95,10 @@ export default function Home(): JSX.Element {
     {title: '2021.11 v4.1', desc: `NEST oracle upgraded.\nAllows anyone\nto build their oracle\nfor their project.`},
     {title: '2021.12 v4.3', desc: `NEST oracle upgraded.\nAllows each channel for\nmultiple quotation pairs.`},
     {title: '2022.07 v5.0', desc: `Merge FORT protocol\nNEST protocol= NEST oracle\n+ OMM +PVM`},
-    {title: 'Gene game', desc: '', icon: <chakra.img src={'/svg/icon_17.svg'} w={'37px'} h={'37px'}/>},
-    {title: 'Keyboard boy game', desc: '', icon: <chakra.img src={'/svg/icon_16.svg'} w={'39px'} h={'39px'}/>},
-    {title: 'DABS', desc: '', icon: <chakra.img src={'/image/Home/01-icon-dabs.svg'} w={'70px'} h={'31px'}/>},
-    {title: 'Cyber ink', desc: '', icon: <chakra.img src={'/image/Home/01-icon-cyberink.png'} w={'56px'} h={'45px'}/>},
+    {title: 'Gene game', desc: '', icon: <chakra.img src={'/svg/icon_17.svg'} w={isDesktop ? '37px' : '19px'} h={isDesktop ? '37px' : '19px'}/>},
+    {title: 'Keyboard boy game', desc: '', icon: <chakra.img src={'/svg/icon_16.svg'} w={isDesktop ? '39px' : '20px'} h={isDesktop ? '39px' : '20px'}/>},
+    {title: 'DABS', desc: '', icon: <chakra.img src={'/image/Home/01-icon-dabs.svg'} w={isDesktop ? '70px' : '45px'} h={isDesktop ? '31px' : '15px'}/>},
+    {title: 'Cyber ink', desc: '', icon: <chakra.img src={'/image/Home/01-icon-cyberink.png'} w={isDesktop ? '56px' : '29px'} h={isDesktop ? '45px': '28px'}/>},
   ]
 
   return (
@@ -633,17 +632,22 @@ export default function Home(): JSX.Element {
             <Text fontSize={'25px'} fontWeight={'bold'}>Development<br/>path</Text>
             <Text fontSize={'12.5px'} fontWeight={'bold'}>The NEST community always insists<br/>on decentralization and
               innovation</Text>
-            <HStack w={'full'}>
-              <Divider color={'#C9C9C9'} orientation={'vertical'}/>
-              <Stack>
-                <HStack textAlign={"start"} align={"start"}>
-                  <Text fontSize={'12.5px'} fontWeight={'bold'} w={'120px'}>2018.12 v1.0</Text>
-                  <Text fontSize={'10.5px'} fontWeight={'600'}>Start! A lending<br/>protocol goes live.</Text>
-                </HStack>
-                <HStack textAlign={"start"} align={"start"}>
-                  <Text fontSize={'12.5px'} fontWeight={'bold'} w={'120px'}>2019.12 v2.0</Text>
-                  <Text fontSize={'10.5px'} fontWeight={'600'}>NEST oracle V1.0<br/>goes live.</Text>
-                </HStack>
+            <HStack w={'full'} justify={"center"} py={'50px'} spacing={'-18px'}>
+              <chakra.div w={'1px'} h={'880px'} bg={'#C9C9C9'}/>
+              <Stack spacing={'32px'}>
+                {developmentPath.map((item) => (
+                    <HStack key={item.title} textAlign={"start"} align={item.desc !== '' ? "start" : 'center'} spacing={'24px'}>
+                      <chakra.img src={'/image/Home/01-icon-03.png'} h={'20px'} w={'30px'} alt={''}/>
+                      <Text fontSize={'12.5px'} fontWeight={'bold'} w={item.desc !== '' ? '100px' : ''}> {item.title}</Text>
+                      <Text fontSize={'10.5px'} fontWeight={'600'} w={item.desc !== '' ? '180px' : ''}>{item.desc}</Text>
+                      { item?.icon && (
+                        <>
+                          {item.icon}
+                        </>
+                      ) }
+                    </HStack>
+                  )
+                )}
               </Stack>
             </HStack>
           </Stack>
@@ -775,7 +779,7 @@ export default function Home(): JSX.Element {
           </Stack>
           <Stack h={'62px'}/>
           <Stack py={'88px'} px={'45px'} bg={'rgba(255, 255,255, 0.7)'} justifyContent={"space-between"}
-                  align={"start"}>
+                 align={"start"}>
             <Stack spacing={'40px'} align={"start"} w={'full'}>
               <Stack spacing={'22px'}>
                 <Link fontSize={'15px'} fontWeight={'bold'} href={'https://finance.nestprotocol.org/'} isExternal>Launch
@@ -799,7 +803,7 @@ export default function Home(): JSX.Element {
                 <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/faqs'}>FAQs</Link>
                 <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Frequently asked questions</Text>
               </Stack>
-              <Stack spacing={'10px'}>
+              <Stack spacing={'10px'} w={'full'}>
                 <Text fontSize={'15px'} fontWeight={'bold'}>Market price</Text>
                 <chakra.div
                   id="crypto-widget-CoinList"
