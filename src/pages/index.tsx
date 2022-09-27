@@ -24,7 +24,7 @@ import {useLocation} from "@docusaurus/router";
 export const menu = [
   {name: 'NEST Fi', pathname: '/nest-fi'},
   {name: 'Developers', pathname: '/developers'},
-  {name: 'Doc', pathname: '/docs/Technical-Reference-PVM/Contracts'},
+  {name: 'Doc', pathname: '/docs/Overview/What-is-NEST-Protocol'},
   {name: 'Blog', pathname: '/blogs'},
   {name: 'About', pathname: '/about'}
 ]
@@ -661,8 +661,8 @@ export default function Home(): JSX.Element {
             <Text fontSize={'16.5px'} fontWeight={'bold'}>Over 1 MILLION community<br/>members, Join us</Text>
             <Stack pt={'30px'} align={"center"}>
               <AiOutlineTwitter fontSize={'24px'} color={'#003232'}/>
-              <Link color={'#00A0E9'} fontWeight={'600'} fontSize={'12.5px'}>@NEST_Protocol <ChevronRightIcon/></Link>
-              <Link color={'#00A0E9'} fontWeight={'600'} fontSize={'12.5px'}>@NESTDAOSupport <ChevronRightIcon/></Link>
+              <Link color={'#00A0E9'} fontWeight={'600'} fontSize={'12.5px'} isExternal href={'https://twitter.com/NEST_Protocol'}>@NEST_Protocol <ChevronRightIcon/></Link>
+              <Link color={'#00A0E9'} fontWeight={'600'} fontSize={'12.5px'} isExternal href={'https://twitter.com/NESTDAOSupport'}>@NESTDAOSupport <ChevronRightIcon/></Link>
             </Stack>
             <Stack pt={'30px'} align={"center"}>
               <FaTelegramPlane fontSize={'24px'} color={'#003232'}/>
@@ -683,7 +683,7 @@ export default function Home(): JSX.Element {
             </Stack>
             <Stack pt={'30px'} align={"center"}>
               <AiOutlineGithub fontSize={'24px'} color={'#003232'}/>
-              <Link color={'#00A0E9'} fontWeight={'600'} fontSize={'12.5px'}>For developers <ChevronRightIcon/></Link>
+              <Link color={'#00A0E9'} fontWeight={'600'} fontSize={'12.5px'} href={'/developers'}>For developers <ChevronRightIcon/></Link>
             </Stack>
             <HStack pt={'60px'} pb={'30px'}>
               <Stack w={'100px'} align={"center"}>
