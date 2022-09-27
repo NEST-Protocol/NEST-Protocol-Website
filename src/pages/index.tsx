@@ -41,20 +41,20 @@ export default function Home(): JSX.Element {
       type: 'PVM',
       title: `PVM (Probabilistic Virtual Machine) is a class of\nvirtual machine structures based on a library of basic\nfunctions that allow a developer to assemble as many\napplications as he wants - similar to EVM programming`,
       desc: `PVM enables the generation and programming of\nstochastic assets, which is widely used in DeFi, GameFi,\nNFT, etc.`,
-      link: '/docs/Concept/History-of-EVM-&-PVM'
+      link: '/docs/Concept/PVM'
     },
     {
       type: 'NEST Oracle',
       title: `The NEST oracle is currently the market's\nonly truly decentralized oracle. The random\ninformation of decentralized price flow is introduced\ninto the chain using the Game Theoretical\nmechanism of arbitrage.`,
       desc: `The NEST token is generated using the NEST\noracle's stochastic information. The NEST token\n serves as the monetary unit for all stochastic assets\nin the NEST ecosystem.`,
-      link: '/docs/Technical-Reference-NEST-Oracle/How-does-NEST-Oracle-Work'
+      link: '/docs/Concept/NEST-Oracle'
     },
     {
       type: 'OMM',
       title: `OMM is a new trading and settlement paradigm:\nEveryone trades and settle stochastic assets with\ncontracts rather than individuals.`,
       desc: `OMM addresses the issue of liquidity and settlement.\nNEST tokens can be used to circulate any stochastic\nasset. Any benefit, even if it is greater than the\nexpected value, can be settled.\nThere is no need to match makers and takers, and all\nNEST holders share the same risks and rewards.
 `,
-      link: ''
+      link: '/docs/Concept/OMM'
     },
   ]
 
