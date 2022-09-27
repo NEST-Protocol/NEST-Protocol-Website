@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# History of EVM & PVM
+# Background
 
 From the original paper of Satoshi Nakamoto, the birth of Bitcoin, a se- ries of homogeneous cryptocurrencies, and finally to the smart contract of Ethereum, the cryptocurrency industry has advanced significantly over the years. As an informationized asset, cryptocurrencies have attributes that other traditional assets do not have, which makes these assets have broader application space and enormous potential.
 
