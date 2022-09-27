@@ -18,7 +18,7 @@ The NEST oracle enables everyone to change and influence the generation of price
 
 ## How does NEST Oracle Work?
 
-![image5](/Images/NEST5.png)
+![image5](Images/NEST5.png)
 
 ### Valuation Asset and Quotation Asset
 
