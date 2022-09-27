@@ -29,7 +29,7 @@ const TheFooter = () => {
           overflow={"hidden"}
           objectPosition={"center"}
         />
-        <Stack maxW={'1440px'} justify={'space-around'} w={'100%'} zIndex={1} py={isDesktop ? "88px" : "66px"}>
+        <Stack maxW={'1920px'} justify={'space-around'} w={'100%'} zIndex={1} py={isDesktop ? "88px" : "66px"}>
           <Wrap spacing={isDesktop ? "44px" : "22px"} justify={"space-between"} fontSize={isDesktop ? "15px" : "12px"}
                 w={"100%"}>
             <WrapItem>
@@ -79,68 +79,31 @@ const TheFooter = () => {
                 {isDesktop && (
                   <Stack spacing={'24px'}>
                     <HStack spacing={'24px'}>
-                      <chakra.img
-                        alt={'https://github.com/NEST-Protocol'}
-                        src={"/image/Footer/github_icon.svg"}
-                        width={'44px'}
-                        height={'44px'}
-                        cursor={"pointer"}
-                        onClick={() => {
-                          window.open('https://github.com/NEST-Protocol', '_blank')
-                        }}
-                      />
-                      <chakra.img
-                        alt={'https://twitter.com/nest_protocol/'}
-                        src={"/image/Footer/twitter_icon.svg"}
-                        width={'44px'}
-                        height={'44px'}
-                        cursor={"pointer"}
-                        onClick={() => {
-                          window.open('https://twitter.com/nest_protocol/', '_blank')
-                        }}
-                      />
-                      <chakra.img
-                        alt={'https://t.me/nest_chat/'}
-                        src={"/image/Footer/telegram_icon.svg"}
-                        width={'44px'}
-                        height={'44px'}
-                        cursor={"pointer"}
-                        onClick={() => {
-                          window.open('https://t.me/nest_chat/', '_blank')
-                        }}
-                      />
-                      <chakra.img
-                        alt={'https://nest-protocol-82041.medium.com/'}
-                        src={"/image/Footer/medium_icon.svg"}
-                        width={'44px'}
-                        height={'44px'}
-                        cursor={"pointer"}
-                        onClick={() => {
-                          window.open('https://nest-protocol-82041.medium.com/', '_blank')
-                        }}
-                      />
-                      <chakra.img
-                        alt={'https://discord.gg/nestprotocol'}
-                        src={"/image/Footer/discord_icon.svg"}
-                        width={'44px'}
-                        height={'44px'}
-                        cursor={"pointer"}
-                        onClick={() => {
-                          window.open('https://discord.gg/nestprotocol', '_blank')
-                        }}
-                      />
+                      <Link href={'https://github.com/NEST-Protocol'} isExternal>
+                        <chakra.img src={'/image/Footer/github_icon.svg'} h={'44px'} w={'44px'}/>
+                      </Link>
+                      <Link href={'https://twitter.com/nest_protocol/'} isExternal>
+                        <chakra.img src={'/image/Footer/twitter_icon.svg'} h={'44px'} w={'44px'}/>
+                      </Link>
+                      <Link href={'https://t.me/nest_chat/'} isExternal>
+                        <chakra.img src={'/image/Footer/telegram_icon.svg'} h={'44px'} w={'44px'}/>
+                      </Link>
+                      <Link href={'https://nest-protocol-82041.medium.com/'} isExternal>
+                        <chakra.img src={'/image/Footer/medium_icon.svg'} h={'44px'} w={'44px'}/>
+                      </Link>
+                      <Link href={'https://discord.gg/nestprotocol'} isExternal>
+                        <chakra.img src={'/image/Footer/discord_icon.svg'} h={'44px'} w={'44px'}/>
+                      </Link>
+                      <Link href={'mailto:hello@nestprotocol.org'} isExternal>
+                        <chakra.img src={'/image/Footer/email_icon.svg'} h={'44px'} w={'44px'}/>
+                      </Link>
                     </HStack>
-                    <Link
-                      color={'#7D7D7D'}
-                      fontWeight={'600'}
-                      href={'mailto:hello@nestprotocol.org'}
-                    >hello@nestprotocol.org</Link>
                   </Stack>
                 )}
               </Stack>
             </WrapItem>
             <WrapItem w={'400px'}>
-              <Stack spacing={['10px', "-12px"]} zIndex={1} w={"100%"} h={'full'}>
+              <Stack spacing={'10px'} zIndex={1} w={"100%"} h={'full'}>
                 <Text px={[0, '16px']} fontSize={isDesktop ? "15px" : "12px"} fontWeight={'700'} color={'#003232'}>
                   Market price
                 </Text>
@@ -208,6 +171,16 @@ const TheFooter = () => {
                   <chakra.img
                     alt={'https://discord.gg/nestprotocol'}
                     src={"/image/Footer/discord_icon.svg"}
+                    width={'44px'}
+                    height={'44px'}
+                    cursor={"pointer"}
+                    onClick={() => {
+                      window.open('https://discord.gg/nestprotocol', '_blank')
+                    }}
+                  />
+                  <chakra.img
+                    alt={''}
+                    src={"/image/Footer/email_icon.svg"}
                     width={'44px'}
                     height={'44px'}
                     cursor={"pointer"}

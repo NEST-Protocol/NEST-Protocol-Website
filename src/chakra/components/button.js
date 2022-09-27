@@ -19,8 +19,8 @@ export const Button = {
     },
     outline: {
       border: '2px solid',
-      borderColor: '#00A0E9',
-      color: "#00A0E9",
+      borderColor: '#EAAA00',
+      color: "#EAAA00",
       minW: '120px',
       borderRadius: 'full',
       fontSize: '15px',
