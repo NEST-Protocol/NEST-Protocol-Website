@@ -230,7 +230,7 @@ const Who = () => {
                   such as future hackathons.
                 </Text>
                 <HStack spacing={'44px'}>
-                  <Link color={'#00A0E9'} fontWeight={600} fontSize={15} href={'/docs/Concept/What-is-NEST'}>
+                  <Link color={'#00A0E9'} fontWeight={600} fontSize={15} href={'/docs/Overview/What-is-NEST-Protocol'}>
                     Developer Docs <ChevronRightIcon/>
                   </Link>
                 </HStack>
@@ -334,7 +334,7 @@ const Who = () => {
               such as future hackathons.
             </Text>
             <HStack spacing={'44px'} align={"center"} justify={"center"}>
-              <Link color={'#00A0E9'} fontWeight={600} fontSize={12} href={'/docs/Concept/What-is-NEST'}>
+              <Link color={'#00A0E9'} fontWeight={600} fontSize={12} href={'/docs/Overview/What-is-NEST-Protocol'}>
                 Developer Docs <ChevronRightIcon/>
               </Link>
             </HStack>

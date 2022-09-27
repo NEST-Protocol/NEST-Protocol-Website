@@ -24,7 +24,7 @@ import {useLocation} from "@docusaurus/router";
 export const menu = [
   {name: 'NEST Fi', pathname: '/nest-fi'},
   {name: 'Developers', pathname: '/developers'},
-  {name: 'Doc', pathname: '/docs/Building-On-NEST/Contracts/'},
+  {name: 'Doc', pathname: '/docs/Technical-Reference-PVM/Contracts'},
   {name: 'Blog', pathname: '/blogs'},
   {name: 'About', pathname: '/about'}
 ]
@@ -469,7 +469,7 @@ export default function Home(): JSX.Element {
               </Stack>
               <Stack spacing={'40px'}>
                 <Stack spacing={'22px'}>
-                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/Building-On-NEST/Contracts/'}>Developer
+                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/Technical-Reference-PVM/Contracts'}>Developer
                     Docs</Link>
                   <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know how to develop on NEST</Text>
                 </Stack>
@@ -843,7 +843,7 @@ export default function Home(): JSX.Element {
                 <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know about NRA</Text>
               </Stack>
               <Stack spacing={'22px'}>
-                <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/Building-On-NEST/Contracts/'}>Developer
+                <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/Technical-Reference-PVM/Contracts'}>Developer
                   Docs</Link>
                 <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know how to develop on NEST</Text>
               </Stack>

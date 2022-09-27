@@ -137,7 +137,7 @@ export default function NRA(): JSX.Element {
               </Stack>
               <Stack spacing={'40px'}>
                 <Stack spacing={'22px'}>
-                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/Building-On-NEST/Contracts/'}>Developer
+                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/Technical-Reference-PVM/Contracts'}>Developer
                     Docs</Link>
                   <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know how to develop on NEST</Text>
                 </Stack>
@@ -353,7 +353,7 @@ export default function NRA(): JSX.Element {
                 <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know about NRA</Text>
               </Stack>
               <Stack spacing={'22px'}>
-                <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/Building-On-NEST/Contracts/'}>Developer
+                <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/Technical-Reference-PVM/Contracts'}>Developer
                   Docs</Link>
                 <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know how to develop on NEST</Text>
               </Stack>
