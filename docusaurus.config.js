@@ -84,7 +84,7 @@ const config = {
               position: 'right',
               label: 'Developers',
             },
-            {to: '/docs/Building-On-NEST/Contracts/', label: 'Doc', position: 'right'},
+            {to: '/docs/Overview/What-is-NEST-Protocol', label: 'Doc', position: 'right'},
             {to: '/blogs', label: 'Blog', position: 'right'},
             {to: '/about', label: 'About', position: 'right'},
             {
