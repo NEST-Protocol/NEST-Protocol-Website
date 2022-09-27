@@ -47,7 +47,7 @@ export default function Home(): JSX.Element {
                 <Link href={'/nest-fi'}>NEST Fi</Link>
                 <Link href={'/developers'} color={'#EAAA00'} fontWeight={'700'}>Developers</Link>
                 <Link href={'/docs/Overview/What-is-NEST-Protocol'}>Doc</Link>
-                <Link href={'/blog'}>Blog</Link>
+                <Link href={'/blogs'}>Blog</Link>
                 <Link href={'/about'}>About</Link>
                 <Button onClick={() => {
                   window.open('https://finance.nestprotocol.org/', '_blank')
