@@ -135,7 +135,7 @@ export default function Home(): JSX.Element {
             <Stack px={['20px', '40px', '80px', '160px']}>
               <Stack bg={'rgba(255, 255, 255, 0.7)'} py={'92px'} h={'600px'} overflow={"scroll"} w={'full'} align={"center"} borderRadius={'20px'}>
                 <Heading fontSize={'50px'} textAlign={"center"}>What is stochastic assets?</Heading>
-                <chakra.img src={'/image/Home/01-icon-01.png'} alt={''} py={'50px'}/>
+                <chakra.img src={'/image/Home/01-icon-01@2x.png'} w={'210px'} alt={''} py={'50px'}/>
                 <Stack pb={'200px'} align={"center"}>
                   <Text fontSize={'25px'} fontWeight={"bold"} w={'620px'}
                         textAlign={"center"}>Stochastic Asset is an on-chain asset that can be issued and destroyed in response to random information flows</Text>
@@ -330,7 +330,7 @@ export default function Home(): JSX.Element {
                 <Stack w={'308px'} bg={"white"} borderRadius={'20px'} spacing={0} cursor={"pointer"} onClick={() => {
                   window.open('/blog/Coinbase-Announces-Planned-Listing-of-Tokens-Adds-NEST', '_blank')
                 }}>
-                  <chakra.img src={'/image/Home/01-card-01.png'} alt={''}/>
+                  <chakra.img src={'/image/Home/01-card-01@2x.png'} alt={''}/>
                   <Stack spacing={'10px'} p={'20px'} h={'230px'}>
                     <Text fontSize={'18px'} fontWeight={'bold'}>Coinbase Announces Planned Listing of Tokens, Adds $NEST
                       to ‘Experimental Asset’ Label</Text>
@@ -342,7 +342,7 @@ export default function Home(): JSX.Element {
                 <Stack w={'308px'} bg={"white"} borderRadius={'20px'} spacing={0} cursor={'pointer'} onClick={() => {
                   window.open('/blog/NEST-Protocol-A-New-Paradigm-of-Game-Theoretic-Oracle', '_blank')
                 }}>
-                  <chakra.img src={'/image/Home/01-card-02.png'} alt={''}/>
+                  <chakra.img src={'/image/Home/01-card-02@2x.png'} alt={''}/>
                   <Stack spacing={'20px'} p={'20px'} h={'230px'}>
                     <Text fontSize={'18px'} fontWeight={'bold'}>NEST Protocol: A New Paradigm of Game Theoretic
                       Oracle</Text>
@@ -354,7 +354,7 @@ export default function Home(): JSX.Element {
                 <Stack w={'308px'} bg={"white"} borderRadius={'20px'} spacing={0} cursor={"pointer"} onClick={() => {
                   window.open('/blog/NEST\'s-RSS-FEED-INTEGRATED-WITH-CRYPTO.COM-PRICE-PAGE', '_blank')
                 }}>
-                  <chakra.img src={'/image/Home/01-card-03.png'} alt={''}/>
+                  <chakra.img src={'/image/Home/01-card-03@2x.png'} alt={''}/>
                   <Stack spacing={'20px'} p={'20px'} h={'230px'}>
                     <Text fontSize={'18px'} fontWeight={'bold'}>NEST’s RSS FEED INTEGRATED WITH CRYPTO.COM PRICE
                       PAGE</Text>
@@ -575,7 +575,7 @@ export default function Home(): JSX.Element {
             <Stack align={"center"} textAlign={"center"} bg={'rgba(255,255,255, 0.7)'} py={'58px'} h={'560px'} overflow={"scroll"}
                    borderRadius={'20px'}>
               <Text fontSize={'25px'} fontWeight={'bold'}>What is<br/>stochastic asset?</Text>
-              <chakra.img src={'/image/Home/01-icon-01.png'} alt={''} w={'180px'} py={'50px'}/>
+              <chakra.img src={'/image/Home/01-icon-01@2x.png'} alt={''} w={'150px'} py={'50px'}/>
               <Stack align={"center"} pb={'100px'}>
                 <Text w={'70%'} fontSize={'16.5px'} fontWeight={'bold'}>Stochastic Asset is an on-chain asset that can be issued and destroyed in response to random information flows</Text>
               </Stack>
@@ -725,7 +725,7 @@ export default function Home(): JSX.Element {
             <Text fontSize={'25px'} fontWeight={'bold'}>Blog</Text>
             <Stack px={'24px'} w={'full'} py={'38px'}>
               <Stack bg={"white"} spacing={0} borderRadius={'32px'}>
-                <chakra.img src={'/image/Home/01-card-01.png'} alt={''}/>
+                <chakra.img src={'/image/Home/01-card-01@2x.png'} alt={''}/>
                 <Stack px={'35px'} py={'25px'} cursor={"pointer"} onClick={() => {
                   window.open('/blog/Coinbase-Announces-Planned-Listing-of-Tokens-Adds-NEST', '_blank')
                 }}>

@@ -92,7 +92,7 @@ export default function NRA(): JSX.Element {
               <Heading fontSize={'50px'} pt={'138px'}>Funding Opportunity</Heading>
               <Stack px={'160px'} w={'full'}>
                 <Stack bg={'white'} align={"center"} textAlign={"center"} py={'130px'} borderRadius={'20px'}>
-                  <chakra.img src={'/image/About/04-icon-01.png'} alt={''} mb={'26px'}/>
+                  <chakra.img src={'/image/About/04-icon-01.png'} w={'105px'} alt={''} mb={'26px'}/>
                   <Text fontSize={'15px'} fontWeight={'600'}>NRA welcomes research in fields such as blockchain,
                     finance, <br/>economics, game theory, machine
                     learning, computer science, and software engineering.<br/>Those interested, please send your
@@ -107,7 +107,7 @@ export default function NRA(): JSX.Element {
               <Heading fontSize={'50px'} pt={'138px'}>Vacant Position</Heading>
               <Stack px={'160px'} w={'full'}>
                 <Stack bg={'white'} align={"center"} textAlign={"center"} py={'130px'} borderRadius={'20px'}>
-                  <chakra.img src={'/image/About/04-icon-02.png'} alt={''} mb={'26px'}/>
+                  <chakra.img src={'/image/About/04-icon-02.png'} w={'114px'} alt={''} mb={'26px'}/>
                   <Text fontSize={'15px'} fontWeight={'600'}>NRA welcomes applicants to researchers of all levels.<br/>NRA
                     evaluates the work of its
                     researchers in a result-oriented manner with flexibility in terms<br/>of working location and hours.

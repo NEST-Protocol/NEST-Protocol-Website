@@ -65,7 +65,7 @@ export default function NestFi(): JSX.Element {
             </Stack>
             <Stack bg={'rgba(255,255,255, 0.8)'} align={"center"} textAlign={"center"} py={'92px'}>
               <Heading fontSize={'50px'} textAlign={"center"}>What is OMM?</Heading>
-              <chakra.img src={'/image/NEST_Fi/02-icon-01.png'} alt={''} py={'20px'}/>
+              <chakra.img src={'/image/NEST_Fi/02-icon-01@2x.png'} w={'100px'} alt={''} py={'20px'}/>
               <Text fontSize={'25px'} fontWeight={'bold'}>From P2P to OMM, a new settlement paradigm</Text>
               <Text fontWeight={600} fontSize={'15px'}>OMM(Omnipotent Market Maker) is a new trading and settlement
                 paradigm:<br/>everyone trades and settles stochastic assets with NEST system rather than
@@ -82,7 +82,7 @@ export default function NestFi(): JSX.Element {
               <HStack spacing={'44px'}>
                 <Stack px={'30px'} py={'53px'} bg={"white"} w={'308px'} h={'352px'} borderRadius={'20px'}>
                   <Stack align={"center"} h={'120px'} justify={"center"}>
-                    <chakra.img src={'/image/NEST_Fi/02-icon-02.png'} alt={''} h={'98px'}/>
+                    <chakra.img src={'/image/NEST_Fi/02-icon-02@2x.png'} alt={''} h={'98px'}/>
                   </Stack>
                   <Text fontSize={'18px'} fontWeight={'bold'}>Valid Settlement</Text>
                   <Text fontWeight={'600'} fontSize={'13px'}>ETH cannot make valid<br/>settlement for all
@@ -90,7 +90,7 @@ export default function NestFi(): JSX.Element {
                 </Stack>
                 <Stack px={'30px'} py={'53px'} bg={"white"} w={'308px'} h={'352px'} borderRadius={'20px'}>
                   <Stack align={"center"} h={'120px'} justify={"center"}>
-                    <chakra.img src={'/image/NEST_Fi/02-icon-03.png'} alt={''} h={'88px'} w={'88px'}/>
+                    <chakra.img src={'/image/NEST_Fi/02-icon-03@2x.png'} alt={''} h={'88px'} w={'88px'}/>
                   </Stack>
                   <Text fontSize={'18px'} fontWeight={'bold'}>Market Clearing</Text>
                   <Text fontWeight={'600'} fontSize={'13px'}>OMM can structure atomic<br/>liquidation, which means that
@@ -98,7 +98,7 @@ export default function NestFi(): JSX.Element {
                 </Stack>
                 <Stack px={'30px'} py={'53px'} bg={"white"} w={'308px'} h={'352px'} borderRadius={'20px'}>
                   <Stack align={"center"} h={'120px'} justify={"center"}>
-                    <chakra.img src={'/image/NEST_Fi/02-icon-04.png'} alt={''} h={'87px'} w={'94px'}/>
+                    <chakra.img src={'/image/NEST_Fi/02-icon-04@2x.png'} alt={''} h={'87px'} w={'94px'}/>
                   </Stack>
                   <Text fontSize={'18px'} fontWeight={'bold'}>Infinite Liquidity</Text>
                   <Text fontWeight={'600'} fontSize={'13px'}>The liquidity will not be limited<br/>by the LP’s pool
@@ -294,7 +294,7 @@ export default function NestFi(): JSX.Element {
           </Stack>
           <Stack align={"center"} py={'40px'} bg={'rgba(255,255,255,0.7)'}>
             <Text fontWeight={'bold'} fontSize={'25px'}>What is OMM?</Text>
-            <chakra.img src={'/image/NEST_Fi/02-icon-01.png'} py={'40px'}/>
+            <chakra.img src={'/image/NEST_Fi/02-icon-01@2x.png'} w={'50px'} py={'40px'}/>
             <Text fontSize={'16px'} fontWeight={'bold'} textAlign={"center"}>From P2P to OMM, <br/>a new settlement
               paradigm</Text>
             <Text fontSize={'12.5px'} fontWeight={600} textAlign={"center"}>OMM(Omnipotent Market Maker) is<br/>a new
@@ -314,7 +314,7 @@ export default function NestFi(): JSX.Element {
             <Text fontSize={'25px'} fontWeight={'bold'}>What does OMM solve?</Text>
             <Stack px={'24px'} pt={'38px'} w={'full'}>
               <Stack px={'33px'} bg={'white'} borderRadius={'20px'} align={"center"} pt={'50px'}>
-                <chakra.img src={'/image/NEST_Fi/02-icon-02.png'} w={'70%'}/>
+                <chakra.img src={'/image/NEST_Fi/02-icon-02@2x.png'} w={'150px'}/>
                 <Stack py={'50px'} w={'full'}>
                   <Text fontWeight={'bold'} fontSize={'16px'}>Valid Settlement</Text>
                   <Text fontWeight={'600'} fontSize={'12.5px'}>ETH cannot make valid settlement for<br/>all
@@ -325,7 +325,7 @@ export default function NestFi(): JSX.Element {
             <Stack px={'24px'} py={'24px'} w={'full'}>
               <Stack px={'33px'} pt={'50px'} bg={'white'} borderRadius={'20px'} align={"center"}>
                 <Stack>
-                  <chakra.img src={'/image/NEST_Fi/02-icon-03.png'} w={'68px'}/>
+                  <chakra.img src={'/image/NEST_Fi/02-icon-03@2x.png'} w={'68px'}/>
                 </Stack>
                 <Stack py={'50px'} w={'full'}>
                   <Text fontWeight={'bold'} fontSize={'16px'}>Market Clearing</Text>
@@ -337,7 +337,7 @@ export default function NestFi(): JSX.Element {
             <Stack px={'24px'} w={'full'}>
               <Stack px={'33px'} pt={'50px'} bg={'white'} borderRadius={'20px'} align={"center"}>
                 <Stack>
-                  <chakra.img src={'/image/NEST_Fi/02-icon-04.png'} w={'68px'}/>
+                  <chakra.img src={'/image/NEST_Fi/02-icon-04@2x.png'} w={'68px'}/>
                 </Stack>
                 <Stack py={'50px'} w={'full'}>
                   <Text fontWeight={'bold'} fontSize={'16px'}>Infinite Liquidity</Text>
