@@ -175,7 +175,7 @@ export default function Home(): JSX.Element {
                   <ChevronDownIcon color={'#00A0E9'}/>
                 </Stack>
                 <HStack align={"end"} spacing={'24px'}>
-                  <Stack w={'300px'} align={"end"} pb={'40px'}>
+                  <Stack w={'300px'} align={"end"}>
                     <Stack align={"center"} spacing={0} fontSize={'15px'} fontWeight={600}
                            onClick={() => setSelectedWork(1)} cursor={'pointer'}>
                       <Text>Provide random information flow</Text>
@@ -183,8 +183,10 @@ export default function Home(): JSX.Element {
                       <ChevronDownIcon color={'#00A0E9'}/>
                     </Stack>
                   </Stack>
-                  <chakra.img src={'/image/Home/01-icon-02.png'} alt={''}/>
-                  <Stack align={"start"} w={'300px'} pb={'40px'}>
+                  <Stack pl={'12px'}>
+                    <chakra.img src={'/image/Home/01-icon-02@2x.png'} w={'240px'} alt={''}/>
+                  </Stack>
+                  <Stack align={"start"} w={'300px'}>
                     <Stack align={"center"} spacing={0} fontSize={'15px'} fontWeight={600}
                            onClick={() => setSelectedWork(2)} cursor={'pointer'}>
                       <Text>Generate stochastic assets</Text>
@@ -608,7 +610,7 @@ export default function Home(): JSX.Element {
               <Text color={'#00A0E9'}>PVM</Text>
               <ChevronDownIcon color={'#00A0E9'}/>
             </Stack>
-            <HStack align={"end"} spacing={'-110px'} pb={'50px'}>
+            <HStack align={"end"} spacing={'-60px'} pb={'50px'}>
               <Stack w={'300px'} align={"end"} zIndex={'10'}>
                 <Stack align={"center"} spacing={0} fontSize={'15px'} fontWeight={600}
                        onClick={() => setSelectedWork(1)} cursor={'pointer'}>
@@ -617,7 +619,7 @@ export default function Home(): JSX.Element {
                   <ChevronDownIcon color={'#00A0E9'}/>
                 </Stack>
               </Stack>
-              <chakra.img pb={'60px'} src={'/image/Home/01-icon-02.png'} alt={''}/>
+              <chakra.img pb={'60px'} src={'/image/Home/01-icon-02@2x.png'} w={'160px'} alt={''}/>
               <Stack align={"start"} w={'300px'}>
                 <Stack align={"center"} spacing={0} fontSize={'15px'} fontWeight={600}
                        onClick={() => setSelectedWork(2)} cursor={'pointer'}>
