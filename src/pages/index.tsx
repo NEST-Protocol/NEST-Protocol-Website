@@ -218,7 +218,7 @@ export default function Home(): JSX.Element {
                             cursor={"pointer"}
                             onClick={() => {
                               if (start > 0) {
-                                setStart(start - 1)
+                                setStart(start - 4)
                               }
                             }}/>
                 <Stack w={'full'} spacing={'-34px'} align={"center"}>
@@ -241,10 +241,10 @@ export default function Home(): JSX.Element {
                   </HStack>
                 </Stack>
                 <chakra.img src={'/svg/right_icon.svg'} w={'44px'} h={'44px'} cursor={"pointer"}
-                            opacity={start === developmentPath.length - 5 ? 0.5 : 1}
+                            opacity={start + 4 > developmentPath.length ? 0.5 : 1}
                             onClick={() => {
-                              if (start < developmentPath.length - 5) {
-                                setStart(start + 1)
+                              if (start < developmentPath.length - 4) {
+                                setStart(start + 4)
                               }
                             }}/>
               </HStack>
@@ -294,7 +294,7 @@ export default function Home(): JSX.Element {
               <Stack spacing={'60px'} align={"center"}>
                 <HStack spacing={'100px'}>
                   <Stack w={'130px'} align={"center"}>
-                    <Link href={'https://www.coinbase.com/'} isExternal>
+                    <Link href={'https://www.coinbase.com/price/nest-protocol'} isExternal>
                       <chakra.img src={'/image/Home/01-icon-coinbase.png'} h={'34px'} alt={''}/>
                     </Link>
                   </Stack>
@@ -304,19 +304,19 @@ export default function Home(): JSX.Element {
                     </Link>
                   </Stack>
                   <Stack w={'130px'} align={"center"}>
-                    <Link href={'https://www.mexc.com/'} isExternal>
+                    <Link href={'https://www.mexc.com/exchange/NEST_USDT'} isExternal>
                       <chakra.img src={'/image/Home/01-icon-mexc.png'} h={'45px'} alt={''}/>
                     </Link>
                   </Stack>
                 </HStack>
                 <HStack spacing={'100px'}>
-                  <Link w={'130px'} href={'https://www.lbank.info/'} isExternal>
+                  <Link w={'130px'} href={'https://www.lbank.info/exchange/nest/usdt'} isExternal>
                     <chakra.img src={'/image/Home/01-icon-LBANK.svg'} h={'45px'} alt={''}/>
                   </Link>
-                  <Link w={'130px'} href={'https://www.bibox.com/'} isExternal>
+                  <Link w={'130px'} href={'https://www.bibox.com/en/exchange/basic/NEST_USDT'} isExternal>
                     <chakra.img src={'/image/Home/01-icon-Bibox.svg'} h={'45px'} alt={''}/>
                   </Link>
-                  <Link w={'130px'} href={'https://www.gate.io/'} isExternal>
+                  <Link w={'130px'} href={'https://www.gate.io/trade/NEST_USDT'} isExternal>
                     <chakra.img src={'/image/Home/01-icon-Gate.svg'} w={'130px'} h={'45px'} alt={''}/>
                   </Link>
                 </HStack>
@@ -377,13 +377,13 @@ export default function Home(): JSX.Element {
               <Heading fontSize={'50px'} textAlign={"center"}>Integrations & Partners</Heading>
               <Stack bg={'rgba(255,255,255, 0.7)'} h={'440px'} align={"center"} spacing={'60px'} justify={"center"}>
                 <HStack spacing={'80px'}>
-                  <Link href={'https://www.huobi.com/zh-cn/'} isExternal>
+                  <Link href={'https://www.huobi.com/en-us/exchange/nest_usdt'} isExternal>
                     <chakra.img src={"/svg/huobi.svg"} h={'45px'}/>
                   </Link>
                   <Link href={'https://www.binance.com/'} isExternal>
                     <chakra.img src={"/svg/binance.svg"} h={'45px'}/>
                   </Link>
-                  <Link href={'https://www.coinbase.com/'} isExternal>
+                  <Link href={'https://www.coinbase.com/price/nest-protocol'} isExternal>
                     <chakra.img src={"/svg/Coinbase.svg"} h={'45px'}/>
                   </Link>
                   <Link href={'https://polygon.technology/'} isExternal>
@@ -687,7 +687,7 @@ export default function Home(): JSX.Element {
             </Stack>
             <HStack pt={'60px'} pb={'30px'}>
               <Stack w={'100px'} align={"center"}>
-                <Link href={'https://www.coinbase.com/'} isExternal>
+                <Link href={'https://www.coinbase.com/price/nest-protocol'} isExternal>
                   <chakra.img src={'/image/Home/01-icon-coinbase.png'} h={'17px'} alt={''}/>
                 </Link>
               </Stack>
@@ -697,24 +697,24 @@ export default function Home(): JSX.Element {
                 </Link>
               </Stack>
               <Stack w={'100px'} align={"center"}>
-                <Link href={'https://www.mexc.com/'} isExternal>
+                <Link href={'https://www.mexc.com/exchange/NEST_USDT'} isExternal>
                   <chakra.img src={'/image/Home/01-icon-mexc.png'} h={'22.5px'} alt={''}/>
                 </Link>
               </Stack>
             </HStack>
             <HStack pb={'50px'}>
               <Stack w={'100px'} align={"center"}>
-                <Link href={'https://www.lbank.info/'} isExternal>
+                <Link href={'https://www.lbank.info/exchange/nest/usdt'} isExternal>
                   <chakra.img src={'/image/Home/01-icon-LBANK.svg'} h={'22.5px'} alt={''}/>
                 </Link>
               </Stack>
               <Stack w={'100px'} align={"center"}>
-                <Link href={'https://www.bibox.com/'} isExternal>
+                <Link href={'https://www.bibox.com/en/exchange/basic/NEST_USDT'} isExternal>
                   <chakra.img src={'/image/Home/01-icon-Bibox.svg'} h={'22.5px'} alt={''}/>
                 </Link>
               </Stack>
               <Stack w={'100px'} align={"center"}>
-                <Link href={'https://www.gate.io/'} isExternal>
+                <Link href={'https://www.gate.io/trade/NEST_USDT'} isExternal>
                   <chakra.img src={'/image/Home/01-icon-Gate.svg'} w={'100px'} h={'22.5px'} alt={''}/>
                 </Link>
               </Stack>
@@ -748,13 +748,13 @@ export default function Home(): JSX.Element {
             <Text fontSize={'25px'} fontWeight={'bold'} textAlign={"center"}>Integrations &<br/>Partners</Text>
             <Stack bg={'rgba(255,255,255, 0.7)'} w={'full'} align={"center"} spacing={'35px'} py={'100px'}>
               <HStack spacing={'40px'}>
-                <Link href={'https://www.huobi.com/zh-cn/'} isExternal>
+                <Link href={'https://www.huobi.com/en-us/exchange/nest_usdt'} isExternal>
                   <chakra.img src={"/svg/huobi.svg"} h={'25px'}/>
                 </Link>
                 <Link href={'https://www.binance.com/'} isExternal>
                   <chakra.img src={"/svg/binance.svg"} h={'25px'}/>
                 </Link>
-                <Link href={'https://www.coinbase.com/'} isExternal>
+                <Link href={'https://www.coinbase.com/price/nest-protocol'} isExternal>
                   <chakra.img src={"/svg/Coinbase.svg"} h={'25px'}/>
                 </Link>
               </HStack>
