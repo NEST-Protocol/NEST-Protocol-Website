@@ -72,33 +72,38 @@ export default function Home(): JSX.Element {
               </Stack>
             </Stack>
             <Stack bg={'rgba(255, 255, 255, 0.8)'} direction={"row"} spacing={0}>
-              <Stack w={'50%'} px={'100px'}>
+              <Stack w={'50%'} align={"center"} justify={"center"}>
                 <chakra.img src={'/image/Developer/03-Flowchart-01.svg'}/>
               </Stack>
-              <Stack w={'50%'} py={'216px'} px={'120px'} spacing={'21px'}>
-                <Text fontSize={'25px'} fontWeight={600}>NEST PVM</Text>
-                <Text fontSize={'15px'} fontWeight={600}>NEST Probability Virtual Machine (PVM) is a virtual<br/>machine-like
-                  structure based on the basic function<br/>library. Developers can develop various exciting<br/>applications
-                  based on the function library, similar<br/>to Ethereum virtual machine (EVM) programming.</Text>
-                <Link color={'#00A0E9'} fontSize={'15px'} fontWeight={600} isExternal
-                      href={'/docs/Concept/PVM'}>PVM Mechanism <ChevronRightIcon/></Link>
+              <Stack w={'50%'} py={'216px'} spacing={'21px'} align={"center"}>
+                <Stack w={'500px'}>
+                  <Text fontSize={'25px'} fontWeight={600}>NEST PVM</Text>
+                  <Text fontSize={'15px'} fontWeight={600}>NEST Probability Virtual Machine (PVM) is a virtual<br/>machine-like
+                    structure based on the basic function<br/>library. Developers can develop various exciting<br/>applications
+                    based on the function library, similar<br/>to Ethereum virtual machine (EVM) programming.</Text>
+                  <Link color={'#00A0E9'} fontSize={'15px'} fontWeight={600} isExternal
+                        href={'/docs/Concept/PVM'}>PVM Mechanism <ChevronRightIcon/></Link>
+                </Stack>
               </Stack>
             </Stack>
             <Stack h={'138px'}/>
             <HStack bg={'rgba(255, 255, 255, 0.8)'}>
-              <Stack w={'50%'} py={'216px'} px={'120px'}>
-                <Text fontSize={'25px'} fontWeight={600}>NEST Oracle</Text>
-                <Text fontSize={'15px'} fontWeight={600}>NEST oracle is the only truly decentralized oracle<br/>on the
-                  market today.</Text>
-                <HStack spacing={'68px'}>
-                  <Link color={'#00A0E9'} fontSize={'15px'} fontWeight={600} isExternal
-                        href={'https://nestprotocol.org/docs/Technical-Reference-NEST-Oracle/How-to-Mining'}>How to Mining <ChevronRightIcon/></Link>
-                  <Link color={'#00A0E9'} fontSize={'15px'} fontWeight={600} isExternal
-                        href={'https://nestprotocol.org/docs/Technical-Reference-NEST-Oracle/How-to-Call-Price'}>How to Call
-                    Price <ChevronRightIcon/></Link>
-                </HStack>
+              <Stack w={'50%'} py={'216px'} align={"center"}>
+                <Stack w={'500px'}>
+                  <Text fontSize={'25px'} fontWeight={600}>NEST Oracle</Text>
+                  <Text fontSize={'15px'} fontWeight={600}>NEST oracle is the only truly decentralized oracle<br/>on the
+                    market today.</Text>
+                  <HStack spacing={'68px'}>
+                    <Link color={'#00A0E9'} fontSize={'15px'} fontWeight={600} isExternal
+                          href={'https://nestprotocol.org/docs/Technical-Reference-NEST-Oracle/How-to-Mining'}>How to Mining <ChevronRightIcon/></Link>
+                    <Link color={'#00A0E9'} fontSize={'15px'} fontWeight={600} isExternal
+                          href={'https://nestprotocol.org/docs/Technical-Reference-NEST-Oracle/How-to-Call-Price'}>How to Call
+                      Price <ChevronRightIcon/></Link>
+                  </HStack>
+                </Stack>
+
               </Stack>
-              <Stack w={'50%'} px={'100px'}>
+              <Stack w={'50%'} align={"center"} justify={"center"}>
                 <chakra.img src={'/image/Developer/03-Flowchart-02.svg'}/>
               </Stack>
             </HStack>

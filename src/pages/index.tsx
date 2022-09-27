@@ -629,7 +629,7 @@ export default function Home(): JSX.Element {
             </HStack>
             <Text fontSize={'16.5px'} fontWeight={'bold'}>{work[selectedWork].type}</Text>
             <Text w={'80%'} fontSize={'12.5px'} fontWeight={'600'}>{work[selectedWork].title}</Text>
-            <Text w={'70%'} fontSize={'12.5px'} fontWeight={'600'} color={'#7D7D7D'}>{work[selectedWork].desc}</Text>
+            <Text w={'70%'} fontSize={'12.5px'} fontWeight={'600'} color={'#7D7D7D'}>{work[selectedWork].desc} <Link href={work[selectedWork].link} isExternal color={'#00A0E9'}>Learn more <ChevronRightIcon /></Link></Text>
           </Stack>
           <Stack textAlign={"center"} align={"center"} py={'62px'}>
             <Text fontSize={'25px'} fontWeight={'bold'}>Development<br/>path</Text>
