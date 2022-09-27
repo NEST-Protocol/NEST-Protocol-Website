@@ -208,7 +208,7 @@ const Who = () => {
                   management.
                 </Text>
                 <HStack spacing={'44px'}>
-                  <Link color={'#00A0E9'} fontWeight={600} fontSize={15} href={'/news'}>
+                  <Link color={'#00A0E9'} fontWeight={600} fontSize={15} href={'/blogs'}>
                     News <ChevronRightIcon/>
                   </Link>
                 </HStack>
@@ -230,7 +230,7 @@ const Who = () => {
                   such as future hackathons.
                 </Text>
                 <HStack spacing={'44px'}>
-                  <Link color={'#00A0E9'} fontWeight={600} fontSize={15} href={'/docs/Overview/What-is-NEST-Protocol'}>
+                  <Link color={'#00A0E9'} fontWeight={600} fontSize={15} href={'/docs/Technical-Reference-PVM/Contracts'}>
                     Developer Docs <ChevronRightIcon/>
                   </Link>
                 </HStack>
@@ -319,7 +319,7 @@ const Who = () => {
               management.
             </Text>
             <HStack spacing={'44px'} align={"center"} justify={"center"}>
-              <Link color={'#00A0E9'} fontWeight={600} fontSize={12} href={'/news'}>
+              <Link color={'#00A0E9'} fontWeight={600} fontSize={12} href={'/blogs'}>
                 News <ChevronRightIcon/>
               </Link>
             </HStack>
@@ -334,7 +334,7 @@ const Who = () => {
               such as future hackathons.
             </Text>
             <HStack spacing={'44px'} align={"center"} justify={"center"}>
-              <Link color={'#00A0E9'} fontWeight={600} fontSize={12} href={'/docs/Overview/What-is-NEST-Protocol'}>
+              <Link color={'#00A0E9'} fontWeight={600} fontSize={12} href={'/docs/Technical-Reference-PVM/Contracts'}>
                 Developer Docs <ChevronRightIcon/>
               </Link>
             </HStack>

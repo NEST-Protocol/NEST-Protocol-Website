@@ -24,7 +24,7 @@ Corrected the quotes from the miner and got profit from price spread.
 Provide the information required for a quote channel in accordance with NEST specifications, open a quote channel, and own the maintenance rights to this quote channel.
 
 ### Price Caller
-Called the price provided by NEST Oracle. [The documentation of the price-calling](/docs/NEST-Oracle/How-to-Call-Price).
+Called the price provided by NEST Oracle. [The documentation of the price-calling](/docs/Technical-Reference-NEST-Oracle/How-to-Call-Price).
 
 ## What is Channel?
 

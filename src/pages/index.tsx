@@ -33,7 +33,6 @@ export default function Home(): JSX.Element {
   const [isDesktop] = useMediaQuery("(min-width: 768px)");
   const [start, setStart] = useState(0)
   const [selectedWork, setSelectedWork] = useState(0)
-  const [selectedStochastic, setSelectedStochastic] = useState(0)
   const {isOpen, onOpen, onClose} = useDisclosure()
   const location = useLocation();
 
@@ -46,7 +45,7 @@ export default function Home(): JSX.Element {
     },
     {
       type: 'NEST Oracle',
-      title: `The NEST oracle is currently the market's\nonly truly decentralized oracle. The stochastic\ninformation of decentralized price flow is introduced\ninto the chain using the Game Theoretical\nmechanism of arbitrage.`,
+      title: `The NEST oracle is currently the market's\nonly truly decentralized oracle. The random\ninformation of decentralized price flow is introduced\ninto the chain using the Game Theoretical\nmechanism of arbitrage.`,
       desc: `The NEST token is generated using the NEST\noracle's stochastic information. The NEST token\n serves as the monetary unit for all stochastic assets\nin the NEST ecosystem.`,
       link: '/docs/NEST-Oracle/How-does-NEST-Oracle-Work'
     },
@@ -328,7 +327,9 @@ export default function Home(): JSX.Element {
             <Stack py={'138px'} align={"center"} spacing={'48px'}>
               <Heading fontSize={'50px'} textAlign={"center"}>Blogs</Heading>
               <HStack spacing={'44px'}>
-                <Stack w={'308px'} bg={"white"} borderRadius={'20px'} spacing={0}>
+                <Stack w={'308px'} bg={"white"} borderRadius={'20px'} spacing={0} cursor={"pointer"} onClick={() => {
+                  window.open('/blog/Coinbase-Announces-Planned-Listing-of-Tokens-Adds-NEST', '_blank')
+                }}>
                   <chakra.img src={'/image/Home/01-card-01.png'} alt={''}/>
                   <Stack spacing={'10px'} p={'20px'} h={'230px'}>
                     <Text fontSize={'18px'} fontWeight={'bold'}>Coinbase Announces Planned Listing of Tokens, Adds $NEST
@@ -338,7 +339,9 @@ export default function Home(): JSX.Element {
                     <Text fontSize={'13px'} fontWeight={500} color={'#878787'}>July 25, 2022</Text>
                   </Stack>
                 </Stack>
-                <Stack w={'308px'} bg={"white"} borderRadius={'20px'} spacing={0}>
+                <Stack w={'308px'} bg={"white"} borderRadius={'20px'} spacing={0} cursor={'pointer'} onClick={() => {
+                  window.open('/blog/NEST-Protocol-A-New-Paradigm-of-Game-Theoretic-Oracle', '_blank')
+                }}>
                   <chakra.img src={'/image/Home/01-card-02.png'} alt={''}/>
                   <Stack spacing={'20px'} p={'20px'} h={'230px'}>
                     <Text fontSize={'18px'} fontWeight={'bold'}>NEST Protocol: A New Paradigm of Game Theoretic
@@ -348,7 +351,9 @@ export default function Home(): JSX.Element {
                     <Text fontSize={'13px'} fontWeight={500} color={'#878787'}>Jun 9, 2022</Text>
                   </Stack>
                 </Stack>
-                <Stack w={'308px'} bg={"white"} borderRadius={'20px'} spacing={0}>
+                <Stack w={'308px'} bg={"white"} borderRadius={'20px'} spacing={0} cursor={"pointer"} onClick={() => {
+                  window.open('/blog/NEST\'s-RSS-FEED-INTEGRATED-WITH-CRYPTO.COM-PRICE-PAGE', '_blank')
+                }}>
                   <chakra.img src={'/image/Home/01-card-03.png'} alt={''}/>
                   <Stack spacing={'20px'} p={'20px'} h={'230px'}>
                     <Text fontSize={'18px'} fontWeight={'bold'}>NEST’s RSS FEED INTEGRATED WITH CRYPTO.COM PRICE
@@ -721,7 +726,9 @@ export default function Home(): JSX.Element {
             <Stack px={'24px'} w={'full'} py={'38px'}>
               <Stack bg={"white"} spacing={0} borderRadius={'32px'}>
                 <chakra.img src={'/image/Home/01-card-01.png'} alt={''}/>
-                <Stack px={'35px'} py={'25px'}>
+                <Stack px={'35px'} py={'25px'} cursor={"pointer"} onClick={() => {
+                  window.open('/blog/Coinbase-Announces-Planned-Listing-of-Tokens-Adds-NEST', '_blank')
+                }}>
                   <Text fontSize={'12.5px'} fontWeight={'bold'}>Coinbase Announces Planned Listing<br/>of Tokens, Adds
                     $NEST to ‘<br/>Experimental Asset’
                     Label</Text>
