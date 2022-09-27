@@ -11,13 +11,13 @@ import {
   Box,
   Spacer,
   Divider,
-  useInterval,
   useMediaQuery,
   Modal, ModalContent, ModalCloseButton, ModalBody, VStack, useDisclosure
 } from "@chakra-ui/react";
 import theme from "../chakra"
 import {ChevronDownIcon, ChevronRightIcon, HamburgerIcon} from "@chakra-ui/icons";
-import {AiOutlineTwitter, FaTelegramPlane, AiOutlineGithub} from "react-icons/all";
+import {AiOutlineTwitter, AiOutlineGithub} from "react-icons/ai";
+import {FaTelegramPlane} from "react-icons/fa";
 import Head from "@docusaurus/Head";
 import {useLocation} from "@docusaurus/router";
 
