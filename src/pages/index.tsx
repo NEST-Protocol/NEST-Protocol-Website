@@ -609,7 +609,7 @@ export default function Home(): JSX.Element {
               <ChevronDownIcon color={'#00A0E9'}/>
             </Stack>
             <HStack align={"end"} spacing={'-110px'} pb={'50px'}>
-              <Stack w={'300px'} align={"end"}>
+              <Stack w={'300px'} align={"end"} zIndex={'10'}>
                 <Stack align={"center"} spacing={0} fontSize={'15px'} fontWeight={600}
                        onClick={() => setSelectedWork(1)} cursor={'pointer'}>
                   <Text textAlign={'center'}>Provide random<br/>information flow</Text>
