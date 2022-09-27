@@ -64,7 +64,7 @@ export default function Home(): JSX.Element {
                   development tools and creative new assets.</Text>
                 <Box>
                   <Button onClick={() => {
-                    window.open('http://localhost:3000/docs/Technical-Reference-PVM/Contracts', '_blank')
+                    window.open('/docs/Technical-Reference-PVM/Contracts', '_blank')
                   }}>
                     Developer Doc
                   </Button>
@@ -81,7 +81,7 @@ export default function Home(): JSX.Element {
                   structure based on the basic function<br/>library. Developers can develop various exciting<br/>applications
                   based on the function library, similar<br/>to Ethereum virtual machine (EVM) programming.</Text>
                 <Link color={'#00A0E9'} fontSize={'15px'} fontWeight={600} isExternal
-                      href={'https://nestprotocol.org/docs/Overview/What-is-NEST-Protocol'}>PVM Mechanism <ChevronRightIcon/></Link>
+                      href={'/docs/Concept/PVM'}>PVM Mechanism <ChevronRightIcon/></Link>
               </Stack>
             </Stack>
             <Stack h={'138px'}/>
@@ -249,7 +249,7 @@ export default function Home(): JSX.Element {
             <Text fontSize={'12.5px'} fontWeight={'bold'} textAlign={"center"}>NEST ecosystem is a paradigm revolution<br/>to the traditional market mechanism, <br/>whole new range of development tools and<br/> creative new assets.</Text>
             <Stack pt={'54px'}>
               <Button onClick={() => {
-                window.open('http://localhost:3000/docs/Technical-Reference-PVM/Contracts', '_blank')
+                window.open('/docs/Technical-Reference-PVM/Contracts', '_blank')
               }}>
                 Developer Doc
               </Button>
@@ -260,7 +260,7 @@ export default function Home(): JSX.Element {
             <Stack pt={'60px'} align={"center"}>
               <Text fontSize={'16px'} fontWeight={'600'}>NEST PVM</Text>
               <Text fontSize={'12.5px'} fontWeight={'600'} textAlign={"center"}>NEST Probability Virtual Machine (PVM) is<br/>a virtual machine-like structure based on<br/>the basic function library. Developers can<br/>develop various exciting applications based<br/>develop various exciting applications based<br/> virtual machine (EVM) programming.</Text>
-              <Link color={'#00A0E9'} fontSize={'12.5px'} fontWeight={'600'} pt={'20px'} href={'https://nestprotocol.org/docs/Overview/What-is-NEST-Protocol/'} isExternal>
+              <Link color={'#00A0E9'} fontSize={'12.5px'} fontWeight={'600'} pt={'20px'} href={'/docs/Concept/PVM'} isExternal>
                 PVM Mechanism <ChevronRightIcon/>
               </Link>
             </Stack>
@@ -271,10 +271,10 @@ export default function Home(): JSX.Element {
             <Stack align={"center"}>
               <Text fontSize={'16px'} fontWeight={'600'}>NEST Oracle</Text>
               <Text fontSize={'12.5px'} fontWeight={'600'} textAlign={"center"}>NEST oracle is the only truly decentralized<br/>oracle on the market today.</Text>
-              <Link color={'#00A0E9'} fontSize={'12.5px'} fontWeight={'600'} href={'https://nestprotocol.org/docs/NEST-Oracle/How-to-Mining'} isExternal>
+              <Link color={'#00A0E9'} fontSize={'12.5px'} fontWeight={'600'} href={'/docs/NEST-Oracle/How-to-Mining'} isExternal>
                 How to Mining <ChevronRightIcon/>
               </Link>
-              <Link color={'#00A0E9'} fontSize={'12.5px'} fontWeight={'600'} href={'https://nestprotocol.org/docs/NEST-Oracle/How-to-Call-Price'} isExternal>
+              <Link color={'#00A0E9'} fontSize={'12.5px'} fontWeight={'600'} href={'/docs/NEST-Oracle/How-to-Call-Price'} isExternal>
                 How to Call Price <ChevronRightIcon/>
               </Link>
             </Stack>

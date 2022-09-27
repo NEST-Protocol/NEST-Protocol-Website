@@ -37,33 +37,6 @@ export default function Home(): JSX.Element {
   const {isOpen, onOpen, onClose} = useDisclosure()
   const location = useLocation();
 
-  useInterval(() => {
-    setSelectedStochastic((selectedStochastic + 1) % 4)
-  }, 10000)
-
-  const stochastic = [
-    {
-      icon: '',
-      title: 'Stochastic Asset is an on-chain asset that can be issued and destroyed in response to random information flows',
-      desc: ''
-    },
-    {
-      icon: '',
-      title: 'Token is information asset',
-      desc: 'The blockchain mechanism prevents consensus information (such as wallet balance) from being spent twice. The source of token value and the basis for token becoming an asset is the scarcity of consensus information. As a result, we refer to a token as an information asset that can generate scarce information and is a unit that measures the value of information.'
-    },
-    {
-      icon: '',
-      title: 'What is the difference between BTC, ETH and NEST?',
-      desc: 'The mechanisms of BTC\'s UTXO and ETH\'s EVM both ensure that the quantity of tokens will not increase during the transaction. NEST\'s PVM extends this scenario by controlling the expected value rather than by controlling the quantity, which will lead to a new paradigm revolution.'
-    },
-    {
-      icon: '',
-      title: 'Why do blockchain need stochastic assets?',
-      desc: `Almost all financial applications can be thought of as the acquisition of stochastic assets with varying risk-return structures. Stochastic assets are a more natural way for building on-chain finance, such as decentralized derivatives.`
-    }
-  ]
-
   const work = [
     {
       type: 'PVM',
@@ -161,38 +134,34 @@ export default function Home(): JSX.Element {
               </Stack>
             </Stack>
             <Stack px={['20px', '40px', '80px', '160px']}>
-              <Stack bg={'rgba(255, 255, 255, 0.7)'} py={'92px'} w={'full'} align={"center"} borderRadius={'20px'}>
+              <Stack bg={'rgba(255, 255, 255, 0.7)'} py={'92px'} h={'600px'} overflow={"scroll"} w={'full'} align={"center"} borderRadius={'20px'}>
                 <Heading fontSize={'50px'} textAlign={"center"}>What is stochastic assets?</Heading>
                 <chakra.img src={'/image/Home/01-icon-01.png'} alt={''} py={'50px'}/>
-                <Stack h={'200px'} align={"center"} overflow={"scroll"}>
+                <Stack pb={'200px'} align={"center"}>
                   <Text fontSize={'25px'} fontWeight={"bold"} w={'620px'}
-                        textAlign={"center"}>{stochastic[selectedStochastic].title}</Text>
+                        textAlign={"center"}>Stochastic Asset is an on-chain asset that can be issued and destroyed in response to random information flows</Text>
+                </Stack>
+                <Stack pb={'200px'} align={"center"}>
+                  <Text fontSize={'25px'} fontWeight={"bold"} w={'620px'}
+                        textAlign={"center"}>Token is information asset</Text>
                   <Text fontSize={'15px'} fontWeight={'600'} textAlign={"center"} w={'600px'}>
-                    {stochastic[selectedStochastic].desc}
+                    The blockchain mechanism prevents consensus information (such as wallet balance) from being spent twice. The source of token value and the basis for token becoming an asset is the scarcity of consensus information. As a result, we refer to a token as an information asset that can generate scarce information and is a unit that measures the value of information.
                   </Text>
                 </Stack>
-                <HStack spacing={'12px'} pt={'20px'}>
-                  <chakra.div w={'10px'} h={'10px'} bg={selectedStochastic === 0 ? '#EAAA00' : ''}
-                              border={selectedStochastic === 0 ? '' : '1px solid #003344'}
-                              onClick={() => setSelectedStochastic(0)}
-                              cursor={'pointer'}
-                              borderRadius={'full'}/>
-                  <chakra.div w={'10px'} h={'10px'} bg={selectedStochastic === 1 ? '#EAAA00' : ''}
-                              border={selectedStochastic === 1 ? '' : '1px solid #003344'}
-                              onClick={() => setSelectedStochastic(1)}
-                              cursor={'pointer'}
-                              borderRadius={'full'}/>
-                  <chakra.div w={'10px'} h={'10px'} bg={selectedStochastic === 2 ? '#EAAA00' : ''}
-                              border={selectedStochastic === 2 ? '' : '1px solid #003344'}
-                              onClick={() => setSelectedStochastic(2)}
-                              cursor={'pointer'}
-                              borderRadius={'full'}/>
-                  <chakra.div w={'10px'} h={'10px'} bg={selectedStochastic === 3 ? '#EAAA00' : ''}
-                              border={selectedStochastic === 3 ? '' : '1px solid #003344'}
-                              onClick={() => setSelectedStochastic(3)}
-                              cursor={'pointer'}
-                              borderRadius={'full'}/>
-                </HStack>
+                <Stack pb={'200px'} align={"center"}>
+                  <Text fontSize={'25px'} fontWeight={"bold"} w={'620px'}
+                        textAlign={"center"}>What is the difference between BTC, ETH and NEST?</Text>
+                  <Text fontSize={'15px'} fontWeight={'600'} textAlign={"center"} w={'600px'}>
+                    The mechanisms of BTC's UTXO and ETH's EVM both ensure that the quantity of tokens will not increase during the transaction. NEST's PVM extends this scenario by controlling the expected value rather than by controlling the quantity, which will lead to a new paradigm revolution.
+                  </Text>
+                </Stack>
+                <Stack align={"center"}>
+                  <Text fontSize={'25px'} fontWeight={"bold"} w={'620px'}
+                        textAlign={"center"}>Why do blockchain need stochastic assets?</Text>
+                  <Text fontSize={'15px'} fontWeight={'600'} textAlign={"center"} w={'600px'}>
+                    Almost all financial applications can be thought of as the acquisition of stochastic assets with varying risk-return structures. Stochastic assets are a more natural way for building on-chain finance, such as decentralized derivatives.
+                  </Text>
+                </Stack>
               </Stack>
             </Stack>
             <Stack align={"center"}>
@@ -598,34 +567,31 @@ export default function Home(): JSX.Element {
               the generation and<br/>programming of stochastic assets.</Text>
           </Stack>
           <Stack px={'24px'} pb={'62px'}>
-            <Stack align={"center"} textAlign={"center"} bg={'rgba(255,255,255, 0.7)'} py={'58px'}
+            <Stack align={"center"} textAlign={"center"} bg={'rgba(255,255,255, 0.7)'} py={'58px'} h={'560px'} overflow={"scroll"}
                    borderRadius={'20px'}>
               <Text fontSize={'25px'} fontWeight={'bold'}>What is<br/>stochastic asset?</Text>
               <chakra.img src={'/image/Home/01-icon-01.png'} alt={''} w={'180px'} py={'50px'}/>
-              <Text w={'70%'} fontSize={'16.5px'} fontWeight={'bold'}>{stochastic[selectedStochastic].title}</Text>
-              <Text w={'70%'} fontSize={'12.5px'} fontWeight={'600'}>{stochastic[selectedStochastic].desc}</Text>
-              <HStack spacing={'12px'} pt={'20px'}>
-                <chakra.div w={'10px'} h={'10px'} bg={selectedStochastic === 0 ? '#EAAA00' : ''}
-                            border={selectedStochastic === 0 ? '' : '1px solid #003344'}
-                            onClick={() => setSelectedStochastic(0)}
-                            cursor={'pointer'}
-                            borderRadius={'full'}/>
-                <chakra.div w={'10px'} h={'10px'} bg={selectedStochastic === 1 ? '#EAAA00' : ''}
-                            border={selectedStochastic === 1 ? '' : '1px solid #003344'}
-                            onClick={() => setSelectedStochastic(1)}
-                            cursor={'pointer'}
-                            borderRadius={'full'}/>
-                <chakra.div w={'10px'} h={'10px'} bg={selectedStochastic === 2 ? '#EAAA00' : ''}
-                            border={selectedStochastic === 2 ? '' : '1px solid #003344'}
-                            onClick={() => setSelectedStochastic(2)}
-                            cursor={'pointer'}
-                            borderRadius={'full'}/>
-                <chakra.div w={'10px'} h={'10px'} bg={selectedStochastic === 3 ? '#EAAA00' : ''}
-                            border={selectedStochastic === 3 ? '' : '1px solid #003344'}
-                            onClick={() => setSelectedStochastic(3)}
-                            cursor={'pointer'}
-                            borderRadius={'full'}/>
-              </HStack>
+              <Stack align={"center"} pb={'100px'}>
+                <Text w={'70%'} fontSize={'16.5px'} fontWeight={'bold'}>Stochastic Asset is an on-chain asset that can be issued and destroyed in response to random information flows</Text>
+              </Stack>
+              <Stack align={"center"} pb={'100px'}>
+                <Text w={'70%'} fontSize={'16.5px'} fontWeight={'bold'}>Token is information asset</Text>
+                <Text w={'70%'} fontSize={'12.5px'} fontWeight={'600'}>
+                  The blockchain mechanism prevents consensus information (such as wallet balance) from being spent twice. The source of token value and the basis for token becoming an asset is the scarcity of consensus information. As a result, we refer to a token as an information asset that can generate scarce information and is a unit that measures the value of information.
+                </Text>
+              </Stack>
+              <Stack align={"center"} pb={'100px'}>
+                <Text w={'70%'} fontSize={'16.5px'} fontWeight={'bold'}>What is the difference between BTC, ETH and NEST?</Text>
+                <Text w={'70%'} fontSize={'12.5px'} fontWeight={'600'}>
+                  The mechanisms of BTC's UTXO and ETH's EVM both ensure that the quantity of tokens will not increase during the transaction. NEST's PVM extends this scenario by controlling the expected value rather than by controlling the quantity, which will lead to a new paradigm revolution.
+                </Text>
+              </Stack>
+              <Stack align={"center"}>
+                <Text w={'70%'} fontSize={'16.5px'} fontWeight={'bold'}>Why do blockchain need stochastic assets?</Text>
+                <Text w={'70%'} fontSize={'12.5px'} fontWeight={'600'}>
+                  Almost all financial applications can be thought of as the acquisition of stochastic assets with varying risk-return structures. Stochastic assets are a more natural way for building on-chain finance, such as decentralized derivatives.
+                </Text>
+              </Stack>
             </Stack>
           </Stack>
           <Stack textAlign={"center"} align={"center"} bg={'rgba(255,255,255,0.7)'} py={'55px'}>
