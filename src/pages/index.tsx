@@ -47,7 +47,7 @@ export default function Home(): JSX.Element {
       type: 'NEST Oracle',
       title: `The NEST oracle is currently the market's\nonly truly decentralized oracle. The random\ninformation of decentralized price flow is introduced\ninto the chain using the Game Theoretical\nmechanism of arbitrage.`,
       desc: `The NEST token is generated using the NEST\noracle's stochastic information. The NEST token\n serves as the monetary unit for all stochastic assets\nin the NEST ecosystem.`,
-      link: '/docs/NEST-Oracle/How-does-NEST-Oracle-Work'
+      link: '/docs/Technical-Reference-NEST-Oracle/How-does-NEST-Oracle-Work'
     },
     {
       type: 'OMM',
