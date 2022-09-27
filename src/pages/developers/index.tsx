@@ -46,7 +46,7 @@ export default function Home(): JSX.Element {
               <Stack direction={"row"} align={"center"} spacing={'24px'} fontWeight={'500'} fontSize={'15px'}>
                 <Link href={'/nest-fi'}>NEST Fi</Link>
                 <Link href={'/developers'} color={'#EAAA00'} fontWeight={'700'}>Developers</Link>
-                <Link href={'/docs/Building-On-NEST/Contracts/'}>Doc</Link>
+                <Link href={'/docs/Overview/What-is-NEST-Protocol'}>Doc</Link>
                 <Link href={'/blog'}>Blog</Link>
                 <Link href={'/about'}>About</Link>
                 <Button onClick={() => {
