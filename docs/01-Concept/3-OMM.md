@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# OMM
+# OMM(Omnipotent Market Maker)
 
 ## What is OMM？
 **OMM(Omnipotent Market Maker) is a new trading and settlement paradigm: everyone trades and settles stochastic assets with NEST system rather than individuals.**
