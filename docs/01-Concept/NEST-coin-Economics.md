@@ -3,8 +3,8 @@ sidebar_position: 3
 ---
 
 # NEST Tokenomics
-## Overview
-NEST coin’s economic model is more complex than other informationized assets. Generally speaking, the price of an asset is affected by the amount of application demand and supply, that is, the game between supply and demand. Therefore, the game relationships involved in NEST mechanics are more complex, which is why we call them game networks. The games involved in the NEST system are divided into four aspects: 
+## Overvirw
+NEST coin’s economic model is more complex than other informationized assets. Generally speaking, the price of an asset is affected by the amount of application demand and supply, that is, the game between supply and demand. Therefore, the game relationships involved in NEST mechanics are more complex, which is why we call them game networks. The games involved in the NEST system are divided into four aspects: the game between the bidder and the verifier, the game between buyer and seller of tokens, the game between investors and the system, risk sharing for token holders.
 
 ## The game between the bidder and the verifier:
 In the process of offering a price for the NEST oracle, a quotation that deviates from the actual market price can be arbitraged away by the verifier, who needs to provide a new quote. This process ensures the accuracy and verifiability of the information flow provided by the NEST oracle. In addition, bidders are rewarded with NEST coins for their quotes, thus becoming miners or minters in the system. Furthermore, the NEST oracle generates less than 3% of the total number of tokens per year through mining new tokens.
