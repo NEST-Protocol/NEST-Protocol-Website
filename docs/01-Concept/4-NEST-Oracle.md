@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 
@@ -18,7 +18,7 @@ The NEST oracle enables everyone to change and influence the generation of price
 
 ## How does NEST Oracle Work?
 
-[//]: # (![image5]&#40;./Images/NEST5.png&#41;)
+![image5](/Images/NEST5.png)
 
 ### Valuation Asset and Quotation Asset
 
