@@ -300,7 +300,7 @@ export default function NRA(): JSX.Element {
           <Stack pt={'54px'}>
             <Text fontSize={'25px'} fontWeight={'bold'} textAlign={"start"} px={'24px'}>Funding Opportunity</Text>
             <Stack px={'24px'} pt={'30px'}>
-              <Stack align={"center"} bg={'rgba(255,255,255, 0.7)'} py={'100px'}>
+              <Stack align={"center"} bg={'rgba(255,255,255, 0.7)'} py={'100px'} borderRadius={'20px'}>
                 <chakra.img src={'/image/About/04-icon-01@2x.png'} pb={'40px'} w={'85px'}/>
                 <Text fontSize={'12.5px'} fontWeight={'600'} textAlign={"center"}>NRA welcomes research in fields
                   such<br/>
@@ -319,7 +319,7 @@ export default function NRA(): JSX.Element {
           <Stack pt={'62px'}>
             <Text fontSize={'25px'} fontWeight={'bold'} textAlign={"start"} px={'24px'}>Vacant Positions</Text>
             <Stack px={'24px'} pt={'30px'}>
-              <Stack align={"center"} bg={'rgba(255,255,255, 0.7)'} py={'100px'}>
+              <Stack align={"center"} bg={'rgba(255,255,255, 0.7)'} py={'100px'} borderRadius={'20px'}>
                 <chakra.img src={'/image/About/04-icon-02@2x.png'} pb={'40px'} w={'85px'}/>
                 <Text fontSize={'12.5px'} fontWeight={'600'} textAlign={"center"}>NRA welcomes applicants to researchers<br/>
                   of all levels. NRA evaluates the work of<br/>

@@ -610,8 +610,8 @@ export default function Home(): JSX.Element {
               <Text color={'#00A0E9'}>PVM</Text>
               <ChevronDownIcon color={'#00A0E9'}/>
             </Stack>
-            <HStack align={"end"} spacing={'-60px'} pb={'50px'}>
-              <Stack w={'300px'} align={"end"} zIndex={'10'}>
+            <HStack align={"end"} spacing={'-60px'} pb={'40px'}>
+              <Stack w={'150px'} align={"end"} zIndex={'10'}>
                 <Stack align={"center"} spacing={0} fontSize={'15px'} fontWeight={600}
                        onClick={() => setSelectedWork(1)} cursor={'pointer'}>
                   <Text textAlign={'center'}>Provide random<br/>information flow</Text>
@@ -619,8 +619,8 @@ export default function Home(): JSX.Element {
                   <ChevronDownIcon color={'#00A0E9'}/>
                 </Stack>
               </Stack>
-              <chakra.img pb={'60px'} src={'/image/Home/01-icon-02@2x.png'} w={'160px'} alt={''}/>
-              <Stack align={"start"} w={'300px'}>
+              <chakra.img pb={'80px'} src={'/image/Home/01-icon-02@2x.png'} w={'160px'} alt={''}/>
+              <Stack align={"start"} w={'150px'}>
                 <Stack align={"center"} spacing={0} fontSize={'15px'} fontWeight={600}
                        onClick={() => setSelectedWork(2)} cursor={'pointer'}>
                   <Text textAlign={'center'}>Generate<br/>stochastic assets</Text>
@@ -726,7 +726,7 @@ export default function Home(): JSX.Element {
           <Stack align={"center"} py={'62px'}>
             <Text fontSize={'25px'} fontWeight={'bold'}>Blog</Text>
             <Stack px={'24px'} w={'full'} py={'38px'}>
-              <Stack bg={"white"} spacing={0} borderRadius={'32px'}>
+              <Stack bg={"white"} spacing={0} borderRadius={'20px'}>
                 <chakra.img src={'/image/Home/01-card-01@2x.png'} alt={''}/>
                 <Stack px={'35px'} py={'25px'} cursor={"pointer"} onClick={() => {
                   window.open('/blog/Coinbase-Announces-Planned-Listing-of-Tokens-Adds-NEST', '_blank')
