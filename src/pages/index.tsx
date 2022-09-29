@@ -642,7 +642,7 @@ export default function Home(): JSX.Element {
               <Stack spacing={'32px'}>
                 {developmentPath.map((item) => (
                     <HStack key={item.title} textAlign={"start"} align={item.desc !== '' ? "start" : 'center'}
-                            spacing={'24px'}>
+                            spacing={'16px'}>
                       <chakra.img src={'/image/Home/01-icon-03.png'} h={'20px'} w={'30px'} alt={''}/>
                       <Text fontSize={'12.5px'} fontWeight={'bold'}
                             w={item.desc !== '' ? '80px' : ''}> {item.title}</Text>
