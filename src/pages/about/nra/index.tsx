@@ -43,10 +43,10 @@ export default function NRA(): JSX.Element {
                 />
               </Link>
               <Stack direction={"row"} align={"center"} spacing={'24px'} fontWeight={'500'} fontSize={'15px'}>
-                <Link href={'/nest-fi'}>NEST Fi</Link>
-                <Link href={'/developers'}>Developers</Link>
-                <Link href={'/docs/Overview/What-is-NEST-Protocol'}>Doc</Link>
-                <Link href={'/blogs'}>Blog</Link>
+                <Link href={'/nest-fi'} color={'#000'}>NEST Fi</Link>
+                <Link href={'/developers'} color={'#000'}>Developers</Link>
+                <Link href={'/docs/Overview/What-is-NEST-Protocol'} color={'#000'}>Doc</Link>
+                <Link href={'/blogs'} color={'#000'}>Blog</Link>
                 <Link href={'/about'} color={'#EAAA00'}>About</Link>
                 <Button onClick={() => {
                   window.open('https://finance.nestprotocol.org/', '_blank')

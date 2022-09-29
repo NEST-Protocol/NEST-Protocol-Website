@@ -72,7 +72,7 @@ export default function Home(): JSX.Element {
     {
       title: 'Gene game',
       desc: '',
-      icon: <chakra.img src={'/svg/icon_17.svg'} w={isDesktop ? '37px' : '19px'} h={isDesktop ? '37px' : '19px'}/>
+      icon: <chakra.img src={'/svg/icon_17.svg'} w={isDesktop ? '45px' : '24px'} h={isDesktop ? '45px' : '24px'}/>
     },
     {
       title: 'Keyboard boy game',
@@ -111,7 +111,7 @@ export default function Home(): JSX.Element {
                   h={'20px'}
                 />
               </Link>
-              <Stack direction={"row"} align={"center"} spacing={'24px'} fontWeight={'500'} fontSize={'15px'}>
+              <Stack direction={"row"} align={"center"} spacing={'24px'} fontWeight={'500'} fontSize={'15px'} color={'#000'}>
                 <Link href={'/nest-fi'}>NEST Fi</Link>
                 <Link href={'/developers'}>Developers</Link>
                 <Link href={'/docs/Overview/What-is-NEST-Protocol'}>Doc</Link>

@@ -44,10 +44,10 @@ export default function NestFi(): JSX.Element {
               </Link>
               <Stack direction={"row"} align={"center"} spacing={'24px'} fontWeight={'500'} fontSize={'15px'}>
                 <Link href={'/nest-fi'} color={'#EAAA00'} fontWeight={'700'}>NEST Fi</Link>
-                <Link href={'/developers'}>Developers</Link>
-                <Link href={'/docs/Overview/What-is-NEST-Protocol'}>Doc</Link>
-                <Link href={'/blogs'}>Blog</Link>
-                <Link href={'/about'}>About</Link>
+                <Link href={'/developers'} color={'#000'}>Developers</Link>
+                <Link href={'/docs/Overview/What-is-NEST-Protocol'} color={'#000'}>Doc</Link>
+                <Link href={'/blogs'} color={'#000'}>Blog</Link>
+                <Link href={'/about'} color={'#000'}>About</Link>
                 <Button onClick={() => {
                   window.open('https://finance.nestprotocol.org/', '_blank')
                 }}>
