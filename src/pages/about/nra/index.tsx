@@ -28,6 +28,7 @@ export default function NRA(): JSX.Element {
   return (
     <ChakraProvider theme={theme}>
       <Head>
+        <title>NEST Research Academy | NEST Protocol</title>
         <script src={"https://crypto.com/price/static/widget/index.js"}></script>
       </Head>
       {isDesktop ? (

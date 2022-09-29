@@ -28,6 +28,7 @@ export default function NestFi(): JSX.Element {
   return (
     <ChakraProvider theme={theme}>
       <Head>
+        <title>NEST FI | the decentralized financial market based on OMM</title>
         <script src={"https://crypto.com/price/static/widget/index.js"}></script>
       </Head>
       {isDesktop ? (

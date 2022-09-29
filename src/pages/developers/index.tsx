@@ -29,6 +29,7 @@ export default function Home(): JSX.Element {
   return (
     <ChakraProvider theme={theme}>
       <Head>
+        <title>Developers | NEST Protocol</title>
         <script src={"https://crypto.com/price/static/widget/index.js"}></script>
       </Head>
       { isDesktop ? (

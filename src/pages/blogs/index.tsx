@@ -21,7 +21,7 @@ export default function News(): JSX.Element {
   return (
     <ChakraProvider theme={theme}>
       <Head>
-        <title>News | NEST Protocol</title>
+        <title>Blogs | NEST Protocol</title>
       </Head>
       <Stack spacing={isDesktop ? "80px" : "40px"}>
         <React.Suspense fallback={<div></div>}>

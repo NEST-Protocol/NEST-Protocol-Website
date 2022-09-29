@@ -96,6 +96,7 @@ export default function Home(): JSX.Element {
   return (
     <ChakraProvider theme={theme}>
       <Head>
+        <title>NEST Protocol | The most important infrastructure after ETH</title>
         <script src={"https://crypto.com/price/static/widget/index.js"}></script>
       </Head>
       {isDesktop ? (

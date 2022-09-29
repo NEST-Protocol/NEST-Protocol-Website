@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'NEST Protocol',
-  tagline: `NEST is a blockchain-based probability virtual machine (PVM) system with web3 applications of DeFi, GameFi, NFT built on it.`,
+  tagline: `NEST Protocol is the stochastic computer based on PVM, enables the generation and programming of stochastic assets.`,
   url: 'https://nestprotocol.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -116,7 +116,7 @@ const config = {
           {name: "og:site_name", content: "NEST Protocol"},
           {name: "og:image", content: "https://nestprotocol.org/img/logo.svg"},
           {name: "google-site-verification", content: "Taax65uDIhSEcZALM9plxpcfWAkJipGzu-sxjJjNp8w"},
-          {name: "description", content: "NEST Protocol is the stochastic computer based on PVM, enables the generation and programming of stochastic assets."},
+          {name: "description", content: `NEST Protocol is the stochastic computer based on PVM, enables the generation and programming of stochastic assets.`},
           {name: "theme-color", content: "#ffffff"},
         ],
       }),
