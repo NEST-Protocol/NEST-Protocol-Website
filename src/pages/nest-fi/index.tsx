@@ -113,31 +113,35 @@ export default function NestFi(): JSX.Element {
                 <Stack w={'50%'} align={"center"} justify={"center"}>
                   <chakra.img src={'/image/NEST_Fi/iPhone_1.webp'} h={'400px'}/>
                 </Stack>
-                <Stack w={'50%'} px={'135px'} py={'155px'} bg={'white'} borderRadius={'20px'}>
-                  <Text fontSize={'25px'} fontWeight={600}>NEST FI - Futures</Text>
-                  <Text fontSize={'15px'} fontWeight={600}>Trade BTC/USDT and ETH/USDT futures directly<br/>from your
-                    wallet without trading fee.</Text>
-                  <Box pt={'25px'}>
-                    <Button w={'160px'} onClick={() => {
-                      window.open('https://finance.nestprotocol.org/#/futures', '_blank')
-                    }}>
-                      Buy futures
-                    </Button>
-                  </Box>
+                <Stack w={'50%'} bg={'white'} align={"center"}>
+                  <Stack w={'400px'} py={'155px'}  borderRadius={'20px'}>
+                    <Text fontSize={'25px'} fontWeight={600}>NEST FI - Futures</Text>
+                    <Text fontSize={'15px'} fontWeight={600}>Trade BTC/USDT and ETH/USDT futures directly<br/>from your
+                      wallet without trading fee.</Text>
+                    <Box pt={'25px'}>
+                      <Button w={'160px'} onClick={() => {
+                        window.open('https://finance.nestprotocol.org/#/futures', '_blank')
+                      }}>
+                        Buy futures
+                      </Button>
+                    </Box>
+                  </Stack>
                 </Stack>
               </HStack>
               <HStack w={'full'} pt={'40px'}>
-                <Stack w={'50%'} px={'135px'} py={'155px'} bg={'white'} borderRadius={'20px'}>
-                  <Text fontSize={'25px'} fontWeight={600}>NEST FI - Options</Text>
-                  <Text fontSize={'15px'} fontWeight={600}>Buy options with flexible choices on exercise date,<br/>direction
-                    and strike price, and no commission.</Text>
-                  <Box pt={'25px'}>
-                    <Button w={'160px'} onClick={() => {
-                      window.open('https://finance.nestprotocol.org/#/options', '_blank')
-                    }}>
-                      Buy Options
-                    </Button>
-                  </Box>
+                <Stack w={'50%'} bg={'white'} align={"center"}>
+                  <Stack py={'155px'} borderRadius={'20px'}>
+                    <Text fontSize={'25px'} fontWeight={600}>NEST FI - Options</Text>
+                    <Text fontSize={'15px'} fontWeight={600}>Buy options with flexible choices on exercise date,<br/>direction
+                      and strike price, and no commission.</Text>
+                    <Box pt={'25px'}>
+                      <Button w={'160px'} onClick={() => {
+                        window.open('https://finance.nestprotocol.org/#/options', '_blank')
+                      }}>
+                        Buy Options
+                      </Button>
+                    </Box>
+                  </Stack>
                 </Stack>
                 <Stack w={'50%'} align={"center"} justify={"center"}>
                   <chakra.img src={'/image/NEST_Fi/iPhone_2.webp'} h={'400px'}/>

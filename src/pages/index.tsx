@@ -223,7 +223,7 @@ export default function Home(): JSX.Element {
                                 setStart(start - 4)
                               }
                             }}/>
-                <Stack w={'full'} spacing={'-34px'} align={"center"}>
+                <Stack w={'full'} spacing={'-36px'} align={"center"}>
                   <Stack h={'44px'} w={'full'} justify={"center"} px={'15px'}>
                     <Divider h={'1px'} color={'#C9C9C9'}/>
                   </Stack>
@@ -637,7 +637,7 @@ export default function Home(): JSX.Element {
             <Text fontSize={'25px'} fontWeight={'bold'}>Development<br/>path</Text>
             <Text fontSize={'12.5px'} fontWeight={'bold'}>The NEST community always insists<br/>on decentralization and
               innovation</Text>
-            <HStack w={'full'} justify={"center"} py={'50px'} spacing={'-18px'}>
+            <HStack w={'full'} justify={"center"} py={'50px'} spacing={'-16px'}>
               <chakra.div w={'1px'} h={'880px'} bg={'#C9C9C9'}/>
               <Stack spacing={'32px'}>
                 {developmentPath.map((item) => (
