@@ -111,7 +111,7 @@ export default function Home(): JSX.Element {
                   h={'20px'}
                 />
               </Link>
-              <Stack direction={"row"} align={"center"} spacing={'24px'} fontWeight={'500'} fontSize={'15px'} color={'#000'}>
+              <Stack direction={"row"} align={"center"} spacing={'24px'} fontWeight={'500'} fontSize={'15px'} color={'#003232'}>
                 <Link href={'/nest-fi'}>NEST Fi</Link>
                 <Link href={'/developers'}>Developers</Link>
                 <Link href={'/docs/Overview/What-is-NEST-Protocol'}>Doc</Link>
@@ -839,7 +839,7 @@ export default function Home(): JSX.Element {
               <Stack w={'full'} align={"center"} spacing={'12px'}>
                 <HStack spacing={'40px'}>
                   <Link href={'https://discord.gg/nestprotocol'} isExternal>
-                    <chakra.img src={'/image/Footer/discord_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/discord_icon.svg'} color={'#003232'} h={'44px'} w={'44px'}/>
                   </Link>
                   <Link href={'https://github.com/NEST-Protocol'} isExternal>
                     <chakra.img src={'/image/Footer/github_icon.svg'} h={'44px'} w={'44px'}/>
