@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# NEST Oracle technical reference
+# NEST Oracle Technical Reference
 
 **NEST Oracle is a truly decentralized oracle**. 
 You can have an overview about [app](https://channel.nestprotocol.org/) and

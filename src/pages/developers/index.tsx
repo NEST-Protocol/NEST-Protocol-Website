@@ -96,9 +96,9 @@ export default function Home(): JSX.Element {
                     market today.</Text>
                   <HStack spacing={'68px'}>
                     <Link color={'#00A0E9'} fontSize={'15px'} fontWeight={600} isExternal
-                          href={'https://nestprotocol.org/docs/Technical-Reference-NEST-Oracle/How-to-Mining'}>How to Mining <ChevronRightIcon/></Link>
+                          href={'https://nestprotocol.org/docs/Technical-Reference-NEST-Oracle#how-to-mining'}>How to Mining <ChevronRightIcon/></Link>
                     <Link color={'#00A0E9'} fontSize={'15px'} fontWeight={600} isExternal
-                          href={'https://nestprotocol.org/docs/Technical-Reference-NEST-Oracle/How-to-Call-Price'}>How to Call
+                          href={'https://nestprotocol.org/docs/Technical-Reference-NEST-Oracle#how-to-call-price'}>How to Call
                       Price <ChevronRightIcon/></Link>
                   </HStack>
                 </Stack>
@@ -277,7 +277,7 @@ export default function Home(): JSX.Element {
             <Stack align={"center"}>
               <Text fontSize={'16px'} fontWeight={'600'}>NEST Oracle</Text>
               <Text fontSize={'12.5px'} fontWeight={'600'} textAlign={"center"}>NEST oracle is the only truly decentralized<br/>oracle on the market today.</Text>
-              <Link color={'#00A0E9'} fontSize={'12.5px'} fontWeight={'600'} href={'/docs/Technical-Reference-NEST-Oracle/How-to-Mining'} isExternal>
+              <Link color={'#00A0E9'} fontSize={'12.5px'} fontWeight={'600'} href={'/docs/Technical-Reference-NEST-Oracle#how-to-mining'} isExternal>
                 How to Mining <ChevronRightIcon/>
               </Link>
               <Link color={'#00A0E9'} fontSize={'12.5px'} fontWeight={'600'} href={'/docs/Technical-Reference-NEST-Oracle/How-to-Call-Price'} isExternal>
