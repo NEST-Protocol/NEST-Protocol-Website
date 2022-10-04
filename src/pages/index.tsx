@@ -72,24 +72,22 @@ export default function Home(): JSX.Element {
     {
       title: 'Gene game',
       desc: '',
-      icon: <chakra.img src={'/svg/icon_17.svg'} w={isDesktop ? '45px' : '24px'} h={isDesktop ? '45px' : '24px'}/>
+      icon: <chakra.img src={'/svg/icon_17.svg'} w={isDesktop ? '45px' : '24px'} h={isDesktop ? '45px' : '24px'} alt={'Gene game'}/>
     },
     {
       title: 'Keyboard boy game',
       desc: '',
-      icon: <chakra.img src={'/svg/icon_16.svg'} w={isDesktop ? '39px' : '20px'} h={isDesktop ? '39px' : '20px'}/>
+      icon: <chakra.img src={'/svg/icon_16.svg'} w={isDesktop ? '39px' : '20px'} h={isDesktop ? '39px' : '20px'} alt={'Keyboard boy game'}/>
     },
     {
       title: 'DABS',
       desc: '',
-      icon: <chakra.img src={'/image/Home/01-icon-dabs.svg'} w={isDesktop ? '70px' : '45px'}
-                        h={isDesktop ? '31px' : '15px'}/>
+      icon: <chakra.img src={'/image/Home/01-icon-dabs.svg'} w={isDesktop ? '70px' : '45px'} alt={'DABS'} h={isDesktop ? '31px' : '15px'}/>
     },
     {
       title: 'Cyber ink',
       desc: '',
-      icon: <chakra.img src={'/image/Home/01-icon-cyberink.png'} w={isDesktop ? '56px' : '29px'}
-                        h={isDesktop ? '45px' : '28px'}/>
+      icon: <chakra.img src={'/image/Home/01-icon-cyberink.png'} w={isDesktop ? '56px' : '29px'} alt={'Cyber ink'} h={isDesktop ? '45px' : '28px'}/>
     },
   ]
 
