@@ -125,12 +125,19 @@ export default function Home(): JSX.Element {
                 </Button>
               </Stack>
             </Stack>
-            <Stack py={'216px'}>
-              <Stack spacing={'40px'}>
+            <Stack pt={'140px'} pb={'292px'}>
+              <Stack spacing={'28px'}>
                 <Heading fontSize={'50px'} textAlign={"center"}>NEST PROTOCOL<br/>THE MOST
                   IMPORTANT<br/>INFRASTRUCTURE<br/>AFTER ETH</Heading>
                 <Text textAlign={"center"} fontWeight={'600'} fontSize={'21px'}>NEST Protocol is the stochastic computer
                   based on PVM,<br/>enables the generation and programming of stochastic assets.</Text>
+                <HStack justify={"center"}>
+                  <Button w={'160px'} minH={'44px'} fontSize={'25px'} onClick={() => {
+                    window.open('https://finance.nestprotocol.org/', '_blank')
+                  }}>
+                    App
+                  </Button>
+                </HStack>
               </Stack>
             </Stack>
             <Stack px={['20px', '40px', '80px', '160px']}>
