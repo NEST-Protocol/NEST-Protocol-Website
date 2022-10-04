@@ -24,7 +24,7 @@ const TheHeader = () => {
   const menu = [
     {name: 'NEST Fi', pathname: '/nest-fi'},
     {name: 'Developers', pathname: '/developers'},
-    {name: 'Doc', pathname: '/docs/Technical-Reference-PVM/Contracts'},
+    {name: 'Doc', pathname: '/docs/PVM-Technical-Reference'},
     {name: 'Blog', pathname: '/blogs'},
     {name: 'About', pathname: '/about'}
   ]

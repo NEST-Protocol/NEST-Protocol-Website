@@ -65,7 +65,7 @@ export default function Home(): JSX.Element {
                   development tools and creative new assets.</Text>
                 <Box>
                   <Button onClick={() => {
-                    window.open('/docs/Technical-Reference-PVM/Contracts', '_blank')
+                    window.open('/docs/PVM-Technical-Reference', '_blank')
                   }}>
                     Developer Doc
                   </Button>
@@ -128,7 +128,7 @@ export default function Home(): JSX.Element {
               </Stack>
               <Stack spacing={'40px'}>
                 <Stack spacing={'22px'}>
-                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/Technical-Reference-PVM/Contracts'}>Developer
+                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/PVM-Technical-Reference'}>Developer
                     Docs</Link>
                   <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know how to develop on NEST</Text>
                 </Stack>
@@ -255,7 +255,7 @@ export default function Home(): JSX.Element {
             <Text fontSize={'12.5px'} fontWeight={'bold'} textAlign={"center"}>NEST ecosystem is a paradigm revolution<br/>to the traditional market mechanism, <br/>whole new range of development tools and<br/> creative new assets.</Text>
             <Stack pt={'54px'}>
               <Button onClick={() => {
-                window.open('/docs/Technical-Reference-PVM/Contracts', '_blank')
+                window.open('/docs/PVM-Technical-Reference', '_blank')
               }}>
                 Developer Doc
               </Button>
@@ -303,7 +303,7 @@ export default function Home(): JSX.Element {
                 <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know about NRA</Text>
               </Stack>
               <Stack spacing={'22px'}>
-                <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/Technical-Reference-PVM/Contracts'}>Developer
+                <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/PVM-Technical-Reference'}>Developer
                   Docs</Link>
                 <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know how to develop on NEST</Text>
               </Stack>
