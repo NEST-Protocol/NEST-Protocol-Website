@@ -504,7 +504,7 @@ export default function Home(): JSX.Element {
           </Stack>
         </Stack>
       ) : (
-        <Stack h={'100%'} bgImage={'/image/Home/01-Phone-bg.jpg'} bgPosition={"center"} bgSize={'cover'}>
+        <Stack h={'100%'} bgImage={'/image/Home/01-Phone-bg.jpg'} bgPosition={"center"} bgSize={'cover'} bgRepeat={"repeat"}>
           <HStack w={'full'} px={'24px'} py={'20px'}>
             <Link href={'/'}>
               <chakra.img
