@@ -389,47 +389,47 @@ export default function Home(): JSX.Element {
               <Stack bg={'rgba(255,255,255, 0.7)'} h={'440px'} align={"center"} spacing={'60px'} justify={"center"}>
                 <HStack spacing={'80px'}>
                   <Link href={'https://www.huobi.com/en-us/exchange/nest_usdt'} isExternal>
-                    <chakra.img src={"/svg/huobi.svg"} h={'45px'}/>
+                    <chakra.img src={"/svg/huobi.svg"} h={'45px'} alt={'huobi'}/>
                   </Link>
                   <Link href={'https://www.binance.com/'} isExternal>
-                    <chakra.img src={"/svg/binance.svg"} h={'45px'}/>
+                    <chakra.img src={"/svg/binance.svg"} h={'45px'} alt={'binance'}/>
                   </Link>
                   <Link href={'https://www.coinbase.com/price/nest-protocol'} isExternal>
-                    <chakra.img src={"/svg/Coinbase.svg"} h={'45px'}/>
+                    <chakra.img src={"/svg/Coinbase.svg"} h={'45px'} alt={'Coinbase'}/>
                   </Link>
                   <Link href={'https://polygon.technology/'} isExternal>
-                    <chakra.img src={"/svg/polygon.svg"} h={'45px'}/>
+                    <chakra.img src={"/svg/polygon.svg"} h={'45px'} alt={'polygon'}/>
                   </Link>
                 </HStack>
                 <HStack spacing={'80px'}>
                   <Link href={'https://kcc.io/'} isExternal>
-                    <chakra.img src={"/svg/kcc.svg"} h={'45px'}/>
+                    <chakra.img src={"/svg/kcc.svg"} h={'45px'} alt={'kcc'}/>
                   </Link>
                   <Link href={'https://cointelegraph.com/'} isExternal>
-                    <chakra.img src={"/svg/cointelegraph.svg"} h={'45px'}/>
+                    <chakra.img src={"/svg/cointelegraph.svg"} h={'45px'} alt={'cointelegraph'}/>
                   </Link>
                   <Link href={'https://cube.network/'} isExternal>
-                    <chakra.img src={"/svg/cube.svg"} h={'45px'}/>
+                    <chakra.img src={"/svg/cube.svg"} h={'45px'} alt={'cube'}/>
                   </Link>
                   <Link href={'https://peckshield.com/'} isExternal>
-                    <chakra.img src={"/svg/peckshield.svg"} h={'45px'}/>
+                    <chakra.img src={"/svg/peckshield.svg"} h={'45px'} alt={'peckshield'}/>
                   </Link>
                   <Link href={'https://for.tube/'} isExternal>
-                    <chakra.img src={"/svg/fortube.svg"} h={'45px'}/>
+                    <chakra.img src={"/svg/fortube.svg"} h={'45px'} alt={'fortube'}/>
                   </Link>
                 </HStack>
                 <HStack spacing={'80px'}>
                   <Link href={'https://polygon.technology/'} isExternal>
-                    <chakra.img src={"/svg/polynetwork.svg"} h={'45px'}/>
+                    <chakra.img src={"/svg/polynetwork.svg"} h={'45px'} alt={'polynetwork'}/>
                   </Link>
                   <Link href={'https://cofix.tech/'} isExternal>
-                    <chakra.img src={"/svg/CoFiX.svg"} h={'45px'}/>
+                    <chakra.img src={"/svg/CoFiX.svg"} h={'45px'} alt={'CoFiX'}/>
                   </Link>
                   <Link href={'https://www.parasset.top/'} isExternal>
-                    <chakra.img src={"/svg/Parasset.svg"} h={'45px'}/>
+                    <chakra.img src={"/svg/Parasset.svg"} h={'45px'} alt={'Parasset'}/>
                   </Link>
                   <Link href={'https://www.certik.com/'} isExternal>
-                    <chakra.img src={"/svg/certik.svg"} h={'45px'}/>
+                    <chakra.img src={"/svg/certik.svg"} h={'45px'} alt={'certik'}/>
                   </Link>
                 </HStack>
               </Stack>
@@ -464,22 +464,22 @@ export default function Home(): JSX.Element {
                 </Stack>
                 <HStack spacing={'24px'}>
                   <Link href={'https://github.com/NEST-Protocol'} isExternal>
-                    <chakra.img src={'/image/Footer/github_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/github_icon.svg'} h={'44px'} w={'44px'} alt={'NEST-Protocol github'}/>
                   </Link>
                   <Link href={'https://twitter.com/nest_protocol/'} isExternal>
-                    <chakra.img src={'/image/Footer/twitter_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/twitter_icon.svg'} h={'44px'} w={'44px'} alt={'NEST-Protocol Twitter'}/>
                   </Link>
                   <Link href={'https://t.me/nest_chat/'} isExternal>
-                    <chakra.img src={'/image/Footer/telegram_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/telegram_icon.svg'} h={'44px'} w={'44px'} alt={'NEST-Protocol Telegram'}/>
                   </Link>
                   <Link href={'https://nest-protocol-82041.medium.com/'} isExternal>
-                    <chakra.img src={'/image/Footer/medium_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/medium_icon.svg'} h={'44px'} w={'44px'} alt={'NEST-Protocol Medium'}/>
                   </Link>
                   <Link href={'https://discord.gg/nestprotocol'} isExternal>
-                    <chakra.img src={'/image/Footer/discord_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/discord_icon.svg'} h={'44px'} w={'44px'} alt={'NEST-Protocol Discord'}/>
                   </Link>
                   <Link href={'mailto:hello@nestprotocol.org'} isExternal>
-                    <chakra.img src={'/image/Footer/email_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/email_icon.svg'} h={'44px'} w={'44px'} alt={'hello@nestprotocol.org'}/>
                   </Link>
                 </HStack>
               </Stack>
