@@ -4,21 +4,26 @@ sidebar_position: 1
 
 # PVM Technical Reference
 
-NEST [PVM](https://nestprotocol.org/docs/Concept/PVM) offers a variety of contract functions based on probabilistic assets, with which developers can quickly build their own DeFi, NFT, and GameFi projects.
+NEST [PVM](https://nestprotocol.org/docs/Concept/PVM) offers a variety of contract functions based on probabilistic assets, with which developers can quickly build their own DeFi, NFT, and GameFi projects. You can check [dapp](https://finance.nestprotocol.org/) and the [whitepaper](https://www.nestprotocol.org/doc/ennestwhitepaper.pdf) to learn more about it.
 
 The contract functions already available are futures, options. 
 
-Check the [whitepaper](https://www.nestprotocol.org/doc/ennestwhitepaper.pdf) to learn more about it.
 
-## Contract
+This article is divided into 3 parts：
+- [Contract details](https://nestprotocol.org/docs/PVM-Technical-Reference#contract)
+- [Contract Address](https://nestprotocol.org/docs/PVM-Technical-Reference#contract-address)
+- [Error Codes](https://nestprotocol.org/docs/PVM-Technical-Reference#error-codes)
+
+
+## Contract details
 
 ### Futures
 
 The Futures contract includes four functions:
-- Buy futures
-- Sell futures
-- Futures liquidation
-- Get futures index
+- [Buy futures](https://nestprotocol.org/docs/PVM-Technical-Reference#buy-futures)
+- [Sell futures](https://nestprotocol.org/docs/PVM-Technical-Reference#sell-future)
+- [Futures Liquidation](https://nestprotocol.org/docs/PVM-Technical-Reference#futures-liquidation)
+- [Get futures index](https://nestprotocol.org/docs/PVM-Technical-Reference#get-futures-index)
 
 #### Buy Futures
 
@@ -110,10 +115,10 @@ Futures index contains leverage and direction information of the futures contrac
 ### Options
 
 Options contracts include four functions:
-- Buy options
-- Exercise options
-- Sell options
-- Find options
+- [Buy options](https://nestprotocol.org/docs/PVM-Technical-Reference#buy-options)
+- [Exercise options](https://nestprotocol.org/docs/PVM-Technical-Reference#exercise-option)
+- [Sell options](https://nestprotocol.org/docs/PVM-Technical-Reference#sell-option)
+- [Find options](https://nestprotocol.org/docs/PVM-Technical-Reference#find-the-options)
 
 #### Buy Options
 
