@@ -155,7 +155,7 @@ const About = () => {
                     Coindesk, Consensus, and others.
                   </Text>
                   <HStack spacing={'44px'}>
-                    <Link color={'#00A0E9'} fontWeight={600} fontSize={15} href={'/about/nra'}>
+                    <Link color={'#00A0E9'} fontWeight={600} fontSize={15} href={'/about/nra/'}>
                       NRA <ChevronRightIcon/>
                     </Link>
                   </HStack>
@@ -182,7 +182,7 @@ const About = () => {
                     management.
                   </Text>
                   <HStack spacing={'44px'}>
-                    <Link color={'#00A0E9'} fontWeight={600} fontSize={15} href={'/blogs'}>
+                    <Link color={'#00A0E9'} fontWeight={600} fontSize={15} href={'/blogs/'}>
                       News <ChevronRightIcon/>
                     </Link>
                   </HStack>
@@ -204,7 +204,7 @@ const About = () => {
                     such as future hackathons.
                   </Text>
                   <HStack spacing={'44px'}>
-                    <Link color={'#00A0E9'} fontWeight={600} fontSize={15} href={'/docs/PVM-Technical-Reference'}>
+                    <Link color={'#00A0E9'} fontWeight={600} fontSize={15} href={'/docs/PVM-Technical-Reference/'}>
                       Developer Docs <ChevronRightIcon/>
                     </Link>
                   </HStack>
@@ -273,7 +273,7 @@ const About = () => {
                 Coindesk, Consensus, and others.
               </Text>
               <HStack spacing={'44px'} align={"center"} justify={"center"}>
-                <Link color={'#00A0E9'} fontWeight={600} fontSize={12} href={'/about/nra'}>
+                <Link color={'#00A0E9'} fontWeight={600} fontSize={12} href={'/about/nra/'}>
                   NRA <ChevronRightIcon/>
                 </Link>
               </HStack>
@@ -293,7 +293,7 @@ const About = () => {
                 management.
               </Text>
               <HStack spacing={'44px'} align={"center"} justify={"center"}>
-                <Link color={'#00A0E9'} fontWeight={600} fontSize={12} href={'/blogs'}>
+                <Link color={'#00A0E9'} fontWeight={600} fontSize={12} href={'/blogs/'}>
                   News <ChevronRightIcon/>
                 </Link>
               </HStack>
@@ -308,7 +308,7 @@ const About = () => {
                 such as future hackathons.
               </Text>
               <HStack spacing={'44px'} align={"center"} justify={"center"}>
-                <Link color={'#00A0E9'} fontWeight={600} fontSize={12} href={'/docs/PVM-Technical-Reference'}>
+                <Link color={'#00A0E9'} fontWeight={600} fontSize={12} href={'/docs/PVM-Technical-Reference/'}>
                   Developer Docs <ChevronRightIcon/>
                 </Link>
               </HStack>

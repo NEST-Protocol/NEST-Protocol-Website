@@ -45,11 +45,11 @@ export default function Home(): JSX.Element {
                 />
               </Link>
               <Stack direction={"row"} align={"center"} spacing={'24px'} fontWeight={'500'} fontSize={'15px'}>
-                <Link href={'/nest-fi'} color={'#003232'}>NEST Fi</Link>
-                <Link href={'/developers'} color={'#EAAA00'} fontWeight={'700'}>Developers</Link>
-                <Link href={'/docs/Overview/What-is-NEST-Protocol'} color={'#003232'}>Doc</Link>
-                <Link href={'/blogs'} color={'#003232'}>Blog</Link>
-                <Link href={'/about'} color={'#003232'}>About</Link>
+                <Link href={'/nest-fi/'} color={'#003232'}>NEST Fi</Link>
+                <Link href={'/developers/'} color={'#EAAA00'} fontWeight={'700'}>Developers</Link>
+                <Link href={'/docs/Overview/What-is-NEST-Protocol/'} color={'#003232'}>Doc</Link>
+                <Link href={'/blogs/'} color={'#003232'}>Blog</Link>
+                <Link href={'/about/'} color={'#003232'}>About</Link>
                 <Button onClick={() => {
                   window.open('https://finance.nestprotocol.org/', '_blank')
                 }}>
@@ -65,7 +65,7 @@ export default function Home(): JSX.Element {
                   development tools and creative new assets.</Text>
                 <Box>
                   <Button onClick={() => {
-                    window.open('/docs/PVM-Technical-Reference', '_blank')
+                    window.open('/docs/PVM-Technical-Reference/', '_blank')
                   }}>
                     Developer Doc
                   </Button>
@@ -83,7 +83,7 @@ export default function Home(): JSX.Element {
                     structure based on the basic function<br/>library. Developers can develop various exciting<br/>applications
                     based on the function library, similar<br/>to Ethereum virtual machine (EVM) programming.</Text>
                   <Link color={'#00A0E9'} fontSize={'15px'} fontWeight={600} isExternal
-                        href={'/docs/Concept/PVM'}>PVM Mechanism <ChevronRightIcon/></Link>
+                        href={'/docs/Concept/PVM/'}>PVM Mechanism <ChevronRightIcon/></Link>
                 </Stack>
               </Stack>
             </Stack>
@@ -96,9 +96,9 @@ export default function Home(): JSX.Element {
                     market today.</Text>
                   <HStack spacing={'68px'}>
                     <Link color={'#00A0E9'} fontSize={'15px'} fontWeight={600} isExternal
-                          href={'https://nestprotocol.org/docs/Technical-Reference-NEST-Oracle#how-to-mining'}>How to Mining <ChevronRightIcon/></Link>
+                          href={'/docs/Technical-Reference-NEST-Oracle#how-to-mining/'}>How to Mining <ChevronRightIcon/></Link>
                     <Link color={'#00A0E9'} fontSize={'15px'} fontWeight={600} isExternal
-                          href={'https://nestprotocol.org/docs/Technical-Reference-NEST-Oracle#how-to-call-price'}>How to Call
+                          href={'/docs/Technical-Reference-NEST-Oracle#how-to-call-price/'}>How to Call
                       Price <ChevronRightIcon/></Link>
                   </HStack>
                 </Stack>
@@ -128,7 +128,7 @@ export default function Home(): JSX.Element {
               </Stack>
               <Stack spacing={'40px'}>
                 <Stack spacing={'22px'}>
-                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/PVM-Technical-Reference'}>Developer
+                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/PVM-Technical-Reference/'}>Developer
                     Docs</Link>
                   <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know how to develop on NEST</Text>
                 </Stack>
@@ -255,7 +255,7 @@ export default function Home(): JSX.Element {
             <Text fontSize={'12.5px'} fontWeight={'bold'} textAlign={"center"}>NEST ecosystem is a paradigm revolution<br/>to the traditional market mechanism, <br/>whole new range of development tools and<br/> creative new assets.</Text>
             <Stack pt={'54px'}>
               <Button onClick={() => {
-                window.open('/docs/PVM-Technical-Reference', '_blank')
+                window.open('/docs/PVM-Technical-Reference/', '_blank')
               }}>
                 Developer Doc
               </Button>
@@ -266,7 +266,7 @@ export default function Home(): JSX.Element {
             <Stack pt={'60px'} align={"center"}>
               <Text fontSize={'16px'} fontWeight={'600'}>NEST PVM</Text>
               <Text fontSize={'12.5px'} fontWeight={'600'} textAlign={"center"}>NEST Probability Virtual Machine (PVM) is<br/>a virtual machine-like structure based on<br/>the basic function library. Developers can<br/>develop various exciting applications based<br/>develop various exciting applications based<br/> virtual machine (EVM) programming.</Text>
-              <Link color={'#00A0E9'} fontSize={'12.5px'} fontWeight={'600'} pt={'20px'} href={'/docs/Concept/PVM'} isExternal>
+              <Link color={'#00A0E9'} fontSize={'12.5px'} fontWeight={'600'} pt={'20px'} href={'/docs/Concept/PVM/'} isExternal>
                 PVM Mechanism <ChevronRightIcon/>
               </Link>
             </Stack>
@@ -277,10 +277,10 @@ export default function Home(): JSX.Element {
             <Stack align={"center"}>
               <Text fontSize={'16px'} fontWeight={'600'}>NEST Oracle</Text>
               <Text fontSize={'12.5px'} fontWeight={'600'} textAlign={"center"}>NEST oracle is the only truly decentralized<br/>oracle on the market today.</Text>
-              <Link color={'#00A0E9'} fontSize={'12.5px'} fontWeight={'600'} href={'/docs/Technical-Reference-NEST-Oracle#how-to-mining'} isExternal>
+              <Link color={'#00A0E9'} fontSize={'12.5px'} fontWeight={'600'} href={'/docs/Technical-Reference-NEST-Oracle#how-to-mining/'} isExternal>
                 How to Mining <ChevronRightIcon/>
               </Link>
-              <Link color={'#00A0E9'} fontSize={'12.5px'} fontWeight={'600'} href={'/docs/Technical-Reference-NEST-Oracle/How-to-Call-Price'} isExternal>
+              <Link color={'#00A0E9'} fontSize={'12.5px'} fontWeight={'600'} href={'/docs/Technical-Reference-NEST-Oracle/How-to-Call-Price/'} isExternal>
                 How to Call Price <ChevronRightIcon/>
               </Link>
             </Stack>
@@ -295,20 +295,20 @@ export default function Home(): JSX.Element {
                 <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Buy futures, options and win NEST</Text>
               </Stack>
               <Stack spacing={'22px'}>
-                <Link fontSize={'15px'} fontWeight={'bold'} href={'/blogs'}>NEST Blog</Link>
+                <Link fontSize={'15px'} fontWeight={'bold'} href={'/blogs/'}>NEST Blog</Link>
                 <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Latest blogs from NEST</Text>
               </Stack>
               <Stack spacing={'22px'}>
-                <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/nra'}>NEST Research Academy</Link>
+                <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/nra/'}>NEST Research Academy</Link>
                 <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know about NRA</Text>
               </Stack>
               <Stack spacing={'22px'}>
-                <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/PVM-Technical-Reference'}>Developer
+                <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/PVM-Technical-Reference/'}>Developer
                   Docs</Link>
                 <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know how to develop on NEST</Text>
               </Stack>
               <Stack spacing={'22px'}>
-                <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/faqs'}>FAQs</Link>
+                <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/faqs/'}>FAQs</Link>
                 <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Frequently asked questions</Text>
               </Stack>
               <Stack spacing={'10px'} w={'full'}>

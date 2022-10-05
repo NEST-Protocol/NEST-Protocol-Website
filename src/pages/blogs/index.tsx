@@ -73,7 +73,7 @@ export default function News(): JSX.Element {
                 bg: "/image/News/News_card_1.webp",
                 logo: "/image/Home/News_card_icon.webp",
                 desc: `Leading United States-based cryptocurrency exchange`,
-                link: '/blog/Coinbase-Announces-Planned-Listing-of-Tokens-Adds-NEST',
+                link: '/blog/Coinbase-Announces-Planned-Listing-of-Tokens-Adds-NEST/',
                 date: "July 25, 2022"
               },
               {
@@ -81,7 +81,7 @@ export default function News(): JSX.Element {
                 bg: "/image/News/News_card_2.webp",
                 logo: "/image/Home/News_card_icon_1.webp",
                 desc: 'Blockchain innovation defined the major part of the last decade,with cryptocurrency disrupting.',
-                link: '/blog/NEST-Protocol-A-New-Paradigm-of-Game-Theoretic-Oracle',
+                link: '/blog/NEST-Protocol-A-New-Paradigm-of-Game-Theoretic-Oracle/',
                 date: "July 9, 2022"
               },
               {
@@ -89,7 +89,7 @@ export default function News(): JSX.Element {
                 bg: "/image/News/News_card_3.webp",
                 logo: "/image/Home/News_card_icon_2.webp",
                 desc: 'Through Crypto.com’s NEST Price Page, you can now directly access NEST’s RSS news feed.',
-                link: '/blog/NEST\'s-RSS-FEED-INTEGRATED-WITH-CRYPTO.COM-PRICE-PAGE',
+                link: '/blog/NEST\'s-RSS-FEED-INTEGRATED-WITH-CRYPTO.COM-PRICE-PAGE/',
                 date: "May 6, 2022"
               },
               {
@@ -97,7 +97,7 @@ export default function News(): JSX.Element {
                 bg: "/image/News/News_card_1.webp",
                 logo: "/image/News/News_card_icon_4.webp",
                 desc: 'NEST Protocol is delighted to announce a strategic.',
-                link: '/blog/NEST-Protocol-partners-with-UTU.ONE-to-seek-and-create-more-opportunities-in-DAO-governance',
+                link: '/blog/NEST-Protocol-partners-with-UTU.ONE-to-seek-and-create-more-opportunities-in-DAO-governance/',
                 date: "July 25, 2022"
               },
               {
@@ -105,7 +105,7 @@ export default function News(): JSX.Element {
                 bg: "/image/News/News_card_2.webp",
                 logo: "/image/News/News_card_icon_5.webp",
                 desc: 'Introduction Vitalik, the founder of Ethereum, delivered something interesting on Twitter at the beginning of 2022.',
-                link: '/blog/Comments-on-Vitalik’s-Twitter',
+                link: '/blog/Comments-on-Vitalik’s-Twitter/',
                 date: "Jun 9, 2022"
               },
               {
@@ -113,7 +113,7 @@ export default function News(): JSX.Element {
                 bg: "/image/News/News_card_3.webp",
                 logo: "/image/News/News_card_icon_6.webp",
                 desc: 'The blockchain world is also like the corner of the country with genres of thought.',
-                link: '/blog/James-Talks-Three-major-genres-in-the-blockchain-jungle',
+                link: '/blog/James-Talks-Three-major-genres-in-the-blockchain-jungle/',
                 date: "May 6, 2022"
               }
             ].map(item => (

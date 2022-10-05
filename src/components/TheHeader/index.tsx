@@ -22,11 +22,11 @@ const TheHeader = () => {
   const location = useLocation();
 
   const menu = [
-    {name: 'NEST Fi', pathname: '/nest-fi'},
-    {name: 'Developers', pathname: '/developers'},
-    {name: 'Doc', pathname: '/docs/PVM-Technical-Reference'},
-    {name: 'Blog', pathname: '/blogs'},
-    {name: 'About', pathname: '/about'}
+    {name: 'NEST Fi', pathname: '/nest-fi/'},
+    {name: 'Developers', pathname: '/developers/'},
+    {name: 'Doc', pathname: '/docs/PVM-Technical-Reference/'},
+    {name: 'Blog', pathname: '/blogs/'},
+    {name: 'About', pathname: '/about/'}
   ]
 
   return (

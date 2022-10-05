@@ -15,17 +15,17 @@ The NEST coin provides a whole new development tool and is a creative new asset 
 
 ## Catelog of doc
 - Overview
-  - [Background](https://nestprotocol.org/docs/Overview/Background)
-  - [What problem does the NEST Protocol solve?](https://nestprotocol.org/docs/Overview/What-problem-does-the-NEST-Protocol-solve)
-  - [NEST Tokenomics](https://nestprotocol.org/docs/Overview/NEST-Tokenomics)
-  - [What can NEST Protocol do？](https://nestprotocol.org/docs/Overview/What-can-NEST-Protocol-do)
+  - [Background](https://nestprotocol.org/docs/Overview/Background/)
+  - [What problem does the NEST Protocol solve?](https://nestprotocol.org/docs/Overview/What-problem-does-the-NEST-Protocol-solve/)
+  - [NEST Tokenomics](https://nestprotocol.org/docs/Overview/NEST-Tokenomics/)
+  - [What can NEST Protocol do？](https://nestprotocol.org/docs/Overview/What-can-NEST-Protocol-do/)
 - Concept
-  - [stochastic asset](https://nestprotocol.org/docs/Concept/stochastic-assets)
-  - [PVM](https://nestprotocol.org/docs/Concept/PVM)
-  - [OMM](https://nestprotocol.org/docs/Concept/OMM)
-  - [NEST Oracle](https://nestprotocol.org/docs/Concept/NEST-Oracle)
-- [PVM Technical Reference](https://nestprotocol.org/docs/PVM-Technical-Reference)
-- [NEST Oracle Technical Reference](https://nestprotocol.org/docs/Technical-Reference-NEST-Oracle)
+  - [stochastic asset](https://nestprotocol.org/docs/Concept/stochastic-assets/)
+  - [PVM](https://nestprotocol.org/docs/Concept/PVM/)
+  - [OMM](https://nestprotocol.org/docs/Concept/OMM/)
+  - [NEST Oracle](https://nestprotocol.org/docs/Concept/NEST-Oracle/)
+- [PVM Technical Reference](https://nestprotocol.org/docs/PVM-Technical-Reference/)
+- [NEST Oracle Technical Reference](https://nestprotocol.org/docs/Technical-Reference-NEST-Oracle/)
 
 ## More information:
 - [Whitepaper](https://www.nestprotocol.org/doc/ennestwhitepaper.pdf)

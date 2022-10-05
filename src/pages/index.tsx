@@ -22,11 +22,11 @@ import Head from "@docusaurus/Head";
 import {useLocation} from "@docusaurus/router";
 
 export const menu = [
-  {name: 'NEST Fi', pathname: '/nest-fi'},
-  {name: 'Developers', pathname: '/developers'},
-  {name: 'Doc', pathname: '/docs/Overview/What-is-NEST-Protocol'},
-  {name: 'Blog', pathname: '/blogs'},
-  {name: 'About', pathname: '/about'}
+  {name: 'NEST Fi', pathname: '/nest-fi/'},
+  {name: 'Developers', pathname: '/developers/'},
+  {name: 'Doc', pathname: '/docs/Overview/What-is-NEST-Protocol/'},
+  {name: 'Blog', pathname: '/blogs/'},
+  {name: 'About', pathname: '/about/'}
 ]
 
 export default function Home(): JSX.Element {
@@ -41,20 +41,20 @@ export default function Home(): JSX.Element {
       type: 'PVM',
       title: `PVM (Probabilistic Virtual Machine) is a class of\nvirtual machine structures based on a library of basic\nfunctions that allow a developer to assemble as many\napplications as he wants - similar to EVM programming`,
       desc: `PVM enables the generation and programming of\nstochastic assets, which is widely used in DeFi, GameFi,\nNFT, etc.`,
-      link: '/docs/Concept/PVM'
+      link: '/docs/Concept/PVM/'
     },
     {
       type: 'NEST Oracle',
       title: `The NEST oracle is currently the market's\nonly truly decentralized oracle. The random\ninformation of decentralized price flow is introduced\ninto the chain using the Game Theoretical\nmechanism of arbitrage.`,
       desc: `The NEST token is generated using the NEST\noracle's stochastic information. The NEST token\n serves as the monetary unit for all stochastic assets\nin the NEST ecosystem.`,
-      link: '/docs/Concept/NEST-Oracle'
+      link: '/docs/Concept/NEST-Oracle/'
     },
     {
       type: 'OMM',
       title: `OMM is a new trading and settlement paradigm:\nEveryone trades and settle stochastic assets with\ncontracts rather than individuals.`,
       desc: `OMM addresses the issue of liquidity and settlement.\nNEST tokens can be used to circulate any stochastic\nasset. Any benefit, even if it is greater than the\nexpected value, can be settled.\nThere is no need to match makers and takers, and all\nNEST holders share the same risks and rewards.
 `,
-      link: '/docs/Concept/OMM'
+      link: '/docs/Concept/OMM/'
     },
   ]
 
@@ -111,11 +111,11 @@ export default function Home(): JSX.Element {
                 />
               </Link>
               <Stack direction={"row"} align={"center"} spacing={'24px'} fontWeight={'500'} fontSize={'15px'} color={'#003232'}>
-                <Link href={'/nest-fi'}>NEST Fi</Link>
-                <Link href={'/developers'}>Developers</Link>
-                <Link href={'/docs/Overview/What-is-NEST-Protocol'}>Doc</Link>
-                <Link href={'/blogs'}>Blog</Link>
-                <Link href={'/about'}>About</Link>
+                <Link href={'/nest-fi/'}>NEST Fi</Link>
+                <Link href={'/developers/'}>Developers</Link>
+                <Link href={'/docs/Overview/What-is-NEST-Protocol/'}>Doc</Link>
+                <Link href={'/blogs/'}>Blog</Link>
+                <Link href={'/about/'}>About</Link>
                 <Button onClick={() => {
                   window.open('https://finance.nestprotocol.org/', '_blank')
                 }}>
@@ -339,7 +339,7 @@ export default function Home(): JSX.Element {
               <Heading fontSize={'50px'} textAlign={"center"}>Blogs</Heading>
               <HStack spacing={'44px'}>
                 <Stack w={'308px'} bg={"white"} borderRadius={'20px'} spacing={0} cursor={"pointer"} onClick={() => {
-                  window.open('/blog/Coinbase-Announces-Planned-Listing-of-Tokens-Adds-NEST', '_blank')
+                  window.open('/blog/Coinbase-Announces-Planned-Listing-of-Tokens-Adds-NEST/', '_blank')
                 }}>
                   <chakra.img src={'/image/Home/01-card-01@2x.png'} alt={''}/>
                   <Stack spacing={'10px'} p={'20px'} h={'230px'}>
@@ -351,7 +351,7 @@ export default function Home(): JSX.Element {
                   </Stack>
                 </Stack>
                 <Stack w={'308px'} bg={"white"} borderRadius={'20px'} spacing={0} cursor={'pointer'} onClick={() => {
-                  window.open('/blog/NEST-Protocol-A-New-Paradigm-of-Game-Theoretic-Oracle', '_blank')
+                  window.open('/blog/NEST-Protocol-A-New-Paradigm-of-Game-Theoretic-Oracle/', '_blank')
                 }}>
                   <chakra.img src={'/image/Home/01-card-02@2x.png'} alt={''}/>
                   <Stack spacing={'20px'} p={'20px'} h={'230px'}>
@@ -363,7 +363,7 @@ export default function Home(): JSX.Element {
                   </Stack>
                 </Stack>
                 <Stack w={'308px'} bg={"white"} borderRadius={'20px'} spacing={0} cursor={"pointer"} onClick={() => {
-                  window.open('/blog/NEST\'s-RSS-FEED-INTEGRATED-WITH-CRYPTO.COM-PRICE-PAGE', '_blank')
+                  window.open('/blog/NEST\'s-RSS-FEED-INTEGRATED-WITH-CRYPTO.COM-PRICE-PAGE/', '_blank')
                 }}>
                   <chakra.img src={'/image/Home/01-card-03@2x.png'} alt={''}/>
                   <Stack spacing={'20px'} p={'20px'} h={'230px'}>
@@ -444,22 +444,22 @@ export default function Home(): JSX.Element {
                   <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Buy futures, options and win NEST</Text>
                 </Stack>
                 <Stack spacing={'22px'}>
-                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/blogs'}>NEST Blog</Link>
+                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/blogs/'}>NEST Blog</Link>
                   <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Latest blogs from NEST</Text>
                 </Stack>
                 <Stack spacing={'22px'}>
-                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/nra'}>NEST Research Academy</Link>
+                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/nra/'}>NEST Research Academy</Link>
                   <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know about NRA</Text>
                 </Stack>
               </Stack>
               <Stack spacing={'40px'}>
                 <Stack spacing={'22px'}>
-                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/PVM-Technical-Reference'}>Developer
+                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/PVM-Technical-Reference/'}>Developer
                     Docs</Link>
                   <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know how to develop on NEST</Text>
                 </Stack>
                 <Stack spacing={'22px'}>
-                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/faqs'}>FAQs</Link>
+                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/faqs/'}>FAQs</Link>
                   <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Frequently asked questions</Text>
                 </Stack>
                 <HStack spacing={'24px'}>
@@ -697,7 +697,7 @@ export default function Home(): JSX.Element {
             </Stack>
             <Stack pt={'30px'} align={"center"}>
               <AiOutlineGithub fontSize={'24px'} color={'#003232'}/>
-              <Link color={'#00A0E9'} fontWeight={'600'} fontSize={'12.5px'} href={'/developers'}>For developers <ChevronRightIcon/></Link>
+              <Link color={'#00A0E9'} fontWeight={'600'} fontSize={'12.5px'} href={'/developers/'}>For developers <ChevronRightIcon/></Link>
             </Stack>
             <HStack pt={'60px'} pb={'30px'}>
               <Stack w={'100px'} align={"center"}>
@@ -830,7 +830,7 @@ export default function Home(): JSX.Element {
                 <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know about NRA</Text>
               </Stack>
               <Stack spacing={'22px'}>
-                <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/PVM-Technical-Reference'}>Developer
+                <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/PVM-Technical-Reference/'}>Developer
                   Docs</Link>
                 <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know how to develop on NEST</Text>
               </Stack>

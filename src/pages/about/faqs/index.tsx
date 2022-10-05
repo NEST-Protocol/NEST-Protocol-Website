@@ -135,9 +135,9 @@ BNB: 0x98f8669f6481ebb341b522fcd3663f79a3d1a6a7
       <Stack w={'100%'} align={"center"} px={['24px', '48px']} spacing={0} pb={'24px'}>
         <Stack maxW={'1440px'} w={'100%'} hidden={!isDesktop}>
           <HStack fontWeight={'600'}>
-            <Link fontSize={'15px'} color={'#00A0E9'} href={'/about'}>About</Link>
+            <Link fontSize={'15px'} color={'#00A0E9'} href={'/about/'}>About</Link>
             <ChevronRightIcon color={'#00A0E9'}/>
-            <Link fontSize={'15px'} color={'#00A0E9'} href={'/about/faqs'}>FAQs</Link>
+            <Link fontSize={'15px'} color={'#00A0E9'} href={'/about/faqs/'}>FAQs</Link>
           </HStack>
         </Stack>
         <HStack maxW={'1048px'} w={'100%'} align={"start"} spacing={['0px', '30px']}>
@@ -146,7 +146,7 @@ BNB: 0x98f8669f6481ebb341b522fcd3663f79a3d1a6a7
           <Stack maxW={'688px'} w={'100%'} spacing={'10px'}>
             {!isDesktop && (
               <ChevronLeftIcon fontSize={"40px"} ml={'-10px'} onClick={() => {
-                window.location.pathname = "/about"
+                window.location.pathname = "/about/"
               }}/>
             )}
             <Text fontSize={'25px'} fontWeight={'600'} mb={0}>Answers About NEST</Text>
