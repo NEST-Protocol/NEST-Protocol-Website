@@ -4,11 +4,71 @@ sidebar_position: 2
 
 # NEST Oracle Technical Reference
 
-**NEST Oracle is a truly decentralized oracle**. 
-You can have an overview about [app](https://channel.nestprotocol.org/) and
+**NEST Oracle is a truly decentralized oracle.** 
+In this article we will introduce how to use NEST oracle for mining and call prices.
+You can have an overview about [Dapp](https://channel.nestprotocol.org/) and
 [the mechanism and advantages](https://nestprotocol.org/docs/Concept/NEST-Oracle) of NEST Oracle, and check the [whitepaper](https://www.nestprotocol.org/doc/ennestwhitepaper.pdf) to learn more. 
 
+There are 5 parts in this article.
+- [Set Up Local Environment](https://nestprotocol.org/docs/Technical-Reference-NEST-Oracle#Set-Up-Local-Environment)
+- [How to Mining](https://nestprotocol.org/docs/Technical-Reference-NEST-Oracle#how-to-mining)
+- [How to Call Price](https://nestprotocol.org/docs/Technical-Reference-NEST-Oracle#how-to-call-price)
+- [Oracle Contract Address](https://nestprotocol.org/docs/Technical-Reference-NEST-Oracle#oracle-contract-address)
+- [Error Codes](https://nestprotocol.org/docs/Technical-Reference-NEST-Oracle#error-codes)
+
+## Set Up Local Environment
+This guide describes how to set up local environment using a specific toolset: Node.js + npm + hardhat.
+
+### Create a Node.js Project
+1. Download and install Node.js and npm.
+2. Create a new directory and navigate to it. Also, create a new node project with npm init.
+
+### Install Hardhat
+1. Install Hardhat, a development environment to compile, deploy, test, and debug your Smart Contracts.
+
+```
+$ npm add --save-dev hardhat
+```
+
+2. Create a new hardhat config file, which can be used for compiling and testing contracts. For an example of how a typical smart contract repo is structure, select the "create a sample project" option during setup.
+
+```
+$ npx hardhat
+```
+
+### Set the Solidity Version for Hardhat
+For this example, change ./hardhat.config.js to include the appropriate solidity version for compiling the NEST contracts. If Hardhat's example project are already set, this step can be skipped.
+
+```
+module.exports = {
+  solidity: '0.8.9',
+}
+```
+
+### Compile the Contracts
+```
+$ npx hardhat compile
+```
+If everything worked correctly, the following output should show:
+```
+Downloading compiler 0.8.4
+Compiled 2 Solidity files successfully
+✨  Done in 3.25s.
+```
+
+
 ## How to Mining
+
+**Catalog**
+- [Overviews](https://nestprotocol.org/docs/Technical-Reference-NEST-Oracle#Overviews)
+- [What is Channel?](https://nestprotocol.org/docs/Technical-Reference-NEST-Oracle#what-is-channel)
+- [Functions](https://nestprotocol.org/docs/Technical-Reference-NEST-Oracle#functions)
+   - [Quote](https://nestprotocol.org/docs/Technical-Reference-NEST-Oracle#quote)
+   - [Arbitrage](https://nestprotocol.org/docs/Technical-Reference-NEST-Oracle#arbitrage)
+   - [Querry](https://nestprotocol.org/docs/Technical-Reference-NEST-Oracle#query)
+   - [Create Channel](https://nestprotocol.org/docs/Technical-Reference-NEST-Oracle#create-channel)
+
+### Overviews
 
 **Anyone can earn mining rewards by providing quotes on NEST Oracle.** Here is the price generation process of NEST Oracle.
 
@@ -18,7 +78,9 @@ You can have an overview about [app](https://channel.nestprotocol.org/) and
 
 > If a certain token satisfies, over time or if a condition is met, its token balance will be adjusted at each address on the chain. Tokens that meet this condition are then unable to be supported by the NEST Oracle for quotes, and the token cannot be used by the quotation token, pricing token, or mining token.
 
-### Roles
+
+
+#### Roles
 
 - **Miner**: Received mining token rewards by providing quotes.
 
@@ -257,6 +319,13 @@ Anyone can call the prices in NEST oracle. The NEST oracle prices can be called 
 
 1. Calling the corresponding price contract
 2. Calling the functions in the contract
+
+**Catalog**
+- [Definitions](https://nestprotocol.org/docs/Technical-Reference-NEST-Oracle#definitions-1)
+- [Calling the price Contracts](https://nestprotocol.org/docs/Technical-Reference-NEST-Oracle#price-contracts)
+- [Calling the functions](https://nestprotocol.org/docs/Technical-Reference-NEST-Oracle#functions-1)
+- [API Calls Examples](https://nestprotocol.org/docs/Technical-Reference-NEST-Oracle#api-calls-examples)
+
 
 ### Definitions
 
