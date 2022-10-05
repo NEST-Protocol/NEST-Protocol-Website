@@ -103,7 +103,7 @@ export default function Home(): JSX.Element {
                  bgPosition={"center"}
                  spacing={0}>
             <Stack px={'45px'} h={'88px'} direction={"row"} justifyContent={"space-between"} align={"center"}>
-              <Link href={'/'}>
+              <Link rel={'alternate'} hrefLang={'en-gb'} href={'/'}>
                 <chakra.img
                   src={"/img/logo.svg"}
                   alt="nest"
@@ -111,11 +111,11 @@ export default function Home(): JSX.Element {
                 />
               </Link>
               <Stack direction={"row"} align={"center"} spacing={'24px'} fontWeight={'500'} fontSize={'15px'} color={'#003232'}>
-                <Link href={'/nest-fi/'}>NEST Fi</Link>
-                <Link href={'/developers/'}>Developers</Link>
-                <Link href={'/docs/Overview/What-is-NEST-Protocol/'}>Doc</Link>
-                <Link href={'/blogs/'}>Blog</Link>
-                <Link href={'/about/'}>About</Link>
+                <Link rel={'alternate'} hrefLang={'en-gb'} href={'/nest-fi/'}>NEST Fi</Link>
+                <Link rel={'alternate'} hrefLang={'en-gb'} href={'/developers/'}>Developers</Link>
+                <Link rel={'alternate'} hrefLang={'en-gb'} href={'/docs/Overview/What-is-NEST-Protocol/'}>Doc</Link>
+                <Link rel={'alternate'} hrefLang={'en-gb'} href={'/blogs/'}>Blog</Link>
+                <Link rel={'alternate'} hrefLang={'en-gb'} href={'/about/'}>About</Link>
                 <Button onClick={() => {
                   window.open('https://finance.nestprotocol.org/', '_blank')
                 }}>
@@ -214,7 +214,7 @@ export default function Home(): JSX.Element {
                   <Text textAlign={"center"} color={'#7D7D7D'} fontWeight={'600'} fontSize={'15px'}
                         whiteSpace={'break-spaces'}>
                     {work[selectedWork].desc}
-                    <Link color={'#00A0E9'} href={work[selectedWork].link}> Learn more <ChevronRightIcon/></Link>
+                    <Link rel={'alternate'} hrefLang={'en-gb'} color={'#00A0E9'} href={work[selectedWork].link}> Learn more <ChevronRightIcon/></Link>
                   </Text>
                 </Stack>
               </Stack>
@@ -272,22 +272,22 @@ export default function Home(): JSX.Element {
                   <Stack align={"center"}>
                     <AiOutlineTwitter fontSize={'48px'} color={'#003232'}/>
                   </Stack>
-                  <Link href={'https://twitter.com/NEST_Protocol'} isExternal>@NEST_Protocol <ChevronRightIcon/></Link>
-                  <Link href={'https://twitter.com/NESTDAOSupport'}
+                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://twitter.com/NEST_Protocol'} isExternal>@NEST_Protocol <ChevronRightIcon/></Link>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://twitter.com/NESTDAOSupport'}
                         isExternal>@NESTDAOSupport <ChevronRightIcon/></Link>
                 </Stack>
                 <Stack spacing={'20px'}>
                   <Stack align={"center"}>
                     <FaTelegramPlane fontSize={'48px'} color={'#003232'}/>
                   </Stack>
-                  <Link href={'https://t.me/NEST_Community'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://t.me/NEST_Community'} isExternal>
                     <HStack align={"center"}>
                       <chakra.img src={'/image/Home/icon_8.svg'} w={'17px'} h={'16px'}/>
                       <Text color={'#00A0E9'} fontWeight={'600'}>@NEST_Community</Text>
                       <ChevronRightIcon color={'#00A0E9'}/>
                     </HStack>
                   </Link>
-                  <Link href={'https://t.me/nest_chat'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://t.me/nest_chat'} isExternal>
                     <HStack align={"center"}>
                       <chakra.img src={'/image/Home/icon_7.svg'} w={'17px'} h={'16px'}/>
                       <Text color={'#00A0E9'} fontWeight={'600'}>@nest_chat</Text>
@@ -299,35 +299,35 @@ export default function Home(): JSX.Element {
                   <Stack align={"center"}>
                     <AiOutlineGithub fontSize={'48px'} color={'#003232'}/>
                   </Stack>
-                  <Link href={'/developers'}>For developers <ChevronRightIcon/></Link>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'/developers'}>For developers <ChevronRightIcon/></Link>
                 </Stack>
               </HStack>
               <Stack spacing={'60px'} align={"center"}>
                 <HStack spacing={'100px'}>
                   <Stack w={'130px'} align={"center"}>
-                    <Link href={'https://www.coinbase.com/price/nest-protocol'} isExternal>
+                    <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://www.coinbase.com/price/nest-protocol'} isExternal>
                       <chakra.img src={'/image/Home/01-icon-coinbase.png'} h={'34px'} alt={''}/>
                     </Link>
                   </Stack>
                   <Stack w={'130px'} align={"center"}>
-                    <Link href={'https://www.huobi.com/'} isExternal>
+                    <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://www.huobi.com/'} isExternal>
                       <chakra.img src={'/image/Home/01-icon-huobiresearch.png'} h={'34px'} alt={''}/>
                     </Link>
                   </Stack>
                   <Stack w={'130px'} align={"center"}>
-                    <Link href={'https://www.mexc.com/exchange/NEST_USDT'} isExternal>
+                    <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://www.mexc.com/exchange/NEST_USDT'} isExternal>
                       <chakra.img src={'/image/Home/01-icon-mexc.png'} h={'45px'} alt={''}/>
                     </Link>
                   </Stack>
                 </HStack>
                 <HStack spacing={'100px'}>
-                  <Link w={'130px'} href={'https://www.lbank.info/exchange/nest/usdt'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} w={'130px'} href={'https://www.lbank.info/exchange/nest/usdt'} isExternal>
                     <chakra.img src={'/image/Home/01-icon-LBANK.svg'} h={'45px'} alt={''}/>
                   </Link>
-                  <Link w={'130px'} href={'https://www.bibox.com/en/exchange/basic/NEST_USDT'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} w={'130px'} href={'https://www.bibox.com/en/exchange/basic/NEST_USDT'} isExternal>
                     <chakra.img src={'/image/Home/01-icon-Bibox.svg'} h={'45px'} alt={''}/>
                   </Link>
-                  <Link w={'130px'} href={'https://www.gate.io/trade/NEST_USDT'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} w={'130px'} href={'https://www.gate.io/trade/NEST_USDT'} isExternal>
                     <chakra.img src={'/image/Home/01-icon-Gate.svg'} w={'130px'} h={'45px'} alt={''}/>
                   </Link>
                 </HStack>
@@ -388,47 +388,47 @@ export default function Home(): JSX.Element {
               <Heading fontSize={'50px'} textAlign={"center"}>Integrations & Partners</Heading>
               <Stack bg={'rgba(255,255,255, 0.7)'} h={'440px'} align={"center"} spacing={'60px'} justify={"center"}>
                 <HStack spacing={'80px'}>
-                  <Link href={'https://www.huobi.com/en-us/exchange/nest_usdt'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://www.huobi.com/en-us/exchange/nest_usdt'} isExternal>
                     <chakra.img src={"/svg/huobi.svg"} h={'45px'} alt={'huobi'}/>
                   </Link>
-                  <Link href={'https://www.binance.com/'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://www.binance.com/'} isExternal>
                     <chakra.img src={"/svg/binance.svg"} h={'45px'} alt={'binance'}/>
                   </Link>
-                  <Link href={'https://www.coinbase.com/price/nest-protocol'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://www.coinbase.com/price/nest-protocol'} isExternal>
                     <chakra.img src={"/svg/Coinbase.svg"} h={'45px'} alt={'Coinbase'}/>
                   </Link>
-                  <Link href={'https://polygon.technology/'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://polygon.technology/'} isExternal>
                     <chakra.img src={"/svg/polygon.svg"} h={'45px'} alt={'polygon'}/>
                   </Link>
                 </HStack>
                 <HStack spacing={'80px'}>
-                  <Link href={'https://kcc.io/'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://kcc.io/'} isExternal>
                     <chakra.img src={"/svg/kcc.svg"} h={'45px'} alt={'kcc'}/>
                   </Link>
-                  <Link href={'https://cointelegraph.com/'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://cointelegraph.com/'} isExternal>
                     <chakra.img src={"/svg/cointelegraph.svg"} h={'45px'} alt={'cointelegraph'}/>
                   </Link>
-                  <Link href={'https://cube.network/'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://cube.network/'} isExternal>
                     <chakra.img src={"/svg/cube.svg"} h={'45px'} alt={'cube'}/>
                   </Link>
-                  <Link href={'https://peckshield.com/'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://peckshield.com/'} isExternal>
                     <chakra.img src={"/svg/peckshield.svg"} h={'45px'} alt={'peckshield'}/>
                   </Link>
-                  <Link href={'https://for.tube/'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://for.tube/'} isExternal>
                     <chakra.img src={"/svg/fortube.svg"} h={'45px'} alt={'fortube'}/>
                   </Link>
                 </HStack>
                 <HStack spacing={'80px'}>
-                  <Link href={'https://polygon.technology/'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://polygon.technology/'} isExternal>
                     <chakra.img src={"/svg/polynetwork.svg"} h={'45px'} alt={'polynetwork'}/>
                   </Link>
-                  <Link href={'https://cofix.tech/'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://cofix.tech/'} isExternal>
                     <chakra.img src={"/svg/CoFiX.svg"} h={'45px'} alt={'CoFiX'}/>
                   </Link>
-                  <Link href={'https://www.parasset.top/'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://www.parasset.top/'} isExternal>
                     <chakra.img src={"/svg/Parasset.svg"} h={'45px'} alt={'Parasset'}/>
                   </Link>
-                  <Link href={'https://www.certik.com/'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://www.certik.com/'} isExternal>
                     <chakra.img src={"/svg/certik.svg"} h={'45px'} alt={'certik'}/>
                   </Link>
                 </HStack>
@@ -439,46 +439,46 @@ export default function Home(): JSX.Element {
                     align={"start"}>
               <Stack spacing={'40px'} align={"start"}>
                 <Stack spacing={'22px'}>
-                  <Link fontSize={'15px'} fontWeight={'bold'} href={'https://finance.nestprotocol.org/'} isExternal>Launch
+                  <Link rel={'alternate'} hrefLang={'en-gb'} fontSize={'15px'} fontWeight={'bold'} href={'https://finance.nestprotocol.org/'} isExternal>Launch
                     App</Link>
                   <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Buy futures, options and win NEST</Text>
                 </Stack>
                 <Stack spacing={'22px'}>
-                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/blogs/'}>NEST Blog</Link>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} fontSize={'15px'} fontWeight={'bold'} href={'/blogs/'}>NEST Blog</Link>
                   <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Latest blogs from NEST</Text>
                 </Stack>
                 <Stack spacing={'22px'}>
-                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/nra/'}>NEST Research Academy</Link>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} fontSize={'15px'} fontWeight={'bold'} href={'/about/nra/'}>NEST Research Academy</Link>
                   <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know about NRA</Text>
                 </Stack>
               </Stack>
               <Stack spacing={'40px'}>
                 <Stack spacing={'22px'}>
-                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/PVM-Technical-Reference/'}>Developer
+                  <Link rel={'alternate'} hrefLang={'en-gb'} fontSize={'15px'} fontWeight={'bold'} href={'/docs/PVM-Technical-Reference/'}>Developer
                     Docs</Link>
                   <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know how to develop on NEST</Text>
                 </Stack>
                 <Stack spacing={'22px'}>
-                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/faqs/'}>FAQs</Link>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} fontSize={'15px'} fontWeight={'bold'} href={'/about/faqs/'}>FAQs</Link>
                   <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Frequently asked questions</Text>
                 </Stack>
                 <HStack spacing={'24px'}>
-                  <Link href={'https://github.com/NEST-Protocol'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://github.com/NEST-Protocol'} isExternal>
                     <chakra.img src={'/image/Footer/github_icon.svg'} h={'44px'} w={'44px'} alt={'NEST-Protocol github'}/>
                   </Link>
-                  <Link href={'https://twitter.com/nest_protocol/'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://twitter.com/nest_protocol/'} isExternal>
                     <chakra.img src={'/image/Footer/twitter_icon.svg'} h={'44px'} w={'44px'} alt={'NEST-Protocol Twitter'}/>
                   </Link>
-                  <Link href={'https://t.me/nest_chat/'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://t.me/nest_chat/'} isExternal>
                     <chakra.img src={'/image/Footer/telegram_icon.svg'} h={'44px'} w={'44px'} alt={'NEST-Protocol Telegram'}/>
                   </Link>
-                  <Link href={'https://nest-protocol-82041.medium.com/'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://nest-protocol-82041.medium.com/'} isExternal>
                     <chakra.img src={'/image/Footer/medium_icon.svg'} h={'44px'} w={'44px'} alt={'NEST-Protocol Medium'}/>
                   </Link>
-                  <Link href={'https://discord.gg/nestprotocol'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://discord.gg/nestprotocol'} isExternal>
                     <chakra.img src={'/image/Footer/discord_icon.svg'} h={'44px'} w={'44px'} alt={'NEST-Protocol Discord'}/>
                   </Link>
-                  <Link href={'mailto:hello@nestprotocol.org'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'mailto:hello@nestprotocol.org'} isExternal>
                     <chakra.img src={'/image/Footer/email_icon.svg'} h={'44px'} w={'44px'} alt={'hello@nestprotocol.org'}/>
                   </Link>
                 </HStack>
@@ -506,7 +506,7 @@ export default function Home(): JSX.Element {
       ) : (
         <Stack h={'100%'} bgImage={'/image/Home/01-Phone-bg.jpg'} bgPosition={"center"} bgSize={'cover'} bgRepeat={"repeat"}>
           <HStack w={'full'} px={'24px'} py={'20px'}>
-            <Link href={'/'}>
+            <Link rel={'alternate'} hrefLang={'en-gb'} href={'/'}>
               <chakra.img
                 src={"/img/logo.svg"}
                 alt="nest"
@@ -643,7 +643,7 @@ export default function Home(): JSX.Element {
             </HStack>
             <Text fontSize={'16.5px'} fontWeight={'bold'}>{work[selectedWork].type}</Text>
             <Text w={'80%'} fontSize={'12.5px'} fontWeight={'600'}>{work[selectedWork].title}</Text>
-            <Text w={'70%'} fontSize={'12.5px'} fontWeight={'600'} color={'#7D7D7D'}>{work[selectedWork].desc} <Link href={work[selectedWork].link} isExternal color={'#00A0E9'}>Learn more <ChevronRightIcon /></Link></Text>
+            <Text w={'70%'} fontSize={'12.5px'} fontWeight={'600'} color={'#7D7D7D'}>{work[selectedWork].desc} <Link rel={'alternate'} hrefLang={'en-gb'} href={work[selectedWork].link} isExternal color={'#00A0E9'}>Learn more <ChevronRightIcon /></Link></Text>
           </Stack>
           <Stack textAlign={"center"} align={"center"} py={'62px'}>
             <Text fontSize={'25px'} fontWeight={'bold'}>Development<br/>path</Text>
@@ -675,19 +675,19 @@ export default function Home(): JSX.Element {
             <Text fontSize={'16.5px'} fontWeight={'bold'}>Over 1 MILLION community<br/>members, Join us</Text>
             <Stack pt={'30px'} align={"center"}>
               <AiOutlineTwitter fontSize={'24px'} color={'#003232'}/>
-              <Link color={'#00A0E9'} fontWeight={'600'} fontSize={'12.5px'} isExternal href={'https://twitter.com/NEST_Protocol'}>@NEST_Protocol <ChevronRightIcon/></Link>
-              <Link color={'#00A0E9'} fontWeight={'600'} fontSize={'12.5px'} isExternal href={'https://twitter.com/NESTDAOSupport'}>@NESTDAOSupport <ChevronRightIcon/></Link>
+              <Link rel={'alternate'} hrefLang={'en-gb'} color={'#00A0E9'} fontWeight={'600'} fontSize={'12.5px'} isExternal href={'https://twitter.com/NEST_Protocol'}>@NEST_Protocol <ChevronRightIcon/></Link>
+              <Link rel={'alternate'} hrefLang={'en-gb'} color={'#00A0E9'} fontWeight={'600'} fontSize={'12.5px'} isExternal href={'https://twitter.com/NESTDAOSupport'}>@NESTDAOSupport <ChevronRightIcon/></Link>
             </Stack>
             <Stack pt={'30px'} align={"center"}>
               <FaTelegramPlane fontSize={'24px'} color={'#003232'}/>
-              <Link href={'https://t.me/NEST_Community'} isExternal>
+              <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://t.me/NEST_Community'} isExternal>
                 <HStack align={"center"}>
                   <chakra.img src={'/image/Home/icon_8.svg'} w={'14px'} h={'14px'}/>
                   <Text fontSize={'12.5px'} fontWeight={'600'} color={'#00A0E9'}>@NEST_Community</Text>
                   <ChevronRightIcon color={'#00A0E9'}/>
                 </HStack>
               </Link>
-              <Link href={'https://t.me/nest_chat'} isExternal>
+              <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://t.me/nest_chat'} isExternal>
                 <HStack align={"center"}>
                   <chakra.img src={'/image/Home/icon_7.svg'} w={'14px'} h={'14px'}/>
                   <Text fontSize={'12.5px'} fontWeight={'600'} color={'#00A0E9'}>@nest_chat</Text>
@@ -697,38 +697,38 @@ export default function Home(): JSX.Element {
             </Stack>
             <Stack pt={'30px'} align={"center"}>
               <AiOutlineGithub fontSize={'24px'} color={'#003232'}/>
-              <Link color={'#00A0E9'} fontWeight={'600'} fontSize={'12.5px'} href={'/developers/'}>For developers <ChevronRightIcon/></Link>
+              <Link rel={'alternate'} hrefLang={'en-gb'} color={'#00A0E9'} fontWeight={'600'} fontSize={'12.5px'} href={'/developers/'}>For developers <ChevronRightIcon/></Link>
             </Stack>
             <HStack pt={'60px'} pb={'30px'}>
               <Stack w={'100px'} align={"center"}>
-                <Link href={'https://www.coinbase.com/price/nest-protocol'} isExternal>
+                <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://www.coinbase.com/price/nest-protocol'} isExternal>
                   <chakra.img src={'/image/Home/01-icon-coinbase.png'} h={'17px'} alt={''}/>
                 </Link>
               </Stack>
               <Stack w={'100px'} align={"center"}>
-                <Link href={'https://www.huobi.com/'} isExternal>
+                <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://www.huobi.com/'} isExternal>
                   <chakra.img src={'/image/Home/01-icon-huobiresearch.png'} h={'17px'} alt={''}/>
                 </Link>
               </Stack>
               <Stack w={'100px'} align={"center"}>
-                <Link href={'https://www.mexc.com/exchange/NEST_USDT'} isExternal>
+                <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://www.mexc.com/exchange/NEST_USDT'} isExternal>
                   <chakra.img src={'/image/Home/01-icon-mexc.png'} h={'22.5px'} alt={''}/>
                 </Link>
               </Stack>
             </HStack>
             <HStack pb={'50px'}>
               <Stack w={'100px'} align={"center"}>
-                <Link href={'https://www.lbank.info/exchange/nest/usdt'} isExternal>
+                <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://www.lbank.info/exchange/nest/usdt'} isExternal>
                   <chakra.img src={'/image/Home/01-icon-LBANK.svg'} h={'22.5px'} alt={''}/>
                 </Link>
               </Stack>
               <Stack w={'100px'} align={"center"}>
-                <Link href={'https://www.bibox.com/en/exchange/basic/NEST_USDT'} isExternal>
+                <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://www.bibox.com/en/exchange/basic/NEST_USDT'} isExternal>
                   <chakra.img src={'/image/Home/01-icon-Bibox.svg'} h={'22.5px'} alt={''}/>
                 </Link>
               </Stack>
               <Stack w={'100px'} align={"center"}>
-                <Link href={'https://www.gate.io/trade/NEST_USDT'} isExternal>
+                <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://www.gate.io/trade/NEST_USDT'} isExternal>
                   <chakra.img src={'/image/Home/01-icon-Gate.svg'} w={'100px'} h={'22.5px'} alt={''}/>
                 </Link>
               </Stack>
@@ -762,51 +762,51 @@ export default function Home(): JSX.Element {
             <Text fontSize={'25px'} fontWeight={'bold'} textAlign={"center"}>Integrations &<br/>Partners</Text>
             <Stack bg={'rgba(255,255,255, 0.7)'} w={'full'} align={"center"} spacing={'35px'} py={'100px'}>
               <HStack spacing={'40px'}>
-                <Link href={'https://www.huobi.com/en-us/exchange/nest_usdt'} isExternal>
+                <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://www.huobi.com/en-us/exchange/nest_usdt'} isExternal>
                   <chakra.img src={"/svg/huobi.svg"} h={'25px'}/>
                 </Link>
-                <Link href={'https://www.binance.com/'} isExternal>
+                <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://www.binance.com/'} isExternal>
                   <chakra.img src={"/svg/binance.svg"} h={'25px'}/>
                 </Link>
-                <Link href={'https://www.coinbase.com/price/nest-protocol'} isExternal>
+                <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://www.coinbase.com/price/nest-protocol'} isExternal>
                   <chakra.img src={"/svg/Coinbase.svg"} h={'25px'}/>
                 </Link>
               </HStack>
               <HStack spacing={'40px'}>
-                <Link href={'https://polygon.technology/'} isExternal>
+                <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://polygon.technology/'} isExternal>
                   <chakra.img src={"/svg/polygon.svg"} h={'25px'}/>
                 </Link>
-                <Link href={'https://kcc.io/'} isExternal>
+                <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://kcc.io/'} isExternal>
                   <chakra.img src={"/svg/kcc.svg"} h={'25px'}/>
                 </Link>
-                <Link href={'https://cointelegraph.com/'} isExternal>
+                <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://cointelegraph.com/'} isExternal>
                   <chakra.img src={"/svg/cointelegraph.svg"} h={'25px'}/>
                 </Link>
               </HStack>
               <HStack spacing={'40px'}>
-                <Link href={'https://cube.network/'} isExternal>
+                <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://cube.network/'} isExternal>
                   <chakra.img src={"/svg/cube.svg"} h={'25px'}/>
                 </Link>
-                <Link href={'https://peckshield.com/'} isExternal>
+                <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://peckshield.com/'} isExternal>
                   <chakra.img src={"/svg/peckshield.svg"} h={'25px'}/>
                 </Link>
-                <Link href={'https://for.tube/'} isExternal>
+                <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://for.tube/'} isExternal>
                   <chakra.img src={"/svg/fortube.svg"} h={'25px'}/>
                 </Link>
               </HStack>
               <HStack spacing={'40px'}>
-                <Link href={'https://polygon.technology/'} isExternal>
+                <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://polygon.technology/'} isExternal>
                   <chakra.img src={"/svg/polynetwork.svg"} h={'25px'}/>
                 </Link>
-                <Link href={'https://cofix.tech/'} isExternal>
+                <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://cofix.tech/'} isExternal>
                   <chakra.img src={"/svg/CoFiX.svg"} h={'25px'}/>
                 </Link>
-                <Link href={'https://www.parasset.top/'} isExternal>
+                <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://www.parasset.top/'} isExternal>
                   <chakra.img src={"/svg/Parasset.svg"} h={'25px'}/>
                 </Link>
               </HStack>
               <HStack>
-                <Link href={'https://www.certik.com/'} isExternal>
+                <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://www.certik.com/'} isExternal>
                   <chakra.img src={"/svg/certik.svg"} h={'25px'}/>
                 </Link>
               </HStack>
@@ -817,25 +817,25 @@ export default function Home(): JSX.Element {
                  align={"start"}>
             <Stack spacing={'40px'} align={"start"} w={'full'}>
               <Stack spacing={'22px'}>
-                <Link fontSize={'15px'} fontWeight={'bold'} href={'https://finance.nestprotocol.org/'} isExternal>Launch
+                <Link rel={'alternate'} hrefLang={'en-gb'} fontSize={'15px'} fontWeight={'bold'} href={'https://finance.nestprotocol.org/'} isExternal>Launch
                   App</Link>
                 <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Buy futures, options and win NEST</Text>
               </Stack>
               <Stack spacing={'22px'}>
-                <Link fontSize={'15px'} fontWeight={'bold'} href={'/blogs'}>NEST Blog</Link>
+                <Link rel={'alternate'} hrefLang={'en-gb'} fontSize={'15px'} fontWeight={'bold'} href={'/blogs'}>NEST Blog</Link>
                 <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Latest blogs from NEST</Text>
               </Stack>
               <Stack spacing={'22px'}>
-                <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/nra'}>NEST Research Academy</Link>
+                <Link rel={'alternate'} hrefLang={'en-gb'} fontSize={'15px'} fontWeight={'bold'} href={'/about/nra'}>NEST Research Academy</Link>
                 <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know about NRA</Text>
               </Stack>
               <Stack spacing={'22px'}>
-                <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/PVM-Technical-Reference/'}>Developer
+                <Link rel={'alternate'} hrefLang={'en-gb'} fontSize={'15px'} fontWeight={'bold'} href={'/docs/PVM-Technical-Reference/'}>Developer
                   Docs</Link>
                 <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know how to develop on NEST</Text>
               </Stack>
               <Stack spacing={'22px'}>
-                <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/faqs'}>FAQs</Link>
+                <Link rel={'alternate'} hrefLang={'en-gb'} fontSize={'15px'} fontWeight={'bold'} href={'/about/faqs'}>FAQs</Link>
                 <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Frequently asked questions</Text>
               </Stack>
               <Stack spacing={'10px'} w={'full'}>
@@ -850,24 +850,24 @@ export default function Home(): JSX.Element {
               </Stack>
               <Stack w={'full'} align={"center"} spacing={'12px'}>
                 <HStack spacing={'40px'}>
-                  <Link href={'https://discord.gg/nestprotocol'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://discord.gg/nestprotocol'} isExternal>
                     <chakra.img src={'/image/Footer/discord_icon.svg'} color={'#003232'} h={'44px'} w={'44px'}/>
                   </Link>
-                  <Link href={'https://github.com/NEST-Protocol'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://github.com/NEST-Protocol'} isExternal>
                     <chakra.img src={'/image/Footer/github_icon.svg'} h={'44px'} w={'44px'}/>
                   </Link>
-                  <Link href={'https://twitter.com/nest_protocol/'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://twitter.com/nest_protocol/'} isExternal>
                     <chakra.img src={'/image/Footer/twitter_icon.svg'} h={'44px'} w={'44px'}/>
                   </Link>
                 </HStack>
                 <HStack spacing={'40px'}>
-                  <Link href={'https://t.me/nest_chat/'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://t.me/nest_chat/'} isExternal>
                     <chakra.img src={'/image/Footer/telegram_icon.svg'} h={'44px'} w={'44px'}/>
                   </Link>
-                  <Link href={'https://nest-protocol-82041.medium.com/'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://nest-protocol-82041.medium.com/'} isExternal>
                     <chakra.img src={'/image/Footer/medium_icon.svg'} h={'44px'} w={'44px'}/>
                   </Link>
-                  <Link href={'mailto:hello@nestprotocol.org'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'mailto:hello@nestprotocol.org'} isExternal>
                     <chakra.img src={'/image/Footer/email_icon.svg'} h={'44px'} w={'44px'}/>
                   </Link>
                 </HStack>
