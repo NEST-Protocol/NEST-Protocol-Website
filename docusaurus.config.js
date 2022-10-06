@@ -77,15 +77,15 @@ const config = {
             }
           },
           items: [
-            {to: '/nest-fi', label: 'NEST Fi', position: 'right'},
+            {to: '/nest-fi/', label: 'NEST Fi', position: 'right'},
             {
-              to: '/developers',
+              to: '/developers/',
               position: 'right',
               label: 'Developers',
             },
-            {to: '/docs/Overview/What-is-NEST-Protocol', label: 'Doc', position: 'right'},
-            {to: '/blogs', label: 'Blog', position: 'right'},
-            {to: '/about', label: 'About', position: 'right'},
+            {to: '/docs/Overview/What-is-NEST-Protocol/', label: 'Doc', position: 'right'},
+            {to: '/blogs/', label: 'Blog', position: 'right'},
+            {to: '/about/', label: 'About', position: 'right'},
             {
               type: 'html',
               position: 'right',
