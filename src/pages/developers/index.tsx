@@ -74,7 +74,7 @@ export default function Home(): JSX.Element {
             </Stack>
             <Stack bg={'rgba(255, 255, 255, 0.8)'} direction={"row"} spacing={0}>
               <Stack w={'50%'} align={"center"} justify={"center"}>
-                <chakra.img src={'/image/Developer/03-Flowchart-01.svg'}/>
+                <chakra.img src={'/image/Developer/03-Flowchart-01.svg'} alt={''}/>
               </Stack>
               <Stack w={'50%'} py={'216px'} spacing={'21px'} align={"center"}>
                 <Stack w={'500px'}>
@@ -105,7 +105,7 @@ export default function Home(): JSX.Element {
 
               </Stack>
               <Stack w={'50%'} align={"center"} justify={"center"}>
-                <chakra.img src={'/image/Developer/03-Flowchart-02.svg'}/>
+                <chakra.img src={'/image/Developer/03-Flowchart-02.svg'} alt={''}/>
               </Stack>
             </HStack>
             <Stack h={'138px'}/>
@@ -262,7 +262,7 @@ export default function Home(): JSX.Element {
             </Stack>
           </Stack>
           <Stack align={"center"} bg={'rgba(255,255,255,0.7)'} pb={'35px'}>
-            <chakra.img src={'/image/Developer/03-Phone-flowchart-01.svg'} />
+            <chakra.img src={'/image/Developer/03-Phone-flowchart-01.svg'} alt={''}/>
             <Stack pt={'60px'} align={"center"}>
               <Text fontSize={'16px'} fontWeight={'600'}>NEST PVM</Text>
               <Text fontSize={'12.5px'} fontWeight={'600'} textAlign={"center"}>NEST Probability Virtual Machine (PVM) is<br/>a virtual machine-like structure based on<br/>the basic function library. Developers can<br/>develop various exciting applications based<br/>develop various exciting applications based<br/> virtual machine (EVM) programming.</Text>
@@ -273,7 +273,7 @@ export default function Home(): JSX.Element {
           </Stack>
           <Stack h={'40px'}/>
           <Stack align={"center"} bg={'rgba(255,255,255,0.7)'} pb={'35px'}>
-            <chakra.img src={'/image/Developer/03-Phone-flowchart-02.svg'} />
+            <chakra.img src={'/image/Developer/03-Phone-flowchart-02.svg'} alt={''}/>
             <Stack align={"center"}>
               <Text fontSize={'16px'} fontWeight={'600'}>NEST Oracle</Text>
               <Text fontSize={'12.5px'} fontWeight={'600'} textAlign={"center"}>NEST oracle is the only truly decentralized<br/>oracle on the market today.</Text>
