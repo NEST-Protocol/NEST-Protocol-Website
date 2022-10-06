@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'NEST Protocol',
   tagline: `NEST Protocol is the stochastic computer based on PVM, enables the generation and programming of stochastic assets.`,
-  url: 'https://nestprotocol.org',
+  url: 'https://nestprotocol.org/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
