@@ -36,7 +36,7 @@ export default function NestFi(): JSX.Element {
           <Stack w={'100%'} maxW={'1920px'} h={'100%'} bgPosition={"center"} bgSize={'cover'}
                  bgImage={'/image/NEST_Fi/NESTFi_bg.jpg'} spacing={0}>
             <Stack px={'45px'} h={'88px'} direction={"row"} justifyContent={"space-between"} align={"center"}>
-              <Link rel={'alternate'} hrefLang={'en-gb'} href={'/'}>
+              <Link rel={'alternate'} hrefLang={'en'} href={'/'}>
                 <chakra.img
                   src={"/img/logo.svg"}
                   alt="nest"
@@ -44,11 +44,11 @@ export default function NestFi(): JSX.Element {
                 />
               </Link>
               <Stack direction={"row"} align={"center"} spacing={'24px'} fontWeight={'500'} fontSize={'15px'}>
-                <Link rel={'alternate'} hrefLang={'en-gb'} href={'/nest-fi/'} color={'#EAAA00'} fontWeight={'700'}>NEST Fi</Link>
-                <Link rel={'alternate'} hrefLang={'en-gb'} href={'/developers/'} color={'#003232'}>Developers</Link>
-                <Link rel={'alternate'} hrefLang={'en-gb'} href={'/docs/Overview/What-is-NEST-Protocol/'} color={'#003232'}>Doc</Link>
-                <Link rel={'alternate'} hrefLang={'en-gb'} href={'/blogs/'} color={'#003232'}>Blog</Link>
-                <Link rel={'alternate'} hrefLang={'en-gb'} href={'/about/'} color={'#003232'}>About</Link>
+                <Link rel={'alternate'} hrefLang={'en'} href={'/nest-fi/'} color={'#EAAA00'} fontWeight={'700'}>NEST Fi</Link>
+                <Link rel={'alternate'} hrefLang={'en'} href={'/developers/'} color={'#003232'}>Developers</Link>
+                <Link rel={'alternate'} hrefLang={'en'} href={'/docs/Overview/What-is-NEST-Protocol/'} color={'#003232'}>Doc</Link>
+                <Link rel={'alternate'} hrefLang={'en'} href={'/blogs/'} color={'#003232'}>Blog</Link>
+                <Link rel={'alternate'} hrefLang={'en'} href={'/about/'} color={'#003232'}>About</Link>
                 <Button onClick={() => {
                   window.open('https://finance.nestprotocol.org/', '_blank')
                 }}>
@@ -154,46 +154,46 @@ export default function NestFi(): JSX.Element {
                     align={"start"}>
               <Stack spacing={'40px'} align={"start"}>
                 <Stack spacing={'22px'}>
-                  <Link rel={'alternate'} hrefLang={'en-gb'} fontSize={'15px'} fontWeight={'bold'} href={'https://finance.nestprotocol.org/'} isExternal>Launch
+                  <Link rel={'alternate'} hrefLang={'en'} fontSize={'15px'} fontWeight={'bold'} href={'https://finance.nestprotocol.org/'} isExternal>Launch
                     App</Link>
                   <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Buy futures, options and win NEST</Text>
                 </Stack>
                 <Stack spacing={'22px'}>
-                  <Link rel={'alternate'} hrefLang={'en-gb'} fontSize={'15px'} fontWeight={'bold'} href={'/blogs/'}>NEST Blog</Link>
+                  <Link rel={'alternate'} hrefLang={'en'} fontSize={'15px'} fontWeight={'bold'} href={'/blogs/'}>NEST Blog</Link>
                   <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Latest blogs from NEST</Text>
                 </Stack>
                 <Stack spacing={'22px'}>
-                  <Link rel={'alternate'} hrefLang={'en-gb'} fontSize={'15px'} fontWeight={'bold'} href={'/about/nra/'}>NEST Research Academy</Link>
+                  <Link rel={'alternate'} hrefLang={'en'} fontSize={'15px'} fontWeight={'bold'} href={'/about/nra/'}>NEST Research Academy</Link>
                   <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know about NRA</Text>
                 </Stack>
               </Stack>
               <Stack spacing={'40px'}>
                 <Stack spacing={'22px'}>
-                  <Link rel={'alternate'} hrefLang={'en-gb'} fontSize={'15px'} fontWeight={'bold'} href={'/docs/PVM-Technical-Reference/'}>Developer
+                  <Link rel={'alternate'} hrefLang={'en'} fontSize={'15px'} fontWeight={'bold'} href={'/docs/PVM-Technical-Reference/'}>Developer
                     Docs</Link>
                   <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know how to develop on NEST</Text>
                 </Stack>
                 <Stack spacing={'22px'}>
-                  <Link rel={'alternate'} hrefLang={'en-gb'} fontSize={'15px'} fontWeight={'bold'} href={'/about/faqs/'}>FAQs</Link>
+                  <Link rel={'alternate'} hrefLang={'en'} fontSize={'15px'} fontWeight={'bold'} href={'/about/faqs/'}>FAQs</Link>
                   <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Frequently asked questions</Text>
                 </Stack>
                 <HStack spacing={'24px'}>
-                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://github.com/NEST-Protocol'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en'} href={'https://github.com/NEST-Protocol'} isExternal>
                     <chakra.img src={'/image/Footer/github_icon.svg'} h={'44px'} w={'44px'}/>
                   </Link>
-                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://twitter.com/nest_protocol/'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en'} href={'https://twitter.com/nest_protocol/'} isExternal>
                     <chakra.img src={'/image/Footer/twitter_icon.svg'} h={'44px'} w={'44px'}/>
                   </Link>
-                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://t.me/nest_chat/'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en'} href={'https://t.me/nest_chat/'} isExternal>
                     <chakra.img src={'/image/Footer/telegram_icon.svg'} h={'44px'} w={'44px'}/>
                   </Link>
-                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://nest-protocol-82041.medium.com/'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en'} href={'https://nest-protocol-82041.medium.com/'} isExternal>
                     <chakra.img src={'/image/Footer/medium_icon.svg'} h={'44px'} w={'44px'}/>
                   </Link>
-                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'https://discord.gg/nestprotocol'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en'} href={'https://discord.gg/nestprotocol'} isExternal>
                     <chakra.img src={'/image/Footer/discord_icon.svg'} h={'44px'} w={'44px'}/>
                   </Link>
-                  <Link rel={'alternate'} hrefLang={'en-gb'} href={'mailto:hello@nestprotocol.org'} isExternal>
+                  <Link rel={'alternate'} hrefLang={'en'} href={'mailto:hello@nestprotocol.org'} isExternal>
                     <chakra.img src={'/image/Footer/email_icon.svg'} h={'44px'} w={'44px'}/>
                   </Link>
                 </HStack>
@@ -221,7 +221,7 @@ export default function NestFi(): JSX.Element {
       ) : (
         <Stack h={'100%'} bgImage={'/image/NEST_Fi/02-Phone-bg.jpg'} bgPosition={"center"} bgSize={'cover'}>
           <HStack w={'full'} px={'24px'} py={'20px'}>
-            <Link rel={'alternate'} hrefLang={'en-gb'} href={'/'}>
+            <Link rel={'alternate'} hrefLang={'en'} href={'/'}>
               <chakra.img
                 src={"/img/logo.svg"}
                 alt="nest"
@@ -383,25 +383,25 @@ export default function NestFi(): JSX.Element {
                  align={"start"}>
             <Stack spacing={'40px'} align={"start"} w={'full'}>
               <Stack spacing={'22px'}>
-                <Link rel={'alternate'} hrefLang={'en-gb'} fontSize={'15px'} fontWeight={'bold'} href={'https://finance.nestprotocol.org/'} isExternal>Launch
+                <Link rel={'alternate'} hrefLang={'en'} fontSize={'15px'} fontWeight={'bold'} href={'https://finance.nestprotocol.org/'} isExternal>Launch
                   App</Link>
                 <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Buy futures, options and win NEST</Text>
               </Stack>
               <Stack spacing={'22px'}>
-                <Link rel={'alternate'} hrefLang={'en-gb'} fontSize={'15px'} fontWeight={'bold'} href={'/blogs'}>NEST Blog</Link>
+                <Link rel={'alternate'} hrefLang={'en'} fontSize={'15px'} fontWeight={'bold'} href={'/blogs'}>NEST Blog</Link>
                 <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Latest blogs from NEST</Text>
               </Stack>
               <Stack spacing={'22px'}>
-                <Link rel={'alternate'} hrefLang={'en-gb'} fontSize={'15px'} fontWeight={'bold'} href={'/about/nra/'}>NEST Research Academy</Link>
+                <Link rel={'alternate'} hrefLang={'en'} fontSize={'15px'} fontWeight={'bold'} href={'/about/nra/'}>NEST Research Academy</Link>
                 <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know about NRA</Text>
               </Stack>
               <Stack spacing={'22px'}>
-                <Link rel={'alternate'} hrefLang={'en-gb'} fontSize={'15px'} fontWeight={'bold'} href={'/docs/PVM-Technical-Reference/'}>Developer
+                <Link rel={'alternate'} hrefLang={'en'} fontSize={'15px'} fontWeight={'bold'} href={'/docs/PVM-Technical-Reference/'}>Developer
                   Docs</Link>
                 <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know how to develop on NEST</Text>
               </Stack>
               <Stack spacing={'22px'}>
-                <Link rel={'alternate'} hrefLang={'en-gb'} fontSize={'15px'} fontWeight={'bold'} href={'/about/faqs/'}>FAQs</Link>
+                <Link rel={'alternate'} hrefLang={'en'} fontSize={'15px'} fontWeight={'bold'} href={'/about/faqs/'}>FAQs</Link>
                 <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Frequently asked questions</Text>
               </Stack>
               <Stack spacing={'10px'} w={'full'}>
