@@ -96,9 +96,9 @@ export default function Home(): JSX.Element {
                     market today.</Text>
                   <HStack spacing={'68px'}>
                     <Link rel={'alternate'} hrefLang={'en-gb'} color={'#00A0E9'} fontSize={'15px'} fontWeight={600} isExternal
-                          href={'/docs/Technical-Reference-NEST-Oracle#how-to-mining/'}>How to Mining <ChevronRightIcon/></Link>
+                          href={'/docs/Technical-Reference-NEST-Oracle/#how-to-mining/'}>How to Mining <ChevronRightIcon/></Link>
                     <Link rel={'alternate'} hrefLang={'en-gb'} color={'#00A0E9'} fontSize={'15px'} fontWeight={600} isExternal
-                          href={'/docs/Technical-Reference-NEST-Oracle#how-to-call-price/'}>How to Call
+                          href={'/docs/Technical-Reference-NEST-Oracle/#how-to-call-price'}>How to Call
                       Price <ChevronRightIcon/></Link>
                   </HStack>
                 </Stack>
@@ -277,10 +277,10 @@ export default function Home(): JSX.Element {
             <Stack align={"center"}>
               <Text fontSize={'16px'} fontWeight={'600'}>NEST Oracle</Text>
               <Text fontSize={'12.5px'} fontWeight={'600'} textAlign={"center"}>NEST oracle is the only truly decentralized<br/>oracle on the market today.</Text>
-              <Link rel={'alternate'} hrefLang={'en-gb'} color={'#00A0E9'} fontSize={'12.5px'} fontWeight={'600'} href={'/docs/Technical-Reference-NEST-Oracle#how-to-mining/'} isExternal>
+              <Link rel={'alternate'} hrefLang={'en-gb'} color={'#00A0E9'} fontSize={'12.5px'} fontWeight={'600'} href={'/docs/Technical-Reference-NEST-Oracle/#how-to-mining/'} isExternal>
                 How to Mining <ChevronRightIcon/>
               </Link>
-              <Link rel={'alternate'} hrefLang={'en-gb'} color={'#00A0E9'} fontSize={'12.5px'} fontWeight={'600'} href={'/docs/Technical-Reference-NEST-Oracle/How-to-Call-Price/'} isExternal>
+              <Link rel={'alternate'} hrefLang={'en-gb'} color={'#00A0E9'} fontSize={'12.5px'} fontWeight={'600'} href={'/docs/Technical-Reference-NEST-Oracle/#how-to-call-price'} isExternal>
                 How to Call Price <ChevronRightIcon/>
               </Link>
             </Stack>
