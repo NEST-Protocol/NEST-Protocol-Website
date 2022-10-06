@@ -98,7 +98,7 @@ export default function NRA(): JSX.Element {
                     finance, <br/>economics, game theory, machine
                     learning, computer science, and software engineering.<br/>Those interested, please send your
                     research
-                    proposal (maximum 10 pages) to <br/><Link href={'mailto:nra@nestprotocol.org'} isExternal
+                    proposal (maximum 10 pages) to <br/><Link rel={'alternate'} hrefLang={'en'} href={'mailto:nra@nestprotocol.org'} isExternal
                                                               color={'#00A0E9'}>nra@nestprotocol.org</Link></Text>
                 </Stack>
               </Stack>
@@ -113,7 +113,7 @@ export default function NRA(): JSX.Element {
                     evaluates the work of its
                     researchers in a result-oriented manner with flexibility in terms<br/>of working location and hours.
                     The salary is decided case by case.<br/>Those interested, please send your academic CV
-                    to<br/><Link href={'mailto:nra@nestprotocol.org'} isExternal
+                    to<br/><Link rel={'alternate'} hrefLang={'en'} href={'mailto:nra@nestprotocol.org'} isExternal
                                  color={'#00A0E9'}>nra@nestprotocol.org</Link></Text>
                 </Stack>
               </Stack>

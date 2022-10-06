@@ -97,8 +97,8 @@ Given that PVM supports random variables and their programming in the full proba
       },
       {
         q: "Which Decentralized exchange can I buy NEST on?",
-        a: <Text>CoFiX: <Link isExternal href={"https://bsc.cofix.tech/#/swap"}>https://bsc.cofix.tech/#/swap</Link><br/>
-          Uniswap: <Link href={"https://app.uniswap.org/#/swap?chain=mainnet"}
+        a: <Text>CoFiX: <Link rel={'alternate'} hrefLang={'en'} isExternal href={"https://bsc.cofix.tech/#/swap"}>https://bsc.cofix.tech/#/swap</Link><br/>
+          Uniswap: <Link href={"https://app.uniswap.org/#/swap?chain=mainnet"} rel={'alternate'} hrefLang={'en'}
                          isExternal>https://app.uniswap.org/#/swap?chain=mainnet</Link><br/>
           PancakeSwap: <Link href={"https://pancakeswap.finance/swap"} isExternal>https://pancakeswap.finance/swap</Link></Text>
       },
@@ -135,9 +135,9 @@ BNB: 0x98f8669f6481ebb341b522fcd3663f79a3d1a6a7
       <Stack w={'100%'} align={"center"} px={['24px', '48px']} spacing={0} pb={'24px'}>
         <Stack maxW={'1440px'} w={'100%'} hidden={!isDesktop}>
           <HStack fontWeight={'600'}>
-            <Link fontSize={'15px'} color={'#00A0E9'} href={'/about/'}>About</Link>
+            <Link rel={'alternate'} hrefLang={'en'} fontSize={'15px'} color={'#00A0E9'} href={'/about/'}>About</Link>
             <ChevronRightIcon color={'#00A0E9'}/>
-            <Link fontSize={'15px'} color={'#00A0E9'} href={'/about/faqs/'}>FAQs</Link>
+            <Link rel={'alternate'} hrefLang={'en'} fontSize={'15px'} color={'#00A0E9'} href={'/about/faqs/'}>FAQs</Link>
           </HStack>
         </Stack>
         <HStack maxW={'1048px'} w={'100%'} align={"start"} spacing={['0px', '30px']}>
@@ -166,9 +166,9 @@ BNB: 0x98f8669f6481ebb341b522fcd3663f79a3d1a6a7
           <Stack w={'150px'} pt={'64px'} position={"sticky"} hidden={!isDesktop} top={0}>
             <Text fontSize={'15px'} fontWeight={'700'} mb={0}>Sections</Text>
             <Stack spacing={0} fontSize={'15px'} fontWeight={'500'}>
-              <Link href={'#nest-concepts'} color={"#003232"}>NEST Concepts</Link>
-              <Link href={'#trading-related'} color={"#003232"}>Trading Related</Link>
-              <Link href={'#contract-issues'} color={"#003232"}>Contract Issues</Link>
+              <Link rel={'alternate'} hrefLang={'en'} href={'#nest-concepts'} color={"#003232"}>NEST Concepts</Link>
+              <Link rel={'alternate'} hrefLang={'en'} href={'#trading-related'} color={"#003232"}>Trading Related</Link>
+              <Link rel={'alternate'} hrefLang={'en'} href={'#contract-issues'} color={"#003232"}>Contract Issues</Link>
             </Stack>
           </Stack>
         </HStack>

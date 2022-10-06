@@ -273,7 +273,7 @@ const About = () => {
                 Coindesk, Consensus, and others.
               </Text>
               <HStack spacing={'44px'} align={"center"} justify={"center"}>
-                <Link color={'#00A0E9'} fontWeight={600} fontSize={12} href={'/about/nra/'}>
+                <Link rel={'alternate'} hrefLang={'en'} color={'#00A0E9'} fontWeight={600} fontSize={12} href={'/about/nra/'}>
                   NRA <ChevronRightIcon/>
                 </Link>
               </HStack>
