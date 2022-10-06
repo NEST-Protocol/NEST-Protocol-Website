@@ -378,7 +378,7 @@ export default function Home(): JSX.Element {
               </HStack>
               <Box pt={'20px'}>
                 <Button variant={'outline'} onClick={() => {
-                  window.open('/blogs')
+                  window.open('/blogs/')
                 }}>
                   More
                 </Button>
