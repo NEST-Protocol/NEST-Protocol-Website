@@ -299,7 +299,7 @@ export default function Home(): JSX.Element {
                   <Stack align={"center"}>
                     <AiOutlineGithub fontSize={'48px'} color={'#003232'}/>
                   </Stack>
-                  <Link rel={'alternate'} hrefLang={'en'} href={'/developers'}>For developers <ChevronRightIcon/></Link>
+                  <Link rel={'alternate'} hrefLang={'en'} href={'/developers/'}>For developers <ChevronRightIcon/></Link>
                 </Stack>
               </HStack>
               <Stack spacing={'60px'} align={"center"}>
