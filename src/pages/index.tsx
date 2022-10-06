@@ -754,7 +754,7 @@ export default function Home(): JSX.Element {
             </Stack>
             <Stack>
               <Button variant={'outline'} onClick={() => {
-                window.open('/blogs')
+                window.open('/blogs/')
               }}>More</Button>
             </Stack>
           </Stack>
