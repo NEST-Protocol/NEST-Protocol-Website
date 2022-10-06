@@ -148,22 +148,22 @@ export default function NRA(): JSX.Element {
                 </Stack>
                 <HStack spacing={'24px'}>
                   <Link rel={'alternate'} hrefLang={'en'} href={'https://github.com/NEST-Protocol'} isExternal>
-                    <chakra.img src={'/image/Footer/github_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/github_icon.svg'} h={'44px'} w={'44px'} alt={'github_icon'}/>
                   </Link>
                   <Link rel={'alternate'} hrefLang={'en'} href={'https://twitter.com/nest_protocol/'} isExternal>
-                    <chakra.img src={'/image/Footer/twitter_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/twitter_icon.svg'} h={'44px'} w={'44px'} alt={'twitter_icon.svg'}/>
                   </Link>
                   <Link rel={'alternate'} hrefLang={'en'} href={'https://t.me/nest_chat/'} isExternal>
-                    <chakra.img src={'/image/Footer/telegram_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/telegram_icon.svg'} h={'44px'} w={'44px'} alt={'telegram_icon'}/>
                   </Link>
                   <Link rel={'alternate'} hrefLang={'en'} href={'https://nest-protocol-82041.medium.com/'} isExternal>
-                    <chakra.img src={'/image/Footer/medium_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/medium_icon.svg'} h={'44px'} w={'44px'} alt={'medium'}/>
                   </Link>
                   <Link rel={'alternate'} hrefLang={'en'} href={'https://discord.gg/nestprotocol'} isExternal>
-                    <chakra.img src={'/image/Footer/discord_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/discord_icon.svg'} h={'44px'} w={'44px'} alt={'discord'}/>
                   </Link>
                   <Link rel={'alternate'} hrefLang={'en'} href={'mailto:hello@nestprotocol.org'} isExternal>
-                    <chakra.img src={'/image/Footer/email_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/email_icon.svg'} h={'44px'} w={'44px'} alt={'email'}/>
                   </Link>
                 </HStack>
               </Stack>
@@ -375,24 +375,24 @@ export default function NRA(): JSX.Element {
               <Stack w={'full'} align={"center"} spacing={'12px'}>
                 <HStack spacing={'40px'}>
                   <Link rel={'alternate'} hrefLang={'en'} href={'https://discord.gg/nestprotocol'} isExternal>
-                    <chakra.img src={'/image/Footer/discord_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/discord_icon.svg'} h={'44px'} w={'44px'} alt={'discord'}/>
                   </Link>
                   <Link rel={'alternate'} hrefLang={'en'} href={'https://github.com/NEST-Protocol'} isExternal>
-                    <chakra.img src={'/image/Footer/github_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/github_icon.svg'} h={'44px'} w={'44px'} alt={'github_icon'}/>
                   </Link>
                   <Link rel={'alternate'} hrefLang={'en'} href={'https://twitter.com/nest_protocol/'} isExternal>
-                    <chakra.img src={'/image/Footer/twitter_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/twitter_icon.svg'} h={'44px'} w={'44px'} alt={'twitter_icon.svg'}/>
                   </Link>
                 </HStack>
                 <HStack spacing={'40px'}>
                   <Link rel={'alternate'} hrefLang={'en'} href={'https://t.me/nest_chat/'} isExternal>
-                    <chakra.img src={'/image/Footer/telegram_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/telegram_icon.svg'} h={'44px'} w={'44px'} alt={'telegram_icon'}/>
                   </Link>
                   <Link rel={'alternate'} hrefLang={'en'} href={'https://nest-protocol-82041.medium.com/'} isExternal>
-                    <chakra.img src={'/image/Footer/medium_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/medium_icon.svg'} h={'44px'} w={'44px'} alt={'medium'}/>
                   </Link>
                   <Link href={'mailto:hello@nestprotocol.org'} isExternal>
-                    <chakra.img src={'/image/Footer/email_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/email_icon.svg'} h={'44px'} w={'44px'} alt={'email'}/>
                   </Link>
                 </HStack>
               </Stack>

@@ -179,22 +179,22 @@ export default function NestFi(): JSX.Element {
                 </Stack>
                 <HStack spacing={'24px'}>
                   <Link rel={'alternate'} hrefLang={'en'} href={'https://github.com/NEST-Protocol'} isExternal>
-                    <chakra.img src={'/image/Footer/github_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/github_icon.svg'} h={'44px'} w={'44px'} alt={'github_icon'}/>
                   </Link>
                   <Link rel={'alternate'} hrefLang={'en'} href={'https://twitter.com/nest_protocol/'} isExternal>
-                    <chakra.img src={'/image/Footer/twitter_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/twitter_icon.svg'} h={'44px'} w={'44px'} alt={'twitter_icon.svg'}/>
                   </Link>
                   <Link rel={'alternate'} hrefLang={'en'} href={'https://t.me/nest_chat/'} isExternal>
-                    <chakra.img src={'/image/Footer/telegram_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/telegram_icon.svg'} h={'44px'} w={'44px'} alt={'telegram_icon'}/>
                   </Link>
                   <Link rel={'alternate'} hrefLang={'en'} href={'https://nest-protocol-82041.medium.com/'} isExternal>
-                    <chakra.img src={'/image/Footer/medium_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/medium_icon.svg'} h={'44px'} w={'44px'} alt={'medium'}/>
                   </Link>
                   <Link rel={'alternate'} hrefLang={'en'} href={'https://discord.gg/nestprotocol'} isExternal>
-                    <chakra.img src={'/image/Footer/discord_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/discord_icon.svg'} h={'44px'} w={'44px'} alt={'discord'}/>
                   </Link>
                   <Link rel={'alternate'} hrefLang={'en'} href={'mailto:hello@nestprotocol.org'} isExternal>
-                    <chakra.img src={'/image/Footer/email_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/email_icon.svg'} h={'44px'} w={'44px'} alt={'email'}/>
                   </Link>
                 </HStack>
               </Stack>
@@ -299,7 +299,7 @@ export default function NestFi(): JSX.Element {
           </Stack>
           <Stack align={"center"} py={'40px'} bg={'rgba(255,255,255,0.7)'}>
             <Text fontWeight={'bold'} fontSize={'25px'}>What is OMM?</Text>
-            <chakra.img src={'/image/NEST_Fi/02-icon-01@2x.png'} w={'50px'} py={'40px'}/>
+            <chakra.img src={'/image/NEST_Fi/02-icon-01@2x.png'} w={'50px'} py={'40px'} alt={''}/>
             <Text fontSize={'16px'} fontWeight={'bold'} textAlign={"center"}>From P2P to OMM, <br/>a new settlement
               paradigm</Text>
             <Text fontSize={'12.5px'} fontWeight={600} textAlign={"center"}>OMM(Omnipotent Market Maker) is<br/>a new
@@ -319,7 +319,7 @@ export default function NestFi(): JSX.Element {
             <Text fontSize={'25px'} fontWeight={'bold'}>What does OMM solve?</Text>
             <Stack px={'24px'} pt={'38px'} w={'full'}>
               <Stack px={'33px'} bg={'white'} borderRadius={'20px'} align={"center"} pt={'50px'}>
-                <chakra.img src={'/image/NEST_Fi/02-icon-02@2x.png'} w={'150px'}/>
+                <chakra.img src={'/image/NEST_Fi/02-icon-02@2x.png'} w={'150px'} alt={''}/>
                 <Stack py={'50px'} w={'full'}>
                   <Text fontWeight={'bold'} fontSize={'16px'}>Valid Settlement</Text>
                   <Text fontWeight={'600'} fontSize={'12.5px'}>ETH cannot make valid settlement for<br/>all
@@ -330,7 +330,7 @@ export default function NestFi(): JSX.Element {
             <Stack px={'24px'} py={'24px'} w={'full'}>
               <Stack px={'33px'} pt={'50px'} bg={'white'} borderRadius={'20px'} align={"center"}>
                 <Stack>
-                  <chakra.img src={'/image/NEST_Fi/02-icon-03@2x.png'} w={'68px'}/>
+                  <chakra.img src={'/image/NEST_Fi/02-icon-03@2x.png'} w={'68px'} alt={''}/>
                 </Stack>
                 <Stack py={'50px'} w={'full'}>
                   <Text fontWeight={'bold'} fontSize={'16px'}>Market Clearing</Text>
@@ -342,7 +342,7 @@ export default function NestFi(): JSX.Element {
             <Stack px={'24px'} w={'full'}>
               <Stack px={'33px'} pt={'50px'} bg={'white'} borderRadius={'20px'} align={"center"}>
                 <Stack>
-                  <chakra.img src={'/image/NEST_Fi/02-icon-04@2x.png'} w={'68px'}/>
+                  <chakra.img src={'/image/NEST_Fi/02-icon-04@2x.png'} w={'68px'} alt={''}/>
                 </Stack>
                 <Stack py={'50px'} w={'full'}>
                   <Text fontWeight={'bold'} fontSize={'16px'}>Infinite Liquidity</Text>
@@ -353,7 +353,7 @@ export default function NestFi(): JSX.Element {
             </Stack>
           </Stack>
           <Stack align={"center"} pt={'62px'}>
-            <chakra.img src={'/image/NEST_Fi/iPhone_1.webp'} w={'180px'}/>
+            <chakra.img src={'/image/NEST_Fi/iPhone_1.webp'} w={'180px'} alt={''}/>
           </Stack>
           <Stack align={"center"} bg={'rgba(255,255,255, 0.8)'} py={'30px'}>
             <Text fontWeight={'600'} fontSize={'16px'}>NEST FI - Futures</Text>
@@ -366,7 +366,7 @@ export default function NestFi(): JSX.Element {
             </Stack>
           </Stack>
           <Stack align={"center"} py={'40px'}>
-            <chakra.img src={'/image/NEST_Fi/iPhone_2.webp'} w={'180px'}/>
+            <chakra.img src={'/image/NEST_Fi/iPhone_2.webp'} w={'180px'} alt={''}/>
           </Stack>
           <Stack align={"center"} bg={'rgba(255,255,255, 0.8)'} py={'30px'}>
             <Text fontWeight={'600'} fontSize={'16px'}>NEST FI - Options</Text>
@@ -417,24 +417,24 @@ export default function NestFi(): JSX.Element {
               <Stack w={'full'} align={"center"} spacing={'12px'}>
                 <HStack spacing={'40px'}>
                   <Link href={'https://discord.gg/nestprotocol'} isExternal>
-                    <chakra.img src={'/image/Footer/discord_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/discord_icon.svg'} h={'44px'} w={'44px'} alt={'discord'}/>
                   </Link>
                   <Link href={'https://github.com/NEST-Protocol'} isExternal>
-                    <chakra.img src={'/image/Footer/github_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/github_icon.svg'} h={'44px'} w={'44px'} alt={'github_icon'}/>
                   </Link>
                   <Link href={'https://twitter.com/nest_protocol/'} isExternal>
-                    <chakra.img src={'/image/Footer/twitter_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/twitter_icon.svg'} h={'44px'} w={'44px'} alt={'twitter_icon.svg'}/>
                   </Link>
                 </HStack>
                 <HStack spacing={'40px'}>
                   <Link href={'https://t.me/nest_chat/'} isExternal>
-                    <chakra.img src={'/image/Footer/telegram_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/telegram_icon.svg'} h={'44px'} w={'44px'} alt={'telegram_icon'}/>
                   </Link>
                   <Link href={'https://nest-protocol-82041.medium.com/'} isExternal>
-                    <chakra.img src={'/image/Footer/medium_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/medium_icon.svg'} h={'44px'} w={'44px'} alt={'medium'}/>
                   </Link>
                   <Link href={'mailto:hello@nestprotocol.org'} isExternal>
-                    <chakra.img src={'/image/Footer/email_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/email_icon.svg'} h={'44px'} w={'44px'} alt={'email'}/>
                   </Link>
                 </HStack>
               </Stack>
