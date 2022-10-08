@@ -20,6 +20,7 @@ import {AiOutlineTwitter, AiOutlineGithub} from "react-icons/ai";
 import {FaTelegramPlane} from "react-icons/fa";
 import Head from "@docusaurus/Head";
 import {useLocation} from "@docusaurus/router";
+import gtag from 'ga-gtag'
 
 export const menu = [
   {name: 'NEST Fi', pathname: '/nest-fi/'},
@@ -122,6 +123,9 @@ export default function Home(): JSX.Element {
                 <Link href={'/blogs/'}>Blog</Link>
                 <Link href={'/about/'}>About</Link>
                 <Button onClick={() => {
+                  gtag('event', 'clickApp', {
+                    'from': 'desktop header'
+                  })
                   window.open('https://finance.nestprotocol.org/', '_blank')
                 }}>
                   App
@@ -136,6 +140,9 @@ export default function Home(): JSX.Element {
                   based on PVM,<br/>enables the generation and programming of stochastic assets.</Text>
                 <HStack justify={"center"}>
                   <Button w={'160px'} minH={'44px'} fontSize={'25px'} onClick={() => {
+                    gtag('event', 'clickApp2', {
+                      'from': 'desktop page'
+                    })
                     window.open('https://finance.nestprotocol.org/', '_blank')
                   }}>
                     App
@@ -586,6 +593,9 @@ export default function Home(): JSX.Element {
                       px={'70px'}
                       minW={'120px'}
                       onClick={() => {
+                        gtag('event', 'clickApp', {
+                          'from': 'phone header'
+                        })
                         window.open('https://finance.nestprotocol.org/', '_blank')
                       }}
                     >
