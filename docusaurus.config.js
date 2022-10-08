@@ -53,8 +53,8 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-        googleAnalytics: {
-          trackingID: "G-ELV55124T4",
+        gtag: {
+          trackingID: 'G-ELV55124T4',
           anonymizeIP: false,
         },
         sitemap: {
