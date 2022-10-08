@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {
   ChakraProvider,
   Text,
@@ -20,7 +20,7 @@ import {AiOutlineTwitter, AiOutlineGithub} from "react-icons/ai";
 import {FaTelegramPlane} from "react-icons/fa";
 import Head from "@docusaurus/Head";
 import {useLocation} from "@docusaurus/router";
-import gtag from 'ga-gtag'
+import gtag, {install} from 'ga-gtag'
 
 export const menu = [
   {name: 'NEST Fi', pathname: '/nest-fi/'},
@@ -95,6 +95,10 @@ export default function Home(): JSX.Element {
                         h={isDesktop ? '45px' : '28px'}/>
     },
   ]
+
+  useEffect(() => {
+    install('G-ELV55124T4');
+  }, [])
 
   return (
     <ChakraProvider theme={theme}>
