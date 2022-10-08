@@ -145,7 +145,7 @@ export default function News(): JSX.Element {
                   alignItems={isDesktop ? 'center' : 'start'}
                   justifyContent={'start'}
                 >
-                  <Link rel={'alternate'} hrefLang={'en'}
+                  <Link
                     isExternal
                     href={item.link}
                     style={{textDecoration: 'none'}}
@@ -158,7 +158,7 @@ export default function News(): JSX.Element {
                   >
                     {item.label}
                   </Link>
-                  <Link rel={'alternate'} hrefLang={'en'}
+                  <Link
                     isExternal
                     href={item.link}
                     style={{textDecoration: 'none'}}

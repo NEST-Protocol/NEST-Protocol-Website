@@ -28,14 +28,17 @@ const Faqs = () => {
 
   const Content = () => {
     const nest_concepts = [
-      {q: "What is NEST?",
+      {
+        q: "What is NEST?",
         a: <Text>NEST Protocol creatively introduces random information flow with a decentralized oracle and tokenizes
-          random information flow through the OMM (omnipotent market maker) mechanism, generating many stochastic assets.
+          random information flow through the OMM (omnipotent market maker) mechanism, generating many stochastic
+          assets.
           The NEST PVM (probabilistic virtual machine), based on basic functions, can program stochastic assets, which
           applies to a large number of real-world scenarios. An inherent cost mechanism ensures the system supply
           converges, resulting in a new universal coin with an innate price appreciation logic. The NEST coin provides a
-          whole new development tool and is a creative new asset for the blockchain world.<br/><br/>Check the <Link rel={'alternate'} hrefLang={'en'}
-            href={'/doc/ennestwhitepaper.pdf'} isExternal textDecoration={"underline"}>whitepaper</Link> for more detail.</Text>
+          whole new development tool and is a creative new asset for the blockchain world.<br/><br/>Check the <Link
+            href={'/doc/ennestwhitepaper.pdf'} isExternal textDecoration={"underline"}>whitepaper</Link> for more
+          detail.</Text>
       },
       {
         q: "What is Truly Decentralized Gaming Oracle?", a: `If any part of the decentralized system is centralized, the entire system is said to be centralized. Only a truly decentralized oracle can develop truly decentralized applications or assets. The NEST oracle is completely open and free of charge, allowing miners and arbitrageurs to verify prices based on gaming, and it solves the on-chain price problem via a decentralized incentive scheme. 
@@ -77,30 +80,32 @@ Given that PVM supports random variables and their programming in the full proba
     const trading_relates = [
       {
         q: "Which Centralized exchange can I buy NEST on?",
-        a: <Text>1. Huobi Global: <Link rel={'alternate'} hrefLang={'en'} href={" https://www.huobi.com/"} isExternal> https://www.huobi.com/</Link><br/>
-          2. Gate.io：<Link rel={'alternate'} hrefLang={'en'} href="https://www.gate.io/tw" isExternal>https://www.gate.io/tw</Link><br/>
-          3. Coinone：<Link rel={'alternate'} hrefLang={'en'} href={"https://coinone.co.kr/"} isExternal>https://coinone.co.kr/</Link><br/>
-          4. Bibox：<Link rel={'alternate'} hrefLang={'en'} href={"https://www.bibox.pro/"} isExternal>https://www.bibox.pro/</Link><br/>
-          5. MXC：<Link rel={'alternate'} hrefLang={'en'} href={"https://www.mxc.ai/"} isExternal>https://www.mxc.ai/</Link><br/>
-          6. Hotbit：<Link rel={'alternate'} hrefLang={'en'} href={"https://www.hotbit.pro/"} isExternal>https://www.hotbit.pro/</Link><br/>
-          7. Jubi: <Link rel={'alternate'} hrefLang={'en'} href={"https://www.jbex.com/"} isExternal>https://www.jbex.com/</Link><br/>
-          8. Hoo: <Link rel={'alternate'} hrefLang={'en'} href={"https://hoo.com/"} isExternal>https://hoo.com/</Link><br/>
-          9. CoinW: <Link rel={'alternate'} hrefLang={'en'} href={"https://www.coinw.com/"} isExternal>https://www.coinw.com/</Link><br/>
-          10. Dcoin: <Link rel={'alternate'} hrefLang={'en'} href={"https://dcoin.co/"} isExternal>https://dcoin.co/</Link><br/>
-          11. ZT Global：<Link rel={'alternate'} hrefLang={'en'} href={"https://www.ztb.com/"} isExternal>https://www.ztb.com/</Link><br/>
-          12. AEX：<Link rel={'alternate'} hrefLang={'en'} href={"https://www.aex.com/"} isExternal>https://www.aex.com/</Link><br/>
-          13. BKEX：<Link rel={'alternate'} hrefLang={'en'} href={"https://www.bkex.com/"} isExternal>https://www.bkex.com/</Link><br/>
-          14. Dsdaq：<Link rel={'alternate'} hrefLang={'en'} href={"https://www.dsdaq.com/"} isExternal>https://www.dsdaq.com/</Link><br/>
-          15. Pionex：<Link rel={'alternate'} hrefLang={'en'} href={"https://www.pionex.com/en-US/"} isExternal>https://www.pionex.com/en-US/</Link><br/>
+        a: <Text>1. Huobi Global: <Link href={" https://www.huobi.com/"} isExternal> https://www.huobi.com/</Link><br/>
+          2. Gate.io：<Link href="https://www.gate.io/tw" isExternal>https://www.gate.io/tw</Link><br/>
+          3. Coinone：<Link href={"https://coinone.co.kr/"} isExternal>https://coinone.co.kr/</Link><br/>
+          4. Bibox：<Link href={"https://www.bibox.pro/"} isExternal>https://www.bibox.pro/</Link><br/>
+          5. MXC：<Link href={"https://www.mxc.ai/"} isExternal>https://www.mxc.ai/</Link><br/>
+          6. Hotbit：<Link href={"https://www.hotbit.pro/"} isExternal>https://www.hotbit.pro/</Link><br/>
+          7. Jubi: <Link href={"https://www.jbex.com/"} isExternal>https://www.jbex.com/</Link><br/>
+          8. Hoo: <Link href={"https://hoo.com/"} isExternal>https://hoo.com/</Link><br/>
+          9. CoinW: <Link href={"https://www.coinw.com/"} isExternal>https://www.coinw.com/</Link><br/>
+          10. Dcoin: <Link href={"https://dcoin.co/"} isExternal>https://dcoin.co/</Link><br/>
+          11. ZT Global：<Link href={"https://www.ztb.com/"} isExternal>https://www.ztb.com/</Link><br/>
+          12. AEX：<Link href={"https://www.aex.com/"} isExternal>https://www.aex.com/</Link><br/>
+          13. BKEX：<Link href={"https://www.bkex.com/"} isExternal>https://www.bkex.com/</Link><br/>
+          14. Dsdaq：<Link href={"https://www.dsdaq.com/"} isExternal>https://www.dsdaq.com/</Link><br/>
+          15. Pionex：<Link href={"https://www.pionex.com/en-US/"} isExternal>https://www.pionex.com/en-US/</Link><br/>
           16. CoFiX：<Link href={"https://bsc.cofix.tech/#/swap"} isExternal>https://bsc.cofix.tech/#/swap</Link><br/>
         </Text>
       },
       {
         q: "Which Decentralized exchange can I buy NEST on?",
-        a: <Text>CoFiX: <Link rel={'alternate'} hrefLang={'en'} isExternal href={"https://bsc.cofix.tech/#/swap"}>https://bsc.cofix.tech/#/swap</Link><br/>
-          Uniswap: <Link href={"https://app.uniswap.org/#/swap?chain=mainnet"} rel={'alternate'} hrefLang={'en'}
+        a: <Text>CoFiX: <Link isExternal
+                              href={"https://bsc.cofix.tech/#/swap"}>https://bsc.cofix.tech/#/swap</Link><br/>
+          Uniswap: <Link href={"https://app.uniswap.org/#/swap?chain=mainnet"}
                          isExternal>https://app.uniswap.org/#/swap?chain=mainnet</Link><br/>
-          PancakeSwap: <Link href={"https://pancakeswap.finance/swap"} isExternal>https://pancakeswap.finance/swap</Link></Text>
+          PancakeSwap: <Link href={"https://pancakeswap.finance/swap"}
+                             isExternal>https://pancakeswap.finance/swap</Link></Text>
       },
       {
         q: "How to convert NEST tokens from BSC to Ethereum?",
@@ -135,9 +140,9 @@ BNB: 0x98f8669f6481ebb341b522fcd3663f79a3d1a6a7
       <Stack w={'100%'} align={"center"} px={['24px', '48px']} spacing={0} pb={'24px'}>
         <Stack maxW={'1440px'} w={'100%'} hidden={!isDesktop}>
           <HStack fontWeight={'600'}>
-            <Link rel={'alternate'} hrefLang={'en'} fontSize={'15px'} color={'#00A0E9'} href={'/about/'}>About</Link>
+            <Link fontSize={'15px'} color={'#00A0E9'} href={'/about/'}>About</Link>
             <ChevronRightIcon color={'#00A0E9'}/>
-            <Link rel={'alternate'} hrefLang={'en'} fontSize={'15px'} color={'#00A0E9'} href={'/about/faqs/'}>FAQs</Link>
+            <Link fontSize={'15px'} color={'#00A0E9'} href={'/about/faqs/'}>FAQs</Link>
           </HStack>
         </Stack>
         <HStack maxW={'1048px'} w={'100%'} align={"start"} spacing={['0px', '30px']}>
@@ -166,9 +171,9 @@ BNB: 0x98f8669f6481ebb341b522fcd3663f79a3d1a6a7
           <Stack w={'150px'} pt={'64px'} position={"sticky"} hidden={!isDesktop} top={0}>
             <Text fontSize={'15px'} fontWeight={'700'} mb={0}>Sections</Text>
             <Stack spacing={0} fontSize={'15px'} fontWeight={'500'}>
-              <Link rel={'alternate'} hrefLang={'en'} href={'#nest-concepts'} color={"#003232"}>NEST Concepts</Link>
-              <Link rel={'alternate'} hrefLang={'en'} href={'#trading-related'} color={"#003232"}>Trading Related</Link>
-              <Link rel={'alternate'} hrefLang={'en'} href={'#contract-issues'} color={"#003232"}>Contract Issues</Link>
+              <Link href={'#nest-concepts'} color={"#003232"}>NEST Concepts</Link>
+              <Link href={'#trading-related'} color={"#003232"}>Trading Related</Link>
+              <Link href={'#contract-issues'} color={"#003232"}>Contract Issues</Link>
             </Stack>
           </Stack>
         </HStack>

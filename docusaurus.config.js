@@ -24,6 +24,11 @@ const config = {
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
+    localeConfigs: {
+      en: {
+        htmlLang: 'en-GB',
+      }
+    }
   },
   trailingSlash: true,
   presets: [
