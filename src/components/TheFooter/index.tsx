@@ -49,10 +49,10 @@ const TheFooter = () => {
                 <VStack spacing={'20px'} align={"start"}>
                   <Text fontWeight={"700"} color={'#003232'}
                         cursor={"pointer"} onClick={() => {
-                    window.location.pathname = '/news'
+                    window.location.pathname = '/blogs/'
                   }}
-                  >NEST News</Text>
-                  <Text color={'#7D7D7D'} fontWeight={'600'}>Latest news from NEST</Text>
+                  >NEST Blog</Text>
+                  <Text color={'#7D7D7D'} fontWeight={'600'}>Latest blogs from NEST</Text>
                 </VStack>
                 <VStack spacing={'20px'} align={"start"}>
                   <Text fontWeight={"700"} color={'#003232'} cursor={"pointer"} onClick={() => {
