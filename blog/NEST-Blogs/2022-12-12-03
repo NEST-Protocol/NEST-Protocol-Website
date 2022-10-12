@@ -1,0 +1,22 @@
+---
+slug: How-should-we-understand-decentralized-systems
+title: How should we understand decentralized systems 
+authors: [nest-protocol]
+tags: [blogs]
+---
+
+# How should we understand decentralized systems？
+
+Blockchain technology builds a decentralized world. Imagine: a complete network that doesn't depend on any individual, regardless of time, with contracts, AI, and other things on it interacting frequently. Value flows between them, but not only is there no middleman in the process, it doesn't even need to be operated. Information and data automatically get to where they're supposed to go, and all it takes is for you to hit a line of code. What people agree to do will definitely happen even 500 years from now. What kind of amazing world is this? If this does not represent progress, what else can?
+
+However, the decentralized world is not easy to build and understand. And there’s a strict rule, which we propose as the decentralization first principle: in the whole process of value exchange, as long as there is one process that is centralized, the whole process is centralized.
+
+The idea of centralization always interferes with your perception of decentralization. There is a need to find some criteria to judge whether something is decentralized or not, just like judging the color of gold. According to the economic formulation, the difference between centralization and decentralization lies in the inclusion of some kind of individual or organizational agency risk. Risk means that if these individuals or organizations do not act according to the principal's wishes, the principal may suffer losses. In a decentralized process, there is only trust in the mechanism and the code, and no dependence on a specific individual or organization. This feature inspired us to propose the first principle of decentralization: in the whole process of value exchange, as long as there is one link that is centralized, the whole process is centralized.
+
+This seemingly simple conclusion is actually very powerful, and can directly test the merits of all self-proclaimed decentralized projects on the market: whether they are as decentralized as they claim to be or not. You can try to find out the "centralization" of any one of them from one project to another - even if you only have the power to upload and download but not to modify (such as some off-chain aggregation with zero knowledge proof), it is centralized because you can refuse to perform.
+
+No matter how advanced you seem to be in smart contract development, or use the so-called blocks and chains, as long as there is centralized control, it is centralized. Do not just advertise as decentralized. For example, Makerdao (which directly controls the important parameters of the contract: price variables), as well as bZx, which claims to freeze user assets, and various private chains, and even most of the nodes are in their own hands but externally claimed distributed DPOS public chain. These can only be described as blockchain or smart contract applications, not decentralized systems, because their creators can exercise artificial control over the assets on the chain or important variables on the chain. Of course, in order for this control to be less obverse, it is usually claimed that they use multi-signature or decentralized node arrangements. These are not self-certifying if they cannot be open source, or joined without audit, and are therefore classified as centralized rather than weakly decentralized.
+
+The first principle of decentralization is so important and simple, yet no one in the industry has seriously bothered to refine and appeal to this as a judgment criterion. It is mainly because more and more project parties are carrying out various centralization operations, as well as some so-called realists have adopted a compromise attitude and do not care about the decentralization success of projects, nor do they classify and standardize them, which is a huge loss and drain on the industry.
+
+In fact, of all the blockchain innovations, the truly disruptive idea is the insistence on decentralization like NEST's oracle machine. It's not just Satoshi Nakamoto's whimsy, it's also a set-up for the survival of a whole new technology network that gives pure technology creation a self-evolving "life". The exploration of this direction has just begun, and we are easily moving towards eclecticism, which is a lazy attitude in the face of difficulties, and speculative idea in the industry chaos that needs to be guarded against.
