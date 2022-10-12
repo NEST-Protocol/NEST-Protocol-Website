@@ -114,7 +114,6 @@ const config = {
             name: "twitter:description",
             content: "NEST Protocol is the stochastic computer based on PVM, enables the generation and programming of stochastic assets."
           },
-          {name: "twitter:image", content: "https://nestprotocol.org/img/twitter-card.jpg"},
           {name: "og:url", content: "https://nestprotocol.org/"},
           {name: "og:title", content: "NEST Protocol"},
           {name: "og:type", content: "website"},
