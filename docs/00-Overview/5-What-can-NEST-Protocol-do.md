@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# What can NEST Protocol do？
+# What can NEST Protocol do?
 
 [NEST Protocol](https://nestprotocol.org/docs/Overview/What-is-NEST-Protocol) can be simplified to a production and programming system for [stochastic assets](https://nestprotocol.org/docs/Concept/stochastic-assets). This not only solves the derivatives settlement problem that ETH cannot accomplish but also dramatically simplifies the development process of Defi and Gamefi. It also avoids the problem of running a new unit of value while developing a project, allowing developers to focus on application development rather than token liquidity operations.
 

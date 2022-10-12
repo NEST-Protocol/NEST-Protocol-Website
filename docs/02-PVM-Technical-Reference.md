@@ -9,7 +9,7 @@ NEST [PVM](https://nestprotocol.org/docs/Concept/PVM) offers a variety of contra
 The contract functions already available are futures, options. 
 
 
-This article is divided into 3 parts：
+This article is divided into 3 parts:
 - [Contract details](https://nestprotocol.org/docs/PVM-Technical-Reference#contract)
 - [Contract Address](https://nestprotocol.org/docs/PVM-Technical-Reference#contract-address)
 - [Error Codes](https://nestprotocol.org/docs/PVM-Technical-Reference#error-codes)

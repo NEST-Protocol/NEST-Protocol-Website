@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # OMM(Omnipotent Market Maker)
 
-## What is OMM？
+## What is OMM?
 **OMM(Omnipotent Market Maker) is a new trading and settlement paradigm: everyone trades and settles stochastic assets with NEST system rather than individuals.**
 
 OMM obeys the following two laws:
@@ -18,7 +18,7 @@ The system is deflationary, and the holder becomes the overall risk taker as OMM
 The trader gets that stochastic assets by paying a definite cost ( at least equal to the expected value of the stochastic assets, first constraint: c(X) ≥ E(X) ) or gets another stochastic asset by destroying a stochastic asset with a higher expected value( Second constraint: E(X) ≥ E(F(X))
 ). The OMM clears the market with each trader. This is why OMM is referred to as “omnipotent”. Based on the law of large numbers, OMM can aggregate all trades, eliminate individual system shocks, achieve system deflation, and distribute risk among token holders.
 
-## What does OMM solve？
+## What does OMM solve?
 The OMM mechanism creates an efficient market.
 1.	Valid Settlement. OMM can structure atomic liquidation, which means that all excess return can be Settled.
 2.	Market Clearing. In a clearing market, there is no rationed or idle stochastic assets, and no excess supply or excess demand.

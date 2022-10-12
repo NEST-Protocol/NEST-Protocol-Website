@@ -81,21 +81,21 @@ Given that PVM supports random variables and their programming in the full proba
       {
         q: "Which Centralized exchange can I buy NEST on?",
         a: <Text>1. Huobi Global: <Link href={" https://www.huobi.com/"} isExternal> https://www.huobi.com/</Link><br/>
-          2. Gate.io：<Link href="https://www.gate.io/tw" isExternal>https://www.gate.io/tw</Link><br/>
-          3. Coinone：<Link href={"https://coinone.co.kr/"} isExternal>https://coinone.co.kr/</Link><br/>
-          4. Bibox：<Link href={"https://www.bibox.pro/"} isExternal>https://www.bibox.pro/</Link><br/>
-          5. MXC：<Link href={"https://www.mxc.ai/"} isExternal>https://www.mxc.ai/</Link><br/>
-          6. Hotbit：<Link href={"https://www.hotbit.pro/"} isExternal>https://www.hotbit.pro/</Link><br/>
+          2. Gate.io:<Link href="https://www.gate.io/tw" isExternal>https://www.gate.io/tw</Link><br/>
+          3. Coinone:<Link href={"https://coinone.co.kr/"} isExternal>https://coinone.co.kr/</Link><br/>
+          4. Bibox:<Link href={"https://www.bibox.pro/"} isExternal>https://www.bibox.pro/</Link><br/>
+          5. MXC:<Link href={"https://www.mxc.ai/"} isExternal>https://www.mxc.ai/</Link><br/>
+          6. Hotbit:<Link href={"https://www.hotbit.pro/"} isExternal>https://www.hotbit.pro/</Link><br/>
           7. Jubi: <Link href={"https://www.jbex.com/"} isExternal>https://www.jbex.com/</Link><br/>
           8. Hoo: <Link href={"https://hoo.com/"} isExternal>https://hoo.com/</Link><br/>
           9. CoinW: <Link href={"https://www.coinw.com/"} isExternal>https://www.coinw.com/</Link><br/>
           10. Dcoin: <Link href={"https://dcoin.co/"} isExternal>https://dcoin.co/</Link><br/>
-          11. ZT Global：<Link href={"https://www.ztb.com/"} isExternal>https://www.ztb.com/</Link><br/>
-          12. AEX：<Link href={"https://www.aex.com/"} isExternal>https://www.aex.com/</Link><br/>
-          13. BKEX：<Link href={"https://www.bkex.com/"} isExternal>https://www.bkex.com/</Link><br/>
-          14. Dsdaq：<Link href={"https://www.dsdaq.com/"} isExternal>https://www.dsdaq.com/</Link><br/>
-          15. Pionex：<Link href={"https://www.pionex.com/en-US/"} isExternal>https://www.pionex.com/en-US/</Link><br/>
-          16. CoFiX：<Link href={"https://bsc.cofix.tech/#/swap"} isExternal>https://bsc.cofix.tech/#/swap</Link><br/>
+          11. ZT Global:<Link href={"https://www.ztb.com/"} isExternal>https://www.ztb.com/</Link><br/>
+          12. AEX:<Link href={"https://www.aex.com/"} isExternal>https://www.aex.com/</Link><br/>
+          13. BKEX:<Link href={"https://www.bkex.com/"} isExternal>https://www.bkex.com/</Link><br/>
+          14. Dsdaq:<Link href={"https://www.dsdaq.com/"} isExternal>https://www.dsdaq.com/</Link><br/>
+          15. Pionex:<Link href={"https://www.pionex.com/en-US/"} isExternal>https://www.pionex.com/en-US/</Link><br/>
+          16. CoFiX:<Link href={"https://bsc.cofix.tech/#/swap"} isExternal>https://bsc.cofix.tech/#/swap</Link><br/>
         </Text>
       },
       {
@@ -109,7 +109,7 @@ Given that PVM supports random variables and their programming in the full proba
       },
       {
         q: "How to convert NEST tokens from BSC to Ethereum?",
-        a: <Text>NEST token cross-chain tutorial：<Link
+        a: <Text>NEST token cross-chain tutorial:<Link
           href={"https://nest-protocol-82041.medium.com/cross-chain-bridge-tutorial-c8a9eae85e8b"}
           isExternal>https://nest-protocol-82041.medium.com/cross-chain-bridge-tutorial-c8a9eae85e8b</Link></Text>
       },

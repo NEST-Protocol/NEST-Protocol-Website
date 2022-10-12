@@ -18,7 +18,7 @@ The NEST coin provides a whole new development tool and is a creative new asset 
   - [Background](https://nestprotocol.org/docs/Overview/Background/)
   - [What problem does the NEST Protocol solve?](https://nestprotocol.org/docs/Overview/What-problem-does-the-NEST-Protocol-solve/)
   - [NEST Tokenomics](https://nestprotocol.org/docs/Overview/NEST-Tokenomics/)
-  - [What can NEST Protocol do？](https://nestprotocol.org/docs/Overview/What-can-NEST-Protocol-do/)
+  - [What can NEST Protocol do?](https://nestprotocol.org/docs/Overview/What-can-NEST-Protocol-do/)
 - Concept
   - [stochastic asset](https://nestprotocol.org/docs/Concept/stochastic-assets/)
   - [PVM](https://nestprotocol.org/docs/Concept/PVM/)
