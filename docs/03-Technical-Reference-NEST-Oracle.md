@@ -189,7 +189,7 @@ If there is a discrepancy between the current quote and the "real price",  and c
 
 NEST Oracle has provided many query APIs, for miners and arbitragers to build their strategies.
 
-Return all the opened quotes of specific quote pair:
+**Return all the opened quotes of specific quote pair:
 
 ```
     /// @dev List sheets by page
@@ -208,7 +208,7 @@ Return all the opened quotes of specific quote pair:
     ) external view returns (PriceSheetView[] memory);
 ```
 
-Return the balance of the contract:
+**Return the balance of the contract:
 
 ```
     /// @dev View the number of assets specified by the user
@@ -218,7 +218,7 @@ Return the balance of the contract:
     function balanceOf(address tokenAddress, address addr) external view returns (uint);
 ```
 
-Return the estimated quote reward if start a quote now:
+**Return the estimated quote reward if start a quote now:
 
 ```
     /// @dev Estimated mining amount
@@ -227,7 +227,7 @@ Return the estimated quote reward if start a quote now:
     function estimate(uint channelId) external view returns (uint);
 ```
 
-Return the information of channel:
+**Return the information of channel:
 
 ```
     /// @dev Get channel information
@@ -236,7 +236,7 @@ Return the information of channel:
     function getChannelInfo(uint channelId) external view returns (PriceChannelView memory);
 ```
 
-Return the number of blocks between the current quote and last quote.
+**Return the number of blocks between the current quote and last quote.
 
 This data could be used to calculate the total rewards of the current quote:
 
@@ -376,15 +376,15 @@ The NEST oracle provides token pair prices on ETH and BSC chains.
 
 | Network | Contract Address                           |
 | ------- | ------------------------------------------ |
-| Mainnet | 0xE544cF993C7d477C7ef8E91D28aCA250D135aa03 |
-| Rinkeby | 0xc08e6a853241b9a08225eecf93f3b279fa7a1be7 |
+| Mainnet | [0xE544cF993C7d477C7ef8E91D28aCA250D135aa03](https://etherscan.io/address/0xE544cF993C7d477C7ef8E91D28aCA250D135aa03) |
+| Rinkeby | [0xc08e6a853241b9a08225eecf93f3b279fa7a1be7](https://rinkeby.etherscan.io/address/0xc08e6a853241b9a08225eecf93f3b279fa7a1be7) |
 
 - **BNB**
 
 | Network | Contract Address                           |
 | ------- | ------------------------------------------ |
-| BNB     | 0x09CE0e021195BA2c1CDE62A8B187abf810951540 |
-| Test    | 0xF2f9E62f52389EF223f5Fa8b9926e95386935277 |
+| BNB     | [0x09CE0e021195BA2c1CDE62A8B187abf810951540](https://bscscan.com/address/0x09CE0e021195BA2c1CDE62A8B187abf810951540) |
+| Test    | [0xF2f9E62f52389EF223f5Fa8b9926e95386935277](https://testnet.bscscan.com/address/0xF2f9E62f52389EF223f5Fa8b9926e95386935277) |
 
 ### Functions
 
@@ -524,11 +524,11 @@ The correspondence between the off-chain call functions and the on-chain call fu
 
 The following examples use the ethereum rinkeby test network.
 
- Contract:0xc08e6a853241b9a08225eecf93f3b279fa7a1be7
+  - Contract:0xc08e6a853241b9a08225eecf93f3b279fa7a1be7
+
+  - ChannelId:0
  
- ChannelId:0
- 
- Fee:0
+  - Fee:0
 
 | Token | Address                                    | PairIndex |
 | ----- | ------------------------------------------ | --------- |
