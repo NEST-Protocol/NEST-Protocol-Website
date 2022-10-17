@@ -71,30 +71,6 @@ export default function Home(): JSX.Element {
     {title: '2021.11 v4.1', desc: `NEST oracle upgraded.\nAllows anyone\nto build their oracle\nfor their project.`},
     {title: '2021.12 v4.3', desc: `NEST oracle upgraded.\nAllows each channel for\nmultiple quotation pairs.`},
     {title: '2022.07 v5.0', desc: `Merge FORT protocol\nNEST protocol= NEST oracle\n+ OMM +PVM`},
-    {
-      title: 'Gene game',
-      desc: '',
-      icon: <chakra.img src={'/svg/icon_17.svg'} w={isDesktop ? '45px' : '24px'} h={isDesktop ? '45px' : '24px'}
-                        alt={'Gene game'}/>
-    },
-    {
-      title: 'Keyboard boy game',
-      desc: '',
-      icon: <chakra.img src={'/svg/icon_16.svg'} w={isDesktop ? '39px' : '20px'} h={isDesktop ? '39px' : '20px'}
-                        alt={'Keyboard boy game'}/>
-    },
-    {
-      title: 'DABS',
-      desc: '',
-      icon: <chakra.img src={'/image/Home/01-icon-dabs.svg'} w={isDesktop ? '70px' : '45px'} alt={'DABS'}
-                        h={isDesktop ? '31px' : '15px'}/>
-    },
-    {
-      title: 'Cyber ink',
-      desc: '',
-      icon: <chakra.img src={'/image/Home/01-icon-cyberink.png'} w={isDesktop ? '56px' : '29px'} alt={'Cyber ink'}
-                        h={isDesktop ? '45px' : '28px'}/>
-    },
   ]
 
   useEffect(() => {
@@ -281,11 +257,6 @@ export default function Home(): JSX.Element {
                         <chakra.img src={'/image/Home/01-icon-03.png'} h={'24px'} w={'36px'} alt={''} mb={'22px'}/>
                         <Text fontSize={'17px'} fontWeight={'bold'}>{item.title}</Text>
                         <Text fontSize={'15px'} fontWeight={'600'} textAlign={"center"}>{item.desc}</Text>
-                        {item?.icon && (
-                          <>
-                            {item.icon}
-                          </>
-                        )}
                       </Stack>
                     ))}
                   </HStack>
@@ -718,11 +689,6 @@ export default function Home(): JSX.Element {
                       <Text fontSize={'12.5px'} fontWeight={'bold'}
                             w={item.desc !== '' ? '80px' : ''}> {item.title}</Text>
                       <Text fontSize={'10.5px'} fontWeight={'600'} w={item.desc !== '' ? '160px' : ''}>{item.desc}</Text>
-                      {item?.icon && (
-                        <>
-                          {item.icon}
-                        </>
-                      )}
                     </HStack>
                   )
                 )}
