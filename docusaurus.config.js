@@ -82,7 +82,7 @@ const config = {
             }
           },
           items: [
-            {to: '/nest-fi/', label: 'NEST Fi', position: 'right'},
+            {to: '/nest-fi/', label: 'NESTFi', position: 'right'},
             {
               to: '/developers/',
               position: 'right',

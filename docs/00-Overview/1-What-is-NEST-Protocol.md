@@ -31,5 +31,5 @@ The NEST coin provides a whole new development tool and is a creative new asset 
 - [Whitepaper](https://www.nestprotocol.org/doc/ennestwhitepaper.pdf)
 - [Twitter](https://twitter.com/nest_protocol)
 - [Telegram](https://t.me/nest_chat)
-- [NEST FI(Dapp)](https://finance.nestprotocol.org/#/swap)
+- [NESTFi(Dapp)](https://finance.nestprotocol.org/#/swap)
 - [NEST Oracle(Dapp)](https://channel.nestprotocol.org/)

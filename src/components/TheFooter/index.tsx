@@ -44,7 +44,7 @@ const TheFooter = () => {
                   <Text
                     color={'#7D7D7D'}
                     fontWeight={'600'}
-                  >Buy futures, options and win NEST</Text>
+                  >Open futures, options NFT here</Text>
                 </VStack>
                 <VStack spacing={'20px'} align={"start"}>
                   <Text fontWeight={"700"} color={'#003232'}
@@ -52,7 +52,7 @@ const TheFooter = () => {
                     window.location.pathname = '/blogs/'
                   }}
                   >NEST Blog</Text>
-                  <Text color={'#7D7D7D'} fontWeight={'600'}>Latest blogs from NEST</Text>
+                  <Text color={'#7D7D7D'} fontWeight={'600'}>Blogs & news from NEST</Text>
                 </VStack>
                 <VStack spacing={'20px'} align={"start"}>
                   <Text fontWeight={"700"} color={'#003232'} cursor={"pointer"} onClick={() => {

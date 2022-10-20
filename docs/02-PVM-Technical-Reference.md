@@ -20,14 +20,14 @@ This article is divided into 3 parts:
 ### Futures
 
 The Futures contract includes four functions:
-- [Buy futures](https://nestprotocol.org/docs/PVM-Technical-Reference#buy-futures)
+- [Open Futures](https://nestprotocol.org/docs/PVM-Technical-Reference#buy-futures)
 - [Sell futures](https://nestprotocol.org/docs/PVM-Technical-Reference#sell-future)
 - [Futures Liquidation](https://nestprotocol.org/docs/PVM-Technical-Reference#futures-liquidation)
 - [Get futures index](https://nestprotocol.org/docs/PVM-Technical-Reference#get-futures-index)
 
-#### Buy Futures
+#### Open Futures
 
-The Buy Futures function allows users to buy a future product with the specific leverage ratio, direction and amount, without a trading fee. Users could open a future position of ETH/USDT or BTC/USDT directly through their wallet. The market price of futures is provided by the NEST oracle.
+The Open Futures function allows users to buy a future product with the specific leverage ratio, direction and amount, without a trading fee. Users could open a future position of ETH/USDT or BTC/USDT directly through their wallet. The market price of futures is provided by the NEST oracle.
 
 Futures' open price will be slightly different from the price provided by the NEST oracle, as the mechanism of the decentralized oracle will result in a little time lag between market price and the oracle price, thus, a certain amount of risk compensation is added to the futures' open price. For example, for long positions, the open price will be slightly higher than the price quoted by the NEST oracle.
 
@@ -115,12 +115,12 @@ Futures index contains leverage and direction information of the futures contrac
 ### Options
 
 Options contracts include four functions:
-- [Buy options](https://nestprotocol.org/docs/PVM-Technical-Reference#buy-options)
+- [Open Options](https://nestprotocol.org/docs/PVM-Technical-Reference#buy-options)
 - [Exercise options](https://nestprotocol.org/docs/PVM-Technical-Reference#exercise-option)
 - [Sell options](https://nestprotocol.org/docs/PVM-Technical-Reference#sell-option)
 - [Find options](https://nestprotocol.org/docs/PVM-Technical-Reference#find-the-options)
 
-#### Buy Options
+#### Open Options
 
 NEST provides infinite European options for users. Users could buy a NEST option without any commission. Most options market markers only have several expiry dates and strike amounts for users to choose, but NEST options ' expiry date and strike price are set by the user, which is much more flexible.
 

@@ -45,7 +45,7 @@ export default function Home(): JSX.Element {
                 />
               </Link>
               <Stack direction={"row"} align={"center"} spacing={'24px'} fontWeight={'500'} fontSize={'15px'}>
-                <Link href={'/nest-fi/'} color={'#003232'}>NEST Fi</Link>
+                <Link href={'/nest-fi/'} color={'#003232'}>NESTFi</Link>
                 <Link href={'/developers/'} color={'#EAAA00'} fontWeight={'700'}>Developers</Link>
                 <Link href={'/docs/Overview/What-is-NEST-Protocol/'} color={'#003232'}>Doc</Link>
                 <Link href={'/blogs/'} color={'#003232'}>Blog</Link>
@@ -117,15 +117,15 @@ export default function Home(): JSX.Element {
                 <Stack spacing={'22px'}>
                   <Link fontSize={'15px'} fontWeight={'bold'} href={'https://finance.nestprotocol.org/'} isExternal>Launch
                     App</Link>
-                  <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Buy futures, options and win NEST</Text>
+                  <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Open futures, options NFT here</Text>
                 </Stack>
                 <Stack spacing={'22px'}>
                   <Link fontSize={'15px'} fontWeight={'bold'} href={'/blogs'}>NEST Blog</Link>
-                  <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Latest blogs from NEST</Text>
+                  <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Blogs & news from NEST</Text>
                 </Stack>
                 <Stack spacing={'22px'}>
                   <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/nra'}>NEST Research Academy</Link>
-                  <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know about NRA</Text>
+                  <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Learn more about NEST</Text>
                 </Stack>
               </Stack>
               <Stack spacing={'40px'}>
@@ -303,15 +303,15 @@ export default function Home(): JSX.Element {
               <Stack spacing={'22px'}>
                 <Link fontSize={'15px'} fontWeight={'bold'} href={'https://finance.nestprotocol.org/'} isExternal>Launch
                   App</Link>
-                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Buy futures, options and win NEST</Text>
+                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Open futures, options NFT here</Text>
               </Stack>
               <Stack spacing={'22px'}>
                 <Link fontSize={'15px'} fontWeight={'bold'} href={'/blogs/'}>NEST Blog</Link>
-                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Latest blogs from NEST</Text>
+                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Blogs & news from NEST</Text>
               </Stack>
               <Stack spacing={'22px'}>
                 <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/nra/'}>NEST Research Academy</Link>
-                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know about NRA</Text>
+                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Learn more about NEST</Text>
               </Stack>
               <Stack spacing={'22px'}>
                 <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/PVM-Technical-Reference/'}>Developer

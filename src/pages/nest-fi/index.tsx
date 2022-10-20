@@ -28,7 +28,7 @@ export default function NestFi(): JSX.Element {
   return (
     <ChakraProvider theme={theme}>
       <Head>
-        <title>NEST FI | the decentralized financial market based on OMM</title>
+        <title>NESTFi | the decentralized financial market based on OMM</title>
         <script src={"https://crypto.com/price/static/widget/index.js"}></script>
       </Head>
       {isDesktop ? (
@@ -44,7 +44,7 @@ export default function NestFi(): JSX.Element {
                 />
               </Link>
               <Stack direction={"row"} align={"center"} spacing={'24px'} fontWeight={'500'} fontSize={'15px'}>
-                <Link href={'/nest-fi/'} color={'#EAAA00'} fontWeight={'700'}>NEST Fi</Link>
+                <Link href={'/nest-fi/'} color={'#EAAA00'} fontWeight={'700'}>NESTFi</Link>
                 <Link href={'/developers/'} color={'#003232'}>Developers</Link>
                 <Link href={'/docs/Overview/What-is-NEST-Protocol/'} color={'#003232'}>Doc</Link>
                 <Link href={'/blogs/'} color={'#003232'}>Blog</Link>
@@ -58,9 +58,9 @@ export default function NestFi(): JSX.Element {
             </Stack>
             <Stack pt={'157px'} pb={'134px'}>
               <Stack spacing={'40px'} align={"center"}>
-                <Heading fontSize={'50px'} textAlign={"center"}>NEST FI<br/>the decentralized<br/>financial market<br/>based
+                <Heading fontSize={'50px'} textAlign={"center"}>NESTFi<br/>the decentralized<br/>financial market<br/>based
                   on OMM</Heading>
-                <Text textAlign={"center"} fontWeight={'600'} fontSize={'21px'}>NEST FI (NEST Financial Market) provides
+                <Text textAlign={"center"} fontWeight={'600'} fontSize={'21px'}>NESTFi (NESTFinancial Market) provides
                   futures<br/>and options with infinite liquidity now.</Text>
               </Stack>
             </Stack>
@@ -109,21 +109,21 @@ export default function NestFi(): JSX.Element {
               </HStack>
             </Stack>
             <Stack align={"center"} spacing={'48px'}>
-              <Heading fontSize={'50px'}>Dapps in NEST FI</Heading>
+              <Heading fontSize={'50px'}>Dapps in NESTFi</Heading>
               <HStack w={'full'}>
                 <Stack w={'50%'} align={"center"} justify={"center"}>
                   <chakra.img src={'/image/NEST_Fi/iPhone_1.webp'} h={'400px'}/>
                 </Stack>
                 <Stack w={'50%'} bg={'white'} align={"center"}>
                   <Stack w={'400px'} py={'155px'} borderRadius={'20px'}>
-                    <Text fontSize={'25px'} fontWeight={600}>NEST FI - Futures</Text>
+                    <Text fontSize={'25px'} fontWeight={600}>NESTFi - Futures</Text>
                     <Text fontSize={'15px'} fontWeight={600}>Trade BTC/USDT and ETH/USDT futures directly<br/>from your
                       wallet without trading fee.</Text>
                     <Box pt={'25px'}>
                       <Button w={'160px'} onClick={() => {
                         window.open('https://finance.nestprotocol.org/#/futures', '_blank')
                       }}>
-                        Buy futures
+                        Open Futures
                       </Button>
                     </Box>
                   </Stack>
@@ -132,14 +132,14 @@ export default function NestFi(): JSX.Element {
               <HStack w={'full'} pt={'40px'}>
                 <Stack w={'50%'} bg={'white'} align={"center"}>
                   <Stack py={'155px'} borderRadius={'20px'}>
-                    <Text fontSize={'25px'} fontWeight={600}>NEST FI - Options</Text>
-                    <Text fontSize={'15px'} fontWeight={600}>Buy options with flexible choices on exercise date,<br/>direction
+                    <Text fontSize={'25px'} fontWeight={600}>NESTFi - Options</Text>
+                    <Text fontSize={'15px'} fontWeight={600}>Open Options with flexible choices on exercise date,<br/>direction
                       and strike price, and no commission.</Text>
                     <Box pt={'25px'}>
                       <Button w={'160px'} onClick={() => {
                         window.open('https://finance.nestprotocol.org/#/options', '_blank')
                       }}>
-                        Buy Options
+                        Open Options
                       </Button>
                     </Box>
                   </Stack>
@@ -156,15 +156,15 @@ export default function NestFi(): JSX.Element {
                 <Stack spacing={'22px'}>
                   <Link fontSize={'15px'} fontWeight={'bold'} href={'https://finance.nestprotocol.org/'} isExternal>Launch
                     App</Link>
-                  <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Buy futures, options and win NEST</Text>
+                  <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Open futures, options NFT here</Text>
                 </Stack>
                 <Stack spacing={'22px'}>
                   <Link fontSize={'15px'} fontWeight={'bold'} href={'/blogs/'}>NEST Blog</Link>
-                  <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Latest blogs from NEST</Text>
+                  <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Blogs & news from NEST</Text>
                 </Stack>
                 <Stack spacing={'22px'}>
                   <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/nra/'}>NEST Research Academy</Link>
-                  <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know about NRA</Text>
+                  <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Learn more about NEST</Text>
                 </Stack>
               </Stack>
               <Stack spacing={'40px'}>
@@ -292,9 +292,9 @@ export default function NestFi(): JSX.Element {
             </Modal>
           </HStack>
           <Stack align={"center"} pt={'180px'} pb={'220px'}>
-            <Text fontWeight={'bold'} textAlign={"center"} fontSize={'25px'}>NEST Fi<br/>the decentralized<br/>financial
+            <Text fontWeight={'bold'} textAlign={"center"} fontSize={'25px'}>NESTFi<br/>the decentralized<br/>financial
               market<br/>based on OMM</Text>
-            <Text fontSize={'12px'} textAlign={"center"} fontWeight={'600'}>NEST Fi (NEST Financial Market)<br/>provides
+            <Text fontSize={'12px'} textAlign={"center"} fontWeight={'600'}>NESTFi (NESTFinancial Market)<br/>provides
               futures and options<br/>with infinite liquidity now.</Text>
           </Stack>
           <Stack align={"center"} py={'40px'} bg={'rgba(255,255,255,0.7)'}>
@@ -356,26 +356,26 @@ export default function NestFi(): JSX.Element {
             <chakra.img src={'/image/NEST_Fi/iPhone_1.webp'} w={'180px'} alt={''}/>
           </Stack>
           <Stack align={"center"} bg={'rgba(255,255,255, 0.8)'} py={'30px'}>
-            <Text fontWeight={'600'} fontSize={'16px'}>NEST FI - Futures</Text>
+            <Text fontWeight={'600'} fontSize={'16px'}>NESTFi - Futures</Text>
             <Text textAlign={"center"} fontWeight={'600'} fontSize={'12.5px'}>Trade BTC/USDT and ETH/USDT futures
               directly<br/>from your wallet without trading fee</Text>
             <Stack pt={'30px'}>
               <Button onClick={() => {
                 window.open('https://finance.nestprotocol.org/#/futures', '_blank')
-              }}>Buy Futures</Button>
+              }}>Open Futures</Button>
             </Stack>
           </Stack>
           <Stack align={"center"} py={'40px'}>
             <chakra.img src={'/image/NEST_Fi/iPhone_2.webp'} w={'180px'} alt={''}/>
           </Stack>
           <Stack align={"center"} bg={'rgba(255,255,255, 0.8)'} py={'30px'}>
-            <Text fontWeight={'600'} fontSize={'16px'}>NEST FI - Options</Text>
-            <Text textAlign={"center"} fontWeight={'600'} fontSize={'12.5px'}>Buy options with flexible choices on
+            <Text fontWeight={'600'} fontSize={'16px'}>NESTFi - Options</Text>
+            <Text textAlign={"center"} fontWeight={'600'} fontSize={'12.5px'}>Open Options with flexible choices on
               exercise date,<br/>direction and strike price, and no commission</Text>
             <Stack pt={'30px'}>
               <Button onClick={() => {
                 window.open('https://finance.nestprotocol.org/#/options', '_blank')
-              }}>Buy Options</Button>
+              }}>Open Options</Button>
             </Stack>
           </Stack>
           <Stack h={'62px'}/>
@@ -385,15 +385,15 @@ export default function NestFi(): JSX.Element {
               <Stack spacing={'22px'}>
                 <Link fontSize={'15px'} fontWeight={'bold'} href={'https://finance.nestprotocol.org/'} isExternal>Launch
                   App</Link>
-                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Buy futures, options and win NEST</Text>
+                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Open futures, options NFT here</Text>
               </Stack>
               <Stack spacing={'22px'}>
                 <Link fontSize={'15px'} fontWeight={'bold'} href={'/blogs'}>NEST Blog</Link>
-                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Latest blogs from NEST</Text>
+                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Blogs & news from NEST</Text>
               </Stack>
               <Stack spacing={'22px'}>
                 <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/nra/'}>NEST Research Academy</Link>
-                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know about NRA</Text>
+                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Learn more about NEST</Text>
               </Stack>
               <Stack spacing={'22px'}>
                 <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/PVM-Technical-Reference/'}>Developer

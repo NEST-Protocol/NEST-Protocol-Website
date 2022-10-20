@@ -1,7 +1,7 @@
 {
-  "item.label.NEST Fi": {
-    "message": "NEST Fi",
-    "description": "Navbar item with label NEST Fi"
+  "item.label.NESTFi": {
+    "message": "NESTFi",
+    "description": "Navbar item with label NESTFi"
   },
   "item.label.Developers": {
     "message": "Developers",
