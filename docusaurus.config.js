@@ -7,8 +7,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'NEST Protocol',
-  tagline: `NEST is a blockchain-based probability virtual machine (PVM) system with web3 applications of DeFi, GameFi, NFT built on it.`,
-  url: 'https://nestprotocol.org',
+  tagline: `NEST Protocol is the stochastic computer based on PVM, enables the generation and programming of stochastic assets.`,
+  url: 'https://nestprotocol.org/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -18,15 +18,19 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'NEST-Protocol', // Usually your GitHub org/user name.
   projectName: 'NEST-Protocol-Website', // Usually your repo name.
-  
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
+    localeConfigs: {
+      en: {
+        htmlLang: 'en-GB',
+      }
+    }
   },
-  
+  trailingSlash: true,
   presets: [
     [
       'classic',
@@ -49,8 +53,8 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-        googleAnalytics: {
-          trackingID: "G-ELV55124T4",
+        gtag: {
+          trackingID: 'G-ELV55124T4',
           anonymizeIP: false,
         },
         sitemap: {
@@ -78,15 +82,15 @@ const config = {
             }
           },
           items: [
-            {to: '/nest-fi', label: 'NEST Fi', position: 'right'},
+            {to: '/nest-fi/', label: 'NESTFi', position: 'right'},
             {
-              to: '/developers',
+              to: '/developers/',
               position: 'right',
               label: 'Developers',
             },
-            {to: '/docs/Overview/What-is-NEST-Protocol', label: 'Doc', position: 'right'},
-            {to: '/blogs', label: 'Blog', position: 'right'},
-            {to: '/about', label: 'About', position: 'right'},
+            {to: '/docs/Overview/What-is-NEST-Protocol/', label: 'Doc', position: 'right'},
+            {to: '/blogs/', label: 'Blog', position: 'right'},
+            {to: '/about/', label: 'About', position: 'right'},
             {
               type: 'html',
               position: 'right',
@@ -116,7 +120,7 @@ const config = {
           {name: "og:site_name", content: "NEST Protocol"},
           {name: "og:image", content: "https://nestprotocol.org/img/logo.svg"},
           {name: "google-site-verification", content: "Taax65uDIhSEcZALM9plxpcfWAkJipGzu-sxjJjNp8w"},
-          {name: "description", content: "NEST Protocol is the stochastic computer based on PVM, enables the generation and programming of stochastic assets."},
+          {name: "description", content: `NEST Protocol is the stochastic computer based on PVM, enables the generation and programming of stochastic assets.`},
           {name: "theme-color", content: "#ffffff"},
         ],
       }),

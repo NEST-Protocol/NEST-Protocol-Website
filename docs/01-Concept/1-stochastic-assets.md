@@ -1,6 +1,8 @@
 ---
 sidebar_position: 1
 ---
+# stochastic asset
+
 ## What is stochastic assets?
 **Stochastic Asset is an on-chain asset that can be issued and destroyed in response to random information flows.**
 

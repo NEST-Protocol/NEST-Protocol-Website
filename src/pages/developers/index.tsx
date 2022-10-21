@@ -29,9 +29,10 @@ export default function Home(): JSX.Element {
   return (
     <ChakraProvider theme={theme}>
       <Head>
+        <title>Developers | NEST Protocol</title>
         <script src={"https://crypto.com/price/static/widget/index.js"}></script>
       </Head>
-      { isDesktop ? (
+      {isDesktop ? (
         <Stack h={'100%'} w={'100vw'} align={"center"}>
           <Stack w={'100%'} maxW={'1920px'} h={'100%'} bgPosition={"center"} bgSize={'cover'}
                  bgImage={'/image/Developer/Developer_bg.jpg'} spacing={0}>
@@ -44,11 +45,11 @@ export default function Home(): JSX.Element {
                 />
               </Link>
               <Stack direction={"row"} align={"center"} spacing={'24px'} fontWeight={'500'} fontSize={'15px'}>
-                <Link href={'/nest-fi'}>NEST Fi</Link>
-                <Link href={'/developers'} color={'#EAAA00'} fontWeight={'700'}>Developers</Link>
-                <Link href={'/docs/Overview/What-is-NEST-Protocol'}>Doc</Link>
-                <Link href={'/blog'}>Blog</Link>
-                <Link href={'/about'}>About</Link>
+                <Link href={'/nest-fi/'} color={'#003232'}>NESTFi</Link>
+                <Link href={'/developers/'} color={'#EAAA00'} fontWeight={'700'}>Developers</Link>
+                <Link href={'/docs/Overview/What-is-NEST-Protocol/'} color={'#003232'}>Doc</Link>
+                <Link href={'/blogs/'} color={'#003232'}>Blog</Link>
+                <Link href={'/about/'} color={'#003232'}>About</Link>
                 <Button onClick={() => {
                   window.open('https://finance.nestprotocol.org/', '_blank')
                 }}>
@@ -59,12 +60,13 @@ export default function Home(): JSX.Element {
             <Stack pt={'164px'} pb={'202px'}>
               <Stack spacing={'40px'} align={"center"}>
                 <Heading fontSize={'50px'} textAlign={"center"}>Another Revolution in Blockchain</Heading>
-                <Text textAlign={"center"} fontWeight={'600'} fontSize={'21px'}>NEST ecosystem is a paradigm revolution to
+                <Text textAlign={"center"} fontWeight={'600'} fontSize={'21px'}>NEST ecosystem is a paradigm revolution
+                  to
                   the traditional<br/>market mechanism, providing the blockchain world with a<br/>whole new range of
                   development tools and creative new assets.</Text>
                 <Box>
                   <Button onClick={() => {
-                    window.open('http://localhost:3000/docs/Building-On-NEST/Contracts/', '_blank')
+                    window.open('/docs/PVM-Technical-Reference/', '_blank')
                   }}>
                     Developer Doc
                   </Button>
@@ -72,34 +74,40 @@ export default function Home(): JSX.Element {
               </Stack>
             </Stack>
             <Stack bg={'rgba(255, 255, 255, 0.8)'} direction={"row"} spacing={0}>
-              <Stack w={'50%'} px={'100px'}>
-                <chakra.img src={'/image/Developer/03-Flowchart-01.svg'}/>
+              <Stack w={'50%'} align={"center"} justify={"center"}>
+                <chakra.img src={'/image/Developer/03-Flowchart-01.svg'} alt={''}/>
               </Stack>
-              <Stack w={'50%'} py={'216px'} px={'120px'} spacing={'21px'}>
-                <Text fontSize={'25px'} fontWeight={600}>NEST PVM</Text>
-                <Text fontSize={'15px'} fontWeight={600}>NEST Probability Virtual Machine (PVM) is a virtual<br/>machine-like
-                  structure based on the basic function<br/>library. Developers can develop various exciting<br/>applications
-                  based on the function library, similar<br/>to Ethereum virtual machine (EVM) programming.</Text>
-                <Link color={'#00A0E9'} fontSize={'15px'} fontWeight={600} isExternal
-                      href={'https://nestprotocol.org/docs/Concept/What-is-NEST'}>PVM Mechanism <ChevronRightIcon/></Link>
+              <Stack w={'50%'} py={'216px'} spacing={'21px'} align={"center"}>
+                <Stack w={'500px'}>
+                  <Text fontSize={'25px'} fontWeight={600}>NEST PVM</Text>
+                  <Text fontSize={'15px'} fontWeight={600}>NEST Probability Virtual Machine (PVM) is a virtual<br/>machine-like
+                    structure based on the basic function<br/>library. Developers can develop various exciting<br/>applications
+                    based on the function library, similar<br/>to Ethereum virtual machine (EVM) programming.</Text>
+                  <Link color={'#00A0E9'} fontSize={'15px'} fontWeight={600} isExternal
+                        href={'/docs/Concept/PVM/'}>PVM Mechanism <ChevronRightIcon/></Link>
+                </Stack>
               </Stack>
             </Stack>
             <Stack h={'138px'}/>
             <HStack bg={'rgba(255, 255, 255, 0.8)'}>
-              <Stack w={'50%'} py={'216px'} px={'120px'}>
-                <Text fontSize={'25px'} fontWeight={600}>NEST Oracle</Text>
-                <Text fontSize={'15px'} fontWeight={600}>NEST oracle is the only truly decentralized oracle<br/>on the
-                  market today.</Text>
-                <HStack spacing={'68px'}>
-                  <Link color={'#00A0E9'} fontSize={'15px'} fontWeight={600} isExternal
-                        href={'https://nestprotocol.org/docs/NEST-Oracle/How-to-Mining'}>How to Mining <ChevronRightIcon/></Link>
-                  <Link color={'#00A0E9'} fontSize={'15px'} fontWeight={600} isExternal
-                        href={'https://nestprotocol.org/docs/NEST-Oracle/How-to-Call-Price'}>How to Call
-                    Price <ChevronRightIcon/></Link>
-                </HStack>
+              <Stack w={'50%'} py={'216px'} align={"center"}>
+                <Stack w={'500px'}>
+                  <Text fontSize={'25px'} fontWeight={600}>NEST Oracle</Text>
+                  <Text fontSize={'15px'} fontWeight={600}>NEST oracle is the only truly decentralized oracle<br/>on the
+                    market today.</Text>
+                  <HStack spacing={'68px'}>
+                    <Link color={'#00A0E9'} fontSize={'15px'} fontWeight={600} isExternal
+                          href={'/docs/Technical-Reference-NEST-Oracle/#how-to-mining/'}>How to
+                      Mining <ChevronRightIcon/></Link>
+                    <Link color={'#00A0E9'} fontSize={'15px'} fontWeight={600} isExternal
+                          href={'/docs/Technical-Reference-NEST-Oracle/#how-to-call-price'}>How to Call
+                      Price <ChevronRightIcon/></Link>
+                  </HStack>
+                </Stack>
+
               </Stack>
-              <Stack w={'50%'} px={'100px'}>
-                <chakra.img src={'/image/Developer/03-Flowchart-02.svg'}/>
+              <Stack w={'50%'} align={"center"} justify={"center"}>
+                <chakra.img src={'/image/Developer/03-Flowchart-02.svg'} alt={''}/>
               </Stack>
             </HStack>
             <Stack h={'138px'}/>
@@ -109,20 +117,20 @@ export default function Home(): JSX.Element {
                 <Stack spacing={'22px'}>
                   <Link fontSize={'15px'} fontWeight={'bold'} href={'https://finance.nestprotocol.org/'} isExternal>Launch
                     App</Link>
-                  <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Buy futures, options and win NEST</Text>
+                  <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Open futures, options NFT here</Text>
                 </Stack>
                 <Stack spacing={'22px'}>
                   <Link fontSize={'15px'} fontWeight={'bold'} href={'/blogs'}>NEST Blog</Link>
-                  <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Latest blogs from NEST</Text>
+                  <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Blogs & news from NEST</Text>
                 </Stack>
                 <Stack spacing={'22px'}>
                   <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/nra'}>NEST Research Academy</Link>
-                  <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know about NRA</Text>
+                  <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Learn more about NEST</Text>
                 </Stack>
               </Stack>
               <Stack spacing={'40px'}>
                 <Stack spacing={'22px'}>
-                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/Building-On-NEST/Contracts/'}>Developer
+                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/PVM-Technical-Reference/'}>Developer
                     Docs</Link>
                   <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know how to develop on NEST</Text>
                 </Stack>
@@ -132,22 +140,22 @@ export default function Home(): JSX.Element {
                 </Stack>
                 <HStack spacing={'24px'}>
                   <Link href={'https://github.com/NEST-Protocol'} isExternal>
-                    <chakra.img src={'/image/Footer/github_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/github_icon.svg'} h={'44px'} w={'44px'} alt={'github_icon'}/>
                   </Link>
                   <Link href={'https://twitter.com/nest_protocol/'} isExternal>
-                    <chakra.img src={'/image/Footer/twitter_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/twitter_icon.svg'} h={'44px'} w={'44px'} alt={'twitter_icon.svg'}/>
                   </Link>
                   <Link href={'https://t.me/nest_chat/'} isExternal>
-                    <chakra.img src={'/image/Footer/telegram_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/telegram_icon.svg'} h={'44px'} w={'44px'} alt={'telegram_icon'}/>
                   </Link>
                   <Link href={'https://nest-protocol-82041.medium.com/'} isExternal>
-                    <chakra.img src={'/image/Footer/medium_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/medium_icon.svg'} h={'44px'} w={'44px'} alt={'medium'}/>
                   </Link>
                   <Link href={'https://discord.gg/nestprotocol'} isExternal>
-                    <chakra.img src={'/image/Footer/discord_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/discord_icon.svg'} h={'44px'} w={'44px'} alt={'discord'}/>
                   </Link>
                   <Link href={'mailto:hello@nestprotocol.org'} isExternal>
-                    <chakra.img src={'/image/Footer/email_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/email_icon.svg'} h={'44px'} w={'44px'} alt={'email'}/>
                   </Link>
                 </HStack>
               </Stack>
@@ -184,7 +192,7 @@ export default function Home(): JSX.Element {
             <Spacer/>
             <Button onClick={onOpen} fontSize={'36px'} alignItems={'end'} p={0} variant={"ghost"} _active={{bg: null}}
                     _hover={{bg: null}} aria-label={'menu'}>
-              <HamburgerIcon />
+              <HamburgerIcon/>
             </Button>
             <Modal
               isOpen={isOpen}
@@ -246,35 +254,44 @@ export default function Home(): JSX.Element {
           </HStack>
           <Stack align={"center"} pt={'145px'} pb={'180px'}>
             <Text fontSize={'25px'} fontWeight={'bold'} textAlign={'center'}>Another Revolution<br/>in Blockchain</Text>
-            <Text fontSize={'12.5px'} fontWeight={'bold'} textAlign={"center"}>NEST ecosystem is a paradigm revolution<br/>to the traditional market mechanism, <br/>whole new range of development tools and<br/> creative new assets.</Text>
+            <Text fontSize={'12.5px'} fontWeight={'bold'} textAlign={"center"}>NEST ecosystem is a paradigm
+              revolution<br/>to the traditional market mechanism, <br/>whole new range of development tools
+              and<br/> creative new assets.</Text>
             <Stack pt={'54px'}>
               <Button onClick={() => {
-                window.open('http://localhost:3000/docs/Building-On-NEST/Contracts/', '_blank')
+                window.open('/docs/PVM-Technical-Reference/', '_blank')
               }}>
                 Developer Doc
               </Button>
             </Stack>
           </Stack>
           <Stack align={"center"} bg={'rgba(255,255,255,0.7)'} pb={'35px'}>
-            <chakra.img src={'/image/Developer/03-Phone-flowchart-01.svg'} />
+            <chakra.img src={'/image/Developer/03-Phone-flowchart-01.svg'} alt={''}/>
             <Stack pt={'60px'} align={"center"}>
               <Text fontSize={'16px'} fontWeight={'600'}>NEST PVM</Text>
-              <Text fontSize={'12.5px'} fontWeight={'600'} textAlign={"center"}>NEST Probability Virtual Machine (PVM) is<br/>a virtual machine-like structure based on<br/>the basic function library. Developers can<br/>develop various exciting applications based<br/>develop various exciting applications based<br/> virtual machine (EVM) programming.</Text>
-              <Link color={'#00A0E9'} fontSize={'12.5px'} fontWeight={'600'} pt={'20px'} href={'https://nestprotocol.org/docs/Concept/What-is-NEST/'} isExternal>
+              <Text fontSize={'12.5px'} fontWeight={'600'} textAlign={"center"}>NEST Probability Virtual Machine (PVM)
+                is<br/>a virtual machine-like structure based on<br/>the basic function library. Developers can<br/>develop
+                various exciting applications based<br/>develop various exciting applications based<br/> virtual machine
+                (EVM) programming.</Text>
+              <Link color={'#00A0E9'} fontSize={'12.5px'} fontWeight={'600'} pt={'20px'} href={'/docs/Concept/PVM/'}
+                    isExternal>
                 PVM Mechanism <ChevronRightIcon/>
               </Link>
             </Stack>
           </Stack>
           <Stack h={'40px'}/>
           <Stack align={"center"} bg={'rgba(255,255,255,0.7)'} pb={'35px'}>
-            <chakra.img src={'/image/Developer/03-Phone-flowchart-02.svg'} />
+            <chakra.img src={'/image/Developer/03-Phone-flowchart-02.svg'} alt={''}/>
             <Stack align={"center"}>
               <Text fontSize={'16px'} fontWeight={'600'}>NEST Oracle</Text>
-              <Text fontSize={'12.5px'} fontWeight={'600'} textAlign={"center"}>NEST oracle is the only truly decentralized<br/>oracle on the market today.</Text>
-              <Link color={'#00A0E9'} fontSize={'12.5px'} fontWeight={'600'} href={'https://nestprotocol.org/docs/NEST-Oracle/How-to-Mining'} isExternal>
+              <Text fontSize={'12.5px'} fontWeight={'600'} textAlign={"center"}>NEST oracle is the only truly
+                decentralized<br/>oracle on the market today.</Text>
+              <Link color={'#00A0E9'} fontSize={'12.5px'} fontWeight={'600'}
+                    href={'/docs/Technical-Reference-NEST-Oracle/#how-to-mining/'} isExternal>
                 How to Mining <ChevronRightIcon/>
               </Link>
-              <Link color={'#00A0E9'} fontSize={'12.5px'} fontWeight={'600'} href={'https://nestprotocol.org/docs/NEST-Oracle/How-to-Call-Price'} isExternal>
+              <Link color={'#00A0E9'} fontSize={'12.5px'} fontWeight={'600'}
+                    href={'/docs/Technical-Reference-NEST-Oracle/#how-to-call-price'} isExternal>
                 How to Call Price <ChevronRightIcon/>
               </Link>
             </Stack>
@@ -286,23 +303,23 @@ export default function Home(): JSX.Element {
               <Stack spacing={'22px'}>
                 <Link fontSize={'15px'} fontWeight={'bold'} href={'https://finance.nestprotocol.org/'} isExternal>Launch
                   App</Link>
-                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Buy futures, options and win NEST</Text>
+                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Open futures, options NFT here</Text>
               </Stack>
               <Stack spacing={'22px'}>
-                <Link fontSize={'15px'} fontWeight={'bold'} href={'/blogs'}>NEST Blog</Link>
-                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Latest blogs from NEST</Text>
+                <Link fontSize={'15px'} fontWeight={'bold'} href={'/blogs/'}>NEST Blog</Link>
+                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Blogs & news from NEST</Text>
               </Stack>
               <Stack spacing={'22px'}>
-                <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/nra'}>NEST Research Academy</Link>
-                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know about NRA</Text>
+                <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/nra/'}>NEST Research Academy</Link>
+                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Learn more about NEST</Text>
               </Stack>
               <Stack spacing={'22px'}>
-                <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/Building-On-NEST/Contracts/'}>Developer
+                <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/PVM-Technical-Reference/'}>Developer
                   Docs</Link>
                 <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know how to develop on NEST</Text>
               </Stack>
               <Stack spacing={'22px'}>
-                <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/faqs'}>FAQs</Link>
+                <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/faqs/'}>FAQs</Link>
                 <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Frequently asked questions</Text>
               </Stack>
               <Stack spacing={'10px'} w={'full'}>
@@ -318,24 +335,24 @@ export default function Home(): JSX.Element {
               <Stack w={'full'} align={"center"} spacing={'12px'}>
                 <HStack spacing={'40px'}>
                   <Link href={'https://discord.gg/nestprotocol'} isExternal>
-                    <chakra.img src={'/image/Footer/discord_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/discord_icon.svg'} h={'44px'} w={'44px'} alt={'discord'}/>
                   </Link>
                   <Link href={'https://github.com/NEST-Protocol'} isExternal>
-                    <chakra.img src={'/image/Footer/github_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/github_icon.svg'} h={'44px'} w={'44px'} alt={'github_icon'}/>
                   </Link>
                   <Link href={'https://twitter.com/nest_protocol/'} isExternal>
-                    <chakra.img src={'/image/Footer/twitter_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/twitter_icon.svg'} h={'44px'} w={'44px'} alt={'twitter_icon.svg'}/>
                   </Link>
                 </HStack>
                 <HStack spacing={'40px'}>
                   <Link href={'https://t.me/nest_chat/'} isExternal>
-                    <chakra.img src={'/image/Footer/telegram_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/telegram_icon.svg'} h={'44px'} w={'44px'} alt={'telegram_icon'}/>
                   </Link>
                   <Link href={'https://nest-protocol-82041.medium.com/'} isExternal>
-                    <chakra.img src={'/image/Footer/medium_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/medium_icon.svg'} h={'44px'} w={'44px'} alt={'medium'}/>
                   </Link>
                   <Link href={'mailto:hello@nestprotocol.org'} isExternal>
-                    <chakra.img src={'/image/Footer/email_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/email_icon.svg'} h={'44px'} w={'44px'} alt={'email'}/>
                   </Link>
                 </HStack>
               </Stack>
@@ -345,7 +362,7 @@ export default function Home(): JSX.Element {
             </Stack>
           </Stack>
         </Stack>
-      ) }
+      )}
     </ChakraProvider>
   );
 }

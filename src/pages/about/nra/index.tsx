@@ -28,6 +28,7 @@ export default function NRA(): JSX.Element {
   return (
     <ChakraProvider theme={theme}>
       <Head>
+        <title>NEST Research Academy | NEST Protocol</title>
         <script src={"https://crypto.com/price/static/widget/index.js"}></script>
       </Head>
       {isDesktop ? (
@@ -43,11 +44,11 @@ export default function NRA(): JSX.Element {
                 />
               </Link>
               <Stack direction={"row"} align={"center"} spacing={'24px'} fontWeight={'500'} fontSize={'15px'}>
-                <Link href={'/nest-fi'}>NEST Fi</Link>
-                <Link href={'/developers'}>Developers</Link>
-                <Link href={'/docs/Overview/What-is-NEST-Protocol'}>Doc</Link>
-                <Link href={'/blogs'}>Blog</Link>
-                <Link href={'/about'} color={'#EAAA00'}>About</Link>
+                <Link href={'/nest-fi/'} color={'#003232'}>NESTFi</Link>
+                <Link href={'/developers/'} color={'#003232'}>Developers</Link>
+                <Link href={'/docs/Overview/What-is-NEST-Protocol/'} color={'#003232'}>Doc</Link>
+                <Link href={'/blogs/'} color={'#003232'}>Blog</Link>
+                <Link href={'/about/'} color={'#EAAA00'}>About</Link>
                 <Button onClick={() => {
                   window.open('https://finance.nestprotocol.org/', '_blank')
                 }}>
@@ -57,9 +58,9 @@ export default function NRA(): JSX.Element {
             </Stack>
             <Stack align={"center"} spacing={'48px'} pb={'210px'}>
               <HStack color={'#00A0E9'} fontSize={'15px'} fontWeight={'600'} w={'full'} px={'45px'}>
-                <Link>About</Link>
+                <Link href={'/about/'}>About</Link>
                 <ChevronRightIcon/>
-                <Link>NRA</Link>
+                <Link href={'/about/nra/'}>NRA</Link>
               </HStack>
               <Heading pt={'48px'} fontSize={'50px'}>NEST Research Academy (NRA)</Heading>
               <Text textAlign={"center"} fontSize={'18px'} fontWeight={'bold'}>NEST Research Academy (NRA), initialized
@@ -92,7 +93,7 @@ export default function NRA(): JSX.Element {
               <Heading fontSize={'50px'} pt={'138px'}>Funding Opportunity</Heading>
               <Stack px={'160px'} w={'full'}>
                 <Stack bg={'white'} align={"center"} textAlign={"center"} py={'130px'} borderRadius={'20px'}>
-                  <chakra.img src={'/image/About/04-icon-01.png'} alt={''} mb={'26px'}/>
+                  <chakra.img src={'/image/About/04-icon-01@2x.png'} w={'105px'} alt={''} mb={'26px'}/>
                   <Text fontSize={'15px'} fontWeight={'600'}>NRA welcomes research in fields such as blockchain,
                     finance, <br/>economics, game theory, machine
                     learning, computer science, and software engineering.<br/>Those interested, please send your
@@ -107,7 +108,7 @@ export default function NRA(): JSX.Element {
               <Heading fontSize={'50px'} pt={'138px'}>Vacant Position</Heading>
               <Stack px={'160px'} w={'full'}>
                 <Stack bg={'white'} align={"center"} textAlign={"center"} py={'130px'} borderRadius={'20px'}>
-                  <chakra.img src={'/image/About/04-icon-02.png'} alt={''} mb={'26px'}/>
+                  <chakra.img src={'/image/About/04-icon-02@2x.png'} w={'114px'} alt={''} mb={'26px'}/>
                   <Text fontSize={'15px'} fontWeight={'600'}>NRA welcomes applicants to researchers of all levels.<br/>NRA
                     evaluates the work of its
                     researchers in a result-oriented manner with flexibility in terms<br/>of working location and hours.
@@ -124,45 +125,45 @@ export default function NRA(): JSX.Element {
                 <Stack spacing={'22px'}>
                   <Link fontSize={'15px'} fontWeight={'bold'} href={'https://finance.nestprotocol.org/'} isExternal>Launch
                     App</Link>
-                  <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Buy futures, options and win NEST</Text>
+                  <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Open futures, options NFT here</Text>
                 </Stack>
                 <Stack spacing={'22px'}>
-                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/blogs'}>NEST Blog</Link>
-                  <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Latest blogs from NEST</Text>
+                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/blogs/'}>NEST Blog</Link>
+                  <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Blogs & news from NEST</Text>
                 </Stack>
                 <Stack spacing={'22px'}>
-                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/nra'}>NEST Research Academy</Link>
-                  <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know about NRA</Text>
+                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/nra/'}>NEST Research Academy</Link>
+                  <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Learn more about NEST</Text>
                 </Stack>
               </Stack>
               <Stack spacing={'40px'}>
                 <Stack spacing={'22px'}>
-                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/Building-On-NEST/Contracts/'}>Developer
+                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/PVM-Technical-Reference/'}>Developer
                     Docs</Link>
                   <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know how to develop on NEST</Text>
                 </Stack>
                 <Stack spacing={'22px'}>
-                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/faqs'}>FAQs</Link>
+                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/faqs/'}>FAQs</Link>
                   <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Frequently asked questions</Text>
                 </Stack>
                 <HStack spacing={'24px'}>
                   <Link href={'https://github.com/NEST-Protocol'} isExternal>
-                    <chakra.img src={'/image/Footer/github_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/github_icon.svg'} h={'44px'} w={'44px'} alt={'github_icon'}/>
                   </Link>
                   <Link href={'https://twitter.com/nest_protocol/'} isExternal>
-                    <chakra.img src={'/image/Footer/twitter_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/twitter_icon.svg'} h={'44px'} w={'44px'} alt={'twitter_icon.svg'}/>
                   </Link>
                   <Link href={'https://t.me/nest_chat/'} isExternal>
-                    <chakra.img src={'/image/Footer/telegram_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/telegram_icon.svg'} h={'44px'} w={'44px'} alt={'telegram_icon'}/>
                   </Link>
                   <Link href={'https://nest-protocol-82041.medium.com/'} isExternal>
-                    <chakra.img src={'/image/Footer/medium_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/medium_icon.svg'} h={'44px'} w={'44px'} alt={'medium'}/>
                   </Link>
                   <Link href={'https://discord.gg/nestprotocol'} isExternal>
-                    <chakra.img src={'/image/Footer/discord_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/discord_icon.svg'} h={'44px'} w={'44px'} alt={'discord'}/>
                   </Link>
                   <Link href={'mailto:hello@nestprotocol.org'} isExternal>
-                    <chakra.img src={'/image/Footer/email_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/email_icon.svg'} h={'44px'} w={'44px'} alt={'email'}/>
                   </Link>
                 </HStack>
               </Stack>
@@ -199,7 +200,7 @@ export default function NRA(): JSX.Element {
             <Spacer/>
             <Button onClick={onOpen} fontSize={'36px'} alignItems={'end'} p={0} variant={"ghost"} _active={{bg: null}}
                     _hover={{bg: null}} aria-label={'menu'}>
-              <HamburgerIcon />
+              <HamburgerIcon/>
             </Button>
             <Modal
               isOpen={isOpen}
@@ -262,7 +263,7 @@ export default function NRA(): JSX.Element {
           <HStack px={'20px'}>
             <ChevronLeftIcon h={'40px'} w={'28px'} cursor={"pointer"}
                              onClick={() => {
-                               window.location.pathname = '/about'
+                               window.location.pathname = '/about/'
                              }}/>
             <Spacer/>
           </HStack>
@@ -300,8 +301,8 @@ export default function NRA(): JSX.Element {
           <Stack pt={'54px'}>
             <Text fontSize={'25px'} fontWeight={'bold'} textAlign={"start"} px={'24px'}>Funding Opportunity</Text>
             <Stack px={'24px'} pt={'30px'}>
-              <Stack align={"center"} bg={'rgba(255,255,255, 0.7)'} py={'100px'}>
-                <chakra.img src={'/image/About/04-icon-01.png'} pb={'40px'} w={'85px'}/>
+              <Stack align={"center"} bg={'rgba(255,255,255, 0.7)'} py={'100px'} borderRadius={'20px'}>
+                <chakra.img src={'/image/About/04-icon-01@2x.png'} pb={'40px'} w={'85px'}/>
                 <Text fontSize={'12.5px'} fontWeight={'600'} textAlign={"center"}>NRA welcomes research in fields
                   such<br/>
                   as blockchain, finance, economics, game<br/>
@@ -319,8 +320,8 @@ export default function NRA(): JSX.Element {
           <Stack pt={'62px'}>
             <Text fontSize={'25px'} fontWeight={'bold'} textAlign={"start"} px={'24px'}>Vacant Positions</Text>
             <Stack px={'24px'} pt={'30px'}>
-              <Stack align={"center"} bg={'rgba(255,255,255, 0.7)'} py={'100px'}>
-                <chakra.img src={'/image/About/04-icon-02.png'} pb={'40px'} w={'85px'}/>
+              <Stack align={"center"} bg={'rgba(255,255,255, 0.7)'} py={'100px'} borderRadius={'20px'}>
+                <chakra.img src={'/image/About/04-icon-02@2x.png'} pb={'40px'} w={'85px'}/>
                 <Text fontSize={'12.5px'} fontWeight={'600'} textAlign={"center"}>NRA welcomes applicants to researchers<br/>
                   of all levels. NRA evaluates the work of<br/>
                   its researchers in a result-oriented<br/>
@@ -342,23 +343,23 @@ export default function NRA(): JSX.Element {
               <Stack spacing={'22px'}>
                 <Link fontSize={'15px'} fontWeight={'bold'} href={'https://finance.nestprotocol.org/'} isExternal>Launch
                   App</Link>
-                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Buy futures, options and win NEST</Text>
+                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Open futures, options NFT here</Text>
               </Stack>
               <Stack spacing={'22px'}>
-                <Link fontSize={'15px'} fontWeight={'bold'} href={'/blogs'}>NEST Blog</Link>
-                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Latest blogs from NEST</Text>
+                <Link fontSize={'15px'} fontWeight={'bold'} href={'/blogs/'}>NEST Blog</Link>
+                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Blogs & news from NEST</Text>
               </Stack>
               <Stack spacing={'22px'}>
-                <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/nra'}>NEST Research Academy</Link>
-                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know about NRA</Text>
+                <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/nra/'}>NEST Research Academy</Link>
+                <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Learn more about NEST</Text>
               </Stack>
               <Stack spacing={'22px'}>
-                <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/Building-On-NEST/Contracts/'}>Developer
+                <Link fontSize={'15px'} fontWeight={'bold'} href={'/docs/PVM-Technical-Reference/'}>Developer
                   Docs</Link>
                 <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Know how to develop on NEST</Text>
               </Stack>
               <Stack spacing={'22px'}>
-                <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/faqs'}>FAQs</Link>
+                <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/faqs/'}>FAQs</Link>
                 <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Frequently asked questions</Text>
               </Stack>
               <Stack spacing={'10px'} w={'full'}>
@@ -374,24 +375,24 @@ export default function NRA(): JSX.Element {
               <Stack w={'full'} align={"center"} spacing={'12px'}>
                 <HStack spacing={'40px'}>
                   <Link href={'https://discord.gg/nestprotocol'} isExternal>
-                    <chakra.img src={'/image/Footer/discord_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/discord_icon.svg'} h={'44px'} w={'44px'} alt={'discord'}/>
                   </Link>
                   <Link href={'https://github.com/NEST-Protocol'} isExternal>
-                    <chakra.img src={'/image/Footer/github_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/github_icon.svg'} h={'44px'} w={'44px'} alt={'github_icon'}/>
                   </Link>
                   <Link href={'https://twitter.com/nest_protocol/'} isExternal>
-                    <chakra.img src={'/image/Footer/twitter_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/twitter_icon.svg'} h={'44px'} w={'44px'} alt={'twitter_icon.svg'}/>
                   </Link>
                 </HStack>
                 <HStack spacing={'40px'}>
                   <Link href={'https://t.me/nest_chat/'} isExternal>
-                    <chakra.img src={'/image/Footer/telegram_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/telegram_icon.svg'} h={'44px'} w={'44px'} alt={'telegram_icon'}/>
                   </Link>
                   <Link href={'https://nest-protocol-82041.medium.com/'} isExternal>
-                    <chakra.img src={'/image/Footer/medium_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/medium_icon.svg'} h={'44px'} w={'44px'} alt={'medium'}/>
                   </Link>
                   <Link href={'mailto:hello@nestprotocol.org'} isExternal>
-                    <chakra.img src={'/image/Footer/email_icon.svg'} h={'44px'} w={'44px'}/>
+                    <chakra.img src={'/image/Footer/email_icon.svg'} h={'44px'} w={'44px'} alt={'email'}/>
                   </Link>
                 </HStack>
               </Stack>

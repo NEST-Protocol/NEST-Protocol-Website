@@ -44,15 +44,15 @@ const TheFooter = () => {
                   <Text
                     color={'#7D7D7D'}
                     fontWeight={'600'}
-                  >Buy futures, options and win NEST</Text>
+                  >Open futures, options NFT here</Text>
                 </VStack>
                 <VStack spacing={'20px'} align={"start"}>
                   <Text fontWeight={"700"} color={'#003232'}
                         cursor={"pointer"} onClick={() => {
-                    window.location.pathname = '/news'
+                    window.location.pathname = '/blogs/'
                   }}
-                  >NEST News</Text>
-                  <Text color={'#7D7D7D'} fontWeight={'600'}>Latest news from NEST</Text>
+                  >NEST Blog</Text>
+                  <Text color={'#7D7D7D'} fontWeight={'600'}>Blogs & news from NEST</Text>
                 </VStack>
                 <VStack spacing={'20px'} align={"start"}>
                   <Text fontWeight={"700"} color={'#003232'} cursor={"pointer"} onClick={() => {
@@ -66,36 +66,36 @@ const TheFooter = () => {
               <Stack px={['0', '16px']} spacing={isDesktop ? "44px" : "22px"} minW={'300px'}>
                 <VStack spacing={'20px'} align={"start"}>
                   <Text fontWeight={"700"} color={'#003232'} cursor={"pointer"} onClick={() => {
-                    window.location.pathname = '/docs/Concept/What-is-NEST'
+                    window.location.pathname = '/docs/Overview/What-is-NEST-Protocol'
                   }}>Developer Docs</Text>
                   <Text color={'#7D7D7D'} fontWeight={'600'}>Learn how to develop on NEST PVM</Text>
                 </VStack>
                 <VStack spacing={'20px'} align={"start"}>
                   <Text fontWeight={"700"} color={'#003232'} cursor={"pointer"} onClick={() => {
-                    window.location.pathname = '/about/faqs'
+                    window.location.pathname = '/about/faqs/'
                   }}>FAQs</Text>
                   <Text color={'#7D7D7D'} fontWeight={'600'}>Frequently asked questions</Text>
                 </VStack>
                 {isDesktop && (
                   <Stack spacing={'24px'}>
                     <HStack spacing={'24px'}>
-                      <Link href={'https://github.com/NEST-Protocol'} isExternal>
-                        <chakra.img src={'/image/Footer/github_icon.svg'} h={'44px'} w={'44px'}/>
+                      <Link  href={'https://github.com/NEST-Protocol'} isExternal>
+                        <chakra.img src={'/image/Footer/github_icon.svg'} h={'44px'} w={'44px'} alt={'github_icon'}/>
                       </Link>
-                      <Link href={'https://twitter.com/nest_protocol/'} isExternal>
-                        <chakra.img src={'/image/Footer/twitter_icon.svg'} h={'44px'} w={'44px'}/>
+                      <Link  href={'https://twitter.com/nest_protocol/'} isExternal>
+                        <chakra.img src={'/image/Footer/twitter_icon.svg'} h={'44px'} w={'44px'} alt={'twitter_icon.svg'}/>
                       </Link>
-                      <Link href={'https://t.me/nest_chat/'} isExternal>
-                        <chakra.img src={'/image/Footer/telegram_icon.svg'} h={'44px'} w={'44px'}/>
+                      <Link  href={'https://t.me/nest_chat/'} isExternal>
+                        <chakra.img src={'/image/Footer/telegram_icon.svg'} h={'44px'} w={'44px'} alt={'telegram_icon'}/>
                       </Link>
-                      <Link href={'https://nest-protocol-82041.medium.com/'} isExternal>
-                        <chakra.img src={'/image/Footer/medium_icon.svg'} h={'44px'} w={'44px'}/>
+                      <Link  href={'https://nest-protocol-82041.medium.com/'} isExternal>
+                        <chakra.img src={'/image/Footer/medium_icon.svg'} h={'44px'} w={'44px'} alt={'medium'}/>
                       </Link>
-                      <Link href={'https://discord.gg/nestprotocol'} isExternal>
-                        <chakra.img src={'/image/Footer/discord_icon.svg'} h={'44px'} w={'44px'}/>
+                      <Link  href={'https://discord.gg/nestprotocol'} isExternal>
+                        <chakra.img src={'/image/Footer/discord_icon.svg'} h={'44px'} w={'44px'} alt={'discord'}/>
                       </Link>
-                      <Link href={'mailto:hello@nestprotocol.org'} isExternal>
-                        <chakra.img src={'/image/Footer/email_icon.svg'} h={'44px'} w={'44px'}/>
+                      <Link  href={'mailto:hello@nestprotocol.org'} isExternal>
+                        <chakra.img src={'/image/Footer/email_icon.svg'} h={'44px'} w={'44px'} alt={'email'}/>
                       </Link>
                     </HStack>
                   </Stack>

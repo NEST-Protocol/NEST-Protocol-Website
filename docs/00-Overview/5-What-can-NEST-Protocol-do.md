@@ -2,19 +2,19 @@
 sidebar_position: 5
 ---
 
-# What can NEST Protocol do？
+# What can NEST Protocol do?
 
-NEST Protocol can be simplified to a production and programming system for stochastic assets. This not only solves the derivatives settlement problem that ETH cannot accomplish but also dramatically simplifies the development process of Defi and Gamefi. It also avoids the problem of running a new unit of value while developing a project, allowing developers to focus on application development rather than token liquidity operations.
+[NEST Protocol](https://nestprotocol.org/docs/Overview/What-is-NEST-Protocol) can be simplified to a production and programming system for [stochastic assets](https://nestprotocol.org/docs/Concept/stochastic-assets). This not only solves the derivatives settlement problem that ETH cannot accomplish but also dramatically simplifies the development process of Defi and Gamefi. It also avoids the problem of running a new unit of value while developing a project, allowing developers to focus on application development rather than token liquidity operations.
 
 Because NEST is the new risk-trading archetype, it does not need to be hedged like traditional financial assets. It is therefore perfect for providing large amounts of liquidity. Below we shall discuss how this can be applied to different scenarios:
 
 ## Derivatives
 
-Futures and options are the most direct beneficiaries of the NEST system. Because the contract is the only seller, there un- derlying derivatives need the demand parameters and corresponding expected values to be provided before they can be sold. For example, if someone needs a call option based on ETH/USDT, the strike price and strike date need to be entered to get the cost calculable, and the option can be exercised at expiration according to the conditions set.
+Futures and options are the most direct beneficiaries of the NEST system. Because the contract is the only seller, there underlying [derivatives](https://en.wikipedia.org/wiki/Derivative_(finance)) need the demand parameters and corresponding expected values to be provided before they can be sold. For example, if someone needs a call option based on ETH/USDT, the strike price and strike date need to be entered to get the cost calculable, and the option can be exercised at expiration according to the conditions set.
 
 ## Parallel Asset/ Stablecoins
 
-Based on the price system, parallel as- sets representing arbitrary price information flow can be generated, and their earning are the same as the original assets. For example, PBTC, PUSD, PETH, etc., the flow of price information generated in this way can be duplicated by collateralizing the NEST or the assets accepted by the system, or it can be produced based on the conver- gence algorithm (supported by the system’s interest rate oracle), but the cost paid must be guaranteed to match the generated assets.
+Based on the price system, parallel assets representing arbitrary price information flow can be generated, and their earning are the same as the original assets. For example, PBTC, PUSD, PETH, etc., the flow of price information generated in this way can be duplicated by collateralizing the NEST or the assets accepted by the system, or it can be produced based on the convergence algorithm (supported by the system’s interest rate oracle), but the cost paid must be guaranteed to match the generated assets.
 
 ## Bond and interest rate oracle
 
@@ -42,7 +42,7 @@ Any Game item composition is a swap of economic relationships, so it is only nec
 
 ## Gamefi cross-platform interoperability
 
-When different platforms are developed with NEST, they have the same system algorithm for clear- ing and billing tokens. This is the benefit of One NEST and One Coin: This creative model can be highly convenient for Gamefi platforms to call NEST functions interchangeably in the NEST protocol, as long as NEST constraints are met.
+When different platforms are developed with NEST, they have the same system algorithm for clearing and billing tokens. This is the benefit of One NEST and One Coin: This creative model can be highly convenient for Gamefi platforms to call NEST functions interchangeably in the NEST protocol, as long as NEST constraints are met.
 
 ## Putable NFT
 
