@@ -110,8 +110,8 @@ Given that PVM supports random variables and their programming in the full proba
       {
         q: "How to convert NEST tokens from BSC to Ethereum?",
         a: <Text>NEST token cross-chain tutorial:<Link
-          href={"https://nest-protocol-82041.medium.com/cross-chain-bridge-tutorial-c8a9eae85e8b"}
-          isExternal>https://nest-protocol-82041.medium.com/cross-chain-bridge-tutorial-c8a9eae85e8b</Link></Text>
+          href={"https://nest-protocol.medium.com/cross-chain-bridge-tutorial-c8a9eae85e8b"}
+          isExternal>https://nest-protocol.medium.com/cross-chain-bridge-tutorial-c8a9eae85e8b</Link></Text>
       },
     ]
     const contract_issues = [

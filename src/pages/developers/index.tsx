@@ -148,7 +148,7 @@ export default function Home(): JSX.Element {
                   <Link href={'https://t.me/nest_chat/'} isExternal>
                     <chakra.img src={'/image/Footer/telegram_icon.svg'} h={'44px'} w={'44px'} alt={'telegram_icon'}/>
                   </Link>
-                  <Link href={'https://nest-protocol-82041.medium.com/'} isExternal>
+                  <Link href={'https://nest-protocol.medium.com/'} isExternal>
                     <chakra.img src={'/image/Footer/medium_icon.svg'} h={'44px'} w={'44px'} alt={'medium'}/>
                   </Link>
                   <Link href={'https://discord.gg/nestprotocol'} isExternal>
@@ -348,7 +348,7 @@ export default function Home(): JSX.Element {
                   <Link href={'https://t.me/nest_chat/'} isExternal>
                     <chakra.img src={'/image/Footer/telegram_icon.svg'} h={'44px'} w={'44px'} alt={'telegram_icon'}/>
                   </Link>
-                  <Link href={'https://nest-protocol-82041.medium.com/'} isExternal>
+                  <Link href={'https://nest-protocol.medium.com/'} isExternal>
                     <chakra.img src={'/image/Footer/medium_icon.svg'} h={'44px'} w={'44px'} alt={'medium'}/>
                   </Link>
                   <Link href={'mailto:hello@nestprotocol.org'} isExternal>

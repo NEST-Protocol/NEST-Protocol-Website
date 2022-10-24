@@ -88,7 +88,7 @@ const TheFooter = () => {
                       <Link  href={'https://t.me/nest_chat/'} isExternal>
                         <chakra.img src={'/image/Footer/telegram_icon.svg'} h={'44px'} w={'44px'} alt={'telegram_icon'}/>
                       </Link>
-                      <Link  href={'https://nest-protocol-82041.medium.com/'} isExternal>
+                      <Link  href={'https://nest-protocol.medium.com/'} isExternal>
                         <chakra.img src={'/image/Footer/medium_icon.svg'} h={'44px'} w={'44px'} alt={'medium'}/>
                       </Link>
                       <Link  href={'https://discord.gg/nestprotocol'} isExternal>
@@ -159,13 +159,13 @@ const TheFooter = () => {
                     }}
                   />
                   <chakra.img
-                    alt={'https://nest-protocol-82041.medium.com/'}
+                    alt={'https://nest-protocol.medium.com/'}
                     src={"/image/Footer/medium_icon.svg"}
                     width={'44px'}
                     height={'44px'}
                     cursor={"pointer"}
                     onClick={() => {
-                      window.open('https://nest-protocol-82041.medium.com/', '_blank')
+                      window.open('https://nest-protocol.medium.com/', '_blank')
                     }}
                   />
                   <chakra.img

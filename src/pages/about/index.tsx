@@ -248,7 +248,7 @@ const About = () => {
                         Discord
                       </Button>
                       <Button variant={"outline"} aria-label={'medium'} onClick={() => {
-                        window.open('https://nest-protocol-82041.medium.com/', '_blank');
+                        window.open('https://nest-protocol.medium.com/', '_blank');
                       }}>
                         Medium
                       </Button>
@@ -346,7 +346,7 @@ const About = () => {
                     Discord
                   </Button>
                   <Button aria-label={'medium'} variant={"outline"} onClick={() => {
-                    window.open('https://nest-protocol-82041.medium.com/', '_blank');
+                    window.open('https://nest-protocol.medium.com/', '_blank');
                   }}>
                     Medium
                   </Button>
