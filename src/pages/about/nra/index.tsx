@@ -132,7 +132,7 @@ export default function NRA(): JSX.Element {
                   <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Blogs & news from NEST</Text>
                 </Stack>
                 <Stack spacing={'22px'}>
-                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/about/nra/'}>NEST Research Academy</Link>
+                  <Link fontSize={'15px'} fontWeight={'bold'} href={'/doc/ennestwhitepaper.pdf'}>Whitepaper</Link>
                   <Text fontSize={'15px'} fontWeight={'600'} color={'#7D7D7D'}>Learn more about NEST</Text>
                 </Stack>
               </Stack>

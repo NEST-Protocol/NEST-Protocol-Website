@@ -56,9 +56,9 @@ const TheFooter = () => {
                 </VStack>
                 <VStack spacing={'20px'} align={"start"}>
                   <Text fontWeight={"700"} color={'#003232'} cursor={"pointer"} onClick={() => {
-                    window.location.pathname = '/about/nra/'
-                  }}>NEST Research Academy</Text>
-                  <Text color={'#7D7D7D'} fontWeight={'600'}>Learn about NRA</Text>
+                    window.location.pathname = '/doc/ennestwhitepaper.pdf'
+                  }}>Whitepaper</Text>
+                  <Text color={'#7D7D7D'} fontWeight={'600'}>Learn more about NEST</Text>
                 </VStack>
               </Stack>
             </WrapItem>
