@@ -282,22 +282,38 @@ export default function Home(): JSX.Element {
                   <Stack align={"center"}>
                     <AiOutlineTwitter fontSize={'48px'} color={'#003232'}/>
                   </Stack>
-                  <Link href={'https://twitter.com/NEST_Protocol'} isExternal>@NEST_Protocol <ChevronRightIcon/></Link>
-                  <Link href={'https://twitter.com/NESTDAOSupport'}
-                        isExternal>NEST Roundtable <ChevronRightIcon/></Link>
+                  <Link href={'https://twitter.com/NEST_Protocol'} isExternal onClick={() => {
+                    gtag('event', 'clickTwitter', {
+                      'from': 'desktop header'
+                    })
+                  }}>
+                    @NEST_Protocol <ChevronRightIcon/>
+                  </Link>
+                  {/*<Link href={'https://twitter.com/NESTDAOSupport'}*/}
+                  {/*      isExternal>NEST Roundtable <ChevronRightIcon/></Link>*/}
                 </Stack>
                 <Stack spacing={'20px'}>
                   <Stack align={"center"}>
                     <FaTelegramPlane fontSize={'48px'} color={'#003232'}/>
                   </Stack>
-                  <Link href={'https://t.me/NEST_Community'} isExternal>
+                  <Link href={'https://t.me/NEST_Community'} isExternal onClick={() => {
+                    gtag('event', 'clickTelegram', {
+                      'from': 'desktop header',
+                      'value': '@NEST_Community'
+                    })
+                  }}>
                     <HStack align={"center"}>
                       <chakra.img src={'/image/Home/icon_8.svg'} w={'17px'} h={'16px'}/>
                       <Text color={'#00A0E9'} fontWeight={'600'}>@NEST_Community</Text>
                       <ChevronRightIcon color={'#00A0E9'}/>
                     </HStack>
                   </Link>
-                  <Link href={'https://t.me/nest_chat'} isExternal>
+                  <Link href={'https://t.me/nest_chat'} isExternal onClick={() => {
+                    gtag('event', 'clickTelegram', {
+                      'from': 'desktop header',
+                      'value': '@nest_chat'
+                    })
+                  }}>
                     <HStack align={"center"}>
                       <chakra.img src={'/image/Home/icon_7.svg'} w={'17px'} h={'16px'}/>
                       <Text color={'#00A0E9'} fontWeight={'600'}>@nest_chat</Text>
@@ -309,7 +325,11 @@ export default function Home(): JSX.Element {
                   <Stack align={"center"}>
                     <AiOutlineGithub fontSize={'48px'} color={'#003232'}/>
                   </Stack>
-                  <Link href={'/developers/'}>For developers <ChevronRightIcon/></Link>
+                  <Link href={'/developers/'} onClick={() => {
+                    gtag('event', 'clickDevelop', {
+                      'from': 'desktop header'
+                    })
+                  }}>For developers <ChevronRightIcon/></Link>
                 </Stack>
               </HStack>
               <Stack spacing={'60px'} align={"center"}>
@@ -700,21 +720,33 @@ export default function Home(): JSX.Element {
             <Text fontSize={'16.5px'} fontWeight={'bold'}>Over 1 MILLION community<br/>members, Join us</Text>
             <Stack pt={'30px'} align={"center"}>
               <AiOutlineTwitter fontSize={'24px'} color={'#003232'}/>
-              <Link color={'#00A0E9'} fontWeight={'600'} fontSize={'12.5px'} isExternal
+              <Link color={'#00A0E9'} fontWeight={'600'} fontSize={'12.5px'} isExternal onClick={() => {
+                gtag('event', 'clickTwitter', {
+                  'from': 'desktop header'
+                })
+              }}
                     href={'https://twitter.com/NEST_Protocol'}>@NEST_Protocol <ChevronRightIcon/></Link>
-              <Link color={'#00A0E9'} fontWeight={'600'} fontSize={'12.5px'} isExternal
-                    href={'https://twitter.com/NESTDAOSupport'}>@NESTDAOSupport <ChevronRightIcon/></Link>
             </Stack>
             <Stack pt={'30px'} align={"center"}>
               <FaTelegramPlane fontSize={'24px'} color={'#003232'}/>
-              <Link href={'https://t.me/NEST_Community'} isExternal>
+              <Link href={'https://t.me/NEST_Community'} isExternal onClick={() => {
+                gtag('event', 'clickTelegram', {
+                  'from': 'desktop header',
+                  'value': '@NEST_Community'
+                })
+              }}>
                 <HStack align={"center"}>
                   <chakra.img src={'/image/Home/icon_8.svg'} w={'14px'} h={'14px'}/>
                   <Text fontSize={'12.5px'} fontWeight={'600'} color={'#00A0E9'}>@NEST_Community</Text>
                   <ChevronRightIcon color={'#00A0E9'}/>
                 </HStack>
               </Link>
-              <Link href={'https://t.me/nest_chat'} isExternal>
+              <Link href={'https://t.me/nest_chat'} isExternal onClick={() => {
+                gtag('event', 'clickTelegram', {
+                  'from': 'desktop header',
+                  'value': '@nest_chat'
+                })
+              }}>
                 <HStack align={"center"}>
                   <chakra.img src={'/image/Home/icon_7.svg'} w={'14px'} h={'14px'}/>
                   <Text fontSize={'12.5px'} fontWeight={'600'} color={'#00A0E9'}>@nest_chat</Text>
@@ -724,7 +756,11 @@ export default function Home(): JSX.Element {
             </Stack>
             <Stack pt={'30px'} align={"center"}>
               <AiOutlineGithub fontSize={'24px'} color={'#003232'}/>
-              <Link color={'#00A0E9'} fontWeight={'600'} fontSize={'12.5px'} href={'/developers/'}>For
+              <Link color={'#00A0E9'} fontWeight={'600'} fontSize={'12.5px'} href={'/developers/'} onClick={() => {
+                gtag('event', 'clickDevelop', {
+                  'from': 'desktop header'
+                })
+              }}>For
                 developers <ChevronRightIcon/></Link>
             </Stack>
             <HStack pt={'60px'} pb={'30px'}>
