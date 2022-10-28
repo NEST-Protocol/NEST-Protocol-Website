@@ -185,9 +185,9 @@ const About = () => {
                     <Link color={'#00A0E9'} fontWeight={600} fontSize={15} href={'/blogs/'}>
                       News <ChevronRightIcon/>
                     </Link>
-                    <Link color={'#00A0E9'} fontWeight={600} fontSize={15} href={'/roundtable/'}>
-                      NEST Roundtable <ChevronRightIcon/>
-                    </Link>
+                    {/*<Link color={'#00A0E9'} fontWeight={600} fontSize={15} href={'/roundtable/'}>*/}
+                    {/*  NEST Roundtable <ChevronRightIcon/>*/}
+                    {/*</Link>*/}
                   </HStack>
                 </Stack>
               </HStack>

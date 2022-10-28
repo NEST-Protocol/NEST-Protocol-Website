@@ -325,8 +325,8 @@ export default function Home(): JSX.Element {
                   <Stack align={"center"}>
                     <AiOutlineGithub fontSize={'48px'} color={'#003232'}/>
                   </Stack>
-                  <Link href={'/developers/'} onClick={() => {
-                    gtag('event', 'clickDevelop', {
+                  <Link href={'https://github.com/nest-protocol'} onClick={() => {
+                    gtag('event', 'clickGithub', {
                       'from': 'desktop header'
                     })
                   }}>For developers <ChevronRightIcon/></Link>
@@ -756,8 +756,8 @@ export default function Home(): JSX.Element {
             </Stack>
             <Stack pt={'30px'} align={"center"}>
               <AiOutlineGithub fontSize={'24px'} color={'#003232'}/>
-              <Link color={'#00A0E9'} fontWeight={'600'} fontSize={'12.5px'} href={'/developers/'} onClick={() => {
-                gtag('event', 'clickDevelop', {
+              <Link color={'#00A0E9'} fontWeight={'600'} fontSize={'12.5px'} href={'https://github.com/nest-protocol'} onClick={() => {
+                gtag('event', 'clickGithub', {
                   'from': 'desktop header'
                 })
               }}>For
