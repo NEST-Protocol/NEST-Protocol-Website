@@ -26,7 +26,7 @@ const Roundtable = () => {
       date: "2022-10-24",
       time: "1:35:24",
       link: "https://twitter.com/i/spaces/1nAKErNMjkvGL?s=20",
-      pics: ['/image/roundtable/routable9/logo1.png', '/image/roundtable/routable9/logo2.png', '/image/roundtable/routable9/logo3.png', '/image/roundtable/routable9/logo4.png']
+      pics: ['/image/roundtable/roundtable9/logo1.png', '/image/roundtable/roundtable9/logo2.png', '/image/roundtable/roundtable9/logo3.png', '/image/roundtable/roundtable9/logo4.png']
     },
     {
       id: 8,
@@ -34,7 +34,7 @@ const Roundtable = () => {
       date: "2021-10-17",
       time: "1:03:06",
       link: "https://twitter.com/i/spaces/1PlJQpBYkVXGE?s=20",
-      pics: ['/image/roundtable/routable8/logo1.png', '/image/roundtable/routable8/logo2.png', '/image/roundtable/routable8/logo3.png', '/image/roundtable/routable8/logo4.png', '/image/roundtable/routable8/logo5.png']
+      pics: ['/image/roundtable/roundtable8/logo1.png', '/image/roundtable/roundtable8/logo2.png', '/image/roundtable/roundtable8/logo3.png', '/image/roundtable/roundtable8/logo4.png', '/image/roundtable/roundtable8/logo5.png']
     },
     {
       id: 7,
@@ -42,7 +42,7 @@ const Roundtable = () => {
       date: "2022-10-10",
       time: "1:04:51",
       link: "https://twitter.com/i/spaces/1OdKrzlqdevKX?s=20",
-      pics: ['/image/roundtable/routable7/logo1.png', '/image/roundtable/routable7/logo2.png', '/image/roundtable/routable7/logo3.png', '/image/roundtable/routable7/logo4.png', '/image/roundtable/routable9/logo5.png']
+      pics: ['/image/roundtable/roundtable7/logo1.png', '/image/roundtable/roundtable7/logo2.png', '/image/roundtable/roundtable7/logo3.png', '/image/roundtable/roundtable7/logo4.png', '/image/roundtable/roundtable9/logo5.png']
     },
     {
       id: 6,
@@ -50,7 +50,7 @@ const Roundtable = () => {
       date: "2022-10-03",
       time: "1:22:16",
       link: "https://twitter.com/i/spaces/1mnxeRqbMQvKX?s=20",
-      pics: ['/image/roundtable/routable6/logo1.png', '/image/roundtable/routable6/logo2.png', '/image/roundtable/routable6/logo3.png', '/image/roundtable/routable6/logo4.png']
+      pics: ['/image/roundtable/roundtable6/logo1.png', '/image/roundtable/roundtable6/logo2.png', '/image/roundtable/roundtable6/logo3.png', '/image/roundtable/roundtable6/logo4.png']
     },
     {
       id: 5,
@@ -58,16 +58,8 @@ const Roundtable = () => {
       date: "2022-09-26",
       time: "1:22:44",
       link: "https://twitter.com/i/spaces/1lPKqBNljgEGb?s=20",
-      pics: ['/image/roundtable/routable5/logo1.png', '/image/roundtable/routable5/logo2.png', '/image/roundtable/routable5/logo3.png', '/image/roundtable/routable5/logo4.png',
-        '/image/roundtable/routable5/logo5.png', '/image/roundtable/routable5/logo6.png', '/image/roundtable/routable5/logo7.png', '/image/roundtable/routable5/logo8.png']
-    },
-    {
-      id: 4,
-      title: "Investment strategy in crypto bear market",
-      date: "2022-09-26",
-      time: "1:22:44",
-      link: "https://twitter.com/i/spaces/1lPKqBNljgEGb?s=20",
-      pics: ['/image/roundtable/routable4/logo1.png', '/image/roundtable/routable4/logo2.png', '/image/roundtable/routable4/logo3.png', '/image/roundtable/routable4/logo4.png', '/image/roundtable/routable4/logo5.png']
+      pics: ['/image/roundtable/roundtable5/logo1.png', '/image/roundtable/roundtable5/logo2.png', '/image/roundtable/roundtable5/logo3.png', '/image/roundtable/roundtable5/logo4.png',
+        '/image/roundtable/roundtable5/logo5.png', '/image/roundtable/roundtable5/logo6.png', '/image/roundtable/roundtable5/logo7.png', '/image/roundtable/roundtable5/logo8.png']
     },
     {
       id: 3,
@@ -75,7 +67,7 @@ const Roundtable = () => {
       date: "2022-09-12",
       time: "1:08:26",
       link: "https://twitter.com/i/spaces/1OyKAVMZyzWGb?s=20",
-      pics: ['/image/roundtable/routable3/logo1.png', '/image/roundtable/routable3/logo2.png', '/image/roundtable/routable3/logo3.png', '/image/roundtable/routable3/logo4.png']
+      pics: ['/image/roundtable/roundtable3/logo1.png', '/image/roundtable/roundtable3/logo2.png', '/image/roundtable/roundtable3/logo3.png', '/image/roundtable/roundtable3/logo4.png']
     },
     {
       id: 2,
@@ -136,13 +128,14 @@ const Roundtable = () => {
                 <WrapItem key={item.link} w={'full'} minH={'200px'}>
                   <HStack w={'full'} bgImage={"/image/roundtable/roundtable-bg.png"} bgSize={'cover'}
                           borderRadius={'12px'} spacing={'0'} cursor={"pointer"}>
-                    <Stack h={'full'} spacing={'20px'} p={'30px'}>
-                      <HStack>
-                        <Text fontSize={'24px'} fontWeight={'700'}>
+                    <Stack h={'full'} spacing={'20px'} p={'30px'} w={'full'}>
+                      <HStack w={'full'} spacing={'20px'} overflow={"hidden"}>
+                        <Text fontSize={'24px'} fontWeight={'700'} whiteSpace={'nowrap'}>
                           {name} {item.id}
                         </Text>
+                        <Spacer/>
                         { item.pics && item.pics.length > 0 && item.pics.map(item => (
-                          <chakra.img src={'/image/roundtable/roundtable-bg.png'} alt={'icon'}/>
+                          <chakra.img src={item} alt={'icon'}/>
                           )) }
                       </HStack>
                       <Text fontWeight={'700'} fontSize={'32px'}>
