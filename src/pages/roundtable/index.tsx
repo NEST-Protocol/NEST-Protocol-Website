@@ -7,7 +7,7 @@ import {
   HStack,
   Link, Modal, ModalBody, ModalCloseButton, ModalContent, Spacer,
   Stack,
-  useDisclosure, useMediaQuery, VStack, Wrap, WrapItem, Divider
+  useDisclosure, useMediaQuery, VStack, Wrap, WrapItem, Box
 } from "@chakra-ui/react";
 import {ChevronRightIcon, HamburgerIcon} from "@chakra-ui/icons";
 import {menu} from "@site/src/pages";
@@ -21,46 +21,61 @@ const Roundtable = () => {
 
   const spaces = [
     {
-      id: 8,
+      id: 9,
       title: "Digital Assets in GameFi",
       date: "2022-10-24",
       time: "1:35:24",
-      link: "https://twitter.com/i/spaces/1nAKErNMjkvGL?s=20"
+      link: "https://twitter.com/i/spaces/1nAKErNMjkvGL?s=20",
+      pics: ['/image/roundtable/routable9/logo1.png', '/image/roundtable/routable9/logo2.png', '/image/roundtable/routable9/logo3.png', '/image/roundtable/routable9/logo4.png']
     },
     {
-      id: 7,
+      id: 8,
       title: "How does DeFi vs TradFi? Will XEN be the future?",
       date: "2021-10-17",
       time: "1:03:06",
-      link: "https://twitter.com/i/spaces/1PlJQpBYkVXGE?s=20"
+      link: "https://twitter.com/i/spaces/1PlJQpBYkVXGE?s=20",
+      pics: ['/image/roundtable/routable8/logo1.png', '/image/roundtable/routable8/logo2.png', '/image/roundtable/routable8/logo3.png', '/image/roundtable/routable8/logo4.png', '/image/roundtable/routable8/logo5.png']
     },
     {
-      id: 6,
+      id: 7,
       title: "New chances of NFT under Web3 infrastructure",
       date: "2022-10-10",
       time: "1:04:51",
-      link: "https://twitter.com/i/spaces/1OdKrzlqdevKX?s=20"
+      link: "https://twitter.com/i/spaces/1OdKrzlqdevKX?s=20",
+      pics: ['/image/roundtable/routable7/logo1.png', '/image/roundtable/routable7/logo2.png', '/image/roundtable/routable7/logo3.png', '/image/roundtable/routable7/logo4.png', '/image/roundtable/routable9/logo5.png']
     },
     {
-      id: 5,
+      id: 6,
       title: "How to deal with the risks in bearish market and in general?",
       date: "2022-10-03",
       time: "1:22:16",
-      link: "https://twitter.com/i/spaces/1mnxeRqbMQvKX?s=20"
+      link: "https://twitter.com/i/spaces/1mnxeRqbMQvKX?s=20",
+      pics: ['/image/roundtable/routable6/logo1.png', '/image/roundtable/routable6/logo2.png', '/image/roundtable/routable6/logo3.png', '/image/roundtable/routable6/logo4.png']
+    },
+    {
+      id: 5,
+      title: "Investment strategy in crypto bear market",
+      date: "2022-09-26",
+      time: "1:22:44",
+      link: "https://twitter.com/i/spaces/1lPKqBNljgEGb?s=20",
+      pics: ['/image/roundtable/routable5/logo1.png', '/image/roundtable/routable5/logo2.png', '/image/roundtable/routable5/logo3.png', '/image/roundtable/routable5/logo4.png',
+        '/image/roundtable/routable5/logo5.png', '/image/roundtable/routable5/logo6.png', '/image/roundtable/routable5/logo7.png', '/image/roundtable/routable5/logo8.png']
     },
     {
       id: 4,
       title: "Investment strategy in crypto bear market",
       date: "2022-09-26",
       time: "1:22:44",
-      link: "https://twitter.com/i/spaces/1lPKqBNljgEGb?s=20"
+      link: "https://twitter.com/i/spaces/1lPKqBNljgEGb?s=20",
+      pics: ['/image/roundtable/routable4/logo1.png', '/image/roundtable/routable4/logo2.png', '/image/roundtable/routable4/logo3.png', '/image/roundtable/routable4/logo4.png', '/image/roundtable/routable4/logo5.png']
     },
     {
       id: 3,
       title: "Ethereum merge is coming, opportunities & challenges to infrastructure",
       date: "2022-09-12",
       time: "1:08:26",
-      link: "https://twitter.com/i/spaces/1OyKAVMZyzWGb?s=20"
+      link: "https://twitter.com/i/spaces/1OyKAVMZyzWGb?s=20",
+      pics: ['/image/roundtable/routable3/logo1.png', '/image/roundtable/routable3/logo2.png', '/image/roundtable/routable3/logo3.png', '/image/roundtable/routable3/logo4.png']
     },
     {
       id: 2,
@@ -119,26 +134,34 @@ const Roundtable = () => {
             <Wrap w={'full'} px={'88px'} spacing={'20px'} justify={"center"}>
               {spaces.slice(0, showMore ? spaces.length : 6).map((item) => (
                 <WrapItem key={item.link} w={'full'} minH={'200px'}>
-                  <HStack w={'full'} bg={'red'} borderRadius={'12px'} spacing={'40px'}>
+                  <HStack w={'full'} bgImage={"/image/roundtable/roundtable-bg.png"} bgSize={'cover'}
+                          borderRadius={'12px'} spacing={'0'} cursor={"pointer"}>
                     <Stack h={'full'} spacing={'20px'} p={'30px'}>
                       <HStack>
-                        <Link fontSize={'24px'} fontWeight={'700'} href={'https://twitter.com/NEST_Protocol'}
-                              isExternal>
+                        <Text fontSize={'24px'} fontWeight={'700'}>
                           {name} {item.id}
-                        </Link>
+                        </Text>
+                        { item.pics && item.pics.length > 0 && item.pics.map(item => (
+                          <chakra.img src={'/image/roundtable/roundtable-bg.png'} alt={'icon'}/>
+                          )) }
                       </HStack>
-
                       <Text fontWeight={'700'} fontSize={'32px'}>
                         {item.title}
                       </Text>
-                      <Text fontSize={'18px'} fontWeight={'500'}>
-                        {item.date}
-                      </Text>
+                      <HStack alignItems={"center"}>
+                        <chakra.img src={'/svg/data.svg'}/>
+                        <Text fontSize={'18px'} fontWeight={'500'} color={'#878787'}>
+                          {item.date}
+                        </Text>
+                      </HStack>
                     </Stack>
                     <Spacer/>
-                    <Divider orientation={'vertical'}/>
-                    <Stack minW={'200px'} w={'200px'} h={'200px'} bg={"black"} >
-
+                    <Box w={'1px'} bg={'#C5C5C5'} h={'200px'}>
+                    </Box>
+                    <Stack minW={'200px'} w={'200px'} h={'200px'} onClick={() => {
+                      window.open(item.link, '_blank')
+                    }}>
+                      <chakra.img src={'/svg/play.svg'} p={'50px'}/>
                     </Stack>
                   </HStack>
                 </WrapItem>
@@ -147,7 +170,8 @@ const Roundtable = () => {
             <Stack align={"center"} justify={"center"} pt={'80px'} pb={'120px'} cursor={'pointer'} onClick={() => {
               setShowMore(!showMore)
             }}>
-              <Text fontSize={'15px'} fontWeight={'600'} color={'#00A0E9'}>{showMore ? 'Less' : 'More'} Roundtable <ChevronRightIcon/></Text>
+              <Text fontSize={'15px'} fontWeight={'600'}
+                    color={'#00A0E9'}>{showMore ? 'Less' : 'More'} Roundtable <ChevronRightIcon/></Text>
             </Stack>
             <HStack py={'88px'} px={'45px'} bg={'rgba(255, 255,255, 0.7)'} justifyContent={"space-between"}
                     align={"start"}>
