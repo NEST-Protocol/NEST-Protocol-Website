@@ -12,12 +12,14 @@ import {
 import {ChevronRightIcon, HamburgerIcon} from "@chakra-ui/icons";
 import {menu} from "@site/src/pages";
 import theme from "../../chakra";
+import {useLocation} from "@docusaurus/router";
 
 const Roundtable = () => {
   const [isDesktop] = useMediaQuery("(min-width: 768px)");
   const {isOpen, onOpen, onClose} = useDisclosure()
   const [showMore, setShowMore] = useState(false)
   const name = "NEST Roundtable"
+  const location = useLocation();
 
   const spaces = [
     {
