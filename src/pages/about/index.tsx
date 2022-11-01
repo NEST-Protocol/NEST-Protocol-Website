@@ -299,6 +299,9 @@ const About = () => {
                 <Link color={'#00A0E9'} fontWeight={600} fontSize={12} href={'/blogs/'}>
                   News <ChevronRightIcon/>
                 </Link>
+                <Link color={'#00A0E9'} fontWeight={600} fontSize={12} href={'/roundtable/'}>
+                  NEST Roundtable <ChevronRightIcon/>
+                </Link>
               </HStack>
             </Stack>
             <Stack spacing={'20px'} justify={"center"} h={'350px'} w={'full'} py={'28px'}
