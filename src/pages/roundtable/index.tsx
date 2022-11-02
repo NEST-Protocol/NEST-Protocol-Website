@@ -20,7 +20,6 @@ type Space = {
   title: string,
   date: string,
   link: string,
-  blog: string,
   pics: string[],
 }
 
@@ -40,10 +39,9 @@ const Roundtable = () => {
     if (res.data?.data) {
       setSpaces(res.data.data.map((item: any) => ({
           id: item.id,
-          title: item.attributes.title || '',
+          title: item.attributes.title,
           date: item.attributes.scheduled_start,
-          link: item.attributes.link || '',
-          blog: item.attributes.blog_link || '',
+          link: item.attributes.link,
           pics: item.attributes?.invited_user_icons?.data?.map((item: any) => 'http://47.102.219.136:1337' + item.attributes.url)
         }
       )))
@@ -107,9 +105,9 @@ const Roundtable = () => {
                           <chakra.img src={item} alt={'icon'}/>
                         ))}
                       </HStack>
-                      <Link fontWeight={'700'} fontSize={'32px'} href={item.blog} isExternal>
+                      <Text fontWeight={'700'} fontSize={'32px'}>
                         {item.title}
-                      </Link>
+                      </Text>
                       <HStack alignItems={"center"}>
                         <chakra.img src={'/svg/data.svg'}/>
                         <Text fontSize={'18px'} fontWeight={'500'} color={'#878787'}>
