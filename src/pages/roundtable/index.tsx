@@ -1,5 +1,5 @@
 import Head from "@docusaurus/Head";
-import React, {useState} from "react";
+import React, {useCallback, useEffect, useState} from "react";
 import {
   Button,
   chakra,
@@ -13,6 +13,15 @@ import {ChevronRightIcon, HamburgerIcon} from "@chakra-ui/icons";
 import {menu} from "@site/src/pages";
 import theme from "../../chakra";
 import {useLocation} from "@docusaurus/router";
+import axios from "axios";
+
+type Space = {
+  id: number,
+  title: string,
+  date: string,
+  link: string,
+  pics: string[],
+}
 
 const Roundtable = () => {
   const [isDesktop] = useMediaQuery("(min-width: 768px)");
@@ -20,72 +29,28 @@ const Roundtable = () => {
   const [showMore, setShowMore] = useState(false)
   const name = "NEST Roundtable"
   const location = useLocation();
+  const [spaces, setSpaces] = useState<Space[]>([])
 
-  const spaces = [
-    {
-      id: 9,
-      title: "Digital Assets in GameFi",
-      date: "2022-10-24",
-      time: "1:35:24",
-      link: "https://twitter.com/i/spaces/1nAKErNMjkvGL?s=20",
-      pics: ['/image/roundtable/roundtable9/logo1.png', '/image/roundtable/roundtable9/logo2.png', '/image/roundtable/roundtable9/logo3.png', '/image/roundtable/roundtable9/logo4.png']
-    },
-    {
-      id: 8,
-      title: "How does DeFi vs TradFi? Will XEN be the future?",
-      date: "2022-10-17",
-      time: "1:03:06",
-      link: "https://twitter.com/i/spaces/1PlJQpBYkVXGE?s=20",
-      pics: ['/image/roundtable/roundtable8/logo1.png', '/image/roundtable/roundtable8/logo2.png', '/image/roundtable/roundtable8/logo3.png', '/image/roundtable/roundtable8/logo4.png', '/image/roundtable/roundtable8/logo5.png']
-    },
-    {
-      id: 7,
-      title: "New chances of NFT under Web3 infrastructure",
-      date: "2022-10-10",
-      time: "1:04:51",
-      link: "https://twitter.com/i/spaces/1OdKrzlqdevKX?s=20",
-      pics: ['/image/roundtable/roundtable7/logo1.png', '/image/roundtable/roundtable7/logo2.png', '/image/roundtable/roundtable7/logo3.png', '/image/roundtable/roundtable7/logo4.png', '/image/roundtable/roundtable9/logo5.png']
-    },
-    {
-      id: 6,
-      title: "How to deal with the risks in bearish market and in general?",
-      date: "2022-10-03",
-      time: "1:22:16",
-      link: "https://twitter.com/i/spaces/1mnxeRqbMQvKX?s=20",
-      pics: ['/image/roundtable/roundtable6/logo1.png', '/image/roundtable/roundtable6/logo2.png', '/image/roundtable/roundtable6/logo3.png', '/image/roundtable/roundtable6/logo4.png']
-    },
-    {
-      id: 5,
-      title: "Investment strategy in crypto bear market",
-      date: "2022-09-26",
-      time: "1:22:44",
-      link: "https://twitter.com/i/spaces/1lPKqBNljgEGb?s=20",
-      pics: ['/image/roundtable/roundtable5/logo1.png', '/image/roundtable/roundtable5/logo2.png', '/image/roundtable/roundtable5/logo3.png', '/image/roundtable/roundtable5/logo4.png',
-        '/image/roundtable/roundtable5/logo5.png', '/image/roundtable/roundtable5/logo6.png', '/image/roundtable/roundtable5/logo7.png', '/image/roundtable/roundtable5/logo8.png']
-    },
-    {
-      id: 3,
-      title: "Ethereum merge is coming, opportunities & challenges to infrastructure",
-      date: "2022-09-12",
-      time: "1:08:26",
-      link: "https://twitter.com/i/spaces/1OyKAVMZyzWGb?s=20",
-      pics: ['/image/roundtable/roundtable3/logo1.png', '/image/roundtable/roundtable3/logo2.png', '/image/roundtable/roundtable3/logo3.png', '/image/roundtable/roundtable3/logo4.png']
-    },
-    {
-      id: 2,
-      title: "How will DeFi develop after the Ethereum Merge?",
-      date: "2022-09-05",
-      time: "49:22",
-      link: "https://twitter.com/i/spaces/1YpKkgyMXWwKj?s=20"
-    },
-    {
-      id: 1,
-      title: "How can the established public chains rise up during bear market?",
-      date: "2022-08-22",
-      time: "49:09",
-      link: "https://twitter.com/i/spaces/1LyxBoXekWYKN?s=20"
+  const fetchRoundtables = useCallback(async () => {
+    const res = await axios({
+      method: 'get',
+      url: 'http://47.102.219.136:1337/api/roundtables?sort[0]=scheduled_start%3Adesc&populate=%2A',
+    })
+    if (res.data?.data) {
+      setSpaces(res.data.data.map((item: any) => ({
+          id: item.id,
+          title: item.attributes.title,
+          date: item.attributes.scheduled_start,
+          link: item.attributes.link,
+          pics: item.attributes?.invited_user_icons?.data?.map((item: any) => 'http://47.102.219.136:1337' + item.attributes.url)
+        }
+      )))
     }
-  ]
+  }, [])
+
+  useEffect(() => {
+    fetchRoundtables()
+  }, [fetchRoundtables])
 
   return (
     <ChakraProvider theme={theme}>
