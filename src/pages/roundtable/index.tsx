@@ -33,7 +33,7 @@ const Roundtable = () => {
     {
       id: 8,
       title: "How does DeFi vs TradFi? Will XEN be the future?",
-      date: "2021-10-17",
+      date: "2022-10-17",
       time: "1:03:06",
       link: "https://twitter.com/i/spaces/1PlJQpBYkVXGE?s=20",
       pics: ['/image/roundtable/roundtable8/logo1.png', '/image/roundtable/roundtable8/logo2.png', '/image/roundtable/roundtable8/logo3.png', '/image/roundtable/roundtable8/logo4.png', '/image/roundtable/roundtable8/logo5.png']
