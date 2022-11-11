@@ -118,7 +118,16 @@ export default function Home(): JSX.Element {
               <Heading fontSize={'50px'} textAlign={"center"}>Cyber Ink</Heading>
               <Text textAlign={"center"} fontWeight={'600'} fontSize={'21px'}>is a collection of 10,000 NFTs on the blockchain.<br/>
                 What's more, each Cyber Ink can unlock the <br/>NEST Fi membership and additional benefits.</Text>
-              <chakra.img src={'/image/Home/nft04@2x.png'} />
+              <HStack justify={"center"}>
+                <Button w={'160px'} minH={'44px'} fontSize={'25px'} onClick={() => {
+                  window.open('https://www.element.market/collections/nest-cyber-ink', '_blank')
+                }}>
+                  NFT
+                </Button>
+              </HStack>
+              <chakra.img src={'/image/Home/nft04@2x.png'} cursor={'pointer'} onClick={() => {
+                window.open('https://www.element.market/collections/nest-cyber-ink', '_blank')
+              }} />
             </Stack>
             <Stack pt={'220px'} pb={'220px'}>
               <Stack spacing={'28px'}>
@@ -626,7 +635,9 @@ export default function Home(): JSX.Element {
             <Text fontSize={'25px'} fontWeight={'bold'}>Cyber Ink</Text>
             <Text fontSize={'12.5px'} fontWeight={'600'}>is a collection of 10,000 NFTs on the blockchain.<br/>
               What's more, each Cyber Ink can unlock the <br/>NEST Fi membership and additional benefits.</Text>
-            <chakra.img src={'/image/Home/nft04@2x.png'} objectFit={"cover"} overflow={"hidden"} h={'310px'}/>
+            <chakra.img src={'/image/Home/nft04@2x.png'} objectFit={"cover"} overflow={"hidden"} h={'310px'} onClick={() => {
+              window.open('https://www.element.market/collections/nest-cyber-ink', '_blank')
+            }} />
           </Stack>
           <Stack textAlign={"center"} pt={'150px'} pb={'150px'}>
             <Text fontSize={'25px'} fontWeight={'bold'}>NEST PROTOCOL<br/>THE MOST<br/>IMPORTANT<br/>INFRASTRUCTURE<br/>AFTER
