@@ -98,6 +98,7 @@ export default function Home(): JSX.Element {
               </Link>
               <Stack direction={"row"} align={"center"} spacing={'24px'} fontWeight={'500'} fontSize={'15px'}
                      color={'#003232'}>
+                <Link href={'https://nft.nestprotocol.org/'} isExternal>Cyber Ink</Link>
                 <Link href={'/nest-fi/'}>NESTFi</Link>
                 <Link href={'/developers/'}>Developers</Link>
                 <Link href={'/docs/Overview/What-is-NEST-Protocol/'}>Doc</Link>
@@ -113,7 +114,13 @@ export default function Home(): JSX.Element {
                 </Button>
               </Stack>
             </Stack>
-            <Stack pt={'140px'} pb={'292px'}>
+            <Stack pt={'100px'} spacing={'28px'}>
+              <Heading fontSize={'50px'} textAlign={"center"}>Cyber Ink</Heading>
+              <Text textAlign={"center"} fontWeight={'600'} fontSize={'21px'}>is a collection of 10,000 NFTs on the blockchain.<br/>
+                What's more, each Cyber Ink can unlock the <br/>NEST Fi membership and additional benefits.</Text>
+              <chakra.img src={'/image/Home/nft04@2x.png'} />
+            </Stack>
+            <Stack pt={'220px'} pb={'220px'}>
               <Stack spacing={'28px'}>
                 <Heading fontSize={'50px'} textAlign={"center"}>NEST PROTOCOL<br/>THE MOST
                   IMPORTANT<br/>INFRASTRUCTURE<br/>AFTER ETH</Heading>
@@ -615,7 +622,13 @@ export default function Home(): JSX.Element {
               </ModalContent>
             </Modal>
           </HStack>
-          <Stack textAlign={"center"} pt={'150px'} pb={'188px'}>
+          <Stack textAlign={"center"} pt={'150px'} pb={'80px'}>
+            <Text fontSize={'25px'} fontWeight={'bold'}>Cyber Ink</Text>
+            <Text fontSize={'12.5px'} fontWeight={'600'}>is a collection of 10,000 NFTs on the blockchain.<br/>
+              What's more, each Cyber Ink can unlock the <br/>NEST Fi membership and additional benefits.</Text>
+            <chakra.img src={'/image/Home/nft04@2x.png'} objectFit={"cover"} overflow={"hidden"} h={'310px'}/>
+          </Stack>
+          <Stack textAlign={"center"} pt={'150px'} pb={'150px'}>
             <Text fontSize={'25px'} fontWeight={'bold'}>NEST PROTOCOL<br/>THE MOST<br/>IMPORTANT<br/>INFRASTRUCTURE<br/>AFTER
               ETH</Text>
             <Text fontSize={'12.5px'} fontWeight={'600'}>NEST Protocol is the stochastic<br/>computer based on PVM,<br/>enables

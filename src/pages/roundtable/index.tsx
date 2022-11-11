@@ -108,6 +108,7 @@ const Roundtable = () => {
               </Link>
               <Stack direction={"row"} align={"center"} spacing={'24px'} fontWeight={'500'} fontSize={'15px'}
                      color={'#003232'}>
+                <Link href={'https://nft.nestprotocol.org/'} isExternal>Cyber Ink</Link>
                 <Link href={'/nest-fi/'}>NESTFi</Link>
                 <Link href={'/developers/'}>Developers</Link>
                 <Link href={'/docs/Overview/What-is-NEST-Protocol/'}>Doc</Link>

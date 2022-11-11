@@ -22,6 +22,7 @@ const TheHeader = () => {
   const location = useLocation();
 
   const menu = [
+    {name: 'Cyber Ink', pathname: 'https://nft.nestprotocol.org/'},
     {name: 'NESTFi', pathname: '/nest-fi/'},
     {name: 'Developers', pathname: '/developers/'},
     {name: 'Doc', pathname: '/docs/PVM-Technical-Reference/'},

@@ -82,6 +82,7 @@ const config = {
             }
           },
           items: [
+            {to: 'https://nft.nestprotocol.org/', label: 'Crypto Ink', position: 'right' },
             {to: '/nest-fi/', label: 'NESTFi', position: 'right'},
             {
               to: '/developers/',
