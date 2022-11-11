@@ -120,13 +120,13 @@ export default function Home(): JSX.Element {
                 What's more, each Cyber Ink can unlock the <br/>NEST Fi membership and additional benefits.</Text>
               <HStack justify={"center"}>
                 <Button w={'160px'} minH={'44px'} fontSize={'25px'} onClick={() => {
-                  window.open('https://www.element.market/collections/nest-cyber-ink', '_blank')
+                  window.open('https://finance.nestprotocol.org/#/NFTAuction', '_blank')
                 }}>
                   NFT
                 </Button>
               </HStack>
               <chakra.img src={'/image/Home/nft04@2x.png'} cursor={'pointer'} onClick={() => {
-                window.open('https://www.element.market/collections/nest-cyber-ink', '_blank')
+                window.open('https://finance.nestprotocol.org/#/NFTAuction', '_blank')
               }} />
             </Stack>
             <Stack pt={'220px'} pb={'220px'}>
@@ -636,7 +636,7 @@ export default function Home(): JSX.Element {
             <Text fontSize={'12.5px'} fontWeight={'600'}>is a collection of 10,000 NFTs on the blockchain.<br/>
               What's more, each Cyber Ink can unlock the <br/>NEST Fi membership and additional benefits.</Text>
             <chakra.img src={'/image/Home/nft04@2x.png'} objectFit={"cover"} overflow={"hidden"} h={'310px'} onClick={() => {
-              window.open('https://www.element.market/collections/nest-cyber-ink', '_blank')
+              window.open('https://finance.nestprotocol.org/#/NFTAuction', '_blank')
             }} />
           </Stack>
           <Stack textAlign={"center"} pt={'150px'} pb={'150px'}>
