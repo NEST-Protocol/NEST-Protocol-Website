@@ -119,10 +119,12 @@ export default function Home(): JSX.Element {
               <Text textAlign={"center"} fontWeight={'600'} fontSize={'21px'}>is a collection of 10,000 NFTs on the blockchain.<br/>
                 What's more, each Cyber Ink can unlock the <br/>NEST Fi membership and additional benefits.</Text>
               <HStack justify={"center"}>
-                <Button w={'280px'} minH={'44px'} fontSize={'25px'} onClick={() => {
+                <Button w={'280px'} minH={'44px'} fontSize={'25px'}
+                        rightIcon={<chakra.img src={'/svg/white_bsc.svg'} h={'20px'} w={'20px'} />}
+                        onClick={() => {
                   window.open('https://finance.nestprotocol.org/#/NFTAuction', '_blank')
                 }}>
-                  NFT (BNB Chain)
+                  NFT
                 </Button>
               </HStack>
               <chakra.img src={'/image/Home/nft04@2x.png'} cursor={'pointer'} onClick={() => {
