@@ -112,6 +112,30 @@ export default function Home(): JSX.Element {
               </Stack>
             </HStack>
             <Stack h={'138px'}/>
+            <Stack bg={'rgba(255, 255, 255, 0.8)'} align={"center"} textAlign={"center"} py={'220px'}>
+              <Text fontSize={'25px'} fontWeight={600}>Join The Developer Community</Text>
+              <Text fontSize={'15px'} fontWeight={600}>NEST’s global and vibrant developer community drives the success of the Protocol.<br/>
+                Join the conversation on Telegram, Discord,and Github<br/>
+                to stay up to date on the latest developer community news.</Text>
+              <HStack spacing={'40px'} pt={'24px'}>
+                <Button onClick={() => {
+                  window.open('https://t.me/NEST_Developers', '_blank')
+                }}>
+                  Telegram
+                </Button>
+                <Button onClick={() => {
+                  window.open('https://discord.gg/yZBQuraXSP', '_blank')
+                }}>
+                  Discord
+                </Button>
+                <Button onClick={() => {
+                  window.open('https://github.com/NEST-Protocol', '_blank')
+                }}>
+                  Github
+                </Button>
+              </HStack>
+            </Stack>
+            <Stack h={'138px'}/>
             <HStack py={'88px'} px={'45px'} bg={'rgba(255, 255,255, 0.7)'} justifyContent={"space-between"}
                     align={"start"}>
               <Stack spacing={'40px'} align={"start"}>
@@ -259,7 +283,7 @@ export default function Home(): JSX.Element {
               revolution<br/>to the traditional market mechanism, <br/>whole new range of development tools
               and<br/> creative new assets.</Text>
             <Stack pt={'54px'}>
-              <Button onClick={() => {
+              <Button w={'200px'} onClick={() => {
                 window.open('/docs/PVM-Technical-Reference/', '_blank')
               }}>
                 Developer Doc
@@ -295,6 +319,32 @@ export default function Home(): JSX.Element {
                     href={'/docs/Technical-Reference-NEST-Oracle/#how-to-call-price'} isExternal>
                 How to Call Price <ChevronRightIcon/>
               </Link>
+            </Stack>
+          </Stack>
+          <Stack h={'40px'}/>
+          <Stack align={"center"} bg={'rgba(255,255,255,0.7)'} py={'110px'} textAlign={"center"}>
+            <Text fontSize={'16px'} fontWeight={600}>Join The Developer Community</Text>
+            <Text fontSize={'12.5px'} fontWeight={600}>NEST’s global and vibrant developer<br/>
+              community drives the success of the Protocol.<br/>
+              Join the conversation on Telegram, Discord,<br/>
+              and Github to stay up to date on the latest<br/>
+              developer community news.</Text>
+            <Stack spacing={'20px'} pt={'70px'}>
+              <Button w={'200px'} onClick={() => {
+                window.open('https://t.me/NEST_Developers', '_blank')
+              }}>
+                Telegram
+              </Button>
+              <Button w={'200px'} onClick={() => {
+                window.open('https://discord.gg/yZBQuraXSP', '_blank')
+              }}>
+                Discord
+              </Button>
+              <Button w={'200px'} onClick={() => {
+                window.open('https://github.com/NEST-Protocol', '_blank')
+              }}>
+                Github
+              </Button>
             </Stack>
           </Stack>
           <Stack h={'62px'}/>
